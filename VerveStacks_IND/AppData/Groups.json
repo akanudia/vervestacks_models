@@ -1,42 +1,42 @@
 [
   {
-    "SavedGroupId": 139,
+    "SavedGroupId": 134,
     "GroupName": "all_NGFS",
     "GroupType": "Parametric",
     "Settings": "[\"NGFS_0003\"]",
-    "CreatedOn": "2025-07-27 17:10",
-    "DisplayCreatedOn": "2025-07-27 17:10",
+    "CreatedOn": "2025-07-26 16:20",
+    "DisplayCreatedOn": "2025-07-26 16:20",
     "UserName": "akanu"
   },
   {
-    "SavedGroupId": 137,
+    "SavedGroupId": 132,
     "GroupName": "AllRegion",
     "GroupType": "Region",
     "Settings": "[\"ITA\"]",
-    "CreatedOn": "2025-07-27 16:05",
-    "DisplayCreatedOn": "2025-07-27 16:05",
+    "CreatedOn": "2025-07-26 16:20",
+    "DisplayCreatedOn": "2025-07-26 16:20",
     "UserName": "akanu"
   },
   {
-    "SavedGroupId": 136,
+    "SavedGroupId": 131,
     "GroupName": "AllScenario",
     "GroupType": "Scenario",
-    "Settings": "[{\"Name\": \"BASE\", \"Checked\": true, \"RowOrder\": 1, \"ShortName\": \"B\", \"FileStatus\": \"Consistent\", \"RecordCount\": 4648}, {\"Name\": \"REZoning_Sol_Win_andHydro\", \"Checked\": true, \"RowOrder\": 2, \"ShortName\": \"SR\", \"FileStatus\": \"Consistent\", \"RecordCount\": 1184}, {\"Name\": \"SysSettings\", \"Checked\": true, \"RowOrder\": 3, \"ShortName\": \"SS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 1590}, {\"Name\": \"Base_VS\", \"Checked\": true, \"RowOrder\": 4, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 1415}, {\"Name\": \"TSParameters_108\", \"Checked\": true, \"RowOrder\": 5, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 848}, {\"Name\": \"TSParameters_12\", \"Checked\": true, \"RowOrder\": 6, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 180}, {\"Name\": \"UnitComm\", \"Checked\": true, \"RowOrder\": 7, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 1746}]",
-    "CreatedOn": "2025-07-27 16:05",
-    "DisplayCreatedOn": "2025-07-27 16:05",
+    "Settings": "[{\"Name\": \"BASE\", \"Checked\": true, \"RowOrder\": 1, \"ShortName\": \"B\", \"FileStatus\": \"Consistent\", \"RecordCount\": 4622}, {\"Name\": \"REZoning_Sol_Win_andHydro\", \"Checked\": true, \"RowOrder\": 2, \"ShortName\": \"SR\", \"FileStatus\": \"Consistent\", \"RecordCount\": 1184}, {\"Name\": \"SysSettings\", \"Checked\": true, \"RowOrder\": 3, \"ShortName\": \"SS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 1585}, {\"Name\": \"Base_VS\", \"Checked\": true, \"RowOrder\": 4, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 50}, {\"Name\": \"TSParameters_108\", \"Checked\": true, \"RowOrder\": 5, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 848}, {\"Name\": \"TSParameters_12\", \"Checked\": true, \"RowOrder\": 6, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 180}, {\"Name\": \"TSParameters_348\", \"Checked\": false, \"RowOrder\": 7, \"ShortName\": \"RS\", \"FileStatus\": \"NotImported\", \"RecordCount\": 0}, {\"Name\": \"UnitComm\", \"Checked\": true, \"RowOrder\": 8, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 1740}]",
+    "CreatedOn": "2025-07-26 16:20",
+    "DisplayCreatedOn": "2025-07-26 16:20",
     "UserName": "akanu"
   },
   {
-    "SavedGroupId": 138,
+    "SavedGroupId": 133,
     "GroupName": "DefaultProperties",
     "GroupType": "Properties",
     "Settings": "{\"OptCa\": null, \"OptCr\": null, \"Damage\": 2, \"LimCol\": 0, \"LimRow\": 0, \"Oblong\": true, \"ResLim\": 50000, \"Retire\": false, \"IterLim\": 999999, \"SolPrint\": false, \"Uncertainty\": 0, \"RunInStepsOf\": 0, \"ClimateModule\": false, \"LinearVarCost\": true, \"LevelizedCosts\": 3, \"GamsOptionBratio\": \"\", \"DiscreteInvestment\": false, \"DoExtendedQaChecks\": false, \"GeneralEquilibrium\": 3, \"MidYearDiscounting\": true, \"ObjFunctionVariant\": 0, \"ShiftDiscountingBy\": 0, \"Co2CalibrationAtBoh\": false, \"UseSlackVariablesInUc\": false, \"DiscreteUnitCommitment\": false, \"EndoGenousTechLearning\": false, \"WriteBPriceforElastDem\": false, \"SaveSolutionInformation\": false, \"TsForFlowReportingTypes\": 0, \"UseLastRunAsStartingPoint\": false, \"ActivateSensitivityAnalysis\": false}",
-    "CreatedOn": "2025-07-27 16:05",
-    "DisplayCreatedOn": "2025-07-27 16:05",
+    "CreatedOn": "2025-07-26 16:20",
+    "DisplayCreatedOn": "2025-07-26 16:20",
     "UserName": "akanu"
   },
   {
-    "SavedGroupId": 140,
+    "SavedGroupId": 135,
     "GroupName": "ref_108",
     "GroupType": "Scenario",
     "Settings": "[{\"Name\": \"BASE\", \"Checked\": true, \"RowOrder\": 0, \"ShortName\": \"B\"}, {\"Name\": \"REZoning_Sol_Win_andHydro\", \"Checked\": true, \"RowOrder\": 1, \"ShortName\": \"SR\"}, {\"Name\": \"SysSettings\", \"Checked\": true, \"RowOrder\": 2, \"ShortName\": \"SS\"}, {\"Name\": \"Base_VS\", \"Checked\": true, \"RowOrder\": 3, \"ShortName\": \"RS\"}, {\"Name\": \"TSParameters_108\", \"Checked\": true, \"RowOrder\": 4, \"ShortName\": \"RS\"}, {\"Name\": \"TSParameters_12\", \"Checked\": false, \"RowOrder\": 5, \"ShortName\": \"RS\"}, {\"Name\": \"TSParameters_348\", \"Checked\": false, \"RowOrder\": 6, \"ShortName\": \"RS\"}, {\"Name\": \"UnitComm\", \"Checked\": true, \"RowOrder\": 7, \"ShortName\": \"RS\"}]",
