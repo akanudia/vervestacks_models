@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - ISL
 
-**Generated:** 2025-07-31 23:21:28
+**Generated:** 2025-08-01 00:24:37
 
 ## Processing Parameters
 
@@ -25,11 +25,16 @@
 
 ### Data Processing Notes
 - **Individual Plant Coverage**: 88.1% of total capacity from plant-level GEM data
-- **Missing Capacity Added**: 0.4 GW estimated from statistical sources
 - **Total Capacity Tracked**: 3.7 GW from all sources
 - **Plants Above Threshold**: 17 individual plants tracked above 50 MW threshold
 - **Total Plants Processed**: 35 plants in database
 - **Technology Mapping**: Automated mapping using VerveStacks technology classifications
+
+### Missing Capacity Added From:
+- **IRENA data**:
+  - **hydro**: 0.18 GW
+- **EMBER data**:
+  - **bioenergy**: 0.76 GW
 
 ## Model Structure
 
