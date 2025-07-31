@@ -1,12 +1,12 @@
 # VerveStacks Model Generation Notes - ZAF
 
-**Generated:** 2025-07-31 23:48:25
+**Generated:** 2025-08-01 01:40:31
 
 ## Processing Parameters
 
 | Parameter | Value | Description |
 |-----------|-------|-------------|
-| **Capacity Threshold** | 50 MW | Minimum plant size for individual tracking |
+| **Capacity Threshold** | 100 MW | Minimum plant size for individual tracking |
 | **Gas Efficiency Adjustment** | 1.0 | Multiplier applied to gas plant efficiencies |
 | **Coal Efficiency Adjustment** | 1.0 | Multiplier applied to coal plant efficiencies |
 | **Time Slice Option** | ts_336 | Time slice configuration used |
@@ -24,17 +24,17 @@
 - **EPA**: Carbon capture and storage retrofit potential
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 99.5% of total capacity from plant-level GEM data
+- **Individual Plant Coverage**: 98.9% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 71.3 GW from all sources
-- **Plants Above Threshold**: 244 individual plants tracked above 50 MW threshold
-- **Total Plants Processed**: 257 plants in database
+- **Plants Above Threshold**: 187 individual plants tracked above 100 MW threshold
+- **Total Plants Processed**: 202 plants in database
 - **Technology Mapping**: Automated mapping using VerveStacks technology classifications
 
 ### Missing Capacity Added From:
-- **EMBER data**:
-  - **bioenergy**: 0.26 GW
 - **IRENA data**:
   - **solar**: 3.0 GW
+- **EMBER data**:
+  - **bioenergy**: 0.26 GW
 
 ## Model Structure
 
@@ -45,8 +45,8 @@
 - **Scenario Files**: NGFS climate scenarios and policy assumptions
 
 ### Key Methodology Points
-- Plant-level data prioritized where available (capacity > 50 MW)
-- 244 plants tracked individually above threshold
+- Plant-level data prioritized where available (capacity > 100 MW)
+- 187 plants tracked individually above threshold
 - Efficiency adjustments applied for calibration to national statistics
 - Missing capacity filled using technology-specific statistical estimates
 - Regional cost multipliers applied based on country economic indicators
