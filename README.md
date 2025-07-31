@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - ISL
 
-**Generated:** 2025-08-01 00:26:35
+**Generated:** 2025-08-01 00:27:34
 
 ## Processing Parameters
 
@@ -31,10 +31,10 @@
 - **Technology Mapping**: Automated mapping using VerveStacks technology classifications
 
 ### Missing Capacity Added From:
-- **IRENA data**:
-  - **hydro**: 0.18 GW
 - **EMBER data**:
   - **bioenergy**: 0.76 GW
+- **IRENA data**:
+  - **hydro**: 0.18 GW
 
 ## Model Structure
 
