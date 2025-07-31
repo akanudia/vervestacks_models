@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - ISL
 
-**Generated:** 2025-08-01 01:05:15
+**Generated:** 2025-08-01 01:06:59
 
 ## Processing Parameters
 
@@ -9,7 +9,7 @@
 | **Capacity Threshold** | 50 MW | Minimum plant size for individual tracking |
 | **Gas Efficiency Adjustment** | 1.0 | Multiplier applied to gas plant efficiencies |
 | **Coal Efficiency Adjustment** | 1.0 | Multiplier applied to coal plant efficiencies |
-| **Time Slice Option** | ts_336 | Time slice configuration used |
+| **Time Slice Option** | ts_108 | Time slice configuration used |
 | **Output Directory** | output | Directory for intermediate files |
 
 ## Data Sources & Coverage
