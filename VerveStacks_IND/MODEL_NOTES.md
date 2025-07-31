@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - IND
 
-**Generated:** 2025-07-31 22:57:18
+**Generated:** 2025-07-31 23:06:26
 
 ## Processing Parameters
 
@@ -24,9 +24,11 @@
 - **EPA**: Carbon capture and storage retrofit potential
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: TBD% of total capacity from plant-level GEM data
-- **Missing Capacity Added**: TBD GW estimated from statistical sources
-- **Capacity Above Threshold**: TBD individual plants tracked above 300 MW threshold
+- **Individual Plant Coverage**: TBD of total capacity from plant-level GEM data
+- **Missing Capacity Added**: TBD estimated from statistical sources
+- **Total Capacity Tracked**: TBD from all sources
+- **Plants Above Threshold**: TBD individual plants tracked above 300 MW threshold
+- **Total Plants Processed**: TBD plants in database
 - **Technology Mapping**: Automated mapping using VerveStacks technology classifications
 
 ## Model Structure
@@ -39,6 +41,7 @@
 
 ### Key Methodology Points
 - Plant-level data prioritized where available (capacity > 300 MW)
+- TBD plants tracked individually above threshold
 - Efficiency adjustments applied for calibration to national statistics
 - Missing capacity filled using technology-specific statistical estimates
 - Regional cost multipliers applied based on country economic indicators
