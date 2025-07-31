@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - ZAF
 
-**Generated:** 2025-08-01 02:09:50
+**Generated:** 2025-08-01 02:15:22
 
 ## Processing Parameters
 
@@ -31,10 +31,10 @@
 - **Technology Mapping**: Automated mapping using VerveStacks technology classifications
 
 ### Missing Capacity Added From:
-- **IRENA data**:
-  - **solar**: 3.0 GW
 - **EMBER data**:
   - **bioenergy**: 0.26 GW
+- **IRENA data**:
+  - **solar**: 3.0 GW
 
 ## Model Structure
 
