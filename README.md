@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - USA
 
-**Generated:** 2025-08-03 15:20:40
+**Generated:** 2025-08-03 17:47:33
 
 ## Processing Parameters
 
@@ -32,8 +32,8 @@
 
 ### Missing Capacity Added From:
 - **IRENA data**:
-  - **hydro**: 11.46 GW
   - **solar**: 40.35 GW
+  - **hydro**: 11.46 GW
 - **EMBER data**:
   - **bioenergy**: 6.49 GW
   - **coal**: 15.81 GW
