@@ -1,12 +1,12 @@
 # VerveStacks Model Generation Notes - USA
 
-**Generated:** 2025-08-03 12:31:29
+**Generated:** 2025-08-03 12:37:43
 
 ## Processing Parameters
 
 | Parameter | Value | Description |
 |-----------|-------|-------------|
-| **Capacity Threshold** | 100 MW | Minimum plant size for individual tracking |
+| **Capacity Threshold** | 500 MW | Minimum plant size for individual tracking |
 | **Gas Efficiency Adjustment** | 1.0 | Multiplier applied to gas plant efficiencies |
 | **Coal Efficiency Adjustment** | 1.0 | Multiplier applied to coal plant efficiencies |
 | **Time Slice Option** | ts_336 | Time slice configuration used |
@@ -24,20 +24,20 @@
 - **EPA**: Carbon capture and storage retrofit potential
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 99.0% of total capacity from plant-level GEM data
+- **Individual Plant Coverage**: 95.1% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 1374.2 GW from all sources
-- **Plants Above Threshold**: 3438 individual plants tracked above 100 MW threshold
-- **Total Plants Processed**: 3681 plants in database
+- **Plants Above Threshold**: 999 individual plants tracked above 500 MW threshold
+- **Total Plants Processed**: 1398 plants in database
 - **Technology Mapping**: Automated mapping using VerveStacks technology classifications
 
 ### Missing Capacity Added From:
-- **IRENA data**:
-  - **hydro**: 11.46 GW
-  - **solar**: 40.35 GW
 - **EMBER data**:
   - **coal**: 15.81 GW
   - **gas**: 6.33 GW
   - **bioenergy**: 6.49 GW
+- **IRENA data**:
+  - **hydro**: 11.46 GW
+  - **solar**: 40.35 GW
 
 ## Model Structure
 
@@ -48,8 +48,8 @@
 - **Scenario Files**: NGFS climate scenarios and policy assumptions
 
 ### Key Methodology Points
-- Plant-level data prioritized where available (capacity > 100 MW)
-- 3438 plants tracked individually above threshold
+- Plant-level data prioritized where available (capacity > 500 MW)
+- 999 plants tracked individually above threshold
 - Efficiency adjustments applied for calibration to national statistics
 - Missing capacity filled using technology-specific statistical estimates
 - Regional cost multipliers applied based on country economic indicators
