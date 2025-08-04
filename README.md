@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - ITA
 
-**Generated:** 2025-08-05 00:03:52
+**Generated:** 2025-08-05 00:08:58
 
 ## Processing Parameters
 
@@ -9,7 +9,7 @@
 | **Capacity Threshold** | 100 MW | Minimum plant size for individual tracking |
 | **Gas Efficiency Adjustment** | 1.0 | Multiplier applied to gas plant efficiencies |
 | **Coal Efficiency Adjustment** | 1.0 | Multiplier applied to coal plant efficiencies |
-| **Time Slice Option** | ts_336 | Time slice configuration used |
+| **Time Slice Option** | triple_1 | Time slice configuration used |
 | **Output Directory** | output | Directory for intermediate files |
 
 ## Data Sources & Coverage
@@ -32,13 +32,13 @@
 
 ### Missing Capacity Added From:
 - **EMBER data**:
-  - **coal**: 1.62 GW
   - **gas**: 11.79 GW
+  - **coal**: 1.62 GW
   - **bioenergy**: 3.58 GW
 - **IRENA data**:
   - **hydro**: 7.28 GW
-  - **solar**: 19.88 GW
   - **wind**: 2.02 GW
+  - **solar**: 19.88 GW
 
 ## Model Structure
 
