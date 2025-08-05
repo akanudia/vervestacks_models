@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - JPN
 
-**Generated:** 2025-08-05 12:03:55
+**Generated:** 2025-08-05 13:13:55
 
 ## Processing Parameters
 
@@ -37,8 +37,8 @@
   - **solar**: 54.33 GW
 - **EMBER data**:
   - **bioenergy**: 1.5 GW
-  - **gas**: 0.29 GW
   - **coal**: 0.64 GW
+  - **gas**: 0.29 GW
 
 ## Model Structure
 
