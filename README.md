@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - ITA
 
-**Generated:** 2025-08-05 11:22:43
+**Generated:** 2025-08-05 11:25:47
 
 ## Processing Parameters
 
@@ -31,14 +31,14 @@
 - **Technology Mapping**: Automated mapping using VerveStacks technology classifications
 
 ### Missing Capacity Added From:
+- **IRENA data**:
+  - **wind**: 2.02 GW
+  - **solar**: 19.88 GW
+  - **hydro**: 7.28 GW
 - **EMBER data**:
-  - **coal**: 1.62 GW
   - **gas**: 11.79 GW
   - **bioenergy**: 3.58 GW
-- **IRENA data**:
-  - **solar**: 19.88 GW
-  - **wind**: 2.02 GW
-  - **hydro**: 7.28 GW
+  - **coal**: 1.62 GW
 
 ## Model Structure
 
