@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - JPN
 
-**Generated:** 2025-08-05 11:56:33
+**Generated:** 2025-08-05 12:03:55
 
 ## Processing Parameters
 
@@ -33,12 +33,12 @@
 ### Missing Capacity Added From:
 - **IRENA data**:
   - **hydro**: 11.79 GW
-  - **solar**: 54.33 GW
   - **wind**: 0.79 GW
+  - **solar**: 54.33 GW
 - **EMBER data**:
-  - **coal**: 0.64 GW
-  - **gas**: 0.29 GW
   - **bioenergy**: 1.5 GW
+  - **gas**: 0.29 GW
+  - **coal**: 0.64 GW
 
 ## Model Structure
 
