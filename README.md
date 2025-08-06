@@ -1,6 +1,6 @@
-# VerveStacks Model Generation Notes - ITA
+# VerveStacks Model Generation Notes - FRA
 
-**Generated:** 2025-08-06 12:24:16
+**Generated:** 2025-08-06 17:58:43
 
 ## Processing Parameters
 
@@ -24,33 +24,32 @@
 - **EPA**: Carbon capture and storage retrofit potential
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 95.7% of total capacity from plant-level GEM data
-- **Total Capacity Tracked**: 135.2 GW from all sources
-- **Plants Above Threshold**: 231 individual plants tracked above 100 MW threshold
-- **Total Plants Processed**: 347 plants in database
+- **Individual Plant Coverage**: 97.1% of total capacity from plant-level GEM data
+- **Total Capacity Tracked**: 160.5 GW from all sources
+- **Plants Above Threshold**: 217 individual plants tracked above 100 MW threshold
+- **Total Plants Processed**: 306 plants in database
 - **Technology Mapping**: Automated mapping using VerveStacks technology classifications
 
 ### Missing Capacity Added From:
 - **IRENA data**:
-  - **hydro**: 7.28 GW
-  - **wind**: 2.02 GW
-  - **solar**: 19.88 GW
+  - **hydro**: 6.34 GW
+  - **solar**: 4.58 GW
 - **EMBER data**:
-  - **bioenergy**: 3.58 GW
-  - **gas**: 11.79 GW
-  - **coal**: 1.62 GW
+  - **bioenergy**: 1.94 GW
+  - **gas**: 8.38 GW
+  - **coal**: 0.6 GW
 
 ## Model Structure
 
 ### Files Included
-- **Source Data**: `source_data/VerveStacks_ITA.xlsx` - Raw data reconciliation between sources
+- **Source Data**: `source_data/VerveStacks_FRA.xlsx` - Raw data reconciliation between sources
 - **VEDA Model Files**: Complete model ready for TIMES/VEDA execution
 - **Time Series Data**: Renewable energy profiles and demand patterns
 - **Scenario Files**: NGFS climate scenarios and policy assumptions
 
 ### Key Methodology Points
 - Plant-level data prioritized where available (capacity > 100 MW)
-- 231 plants tracked individually above threshold
+- 217 plants tracked individually above threshold
 - Efficiency adjustments applied for calibration to national statistics
 - Missing capacity filled using technology-specific statistical estimates
 - Regional cost multipliers applied based on country economic indicators
