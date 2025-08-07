@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - IND
 
-**Generated:** 2025-08-07 07:09:10
+**Generated:** 2025-08-07 08:59:12
 
 ## Processing Parameters
 
@@ -15,13 +15,15 @@
 ## Data Sources & Coverage
 
 ### Primary Data Sources
+- **Global Energy Monitor (GEM)**: Individual power plant database with technical specifications
 - **IRENA**: Renewable energy capacity and generation statistics (2000-2022)
 - **EMBER**: Global electricity generation and capacity data (2000-2022)
-- **Global Energy Monitor (GEM)**: Individual power plant database with technical specifications
-- **NGFS**: Climate scenario projections and carbon pricing trajectories
+- **NGFS**: Future electricity demand projections, CO2 emissions trajectories, and fuel price projections
 - **UNSD**: UN energy statistics and demand projections
 - **World Energy Outlook (WEO)**: Technology cost and performance assumptions
-- **EPA**: Carbon capture and storage retrofit potential
+- **NREL ATB**: Technology cost and performance assumptions
+- **EPA**: Carbon capture and storage retrofit technical parameters
+- **IPM**: Life extension and operating cost assumptions of thermal power plants
 
 ### Data Processing Notes
 - **Individual Plant Coverage**: 94.3% of total capacity from plant-level GEM data
@@ -32,8 +34,8 @@
 
 ### Missing Capacity Added From:
 - **IRENA data**:
-  - **hydro**: 5.06 GW
   - **wind**: 8.92 GW
+  - **hydro**: 5.06 GW
   - **solar**: 1.1 GW
 - **EMBER data**:
   - **gas**: 5.03 GW
