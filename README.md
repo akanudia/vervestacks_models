@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - JPN
 
-**Generated:** 2025-08-05 13:13:55
+**Generated:** 2025-08-07 13:21:09
 
 ## Processing Parameters
 
@@ -9,19 +9,52 @@
 | **Capacity Threshold** | 100 MW | Minimum plant size for individual tracking |
 | **Gas Efficiency Adjustment** | 1.0 | Multiplier applied to gas plant efficiencies |
 | **Coal Efficiency Adjustment** | 1.0 | Multiplier applied to coal plant efficiencies |
-| **Time Slice Option** | triple_1 | Time slice configuration used |
-| **Output Directory** | output | Directory for intermediate files |
+
 
 ## Data Sources & Coverage
 
 ### Primary Data Sources
-- **IRENA**: Renewable energy capacity and generation statistics (2000-2022)
-- **EMBER**: Global electricity generation and capacity data (2000-2022)
-- **Global Energy Monitor (GEM)**: Individual power plant database with technical specifications
-- **NGFS**: Climate scenario projections and carbon pricing trajectories
-- **UNSD**: UN energy statistics and demand projections
-- **World Energy Outlook (WEO)**: Technology cost and performance assumptions
-- **EPA**: Carbon capture and storage retrofit potential
+**Data Sources**
+
+Base-Year Power Plant Specifications
+------------------------------------
+- **Global Energy Monitor (GEM)**  
+  Open-access database of individual power plants worldwide, including location, capacity, fuel type, commissioning year, and technical specifications.  
+  Website: https://globalenergymonitor.org
+- **International Renewable Energy Agency (IRENA)**  
+  Global renewable energy capacity and generation statistics (2000–2022), disaggregated by country and technology. Used to calibrate solar, wind and hydro generation.
+  Website: https://www.irena.org/Statistics
+- **EMBER Climate**  
+  Global dataset tracking electricity generation, installed capacity, and emissions intensity (2000–2022), often used to benchmark policy impacts and system transitions. Used to calibrate thermal generation.
+  Website: https://ember-climate.org/data/
+- **United Nations Statistics Division (UNSD)**  
+  Official national energy statistics, including fuel inputs, electricity generation, and sectoral breakdowns — used to validate historical power plant operations.  
+  Website: https://unstats.un.org/unsd/energy/
+Power Sector Policies and Pathways
+----------------------------------
+- **Network for Greening the Financial System (NGFS)**  
+  Scenario-based projections of electricity demand, CO₂ emissions trajectories, and fuel prices — used to model alternative climate policy futures.  
+  Website: https://www.ngfs.net
+- **EMBER Climate**  
+  Renewable energy targets.
+New Technologies
+----------------
+- **International Energy Agency – World Energy Outlook (IEA WEO)**  
+  Global assumptions for power generation technologies: capital costs, O&M, efficiency, and learning rates — aligned with IEA scenarios.  
+  Website: https://www.iea.org/reports/world-energy-outlook-2023
+- **U.S. National Renewable Energy Laboratory – Annual Technology Baseline (NREL ATB)**  
+  Cost and performance trajectories for renewable and low-carbon power technologies. U.S.-centric, but widely used for international modeling.  
+  Website: https://atb.nrel.gov/
+Technology Assumptions
+---------------------------------------
+- **U.S. Environmental Protection Agency (EPA)**  
+  Technical parameters for retrofitting fossil plants with carbon capture and storage (CCS), including energy penalties and incremental costs.  
+  Website: https://www.epa.gov
+- **Integrated Planning Model (IPM)**  
+  U.S.-based modeling platform used to estimate life extension costs, variable O&M, and decommissioning behavior of thermal power plants.  
+  Overview: https://www.epa.gov/power-sector-modeling/overview-ipm-platform
+
+
 
 ### Data Processing Notes
 - **Individual Plant Coverage**: 98.5% of total capacity from plant-level GEM data
@@ -31,14 +64,14 @@
 - **Technology Mapping**: Automated mapping using VerveStacks technology classifications
 
 ### Missing Capacity Added From:
-- **IRENA data**:
-  - **hydro**: 11.79 GW
-  - **wind**: 0.79 GW
-  - **solar**: 54.33 GW
 - **EMBER data**:
   - **bioenergy**: 1.5 GW
   - **coal**: 0.64 GW
   - **gas**: 0.29 GW
+- **IRENA data**:
+  - **solar**: 54.33 GW
+  - **wind**: 0.79 GW
+  - **hydro**: 11.79 GW
 
 ## Model Structure
 
