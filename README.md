@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - IND
 
-**Generated:** 2025-08-07 12:17:20
+**Generated:** 2025-08-07 12:34:42
 
 ## Processing Parameters
 
@@ -65,8 +65,8 @@ Technology Assumptions
 
 ### Missing Capacity Added From:
 - **IRENA data**:
-  - **hydro**: 5.06 GW
   - **wind**: 8.92 GW
+  - **hydro**: 5.06 GW
   - **solar**: 1.1 GW
 - **EMBER data**:
   - **gas**: 5.03 GW
