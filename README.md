@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - IND
 
-**Generated:** 2025-08-07 13:47:25
+**Generated:** 2025-08-07 14:08:33
 
 ## Processing Parameters
 
@@ -14,7 +14,7 @@
 ## Data Sources & Coverage
 
 ### Primary Data Sources
-**Data Sources**
+
 
 Base-Year Power Plant Specifications
 ------------------------------------
@@ -30,6 +30,7 @@ Base-Year Power Plant Specifications
 - **United Nations Statistics Division (UNSD)**  
   Official national energy statistics, including fuel inputs, electricity generation, and sectoral breakdowns — used to validate historical power plant operations.  
   Website: https://unstats.un.org/unsd/energy/
+
 Power Sector Policies and Pathways
 ----------------------------------
 - **Network for Greening the Financial System (NGFS)**  
@@ -37,6 +38,7 @@ Power Sector Policies and Pathways
   Website: https://www.ngfs.net
 - **EMBER Climate**  
   Renewable energy targets.
+
 New Technologies
 ----------------
 - **International Energy Agency – World Energy Outlook (IEA WEO)**  
@@ -45,8 +47,9 @@ New Technologies
 - **U.S. National Renewable Energy Laboratory – Annual Technology Baseline (NREL ATB)**  
   Cost and performance trajectories for renewable and low-carbon power technologies. U.S.-centric, but widely used for international modeling.  
   Website: https://atb.nrel.gov/
+
 Technology Assumptions
----------------------------------------
+-----------------------
 - **U.S. Environmental Protection Agency (EPA)**  
   Technical parameters for retrofitting fossil plants with carbon capture and storage (CCS), including energy penalties and incremental costs.  
   Website: https://www.epa.gov
@@ -64,13 +67,13 @@ Technology Assumptions
 - **Technology Mapping**: Automated mapping using VerveStacks technology classifications
 
 ### Missing Capacity Added From:
-- **IRENA data**:
-  - **wind**: 8.92 GW
-  - **solar**: 1.1 GW
-  - **hydro**: 5.06 GW
 - **EMBER data**:
   - **bioenergy**: 9.73 GW
   - **gas**: 5.03 GW
+- **IRENA data**:
+  - **wind**: 8.92 GW
+  - **hydro**: 5.06 GW
+  - **solar**: 1.1 GW
 
 ## Model Structure
 
