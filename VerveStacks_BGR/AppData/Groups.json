@@ -1,6 +1,6 @@
 [
   {
-    "SavedGroupId": 180,
+    "SavedGroupId": 188,
     "GroupName": "all_FACETS",
     "GroupType": "Parametric",
     "Settings": "[\"FACETS_0008\", \"FACETS_0009\"]",
@@ -9,75 +9,66 @@
     "UserName": "akanu"
   },
   {
-    "SavedGroupId": 178,
+    "SavedGroupId": 189,
     "GroupName": "all_NGFS",
     "GroupType": "Parametric",
     "Settings": "[\"NGFS_0002\", \"NGFS_0003\"]",
-    "CreatedOn": "2025-08-03 16:56",
-    "DisplayCreatedOn": "2025-08-03 16:56",
+    "CreatedOn": "2025-08-07 07:32",
+    "DisplayCreatedOn": "2025-08-07 07:32",
     "UserName": "akanu"
   },
   {
-    "SavedGroupId": 176,
+    "SavedGroupId": 186,
     "GroupName": "AllRegion",
     "GroupType": "Region",
-    "Settings": "[\"USA\"]",
-    "CreatedOn": "2025-08-03 16:56",
-    "DisplayCreatedOn": "2025-08-03 16:56",
+    "Settings": "[\"IND\"]",
+    "CreatedOn": "2025-08-07 07:30",
+    "DisplayCreatedOn": "2025-08-07 07:30",
     "UserName": "akanu"
   },
   {
-    "SavedGroupId": 175,
+    "SavedGroupId": 185,
     "GroupName": "AllScenario",
     "GroupType": "Scenario",
-    "Settings": "[{\"Name\": \"BASE\", \"Checked\": true, \"RowOrder\": 1, \"ShortName\": \"B\", \"FileStatus\": \"InConsistent\", \"RecordCount\": 14858}, {\"Name\": \"ConvElecATB25\", \"Checked\": true, \"RowOrder\": 2, \"ShortName\": \"SR\", \"FileStatus\": \"Consistent\", \"RecordCount\": 908}, {\"Name\": \"REZoning_Sol_Win_andHydro\", \"Checked\": true, \"RowOrder\": 3, \"ShortName\": \"SR\", \"FileStatus\": \"Consistent\", \"RecordCount\": 2768}, {\"Name\": \"SysSettings\", \"Checked\": true, \"RowOrder\": 4, \"ShortName\": \"SS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 6538}, {\"Name\": \"Base_VS\", \"Checked\": true, \"RowOrder\": 5, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 5637}, {\"Name\": \"advanced_features\", \"Checked\": true, \"RowOrder\": 6, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 8600}, {\"Name\": \"tsparameters_ts_2weeks\", \"Checked\": true, \"RowOrder\": 7, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 3286}, {\"Name\": \"tsparameters_ts_triple1\", \"Checked\": true, \"RowOrder\": 8, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 1174}, {\"Name\": \"tsparameters_ts_triple5\", \"Checked\": true, \"RowOrder\": 9, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 3478}, {\"Name\": \"tsparameters_ts_triple5-2w\", \"Checked\": true, \"RowOrder\": 10, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 5974}]",
-    "CreatedOn": "2025-08-03 16:56",
-    "DisplayCreatedOn": "2025-08-03 16:56",
+    "Settings": "[{\"Name\": \"BASE\", \"Checked\": true, \"RowOrder\": 1, \"ShortName\": \"B\", \"FileStatus\": \"Consistent\", \"RecordCount\": 9662}, {\"Name\": \"ConvElecATB25\", \"Checked\": true, \"RowOrder\": 2, \"ShortName\": \"SR\", \"FileStatus\": \"Consistent\", \"RecordCount\": 912}, {\"Name\": \"REZoning_Sol_Win_andHydro\", \"Checked\": true, \"RowOrder\": 3, \"ShortName\": \"SR\", \"FileStatus\": \"Consistent\", \"RecordCount\": 1674}, {\"Name\": \"SysSettings\", \"Checked\": true, \"RowOrder\": 4, \"ShortName\": \"SS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 4106}, {\"Name\": \"Base_VS\", \"Checked\": true, \"RowOrder\": 5, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 3396}, {\"Name\": \"advanced_features\", \"Checked\": true, \"RowOrder\": 6, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 5787}, {\"Name\": \"tsparameters_triple_1\", \"Checked\": true, \"RowOrder\": 7, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 1222}, {\"Name\": \"tsparameters_triple_5\", \"Checked\": true, \"RowOrder\": 8, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 3526}, {\"Name\": \"tsparameters_weekly_stress\", \"Checked\": true, \"RowOrder\": 9, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 3334}]",
+    "CreatedOn": "2025-08-07 07:30",
+    "DisplayCreatedOn": "2025-08-07 07:30",
     "UserName": "akanu"
   },
   {
-    "SavedGroupId": 177,
+    "SavedGroupId": 187,
     "GroupName": "DefaultProperties",
     "GroupType": "Properties",
     "Settings": "{\"OptCa\": null, \"OptCr\": null, \"Damage\": 2, \"LimCol\": 0, \"LimRow\": 0, \"Oblong\": true, \"ResLim\": 50000, \"Retire\": false, \"IterLim\": 999999, \"SolPrint\": false, \"Uncertainty\": 0, \"RunInStepsOf\": 0, \"ClimateModule\": false, \"LinearVarCost\": true, \"LevelizedCosts\": 3, \"GamsOptionBratio\": \"\", \"DiscreteInvestment\": false, \"DoExtendedQaChecks\": false, \"GeneralEquilibrium\": 3, \"MidYearDiscounting\": true, \"ObjFunctionVariant\": 0, \"ShiftDiscountingBy\": 0, \"Co2CalibrationAtBoh\": false, \"UseSlackVariablesInUc\": false, \"DiscreteUnitCommitment\": false, \"EndoGenousTechLearning\": false, \"WriteBPriceforElastDem\": false, \"SaveSolutionInformation\": false, \"TsForFlowReportingTypes\": 0, \"UseLastRunAsStartingPoint\": false, \"ActivateSensitivityAnalysis\": false}",
-    "CreatedOn": "2025-08-03 16:56",
-    "DisplayCreatedOn": "2025-08-03 16:56",
+    "CreatedOn": "2025-08-07 07:30",
+    "DisplayCreatedOn": "2025-08-07 07:30",
     "UserName": "akanu"
   },
   {
-    "SavedGroupId": 181,
+    "SavedGroupId": 190,
     "GroupName": "ref_t1",
     "GroupType": "Scenario",
-    "Settings": "[{\"Name\": \"BASE\", \"Checked\": true, \"RowOrder\": 0, \"ShortName\": \"B\"}, {\"Name\": \"ConvElecATB25\", \"Checked\": false, \"RowOrder\": 1, \"ShortName\": \"SR\"}, {\"Name\": \"REZoning_Sol_Win_andHydro\", \"Checked\": true, \"RowOrder\": 2, \"ShortName\": \"SR\"}, {\"Name\": \"SysSettings\", \"Checked\": true, \"RowOrder\": 3, \"ShortName\": \"SS\"}, {\"Name\": \"Base_VS\", \"Checked\": true, \"RowOrder\": 4, \"ShortName\": \"RS\"}, {\"Name\": \"advanced_features\", \"Checked\": true, \"RowOrder\": 5, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_ts_2weeks\", \"Checked\": false, \"RowOrder\": 6, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_ts_triple1\", \"Checked\": true, \"RowOrder\": 7, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_ts_triple5\", \"Checked\": false, \"RowOrder\": 8, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_ts_triple5-2w\", \"Checked\": false, \"RowOrder\": 9, \"ShortName\": \"RS\"}]",
-    "CreatedOn": "2025-08-03 16:57",
-    "DisplayCreatedOn": "2025-08-03 16:57",
+    "Settings": "[{\"Name\": \"BASE\", \"Checked\": true, \"RowOrder\": 0, \"ShortName\": \"B\"}, {\"Name\": \"ConvElecATB25\", \"Checked\": false, \"RowOrder\": 1, \"ShortName\": \"SR\"}, {\"Name\": \"REZoning_Sol_Win_andHydro\", \"Checked\": true, \"RowOrder\": 2, \"ShortName\": \"SR\"}, {\"Name\": \"SysSettings\", \"Checked\": true, \"RowOrder\": 3, \"ShortName\": \"SS\"}, {\"Name\": \"Base_VS\", \"Checked\": true, \"RowOrder\": 4, \"ShortName\": \"RS\"}, {\"Name\": \"advanced_features\", \"Checked\": true, \"RowOrder\": 5, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_triple_1\", \"Checked\": true, \"RowOrder\": 7, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_triple_5\", \"Checked\": false, \"RowOrder\": 9, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_weekly_stress\", \"Checked\": false, \"RowOrder\": 12, \"ShortName\": \"RS\"}]",
+    "CreatedOn": "2025-08-07 07:31",
+    "DisplayCreatedOn": "2025-08-07 07:31",
     "UserName": "akanu"
   },
   {
-    "SavedGroupId": 182,
+    "SavedGroupId": 191,
     "GroupName": "ref_t5",
     "GroupType": "Scenario",
-    "Settings": "[{\"Name\": \"BASE\", \"Checked\": true, \"RowOrder\": 0, \"ShortName\": \"B\"}, {\"Name\": \"ConvElecATB25\", \"Checked\": false, \"RowOrder\": 1, \"ShortName\": \"SR\"}, {\"Name\": \"REZoning_Sol_Win_andHydro\", \"Checked\": true, \"RowOrder\": 2, \"ShortName\": \"SR\"}, {\"Name\": \"SysSettings\", \"Checked\": true, \"RowOrder\": 3, \"ShortName\": \"SS\"}, {\"Name\": \"Base_VS\", \"Checked\": true, \"RowOrder\": 4, \"ShortName\": \"RS\"}, {\"Name\": \"advanced_features\", \"Checked\": true, \"RowOrder\": 5, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_ts_2weeks\", \"Checked\": false, \"RowOrder\": 6, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_ts_triple1\", \"Checked\": false, \"RowOrder\": 7, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_ts_triple5\", \"Checked\": true, \"RowOrder\": 8, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_ts_triple5-2w\", \"Checked\": false, \"RowOrder\": 9, \"ShortName\": \"RS\"}]",
-    "CreatedOn": "2025-08-03 16:57",
-    "DisplayCreatedOn": "2025-08-03 16:57",
+    "Settings": "[{\"Name\": \"BASE\", \"Checked\": true, \"RowOrder\": 0, \"ShortName\": \"B\"}, {\"Name\": \"ConvElecATB25\", \"Checked\": false, \"RowOrder\": 1, \"ShortName\": \"SR\"}, {\"Name\": \"REZoning_Sol_Win_andHydro\", \"Checked\": true, \"RowOrder\": 2, \"ShortName\": \"SR\"}, {\"Name\": \"SysSettings\", \"Checked\": true, \"RowOrder\": 3, \"ShortName\": \"SS\"}, {\"Name\": \"Base_VS\", \"Checked\": true, \"RowOrder\": 4, \"ShortName\": \"RS\"}, {\"Name\": \"advanced_features\", \"Checked\": true, \"RowOrder\": 5, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_triple_1\", \"Checked\": false, \"RowOrder\": 7, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_triple_5\", \"Checked\": true, \"RowOrder\": 9, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_weekly_stress\", \"Checked\": false, \"RowOrder\": 12, \"ShortName\": \"RS\"}]",
+    "CreatedOn": "2025-08-07 07:31",
+    "DisplayCreatedOn": "2025-08-07 07:31",
     "UserName": "akanu"
   },
   {
-    "SavedGroupId": 184,
-    "GroupName": "ref_t5-w2",
-    "GroupType": "Scenario",
-    "Settings": "[{\"Name\": \"BASE\", \"Checked\": true, \"RowOrder\": 0, \"ShortName\": \"B\"}, {\"Name\": \"ConvElecATB25\", \"Checked\": false, \"RowOrder\": 1, \"ShortName\": \"SR\"}, {\"Name\": \"REZoning_Sol_Win_andHydro\", \"Checked\": true, \"RowOrder\": 2, \"ShortName\": \"SR\"}, {\"Name\": \"SysSettings\", \"Checked\": true, \"RowOrder\": 3, \"ShortName\": \"SS\"}, {\"Name\": \"Base_VS\", \"Checked\": true, \"RowOrder\": 4, \"ShortName\": \"RS\"}, {\"Name\": \"advanced_features\", \"Checked\": true, \"RowOrder\": 5, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_ts_2weeks\", \"Checked\": false, \"RowOrder\": 6, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_ts_triple1\", \"Checked\": false, \"RowOrder\": 7, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_ts_triple5\", \"Checked\": false, \"RowOrder\": 8, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_ts_triple5-2w\", \"Checked\": true, \"RowOrder\": 9, \"ShortName\": \"RS\"}]",
-    "CreatedOn": "2025-08-03 16:58",
-    "DisplayCreatedOn": "2025-08-03 16:58",
-    "UserName": "akanu"
-  },
-  {
-    "SavedGroupId": 183,
+    "SavedGroupId": 193,
     "GroupName": "ref_w2",
     "GroupType": "Scenario",
-    "Settings": "[{\"Name\": \"BASE\", \"Checked\": true, \"RowOrder\": 0, \"ShortName\": \"B\"}, {\"Name\": \"ConvElecATB25\", \"Checked\": false, \"RowOrder\": 1, \"ShortName\": \"SR\"}, {\"Name\": \"REZoning_Sol_Win_andHydro\", \"Checked\": true, \"RowOrder\": 2, \"ShortName\": \"SR\"}, {\"Name\": \"SysSettings\", \"Checked\": true, \"RowOrder\": 3, \"ShortName\": \"SS\"}, {\"Name\": \"Base_VS\", \"Checked\": true, \"RowOrder\": 4, \"ShortName\": \"RS\"}, {\"Name\": \"advanced_features\", \"Checked\": true, \"RowOrder\": 5, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_ts_2weeks\", \"Checked\": true, \"RowOrder\": 6, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_ts_triple1\", \"Checked\": false, \"RowOrder\": 7, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_ts_triple5\", \"Checked\": false, \"RowOrder\": 8, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_ts_triple5-2w\", \"Checked\": false, \"RowOrder\": 9, \"ShortName\": \"RS\"}]",
-    "CreatedOn": "2025-08-03 16:57",
-    "DisplayCreatedOn": "2025-08-03 16:57",
+    "Settings": "[{\"Name\": \"BASE\", \"Checked\": true, \"RowOrder\": 0, \"ShortName\": \"B\"}, {\"Name\": \"ConvElecATB25\", \"Checked\": false, \"RowOrder\": 1, \"ShortName\": \"SR\"}, {\"Name\": \"REZoning_Sol_Win_andHydro\", \"Checked\": true, \"RowOrder\": 2, \"ShortName\": \"SR\"}, {\"Name\": \"SysSettings\", \"Checked\": true, \"RowOrder\": 3, \"ShortName\": \"SS\"}, {\"Name\": \"Base_VS\", \"Checked\": true, \"RowOrder\": 4, \"ShortName\": \"RS\"}, {\"Name\": \"advanced_features\", \"Checked\": true, \"RowOrder\": 5, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_triple_1\", \"Checked\": false, \"RowOrder\": 7, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_triple_5\", \"Checked\": false, \"RowOrder\": 9, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_weekly_stress\", \"Checked\": true, \"RowOrder\": 12, \"ShortName\": \"RS\"}]",
+    "CreatedOn": "2025-08-07 07:31",
+    "DisplayCreatedOn": "2025-08-07 07:31",
     "UserName": "akanu"
   }
 ]

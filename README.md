@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - BGR
 
-**Generated:** 2025-08-06 00:18:36
+**Generated:** 2025-08-07 15:54:51
 
 ## Processing Parameters
 
@@ -9,19 +9,45 @@
 | **Capacity Threshold** | 100 MW | Minimum plant size for individual tracking |
 | **Gas Efficiency Adjustment** | 1.0 | Multiplier applied to gas plant efficiencies |
 | **Coal Efficiency Adjustment** | 1.0 | Multiplier applied to coal plant efficiencies |
-| **Time Slice Option** | triple_1 | Time slice configuration used |
-| **Output Directory** | output | Directory for intermediate files |
 
-## Data Sources & Coverage
+
+## Data, Assumptions & Coverage
 
 ### Primary Data Sources
-- **IRENA**: Renewable energy capacity and generation statistics (2000-2022)
-- **EMBER**: Global electricity generation and capacity data (2000-2022)
-- **Global Energy Monitor (GEM)**: Individual power plant database with technical specifications
-- **NGFS**: Climate scenario projections and carbon pricing trajectories
-- **UNSD**: UN energy statistics and demand projections
-- **World Energy Outlook (WEO)**: Technology cost and performance assumptions
-- **EPA**: Carbon capture and storage retrofit potential
+
+#### Base-Year Power Plant Specifications
+
+- **Global Energy Monitor (GEM)** [🌐](https://globalenergymonitor.org)  
+  Open-access database of individual power plants worldwide, including location, capacity, fuel type, commissioning year, and technical specifications.
+- **International Renewable Energy Agency (IRENA)** [🌐](https://www.irena.org/Statistics)  
+  Global renewable energy capacity and generation statistics (2000–2022), disaggregated by country and technology. Used to calibrate solar, wind and hydro generation.
+- **EMBER Climate** [🌐](https://ember-climate.org/data/)  
+  Global dataset tracking electricity generation, installed capacity, and emissions intensity (2000–2022), often used to benchmark policy impacts and system transitions. Used to calibrate thermal generation.
+- **United Nations Statistics Division (UNSD)** [🌐](https://unstats.un.org/unsd/energy/)  
+  Official national energy statistics, including fuel inputs, electricity generation, and sectoral breakdowns — used to validate historical power plant operations.
+
+#### Power Sector Policies and Pathways
+
+- **Network for Greening the Financial System (NGFS)** [🌐](https://www.ngfs.net)  
+  Scenario-based projections of electricity demand, CO₂ emissions trajectories, and fuel prices — used to model alternative climate policy futures.
+- **EMBER Climate** [🌐](https://ember-climate.org)  
+  Renewable energy targets.
+
+#### New Technologies
+
+- **International Energy Agency – World Energy Outlook (IEA WEO)** [🌐](https://www.iea.org/reports/world-energy-outlook-2023)  
+  Global assumptions for power generation technologies: capital costs, O&M, efficiency, and learning rates — aligned with IEA scenarios.
+- **U.S. National Renewable Energy Laboratory – Annual Technology Baseline (NREL ATB)** [🌐](https://atb.nrel.gov/)  
+  Cost and performance trajectories for renewable and low-carbon power technologies. U.S.-centric, but widely used for international modeling.
+
+#### Technology Assumptions
+
+- **U.S. Environmental Protection Agency (EPA)** [🌐](https://www.epa.gov)  
+  Technical parameters for retrofitting fossil plants with carbon capture and storage (CCS), including energy penalties and incremental costs.
+- **Integrated Planning Model (IPM)** [🌐](https://www.epa.gov/power-sector-modeling/overview-ipm-platform)  
+  U.S.-based modeling platform used to estimate life extension costs, variable O&M, and decommissioning behavior of thermal power plants.
+
+
 
 ### Data Processing Notes
 - **Individual Plant Coverage**: 90.6% of total capacity from plant-level GEM data
@@ -32,8 +58,8 @@
 
 ### Missing Capacity Added From:
 - **IRENA data**:
-  - **hydro**: 0.77 GW
   - **solar**: 0.17 GW
+  - **hydro**: 0.77 GW
 
 ## Model Structure
 
