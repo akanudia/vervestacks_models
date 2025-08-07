@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - IND
 
-**Generated:** 2025-08-07 08:59:12
+**Generated:** 2025-08-07 09:09:26
 
 ## Processing Parameters
 
@@ -15,15 +15,36 @@
 ## Data Sources & Coverage
 
 ### Primary Data Sources
-- **Global Energy Monitor (GEM)**: Individual power plant database with technical specifications
-- **IRENA**: Renewable energy capacity and generation statistics (2000-2022)
-- **EMBER**: Global electricity generation and capacity data (2000-2022)
-- **NGFS**: Future electricity demand projections, CO2 emissions trajectories, and fuel price projections
-- **UNSD**: UN energy statistics and demand projections
-- **World Energy Outlook (WEO)**: Technology cost and performance assumptions
-- **NREL ATB**: Technology cost and performance assumptions
-- **EPA**: Carbon capture and storage retrofit technical parameters
-- **IPM**: Life extension and operating cost assumptions of thermal power plants
+**Data Sources**
+
+- **Global Energy Monitor (GEM)**  
+  Open-access database of individual power plants worldwide, including location, capacity, fuel type, and technical specifications.  
+  Website: https://globalenergymonitor.org
+- **International Renewable Energy Agency (IRENA)**  
+  Global renewable energy capacity and generation statistics (2000–2022), disaggregated by country and technology. Used to calibrate solar, wind and hydro generation.
+  Website: https://www.irena.org/Statistics
+- **EMBER Climate**  
+  International dataset on electricity generation, installed capacity, and emissions trends (2000–2022), with a focus on the global energy transition. Used to calibrate thermal generation.
+  Website: https://ember-climate.org/data/
+- **Network for Greening the Financial System (NGFS)**  
+  Scenario-based projections of electricity demand, fuel prices, and CO₂ emissions used in climate risk and energy transition modeling.  
+  Website: https://www.ngfs.net
+- **United Nations Statistics Division (UNSD)**  
+  Official national energy statistics used to calibrate fuel consumption for power generation.
+  Website: https://unstats.un.org/unsd/energy/
+- **International Energy Agency – World Energy Outlook (IEA WEO)**  
+  Global technology cost, performance, and policy assumptions used for forward-looking energy system modeling.  
+  Website: https://www.iea.org/reports/world-energy-outlook-2023
+- **U.S. National Renewable Energy Laboratory – Annual Technology Baseline (NREL ATB)**  
+  Cost and performance trajectories for renewable and low-carbon technologies, primarily for the U.S., but widely used globally.  
+  Website: https://atb.nrel.gov/
+- **U.S. Environmental Protection Agency (EPA)**  
+  Technical parameters for retrofitting existing power plants with carbon capture and storage (CCS), including energy penalties and cost factors.  
+  Website: https://www.epa.gov
+- **Integrated Planning Model (IPM)**  
+  U.S.-based modeling platform used to estimate life extension, variable O&M, and retirement costs of thermal power plants.  
+  Overview: https://www.epa.gov/power-sector-modeling/overview-ipm-platform
+
 
 ### Data Processing Notes
 - **Individual Plant Coverage**: 94.3% of total capacity from plant-level GEM data
@@ -33,13 +54,13 @@
 - **Technology Mapping**: Automated mapping using VerveStacks technology classifications
 
 ### Missing Capacity Added From:
+- **EMBER data**:
+  - **bioenergy**: 9.73 GW
+  - **gas**: 5.03 GW
 - **IRENA data**:
+  - **solar**: 1.1 GW
   - **wind**: 8.92 GW
   - **hydro**: 5.06 GW
-  - **solar**: 1.1 GW
-- **EMBER data**:
-  - **gas**: 5.03 GW
-  - **bioenergy**: 9.73 GW
 
 ## Model Structure
 
