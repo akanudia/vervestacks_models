@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - AUS
 
-**Generated:** 2025-08-07 15:21:28
+**Generated:** 2025-08-07 15:40:31
 
 ## Processing Parameters
 
@@ -57,14 +57,14 @@
 - **Technology Mapping**: Automated mapping using VerveStacks technology classifications
 
 ### Missing Capacity Added From:
+- **EMBER data**:
+  - **gas**: 11.0 GW
+  - **coal**: 1.57 GW
+  - **bioenergy**: 0.62 GW
 - **IRENA data**:
-  - **wind**: 0.43 GW
   - **solar**: 18.99 GW
   - **hydro**: 0.58 GW
-- **EMBER data**:
-  - **coal**: 1.57 GW
-  - **gas**: 11.0 GW
-  - **bioenergy**: 0.62 GW
+  - **wind**: 0.43 GW
 
 ## Model Structure
 
