@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - IND
 
-**Generated:** 2025-08-07 14:08:33
+**Generated:** 2025-08-07 14:18:38
 
 ## Processing Parameters
 
@@ -15,9 +15,8 @@
 
 ### Primary Data Sources
 
+#### Base-Year Power Plant Specifications
 
-Base-Year Power Plant Specifications
-------------------------------------
 - **Global Energy Monitor (GEM)**  
   Open-access database of individual power plants worldwide, including location, capacity, fuel type, commissioning year, and technical specifications.  
   Website: https://globalenergymonitor.org
@@ -31,16 +30,16 @@ Base-Year Power Plant Specifications
   Official national energy statistics, including fuel inputs, electricity generation, and sectoral breakdowns — used to validate historical power plant operations.  
   Website: https://unstats.un.org/unsd/energy/
 
-Power Sector Policies and Pathways
-----------------------------------
+#### Power Sector Policies and Pathways
+
 - **Network for Greening the Financial System (NGFS)**  
   Scenario-based projections of electricity demand, CO₂ emissions trajectories, and fuel prices — used to model alternative climate policy futures.  
   Website: https://www.ngfs.net
 - **EMBER Climate**  
   Renewable energy targets.
 
-New Technologies
-----------------
+#### New Technologies
+
 - **International Energy Agency – World Energy Outlook (IEA WEO)**  
   Global assumptions for power generation technologies: capital costs, O&M, efficiency, and learning rates — aligned with IEA scenarios.  
   Website: https://www.iea.org/reports/world-energy-outlook-2023
@@ -48,8 +47,8 @@ New Technologies
   Cost and performance trajectories for renewable and low-carbon power technologies. U.S.-centric, but widely used for international modeling.  
   Website: https://atb.nrel.gov/
 
-Technology Assumptions
------------------------
+#### Technology Assumptions
+
 - **U.S. Environmental Protection Agency (EPA)**  
   Technical parameters for retrofitting fossil plants with carbon capture and storage (CCS), including energy penalties and incremental costs.  
   Website: https://www.epa.gov
@@ -71,9 +70,9 @@ Technology Assumptions
   - **bioenergy**: 9.73 GW
   - **gas**: 5.03 GW
 - **IRENA data**:
-  - **wind**: 8.92 GW
-  - **hydro**: 5.06 GW
   - **solar**: 1.1 GW
+  - **hydro**: 5.06 GW
+  - **wind**: 8.92 GW
 
 ## Model Structure
 
