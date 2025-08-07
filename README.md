@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - IND
 
-**Generated:** 2025-08-07 14:18:38
+**Generated:** 2025-08-07 14:27:41
 
 ## Processing Parameters
 
@@ -11,50 +11,41 @@
 | **Coal Efficiency Adjustment** | 1.0 | Multiplier applied to coal plant efficiencies |
 
 
-## Data Sources & Coverage
+## Data, Assumptions & Coverage
 
 ### Primary Data Sources
 
 #### Base-Year Power Plant Specifications
 
-- **Global Energy Monitor (GEM)**  
-  Open-access database of individual power plants worldwide, including location, capacity, fuel type, commissioning year, and technical specifications.  
-  Website: https://globalenergymonitor.org
-- **International Renewable Energy Agency (IRENA)**  
+- **Global Energy Monitor (GEM)** [🌐](https://globalenergymonitor.org)  
+  Open-access database of individual power plants worldwide, including location, capacity, fuel type, commissioning year, and technical specifications.
+- **International Renewable Energy Agency (IRENA)** [🌐](https://www.irena.org/Statistics)  
   Global renewable energy capacity and generation statistics (2000–2022), disaggregated by country and technology. Used to calibrate solar, wind and hydro generation.
-  Website: https://www.irena.org/Statistics
-- **EMBER Climate**  
+- **EMBER Climate** [🌐](https://ember-climate.org/data/)  
   Global dataset tracking electricity generation, installed capacity, and emissions intensity (2000–2022), often used to benchmark policy impacts and system transitions. Used to calibrate thermal generation.
-  Website: https://ember-climate.org/data/
-- **United Nations Statistics Division (UNSD)**  
-  Official national energy statistics, including fuel inputs, electricity generation, and sectoral breakdowns — used to validate historical power plant operations.  
-  Website: https://unstats.un.org/unsd/energy/
+- **United Nations Statistics Division (UNSD)** [🌐](https://unstats.un.org/unsd/energy/)  
+  Official national energy statistics, including fuel inputs, electricity generation, and sectoral breakdowns — used to validate historical power plant operations.
 
 #### Power Sector Policies and Pathways
 
-- **Network for Greening the Financial System (NGFS)**  
-  Scenario-based projections of electricity demand, CO₂ emissions trajectories, and fuel prices — used to model alternative climate policy futures.  
-  Website: https://www.ngfs.net
-- **EMBER Climate**  
+- **Network for Greening the Financial System (NGFS)** [🌐](https://www.ngfs.net)  
+  Scenario-based projections of electricity demand, CO₂ emissions trajectories, and fuel prices — used to model alternative climate policy futures.
+- **EMBER Climate** [🌐](https://ember-climate.org)  
   Renewable energy targets.
 
 #### New Technologies
 
-- **International Energy Agency – World Energy Outlook (IEA WEO)**  
-  Global assumptions for power generation technologies: capital costs, O&M, efficiency, and learning rates — aligned with IEA scenarios.  
-  Website: https://www.iea.org/reports/world-energy-outlook-2023
-- **U.S. National Renewable Energy Laboratory – Annual Technology Baseline (NREL ATB)**  
-  Cost and performance trajectories for renewable and low-carbon power technologies. U.S.-centric, but widely used for international modeling.  
-  Website: https://atb.nrel.gov/
+- **International Energy Agency – World Energy Outlook (IEA WEO)** [🌐](https://www.iea.org/reports/world-energy-outlook-2023)  
+  Global assumptions for power generation technologies: capital costs, O&M, efficiency, and learning rates — aligned with IEA scenarios.
+- **U.S. National Renewable Energy Laboratory – Annual Technology Baseline (NREL ATB)** [🌐](https://atb.nrel.gov/)  
+  Cost and performance trajectories for renewable and low-carbon power technologies. U.S.-centric, but widely used for international modeling.
 
 #### Technology Assumptions
 
-- **U.S. Environmental Protection Agency (EPA)**  
-  Technical parameters for retrofitting fossil plants with carbon capture and storage (CCS), including energy penalties and incremental costs.  
-  Website: https://www.epa.gov
-- **Integrated Planning Model (IPM)**  
-  U.S.-based modeling platform used to estimate life extension costs, variable O&M, and decommissioning behavior of thermal power plants.  
-  Overview: https://www.epa.gov/power-sector-modeling/overview-ipm-platform
+- **U.S. Environmental Protection Agency (EPA)** [🌐](https://www.epa.gov)  
+  Technical parameters for retrofitting fossil plants with carbon capture and storage (CCS), including energy penalties and incremental costs.
+- **Integrated Planning Model (IPM)** [🌐](https://www.epa.gov/power-sector-modeling/overview-ipm-platform)  
+  U.S.-based modeling platform used to estimate life extension costs, variable O&M, and decommissioning behavior of thermal power plants.
 
 
 
@@ -66,13 +57,13 @@
 - **Technology Mapping**: Automated mapping using VerveStacks technology classifications
 
 ### Missing Capacity Added From:
-- **EMBER data**:
-  - **bioenergy**: 9.73 GW
-  - **gas**: 5.03 GW
 - **IRENA data**:
-  - **solar**: 1.1 GW
-  - **hydro**: 5.06 GW
   - **wind**: 8.92 GW
+  - **hydro**: 5.06 GW
+  - **solar**: 1.1 GW
+- **EMBER data**:
+  - **gas**: 5.03 GW
+  - **bioenergy**: 9.73 GW
 
 ## Model Structure
 
