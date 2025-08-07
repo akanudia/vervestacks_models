@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - AUS
 
-**Generated:** 2025-08-07 15:40:31
+**Generated:** 2025-08-07 16:00:01
 
 ## Processing Parameters
 
@@ -62,9 +62,9 @@
   - **coal**: 1.57 GW
   - **bioenergy**: 0.62 GW
 - **IRENA data**:
+  - **wind**: 0.43 GW
   - **solar**: 18.99 GW
   - **hydro**: 0.58 GW
-  - **wind**: 0.43 GW
 
 ## Model Structure
 
