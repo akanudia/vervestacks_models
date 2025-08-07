@@ -1,0 +1,218 @@
+[
+  {
+    "CaseId": 27,
+    "CreatedOn": "2025-08-03 16:58",
+    "Description": "",
+    "EditedOn": "2025-08-03 16:58",
+    "EndingYear": "2050",
+    "FixResultFileName": "False",
+    "FixResultInfo": {
+      "WorkTimesFolderPath": null,
+      "GdxElasticDermands": {
+        "GdxSelectedFile": {
+          "FileName": "",
+          "FilePath": "",
+          "IsSelected": false
+        },
+        "IsApplied": false
+      },
+      "GdxIre": {
+        "GdxSelectedFile": {
+          "FileName": "",
+          "FilePath": "",
+          "IsSelected": false
+        },
+        "IsApplied": false,
+        "RadioSelection": 1
+      },
+      "GdxUseSolution": {
+        "FixYearsUpto": "",
+        "GdxSelectedFile": {
+          "FileName": "",
+          "FilePath": "",
+          "IsSelected": false
+        },
+        "IsApplied": false,
+        "RadioSelection": 1
+      },
+      "IsApplyFixResult": false
+    },
+    "GAMSSourceFolder": "GAMS_SrcTIMES.v4.9.0",
+    "Name": "ref_t1",
+    "ParametricGroup": "all_NGFS",
+    "ParametricGroupId": 178,
+    "PeriodsDefinition": "msy5_2050",
+    "PropertiesGroup": "DefaultProperties",
+    "PropertiesGroupId": 177,
+    "RegionGroup": "AllRegion",
+    "RegionGroupId": 176,
+    "ScenarioGroup": "ref_t1",
+    "ScenarioGroupId": 181,
+    "Solver": "cplex",
+    "SolverOptionFile": "BA121-7",
+    "UserName": "akanu",
+    "ModelFramework": "Times"
+  },
+  {
+    "CaseId": 28,
+    "CreatedOn": "2025-08-03 16:59",
+    "Description": "",
+    "EditedOn": "2025-08-03 16:59",
+    "EndingYear": "2050",
+    "FixResultFileName": "False",
+    "FixResultInfo": {
+      "WorkTimesFolderPath": null,
+      "GdxElasticDermands": {
+        "GdxSelectedFile": {
+          "FileName": "",
+          "FilePath": "",
+          "IsSelected": false
+        },
+        "IsApplied": false
+      },
+      "GdxIre": {
+        "GdxSelectedFile": {
+          "FileName": "",
+          "FilePath": "",
+          "IsSelected": false
+        },
+        "IsApplied": false,
+        "RadioSelection": 1
+      },
+      "GdxUseSolution": {
+        "FixYearsUpto": "",
+        "GdxSelectedFile": {
+          "FileName": "",
+          "FilePath": "",
+          "IsSelected": false
+        },
+        "IsApplied": false,
+        "RadioSelection": 1
+      },
+      "IsApplyFixResult": false
+    },
+    "GAMSSourceFolder": "GAMS_SrcTIMES.v4.9.0",
+    "Name": "ref_t5",
+    "ParametricGroup": "all_NGFS",
+    "ParametricGroupId": 178,
+    "PeriodsDefinition": "msy5_2050",
+    "PropertiesGroup": "DefaultProperties",
+    "PropertiesGroupId": 177,
+    "RegionGroup": "AllRegion",
+    "RegionGroupId": 176,
+    "ScenarioGroup": "ref_t5",
+    "ScenarioGroupId": 182,
+    "Solver": "cplex",
+    "SolverOptionFile": "BA121-7",
+    "UserName": "akanu",
+    "ModelFramework": "Times"
+  },
+  {
+    "CaseId": 30,
+    "CreatedOn": "2025-08-03 16:59",
+    "Description": "",
+    "EditedOn": "2025-08-03 16:59",
+    "EndingYear": "2050",
+    "FixResultFileName": "False",
+    "FixResultInfo": {
+      "WorkTimesFolderPath": null,
+      "GdxElasticDermands": {
+        "GdxSelectedFile": {
+          "FileName": "",
+          "FilePath": "",
+          "IsSelected": false
+        },
+        "IsApplied": false
+      },
+      "GdxIre": {
+        "GdxSelectedFile": {
+          "FileName": "",
+          "FilePath": "",
+          "IsSelected": false
+        },
+        "IsApplied": false,
+        "RadioSelection": 1
+      },
+      "GdxUseSolution": {
+        "FixYearsUpto": "",
+        "GdxSelectedFile": {
+          "FileName": "",
+          "FilePath": "",
+          "IsSelected": false
+        },
+        "IsApplied": false,
+        "RadioSelection": 1
+      },
+      "IsApplyFixResult": false
+    },
+    "GAMSSourceFolder": "GAMS_SrcTIMES.v4.9.0",
+    "Name": "ref_t5-w2",
+    "ParametricGroup": "all_NGFS",
+    "ParametricGroupId": 178,
+    "PeriodsDefinition": "msy5_2050",
+    "PropertiesGroup": "DefaultProperties",
+    "PropertiesGroupId": 177,
+    "RegionGroup": "AllRegion",
+    "RegionGroupId": 176,
+    "ScenarioGroup": "ref_t5-w2",
+    "ScenarioGroupId": 184,
+    "Solver": "cplex",
+    "SolverOptionFile": "BA121-7",
+    "UserName": "akanu",
+    "ModelFramework": "Times"
+  },
+  {
+    "CaseId": 29,
+    "CreatedOn": "2025-08-03 16:59",
+    "Description": "",
+    "EditedOn": "2025-08-03 16:59",
+    "EndingYear": "2050",
+    "FixResultFileName": "False",
+    "FixResultInfo": {
+      "WorkTimesFolderPath": null,
+      "GdxElasticDermands": {
+        "GdxSelectedFile": {
+          "FileName": "",
+          "FilePath": "",
+          "IsSelected": false
+        },
+        "IsApplied": false
+      },
+      "GdxIre": {
+        "GdxSelectedFile": {
+          "FileName": "",
+          "FilePath": "",
+          "IsSelected": false
+        },
+        "IsApplied": false,
+        "RadioSelection": 1
+      },
+      "GdxUseSolution": {
+        "FixYearsUpto": "",
+        "GdxSelectedFile": {
+          "FileName": "",
+          "FilePath": "",
+          "IsSelected": false
+        },
+        "IsApplied": false,
+        "RadioSelection": 1
+      },
+      "IsApplyFixResult": false
+    },
+    "GAMSSourceFolder": "GAMS_SrcTIMES.v4.9.0",
+    "Name": "ref_w2",
+    "ParametricGroup": "all_NGFS",
+    "ParametricGroupId": 178,
+    "PeriodsDefinition": "msy5_2050",
+    "PropertiesGroup": "DefaultProperties",
+    "PropertiesGroupId": 177,
+    "RegionGroup": "AllRegion",
+    "RegionGroupId": 176,
+    "ScenarioGroup": "ref_w2",
+    "ScenarioGroupId": 183,
+    "Solver": "cplex",
+    "SolverOptionFile": "BA121-7",
+    "UserName": "akanu",
+    "ModelFramework": "Times"
+  }
+]
