@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - CHE
 
-**Generated:** 2025-08-08 12:31:07
+**Generated:** 2025-08-08 13:22:13
 
 ## Processing Parameters
 
@@ -53,16 +53,16 @@
 - **Individual Plant Coverage**: 90.8% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 25.1 GW from all sources
 - **Plants Above Threshold**: 57 individual plants tracked above 100 MW threshold
-- **Total Plants Processed**: 138 plants in database
+- **Total Plants Processed**: 137 plants in database
 - **Technology Mapping**: Automated mapping using VerveStacks technology classifications
 
 ### Missing Capacity Added From:
+- **IRENA data**:
+  - **hydro**: 3.18 GW
+  - **solar**: 4.43 GW
 - **EMBER data**:
   - **gas**: 0.13 GW
   - **bioenergy**: 0.23 GW
-- **IRENA data**:
-  - **solar**: 4.43 GW
-  - **hydro**: 3.18 GW
 
 ## Model Structure
 
