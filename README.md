@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - CHE
 
-**Generated:** 2025-08-01 02:35:21
+**Generated:** 2025-08-08 12:10:25
 
 ## Processing Parameters
 
@@ -9,46 +9,72 @@
 | **Capacity Threshold** | 100 MW | Minimum plant size for individual tracking |
 | **Gas Efficiency Adjustment** | 1.0 | Multiplier applied to gas plant efficiencies |
 | **Coal Efficiency Adjustment** | 1.0 | Multiplier applied to coal plant efficiencies |
-| **Time Slice Option** | ts_336 | Time slice configuration used |
-| **Output Directory** | output | Directory for intermediate files |
 
-## Data Sources & Coverage
+
+## Data, Assumptions & Coverage
 
 ### Primary Data Sources
-- **IRENA**: Renewable energy capacity and generation statistics (2000-2022)
-- **EMBER**: Global electricity generation and capacity data (2000-2022)
-- **Global Energy Monitor (GEM)**: Individual power plant database with technical specifications
-- **NGFS**: Climate scenario projections and carbon pricing trajectories
-- **UNSD**: UN energy statistics and demand projections
-- **World Energy Outlook (WEO)**: Technology cost and performance assumptions
-- **EPA**: Carbon capture and storage retrofit potential
+
+#### Base-Year Power Plant Specifications
+
+- **Global Energy Monitor (GEM)** [🌐](https://globalenergymonitor.org)  
+  Open-access database of individual power plants worldwide, including location, capacity, fuel type, commissioning year, and technical specifications.
+- **International Renewable Energy Agency (IRENA)** [🌐](https://www.irena.org/Statistics)  
+  Global renewable energy capacity and generation statistics (2000–2022), disaggregated by country and technology. Used to calibrate solar, wind and hydro generation.
+- **EMBER Climate** [🌐](https://ember-climate.org/data/)  
+  Global dataset tracking electricity generation, installed capacity, and emissions intensity (2000–2022), often used to benchmark policy impacts and system transitions. Used to calibrate thermal generation.
+- **United Nations Statistics Division (UNSD)** [🌐](https://unstats.un.org/unsd/energy/)  
+  Official national energy statistics, including fuel inputs, electricity generation, and sectoral breakdowns — used to validate historical power plant operations.
+
+#### Power Sector Policies and Pathways
+
+- **Network for Greening the Financial System (NGFS)** [🌐](https://www.ngfs.net)  
+  Scenario-based projections of electricity demand, CO₂ emissions trajectories, and fuel prices — used to model alternative climate policy futures.
+- **EMBER Climate** [🌐](https://ember-climate.org)  
+  Renewable energy targets.
+
+#### New Technologies
+
+- **International Energy Agency – World Energy Outlook (IEA WEO)** [🌐](https://www.iea.org/reports/world-energy-outlook-2023)  
+  Global assumptions for power generation technologies: capital costs, O&M, efficiency, and learning rates — aligned with IEA scenarios.
+- **U.S. National Renewable Energy Laboratory – Annual Technology Baseline (NREL ATB)** [🌐](https://atb.nrel.gov/)  
+  Cost and performance trajectories for renewable and low-carbon power technologies. U.S.-centric, but widely used for international modeling.
+
+#### Technology Assumptions
+
+- **U.S. Environmental Protection Agency (EPA)** [🌐](https://www.epa.gov)  
+  Technical parameters for retrofitting fossil plants with carbon capture and storage (CCS), including energy penalties and incremental costs.
+- **Integrated Planning Model (IPM)** [🌐](https://www.epa.gov/power-sector-modeling/overview-ipm-platform)  
+  U.S.-based modeling platform used to estimate life extension costs, variable O&M, and decommissioning behavior of thermal power plants.
+
+
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 91.9% of total capacity from plant-level GEM data
+- **Individual Plant Coverage**: 90.8% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 25.1 GW from all sources
-- **Plants Above Threshold**: 59 individual plants tracked above 100 MW threshold
-- **Total Plants Processed**: 101 plants in database
+- **Plants Above Threshold**: 57 individual plants tracked above 100 MW threshold
+- **Total Plants Processed**: 138 plants in database
 - **Technology Mapping**: Automated mapping using VerveStacks technology classifications
 
 ### Missing Capacity Added From:
-- **EMBER data**:
-  - **bioenergy**: 0.23 GW
-  - **gas**: 0.13 GW
 - **IRENA data**:
-  - **solar**: 4.43 GW
   - **hydro**: 3.18 GW
+  - **solar**: 4.43 GW
+- **EMBER data**:
+  - **gas**: 0.13 GW
+  - **bioenergy**: 0.23 GW
 
 ## Model Structure
 
 ### Files Included
-- **Source Data**: `source_data/VerveStacks_CHE.xlsx` - Raw data reconciliation between sources
-- **VEDA Model Files**: Complete model ready for TIMES/VEDA execution
-- **Time Series Data**: Renewable energy profiles and demand patterns
+- **Source Data**: `source_data/VerveStacks_CHE.xlsx` - the full dataset in a model-agnostic format, ready for TIMES/VEDA execution
+    # Includes hourly demand and solar/wind resource profiles
+- **VEDA Model Files**: Complete model ready for Veda-TIMES execution
 - **Scenario Files**: NGFS climate scenarios and policy assumptions
 
 ### Key Methodology Points
 - Plant-level data prioritized where available (capacity > 100 MW)
-- 59 plants tracked individually above threshold
+- 57 plants tracked individually above threshold
 - Efficiency adjustments applied for calibration to national statistics
 - Missing capacity filled using technology-specific statistical estimates
 - Regional cost multipliers applied based on country economic indicators
@@ -62,8 +88,8 @@
 ## Usage Notes
 - This model is generated automatically using VerveStacks methodology
 - For questions about specific data sources or methodology, refer to METHODOLOGY_DOCUMENTATION.md
-- Model parameters can be adjusted by re-running with different processing options
+- Model parameters can be adjusted by manually in the model files
 
 ---
 *Generated by VerveStacks Energy Model Processor*
-*For more information: https://github.com/your-repo/VerveStacks*
+*For more information: coming soon*
