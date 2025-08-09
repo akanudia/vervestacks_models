@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - CHE
 
-**Generated:** 2025-08-09 12:35:21
+**Generated:** 2025-08-09 13:23:20
 
 ## Processing Parameters
 
@@ -58,8 +58,8 @@
 
 ### Missing Capacity Added From:
 - **EMBER data**:
-  - **gas**: 0.13 GW
   - **bioenergy**: 0.23 GW
+  - **gas**: 0.13 GW
 - **IRENA data**:
   - **hydro**: 3.18 GW
   - **solar**: 4.43 GW
