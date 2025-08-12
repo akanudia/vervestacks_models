@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - CHE
 
-**Generated:** 2025-08-13 00:58:20
+**Generated:** 2025-08-13 01:22:53
 
 ## Processing Parameters
 
@@ -50,50 +50,51 @@
 
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 89.7% of total capacity from plant-level GEM data
-- **Total Capacity Tracked**: 28.1 GW from all sources
+- **Individual Plant Coverage**: 90.1% of total capacity from plant-level GEM data
+- **Total Capacity Tracked**: 28.4 GW from all sources
 - **Plants Above Threshold**: 89 individual plants tracked above 100 MW threshold
-- **Total Plants Processed**: 206 plants in database
+- **Total Plants Processed**: 204 plants in database
 - **Technology Mapping**: Automated mapping using VerveStacks technology classifications
 
 ### Missing Capacity Added From:
 - **IRENA data**:
-  - **hydro**: 0.22 GW
-  - **solar**: 0.16 GW
-  - **hydro**: 0.42 GW
-  - **hydro**: 0.17 GW
-  - **solar**: 0.14 GW
-  - **solar**: 0.16 GW
-  - **solar**: 0.15 GW
   - **solar**: 0.21 GW
   - **solar**: 0.17 GW
   - **solar**: 0.14 GW
   - **solar**: 0.22 GW
   - **solar**: 0.17 GW
-  - **solar**: 0.16 GW
-  - **solar**: 0.2 GW
-  - **solar**: 0.21 GW
-  - **solar**: 0.19 GW
   - **solar**: 0.17 GW
-  - **hydro**: 0.63 GW
-  - **hydro**: 0.59 GW
+  - **hydro**: 0.26 GW
   - **solar**: 0.18 GW
-  - **hydro**: 0.4 GW
-  - **solar**: 0.15 GW
-  - **solar**: 0.2 GW
-  - **hydro**: 0.29 GW
   - **solar**: 0.19 GW
   - **solar**: 0.17 GW
   - **solar**: 0.17 GW
   - **solar**: 0.16 GW
   - **solar**: 0.2 GW
-  - **hydro**: 0.17 GW
+  - **solar**: 0.21 GW
+  - **hydro**: 1.17 GW
+  - **solar**: 0.19 GW
+  - **hydro**: 0.15 GW
+  - **hydro**: 0.25 GW
+  - **solar**: 0.16 GW
+  - **hydro**: 0.37 GW
+  - **hydro**: 0.35 GW
   - **solar**: 0.15 GW
   - **solar**: 0.21 GW
   - **solar**: 0.2 GW
+  - **solar**: 0.14 GW
+  - **solar**: 0.16 GW
+  - **solar**: 0.15 GW
+  - **solar**: 0.2 GW
+  - **solar**: 0.16 GW
+  - **solar**: 0.15 GW
+  - **solar**: 0.2 GW
+  - **hydro**: 0.2 GW
+  - **hydro**: 0.15 GW
+  - **hydro**: 0.53 GW
 - **EMBER data**:
-  - **gas**: 0.13 GW
   - **bioenergy**: 0.23 GW
+  - **gas**: 0.13 GW
 
 ## Model Structure
 
