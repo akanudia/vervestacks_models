@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - CHE
 
-**Generated:** 2025-08-10 01:23:13
+**Generated:** 2025-08-13 00:52:24
 
 ## Processing Parameters
 
@@ -50,49 +50,50 @@
 
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 84.7% of total capacity from plant-level GEM data
+- **Individual Plant Coverage**: 89.5% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 25.1 GW from all sources
-- **Plants Above Threshold**: 87 individual plants tracked above 100 MW threshold
-- **Total Plants Processed**: 227 plants in database
+- **Plants Above Threshold**: 90 individual plants tracked above 100 MW threshold
+- **Total Plants Processed**: 172 plants in database
 - **Technology Mapping**: Automated mapping using VerveStacks technology classifications
 
 ### Missing Capacity Added From:
 - **IRENA data**:
-  - **solar**: 0.17 GW
-  - **hydro**: 0.13 GW
-  - **solar**: 0.14 GW
-  - **solar**: 0.16 GW
-  - **solar**: 0.15 GW
-  - **hydro**: 0.11 GW
-  - **solar**: 0.15 GW
-  - **solar**: 0.21 GW
-  - **solar**: 0.2 GW
-  - **solar**: 0.16 GW
-  - **solar**: 0.18 GW
-  - **hydro**: 0.24 GW
   - **solar**: 0.21 GW
   - **solar**: 0.17 GW
   - **solar**: 0.14 GW
   - **solar**: 0.22 GW
+  - **solar**: 0.21 GW
+  - **solar**: 0.19 GW
+  - **solar**: 0.17 GW
+  - **hydro**: 0.32 GW
+  - **hydro**: 0.59 GW
+  - **solar**: 0.15 GW
   - **solar**: 0.2 GW
-  - **hydro**: 0.49 GW
+  - **hydro**: 0.29 GW
+  - **solar**: 0.17 GW
+  - **solar**: 0.16 GW
+  - **hydro**: 0.22 GW
+  - **solar**: 0.14 GW
+  - **solar**: 0.16 GW
+  - **solar**: 0.15 GW
+  - **solar**: 0.15 GW
+  - **solar**: 0.21 GW
+  - **solar**: 0.2 GW
   - **solar**: 0.19 GW
   - **solar**: 0.17 GW
   - **solar**: 0.17 GW
   - **solar**: 0.16 GW
   - **solar**: 0.2 GW
   - **hydro**: 0.17 GW
-  - **solar**: 0.16 GW
-  - **hydro**: 0.39 GW
-  - **solar**: 0.21 GW
-  - **solar**: 0.17 GW
-  - **hydro**: 0.13 GW
-  - **solar**: 0.15 GW
   - **solar**: 0.2 GW
-  - **solar**: 0.19 GW
-  - **hydro**: 0.11 GW
+  - **solar**: 0.18 GW
+  - **hydro**: 0.4 GW
+  - **solar**: 0.16 GW
+  - **hydro**: 0.42 GW
+  - **hydro**: 0.17 GW
 - **EMBER data**:
   - **bioenergy**: 0.23 GW
+  - **gas**: 0.13 GW
 
 ## Model Structure
 
@@ -104,22 +105,145 @@
 
 ### Key Methodology Points
 - Plant-level data prioritized where available (capacity > 100 MW)
-- 87 plants tracked individually above threshold
+- 90 plants tracked individually above threshold
 - Efficiency adjustments applied for calibration to national statistics
 - Missing capacity filled using technology-specific statistical estimates
 - Regional cost multipliers applied based on country economic indicators
+
+## Temporal Modeling & Timeslice Analysis
+
+### Advanced Stress Period Identification
+
+This model employs sophisticated **statistical scenario generation** to identify critical periods in high-renewable energy systems:
+
+#### 🔥 **Scarcity Periods** - Renewable Shortage Crisis
+- Days with lowest renewable energy coverage relative to demand
+- Critical for capacity planning and storage requirements
+- Identifies when conventional backup power is most needed
+
+#### ⚡ **Surplus Periods** - Renewable Excess Management  
+- Days with highest renewable generation exceeding demand
+- Essential for curtailment analysis and export/storage strategies
+- Shows opportunities for demand shifting and industrial electrification
+
+#### 🌪️ **Volatile Periods** - Operational Challenges
+- Days with highest generation variability and unpredictability
+- Important for grid stability and flexible resource planning
+- Captures rapid ramping requirements for dispatchable assets
+
+### Renewable Resource Selection
+
+**Balanced Solar/Wind Portfolio Optimization:**
+- Quality-weighted selection based on resource potential and economics
+- Grid cell-level analysis using 50x50km resolution REZoning data
+- Cost-effectiveness scoring (TWh generation per $/MWh LCOE)
+- Technology mix targets derived from historical deployment patterns
+
+**Supply Curve Analysis:**
+- Complete renewable resource landscape visualization
+- Stepped-line supply curves showing cumulative potential vs. cost
+- Integration of wind onshore resource assessments
+- Economic competitiveness ranking for investment prioritization
+
+### Coverage Metrics & Energy Balance
+
+**Clean Generation Coverage:**
+- Hourly coverage calculation: (Clean Generation + Nuclear) / Demand × 100%
+- Range analysis from minimum to maximum coverage throughout the year
+- Net load calculations showing residual demand after clean generation
+- Stress period selection based on coverage distribution statistics
+
+### Timeslice Structure Generation
+
+**Multi-Scale Temporal Resolution:**
+- **Base Aggregation**: 6 seasons × 8 daily periods = 48 base timeslices
+- **Critical Period Enhancement**: Additional segments for identified stress periods
+- **Statistical Methods**: Triple-1, Triple-5, and Weekly Stress approaches
+- **VEDA Integration**: Complete tsdesign.csv with TIMES-compatible mappings
+
+## Timeslice Analysis Visualizations
+
+The following charts provide insights into the temporal characteristics of this energy system:
+
+
+### Critical Period Analysis Results
+
+**Analysis Status:** Timeslice analysis completed for CHE
+
+
+#### 🔥 **Detailed Stress Analysis Results:**
+
+**🎯 Triple-1 Critical Days (Most Important 3 Days):**
+- 🔴 Scarcity: 04-19 (S01)
+- 🔴 Scarcity: 02-05 (S01)
+- 🟡 Volatile: 03-12 (V01)
+
+**🎯 Triple-5 Extended Analysis (15 Critical Days):**
+*Scarcity Days (Low Coverage):*
+  - 04-19 (S01)
+  - 04-27 (S02)
+  - 04-29 (S03)
+  - 04-21 (S04)
+  - 04-22 (S05)
+*Volatile Days (High Variability):*
+  - 03-12 (V01)
+  - 09-16 (V02)
+  - 03-20 (V03)
+  - 10-05 (V04)
+  - 03-21 (V05)
+
+**🌨️ Weekly Sustained Stress Analysis:**
+- Week W01: 03-26 to 04-01 (7 days)
+- Week W02: 04-02 to 04-08 (7 days)
+
+#### 📊 **Generated Analysis Files:**
+- `segment_summary_CHE.csv` - Statistical summary of all identified critical periods
+- `timeslices_CHE_triple_1.csv` - Triple-1 critical periods (3 days: 1 scarcity + 1 surplus + 1 volatile)
+- `timeslices_CHE_triple_5.csv` - Triple-5 critical periods (15 days: 5 scarcity + 5 surplus + 5 volatile)
+- `timeslices_CHE_weekly_stress.csv` - Weekly stress periods (2 worst weeks for sustained stress)
+- `tsdesign_CHE.csv` - Complete VEDA timeslice structure with temporal mappings
+
+**Stress Period Methodology:**
+- **Scarcity Periods**: Days with lowest renewable coverage (highest need for backup power)
+- **Surplus Periods**: Days with highest renewable coverage (maximum curtailment potential)  
+- **Volatile Periods**: Days with highest generation variability (grid stability challenges)
+- **Weekly Stress**: Sustained periods of low renewable coverage (energy security focus)
+
+**Coverage Analysis**: Clean generation (renewables + nuclear) as percentage of hourly demand
+- Enables identification of critical periods for capacity planning
+- Supports renewable integration and storage requirement analysis
+- Provides input for grid flexibility and backup power assessment
+
+### Generated Analysis Charts
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+![aggregation_justification_CHE.png](source_data/aggregation_justification_CHE.png)
+
+#### **Critical Days Analysis (Triple-5)** - Detailed view of 15 critical days: 5 scarcity + 5 surplus + 5 volatile periods
+![plan2_triple5_critical_days_CHE.png](source_data/plan2_triple5_critical_days_CHE.png)
+
+#### **Weekly Stress Analysis** - Sustained stress periods showing 2 worst weeks for renewable coverage
+![plan3_weekly_stress_CHE.png](source_data/plan3_weekly_stress_CHE.png)
+
+#### **Re Analysis Summary Che** - Timeslice analysis visualization
+![re_analysis_summary_CHE.png](source_data/re_analysis_summary_CHE.png)
+
 
 ## Quality Assurance
 - Cross-validation between IRENA, EMBER, and UNSD statistics
 - Capacity-generation consistency checks
 - Technology classification verification
 - Historical data reconciliation for base year (2022)
+- Renewable resource potential validated against REZoning database
+- Temporal analysis verified through statistical scenario methods
 
 ## Usage Notes
 - This model is generated automatically using VerveStacks methodology
+- Timeslice structure is optimized for high-renewable energy system analysis
 - For questions about specific data sources or methodology, refer to METHODOLOGY_DOCUMENTATION.md
-- Model parameters can be adjusted by manually in the model files
+- Model parameters can be adjusted manually in the model files
+- Charts and analysis files are located in `2_ts_design/outputs/{input_iso}/`
 
 ---
-*Generated by VerveStacks Energy Model Processor*
+*Generated by VerveStacks Energy Model Processor with Advanced Timeslice Analysis*
 *For more information: coming soon*
