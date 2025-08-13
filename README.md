@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - CHE
 
-**Generated:** 2025-08-14 01:04:39
+**Generated:** 2025-08-14 01:24:11
 
 ## Processing Parameters
 
@@ -58,39 +58,39 @@
 
 ### Missing Capacity Added From:
 - **IRENA data**:
-  - **solar**: 0.17 GW
-  - **hydro**: 0.19 GW
+  - **solar**: 0.16 GW
   - **solar**: 0.2 GW
-  - **solar**: 0.15 GW
-  - **solar**: 0.17 GW
-  - **solar**: 0.14 GW
-  - **hydro**: 0.31 GW
+  - **solar**: 0.19 GW
   - **hydro**: 0.12 GW
-  - **solar**: 0.2 GW
   - **solar**: 0.14 GW
+  - **solar**: 0.16 GW
   - **solar**: 0.15 GW
   - **solar**: 0.15 GW
-  - **hydro**: 0.37 GW
-  - **solar**: 0.21 GW
-  - **solar**: 0.22 GW
   - **solar**: 0.2 GW
+  - **solar**: 0.17 GW
+  - **solar**: 0.21 GW
+  - **solar**: 0.19 GW
+  - **solar**: 0.17 GW
+  - **solar**: 0.17 GW
   - **solar**: 0.16 GW
   - **solar**: 0.19 GW
-  - **solar**: 0.19 GW
+  - **solar**: 0.15 GW
+  - **solar**: 0.21 GW
+  - **solar**: 0.2 GW
+  - **hydro**: 0.37 GW
+  - **solar**: 0.15 GW
+  - **hydro**: 0.31 GW
+  - **solar**: 0.21 GW
+  - **solar**: 0.17 GW
+  - **solar**: 0.14 GW
+  - **solar**: 0.22 GW
+  - **hydro**: 0.19 GW
+  - **hydro**: 0.11 GW
   - **solar**: 0.18 GW
   - **solar**: 0.16 GW
-  - **solar**: 0.16 GW
-  - **solar**: 0.19 GW
-  - **solar**: 0.17 GW
-  - **solar**: 0.21 GW
-  - **solar**: 0.21 GW
-  - **solar**: 0.17 GW
-  - **solar**: 0.15 GW
-  - **solar**: 0.16 GW
-  - **hydro**: 0.11 GW
 - **EMBER data**:
-  - **bioenergy**: 0.23 GW
   - **gas**: 0.13 GW
+  - **bioenergy**: 0.23 GW
 
 ## Model Structure
 
