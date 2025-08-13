@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - BGR
 
-**Generated:** 2025-08-13 09:59:43
+**Generated:** 2025-08-13 10:09:47
 
 ## Processing Parameters
 
@@ -180,19 +180,37 @@ The following charts provide insights into the temporal characteristics of this 
 - Supports renewable integration and storage requirement analysis
 - Provides input for grid flexibility and backup power assessment
 
-### Generated Analysis Charts
+### 📊 Generated Analysis Charts
+
+*Interactive visualizations from the timeslice analysis process. Click any chart to view full resolution.*
 
 #### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-![aggregation_justification_BGR.png](source_data/aggregation_justification_BGR.png)
+<a href="VerveStacks_BGR/source_data/aggregation_justification_BGR.png" target="_blank">
+  <img src="VerveStacks_BGR/source_data/aggregation_justification_BGR.png" alt="aggregation_justification_BGR.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
 
 #### **Critical Days Analysis (Triple-5)** - Detailed view of 15 critical days: 5 scarcity + 5 surplus + 5 volatile periods
-![plan2_triple5_critical_days_BGR.png](source_data/plan2_triple5_critical_days_BGR.png)
+<a href="VerveStacks_BGR/source_data/plan2_triple5_critical_days_BGR.png" target="_blank">
+  <img src="VerveStacks_BGR/source_data/plan2_triple5_critical_days_BGR.png" alt="plan2_triple5_critical_days_BGR.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
 
 #### **Weekly Stress Analysis** - Sustained stress periods showing 2 worst weeks for renewable coverage
-![plan3_weekly_stress_BGR.png](source_data/plan3_weekly_stress_BGR.png)
+<a href="VerveStacks_BGR/source_data/plan3_weekly_stress_BGR.png" target="_blank">
+  <img src="VerveStacks_BGR/source_data/plan3_weekly_stress_BGR.png" alt="plan3_weekly_stress_BGR.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
 
 #### **Re Analysis Summary Bgr** - Timeslice analysis visualization
-![re_analysis_summary_BGR.png](source_data/re_analysis_summary_BGR.png)
+<a href="VerveStacks_BGR/source_data/re_analysis_summary_BGR.png" target="_blank">
+  <img src="VerveStacks_BGR/source_data/re_analysis_summary_BGR.png" alt="re_analysis_summary_BGR.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
 
 
 ## Quality Assurance
