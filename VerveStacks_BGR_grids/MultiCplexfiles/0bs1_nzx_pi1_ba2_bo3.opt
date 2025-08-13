@@ -1,0 +1,14 @@
+advind 0
+rerun yes
+THREADS=6
+iis 1
+lpmethod 4
+names no
+barcrossalg 2
+predual -1
+***
+scaind 1
+*barcolnz
+ppriind  1
+baralg 2
+barorder 3
