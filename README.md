@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - CHE
 
-**Generated:** 2025-08-13 09:13:21
+**Generated:** 2025-08-13 13:19:58
 
 ## Processing Parameters
 
@@ -58,36 +58,36 @@
 
 ### Missing Capacity Added From:
 - **IRENA data**:
+  - **hydro**: 0.25 GW
+  - **solar**: 0.2 GW
   - **solar**: 0.21 GW
   - **hydro**: 0.31 GW
+  - **solar**: 0.18 GW
+  - **solar**: 0.15 GW
   - **solar**: 0.2 GW
   - **solar**: 0.16 GW
-  - **hydro**: 0.25 GW
-  - **solar**: 0.13 GW
-  - **solar**: 0.16 GW
-  - **solar**: 0.15 GW
-  - **solar**: 0.19 GW
   - **solar**: 0.15 GW
   - **hydro**: 0.18 GW
   - **hydro**: 0.17 GW
-  - **solar**: 0.15 GW
-  - **solar**: 0.21 GW
-  - **solar**: 0.2 GW
-  - **solar**: 0.15 GW
-  - **solar**: 0.2 GW
-  - **solar**: 0.16 GW
-  - **hydro**: 0.12 GW
+  - **solar**: 0.19 GW
   - **solar**: 0.21 GW
   - **solar**: 0.16 GW
   - **solar**: 0.14 GW
   - **solar**: 0.21 GW
   - **solar**: 0.17 GW
+  - **solar**: 0.15 GW
+  - **solar**: 0.21 GW
+  - **solar**: 0.2 GW
   - **solar**: 0.19 GW
   - **solar**: 0.17 GW
   - **solar**: 0.17 GW
   - **solar**: 0.16 GW
   - **solar**: 0.19 GW
-  - **solar**: 0.18 GW
+  - **solar**: 0.13 GW
+  - **solar**: 0.16 GW
+  - **solar**: 0.15 GW
+  - **solar**: 0.16 GW
+  - **hydro**: 0.12 GW
 - **EMBER data**:
   - **gas**: 0.13 GW
   - **bioenergy**: 0.23 GW
@@ -211,19 +211,37 @@ The following charts provide insights into the temporal characteristics of this 
 - Supports renewable integration and storage requirement analysis
 - Provides input for grid flexibility and backup power assessment
 
-### Generated Analysis Charts
+### 📊 Generated Analysis Charts
+
+*Interactive visualizations from the timeslice analysis process. Click any chart to view full resolution.*
 
 #### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-![aggregation_justification_CHE.png](source_data/aggregation_justification_CHE.png)
+<a href="VerveStacks_CHE_grids/source_data/aggregation_justification_CHE.png" target="_blank">
+  <img src="VerveStacks_CHE_grids/source_data/aggregation_justification_CHE.png" alt="aggregation_justification_CHE.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
 
 #### **Critical Days Analysis (Triple-5)** - Detailed view of 15 critical days: 5 scarcity + 5 surplus + 5 volatile periods
-![plan2_triple5_critical_days_CHE.png](source_data/plan2_triple5_critical_days_CHE.png)
+<a href="VerveStacks_CHE_grids/source_data/plan2_triple5_critical_days_CHE.png" target="_blank">
+  <img src="VerveStacks_CHE_grids/source_data/plan2_triple5_critical_days_CHE.png" alt="plan2_triple5_critical_days_CHE.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
 
 #### **Weekly Stress Analysis** - Sustained stress periods showing 2 worst weeks for renewable coverage
-![plan3_weekly_stress_CHE.png](source_data/plan3_weekly_stress_CHE.png)
+<a href="VerveStacks_CHE_grids/source_data/plan3_weekly_stress_CHE.png" target="_blank">
+  <img src="VerveStacks_CHE_grids/source_data/plan3_weekly_stress_CHE.png" alt="plan3_weekly_stress_CHE.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
 
 #### **Re Analysis Summary Che** - Timeslice analysis visualization
-![re_analysis_summary_CHE.png](source_data/re_analysis_summary_CHE.png)
+<a href="VerveStacks_CHE_grids/source_data/re_analysis_summary_CHE.png" target="_blank">
+  <img src="VerveStacks_CHE_grids/source_data/re_analysis_summary_CHE.png" alt="re_analysis_summary_CHE.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
 
 
 ## Quality Assurance
