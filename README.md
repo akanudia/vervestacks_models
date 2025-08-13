@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - BGR
 
-**Generated:** 2025-08-13 10:34:05
+**Generated:** 2025-08-13 10:36:43
 
 ## Processing Parameters
 
@@ -183,6 +183,15 @@ The following charts provide insights into the temporal characteristics of this 
 ### 📊 Generated Analysis Charts
 
 *Interactive visualizations from the timeslice analysis process. Click any chart to view full resolution.*
+
+
+#### 📅 **Interactive Timeslice Calendar** - Visual overview of all critical periods throughout the year
+<a href="VerveStacks_BGR/source_data/timeslice_calendar_BGR.html" target="_blank">
+  <img src="https://via.placeholder.com/600x400/667eea/ffffff?text=📅+Interactive+Calendar+Visualization+📅" alt="Interactive Calendar" width="600" style="border: 2px solid #667eea; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click to open interactive calendar showing scarcity (🔥), surplus (⚡), volatile (🌪️), and weekly stress (📅) periods*
+
 
 #### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
 <a href="VerveStacks_BGR/source_data/aggregation_justification_BGR.png" target="_blank">
