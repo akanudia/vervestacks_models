@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - CHE
 
-**Generated:** 2025-08-14 01:24:11
+**Generated:** 2025-08-14 02:04:46
 
 ## Processing Parameters
 
@@ -50,47 +50,19 @@
 
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 85.0% of total capacity from plant-level GEM data
-- **Total Capacity Tracked**: 27.7 GW from all sources
-- **Plants Above Threshold**: 85 individual plants tracked above 100 MW threshold
-- **Total Plants Processed**: 215 plants in database
+- **Individual Plant Coverage**: 91.9% of total capacity from plant-level GEM data
+- **Total Capacity Tracked**: 25.1 GW from all sources
+- **Plants Above Threshold**: 59 individual plants tracked above 100 MW threshold
+- **Total Plants Processed**: 101 plants in database
 - **Technology Mapping**: Automated mapping using VerveStacks technology classifications
 
 ### Missing Capacity Added From:
 - **IRENA data**:
-  - **solar**: 0.16 GW
-  - **solar**: 0.2 GW
-  - **solar**: 0.19 GW
-  - **hydro**: 0.12 GW
-  - **solar**: 0.14 GW
-  - **solar**: 0.16 GW
-  - **solar**: 0.15 GW
-  - **solar**: 0.15 GW
-  - **solar**: 0.2 GW
-  - **solar**: 0.17 GW
-  - **solar**: 0.21 GW
-  - **solar**: 0.19 GW
-  - **solar**: 0.17 GW
-  - **solar**: 0.17 GW
-  - **solar**: 0.16 GW
-  - **solar**: 0.19 GW
-  - **solar**: 0.15 GW
-  - **solar**: 0.21 GW
-  - **solar**: 0.2 GW
-  - **hydro**: 0.37 GW
-  - **solar**: 0.15 GW
-  - **hydro**: 0.31 GW
-  - **solar**: 0.21 GW
-  - **solar**: 0.17 GW
-  - **solar**: 0.14 GW
-  - **solar**: 0.22 GW
-  - **hydro**: 0.19 GW
-  - **hydro**: 0.11 GW
-  - **solar**: 0.18 GW
-  - **solar**: 0.16 GW
+  - **hydro**: 3.18 GW
+  - **solar**: 4.43 GW
 - **EMBER data**:
-  - **gas**: 0.13 GW
   - **bioenergy**: 0.23 GW
+  - **gas**: 0.13 GW
 
 ## Model Structure
 
@@ -102,7 +74,7 @@
 
 ### Key Methodology Points
 - Plant-level data prioritized where available (capacity > 100 MW)
-- 85 plants tracked individually above threshold
+- 59 plants tracked individually above threshold
 - Efficiency adjustments applied for calibration to national statistics
 - Missing capacity filled using technology-specific statistical estimates
 - Regional cost multipliers applied based on country economic indicators
@@ -228,29 +200,29 @@ The following charts provide insights into the temporal characteristics of this 
 
 
 #### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_CHE_grids/source_data/aggregation_justification_CHE.png" target="_blank">
-  <img src="VerveStacks_CHE_grids/source_data/aggregation_justification_CHE.png" alt="aggregation_justification_CHE.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+<a href="VerveStacks_CHE/source_data/aggregation_justification_CHE.png" target="_blank">
+  <img src="VerveStacks_CHE/source_data/aggregation_justification_CHE.png" alt="aggregation_justification_CHE.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
 
 #### **Critical Days Analysis (Triple-5)** - Detailed view of 15 critical days: 5 scarcity + 5 surplus + 5 volatile periods
-<a href="VerveStacks_CHE_grids/source_data/plan2_triple5_critical_days_CHE.png" target="_blank">
-  <img src="VerveStacks_CHE_grids/source_data/plan2_triple5_critical_days_CHE.png" alt="plan2_triple5_critical_days_CHE.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+<a href="VerveStacks_CHE/source_data/plan2_triple5_critical_days_CHE.png" target="_blank">
+  <img src="VerveStacks_CHE/source_data/plan2_triple5_critical_days_CHE.png" alt="plan2_triple5_critical_days_CHE.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
 
 #### **Weekly Stress Analysis** - Sustained stress periods showing 2 worst weeks for renewable coverage
-<a href="VerveStacks_CHE_grids/source_data/plan3_weekly_stress_CHE.png" target="_blank">
-  <img src="VerveStacks_CHE_grids/source_data/plan3_weekly_stress_CHE.png" alt="plan3_weekly_stress_CHE.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+<a href="VerveStacks_CHE/source_data/plan3_weekly_stress_CHE.png" target="_blank">
+  <img src="VerveStacks_CHE/source_data/plan3_weekly_stress_CHE.png" alt="plan3_weekly_stress_CHE.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
 
 #### **Renewable Supply Curves** - Cost-ordered renewable resource potential showing solar and wind capacity vs. LCOE
-<a href="VerveStacks_CHE_grids/source_data/supply_curves_CHE.png" target="_blank">
-  <img src="VerveStacks_CHE_grids/source_data/supply_curves_CHE.png" alt="supply_curves_CHE.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+<a href="VerveStacks_CHE/source_data/supply_curves_CHE.png" target="_blank">
+  <img src="VerveStacks_CHE/source_data/supply_curves_CHE.png" alt="supply_curves_CHE.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
