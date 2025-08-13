@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - BGR
 
-**Generated:** 2025-08-08 16:00:41
+**Generated:** 2025-08-13 09:17:52
 
 ## Processing Parameters
 
@@ -58,8 +58,8 @@
 
 ### Missing Capacity Added From:
 - **IRENA data**:
-  - **solar**: 0.17 GW
   - **hydro**: 0.77 GW
+  - **solar**: 0.17 GW
 
 ## Model Structure
 
@@ -76,17 +76,140 @@
 - Missing capacity filled using technology-specific statistical estimates
 - Regional cost multipliers applied based on country economic indicators
 
+## Temporal Modeling & Timeslice Analysis
+
+### Advanced Stress Period Identification
+
+This model employs sophisticated **statistical scenario generation** to identify critical periods in high-renewable energy systems:
+
+#### 🔥 **Scarcity Periods** - Renewable Shortage Crisis
+- Days with lowest renewable energy coverage relative to demand
+- Critical for capacity planning and storage requirements
+- Identifies when conventional backup power is most needed
+
+#### ⚡ **Surplus Periods** - Renewable Excess Management  
+- Days with highest renewable generation exceeding demand
+- Essential for curtailment analysis and export/storage strategies
+- Shows opportunities for demand shifting and industrial electrification
+
+#### 🌪️ **Volatile Periods** - Operational Challenges
+- Days with highest generation variability and unpredictability
+- Important for grid stability and flexible resource planning
+- Captures rapid ramping requirements for dispatchable assets
+
+### Renewable Resource Selection
+
+**Balanced Solar/Wind Portfolio Optimization:**
+- Quality-weighted selection based on resource potential and economics
+- Grid cell-level analysis using 50x50km resolution REZoning data
+- Cost-effectiveness scoring (TWh generation per $/MWh LCOE)
+- Technology mix targets derived from historical deployment patterns
+
+**Supply Curve Analysis:**
+- Complete renewable resource landscape visualization
+- Stepped-line supply curves showing cumulative potential vs. cost
+- Integration of wind onshore resource assessments
+- Economic competitiveness ranking for investment prioritization
+
+### Coverage Metrics & Energy Balance
+
+**Clean Generation Coverage:**
+- Hourly coverage calculation: (Clean Generation + Nuclear) / Demand × 100%
+- Range analysis from minimum to maximum coverage throughout the year
+- Net load calculations showing residual demand after clean generation
+- Stress period selection based on coverage distribution statistics
+
+### Timeslice Structure Generation
+
+**Multi-Scale Temporal Resolution:**
+- **Base Aggregation**: 6 seasons × 8 daily periods = 48 base timeslices
+- **Critical Period Enhancement**: Additional segments for identified stress periods
+- **Statistical Methods**: Triple-1, Triple-5, and Weekly Stress approaches
+- **VEDA Integration**: Complete tsdesign.csv with TIMES-compatible mappings
+
+## Timeslice Analysis Visualizations
+
+The following charts provide insights into the temporal characteristics of this energy system:
+
+
+### Critical Period Analysis Results
+
+**Analysis Status:** Timeslice analysis completed for BGR
+
+
+#### 🔥 **Detailed Stress Analysis Results:**
+
+**🎯 Triple-1 Critical Days (Most Important 3 Days):**
+- 🔴 Scarcity: 11-27 (S01)
+- 🔴 Scarcity: 03-22 (S01)
+- 🟡 Volatile: 10-16 (V01)
+
+**🎯 Triple-5 Extended Analysis (15 Critical Days):**
+*Scarcity Days (Low Coverage):*
+  - 11-27 (S01)
+  - 11-06 (S02)
+  - 09-16 (S03)
+  - 10-02 (S04)
+  - 11-26 (S05)
+*Volatile Days (High Variability):*
+  - 10-16 (V01)
+  - 02-02 (V02)
+  - 03-07 (V03)
+  - 05-22 (V04)
+  - 03-30 (V05)
+
+**🌨️ Weekly Sustained Stress Analysis:**
+- Week W01: 11-12 to 11-18 (7 days)
+- Week W02: 01-08 to 01-14 (7 days)
+
+#### 📊 **Generated Analysis Files:**
+- `segment_summary_BGR.csv` - Statistical summary of all identified critical periods
+- `timeslices_BGR_triple_1.csv` - Triple-1 critical periods (3 days: 1 scarcity + 1 surplus + 1 volatile)
+- `timeslices_BGR_triple_5.csv` - Triple-5 critical periods (15 days: 5 scarcity + 5 surplus + 5 volatile)
+- `timeslices_BGR_weekly_stress.csv` - Weekly stress periods (2 worst weeks for sustained stress)
+- `tsdesign_BGR.csv` - Complete VEDA timeslice structure with temporal mappings
+
+**Stress Period Methodology:**
+- **Scarcity Periods**: Days with lowest renewable coverage (highest need for backup power)
+- **Surplus Periods**: Days with highest renewable coverage (maximum curtailment potential)  
+- **Volatile Periods**: Days with highest generation variability (grid stability challenges)
+- **Weekly Stress**: Sustained periods of low renewable coverage (energy security focus)
+
+**Coverage Analysis**: Clean generation (renewables + nuclear) as percentage of hourly demand
+- Enables identification of critical periods for capacity planning
+- Supports renewable integration and storage requirement analysis
+- Provides input for grid flexibility and backup power assessment
+
+### Generated Analysis Charts
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+![aggregation_justification_BGR.png](source_data/aggregation_justification_BGR.png)
+
+#### **Critical Days Analysis (Triple-5)** - Detailed view of 15 critical days: 5 scarcity + 5 surplus + 5 volatile periods
+![plan2_triple5_critical_days_BGR.png](source_data/plan2_triple5_critical_days_BGR.png)
+
+#### **Weekly Stress Analysis** - Sustained stress periods showing 2 worst weeks for renewable coverage
+![plan3_weekly_stress_BGR.png](source_data/plan3_weekly_stress_BGR.png)
+
+#### **Re Analysis Summary Bgr** - Timeslice analysis visualization
+![re_analysis_summary_BGR.png](source_data/re_analysis_summary_BGR.png)
+
+
 ## Quality Assurance
 - Cross-validation between IRENA, EMBER, and UNSD statistics
 - Capacity-generation consistency checks
 - Technology classification verification
 - Historical data reconciliation for base year (2022)
+- Renewable resource potential validated against REZoning database
+- Temporal analysis verified through statistical scenario methods
 
 ## Usage Notes
 - This model is generated automatically using VerveStacks methodology
+- Timeslice structure is optimized for high-renewable energy system analysis
 - For questions about specific data sources or methodology, refer to METHODOLOGY_DOCUMENTATION.md
-- Model parameters can be adjusted by manually in the model files
+- Model parameters can be adjusted manually in the model files
+- Charts and analysis files are located in `2_ts_design/outputs/{input_iso}/`
 
 ---
-*Generated by VerveStacks Energy Model Processor*
+*Generated by VerveStacks Energy Model Processor with Advanced Timeslice Analysis*
 *For more information: coming soon*
