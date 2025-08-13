@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - CHE
 
-**Generated:** 2025-08-13 13:43:35
+**Generated:** 2025-08-13 17:03:25
 
 ## Processing Parameters
 
@@ -58,39 +58,39 @@
 
 ### Missing Capacity Added From:
 - **IRENA data**:
+  - **solar**: 0.15 GW
+  - **hydro**: 0.18 GW
+  - **hydro**: 0.17 GW
+  - **solar**: 0.17 GW
+  - **solar**: 0.16 GW
+  - **hydro**: 0.12 GW
+  - **solar**: 0.16 GW
+  - **solar**: 0.15 GW
+  - **solar**: 0.2 GW
   - **solar**: 0.19 GW
+  - **solar**: 0.21 GW
+  - **hydro**: 0.31 GW
+  - **solar**: 0.15 GW
+  - **solar**: 0.21 GW
+  - **solar**: 0.2 GW
+  - **hydro**: 0.25 GW
+  - **solar**: 0.13 GW
+  - **solar**: 0.16 GW
+  - **solar**: 0.15 GW
   - **solar**: 0.21 GW
   - **solar**: 0.16 GW
   - **solar**: 0.14 GW
   - **solar**: 0.21 GW
-  - **solar**: 0.15 GW
-  - **solar**: 0.21 GW
   - **solar**: 0.2 GW
-  - **solar**: 0.15 GW
-  - **hydro**: 0.18 GW
-  - **hydro**: 0.17 GW
-  - **solar**: 0.2 GW
-  - **solar**: 0.21 GW
-  - **hydro**: 0.31 GW
+  - **solar**: 0.19 GW
+  - **solar**: 0.17 GW
+  - **solar**: 0.17 GW
+  - **solar**: 0.16 GW
+  - **solar**: 0.19 GW
   - **solar**: 0.18 GW
-  - **solar**: 0.16 GW
-  - **solar**: 0.16 GW
-  - **hydro**: 0.12 GW
-  - **solar**: 0.17 GW
-  - **solar**: 0.13 GW
-  - **solar**: 0.16 GW
-  - **solar**: 0.15 GW
-  - **solar**: 0.15 GW
-  - **solar**: 0.2 GW
-  - **hydro**: 0.25 GW
-  - **solar**: 0.19 GW
-  - **solar**: 0.17 GW
-  - **solar**: 0.17 GW
-  - **solar**: 0.16 GW
-  - **solar**: 0.19 GW
 - **EMBER data**:
-  - **gas**: 0.13 GW
   - **bioenergy**: 0.23 GW
+  - **gas**: 0.13 GW
 
 ## Model Structure
 
@@ -171,27 +171,27 @@ The following charts provide insights into the temporal characteristics of this 
 #### 🔥 **Detailed Stress Analysis Results:**
 
 **🎯 Triple-1 Critical Days (Most Important 3 Days):**
-- 🔴 Scarcity: 04-19 (S01)
+- 🔴 Scarcity: 04-27 (S01)
 - 🔴 Scarcity: 02-05 (S01)
-- 🟡 Volatile: 03-12 (V01)
+- 🟡 Volatile: 04-15 (V01)
 
 **🎯 Triple-5 Extended Analysis (15 Critical Days):**
 *Scarcity Days (Low Coverage):*
-  - 04-19 (S01)
-  - 04-27 (S02)
-  - 04-29 (S03)
-  - 04-21 (S04)
-  - 04-22 (S05)
+  - 04-27 (S01)
+  - 04-29 (S02)
+  - 10-20 (S03)
+  - 10-23 (S04)
+  - 04-21 (S05)
 *Volatile Days (High Variability):*
-  - 03-12 (V01)
-  - 09-16 (V02)
-  - 03-20 (V03)
-  - 10-05 (V04)
-  - 03-21 (V05)
+  - 04-15 (V01)
+  - 10-19 (V02)
+  - 05-18 (V03)
+  - 04-16 (V04)
+  - 05-31 (V05)
 
 **🌨️ Weekly Sustained Stress Analysis:**
-- Week W01: 03-26 to 04-01 (7 days)
-- Week W02: 04-02 to 04-08 (7 days)
+- Week W01: 04-23 to 04-29 (7 days)
+- Week W02: 10-01 to 10-07 (7 days)
 
 #### 📊 **Generated Analysis Files:**
 - `segment_summary_CHE.csv` - Statistical summary of all identified critical periods
@@ -248,9 +248,9 @@ The following charts provide insights into the temporal characteristics of this 
 
 *Click image to view full size*
 
-#### **Re Analysis Summary Che** - Timeslice analysis visualization
-<a href="VerveStacks_CHE_grids/source_data/re_analysis_summary_CHE.png" target="_blank">
-  <img src="VerveStacks_CHE_grids/source_data/re_analysis_summary_CHE.png" alt="re_analysis_summary_CHE.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+#### **Renewable Supply Curves** - Cost-ordered renewable resource potential showing solar and wind capacity vs. LCOE
+<a href="VerveStacks_CHE_grids/source_data/supply_curves_CHE.png" target="_blank">
+  <img src="VerveStacks_CHE_grids/source_data/supply_curves_CHE.png" alt="supply_curves_CHE.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
