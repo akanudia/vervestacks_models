@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - CHE
 
-**Generated:** 2025-08-13 13:19:58
+**Generated:** 2025-08-13 13:29:35
 
 ## Processing Parameters
 
@@ -58,36 +58,36 @@
 
 ### Missing Capacity Added From:
 - **IRENA data**:
-  - **hydro**: 0.25 GW
-  - **solar**: 0.2 GW
   - **solar**: 0.21 GW
   - **hydro**: 0.31 GW
-  - **solar**: 0.18 GW
-  - **solar**: 0.15 GW
-  - **solar**: 0.2 GW
-  - **solar**: 0.16 GW
   - **solar**: 0.15 GW
   - **hydro**: 0.18 GW
   - **hydro**: 0.17 GW
-  - **solar**: 0.19 GW
+  - **solar**: 0.13 GW
+  - **solar**: 0.16 GW
+  - **solar**: 0.15 GW
   - **solar**: 0.21 GW
   - **solar**: 0.16 GW
   - **solar**: 0.14 GW
   - **solar**: 0.21 GW
-  - **solar**: 0.17 GW
   - **solar**: 0.15 GW
   - **solar**: 0.21 GW
   - **solar**: 0.2 GW
-  - **solar**: 0.19 GW
-  - **solar**: 0.17 GW
-  - **solar**: 0.17 GW
-  - **solar**: 0.16 GW
-  - **solar**: 0.19 GW
-  - **solar**: 0.13 GW
-  - **solar**: 0.16 GW
-  - **solar**: 0.15 GW
   - **solar**: 0.16 GW
   - **hydro**: 0.12 GW
+  - **hydro**: 0.25 GW
+  - **solar**: 0.19 GW
+  - **solar**: 0.17 GW
+  - **solar**: 0.17 GW
+  - **solar**: 0.16 GW
+  - **solar**: 0.19 GW
+  - **solar**: 0.19 GW
+  - **solar**: 0.2 GW
+  - **solar**: 0.16 GW
+  - **solar**: 0.18 GW
+  - **solar**: 0.15 GW
+  - **solar**: 0.2 GW
+  - **solar**: 0.17 GW
 - **EMBER data**:
   - **gas**: 0.13 GW
   - **bioenergy**: 0.23 GW
@@ -214,6 +214,18 @@ The following charts provide insights into the temporal characteristics of this 
 ### 📊 Generated Analysis Charts
 
 *Interactive visualizations from the timeslice analysis process. Click any chart to view full resolution.*
+
+
+#### 📅 **Interactive Timeslice Calendar** - Visual overview of all critical periods throughout the year
+
+<div align="center">
+  <img src="VerveStacks_CHE/source_data/timeslice_calendar_CHE.svg" alt="Timeslice Calendar - CHE" width="800" />
+</div>
+
+📱 **Interactive Version**: [Open full interactive calendar](VerveStacks_CHE/source_data/timeslice_calendar_CHE.html) (local viewing)
+
+*Calendar shows critical periods: Scarcity 🔥, Surplus ⚡, Volatile 🌪️, and Weekly Stress 📅*
+
 
 #### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
 <a href="VerveStacks_CHE_grids/source_data/aggregation_justification_CHE.png" target="_blank">
