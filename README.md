@@ -1,14 +1,14 @@
 # VerveStacks Model Generation Notes - CHE
 
-**Generated:** 2025-08-15 01:16:07
+**Generated:** 2025-08-15 01:22:45
 
 ## Processing Parameters
 
 | Parameter | Value | Description |
 |-----------|-------|-------------|
-| **Capacity Threshold** | 100 MW | Minimum plant size for individual tracking |
-| **Gas Efficiency Adjustment** | 1.0 | Multiplier applied to gas plant efficiencies |
-| **Coal Efficiency Adjustment** | 1.0 | Multiplier applied to coal plant efficiencies |
+| **Capacity Threshold** | Not specified MW | Minimum plant size for individual tracking |
+| **Gas Efficiency Adjustment** | Not specified | Multiplier applied to gas plant efficiencies |
+| **Coal Efficiency Adjustment** | Not specified | Multiplier applied to coal plant efficiencies |
 
 
 ## Data, Assumptions & Coverage
@@ -50,18 +50,14 @@
 
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 83.1% of total capacity from plant-level GEM data
-- **Total Capacity Tracked**: 25.1 GW from all sources
-- **Plants Above Threshold**: 84 individual plants tracked above 100 MW threshold
-- **Total Plants Processed**: 244 plants in database
+- **Individual Plant Coverage**: TBD of total capacity from plant-level GEM data
+- **Total Capacity Tracked**: TBD from all sources
+- **Plants Above Threshold**: TBD individual plants tracked above N/A MW threshold
+- **Total Plants Processed**: TBD plants in database
 - **Technology Mapping**: Automated mapping using VerveStacks technology classifications
 
 ### Missing Capacity Added From:
-- **IRENA data**:
-  - **solar**: 4.41 GW
-  - **hydro**: 1.1 GW
-- **EMBER data**:
-  - **bioenergy**: 0.23 GW
+- **No missing capacity added** - All capacity covered by plant-level data
 
 ## Model Structure
 
@@ -72,8 +68,8 @@
 - **Scenario Files**: NGFS climate scenarios and policy assumptions
 
 ### Key Methodology Points
-- Plant-level data prioritized where available (capacity > 100 MW)
-- 84 plants tracked individually above threshold
+- Plant-level data prioritized where available (capacity > N/A MW)
+- N/A plants tracked individually above threshold
 - Efficiency adjustments applied for calibration to national statistics
 - Missing capacity filled using technology-specific statistical estimates
 - Regional cost multipliers applied based on country economic indicators
