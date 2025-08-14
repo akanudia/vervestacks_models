@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - USA
 
-**Generated:** 2025-08-15 02:00:08
+**Generated:** 2025-08-15 02:07:41
 
 ## Processing Parameters
 
@@ -130,7 +130,97 @@ This model employs sophisticated **statistical scenario generation** to identify
 The following charts provide insights into the temporal characteristics of this energy system:
 
 
-*Timeslice analysis charts will be generated when stress period analysis is run.*
+### Critical Period Analysis Results
+
+**Analysis Status:** Timeslice analysis completed for USA
+
+
+#### 🔥 **Detailed Stress Analysis Results:**
+
+**🎯 Triple-1 Critical Days (Most Important 3 Days):**
+- 🔴 Scarcity: 10-26 (S01)
+- 🔴 Scarcity: 06-01 (S01)
+- 🟡 Volatile: 07-26 (V01)
+
+**🎯 Triple-5 Extended Analysis (15 Critical Days):**
+*Scarcity Days (Low Coverage):*
+  - 10-26 (S01)
+  - 10-11 (S02)
+  - 10-29 (S03)
+  - 10-22 (S04)
+  - 10-07 (S05)
+*Volatile Days (High Variability):*
+  - 07-26 (V01)
+  - 08-15 (V02)
+  - 08-01 (V03)
+  - 08-08 (V04)
+  - 07-24 (V05)
+
+**🌨️ Weekly Sustained Stress Analysis:**
+- Week W01: 10-22 to 10-28 (7 days)
+- Week W02: 10-01 to 10-07 (7 days)
+
+#### 📊 **Generated Analysis Files:**
+- `segment_summary_USA.csv` - Statistical summary of all identified critical periods
+- `timeslices_USA_triple_1.csv` - Triple-1 critical periods (3 days: 1 scarcity + 1 surplus + 1 volatile)
+- `timeslices_USA_triple_5.csv` - Triple-5 critical periods (15 days: 5 scarcity + 5 surplus + 5 volatile)
+- `timeslices_USA_weekly_stress.csv` - Weekly stress periods (2 worst weeks for sustained stress)
+- `tsdesign_USA.csv` - Complete VEDA timeslice structure with temporal mappings
+
+**Stress Period Methodology:**
+- **Scarcity Periods**: Days with lowest renewable coverage (highest need for backup power)
+- **Surplus Periods**: Days with highest renewable coverage (maximum curtailment potential)  
+- **Volatile Periods**: Days with highest generation variability (grid stability challenges)
+- **Weekly Stress**: Sustained periods of low renewable coverage (energy security focus)
+
+**Coverage Analysis**: Clean generation (renewables + nuclear) as percentage of hourly demand
+- Enables identification of critical periods for capacity planning
+- Supports renewable integration and storage requirement analysis
+- Provides input for grid flexibility and backup power assessment
+
+### 📊 Generated Analysis Charts
+
+*Interactive visualizations from the timeslice analysis process. Click any chart to view full resolution.*
+
+
+#### 📅 **Interactive Timeslice Calendar** - Visual overview of all critical periods throughout the year
+
+<div align="center">
+  <img src="VerveStacks_USA/source_data/timeslice_calendar_USA.svg" alt="Timeslice Calendar - USA" width="800" />
+</div>
+
+📱 **Interactive Version**: [Open full interactive calendar](VerveStacks_USA/source_data/timeslice_calendar_USA.html) (local viewing)
+
+*Calendar shows critical periods: Scarcity 🔥, Surplus ⚡, Volatile 🌪️, and Weekly Stress 📅*
+
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_USA/source_data/aggregation_justification_USA.png" target="_blank">
+  <img src="VerveStacks_USA/source_data/aggregation_justification_USA.png" alt="aggregation_justification_USA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Critical Days Analysis (Triple-5)** - Detailed view of 15 critical days: 5 scarcity + 5 surplus + 5 volatile periods
+<a href="VerveStacks_USA/source_data/plan2_triple5_critical_days_USA.png" target="_blank">
+  <img src="VerveStacks_USA/source_data/plan2_triple5_critical_days_USA.png" alt="plan2_triple5_critical_days_USA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Weekly Stress Analysis** - Sustained stress periods showing 2 worst weeks for renewable coverage
+<a href="VerveStacks_USA/source_data/plan3_weekly_stress_USA.png" target="_blank">
+  <img src="VerveStacks_USA/source_data/plan3_weekly_stress_USA.png" alt="plan3_weekly_stress_USA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Renewable Supply Curves** - Cost-ordered renewable resource potential showing solar and wind capacity vs. LCOE
+<a href="VerveStacks_USA/source_data/supply_curves_USA.png" target="_blank">
+  <img src="VerveStacks_USA/source_data/supply_curves_USA.png" alt="supply_curves_USA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
 
 
 ## Quality Assurance
