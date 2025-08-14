@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - CHE
 
-**Generated:** 2025-08-14 13:34:16
+**Generated:** 2025-08-14 16:15:05
 
 ## Processing Parameters
 
@@ -50,33 +50,34 @@
 
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 83.6% of total capacity from plant-level GEM data
+- **Individual Plant Coverage**: 83.3% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 25.1 GW from all sources
 - **Plants Above Threshold**: 86 individual plants tracked above 100 MW threshold
-- **Total Plants Processed**: 235 plants in database
+- **Total Plants Processed**: 239 plants in database
 - **Technology Mapping**: Automated mapping using VerveStacks technology classifications
 
 ### Missing Capacity Added From:
 - **IRENA data**:
-  - **hydro**: 0.24 GW
   - **solar**: 0.15 GW
   - **solar**: 0.17 GW
   - **solar**: 0.16 GW
   - **solar**: 0.17 GW
   - **hydro**: 0.11 GW
+  - **hydro**: 0.21 GW
   - **solar**: 0.21 GW
   - **solar**: 0.17 GW
   - **solar**: 0.2 GW
-  - **solar**: 0.15 GW
-  - **solar**: 0.22 GW
-  - **hydro**: 0.35 GW
-  - **solar**: 0.16 GW
-  - **solar**: 0.16 GW
   - **solar**: 0.14 GW
   - **solar**: 0.18 GW
   - **hydro**: 0.11 GW
   - **solar**: 0.17 GW
+  - **hydro**: 0.35 GW
+  - **solar**: 0.19 GW
+  - **solar**: 0.19 GW
   - **solar**: 0.2 GW
+  - **solar**: 0.21 GW
+  - **hydro**: 0.4 GW
+  - **solar**: 0.21 GW
   - **solar**: 0.14 GW
   - **solar**: 0.2 GW
   - **hydro**: 0.13 GW
@@ -84,12 +85,11 @@
   - **solar**: 0.16 GW
   - **solar**: 0.17 GW
   - **solar**: 0.15 GW
-  - **solar**: 0.21 GW
-  - **solar**: 0.19 GW
-  - **solar**: 0.19 GW
   - **solar**: 0.2 GW
-  - **solar**: 0.21 GW
-  - **hydro**: 0.46 GW
+  - **solar**: 0.15 GW
+  - **solar**: 0.22 GW
+  - **solar**: 0.16 GW
+  - **solar**: 0.16 GW
 - **EMBER data**:
   - **bioenergy**: 0.23 GW
 
