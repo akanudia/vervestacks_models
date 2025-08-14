@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - BGR
 
-**Generated:** 2025-08-14 19:08:52
+**Generated:** 2025-08-14 20:20:36
 
 ## Processing Parameters
 
@@ -58,8 +58,8 @@
 
 ### Missing Capacity Added From:
 - **IRENA data**:
-  - **hydro**: 0.77 GW
   - **solar**: 0.17 GW
+  - **hydro**: 0.77 GW
 
 ## Model Structure
 
