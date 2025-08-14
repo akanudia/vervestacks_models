@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - BGR
 
-**Generated:** 2025-08-13 12:28:44
+**Generated:** 2025-08-14 19:08:52
 
 ## Processing Parameters
 
@@ -140,27 +140,27 @@ The following charts provide insights into the temporal characteristics of this 
 #### 🔥 **Detailed Stress Analysis Results:**
 
 **🎯 Triple-1 Critical Days (Most Important 3 Days):**
-- 🔴 Scarcity: 11-27 (S01)
-- 🔴 Scarcity: 03-22 (S01)
-- 🟡 Volatile: 10-16 (V01)
+- 🔴 Scarcity: 10-13 (S01)
+- 🔴 Scarcity: 02-03 (S01)
+- 🟡 Volatile: 11-07 (V01)
 
 **🎯 Triple-5 Extended Analysis (15 Critical Days):**
 *Scarcity Days (Low Coverage):*
-  - 11-27 (S01)
-  - 11-06 (S02)
+  - 10-13 (S01)
+  - 10-11 (S02)
   - 09-16 (S03)
-  - 10-02 (S04)
-  - 11-26 (S05)
+  - 10-09 (S04)
+  - 10-25 (S05)
 *Volatile Days (High Variability):*
-  - 10-16 (V01)
-  - 02-02 (V02)
-  - 03-07 (V03)
-  - 05-22 (V04)
-  - 03-30 (V05)
+  - 11-07 (V01)
+  - 05-20 (V02)
+  - 09-27 (V03)
+  - 10-19 (V04)
+  - 05-17 (V05)
 
 **🌨️ Weekly Sustained Stress Analysis:**
-- Week W01: 11-12 to 11-18 (7 days)
-- Week W02: 01-08 to 01-14 (7 days)
+- Week W01: 10-08 to 10-14 (7 days)
+- Week W02: 10-22 to 10-28 (7 days)
 
 #### 📊 **Generated Analysis Files:**
 - `segment_summary_BGR.csv` - Statistical summary of all identified critical periods
@@ -217,9 +217,9 @@ The following charts provide insights into the temporal characteristics of this 
 
 *Click image to view full size*
 
-#### **Re Analysis Summary Bgr** - Timeslice analysis visualization
-<a href="VerveStacks_BGR/source_data/re_analysis_summary_BGR.png" target="_blank">
-  <img src="VerveStacks_BGR/source_data/re_analysis_summary_BGR.png" alt="re_analysis_summary_BGR.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+#### **Renewable Supply Curves** - Cost-ordered renewable resource potential showing solar and wind capacity vs. LCOE
+<a href="VerveStacks_BGR/source_data/supply_curves_BGR.png" target="_blank">
+  <img src="VerveStacks_BGR/source_data/supply_curves_BGR.png" alt="supply_curves_BGR.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
