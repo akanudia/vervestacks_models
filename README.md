@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - CHE
 
-**Generated:** 2025-08-14 16:52:39
+**Generated:** 2025-08-14 21:59:19
 
 ## Processing Parameters
 
@@ -50,46 +50,44 @@
 
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 83.3% of total capacity from plant-level GEM data
+- **Individual Plant Coverage**: 83.1% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 25.1 GW from all sources
-- **Plants Above Threshold**: 86 individual plants tracked above 100 MW threshold
-- **Total Plants Processed**: 239 plants in database
+- **Plants Above Threshold**: 84 individual plants tracked above 100 MW threshold
+- **Total Plants Processed**: 244 plants in database
 - **Technology Mapping**: Automated mapping using VerveStacks technology classifications
 
 ### Missing Capacity Added From:
 - **IRENA data**:
+  - **hydro**: 0.12 GW
   - **solar**: 0.21 GW
   - **solar**: 0.17 GW
   - **solar**: 0.2 GW
-  - **hydro**: 0.21 GW
-  - **solar**: 0.19 GW
-  - **solar**: 0.19 GW
-  - **solar**: 0.2 GW
-  - **solar**: 0.21 GW
-  - **hydro**: 0.4 GW
-  - **solar**: 0.15 GW
-  - **solar**: 0.17 GW
+  - **solar**: 0.16 GW
   - **solar**: 0.16 GW
   - **solar**: 0.17 GW
-  - **hydro**: 0.11 GW
-  - **solar**: 0.21 GW
   - **solar**: 0.14 GW
   - **solar**: 0.2 GW
-  - **hydro**: 0.13 GW
-  - **hydro**: 0.1 GW
-  - **solar**: 0.2 GW
-  - **solar**: 0.17 GW
-  - **hydro**: 0.35 GW
-  - **solar**: 0.14 GW
-  - **solar**: 0.18 GW
   - **hydro**: 0.11 GW
-  - **solar**: 0.16 GW
-  - **solar**: 0.17 GW
   - **solar**: 0.15 GW
+  - **solar**: 0.16 GW
+  - **solar**: 0.15 GW
+  - **solar**: 0.17 GW
   - **solar**: 0.15 GW
   - **solar**: 0.22 GW
+  - **solar**: 0.14 GW
+  - **solar**: 0.18 GW
+  - **solar**: 0.2 GW
+  - **hydro**: 0.31 GW
   - **solar**: 0.16 GW
-  - **solar**: 0.16 GW
+  - **solar**: 0.17 GW
+  - **solar**: 0.15 GW
+  - **solar**: 0.19 GW
+  - **solar**: 0.19 GW
+  - **solar**: 0.2 GW
+  - **solar**: 0.21 GW
+  - **hydro**: 0.36 GW
+  - **hydro**: 0.19 GW
+  - **solar**: 0.21 GW
 - **EMBER data**:
   - **bioenergy**: 0.23 GW
 
@@ -103,7 +101,7 @@
 
 ### Key Methodology Points
 - Plant-level data prioritized where available (capacity > 100 MW)
-- 86 plants tracked individually above threshold
+- 84 plants tracked individually above threshold
 - Efficiency adjustments applied for calibration to national statistics
 - Missing capacity filled using technology-specific statistical estimates
 - Regional cost multipliers applied based on country economic indicators
