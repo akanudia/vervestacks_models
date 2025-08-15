@@ -1,14 +1,14 @@
 # VerveStacks Model Generation Notes - ITA
 
-**Generated:** 2025-08-13 21:32:17
+**Generated:** 2025-08-15 09:55:17
 
 ## Processing Parameters
 
 | Parameter | Value | Description |
 |-----------|-------|-------------|
-| **Capacity Threshold** | 100 MW | Minimum plant size for individual tracking |
-| **Gas Efficiency Adjustment** | 1.0 | Multiplier applied to gas plant efficiencies |
-| **Coal Efficiency Adjustment** | 1.0 | Multiplier applied to coal plant efficiencies |
+| **Capacity Threshold** | Not specified MW | Minimum plant size for individual tracking |
+| **Gas Efficiency Adjustment** | Not specified | Multiplier applied to gas plant efficiencies |
+| **Coal Efficiency Adjustment** | Not specified | Multiplier applied to coal plant efficiencies |
 
 
 ## Data, Assumptions & Coverage
@@ -50,28 +50,14 @@
 
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 85.1% of total capacity from plant-level GEM data
-- **Total Capacity Tracked**: 284.9 GW from all sources
-- **Plants Above Threshold**: 280 individual plants tracked above 100 MW threshold
-- **Total Plants Processed**: 1268 plants in database
+- **Individual Plant Coverage**: TBD of total capacity from plant-level GEM data
+- **Total Capacity Tracked**: TBD from all sources
+- **Plants Above Threshold**: TBD individual plants tracked above N/A MW threshold
+- **Total Plants Processed**: TBD plants in database
 - **Technology Mapping**: Automated mapping using VerveStacks technology classifications
 
 ### Missing Capacity Added From:
-- **EMBER data**:
-  - **bioenergy**: 0.31 GW
-  - **bioenergy**: 0.24 GW
-  - **bioenergy**: 0.14 GW
-  - **bioenergy**: 0.3 GW
-  - **bioenergy**: 0.3 GW
-  - **bioenergy**: 0.34 GW
-  - **bioenergy**: 1.44 GW
-  - **bioenergy**: 0.22 GW
-- **IRENA data**:
-  - **hydro**: 0.11 GW
-  - **hydro**: 0.11 GW
-  - **hydro**: 0.11 GW
-  - **hydro**: 0.54 GW
-  - **hydro**: 0.11 GW
+- **No missing capacity added** - All capacity covered by plant-level data
 
 ## Model Structure
 
@@ -82,8 +68,8 @@
 - **Scenario Files**: NGFS climate scenarios and policy assumptions
 
 ### Key Methodology Points
-- Plant-level data prioritized where available (capacity > 100 MW)
-- 280 plants tracked individually above threshold
+- Plant-level data prioritized where available (capacity > N/A MW)
+- N/A plants tracked individually above threshold
 - Efficiency adjustments applied for calibration to national statistics
 - Missing capacity filled using technology-specific statistical estimates
 - Regional cost multipliers applied based on country economic indicators
