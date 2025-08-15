@@ -1,6 +1,6 @@
-# VerveStacks Model Generation Notes - CHE
+# VerveStacks Model Generation Notes - ITA
 
-**Generated:** 2025-08-15 14:45:43
+**Generated:** 2025-08-15 15:37:05
 
 ## Processing Parameters
 
@@ -62,7 +62,7 @@
 ## Model Structure
 
 ### Files Included
-- **Source Data**: `source_data/VerveStacks_CHE.xlsx` - the full dataset in a model-agnostic format, ready for TIMES/VEDA execution
+- **Source Data**: `source_data/VerveStacks_ITA.xlsx` - the full dataset in a model-agnostic format, ready for TIMES/VEDA execution
     # Includes hourly demand and solar/wind resource profiles
 - **VEDA Model Files**: Complete model ready for Veda-TIMES execution
 - **Scenario Files**: NGFS climate scenarios and policy assumptions
@@ -132,40 +132,40 @@ The following charts provide insights into the temporal characteristics of this 
 
 ### Critical Period Analysis Results
 
-**Analysis Status:** Timeslice analysis completed for CHE
+**Analysis Status:** Timeslice analysis completed for ITA
 
 
 #### 🔥 **Detailed Stress Analysis Results:**
 
 **🎯 Triple-1 Critical Days (Most Important 3 Days):**
-- 🔴 Scarcity: 04-27 (S01)
-- 🔴 Scarcity: 02-05 (S01)
-- 🟡 Volatile: 04-15 (V01)
+- 🔴 Scarcity: 12-09 (S01)
+- 🔴 Scarcity: 02-02 (S01)
+- 🟡 Volatile: 12-16 (V01)
 
 **🎯 Triple-5 Extended Analysis (15 Critical Days):**
 *Scarcity Days (Low Coverage):*
-  - 04-27 (S01)
-  - 04-29 (S02)
-  - 10-20 (S03)
-  - 10-23 (S04)
-  - 04-21 (S05)
+  - 12-09 (S01)
+  - 12-24 (S02)
+  - 02-18 (S03)
+  - 10-31 (S04)
+  - 10-08 (S05)
 *Volatile Days (High Variability):*
-  - 04-15 (V01)
-  - 10-19 (V02)
-  - 05-18 (V03)
-  - 04-16 (V04)
-  - 05-31 (V05)
+  - 12-16 (V01)
+  - 02-27 (V02)
+  - 09-04 (V03)
+  - 03-03 (V04)
+  - 04-11 (V05)
 
 **🌨️ Weekly Sustained Stress Analysis:**
-- Week W01: 04-23 to 04-29 (7 days)
-- Week W02: 10-01 to 10-07 (7 days)
+- Week W01: 10-08 to 10-14 (7 days)
+- Week W02: 12-17 to 12-23 (7 days)
 
 #### 📊 **Generated Analysis Files:**
-- `segment_summary_CHE.csv` - Statistical summary of all identified critical periods
-- `timeslices_CHE_triple_1.csv` - Triple-1 critical periods (3 days: 1 scarcity + 1 surplus + 1 volatile)
-- `timeslices_CHE_triple_5.csv` - Triple-5 critical periods (15 days: 5 scarcity + 5 surplus + 5 volatile)
-- `timeslices_CHE_weekly_stress.csv` - Weekly stress periods (2 worst weeks for sustained stress)
-- `tsdesign_CHE.csv` - Complete VEDA timeslice structure with temporal mappings
+- `segment_summary_ITA.csv` - Statistical summary of all identified critical periods
+- `timeslices_ITA_triple_1.csv` - Triple-1 critical periods (3 days: 1 scarcity + 1 surplus + 1 volatile)
+- `timeslices_ITA_triple_5.csv` - Triple-5 critical periods (15 days: 5 scarcity + 5 surplus + 5 volatile)
+- `timeslices_ITA_weekly_stress.csv` - Weekly stress periods (2 worst weeks for sustained stress)
+- `tsdesign_ITA.csv` - Complete VEDA timeslice structure with temporal mappings
 
 **Stress Period Methodology:**
 - **Scarcity Periods**: Days with lowest renewable coverage (highest need for backup power)
@@ -186,38 +186,38 @@ The following charts provide insights into the temporal characteristics of this 
 #### 📅 **Interactive Timeslice Calendar** - Visual overview of all critical periods throughout the year
 
 <div align="center">
-  <img src="VerveStacks_CHE/source_data/timeslice_calendar_CHE.svg" alt="Timeslice Calendar - CHE" width="800" />
+  <img src="VerveStacks_ITA/source_data/timeslice_calendar_ITA.svg" alt="Timeslice Calendar - ITA" width="800" />
 </div>
 
-📱 **Interactive Version**: [Open full interactive calendar](VerveStacks_CHE/source_data/timeslice_calendar_CHE.html) (local viewing)
+📱 **Interactive Version**: [Open full interactive calendar](VerveStacks_ITA/source_data/timeslice_calendar_ITA.html) (local viewing)
 
 *Calendar shows critical periods: Scarcity 🔥, Surplus ⚡, Volatile 🌪️, and Weekly Stress 📅*
 
 
 #### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_CHE/source_data/aggregation_justification_CHE.png" target="_blank">
-  <img src="VerveStacks_CHE/source_data/aggregation_justification_CHE.png" alt="aggregation_justification_CHE.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+<a href="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA.png" target="_blank">
+  <img src="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA.png" alt="aggregation_justification_ITA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
 
 #### **Critical Days Analysis (Triple-5)** - Detailed view of 15 critical days: 5 scarcity + 5 surplus + 5 volatile periods
-<a href="VerveStacks_CHE/source_data/plan2_triple5_critical_days_CHE.png" target="_blank">
-  <img src="VerveStacks_CHE/source_data/plan2_triple5_critical_days_CHE.png" alt="plan2_triple5_critical_days_CHE.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+<a href="VerveStacks_ITA_grids/source_data/plan2_triple5_critical_days_ITA.png" target="_blank">
+  <img src="VerveStacks_ITA_grids/source_data/plan2_triple5_critical_days_ITA.png" alt="plan2_triple5_critical_days_ITA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
 
 #### **Weekly Stress Analysis** - Sustained stress periods showing 2 worst weeks for renewable coverage
-<a href="VerveStacks_CHE/source_data/plan3_weekly_stress_CHE.png" target="_blank">
-  <img src="VerveStacks_CHE/source_data/plan3_weekly_stress_CHE.png" alt="plan3_weekly_stress_CHE.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+<a href="VerveStacks_ITA_grids/source_data/plan3_weekly_stress_ITA.png" target="_blank">
+  <img src="VerveStacks_ITA_grids/source_data/plan3_weekly_stress_ITA.png" alt="plan3_weekly_stress_ITA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
 
 #### **Renewable Supply Curves** - Cost-ordered renewable resource potential showing solar and wind capacity vs. LCOE
-<a href="VerveStacks_CHE/source_data/supply_curves_CHE.png" target="_blank">
-  <img src="VerveStacks_CHE/source_data/supply_curves_CHE.png" alt="supply_curves_CHE.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+<a href="VerveStacks_ITA_grids/source_data/supply_curves_ITA.png" target="_blank">
+  <img src="VerveStacks_ITA_grids/source_data/supply_curves_ITA.png" alt="supply_curves_ITA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
