@@ -1,14 +1,14 @@
 # VerveStacks Model Generation Notes - ITA
 
-**Generated:** 2025-08-10 22:39:28
+**Generated:** 2025-08-15 16:11:20
 
 ## Processing Parameters
 
 | Parameter | Value | Description |
 |-----------|-------|-------------|
-| **Capacity Threshold** | 100 MW | Minimum plant size for individual tracking |
-| **Gas Efficiency Adjustment** | 1.0 | Multiplier applied to gas plant efficiencies |
-| **Coal Efficiency Adjustment** | 1.0 | Multiplier applied to coal plant efficiencies |
+| **Capacity Threshold** | Not specified MW | Minimum plant size for individual tracking |
+| **Gas Efficiency Adjustment** | Not specified | Multiplier applied to gas plant efficiencies |
+| **Coal Efficiency Adjustment** | Not specified | Multiplier applied to coal plant efficiencies |
 
 
 ## Data, Assumptions & Coverage
@@ -50,21 +50,14 @@
 
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 95.7% of total capacity from plant-level GEM data
-- **Total Capacity Tracked**: 135.2 GW from all sources
-- **Plants Above Threshold**: 231 individual plants tracked above 100 MW threshold
-- **Total Plants Processed**: 347 plants in database
+- **Individual Plant Coverage**: TBD of total capacity from plant-level GEM data
+- **Total Capacity Tracked**: TBD from all sources
+- **Plants Above Threshold**: TBD individual plants tracked above N/A MW threshold
+- **Total Plants Processed**: TBD plants in database
 - **Technology Mapping**: Automated mapping using VerveStacks technology classifications
 
 ### Missing Capacity Added From:
-- **EMBER data**:
-  - **coal**: 1.62 GW
-  - **gas**: 11.79 GW
-  - **bioenergy**: 3.58 GW
-- **IRENA data**:
-  - **solar**: 19.88 GW
-  - **wind**: 2.02 GW
-  - **hydro**: 7.28 GW
+- **No missing capacity added** - All capacity covered by plant-level data
 
 ## Model Structure
 
@@ -75,8 +68,8 @@
 - **Scenario Files**: NGFS climate scenarios and policy assumptions
 
 ### Key Methodology Points
-- Plant-level data prioritized where available (capacity > 100 MW)
-- 231 plants tracked individually above threshold
+- Plant-level data prioritized where available (capacity > N/A MW)
+- N/A plants tracked individually above threshold
 - Efficiency adjustments applied for calibration to national statistics
 - Missing capacity filled using technology-specific statistical estimates
 - Regional cost multipliers applied based on country economic indicators
@@ -141,19 +134,31 @@ The following charts provide insights into the temporal characteristics of this 
 
 **Analysis Status:** Timeslice analysis completed for ITA
 
-#### 🔥 **Most Critical Days Identified:**
 
-**🔴 Most Stressed Day (Scarcity):** 11-15
-- Most critical day for renewable shortage
-- *Critical for backup power and storage capacity planning*
+#### 🔥 **Detailed Stress Analysis Results:**
 
-**🟢 Best Surplus Day (Excess):** 03-18
-- Best day for renewable surplus
-- *Opportunities for demand shifting, storage charging, and energy export*
+**🎯 Triple-1 Critical Days (Most Important 3 Days):**
+- 🔴 Scarcity: 12-09 (S01)
+- 🔴 Scarcity: 02-02 (S01)
+- 🟡 Volatile: 12-16 (V01)
 
-**🟡 Most Volatile Day (Variability):** 09-09
-- Most volatile day for grid operations
-- *Grid stability challenges and ramping requirements*
+**🎯 Triple-5 Extended Analysis (15 Critical Days):**
+*Scarcity Days (Low Coverage):*
+  - 12-09 (S01)
+  - 12-24 (S02)
+  - 02-18 (S03)
+  - 10-31 (S04)
+  - 10-08 (S05)
+*Volatile Days (High Variability):*
+  - 12-16 (V01)
+  - 02-27 (V02)
+  - 09-04 (V03)
+  - 03-03 (V04)
+  - 04-11 (V05)
+
+**🌨️ Weekly Sustained Stress Analysis:**
+- Week W01: 10-08 to 10-14 (7 days)
+- Week W02: 12-17 to 12-23 (7 days)
 
 #### 📊 **Generated Analysis Files:**
 - `segment_summary_ITA.csv` - Statistical summary of all identified critical periods
@@ -173,19 +178,49 @@ The following charts provide insights into the temporal characteristics of this 
 - Supports renewable integration and storage requirement analysis
 - Provides input for grid flexibility and backup power assessment
 
-### Generated Analysis Charts
+### 📊 Generated Analysis Charts
+
+*Interactive visualizations from the timeslice analysis process. Click any chart to view full resolution.*
+
+
+#### 📅 **Interactive Timeslice Calendar** - Visual overview of all critical periods throughout the year
+
+<div align="center">
+  <img src="VerveStacks_ITA/source_data/timeslice_calendar_ITA.svg" alt="Timeslice Calendar - ITA" width="800" />
+</div>
+
+📱 **Interactive Version**: [Open full interactive calendar](VerveStacks_ITA/source_data/timeslice_calendar_ITA.html) (local viewing)
+
+*Calendar shows critical periods: Scarcity 🔥, Surplus ⚡, Volatile 🌪️, and Weekly Stress 📅*
+
 
 #### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-![aggregation_justification_ITA.png](2_ts_design/outputs/ITA/aggregation_justification_ITA.png)
+<a href="VerveStacks_ITA/source_data/aggregation_justification_ITA.png" target="_blank">
+  <img src="VerveStacks_ITA/source_data/aggregation_justification_ITA.png" alt="aggregation_justification_ITA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
 
 #### **Critical Days Analysis (Triple-5)** - Detailed view of 15 critical days: 5 scarcity + 5 surplus + 5 volatile periods
-![plan2_triple5_critical_days_ITA.png](2_ts_design/outputs/ITA/plan2_triple5_critical_days_ITA.png)
+<a href="VerveStacks_ITA/source_data/plan2_triple5_critical_days_ITA.png" target="_blank">
+  <img src="VerveStacks_ITA/source_data/plan2_triple5_critical_days_ITA.png" alt="plan2_triple5_critical_days_ITA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
 
 #### **Weekly Stress Analysis** - Sustained stress periods showing 2 worst weeks for renewable coverage
-![plan3_weekly_stress_ITA.png](2_ts_design/outputs/ITA/plan3_weekly_stress_ITA.png)
+<a href="VerveStacks_ITA/source_data/plan3_weekly_stress_ITA.png" target="_blank">
+  <img src="VerveStacks_ITA/source_data/plan3_weekly_stress_ITA.png" alt="plan3_weekly_stress_ITA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
 
-#### **Re Analysis Summary Ita** - Timeslice analysis visualization
-![re_analysis_summary_ITA.png](2_ts_design/outputs/ITA/re_analysis_summary_ITA.png)
+*Click image to view full size*
+
+#### **Renewable Supply Curves** - Cost-ordered renewable resource potential showing solar and wind capacity vs. LCOE
+<a href="VerveStacks_ITA/source_data/supply_curves_ITA.png" target="_blank">
+  <img src="VerveStacks_ITA/source_data/supply_curves_ITA.png" alt="supply_curves_ITA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
 
 
 ## Quality Assurance
