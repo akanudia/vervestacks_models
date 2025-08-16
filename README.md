@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - CHE
 
-**Generated:** 2025-08-15 15:13:35
+**Generated:** 2025-08-16 12:06:01
 
 ## Processing Parameters
 
@@ -181,18 +181,6 @@ The following charts provide insights into the temporal characteristics of this 
 ### 📊 Generated Analysis Charts
 
 *Interactive visualizations from the timeslice analysis process. Click any chart to view full resolution.*
-
-
-#### 📅 **Interactive Timeslice Calendar** - Visual overview of all critical periods throughout the year
-
-<div align="center">
-  <img src="VerveStacks_CHE/source_data/timeslice_calendar_CHE.svg" alt="Timeslice Calendar - CHE" width="800" />
-</div>
-
-📱 **Interactive Version**: [Open full interactive calendar](VerveStacks_CHE/source_data/timeslice_calendar_CHE.html) (local viewing)
-
-*Calendar shows critical periods: Scarcity 🔥, Surplus ⚡, Volatile 🌪️, and Weekly Stress 📅*
-
 
 #### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
 <a href="VerveStacks_CHE_grids/source_data/aggregation_justification_CHE.png" target="_blank">
