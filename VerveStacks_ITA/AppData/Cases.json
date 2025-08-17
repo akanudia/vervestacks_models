@@ -162,6 +162,60 @@
     "ModelFramework": "Times"
   },
   {
+    "CaseId": 57,
+    "CreatedOn": "2025-08-17 15:53",
+    "Description": "NGFS scenarios with Triple 1 timeslice def",
+    "EditedOn": "2025-08-17 15:53",
+    "EndingYear": "2050",
+    "FixResultFileName": "False",
+    "FixResultInfo": {
+      "WorkTimesFolderPath": null,
+      "GdxElasticDermands": {
+        "GdxSelectedFile": {
+          "FileName": "",
+          "FilePath": "",
+          "IsSelected": false
+        },
+        "IsApplied": false
+      },
+      "GdxIre": {
+        "GdxSelectedFile": {
+          "FileName": "",
+          "FilePath": "",
+          "IsSelected": false
+        },
+        "IsApplied": false,
+        "RadioSelection": 1
+      },
+      "GdxUseSolution": {
+        "FixYearsUpto": "",
+        "GdxSelectedFile": {
+          "FileName": "",
+          "FilePath": "",
+          "IsSelected": false
+        },
+        "IsApplied": false,
+        "RadioSelection": 1
+      },
+      "IsApplyFixResult": false
+    },
+    "GAMSSourceFolder": "GAMS_SrcTIMES.v4.9.0",
+    "Name": "vstacks_ts16",
+    "ParametricGroup": "all_NGFS",
+    "ParametricGroupId": 247,
+    "PeriodsDefinition": "msy5_2050",
+    "PropertiesGroup": "DefaultProperties",
+    "PropertiesGroupId": 245,
+    "RegionGroup": "AllRegion",
+    "RegionGroupId": 244,
+    "ScenarioGroup": "ref_ts-16",
+    "ScenarioGroupId": 252,
+    "Solver": "cplex",
+    "SolverOptionFile": "BA121-7",
+    "UserName": "akanu",
+    "ModelFramework": "Times"
+  },
+  {
     "CaseId": 55,
     "CreatedOn": "2025-08-03 16:59",
     "Description": "NGFS scenarios with 2 stressed weeks timeslice def",
