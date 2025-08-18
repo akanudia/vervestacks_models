@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - ITA
 
-**Generated:** 2025-08-16 11:37:36
+**Generated:** 2025-08-19 00:09:34
 
 ## Processing Parameters
 
@@ -138,27 +138,27 @@ The following charts provide insights into the temporal characteristics of this 
 #### 🔥 **Detailed Stress Analysis Results:**
 
 **🎯 Triple-1 Critical Days (Most Important 3 Days):**
-- 🔴 Scarcity: 12-09 (S01)
+- 🔴 Scarcity: 10-24 (S01)
 - 🔴 Scarcity: 02-02 (S01)
-- 🟡 Volatile: 12-16 (V01)
+- 🟡 Volatile: 03-04 (V01)
 
 **🎯 Triple-5 Extended Analysis (15 Critical Days):**
 *Scarcity Days (Low Coverage):*
-  - 12-09 (S01)
-  - 12-24 (S02)
-  - 02-18 (S03)
-  - 10-31 (S04)
-  - 10-08 (S05)
+  - 10-24 (S01)
+  - 12-30 (S02)
+  - 10-07 (S03)
+  - 10-21 (S04)
+  - 03-28 (S05)
 *Volatile Days (High Variability):*
-  - 12-16 (V01)
-  - 02-27 (V02)
-  - 09-04 (V03)
-  - 03-03 (V04)
-  - 04-11 (V05)
+  - 03-04 (V01)
+  - 01-03 (V02)
+  - 04-17 (V03)
+  - 02-26 (V04)
+  - 04-16 (V05)
 
 **🌨️ Weekly Sustained Stress Analysis:**
-- Week W01: 10-08 to 10-14 (7 days)
-- Week W02: 12-17 to 12-23 (7 days)
+- Week W01: 10-22 to 10-28 (7 days)
+- Week W02: 10-08 to 10-14 (7 days)
 
 #### 📊 **Generated Analysis Files:**
 - `segment_summary_ITA.csv` - Statistical summary of all identified critical periods
