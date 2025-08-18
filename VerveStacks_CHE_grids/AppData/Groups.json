@@ -1,6 +1,6 @@
 [
   {
-    "SavedGroupId": 188,
+    "SavedGroupId": 246,
     "GroupName": "all_FACETS",
     "GroupType": "Parametric",
     "Settings": "[\"FACETS_0008\", \"FACETS_0009\"]",
@@ -9,66 +9,84 @@
     "UserName": "akanu"
   },
   {
-    "SavedGroupId": 189,
+    "SavedGroupId": 247,
     "GroupName": "all_NGFS",
     "GroupType": "Parametric",
-    "Settings": "[\"NGFS_0001\",\"NGFS_0002\", \"NGFS_0003\",\"NGFS_0004\", \"NGFS_0005\"]",
-    "CreatedOn": "2025-08-07 07:32",
-    "DisplayCreatedOn": "2025-08-07 07:32",
+    "Settings": "[\"NGFS_0001\", \"NGFS_0002\", \"NGFS_0003\", \"NGFS_0004\", \"NGFS_0005\"]",
+    "CreatedOn": "2025-08-17 15:09",
+    "DisplayCreatedOn": "2025-08-17 15:09",
     "UserName": "akanu"
   },
   {
-    "SavedGroupId": 186,
+    "SavedGroupId": 244,
     "GroupName": "AllRegion",
     "GroupType": "Region",
-    "Settings": "[\"IND\"]",
-    "CreatedOn": "2025-08-07 07:30",
-    "DisplayCreatedOn": "2025-08-07 07:30",
+    "Settings": "[\"BGR\"]",
+    "CreatedOn": "2025-08-17 15:09",
+    "DisplayCreatedOn": "2025-08-17 15:09",
     "UserName": "akanu"
   },
   {
-    "SavedGroupId": 185,
+    "SavedGroupId": 243,
     "GroupName": "AllScenario",
     "GroupType": "Scenario",
-    "Settings": "[{\"Name\": \"BASE\", \"Checked\": true, \"RowOrder\": 1, \"ShortName\": \"B\", \"FileStatus\": \"Consistent\", \"RecordCount\": 9662}, {\"Name\": \"ConvElecATB25\", \"Checked\": true, \"RowOrder\": 2, \"ShortName\": \"SR\", \"FileStatus\": \"Consistent\", \"RecordCount\": 912}, {\"Name\": \"New_RE_and_Conventional\", \"Checked\": true, \"RowOrder\": 3, \"ShortName\": \"SR\", \"FileStatus\": \"Consistent\", \"RecordCount\": 1674}, {\"Name\": \"SysSettings\", \"Checked\": true, \"RowOrder\": 4, \"ShortName\": \"SS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 4106}, {\"Name\": \"Base_VS\", \"Checked\": true, \"RowOrder\": 5, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 3396}, {\"Name\": \"advanced_features\", \"Checked\": true, \"RowOrder\": 6, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 5787}, {\"Name\": \"tsparameters_triple_1\", \"Checked\": true, \"RowOrder\": 7, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 1222}, {\"Name\": \"tsparameters_triple_5\", \"Checked\": true, \"RowOrder\": 8, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 3526}, {\"Name\": \"tsparameters_weekly_stress\", \"Checked\": true, \"RowOrder\": 9, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 3334}]",
-    "CreatedOn": "2025-08-07 07:30",
-    "DisplayCreatedOn": "2025-08-07 07:30",
+    "Settings": "[{\"Name\": \"BASE\", \"Checked\": true, \"RowOrder\": 1, \"ShortName\": \"B\", \"FileStatus\": \"Consistent\", \"RecordCount\": 1077}, {\"Name\": \"New_RE_and_Conventional\", \"Checked\": true, \"RowOrder\": 2, \"ShortName\": \"SR\", \"FileStatus\": \"Consistent\", \"RecordCount\": 1505}, {\"Name\": \"SysSettings\", \"Checked\": true, \"RowOrder\": 3, \"ShortName\": \"SS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 603}, {\"Name\": \"Base_VS\", \"Checked\": true, \"RowOrder\": 4, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 498}, {\"Name\": \"advanced_features\", \"Checked\": true, \"RowOrder\": 5, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 691}, {\"Name\": \"tsparameters_triple_1\", \"Checked\": true, \"RowOrder\": 6, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 1048}, {\"Name\": \"tsparameters_triple_5\", \"Checked\": true, \"RowOrder\": 7, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 3352}, {\"Name\": \"tsparameters_ts_16\", \"Checked\": true, \"RowOrder\": 8, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 156}, {\"Name\": \"tsparameters_ts_annual\", \"Checked\": true, \"RowOrder\": 9, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 26}, {\"Name\": \"tsparameters_weekly_stress\", \"Checked\": true, \"RowOrder\": 10, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 3160}]",
+    "CreatedOn": "2025-08-17 15:09",
+    "DisplayCreatedOn": "2025-08-17 15:09",
     "UserName": "akanu"
   },
   {
-    "SavedGroupId": 187,
+    "SavedGroupId": 245,
     "GroupName": "DefaultProperties",
     "GroupType": "Properties",
     "Settings": "{\"OptCa\": null, \"OptCr\": null, \"Damage\": 2, \"LimCol\": 0, \"LimRow\": 0, \"Oblong\": true, \"ResLim\": 50000, \"Retire\": false, \"IterLim\": 999999, \"SolPrint\": false, \"Uncertainty\": 0, \"RunInStepsOf\": 0, \"ClimateModule\": false, \"LinearVarCost\": true, \"LevelizedCosts\": 3, \"GamsOptionBratio\": \"\", \"DiscreteInvestment\": false, \"DoExtendedQaChecks\": false, \"GeneralEquilibrium\": 3, \"MidYearDiscounting\": true, \"ObjFunctionVariant\": 0, \"ShiftDiscountingBy\": 0, \"Co2CalibrationAtBoh\": false, \"UseSlackVariablesInUc\": false, \"DiscreteUnitCommitment\": false, \"EndoGenousTechLearning\": false, \"WriteBPriceforElastDem\": false, \"SaveSolutionInformation\": false, \"TsForFlowReportingTypes\": 0, \"UseLastRunAsStartingPoint\": false, \"ActivateSensitivityAnalysis\": false}",
-    "CreatedOn": "2025-08-07 07:30",
-    "DisplayCreatedOn": "2025-08-07 07:30",
+    "CreatedOn": "2025-08-17 15:09",
+    "DisplayCreatedOn": "2025-08-17 15:09",
     "UserName": "akanu"
   },
   {
-    "SavedGroupId": 190,
+    "SavedGroupId": 248,
     "GroupName": "ref_t1",
     "GroupType": "Scenario",
-    "Settings": "[{\"Name\": \"BASE\", \"Checked\": true, \"RowOrder\": 0, \"ShortName\": \"B\"}, {\"Name\": \"ConvElecATB25\", \"Checked\": false, \"RowOrder\": 1, \"ShortName\": \"SR\"}, {\"Name\": \"New_RE_and_Conventional\", \"Checked\": true, \"RowOrder\": 2, \"ShortName\": \"SR\"}, {\"Name\": \"SysSettings\", \"Checked\": true, \"RowOrder\": 3, \"ShortName\": \"SS\"}, {\"Name\": \"Base_VS\", \"Checked\": true, \"RowOrder\": 4, \"ShortName\": \"RS\"}, {\"Name\": \"advanced_features\", \"Checked\": true, \"RowOrder\": 5, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_triple_1\", \"Checked\": true, \"RowOrder\": 7, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_triple_5\", \"Checked\": false, \"RowOrder\": 9, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_weekly_stress\", \"Checked\": false, \"RowOrder\": 12, \"ShortName\": \"RS\"}]",
-    "CreatedOn": "2025-08-07 07:31",
-    "DisplayCreatedOn": "2025-08-07 07:31",
+    "Settings": "[{\"Name\": \"BASE\", \"Checked\": true, \"RowOrder\": 0, \"ShortName\": \"B\"}, {\"Name\": \"New_RE_and_Conventional\", \"Checked\": true, \"RowOrder\": 2, \"ShortName\": \"SR\"}, {\"Name\": \"SysSettings\", \"Checked\": true, \"RowOrder\": 3, \"ShortName\": \"SS\"}, {\"Name\": \"Base_VS\", \"Checked\": true, \"RowOrder\": 4, \"ShortName\": \"RS\"}, {\"Name\": \"advanced_features\", \"Checked\": true, \"RowOrder\": 5, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_triple_1\", \"Checked\": true, \"RowOrder\": 6, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_ts_16\", \"Checked\": false, \"RowOrder\": 7, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_triple_5\", \"Checked\": false, \"RowOrder\": 8, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_ts_annual\", \"Checked\": false, \"RowOrder\": 9, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_weekly_stress\", \"Checked\": false, \"RowOrder\": 10, \"ShortName\": \"RS\"}]",
+    "CreatedOn": "2025-08-17 15:43",
+    "DisplayCreatedOn": "2025-08-17 15:43",
     "UserName": "akanu"
   },
   {
-    "SavedGroupId": 191,
+    "SavedGroupId": 249,
     "GroupName": "ref_t5",
     "GroupType": "Scenario",
-    "Settings": "[{\"Name\": \"BASE\", \"Checked\": true, \"RowOrder\": 0, \"ShortName\": \"B\"}, {\"Name\": \"ConvElecATB25\", \"Checked\": false, \"RowOrder\": 1, \"ShortName\": \"SR\"}, {\"Name\": \"New_RE_and_Conventional\", \"Checked\": true, \"RowOrder\": 2, \"ShortName\": \"SR\"}, {\"Name\": \"SysSettings\", \"Checked\": true, \"RowOrder\": 3, \"ShortName\": \"SS\"}, {\"Name\": \"Base_VS\", \"Checked\": true, \"RowOrder\": 4, \"ShortName\": \"RS\"}, {\"Name\": \"advanced_features\", \"Checked\": true, \"RowOrder\": 5, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_triple_1\", \"Checked\": false, \"RowOrder\": 7, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_triple_5\", \"Checked\": true, \"RowOrder\": 9, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_weekly_stress\", \"Checked\": false, \"RowOrder\": 12, \"ShortName\": \"RS\"}]",
-    "CreatedOn": "2025-08-07 07:31",
-    "DisplayCreatedOn": "2025-08-07 07:31",
+    "Settings": "[{\"Name\": \"BASE\", \"Checked\": true, \"RowOrder\": 0, \"ShortName\": \"B\"}, {\"Name\": \"New_RE_and_Conventional\", \"Checked\": true, \"RowOrder\": 2, \"ShortName\": \"SR\"}, {\"Name\": \"SysSettings\", \"Checked\": true, \"RowOrder\": 3, \"ShortName\": \"SS\"}, {\"Name\": \"Base_VS\", \"Checked\": true, \"RowOrder\": 4, \"ShortName\": \"RS\"}, {\"Name\": \"advanced_features\", \"Checked\": true, \"RowOrder\": 5, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_triple_1\", \"Checked\": false, \"RowOrder\": 6, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_ts_16\", \"Checked\": false, \"RowOrder\": 7, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_triple_5\", \"Checked\": true, \"RowOrder\": 8, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_ts_annual\", \"Checked\": false, \"RowOrder\": 9, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_weekly_stress\", \"Checked\": false, \"RowOrder\": 10, \"ShortName\": \"RS\"}]",
+    "CreatedOn": "2025-08-17 15:43",
+    "DisplayCreatedOn": "2025-08-17 15:43",
     "UserName": "akanu"
   },
   {
-    "SavedGroupId": 193,
+    "SavedGroupId": 252,
+    "GroupName": "ref_ts-16",
+    "GroupType": "Scenario",
+    "Settings": "[{\"Name\": \"BASE\", \"Checked\": true, \"RowOrder\": 0, \"ShortName\": \"B\"}, {\"Name\": \"New_RE_and_Conventional\", \"Checked\": true, \"RowOrder\": 1, \"ShortName\": \"SR\"}, {\"Name\": \"SysSettings\", \"Checked\": true, \"RowOrder\": 2, \"ShortName\": \"SS\"}, {\"Name\": \"Base_VS\", \"Checked\": true, \"RowOrder\": 3, \"ShortName\": \"RS\"}, {\"Name\": \"advanced_features\", \"Checked\": true, \"RowOrder\": 4, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_triple_1\", \"Checked\": false, \"RowOrder\": 5, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_ts_16\", \"Checked\": true, \"RowOrder\": 6, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_triple_5\", \"Checked\": false, \"RowOrder\": 7, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_ts_annual\", \"Checked\": false, \"RowOrder\": 8, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_weekly_stress\", \"Checked\": false, \"RowOrder\": 9, \"ShortName\": \"RS\"}]",
+    "CreatedOn": "2025-08-17 15:09",
+    "DisplayCreatedOn": "2025-08-17 15:09",
+    "UserName": "akanu"
+  },
+  {
+    "SavedGroupId": 251,
+    "GroupName": "ref_ts-annual",
+    "GroupType": "Scenario",
+    "Settings": "[{\"Name\": \"BASE\", \"Checked\": true, \"RowOrder\": 0, \"ShortName\": \"B\"}, {\"Name\": \"New_RE_and_Conventional\", \"Checked\": true, \"RowOrder\": 2, \"ShortName\": \"SR\"}, {\"Name\": \"SysSettings\", \"Checked\": true, \"RowOrder\": 3, \"ShortName\": \"SS\"}, {\"Name\": \"Base_VS\", \"Checked\": true, \"RowOrder\": 4, \"ShortName\": \"RS\"}, {\"Name\": \"advanced_features\", \"Checked\": true, \"RowOrder\": 5, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_triple_1\", \"Checked\": false, \"RowOrder\": 6, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_ts_16\", \"Checked\": false, \"RowOrder\": 7, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_triple_5\", \"Checked\": false, \"RowOrder\": 8, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_ts_annual\", \"Checked\": true, \"RowOrder\": 9, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_weekly_stress\", \"Checked\": false, \"RowOrder\": 10, \"ShortName\": \"RS\"}]",
+    "CreatedOn": "2025-08-17 15:09",
+    "DisplayCreatedOn": "2025-08-17 15:09",
+    "UserName": "akanu"
+  },
+  {
+    "SavedGroupId": 250,
     "GroupName": "ref_w2",
     "GroupType": "Scenario",
-    "Settings": "[{\"Name\": \"BASE\", \"Checked\": true, \"RowOrder\": 0, \"ShortName\": \"B\"}, {\"Name\": \"ConvElecATB25\", \"Checked\": false, \"RowOrder\": 1, \"ShortName\": \"SR\"}, {\"Name\": \"New_RE_and_Conventional\", \"Checked\": true, \"RowOrder\": 2, \"ShortName\": \"SR\"}, {\"Name\": \"SysSettings\", \"Checked\": true, \"RowOrder\": 3, \"ShortName\": \"SS\"}, {\"Name\": \"Base_VS\", \"Checked\": true, \"RowOrder\": 4, \"ShortName\": \"RS\"}, {\"Name\": \"advanced_features\", \"Checked\": true, \"RowOrder\": 5, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_triple_1\", \"Checked\": false, \"RowOrder\": 7, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_triple_5\", \"Checked\": false, \"RowOrder\": 9, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_weekly_stress\", \"Checked\": true, \"RowOrder\": 12, \"ShortName\": \"RS\"}]",
-    "CreatedOn": "2025-08-07 07:31",
-    "DisplayCreatedOn": "2025-08-07 07:31",
+    "Settings": "[{\"Name\": \"BASE\", \"Checked\": true, \"RowOrder\": 0, \"ShortName\": \"B\"}, {\"Name\": \"New_RE_and_Conventional\", \"Checked\": true, \"RowOrder\": 2, \"ShortName\": \"SR\"}, {\"Name\": \"SysSettings\", \"Checked\": true, \"RowOrder\": 3, \"ShortName\": \"SS\"}, {\"Name\": \"Base_VS\", \"Checked\": true, \"RowOrder\": 4, \"ShortName\": \"RS\"}, {\"Name\": \"advanced_features\", \"Checked\": true, \"RowOrder\": 5, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_triple_1\", \"Checked\": false, \"RowOrder\": 6, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_ts_16\", \"Checked\": false, \"RowOrder\": 7, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_triple_5\", \"Checked\": false, \"RowOrder\": 8, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_ts_annual\", \"Checked\": false, \"RowOrder\": 9, \"ShortName\": \"RS\"}, {\"Name\": \"tsparameters_weekly_stress\", \"Checked\": true, \"RowOrder\": 10, \"ShortName\": \"RS\"}]",
+    "CreatedOn": "2025-08-17 15:43",
+    "DisplayCreatedOn": "2025-08-17 15:43",
     "UserName": "akanu"
   }
 ]
