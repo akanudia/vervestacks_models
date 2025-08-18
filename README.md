@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - DEU
 
-**Generated:** 2025-08-15 01:49:47
+**Generated:** 2025-08-19 00:28:07
 
 ## Processing Parameters
 
@@ -138,27 +138,27 @@ The following charts provide insights into the temporal characteristics of this 
 #### 🔥 **Detailed Stress Analysis Results:**
 
 **🎯 Triple-1 Critical Days (Most Important 3 Days):**
-- 🔴 Scarcity: 09-12 (S01)
-- 🔴 Scarcity: 12-24 (S01)
-- 🟡 Volatile: 04-03 (V01)
+- 🔴 Scarcity: 10-06 (S01)
+- 🔴 Scarcity: 01-31 (S01)
+- 🟡 Volatile: 03-06 (V01)
 
 **🎯 Triple-5 Extended Analysis (15 Critical Days):**
 *Scarcity Days (Low Coverage):*
-  - 09-12 (S01)
-  - 11-23 (S02)
-  - 11-17 (S03)
-  - 10-06 (S04)
-  - 09-18 (S05)
+  - 10-06 (S01)
+  - 02-17 (S02)
+  - 10-07 (S03)
+  - 10-08 (S04)
+  - 11-15 (S05)
 *Volatile Days (High Variability):*
-  - 04-03 (V01)
-  - 04-16 (V02)
-  - 08-30 (V03)
-  - 10-13 (V04)
-  - 05-13 (V05)
+  - 03-06 (V01)
+  - 04-07 (V02)
+  - 05-04 (V03)
+  - 05-19 (V04)
+  - 07-06 (V05)
 
 **🌨️ Weekly Sustained Stress Analysis:**
-- Week W01: 11-19 to 11-25 (7 days)
-- Week W02: 01-08 to 01-14 (7 days)
+- Week W01: 11-12 to 11-18 (7 days)
+- Week W02: 02-12 to 02-18 (7 days)
 
 #### 📊 **Generated Analysis Files:**
 - `segment_summary_DEU.csv` - Statistical summary of all identified critical periods
@@ -181,18 +181,6 @@ The following charts provide insights into the temporal characteristics of this 
 ### 📊 Generated Analysis Charts
 
 *Interactive visualizations from the timeslice analysis process. Click any chart to view full resolution.*
-
-
-#### 📅 **Interactive Timeslice Calendar** - Visual overview of all critical periods throughout the year
-
-<div align="center">
-  <img src="VerveStacks_DEU/source_data/timeslice_calendar_DEU.svg" alt="Timeslice Calendar - DEU" width="800" />
-</div>
-
-📱 **Interactive Version**: [Open full interactive calendar](VerveStacks_DEU/source_data/timeslice_calendar_DEU.html) (local viewing)
-
-*Calendar shows critical periods: Scarcity 🔥, Surplus ⚡, Volatile 🌪️, and Weekly Stress 📅*
-
 
 #### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
 <a href="VerveStacks_DEU_grids/source_data/aggregation_justification_DEU.png" target="_blank">
