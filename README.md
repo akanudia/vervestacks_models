@@ -1,6 +1,6 @@
-# VerveStacks Model Generation Notes - BGR
+# VerveStacks Model Generation Notes - DEU
 
-**Generated:** 2025-08-19 14:38:27
+**Generated:** 2025-08-19 14:51:22
 
 ## Processing Parameters
 
@@ -62,7 +62,7 @@
 ## Model Structure
 
 ### Files Included
-- **Source Data**: `source_data/VerveStacks_BGR.xlsx` - the full dataset in a model-agnostic format, ready for TIMES/VEDA execution
+- **Source Data**: `source_data/VerveStacks_DEU.xlsx` - the full dataset in a model-agnostic format, ready for TIMES/VEDA execution
     # Includes hourly demand and solar/wind resource profiles
 - **VEDA Model Files**: Complete model ready for Veda-TIMES execution
 - **Scenario Files**: NGFS climate scenarios and policy assumptions
@@ -132,40 +132,40 @@ The following charts provide insights into the temporal characteristics of this 
 
 ### Critical Period Analysis Results
 
-**Analysis Status:** Timeslice analysis completed for BGR
+**Analysis Status:** Timeslice analysis completed for DEU
 
 
 #### 🔥 **Detailed Stress Analysis Results:**
 
 **🎯 Triple-1 Critical Days (Most Important 3 Days):**
-- 🔴 Scarcity: 10-13 (S01)
-- 🔴 Scarcity: 02-03 (S01)
-- 🟡 Volatile: 11-07 (V01)
+- 🔴 Scarcity: 10-06 (S01)
+- 🔴 Scarcity: 01-31 (S01)
+- 🟡 Volatile: 03-06 (V01)
 
 **🎯 Triple-5 Extended Analysis (15 Critical Days):**
 *Scarcity Days (Low Coverage):*
-  - 10-13 (S01)
-  - 10-11 (S02)
-  - 09-16 (S03)
-  - 10-09 (S04)
-  - 10-25 (S05)
+  - 10-06 (S01)
+  - 02-17 (S02)
+  - 10-07 (S03)
+  - 10-08 (S04)
+  - 11-15 (S05)
 *Volatile Days (High Variability):*
-  - 11-07 (V01)
-  - 05-20 (V02)
-  - 09-27 (V03)
-  - 10-19 (V04)
-  - 05-17 (V05)
+  - 03-06 (V01)
+  - 04-07 (V02)
+  - 05-04 (V03)
+  - 05-19 (V04)
+  - 07-06 (V05)
 
 **🌨️ Weekly Sustained Stress Analysis:**
-- Week W01: 10-08 to 10-14 (7 days)
-- Week W02: 10-22 to 10-28 (7 days)
+- Week W01: 11-12 to 11-18 (7 days)
+- Week W02: 02-12 to 02-18 (7 days)
 
 #### 📊 **Generated Analysis Files:**
-- `segment_summary_BGR.csv` - Statistical summary of all identified critical periods
-- `timeslices_BGR_triple_1.csv` - Triple-1 critical periods (3 days: 1 scarcity + 1 surplus + 1 volatile)
-- `timeslices_BGR_triple_5.csv` - Triple-5 critical periods (15 days: 5 scarcity + 5 surplus + 5 volatile)
-- `timeslices_BGR_weekly_stress.csv` - Weekly stress periods (2 worst weeks for sustained stress)
-- `tsdesign_BGR.csv` - Complete VEDA timeslice structure with temporal mappings
+- `segment_summary_DEU.csv` - Statistical summary of all identified critical periods
+- `timeslices_DEU_triple_1.csv` - Triple-1 critical periods (3 days: 1 scarcity + 1 surplus + 1 volatile)
+- `timeslices_DEU_triple_5.csv` - Triple-5 critical periods (15 days: 5 scarcity + 5 surplus + 5 volatile)
+- `timeslices_DEU_weekly_stress.csv` - Weekly stress periods (2 worst weeks for sustained stress)
+- `tsdesign_DEU.csv` - Complete VEDA timeslice structure with temporal mappings
 
 **Stress Period Methodology:**
 - **Scarcity Periods**: Days with lowest renewable coverage (highest need for backup power)
@@ -183,29 +183,29 @@ The following charts provide insights into the temporal characteristics of this 
 *Interactive visualizations from the timeslice analysis process. Click any chart to view full resolution.*
 
 #### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_BGR/source_data/aggregation_justification_BGR.png" target="_blank">
-  <img src="VerveStacks_BGR/source_data/aggregation_justification_BGR.png" alt="aggregation_justification_BGR.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+<a href="VerveStacks_DEU/source_data/aggregation_justification_DEU.png" target="_blank">
+  <img src="VerveStacks_DEU/source_data/aggregation_justification_DEU.png" alt="aggregation_justification_DEU.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
 
 #### **Critical Days Analysis (Triple-5)** - Detailed view of 15 critical days: 5 scarcity + 5 surplus + 5 volatile periods
-<a href="VerveStacks_BGR/source_data/plan2_triple5_critical_days_BGR.png" target="_blank">
-  <img src="VerveStacks_BGR/source_data/plan2_triple5_critical_days_BGR.png" alt="plan2_triple5_critical_days_BGR.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+<a href="VerveStacks_DEU/source_data/plan2_triple5_critical_days_DEU.png" target="_blank">
+  <img src="VerveStacks_DEU/source_data/plan2_triple5_critical_days_DEU.png" alt="plan2_triple5_critical_days_DEU.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
 
 #### **Weekly Stress Analysis** - Sustained stress periods showing 2 worst weeks for renewable coverage
-<a href="VerveStacks_BGR/source_data/plan3_weekly_stress_BGR.png" target="_blank">
-  <img src="VerveStacks_BGR/source_data/plan3_weekly_stress_BGR.png" alt="plan3_weekly_stress_BGR.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+<a href="VerveStacks_DEU/source_data/plan3_weekly_stress_DEU.png" target="_blank">
+  <img src="VerveStacks_DEU/source_data/plan3_weekly_stress_DEU.png" alt="plan3_weekly_stress_DEU.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
 
 #### **Renewable Supply Curves** - Cost-ordered renewable resource potential showing solar and wind capacity vs. LCOE
-<a href="VerveStacks_BGR/source_data/supply_curves_BGR.png" target="_blank">
-  <img src="VerveStacks_BGR/source_data/supply_curves_BGR.png" alt="supply_curves_BGR.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+<a href="VerveStacks_DEU/source_data/supply_curves_DEU.png" target="_blank">
+  <img src="VerveStacks_DEU/source_data/supply_curves_DEU.png" alt="supply_curves_DEU.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
