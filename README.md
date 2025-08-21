@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - ITA
 
-**Generated:** 2025-08-19 18:22:58
+**Generated:** 2025-08-21 23:16:48
 
 ## Processing Parameters
 
@@ -137,29 +137,6 @@ The following charts provide insights into the temporal characteristics of this 
 
 #### 🔥 **Detailed Stress Analysis Results:**
 
-**🎯 Triple-1 Critical Days (Most Important 3 Days):**
-- 🔴 Scarcity: 10-24 (S01)
-- 🔴 Scarcity: 02-02 (S01)
-- 🟡 Volatile: 03-04 (V01)
-
-**🎯 Triple-5 Extended Analysis (15 Critical Days):**
-*Scarcity Days (Low Coverage):*
-  - 10-24 (S01)
-  - 12-30 (S02)
-  - 10-07 (S03)
-  - 10-21 (S04)
-  - 03-28 (S05)
-*Volatile Days (High Variability):*
-  - 03-04 (V01)
-  - 01-03 (V02)
-  - 04-17 (V03)
-  - 02-26 (V04)
-  - 04-16 (V05)
-
-**🌨️ Weekly Sustained Stress Analysis:**
-- Week W01: 10-22 to 10-28 (7 days)
-- Week W02: 10-08 to 10-14 (7 days)
-
 #### 📊 **Generated Analysis Files:**
 - `segment_summary_ITA.csv` - Statistical summary of all identified critical periods
 - `timeslices_ITA_triple_1.csv` - Triple-1 critical periods (3 days: 1 scarcity + 1 surplus + 1 volatile)
@@ -189,6 +166,69 @@ The following charts provide insights into the temporal characteristics of this 
 
 *Click image to view full size*
 
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_ITA/source_data/aggregation_justification_ITA_s1p1v1_d.png" target="_blank">
+  <img src="VerveStacks_ITA/source_data/aggregation_justification_ITA_s1p1v1_d.png" alt="aggregation_justification_ITA_s1p1v1_d.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_ITA/source_data/aggregation_justification_ITA_s2_w.png" target="_blank">
+  <img src="VerveStacks_ITA/source_data/aggregation_justification_ITA_s2_w.png" alt="aggregation_justification_ITA_s2_w.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_ITA/source_data/aggregation_justification_ITA_s2_w_p2_d.png" target="_blank">
+  <img src="VerveStacks_ITA/source_data/aggregation_justification_ITA_s2_w_p2_d.png" alt="aggregation_justification_ITA_s2_w_p2_d.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_ITA/source_data/aggregation_justification_ITA_s3p3v3_d.png" target="_blank">
+  <img src="VerveStacks_ITA/source_data/aggregation_justification_ITA_s3p3v3_d.png" alt="aggregation_justification_ITA_s3p3v3_d.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_ITA/source_data/aggregation_justification_ITA_s5p5v5_d.png" target="_blank">
+  <img src="VerveStacks_ITA/source_data/aggregation_justification_ITA_s5p5v5_d.png" alt="aggregation_justification_ITA_s5p5v5_d.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_ITA/source_data/aggregation_justification_ITA_ts12_clu.png" target="_blank">
+  <img src="VerveStacks_ITA/source_data/aggregation_justification_ITA_ts12_clu.png" alt="aggregation_justification_ITA_ts12_clu.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_ITA/source_data/aggregation_justification_ITA_ts24_clu.png" target="_blank">
+  <img src="VerveStacks_ITA/source_data/aggregation_justification_ITA_ts24_clu.png" alt="aggregation_justification_ITA_ts24_clu.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_ITA/source_data/aggregation_justification_ITA_ts48_clu.png" target="_blank">
+  <img src="VerveStacks_ITA/source_data/aggregation_justification_ITA_ts48_clu.png" alt="aggregation_justification_ITA_ts48_clu.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Calendar Year Ita** - Timeslice analysis visualization
+<a href="VerveStacks_ITA/source_data/calendar_year_ITA.png" target="_blank">
+  <img src="VerveStacks_ITA/source_data/calendar_year_ITA.png" alt="calendar_year_ITA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
 #### **Critical Days Analysis (Triple-5)** - Detailed view of 15 critical days: 5 scarcity + 5 surplus + 5 volatile periods
 <a href="VerveStacks_ITA/source_data/plan2_triple5_critical_days_ITA.png" target="_blank">
   <img src="VerveStacks_ITA/source_data/plan2_triple5_critical_days_ITA.png" alt="plan2_triple5_critical_days_ITA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
@@ -199,6 +239,55 @@ The following charts provide insights into the temporal characteristics of this 
 #### **Weekly Stress Analysis** - Sustained stress periods showing 2 worst weeks for renewable coverage
 <a href="VerveStacks_ITA/source_data/plan3_weekly_stress_ITA.png" target="_blank">
   <img src="VerveStacks_ITA/source_data/plan3_weekly_stress_ITA.png" alt="plan3_weekly_stress_ITA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Re Analysis Summary Ita** - Timeslice analysis visualization
+<a href="VerveStacks_ITA/source_data/re_analysis_summary_ITA.png" target="_blank">
+  <img src="VerveStacks_ITA/source_data/re_analysis_summary_ITA.png" alt="re_analysis_summary_ITA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Stress Periods S2 W Ita** - Timeslice analysis visualization
+<a href="VerveStacks_ITA/source_data/stress_periods_s2_w_ITA.png" target="_blank">
+  <img src="VerveStacks_ITA/source_data/stress_periods_s2_w_ITA.png" alt="stress_periods_s2_w_ITA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Stress Periods S2 W P2 D Daily Ita** - Timeslice analysis visualization
+<a href="VerveStacks_ITA/source_data/stress_periods_s2_w_p2_d_daily_ITA.png" target="_blank">
+  <img src="VerveStacks_ITA/source_data/stress_periods_s2_w_p2_d_daily_ITA.png" alt="stress_periods_s2_w_p2_d_daily_ITA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Stress Periods S2 W P2 D Ita** - Timeslice analysis visualization
+<a href="VerveStacks_ITA/source_data/stress_periods_s2_w_p2_d_ITA.png" target="_blank">
+  <img src="VerveStacks_ITA/source_data/stress_periods_s2_w_p2_d_ITA.png" alt="stress_periods_s2_w_p2_d_ITA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Stress Periods S2 W P2 D Weekly Ita** - Timeslice analysis visualization
+<a href="VerveStacks_ITA/source_data/stress_periods_s2_w_p2_d_weekly_ITA.png" target="_blank">
+  <img src="VerveStacks_ITA/source_data/stress_periods_s2_w_p2_d_weekly_ITA.png" alt="stress_periods_s2_w_p2_d_weekly_ITA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Stress Periods S3P3V3 D Ita** - Timeslice analysis visualization
+<a href="VerveStacks_ITA/source_data/stress_periods_s3p3v3_d_ITA.png" target="_blank">
+  <img src="VerveStacks_ITA/source_data/stress_periods_s3p3v3_d_ITA.png" alt="stress_periods_s3p3v3_d_ITA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Stress Periods S5P5V5 D Ita** - Timeslice analysis visualization
+<a href="VerveStacks_ITA/source_data/stress_periods_s5p5v5_d_ITA.png" target="_blank">
+  <img src="VerveStacks_ITA/source_data/stress_periods_s5p5v5_d_ITA.png" alt="stress_periods_s5p5v5_d_ITA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
