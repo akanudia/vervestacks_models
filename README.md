@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - USA
 
-**Generated:** 2025-08-15 02:07:41
+**Generated:** 2025-08-21 11:02:41
 
 ## Processing Parameters
 
@@ -138,27 +138,27 @@ The following charts provide insights into the temporal characteristics of this 
 #### 🔥 **Detailed Stress Analysis Results:**
 
 **🎯 Triple-1 Critical Days (Most Important 3 Days):**
-- 🔴 Scarcity: 10-26 (S01)
-- 🔴 Scarcity: 06-01 (S01)
-- 🟡 Volatile: 07-26 (V01)
+- 🔴 Scarcity: 01-16 (S01)
+- 🔴 Scarcity: 01-31 (S01)
+- 🟡 Volatile: 09-21 (V01)
 
 **🎯 Triple-5 Extended Analysis (15 Critical Days):**
 *Scarcity Days (Low Coverage):*
-  - 10-26 (S01)
-  - 10-11 (S02)
-  - 10-29 (S03)
-  - 10-22 (S04)
-  - 10-07 (S05)
+  - 01-16 (S01)
+  - 12-08 (S02)
+  - 01-15 (S03)
+  - 12-09 (S04)
+  - 01-11 (S05)
 *Volatile Days (High Variability):*
-  - 07-26 (V01)
-  - 08-15 (V02)
-  - 08-01 (V03)
-  - 08-08 (V04)
-  - 07-24 (V05)
+  - 09-21 (V01)
+  - 10-25 (V02)
+  - 01-23 (V03)
+  - 05-04 (V04)
+  - 06-07 (V05)
 
 **🌨️ Weekly Sustained Stress Analysis:**
-- Week W01: 10-22 to 10-28 (7 days)
-- Week W02: 10-01 to 10-07 (7 days)
+- Week W01: 01-08 to 01-14 (7 days)
+- Week W02: 12-03 to 12-09 (7 days)
 
 #### 📊 **Generated Analysis Files:**
 - `segment_summary_USA.csv` - Statistical summary of all identified critical periods
@@ -182,21 +182,16 @@ The following charts provide insights into the temporal characteristics of this 
 
 *Interactive visualizations from the timeslice analysis process. Click any chart to view full resolution.*
 
-
-#### 📅 **Interactive Timeslice Calendar** - Visual overview of all critical periods throughout the year
-
-<div align="center">
-  <img src="VerveStacks_USA/source_data/timeslice_calendar_USA.svg" alt="Timeslice Calendar - USA" width="800" />
-</div>
-
-📱 **Interactive Version**: [Open full interactive calendar](VerveStacks_USA/source_data/timeslice_calendar_USA.html) (local viewing)
-
-*Calendar shows critical periods: Scarcity 🔥, Surplus ⚡, Volatile 🌪️, and Weekly Stress 📅*
-
-
 #### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
 <a href="VerveStacks_USA/source_data/aggregation_justification_USA.png" target="_blank">
   <img src="VerveStacks_USA/source_data/aggregation_justification_USA.png" alt="aggregation_justification_USA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Calendar Year Usa** - Timeslice analysis visualization
+<a href="VerveStacks_USA/source_data/calendar_year_USA.png" target="_blank">
+  <img src="VerveStacks_USA/source_data/calendar_year_USA.png" alt="calendar_year_USA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
@@ -211,6 +206,13 @@ The following charts provide insights into the temporal characteristics of this 
 #### **Weekly Stress Analysis** - Sustained stress periods showing 2 worst weeks for renewable coverage
 <a href="VerveStacks_USA/source_data/plan3_weekly_stress_USA.png" target="_blank">
   <img src="VerveStacks_USA/source_data/plan3_weekly_stress_USA.png" alt="plan3_weekly_stress_USA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Re Analysis Summary Usa** - Timeslice analysis visualization
+<a href="VerveStacks_USA/source_data/re_analysis_summary_USA.png" target="_blank">
+  <img src="VerveStacks_USA/source_data/re_analysis_summary_USA.png" alt="re_analysis_summary_USA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
