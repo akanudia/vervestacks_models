@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - FIN
 
-**Generated:** 2025-08-15 02:37:38
+**Generated:** 2025-08-25 18:15:50
 
 ## Processing Parameters
 
@@ -137,29 +137,6 @@ The following charts provide insights into the temporal characteristics of this 
 
 #### 🔥 **Detailed Stress Analysis Results:**
 
-**🎯 Triple-1 Critical Days (Most Important 3 Days):**
-- 🔴 Scarcity: 08-12 (S01)
-- 🔴 Scarcity: 01-23 (S01)
-- 🟡 Volatile: 02-21 (V01)
-
-**🎯 Triple-5 Extended Analysis (15 Critical Days):**
-*Scarcity Days (Low Coverage):*
-  - 08-12 (S01)
-  - 08-25 (S02)
-  - 08-13 (S03)
-  - 09-08 (S04)
-  - 09-04 (S05)
-*Volatile Days (High Variability):*
-  - 02-21 (V01)
-  - 08-27 (V02)
-  - 08-04 (V03)
-  - 11-21 (V04)
-  - 06-13 (V05)
-
-**🌨️ Weekly Sustained Stress Analysis:**
-- Week W01: 10-22 to 10-28 (7 days)
-- Week W02: 07-23 to 07-29 (7 days)
-
 #### 📊 **Generated Analysis Files:**
 - `segment_summary_FIN.csv` - Statistical summary of all identified critical periods
 - `timeslices_FIN_triple_1.csv` - Triple-1 critical periods (3 days: 1 scarcity + 1 surplus + 1 volatile)
@@ -182,21 +159,72 @@ The following charts provide insights into the temporal characteristics of this 
 
 *Interactive visualizations from the timeslice analysis process. Click any chart to view full resolution.*
 
-
-#### 📅 **Interactive Timeslice Calendar** - Visual overview of all critical periods throughout the year
-
-<div align="center">
-  <img src="VerveStacks_FIN/source_data/timeslice_calendar_FIN.svg" alt="Timeslice Calendar - FIN" width="800" />
-</div>
-
-📱 **Interactive Version**: [Open full interactive calendar](VerveStacks_FIN/source_data/timeslice_calendar_FIN.html) (local viewing)
-
-*Calendar shows critical periods: Scarcity 🔥, Surplus ⚡, Volatile 🌪️, and Weekly Stress 📅*
-
-
 #### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
 <a href="VerveStacks_FIN_grids/source_data/aggregation_justification_FIN.png" target="_blank">
   <img src="VerveStacks_FIN_grids/source_data/aggregation_justification_FIN.png" alt="aggregation_justification_FIN.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_FIN_grids/source_data/aggregation_justification_FIN_s1p1v1_d.png" target="_blank">
+  <img src="VerveStacks_FIN_grids/source_data/aggregation_justification_FIN_s1p1v1_d.png" alt="aggregation_justification_FIN_s1p1v1_d.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_FIN_grids/source_data/aggregation_justification_FIN_s2_w.png" target="_blank">
+  <img src="VerveStacks_FIN_grids/source_data/aggregation_justification_FIN_s2_w.png" alt="aggregation_justification_FIN_s2_w.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_FIN_grids/source_data/aggregation_justification_FIN_s2_w_p2_d.png" target="_blank">
+  <img src="VerveStacks_FIN_grids/source_data/aggregation_justification_FIN_s2_w_p2_d.png" alt="aggregation_justification_FIN_s2_w_p2_d.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_FIN_grids/source_data/aggregation_justification_FIN_s3p3v3_d.png" target="_blank">
+  <img src="VerveStacks_FIN_grids/source_data/aggregation_justification_FIN_s3p3v3_d.png" alt="aggregation_justification_FIN_s3p3v3_d.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_FIN_grids/source_data/aggregation_justification_FIN_s5p5v5_d.png" target="_blank">
+  <img src="VerveStacks_FIN_grids/source_data/aggregation_justification_FIN_s5p5v5_d.png" alt="aggregation_justification_FIN_s5p5v5_d.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_FIN_grids/source_data/aggregation_justification_FIN_ts12_clu.png" target="_blank">
+  <img src="VerveStacks_FIN_grids/source_data/aggregation_justification_FIN_ts12_clu.png" alt="aggregation_justification_FIN_ts12_clu.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_FIN_grids/source_data/aggregation_justification_FIN_ts24_clu.png" target="_blank">
+  <img src="VerveStacks_FIN_grids/source_data/aggregation_justification_FIN_ts24_clu.png" alt="aggregation_justification_FIN_ts24_clu.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_FIN_grids/source_data/aggregation_justification_FIN_ts48_clu.png" target="_blank">
+  <img src="VerveStacks_FIN_grids/source_data/aggregation_justification_FIN_ts48_clu.png" alt="aggregation_justification_FIN_ts48_clu.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Calendar Year Fin** - Timeslice analysis visualization
+<a href="VerveStacks_FIN_grids/source_data/calendar_year_FIN.png" target="_blank">
+  <img src="VerveStacks_FIN_grids/source_data/calendar_year_FIN.png" alt="calendar_year_FIN.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
@@ -211,6 +239,27 @@ The following charts provide insights into the temporal characteristics of this 
 #### **Weekly Stress Analysis** - Sustained stress periods showing 2 worst weeks for renewable coverage
 <a href="VerveStacks_FIN_grids/source_data/plan3_weekly_stress_FIN.png" target="_blank">
   <img src="VerveStacks_FIN_grids/source_data/plan3_weekly_stress_FIN.png" alt="plan3_weekly_stress_FIN.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Re Analysis Summary Fin** - Timeslice analysis visualization
+<a href="VerveStacks_FIN_grids/source_data/re_analysis_summary_FIN.png" target="_blank">
+  <img src="VerveStacks_FIN_grids/source_data/re_analysis_summary_FIN.png" alt="re_analysis_summary_FIN.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Stress Periods S2 W Fin** - Timeslice analysis visualization
+<a href="VerveStacks_FIN_grids/source_data/stress_periods_s2_w_FIN.png" target="_blank">
+  <img src="VerveStacks_FIN_grids/source_data/stress_periods_s2_w_FIN.png" alt="stress_periods_s2_w_FIN.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Stress Periods S5P5V5 D Fin** - Timeslice analysis visualization
+<a href="VerveStacks_FIN_grids/source_data/stress_periods_s5p5v5_d_FIN.png" target="_blank">
+  <img src="VerveStacks_FIN_grids/source_data/stress_periods_s5p5v5_d_FIN.png" alt="stress_periods_s5p5v5_d_FIN.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
