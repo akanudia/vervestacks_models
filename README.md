@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - FIN
 
-**Generated:** 2025-08-25 16:57:27
+**Generated:** 2025-08-25 18:13:04
 
 ## Processing Parameters
 
@@ -137,29 +137,6 @@ The following charts provide insights into the temporal characteristics of this 
 
 #### 🔥 **Detailed Stress Analysis Results:**
 
-**🎯 Triple-1 Critical Days (Most Important 3 Days):**
-- 🔴 Scarcity: 08-25 (S01)
-- 🔴 Scarcity: 01-30 (S01)
-- 🟡 Volatile: 11-29 (V01)
-
-**🎯 Triple-5 Extended Analysis (15 Critical Days):**
-*Scarcity Days (Low Coverage):*
-  - 08-25 (S01)
-  - 09-12 (S02)
-  - 09-08 (S03)
-  - 08-08 (S04)
-  - 08-03 (S05)
-*Volatile Days (High Variability):*
-  - 11-29 (V01)
-  - 07-17 (V02)
-  - 10-13 (V03)
-  - 11-03 (V04)
-  - 07-31 (V05)
-
-**🌨️ Weekly Sustained Stress Analysis:**
-- Week W01: 08-06 to 08-12 (7 days)
-- Week W02: 06-25 to 07-01 (7 days)
-
 #### 📊 **Generated Analysis Files:**
 - `segment_summary_FIN.csv` - Statistical summary of all identified critical periods
 - `timeslices_FIN_triple_1.csv` - Triple-1 critical periods (3 days: 1 scarcity + 1 surplus + 1 volatile)
@@ -189,6 +166,69 @@ The following charts provide insights into the temporal characteristics of this 
 
 *Click image to view full size*
 
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_FIN/source_data/aggregation_justification_FIN_s1p1v1_d.png" target="_blank">
+  <img src="VerveStacks_FIN/source_data/aggregation_justification_FIN_s1p1v1_d.png" alt="aggregation_justification_FIN_s1p1v1_d.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_FIN/source_data/aggregation_justification_FIN_s2_w.png" target="_blank">
+  <img src="VerveStacks_FIN/source_data/aggregation_justification_FIN_s2_w.png" alt="aggregation_justification_FIN_s2_w.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_FIN/source_data/aggregation_justification_FIN_s2_w_p2_d.png" target="_blank">
+  <img src="VerveStacks_FIN/source_data/aggregation_justification_FIN_s2_w_p2_d.png" alt="aggregation_justification_FIN_s2_w_p2_d.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_FIN/source_data/aggregation_justification_FIN_s3p3v3_d.png" target="_blank">
+  <img src="VerveStacks_FIN/source_data/aggregation_justification_FIN_s3p3v3_d.png" alt="aggregation_justification_FIN_s3p3v3_d.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_FIN/source_data/aggregation_justification_FIN_s5p5v5_d.png" target="_blank">
+  <img src="VerveStacks_FIN/source_data/aggregation_justification_FIN_s5p5v5_d.png" alt="aggregation_justification_FIN_s5p5v5_d.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_FIN/source_data/aggregation_justification_FIN_ts12_clu.png" target="_blank">
+  <img src="VerveStacks_FIN/source_data/aggregation_justification_FIN_ts12_clu.png" alt="aggregation_justification_FIN_ts12_clu.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_FIN/source_data/aggregation_justification_FIN_ts24_clu.png" target="_blank">
+  <img src="VerveStacks_FIN/source_data/aggregation_justification_FIN_ts24_clu.png" alt="aggregation_justification_FIN_ts24_clu.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_FIN/source_data/aggregation_justification_FIN_ts48_clu.png" target="_blank">
+  <img src="VerveStacks_FIN/source_data/aggregation_justification_FIN_ts48_clu.png" alt="aggregation_justification_FIN_ts48_clu.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Calendar Year Fin** - Timeslice analysis visualization
+<a href="VerveStacks_FIN/source_data/calendar_year_FIN.png" target="_blank">
+  <img src="VerveStacks_FIN/source_data/calendar_year_FIN.png" alt="calendar_year_FIN.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
 #### **Critical Days Analysis (Triple-5)** - Detailed view of 15 critical days: 5 scarcity + 5 surplus + 5 volatile periods
 <a href="VerveStacks_FIN/source_data/plan2_triple5_critical_days_FIN.png" target="_blank">
   <img src="VerveStacks_FIN/source_data/plan2_triple5_critical_days_FIN.png" alt="plan2_triple5_critical_days_FIN.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
@@ -199,6 +239,27 @@ The following charts provide insights into the temporal characteristics of this 
 #### **Weekly Stress Analysis** - Sustained stress periods showing 2 worst weeks for renewable coverage
 <a href="VerveStacks_FIN/source_data/plan3_weekly_stress_FIN.png" target="_blank">
   <img src="VerveStacks_FIN/source_data/plan3_weekly_stress_FIN.png" alt="plan3_weekly_stress_FIN.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Re Analysis Summary Fin** - Timeslice analysis visualization
+<a href="VerveStacks_FIN/source_data/re_analysis_summary_FIN.png" target="_blank">
+  <img src="VerveStacks_FIN/source_data/re_analysis_summary_FIN.png" alt="re_analysis_summary_FIN.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Stress Periods S2 W Fin** - Timeslice analysis visualization
+<a href="VerveStacks_FIN/source_data/stress_periods_s2_w_FIN.png" target="_blank">
+  <img src="VerveStacks_FIN/source_data/stress_periods_s2_w_FIN.png" alt="stress_periods_s2_w_FIN.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Stress Periods S5P5V5 D Fin** - Timeslice analysis visualization
+<a href="VerveStacks_FIN/source_data/stress_periods_s5p5v5_d_FIN.png" target="_blank">
+  <img src="VerveStacks_FIN/source_data/stress_periods_s5p5v5_d_FIN.png" alt="stress_periods_s5p5v5_d_FIN.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
