@@ -1,14 +1,14 @@
 # VerveStacks Model Generation Notes - IND
 
-**Generated:** 2025-08-07 16:38:02
+**Generated:** 2025-08-28 02:13:55
 
 ## Processing Parameters
 
 | Parameter | Value | Description |
 |-----------|-------|-------------|
-| **Capacity Threshold** | 500 MW | Minimum plant size for individual tracking |
-| **Gas Efficiency Adjustment** | 1.0 | Multiplier applied to gas plant efficiencies |
-| **Coal Efficiency Adjustment** | 1.0 | Multiplier applied to coal plant efficiencies |
+| **Capacity Threshold** | Not specified MW | Minimum plant size for individual tracking |
+| **Gas Efficiency Adjustment** | Not specified | Multiplier applied to gas plant efficiencies |
+| **Coal Efficiency Adjustment** | Not specified | Multiplier applied to coal plant efficiencies |
 
 
 ## Data, Assumptions & Coverage
@@ -50,20 +50,14 @@
 
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 94.3% of total capacity from plant-level GEM data
-- **Total Capacity Tracked**: 558.8 GW from all sources
-- **Plants Above Threshold**: 489 individual plants tracked above 500 MW threshold
-- **Total Plants Processed**: 665 plants in database
+- **Individual Plant Coverage**: TBD of total capacity from plant-level GEM data
+- **Total Capacity Tracked**: TBD from all sources
+- **Plants Above Threshold**: TBD individual plants tracked above N/A MW threshold
+- **Total Plants Processed**: TBD plants in database
 - **Technology Mapping**: Automated mapping using VerveStacks technology classifications
 
 ### Missing Capacity Added From:
-- **IRENA data**:
-  - **hydro**: 5.06 GW
-  - **solar**: 1.1 GW
-  - **wind**: 8.92 GW
-- **EMBER data**:
-  - **gas**: 5.03 GW
-  - **bioenergy**: 9.73 GW
+- **No missing capacity added** - All capacity covered by plant-level data
 
 ## Model Structure
 
@@ -74,23 +68,225 @@
 - **Scenario Files**: NGFS climate scenarios and policy assumptions
 
 ### Key Methodology Points
-- Plant-level data prioritized where available (capacity > 500 MW)
-- 489 plants tracked individually above threshold
+- Plant-level data prioritized where available (capacity > N/A MW)
+- N/A plants tracked individually above threshold
 - Efficiency adjustments applied for calibration to national statistics
 - Missing capacity filled using technology-specific statistical estimates
 - Regional cost multipliers applied based on country economic indicators
+
+## Temporal Modeling & Timeslice Analysis
+
+### Advanced Stress Period Identification
+
+This model employs sophisticated **statistical scenario generation** to identify critical periods in high-renewable energy systems:
+
+#### 🔥 **Scarcity Periods** - Renewable Shortage Crisis
+- Days with lowest renewable energy coverage relative to demand
+- Critical for capacity planning and storage requirements
+- Identifies when conventional backup power is most needed
+
+#### ⚡ **Surplus Periods** - Renewable Excess Management  
+- Days with highest renewable generation exceeding demand
+- Essential for curtailment analysis and export/storage strategies
+- Shows opportunities for demand shifting and industrial electrification
+
+#### 🌪️ **Volatile Periods** - Operational Challenges
+- Days with highest generation variability and unpredictability
+- Important for grid stability and flexible resource planning
+- Captures rapid ramping requirements for dispatchable assets
+
+### Renewable Resource Selection
+
+**Balanced Solar/Wind Portfolio Optimization:**
+- Quality-weighted selection based on resource potential and economics
+- Grid cell-level analysis using 50x50km resolution REZoning data
+- Cost-effectiveness scoring (TWh generation per $/MWh LCOE)
+- Technology mix targets derived from historical deployment patterns
+
+**Supply Curve Analysis:**
+- Complete renewable resource landscape visualization
+- Stepped-line supply curves showing cumulative potential vs. cost
+- Integration of wind onshore resource assessments
+- Economic competitiveness ranking for investment prioritization
+
+### Coverage Metrics & Energy Balance
+
+**Clean Generation Coverage:**
+- Hourly coverage calculation: (Clean Generation + Nuclear) / Demand × 100%
+- Range analysis from minimum to maximum coverage throughout the year
+- Net load calculations showing residual demand after clean generation
+- Stress period selection based on coverage distribution statistics
+
+### Timeslice Structure Generation
+
+**Multi-Scale Temporal Resolution:**
+- **Base Aggregation**: 6 seasons × 8 daily periods = 48 base timeslices
+- **Critical Period Enhancement**: Additional segments for identified stress periods
+- **Statistical Methods**: Triple-1, Triple-5, and Weekly Stress approaches
+- **VEDA Integration**: Complete tsdesign.csv with TIMES-compatible mappings
+
+## Timeslice Analysis Visualizations
+
+The following charts provide insights into the temporal characteristics of this energy system:
+
+
+### Critical Period Analysis Results
+
+**Analysis Status:** Timeslice analysis completed for IND
+
+
+#### 🔥 **Detailed Stress Analysis Results:**
+
+#### 📊 **Generated Analysis Files:**
+- `segment_summary_IND.csv` - Statistical summary of all identified critical periods
+- `timeslices_IND_triple_1.csv` - Triple-1 critical periods (3 days: 1 scarcity + 1 surplus + 1 volatile)
+- `timeslices_IND_triple_5.csv` - Triple-5 critical periods (15 days: 5 scarcity + 5 surplus + 5 volatile)
+- `timeslices_IND_weekly_stress.csv` - Weekly stress periods (2 worst weeks for sustained stress)
+- `tsdesign_IND.csv` - Complete VEDA timeslice structure with temporal mappings
+
+**Stress Period Methodology:**
+- **Scarcity Periods**: Days with lowest renewable coverage (highest need for backup power)
+- **Surplus Periods**: Days with highest renewable coverage (maximum curtailment potential)  
+- **Volatile Periods**: Days with highest generation variability (grid stability challenges)
+- **Weekly Stress**: Sustained periods of low renewable coverage (energy security focus)
+
+**Coverage Analysis**: Clean generation (renewables + nuclear) as percentage of hourly demand
+- Enables identification of critical periods for capacity planning
+- Supports renewable integration and storage requirement analysis
+- Provides input for grid flexibility and backup power assessment
+
+### 📊 Generated Analysis Charts
+
+*Interactive visualizations from the timeslice analysis process. Click any chart to view full resolution.*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_IND/source_data/aggregation_justification_IND.png" target="_blank">
+  <img src="VerveStacks_IND/source_data/aggregation_justification_IND.png" alt="aggregation_justification_IND.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_IND/source_data/aggregation_justification_IND_s1p1v1_d.png" target="_blank">
+  <img src="VerveStacks_IND/source_data/aggregation_justification_IND_s1p1v1_d.png" alt="aggregation_justification_IND_s1p1v1_d.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_IND/source_data/aggregation_justification_IND_s2_w.png" target="_blank">
+  <img src="VerveStacks_IND/source_data/aggregation_justification_IND_s2_w.png" alt="aggregation_justification_IND_s2_w.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_IND/source_data/aggregation_justification_IND_s2_w_p2_d.png" target="_blank">
+  <img src="VerveStacks_IND/source_data/aggregation_justification_IND_s2_w_p2_d.png" alt="aggregation_justification_IND_s2_w_p2_d.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_IND/source_data/aggregation_justification_IND_s3p3v3_d.png" target="_blank">
+  <img src="VerveStacks_IND/source_data/aggregation_justification_IND_s3p3v3_d.png" alt="aggregation_justification_IND_s3p3v3_d.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_IND/source_data/aggregation_justification_IND_s5p5v5_d.png" target="_blank">
+  <img src="VerveStacks_IND/source_data/aggregation_justification_IND_s5p5v5_d.png" alt="aggregation_justification_IND_s5p5v5_d.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_IND/source_data/aggregation_justification_IND_ts12_clu.png" target="_blank">
+  <img src="VerveStacks_IND/source_data/aggregation_justification_IND_ts12_clu.png" alt="aggregation_justification_IND_ts12_clu.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_IND/source_data/aggregation_justification_IND_ts24_clu.png" target="_blank">
+  <img src="VerveStacks_IND/source_data/aggregation_justification_IND_ts24_clu.png" alt="aggregation_justification_IND_ts24_clu.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_IND/source_data/aggregation_justification_IND_ts48_clu.png" target="_blank">
+  <img src="VerveStacks_IND/source_data/aggregation_justification_IND_ts48_clu.png" alt="aggregation_justification_IND_ts48_clu.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Calendar Year Ind** - Timeslice analysis visualization
+<a href="VerveStacks_IND/source_data/calendar_year_IND.png" target="_blank">
+  <img src="VerveStacks_IND/source_data/calendar_year_IND.png" alt="calendar_year_IND.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Critical Days Analysis (Triple-5)** - Detailed view of 15 critical days: 5 scarcity + 5 surplus + 5 volatile periods
+<a href="VerveStacks_IND/source_data/plan2_triple5_critical_days_IND.png" target="_blank">
+  <img src="VerveStacks_IND/source_data/plan2_triple5_critical_days_IND.png" alt="plan2_triple5_critical_days_IND.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Weekly Stress Analysis** - Sustained stress periods showing 2 worst weeks for renewable coverage
+<a href="VerveStacks_IND/source_data/plan3_weekly_stress_IND.png" target="_blank">
+  <img src="VerveStacks_IND/source_data/plan3_weekly_stress_IND.png" alt="plan3_weekly_stress_IND.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Re Analysis Summary Ind** - Timeslice analysis visualization
+<a href="VerveStacks_IND/source_data/re_analysis_summary_IND.png" target="_blank">
+  <img src="VerveStacks_IND/source_data/re_analysis_summary_IND.png" alt="re_analysis_summary_IND.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Stress Periods S2 W Ind** - Timeslice analysis visualization
+<a href="VerveStacks_IND/source_data/stress_periods_s2_w_IND.png" target="_blank">
+  <img src="VerveStacks_IND/source_data/stress_periods_s2_w_IND.png" alt="stress_periods_s2_w_IND.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Stress Periods S5P5V5 D Ind** - Timeslice analysis visualization
+<a href="VerveStacks_IND/source_data/stress_periods_s5p5v5_d_IND.png" target="_blank">
+  <img src="VerveStacks_IND/source_data/stress_periods_s5p5v5_d_IND.png" alt="stress_periods_s5p5v5_d_IND.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Renewable Supply Curves** - Cost-ordered renewable resource potential showing solar and wind capacity vs. LCOE
+<a href="VerveStacks_IND/source_data/supply_curves_IND.png" target="_blank">
+  <img src="VerveStacks_IND/source_data/supply_curves_IND.png" alt="supply_curves_IND.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
 
 ## Quality Assurance
 - Cross-validation between IRENA, EMBER, and UNSD statistics
 - Capacity-generation consistency checks
 - Technology classification verification
 - Historical data reconciliation for base year (2022)
+- Renewable resource potential validated against REZoning database
+- Temporal analysis verified through statistical scenario methods
 
 ## Usage Notes
 - This model is generated automatically using VerveStacks methodology
+- Timeslice structure is optimized for high-renewable energy system analysis
 - For questions about specific data sources or methodology, refer to METHODOLOGY_DOCUMENTATION.md
-- Model parameters can be adjusted by manually in the model files
+- Model parameters can be adjusted manually in the model files
+- Charts and analysis files are located in `2_ts_design/outputs/{input_iso}/`
 
 ---
-*Generated by VerveStacks Energy Model Processor*
+*Generated by VerveStacks Energy Model Processor with Advanced Timeslice Analysis*
 *For more information: coming soon*
