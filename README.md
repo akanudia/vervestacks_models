@@ -4,7 +4,6 @@
 [![Open Use](https://img.shields.io/badge/license-Open%20Use-blue.svg)](LICENSE)
 [![Countries](https://img.shields.io/badge/countries-190+-green.svg)](#global-coverage)
 [![Data Sources](https://img.shields.io/badge/datasets-8+-orange.svg)](#data-foundation)
-[![Models Generated](https://img.shields.io/badge/models-1000+-purple.svg)](#impact)
 
 ---
 
@@ -106,7 +105,7 @@ git clone https://github.com/your-org/vervestacks-CHE.git
 ```
 
 ### **🌐 Global Scale, Local Precision**
-- **190+ Countries**: From Switzerland (4 regions) to China (400+ regions)
+- **Multiple Countries**: Scalable from small countries (4 regions) to large countries (400+ regions)
 - **Plant-Level Detail**: Individual units >100MW with vintage-based parameters
 - **Hourly Resolution**: 8760-hour profiles intelligently aggregated
 - **Spatial Intelligence**: Multi-resolution clustering (demand/generation/renewables)
@@ -175,30 +174,24 @@ Realistic representation of existing infrastructure:
 ## 🌍 **Global Coverage & Applications**
 
 ### **Country Models Available**
-- **Europe**: All EU27 + UK, Norway, Switzerland, Balkans
-- **North America**: USA (state-level), Canada (provincial), Mexico  
-- **Asia-Pacific**: China, India, Japan, South Korea, ASEAN, Australia
-- **Middle East**: GCC countries, Turkey, Iran, Israel
-- **Africa**: South Africa, Nigeria, Egypt, Kenya, Morocco
-- **Latin America**: Brazil, Argentina, Chile, Colombia, Peru
-- **[Complete List](docs/country_coverage.md)**: 190+ countries with full data coverage
+Models can be generated for countries with sufficient data coverage in the global datasets.
 
-### **Real-World Applications**
+### **Potential Applications**
 
 #### **🏛️ Policy & Planning**
-- **NDC Reporting**: National climate commitment analysis for 50+ countries
+- **NDC Reporting**: National climate commitment analysis
 - **Energy Transition Planning**: Decarbonization pathway design
 - **Investment Prioritization**: Infrastructure development optimization
 - **Grid Planning**: Transmission expansion and renewable integration
 
 #### **🎓 Research & Academia**
-- **100+ Publications**: Peer-reviewed studies using VerveStacks models
 - **Comparative Analysis**: Cross-country energy system research
 - **Climate Impact Assessment**: Policy scenario evaluation
 - **Technology Integration**: Emerging technology feasibility studies
+- **Academic Research**: Peer-reviewed energy system studies
 
 #### **🌱 Capacity Building**
-- **Developing Countries**: Accessible energy modeling for 80+ nations
+- **Developing Countries**: Accessible energy modeling capabilities
 - **Training Programs**: University courses and government workshops
 - **Technical Assistance**: Model customization and methodology transfer
 - **Open Science**: Transparent, reproducible energy system research
@@ -209,10 +202,8 @@ Realistic representation of existing infrastructure:
 
 ### **Option 1: Download Ready-Made Models**
 Browse country-specific branches for immediate use:
-- `vervestacks-CHE/` - Switzerland (4 regions, 156 plants, 48 timeslices)
-- `vervestacks-USA/` - United States (50 states, 2000+ plants, grid modeling)
-- `vervestacks-DEU/` - Germany (16 regions, high renewable integration)
-- `vervestacks-IND/` - India (28 states, 400+ plants, diverse technologies)
+- `vervestacks-CHE/` - Switzerland model example
+- Additional country models available as generated
 
 ### **Option 2: Request Custom Models**
 **The generation pipeline is closed-source** - users request models rather than generate them:
@@ -303,27 +294,7 @@ The Energy System Operating System grows through **user-focused** community cont
 
 ---
 
-## 🏆 **Impact & Recognition**
 
-### **Global Adoption**
-- **50+ Countries**: Using VerveStacks for national energy planning
-- **100+ Universities**: Integrated into energy systems curricula  
-- **1000+ Models**: Generated and deployed worldwide
-- **10+ Languages**: Documentation translated for global accessibility
-
-### **Academic Recognition**
-- **Nature Energy**: Featured methodology article (2025)
-- **Applied Energy**: Special issue on automated energy modeling
-- **Energy Policy**: 50+ citations in policy-focused research
-- **IPCC**: Referenced in Working Group III methodology guidelines
-
-### **Industry Integration**
-- **Consulting Firms**: Integrated into major energy consulting workflows
-- **Government Agencies**: Adopted by national energy ministries
-- **International Organizations**: Used by World Bank, IEA, IRENA
-- **Technology Companies**: Integrated into energy planning software
-
----
 
 ## 🔮 **The Future: Complete ESOM OS**
 
