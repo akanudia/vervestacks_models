@@ -148,26 +148,58 @@ Validation → Documentation → Visualization → VEDA Integration → Git Depl
 ### **Methodological Innovations**
 
 #### **🔥 Stress-Based Timeslice Design**
-Revolutionary approach to temporal modeling:
-1. **Baseline Assumption**: Current demand profile with existing dispatch
-2. **Renewable Integration**: Solar/wind mix based on LCOE optimization  
-3. **Coverage Analysis**: Hourly shortage/surplus identification
-4. **Period Ranking**: Statistical ranking by scarcity/surplus/volatility
-5. **Intelligent Aggregation**: 1-600 timeslices based on system complexity
+Revolutionary approach to temporal modeling that identifies when storage and ramping face maximum operational stress:
+
+**Core Innovation**: Instead of fixed timeslice structures, VerveStacks identifies critical periods through coverage analysis:
+1. **Baseline Construction**: Current demand profile with existing nuclear (flat dispatch) and hydro (load-following within monthly constraints)
+2. **Renewable Portfolio**: Solar/wind mix based on relative LCOEs from REZoning data to meet annual demand
+3. **Coverage Analysis**: Calculate hourly renewable supply adequacy: `Coverage = (Solar + Wind + Hydro) / Demand × 100%`
+4. **Stress Period Identification**: Rank days/weeks by scarcity (<100%), surplus (>100%), and volatility (high variability)
+5. **Intelligent Aggregation**: Select combinations of critical periods to create 1-600 timeslices based on system complexity
+
+**Result**: Timeslices capture the periods that matter most for grid operations - when storage must work hardest, ramping is most critical, and dispatchable generation faces peak demand.
+
+#### **🏗️ Comprehensive Model Architecture**
+
+**Demand Modeling**:
+- **Electricity Demand**: Base year from EMBER data, growth from AR6 scenarios with ISO-R10 climate mapping
+- **Sectoral Profiles**: ERA5 hourly profiles split into industry/residential/commercial sectors
+- **Hydrogen Demand**: Zero base year, future projected as share of electricity demand from AR6 scenarios
+
+**Generation Portfolio**:
+- **Existing Plants**: Individual units from Global Energy Monitor (40,000+ plants) with vintage-based parameters
+- **Missing Capacity**: Gap-filled from EMBER/IRENA with appropriate utilization profiles from Atlite
+- **Technology Costs**: Efficiency and cost assumptions based on region, size, and commissioning vintage
+- **CCS Integration**: Retrofit options for existing units using EPA Table 6 methodology ($30/t CO2 transport/storage)
+- **New Technologies**: Conventional plants from IEA WEO, renewables from REZoning, storage from NREL
+
+**Renewable Resource Modeling**:
+- **Spatial Resolution**: 50×50km grid cells from REZoning with Atlite weather profiles
+- **Conservative Potentials**: Reduced by 40% (solar) and 30% (wind) for land-use constraints
+- **Cost-Performance Classes**: 15-30 LCOE-capacity factor categories per technology
+- **Realistic Portfolio Selection**: Balanced relevant resource approach prevents technology monopolization
 
 #### **🗺️ Voronoi Spatial Clustering** 
-Mathematically rigorous regional modeling:
-- **Non-Overlapping Regions**: Guaranteed by Voronoi construction
-- **Multi-Resolution**: Demand regions, generation clusters, renewable zones
-- **Realistic Transmission**: Geographic overlap-based NTC calculations
-- **Scalable Complexity**: 2-400+ regions based on country size
+Mathematically rigorous regional modeling that scales from small countries (4 regions) to large countries (400+ regions):
+- **Multi-Resolution Clustering**: Separate demand regions, generation clusters, and renewable zones
+- **Trade Link Optimization**: Connections from generation/renewable clusters to closest demand centers
+- **Transmission Modeling**: NTC estimation using OpenStreetMap data with distance-based efficiency/cost calculations
+- **Flexible Aggregation**: Unit-level detail for plants >100MW, intelligent aggregation below threshold
+- **Non-Overlapping Guarantee**: Voronoi construction ensures mathematically consistent regional boundaries
 
 #### **⚙️ Vintage-Based Technology Modeling**
-Realistic representation of existing infrastructure:
-- **Age-Dependent Parameters**: Efficiency and costs by commissioning year
-- **Retrofit Options**: CCS integration based on EPA methodology
-- **Regional Adjustments**: Country-specific cost multipliers
-- **Gap-Filling Logic**: Systematic capacity reconciliation across datasets
+Realistic representation of existing infrastructure that captures the full complexity of real energy systems:
+- **Age-Dependent Parameters**: Efficiency degradation and cost variations by commissioning year
+- **Retrofit Pathways**: CCS integration options with realistic capacity and efficiency penalties
+- **Regional Cost Adjustments**: Country-specific multipliers reflecting local economic conditions
+- **Multi-Source Reconciliation**: Systematic gap-filling across GEM, EMBER, and IRENA datasets
+- **Quality Assurance**: Built-in validation ensuring capacity totals match official statistics
+
+#### **📊 Integrated Scenario Framework**
+- **Climate Trajectories**: IPCC AR6 scenarios mapped to 5 climate categories with sectoral electricity splits
+- **Time Horizon**: Flexible modeling periods (default: 2022, 2025-2050 in 5-year steps)
+- **Technology Evolution**: Dynamic cost reductions and performance improvements from IEA WEO projections
+- **Policy Integration**: Carbon pricing, renewable targets, and technology constraints from NGFS scenarios
 
 ---
 
