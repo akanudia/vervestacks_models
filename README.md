@@ -9,7 +9,7 @@
 
 ## 🌍 **The Open Use Vision**
 
-> *"There should be no room for calling this a blackbox."*
+> *"VERVESTACKS - the open USE platform · Powered by data · Shaped by vision · Guided by intuition · Fueled by passion"*
 
 **VerveStacks represents a paradigm shift from "Open Source" to "Open Use"** - the source code remains **closed and proprietary**, but the **outputs are completely transparent and freely available**. This closed-source approach enables rapid innovation and quality control while delivering **pre-built, professional-grade models** that users can immediately apply without needing structural modification capabilities.
 
@@ -24,15 +24,15 @@
 **VerveStacks is the beginning of an Energy System Operating System (ESOM OS)** - a **closed-source platform** that transforms energy modeling from an artisanal craft into an automated, transparent, globally accessible utility. The **structural freedom** of the closed-source approach enables rapid delivery of **free, professional-grade models** to users worldwide.
 
 ```
-Traditional Approach          →    VerveStacks ESOM OS
+Traditional Approach          	→  VerveStacks ESOM OS
 ═══════════════════════════════    ═══════════════════════════════
-Months of model building      →    Pre-built models ready for use
-Specialized expertise required →    Professional models delivered free  
-Opaque methodologies         →    Complete output transparency
-Limited geographic coverage   →    Global 190+ country support
-Manual data integration      →    Automated pipeline (closed-source)
-Artisanal model craft        →    Industrial-scale automation
-User builds everything       →    User receives finished product
+Months of model building      	→  Pre-built models ready for use
+Specialized expertise required 	→  Professional models delivered free  
+Opaque methodologies         	→  Complete output transparency
+Limited geographic coverage   	→  Global 190+ country support
+Manual data integration      	→  Automated pipeline (closed-source)
+Artisanal model craft        	→  Industrial-scale automation
+User builds everything       	→  User receives finished product
 ```
 
 ---
@@ -224,10 +224,9 @@ For organizations needing **structural flexibility** or **custom modifications**
 
 ```bash
 # Commercial License Includes:
-# - Source code access for internal use
-# - Custom model generation capabilities  
-# - Priority support and customization
-# - Private deployment options
+# - User-provided source data
+# - Custom model generation
+# - Priority support
 
 # Contact: commercial@vervestacks.org
 ```
@@ -335,4 +334,4 @@ The ultimate goal is **universal access to credible energy system models** - whe
 ---
 
 *Copyright © 2025 VerveStacks. Licensed under Open Use Agreement.*  
-*"There should be no room for calling this a blackbox."*
+*"VERVESTACKS - the open USE platform · Powered by data · Shaped by vision · Guided by intuition · Fueled by passion"*
