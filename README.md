@@ -9,7 +9,7 @@
 
 ## 🌍 **The Open Use Vision**
 
-> *"VERVESTACKS - the open USE platform · Powered by data · Shaped by vision · Guided by intuition · Fueled by passion"*
+> *"The open USE platform · Powered by data · Shaped by vision · Guided by intuition · Fueled by passion"*
 
 **VerveStacks represents a paradigm shift from "Open Source" to "Open Use"** - the source code remains **closed and proprietary**, but the **outputs are completely transparent and freely available**. This closed-source approach enables rapid innovation and quality control while delivering **pre-built, professional-grade models** that users can immediately apply without needing structural modification capabilities.
 
@@ -334,4 +334,4 @@ The ultimate goal is **universal access to credible energy system models** - whe
 ---
 
 *Copyright © 2025 VerveStacks. Licensed under Open Use Agreement.*  
-*"VERVESTACKS - the open USE platform · Powered by data · Shaped by vision · Guided by intuition · Fueled by passion"*
+*"The open USE platform · Powered by data · Shaped by vision · Guided by intuition · Fueled by passion"*
