@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - CHE
 
-**Generated:** 2025-08-26 18:17:13
+**Generated:** 2025-08-31 21:09:51
 
 ## Processing Parameters
 
@@ -139,9 +139,6 @@ The following charts provide insights into the temporal characteristics of this 
 
 #### 📊 **Generated Analysis Files:**
 - `segment_summary_CHE.csv` - Statistical summary of all identified critical periods
-- `timeslices_CHE_triple_1.csv` - Triple-1 critical periods (3 days: 1 scarcity + 1 surplus + 1 volatile)
-- `timeslices_CHE_triple_5.csv` - Triple-5 critical periods (15 days: 5 scarcity + 5 surplus + 5 volatile)
-- `timeslices_CHE_weekly_stress.csv` - Weekly stress periods (2 worst weeks for sustained stress)
 - `tsdesign_CHE.csv` - Complete VEDA timeslice structure with temporal mappings
 
 **Stress Period Methodology:**
@@ -160,8 +157,8 @@ The following charts provide insights into the temporal characteristics of this 
 *Interactive visualizations from the timeslice analysis process. Click any chart to view full resolution.*
 
 #### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_CHE_grids/source_data/aggregation_justification_CHE.png" target="_blank">
-  <img src="VerveStacks_CHE_grids/source_data/aggregation_justification_CHE.png" alt="aggregation_justification_CHE.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+<a href="VerveStacks_CHE_grids/source_data/aggregation_justification_CHE_s1_d.png" target="_blank">
+  <img src="VerveStacks_CHE_grids/source_data/aggregation_justification_CHE_s1_d.png" alt="aggregation_justification_CHE_s1_d.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
@@ -229,20 +226,6 @@ The following charts provide insights into the temporal characteristics of this 
 
 *Click image to view full size*
 
-#### **Critical Days Analysis (Triple-5)** - Detailed view of 15 critical days: 5 scarcity + 5 surplus + 5 volatile periods
-<a href="VerveStacks_CHE_grids/source_data/plan2_triple5_critical_days_CHE.png" target="_blank">
-  <img src="VerveStacks_CHE_grids/source_data/plan2_triple5_critical_days_CHE.png" alt="plan2_triple5_critical_days_CHE.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Weekly Stress Analysis** - Sustained stress periods showing 2 worst weeks for renewable coverage
-<a href="VerveStacks_CHE_grids/source_data/plan3_weekly_stress_CHE.png" target="_blank">
-  <img src="VerveStacks_CHE_grids/source_data/plan3_weekly_stress_CHE.png" alt="plan3_weekly_stress_CHE.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
 #### **Re Analysis Summary Che** - Timeslice analysis visualization
 <a href="VerveStacks_CHE_grids/source_data/re_analysis_summary_CHE.png" target="_blank">
   <img src="VerveStacks_CHE_grids/source_data/re_analysis_summary_CHE.png" alt="re_analysis_summary_CHE.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
@@ -250,30 +233,16 @@ The following charts provide insights into the temporal characteristics of this 
 
 *Click image to view full size*
 
+#### **Stress Periods S1 D Che** - Timeslice analysis visualization
+<a href="VerveStacks_CHE_grids/source_data/stress_periods_s1_d_CHE.png" target="_blank">
+  <img src="VerveStacks_CHE_grids/source_data/stress_periods_s1_d_CHE.png" alt="stress_periods_s1_d_CHE.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
 #### **Stress Periods S2 W Che** - Timeslice analysis visualization
 <a href="VerveStacks_CHE_grids/source_data/stress_periods_s2_w_CHE.png" target="_blank">
   <img src="VerveStacks_CHE_grids/source_data/stress_periods_s2_w_CHE.png" alt="stress_periods_s2_w_CHE.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Stress Periods S2 W P2 D Daily Che** - Timeslice analysis visualization
-<a href="VerveStacks_CHE_grids/source_data/stress_periods_s2_w_p2_d_daily_CHE.png" target="_blank">
-  <img src="VerveStacks_CHE_grids/source_data/stress_periods_s2_w_p2_d_daily_CHE.png" alt="stress_periods_s2_w_p2_d_daily_CHE.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Stress Periods S2 W P2 D Weekly Che** - Timeslice analysis visualization
-<a href="VerveStacks_CHE_grids/source_data/stress_periods_s2_w_p2_d_weekly_CHE.png" target="_blank">
-  <img src="VerveStacks_CHE_grids/source_data/stress_periods_s2_w_p2_d_weekly_CHE.png" alt="stress_periods_s2_w_p2_d_weekly_CHE.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Stress Periods S3P3V3 D Che** - Timeslice analysis visualization
-<a href="VerveStacks_CHE_grids/source_data/stress_periods_s3p3v3_d_CHE.png" target="_blank">
-  <img src="VerveStacks_CHE_grids/source_data/stress_periods_s3p3v3_d_CHE.png" alt="stress_periods_s3p3v3_d_CHE.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
