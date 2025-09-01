@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - ITA
 
-**Generated:** 2025-08-30 01:04:07
+**Generated:** 2025-09-01 14:13:28
 
 ## Processing Parameters
 
@@ -137,6 +137,9 @@ The following charts provide insights into the temporal characteristics of this 
 
 #### 🔥 **Detailed Stress Analysis Results:**
 
+**🌨️ Weekly Sustained Stress Analysis:**
+- Week S01: 12-09 to 12-09 (1 days)
+
 #### 📊 **Generated Analysis Files:**
 - `segment_summary_ITA.csv` - Statistical summary of all identified critical periods
 - `tsdesign_ITA.csv` - Complete VEDA timeslice structure with temporal mappings
@@ -155,6 +158,13 @@ The following charts provide insights into the temporal characteristics of this 
 ### 📊 Generated Analysis Charts
 
 *Interactive visualizations from the timeslice analysis process. Click any chart to view full resolution.*
+
+#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
+<a href="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_s1_d.png" target="_blank">
+  <img src="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_s1_d.png" alt="aggregation_justification_ITA_s1_d.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
 
 #### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
 <a href="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_s1p1v1_d.png" target="_blank">
@@ -222,6 +232,13 @@ The following charts provide insights into the temporal characteristics of this 
 #### **Re Analysis Summary Ita** - Timeslice analysis visualization
 <a href="VerveStacks_ITA_grids/source_data/re_analysis_summary_ITA.png" target="_blank">
   <img src="VerveStacks_ITA_grids/source_data/re_analysis_summary_ITA.png" alt="re_analysis_summary_ITA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Stress Periods S1 D Ita** - Timeslice analysis visualization
+<a href="VerveStacks_ITA_grids/source_data/stress_periods_s1_d_ITA.png" target="_blank">
+  <img src="VerveStacks_ITA_grids/source_data/stress_periods_s1_d_ITA.png" alt="stress_periods_s1_d_ITA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
