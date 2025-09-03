@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - DEU
 
-**Generated:** 2025-08-31 19:16:43
+**Generated:** 2025-09-04 00:31:11
 
 ## Processing Parameters
 
@@ -136,6 +136,9 @@ The following charts provide insights into the temporal characteristics of this 
 
 
 #### 🔥 **Detailed Stress Analysis Results:**
+
+**🌨️ Weekly Sustained Stress Analysis:**
+- Week S01: 10-06 to 10-06 (1 days)
 
 #### 📊 **Generated Analysis Files:**
 - `segment_summary_DEU.csv` - Statistical summary of all identified critical periods
