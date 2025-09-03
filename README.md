@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - IND
 
-**Generated:** 2025-08-28 02:13:55
+**Generated:** 2025-09-04 00:58:13
 
 ## Processing Parameters
 
@@ -137,11 +137,11 @@ The following charts provide insights into the temporal characteristics of this 
 
 #### 🔥 **Detailed Stress Analysis Results:**
 
+**🌨️ Weekly Sustained Stress Analysis:**
+- Week S01: 08-15 to 08-15 (1 days)
+
 #### 📊 **Generated Analysis Files:**
 - `segment_summary_IND.csv` - Statistical summary of all identified critical periods
-- `timeslices_IND_triple_1.csv` - Triple-1 critical periods (3 days: 1 scarcity + 1 surplus + 1 volatile)
-- `timeslices_IND_triple_5.csv` - Triple-5 critical periods (15 days: 5 scarcity + 5 surplus + 5 volatile)
-- `timeslices_IND_weekly_stress.csv` - Weekly stress periods (2 worst weeks for sustained stress)
 - `tsdesign_IND.csv` - Complete VEDA timeslice structure with temporal mappings
 
 **Stress Period Methodology:**
@@ -160,8 +160,8 @@ The following charts provide insights into the temporal characteristics of this 
 *Interactive visualizations from the timeslice analysis process. Click any chart to view full resolution.*
 
 #### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_IND/source_data/aggregation_justification_IND.png" target="_blank">
-  <img src="VerveStacks_IND/source_data/aggregation_justification_IND.png" alt="aggregation_justification_IND.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+<a href="VerveStacks_IND/source_data/aggregation_justification_IND_s1_d.png" target="_blank">
+  <img src="VerveStacks_IND/source_data/aggregation_justification_IND_s1_d.png" alt="aggregation_justification_IND_s1_d.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
@@ -229,23 +229,16 @@ The following charts provide insights into the temporal characteristics of this 
 
 *Click image to view full size*
 
-#### **Critical Days Analysis (Triple-5)** - Detailed view of 15 critical days: 5 scarcity + 5 surplus + 5 volatile periods
-<a href="VerveStacks_IND/source_data/plan2_triple5_critical_days_IND.png" target="_blank">
-  <img src="VerveStacks_IND/source_data/plan2_triple5_critical_days_IND.png" alt="plan2_triple5_critical_days_IND.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Weekly Stress Analysis** - Sustained stress periods showing 2 worst weeks for renewable coverage
-<a href="VerveStacks_IND/source_data/plan3_weekly_stress_IND.png" target="_blank">
-  <img src="VerveStacks_IND/source_data/plan3_weekly_stress_IND.png" alt="plan3_weekly_stress_IND.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
 #### **Re Analysis Summary Ind** - Timeslice analysis visualization
 <a href="VerveStacks_IND/source_data/re_analysis_summary_IND.png" target="_blank">
   <img src="VerveStacks_IND/source_data/re_analysis_summary_IND.png" alt="re_analysis_summary_IND.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+</a>
+
+*Click image to view full size*
+
+#### **Stress Periods S1 D Ind** - Timeslice analysis visualization
+<a href="VerveStacks_IND/source_data/stress_periods_s1_d_IND.png" target="_blank">
+  <img src="VerveStacks_IND/source_data/stress_periods_s1_d_IND.png" alt="stress_periods_s1_d_IND.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
