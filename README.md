@@ -1,22 +1,22 @@
 # VerveStacks Model Generation Notes - BGR
-**Generated:** 2025-09-05 23:23:24
+**Generated:** 2025-09-05 23:57:11
 
 
 ## Processing Parameters
 
 ### Capacity Thresholds by Fuel Type
-| **Fuel Type** | **Threshold** | **Description** |
-|---------------|---------------|-----------------|
-| 🌱 **Bioenergy** | 50.0 MW | Minimum plant size for individual tracking |
-| ⚫ **Coal** | 10.0 MW | Minimum plant size for individual tracking |
-| 🔥 **Gas** | 10.0 MW | Minimum plant size for individual tracking |
-| 🌋 **Geothermal** | 10.0 MW | Minimum plant size for individual tracking |
-| 💧 **Hydro** | 10.0 MW | Minimum plant size for individual tracking |
-| ⚛️ **Nuclear** | 0.0 MW | Minimum plant size for individual tracking |
-| 🛢️ **Oil** | 10.0 MW | Minimum plant size for individual tracking |
-| ☀️ **Solar** | 200.0 MW | Minimum plant size for individual tracking |
-| 🌊 **Windoff** | 200.0 MW | Minimum plant size for individual tracking |
-| 💨 **Windon** | 200.0 MW | Minimum plant size for individual tracking |
+| **Fuel Type** | **Threshold** | **Plants Above Threshold** |
+|---------------|---------------|---------------------------|
+| 🌱 **Bioenergy** | 50.0 MW | 1/1 plants |
+| ⚫ **Coal** | 10.0 MW | 37/38 plants |
+| 🔥 **Gas** | 10.0 MW | 13/13 plants |
+| 🌋 **Geothermal** | 10.0 MW | 0/0 plants |
+| 💧 **Hydro** | 10.0 MW | 15/15 plants |
+| ⚛️ **Nuclear** | 0.0 MW | 2/2 plants |
+| 🛢️ **Oil** | 10.0 MW | 12/12 plants |
+| ☀️ **Solar** | 200.0 MW | 7/14 plants |
+| 🌊 **Windoff** | 200.0 MW | 0/0 plants |
+| 💨 **Windon** | 200.0 MW | 1/6 plants |
 
 
 ### 🔄 CCS Retrofit Potential
@@ -56,12 +56,6 @@
 - **Source Data**: `source_data/VerveStacks_BGR.xlsx` - the full dataset in a model-agnostic format
 - **VEDA Model Files**: Complete model ready for Veda-TIMES execution
 - **Scenario Files**: NGFS climate scenarios and policy assumptions
-
-### Key Methodology Points
-- Plant-level data prioritized where available (capacity > 100 MW)
-- 52 plants tracked individually above threshold
-- Efficiency adjustments applied for calibration to national statistics
-- Regional cost multipliers applied based on country economic indicators
 
 
 ## Temporal Modeling & Timeslice Analysis
