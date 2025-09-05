@@ -1,6 +1,6 @@
 # VerveStacks Model Generation Notes - ITA
 
-**Generated:** 2025-09-04 00:26:42
+**Generated:** 2025-09-05 18:55:23
 
 ## Processing Parameters
 
@@ -160,106 +160,99 @@ The following charts provide insights into the temporal characteristics of this 
 *Interactive visualizations from the timeslice analysis process. Click any chart to view full resolution.*
 
 #### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_s1_d.png" target="_blank">
-  <img src="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_s1_d.png" alt="aggregation_justification_ITA_s1_d.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+<a href="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_s1_d.svg" target="_blank">
+  <img src="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_s1_d.svg" alt="aggregation_justification_ITA_s1_d.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
 
 #### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_s1p1v1_d.png" target="_blank">
-  <img src="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_s1p1v1_d.png" alt="aggregation_justification_ITA_s1p1v1_d.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+<a href="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_s1p1v1_d.svg" target="_blank">
+  <img src="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_s1p1v1_d.svg" alt="aggregation_justification_ITA_s1p1v1_d.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
 
 #### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_s2_w.png" target="_blank">
-  <img src="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_s2_w.png" alt="aggregation_justification_ITA_s2_w.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+<a href="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_s2_w.svg" target="_blank">
+  <img src="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_s2_w.svg" alt="aggregation_justification_ITA_s2_w.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
 
 #### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_s2_w_p2_d.png" target="_blank">
-  <img src="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_s2_w_p2_d.png" alt="aggregation_justification_ITA_s2_w_p2_d.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+<a href="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_s2_w_p2_d.svg" target="_blank">
+  <img src="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_s2_w_p2_d.svg" alt="aggregation_justification_ITA_s2_w_p2_d.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
 
 #### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_s3p3v3_d.png" target="_blank">
-  <img src="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_s3p3v3_d.png" alt="aggregation_justification_ITA_s3p3v3_d.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+<a href="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_s3p3v3_d.svg" target="_blank">
+  <img src="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_s3p3v3_d.svg" alt="aggregation_justification_ITA_s3p3v3_d.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
 
 #### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_s5p5v5_d.png" target="_blank">
-  <img src="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_s5p5v5_d.png" alt="aggregation_justification_ITA_s5p5v5_d.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+<a href="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_s5p5v5_d.svg" target="_blank">
+  <img src="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_s5p5v5_d.svg" alt="aggregation_justification_ITA_s5p5v5_d.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
 
 #### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_ts12_clu.png" target="_blank">
-  <img src="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_ts12_clu.png" alt="aggregation_justification_ITA_ts12_clu.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+<a href="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_ts12_clu.svg" target="_blank">
+  <img src="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_ts12_clu.svg" alt="aggregation_justification_ITA_ts12_clu.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
 
 #### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_ts24_clu.png" target="_blank">
-  <img src="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_ts24_clu.png" alt="aggregation_justification_ITA_ts24_clu.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+<a href="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_ts24_clu.svg" target="_blank">
+  <img src="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_ts24_clu.svg" alt="aggregation_justification_ITA_ts24_clu.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
 
 #### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_ts48_clu.png" target="_blank">
-  <img src="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_ts48_clu.png" alt="aggregation_justification_ITA_ts48_clu.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Calendar Year Ita** - Timeslice analysis visualization
-<a href="VerveStacks_ITA_grids/source_data/calendar_year_ITA.png" target="_blank">
-  <img src="VerveStacks_ITA_grids/source_data/calendar_year_ITA.png" alt="calendar_year_ITA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+<a href="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_ts48_clu.svg" target="_blank">
+  <img src="VerveStacks_ITA_grids/source_data/aggregation_justification_ITA_ts48_clu.svg" alt="aggregation_justification_ITA_ts48_clu.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
 
 #### **Re Analysis Summary Ita** - Timeslice analysis visualization
-<a href="VerveStacks_ITA_grids/source_data/re_analysis_summary_ITA.png" target="_blank">
-  <img src="VerveStacks_ITA_grids/source_data/re_analysis_summary_ITA.png" alt="re_analysis_summary_ITA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+<a href="VerveStacks_ITA_grids/source_data/re_analysis_summary_ITA.svg" target="_blank">
+  <img src="VerveStacks_ITA_grids/source_data/re_analysis_summary_ITA.svg" alt="re_analysis_summary_ITA.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
 
 #### **Stress Periods S1 D Ita** - Timeslice analysis visualization
-<a href="VerveStacks_ITA_grids/source_data/stress_periods_s1_d_ITA.png" target="_blank">
-  <img src="VerveStacks_ITA_grids/source_data/stress_periods_s1_d_ITA.png" alt="stress_periods_s1_d_ITA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+<a href="VerveStacks_ITA_grids/source_data/stress_periods_s1_d_ITA.svg" target="_blank">
+  <img src="VerveStacks_ITA_grids/source_data/stress_periods_s1_d_ITA.svg" alt="stress_periods_s1_d_ITA.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
 
 #### **Stress Periods S2 W Ita** - Timeslice analysis visualization
-<a href="VerveStacks_ITA_grids/source_data/stress_periods_s2_w_ITA.png" target="_blank">
-  <img src="VerveStacks_ITA_grids/source_data/stress_periods_s2_w_ITA.png" alt="stress_periods_s2_w_ITA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+<a href="VerveStacks_ITA_grids/source_data/stress_periods_s2_w_ITA.svg" target="_blank">
+  <img src="VerveStacks_ITA_grids/source_data/stress_periods_s2_w_ITA.svg" alt="stress_periods_s2_w_ITA.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
 
 #### **Stress Periods S5P5V5 D Ita** - Timeslice analysis visualization
-<a href="VerveStacks_ITA_grids/source_data/stress_periods_s5p5v5_d_ITA.png" target="_blank">
-  <img src="VerveStacks_ITA_grids/source_data/stress_periods_s5p5v5_d_ITA.png" alt="stress_periods_s5p5v5_d_ITA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+<a href="VerveStacks_ITA_grids/source_data/stress_periods_s5p5v5_d_ITA.svg" target="_blank">
+  <img src="VerveStacks_ITA_grids/source_data/stress_periods_s5p5v5_d_ITA.svg" alt="stress_periods_s5p5v5_d_ITA.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
 
 #### **Renewable Supply Curves** - Cost-ordered renewable resource potential showing solar and wind capacity vs. LCOE
-<a href="VerveStacks_ITA_grids/source_data/supply_curves_ITA.png" target="_blank">
-  <img src="VerveStacks_ITA_grids/source_data/supply_curves_ITA.png" alt="supply_curves_ITA.png" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
+<a href="VerveStacks_ITA_grids/source_data/supply_curves_ITA.svg" target="_blank">
+  <img src="VerveStacks_ITA_grids/source_data/supply_curves_ITA.svg" alt="supply_curves_ITA.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
 </a>
 
 *Click image to view full size*
