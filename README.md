@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - BGR
-**Generated:** 2025-09-05 23:18:07
+**Generated:** 2025-09-05 23:19:52
 
 
 ## Processing Parameters
@@ -7,8 +7,8 @@
 | Parameter | Value | Description |
 |-----------|-------|-------------|
                | **Capacity Threshold** | bioenergy: 50.0 MW; coal: 10.0 MW; gas: 10.0 MW; geothermal: 10.0 MW; hydro: 10.0 MW; nuclear: 0.0 MW; oil: 10.0 MW; solar: 200.0 MW; windoff: 200.0 MW; windon: 200.0 MW | Minimum plant size for individual tracking by fuel type |
-| **Coal CCS Retrofit Capacity** | TBD | Total capacity of coal plants eligible for CCS retrofits |
-| **Gas CCS Retrofit Capacity** | TBD | Total capacity of gas plants eligible for CCS retrofits |
+| **Coal CCS Retrofit Capacity** | 5.1 GW | Total capacity of coal plants eligible for CCS retrofits |
+| **Gas CCS Retrofit Capacity** | 1.2 GW | Total capacity of gas plants eligible for CCS retrofits |
 
 
 ## Data, Assumptions & Coverage
