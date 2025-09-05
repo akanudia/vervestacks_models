@@ -1,21 +1,19 @@
 # VerveStacks Model Generation Notes - BGR
-**Generated:** 2025-09-05 23:57:11
+**Generated:** 2025-09-06 00:01:13
 
 
 ## Processing Parameters
 
-### Capacity Thresholds by Fuel Type
+### Individual Plant Tracking
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** |
 |---------------|---------------|---------------------------|
 | 🌱 **Bioenergy** | 50.0 MW | 1/1 plants |
 | ⚫ **Coal** | 10.0 MW | 37/38 plants |
 | 🔥 **Gas** | 10.0 MW | 13/13 plants |
-| 🌋 **Geothermal** | 10.0 MW | 0/0 plants |
 | 💧 **Hydro** | 10.0 MW | 15/15 plants |
 | ⚛️ **Nuclear** | 0.0 MW | 2/2 plants |
 | 🛢️ **Oil** | 10.0 MW | 12/12 plants |
 | ☀️ **Solar** | 200.0 MW | 7/14 plants |
-| 🌊 **Windoff** | 200.0 MW | 0/0 plants |
 | 💨 **Windon** | 200.0 MW | 1/6 plants |
 
 
@@ -44,8 +42,8 @@
 - **Plants Above Threshold**: 52 individual plants tracked above 100 MW threshold
 - **Total Plants Processed**: 101 plants in database
 - **Missing Capacity Added**: - **EMBER data**:
-  - **gas**: 0.02 GW
   - **bioenergy**: 0.05 GW
+  - **gas**: 0.02 GW
 - **IRENA data**:
   - **hydro**: 0.77 GW
 
