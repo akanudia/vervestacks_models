@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - BGR
-**Generated:** 2025-09-06 00:10:32
+**Generated:** 2025-09-06 00:21:52
 
 
 ## Processing Parameters
@@ -18,10 +18,10 @@
 
 
 ### 🔄 CCS Retrofit Potential
-| **Fuel Type** | **Retrofit Capacity** | **Description** |
-|---------------|----------------------|-----------------|
-| ⚫ **Coal** | 5.1 GW | Total capacity of coal plants eligible for CCS retrofits (3.0 GW after capacity penalty) |
-| 🔥 **Gas** | 1.2 GW | Total capacity of gas plants eligible for CCS retrofits (1.0 GW after capacity penalty) |
+| **Fuel Type** | **Retrofit Host Capacity** | **Retrofit Potential Capacity**
+|---------------|----------------------------|-------------------------------|
+| ⚫ **Coal** | 5.1 GW | 3.0 GW after capacity penalty |
+| 🔥 **Gas** | 1.2 GW | 1.0 GW after capacity penalty |
 
 
 ## Data, Assumptions & Coverage
