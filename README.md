@@ -1,14 +1,14 @@
 # VerveStacks Model Generation Notes - BGR
-**Generated:** 2025-09-05 23:06:18
+**Generated:** 2025-09-05 23:10:52
 
 
 ## Processing Parameters
 
 | Parameter | Value | Description |
 |-----------|-------|-------------|
-| **Capacity Threshold** | {capacity_threshold} MW | Minimum plant size for individual tracking |
-| **Coal CCS Retrofit Capacity** | {coal_ccs_retrofit_capacity_gw} | Total capacity of coal plants eligible for CCS retrofits |
-| **Gas CCS Retrofit Capacity** | {gas_ccs_retrofit_capacity_gw} | Total capacity of gas plants eligible for CCS retrofits |
+| **Capacity Threshold** | 100 MW | Minimum plant size for individual tracking |
+| **Coal CCS Retrofit Capacity** | TBD | Total capacity of coal plants eligible for CCS retrofits |
+| **Gas CCS Retrofit Capacity** | TBD | Total capacity of gas plants eligible for CCS retrofits |
 
 
 ## Data, Assumptions & Coverage
@@ -24,23 +24,27 @@
   Global dataset tracking electricity generation, installed capacity, and emissions intensity (2000–2022).
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: {gem_coverage_pct}% of total capacity from plant-level GEM data
-- **Total Capacity Tracked**: {total_capacity_gw} GW from all sources
-- **Plants Above Threshold**: {plants_above_threshold} individual plants tracked above {capacity_threshold} MW threshold
-- **Total Plants Processed**: {tracked_plants_count} plants in database
-- **Missing Capacity Added**: {missing_capacity_summary}
+- **Individual Plant Coverage**: 85.4%% of total capacity from plant-level GEM data
+- **Total Capacity Tracked**: 16.6 GW GW from all sources
+- **Plants Above Threshold**: 52 individual plants tracked above 100 MW threshold
+- **Total Plants Processed**: 101 plants in database
+- **Missing Capacity Added**: - **IRENA data**:
+  - **hydro**: 0.77 GW
+- **EMBER data**:
+  - **bioenergy**: 0.05 GW
+  - **gas**: 0.02 GW
 
 
 ## Model Structure
 
 ### Files Included
-- **Source Data**: `source_data/VerveStacks_{iso_code}.xlsx` - the full dataset in a model-agnostic format
+- **Source Data**: `source_data/VerveStacks_BGR.xlsx` - the full dataset in a model-agnostic format
 - **VEDA Model Files**: Complete model ready for Veda-TIMES execution
 - **Scenario Files**: NGFS climate scenarios and policy assumptions
 
 ### Key Methodology Points
-- Plant-level data prioritized where available (capacity > {capacity_threshold} MW)
-- {plants_above_threshold} plants tracked individually above threshold
+- Plant-level data prioritized where available (capacity > 100 MW)
+- 52 plants tracked individually above threshold
 - Efficiency adjustments applied for calibration to national statistics
 - Regional cost multipliers applied based on country economic indicators
 
