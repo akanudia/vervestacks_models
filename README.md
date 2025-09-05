@@ -1,14 +1,29 @@
 # VerveStacks Model Generation Notes - BGR
-**Generated:** 2025-09-05 23:19:52
+**Generated:** 2025-09-05 23:23:24
 
 
 ## Processing Parameters
 
-| Parameter | Value | Description |
-|-----------|-------|-------------|
-               | **Capacity Threshold** | bioenergy: 50.0 MW; coal: 10.0 MW; gas: 10.0 MW; geothermal: 10.0 MW; hydro: 10.0 MW; nuclear: 0.0 MW; oil: 10.0 MW; solar: 200.0 MW; windoff: 200.0 MW; windon: 200.0 MW | Minimum plant size for individual tracking by fuel type |
-| **Coal CCS Retrofit Capacity** | 5.1 GW | Total capacity of coal plants eligible for CCS retrofits |
-| **Gas CCS Retrofit Capacity** | 1.2 GW | Total capacity of gas plants eligible for CCS retrofits |
+### Capacity Thresholds by Fuel Type
+| **Fuel Type** | **Threshold** | **Description** |
+|---------------|---------------|-----------------|
+| 🌱 **Bioenergy** | 50.0 MW | Minimum plant size for individual tracking |
+| ⚫ **Coal** | 10.0 MW | Minimum plant size for individual tracking |
+| 🔥 **Gas** | 10.0 MW | Minimum plant size for individual tracking |
+| 🌋 **Geothermal** | 10.0 MW | Minimum plant size for individual tracking |
+| 💧 **Hydro** | 10.0 MW | Minimum plant size for individual tracking |
+| ⚛️ **Nuclear** | 0.0 MW | Minimum plant size for individual tracking |
+| 🛢️ **Oil** | 10.0 MW | Minimum plant size for individual tracking |
+| ☀️ **Solar** | 200.0 MW | Minimum plant size for individual tracking |
+| 🌊 **Windoff** | 200.0 MW | Minimum plant size for individual tracking |
+| 💨 **Windon** | 200.0 MW | Minimum plant size for individual tracking |
+
+
+### 🔄 CCS Retrofit Potential
+| **Fuel Type** | **Retrofit Capacity** | **Description** |
+|---------------|----------------------|-----------------|
+| ⚫ **Coal** | 5.1 GW | Total capacity of coal plants eligible for CCS retrofits |
+| 🔥 **Gas** | 1.2 GW | Total capacity of gas plants eligible for CCS retrofits |
 
 
 ## Data, Assumptions & Coverage
@@ -26,7 +41,7 @@
 ### Data Processing Notes
 - **Individual Plant Coverage**: 85.4%% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 16.6 GW GW from all sources
-- **Plants Above Threshold**: 52 individual plants tracked above bioenergy: 50.0 MW; coal: 10.0 MW; gas: 10.0 MW; geothermal: 10.0 MW; hydro: 10.0 MW; nuclear: 0.0 MW; oil: 10.0 MW; solar: 200.0 MW; windoff: 200.0 MW; windon: 200.0 MW MW threshold
+- **Plants Above Threshold**: 52 individual plants tracked above 100 MW threshold
 - **Total Plants Processed**: 101 plants in database
 - **Missing Capacity Added**: - **EMBER data**:
   - **gas**: 0.02 GW
@@ -43,7 +58,7 @@
 - **Scenario Files**: NGFS climate scenarios and policy assumptions
 
 ### Key Methodology Points
-- Plant-level data prioritized where available (capacity > bioenergy: 50.0 MW; coal: 10.0 MW; gas: 10.0 MW; geothermal: 10.0 MW; hydro: 10.0 MW; nuclear: 0.0 MW; oil: 10.0 MW; solar: 200.0 MW; windoff: 200.0 MW; windon: 200.0 MW MW)
+- Plant-level data prioritized where available (capacity > 100 MW)
 - 52 plants tracked individually above threshold
 - Efficiency adjustments applied for calibration to national statistics
 - Regional cost multipliers applied based on country economic indicators
