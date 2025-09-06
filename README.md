@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - CHE
-**Generated:** 2025-09-07 00:17:10
+**Generated:** 2025-09-07 00:21:10
 
 
 ## Processing Parameters
@@ -44,8 +44,8 @@
   - **bioenergy**: 0.23 GW
   - **gas**: 0.13 GW
 - **IRENA data**:
-  - **solar**: 4.43 GW
   - **hydro**: 3.18 GW
+  - **solar**: 4.43 GW
 
 
 ## Model Structure
@@ -139,7 +139,7 @@ showing how costs evolve as more capacity is developed:
 - **Original vs Landuse-Adjusted**: Impact of conservative overlap management
 
 <div align="center">
-<img src="renewable_energy/supply_curves_CHE.svg" alt="Renewable Energy Supply Curves" width="100%">
+<img src="VerveStacks_CHE/renewable_energy/supply_curves_CHE.svg" alt="Renewable Energy Supply Curves" width="100%">
 </div>
 
 This analysis provides the foundation for understanding renewable energy economics and informs 
