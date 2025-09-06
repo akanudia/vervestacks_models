@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - ITA
-**Generated:** 2025-09-06 14:04:18
+**Generated:** 2025-09-06 15:34:06
 
 
 ## Processing Parameters
@@ -46,9 +46,9 @@
   - **hydro**: 6.73 GW
   - **windon**: 0.24 GW
 - **EMBER data**:
+  - **coal**: 1.62 GW
   - **gas**: 6.44 GW
   - **bioenergy**: 3.58 GW
-  - **coal**: 1.62 GW
 
 
 ## Model Structure
@@ -86,19 +86,17 @@ This model employs sophisticated **statistical scenario generation** to identify
 - **Critical Period Enhancement**: Additional segments for identified stress periods
 
 
-## Interactive Grid Network Visualization
+## Grid Network Visualization
 
-### 🗺️ **Real-Time Grid Exploration**
+### 🗺️ **Grid Network Overview**
 
-This model includes an **interactive network visualization** showing the complete transmission infrastructure and renewable energy integration:
+This model includes a **comprehensive grid visualization** showing the complete transmission infrastructure and renewable energy integration:
 
 <div align="center">
-  <iframe src="VerveStacks_ITA_grids/grid_analysis/ITA_network_visualization.html" 
-          width="900" height="650" 
-          frameborder="0" 
-          style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  </iframe>
-  <p><em>Interactive grid network - Click to explore transmission topology, power plants, and renewable zones</em></p>
+  <img src="VerveStacks_ITA_grids/grid_analysis/ITA_network_visualization.svg" 
+       alt="Grid Network Visualization" 
+       style="max-width: 100%; height: auto; border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <p><em>🗺️ Grid network showing transmission infrastructure, power plants, and renewable energy zones</em></p>
 </div>
 
 **What you can explore:**
