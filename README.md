@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - CHE
-**Generated:** 2025-09-06 16:55:11
+**Generated:** 2025-09-06 19:56:12
 
 
 ## Processing Parameters
@@ -54,6 +54,42 @@
 - **Source Data**: `source_data/VerveStacks_CHE.xlsx` - the full dataset in a model-agnostic format
 - **VEDA Model Files**: Complete model ready for Veda-TIMES execution
 - **Scenario Files**: NGFS climate scenarios and policy assumptions
+
+
+## AR6 Climate Scenarios - R10PAC_OECD
+
+This model incorporates climate scenario drivers from the IPCC AR6 database for the **R10PAC_OECD** region, 
+derived from 350 vetted scenario-model combinations spanning 5 climate categories 
+from ambitious 1.5°C pathways (C1) to limited mitigation trajectories (C7). The scenarios cover 
+7 years from 2020 to 2050, providing comprehensive 
+pathways for energy system transformation under different climate policy futures.
+
+
+### Climate Scenario Trajectories
+
+<div align="center">
+  <img src="VerveStacks_CHE/scenario_drivers/ar6_scenarios_CHE.png" 
+       alt="AR6 Climate Scenario Trajectories" 
+       style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+  <p><em>Climate scenario trajectories showing CO2 prices, electricity growth, and hydrogen deployment across different climate ambitions</em></p>
+</div>
+
+**Key Insights:**
+- **5 Climate Categories**: From 1.5°C pathways to baseline scenarios
+- **350 Scenario-Model Combinations**: Comprehensive coverage of transformation pathways  
+- **Regional Context**: R10PAC_OECD region-specific climate policy patterns
+- **Temporal Coverage**: 2020-2050 transformation trajectories
+
+
+### Scenario-Model Divergence Analysis
+
+**Model Agreement**: Analysis across 350 scenario-model combinations reveals:
+- **High Convergence**: CO2 pricing trajectories (CV: inf%) and electricity growth (CV: 16.0%)
+- **Moderate Uncertainty**: Transport electrification rates (CV: 62.8%) 
+- **High Divergence**: Hydrogen deployment pathways (CV: inf%)
+
+**Regional Characteristics**: The R10PAC_OECD region shows moderate convergence compared to global 
+averages, with region-specific climate policy patterns reflecting economic and policy context.
 
 
 ## Temporal Modeling & Timeslice Analysis
