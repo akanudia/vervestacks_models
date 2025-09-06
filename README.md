@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - CHE
-**Generated:** 2025-09-06 19:56:12
+**Generated:** 2025-09-06 20:53:41
 
 
 ## Processing Parameters
@@ -68,7 +68,7 @@ pathways for energy system transformation under different climate policy futures
 ### Climate Scenario Trajectories
 
 <div align="center">
-  <img src="VerveStacks_CHE/scenario_drivers/ar6_scenarios_CHE.png" 
+  <img src="VerveStacks_CHE_grids/scenario_drivers/ar6_scenarios_CHE.png" 
        alt="AR6 Climate Scenario Trajectories" 
        style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
   <p><em>Climate scenario trajectories showing CO2 prices, electricity growth, and hydrogen deployment across different climate ambitions</em></p>
