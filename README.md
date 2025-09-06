@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - DEU
-**Generated:** 2025-09-06 14:18:32
+**Generated:** 2025-09-06 14:29:17
 
 
 ## Processing Parameters
@@ -86,22 +86,17 @@ This model employs sophisticated **statistical scenario generation** to identify
 - **Critical Period Enhancement**: Additional segments for identified stress periods
 
 
-## Interactive Grid Network Visualization
+## Grid Network Visualization
 
-### 🗺️ **Real-Time Grid Exploration**
+### 🗺️ **Grid Network Overview**
 
-This model includes an **interactive network visualization** showing the complete transmission infrastructure and renewable energy integration:
+This model includes a **comprehensive grid visualization** showing the complete transmission infrastructure and renewable energy integration:
 
 <div align="center">
-  <a href="VerveStacks_DEU_grids/grid_analysis/DEU_network_visualization.html" 
-     target="_blank">
-    <img src="VerveStacks_DEU_grids/grid_analysis/DEU_network_visualization.svg" 
-         alt="Interactive Grid Network Visualization - Click to open" 
-         style="max-width: 100%; height: auto; border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;"
-         onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 6px 12px rgba(0,0,0,0.3)';"
-         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.2)';">
-  </a>
-  <p><em>🗺️ Click the image above to open the interactive grid visualization in a new tab</em></p>
+  <img src="VerveStacks_DEU_grids/grid_analysis/DEU_network_visualization.svg" 
+       alt="Grid Network Visualization" 
+       style="max-width: 100%; height: auto; border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <p><em>🗺️ Grid network showing transmission infrastructure, power plants, and renewable energy zones</em></p>
 </div>
 
 **What you can explore:**
