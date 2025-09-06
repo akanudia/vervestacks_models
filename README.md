@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - ITA
-**Generated:** 2025-09-06 12:35:16
+**Generated:** 2025-09-06 12:45:00
 
 
 ## Processing Parameters
@@ -93,7 +93,7 @@ This model employs sophisticated **statistical scenario generation** to identify
 This model includes an **interactive network visualization** showing the complete transmission infrastructure and renewable energy integration:
 
 <div align="center">
-  <iframe src="grid_analysis/ITA_network_visualization.html" 
+  <iframe src="source_data/grid_analysis/ITA_network_visualization.html" 
           width="900" height="650" 
           frameborder="0" 
           style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
@@ -140,8 +140,7 @@ This model employs **50×50km spatial resolution** for detailed renewable energy
 | **Spatial Metric** | **Value** | **Technical Detail** |
 |-------------------|-----------|---------------------|
 | **Grid Cells** | {total_grid_cells} | 50×50km renewable energy zones |
-| **Solar Zones** | {solar_zones} | Grid cells with solar potential |
-| **Wind Onshore Zones** | {wind_onshore_zones} | Grid cells with onshore wind potential |
+| **Solar/Wind Onshore Zones** | {solar_wind_onshore_zones} | Grid cells with solar and onshore wind potential |
 | **Wind Offshore Zones** | {wind_offshore_zones} | Grid cells with offshore wind potential |
 | **Zone-Bus Mappings** | {zone_bus_mappings} | REZoning zones assigned to transmission buses |
 | **Spatial Coverage** | {spatial_coverage_area} km² | Total area covered by renewable zones |
@@ -149,8 +148,7 @@ This model employs **50×50km spatial resolution** for detailed renewable energy
 #### 🔌 **Spatial Commodity System**
 
 Each grid cell generates location-specific electricity commodities:
-- **Solar**: `elc_spv-{iso_code}_001` to `elc_spv-{iso_code}_{max_solar_id}`
-- **Wind Onshore**: `elc_won-{iso_code}_001` to `elc_won-{iso_code}_{max_wind_id}`
+- **Solar/Wind Onshore**: `elc_spv-{iso_code}_001` to `elc_spv-{iso_code}_{max_solar_id}` (same zones for both technologies)
 - **Wind Offshore**: `elc_wof-{iso_code}_001` to `elc_wof-{iso_code}_{max_offshore_id}`
 
 This enables **grid-aware optimization** where renewable generation is constrained by:
