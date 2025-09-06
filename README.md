@@ -1,14 +1,28 @@
 # VerveStacks Model Generation Notes - DEU
+**Generated:** 2025-09-07 00:06:04
 
-**Generated:** 2025-09-05 19:27:09
 
 ## Processing Parameters
 
-| Parameter | Value | Description |
-|-----------|-------|-------------|
-| **Capacity Threshold** | Not specified MW | Minimum plant size for individual tracking |
-| **Gas Efficiency Adjustment** | Not specified | Multiplier applied to gas plant efficiencies |
-| **Coal Efficiency Adjustment** | Not specified | Multiplier applied to coal plant efficiencies |
+### Individual Plant Tracking
+| **Fuel Type** | **Threshold** | **Plants Above Threshold** |
+|---------------|---------------|---------------------------|
+| 🌱 **Bioenergy** | 50.0 MW | 14/21 plants |
+| ⚫ **Coal** | 110.0 MW | 61/68 plants |
+| 🔥 **Gas** | 110.0 MW | 117/194 plants |
+| 🌋 **Geothermal** | 10.0 MW | 1/4 plants |
+| 💧 **Hydro** | 10.0 MW | 33/33 plants |
+| 🛢️ **Oil** | 110.0 MW | 117/194 plants |
+| ☀️ **Solar** | 200.0 MW | 21/30 plants |
+| 🌊 **Windoff** | 200.0 MW | 29/35 plants |
+| 💨 **Windon** | 200.0 MW | 29/34 plants |
+
+
+### 🔄 CCS Retrofit Potential
+| **Fuel Type** | **Retrofit Host Capacity** | **Retrofit Potential Capacity**
+|---------------|----------------------------|-------------------------------|
+| ⚫ **Coal** | 40.4 GW | 29.4 GW after capacity penalty |
+| 🔥 **Gas** | 37.5 GW | 31.7 GW after capacity penalty |
 
 
 ## Data, Assumptions & Coverage
@@ -16,63 +30,70 @@
 ### Primary Data Sources
 
 #### Base-Year Power Plant Specifications
-
 - **Global Energy Monitor (GEM)** [🌐](https://globalenergymonitor.org)  
   Open-access database of individual power plants worldwide, including location, capacity, fuel type, commissioning year, and technical specifications.
 - **International Renewable Energy Agency (IRENA)** [🌐](https://www.irena.org/Statistics)  
-  Global renewable energy capacity and generation statistics (2000–2022), disaggregated by country and technology. Used to calibrate solar, wind and hydro generation.
+  Global renewable energy capacity and generation statistics (2000–2022), disaggregated by country and technology.
 - **EMBER Climate** [🌐](https://ember-climate.org/data/)  
-  Global dataset tracking electricity generation, installed capacity, and emissions intensity (2000–2022), often used to benchmark policy impacts and system transitions. Used to calibrate thermal generation.
-- **United Nations Statistics Division (UNSD)** [🌐](https://unstats.un.org/unsd/energy/)  
-  Official national energy statistics, including fuel inputs, electricity generation, and sectoral breakdowns — used to validate historical power plant operations.
-
-#### Power Sector Policies and Pathways
-
-- **Network for Greening the Financial System (NGFS)** [🌐](https://www.ngfs.net)  
-  Scenario-based projections of electricity demand, CO₂ emissions trajectories, and fuel prices — used to model alternative climate policy futures.
-- **EMBER Climate** [🌐](https://ember-climate.org)  
-  Renewable energy targets.
-
-#### New Technologies
-
-- **International Energy Agency – World Energy Outlook (IEA WEO)** [🌐](https://www.iea.org/reports/world-energy-outlook-2023)  
-  Global assumptions for power generation technologies: capital costs, O&M, efficiency, and learning rates — aligned with IEA scenarios.
-- **U.S. National Renewable Energy Laboratory – Annual Technology Baseline (NREL ATB)** [🌐](https://atb.nrel.gov/)  
-  Cost and performance trajectories for renewable and low-carbon power technologies. U.S.-centric, but widely used for international modeling.
-
-#### Technology Assumptions
-
-- **U.S. Environmental Protection Agency (EPA)** [🌐](https://www.epa.gov)  
-  Technical parameters for retrofitting fossil plants with carbon capture and storage (CCS), including energy penalties and incremental costs.
-- **Integrated Planning Model (IPM)** [🌐](https://www.epa.gov/power-sector-modeling/overview-ipm-platform)  
-  U.S.-based modeling platform used to estimate life extension costs, variable O&M, and decommissioning behavior of thermal power plants.
-
-
+  Global dataset tracking electricity generation, installed capacity, and emissions intensity (2000–2022).
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: TBD of total capacity from plant-level GEM data
-- **Total Capacity Tracked**: TBD from all sources
-- **Plants Above Threshold**: TBD individual plants tracked above N/A MW threshold
-- **Total Plants Processed**: TBD plants in database
-- **Technology Mapping**: Automated mapping using VerveStacks technology classifications
+- **Individual Plant Coverage**: 96.6%% of total capacity from plant-level GEM data
+- **Total Capacity Tracked**: 281.3 GW GW from all sources
+- **Plants Above Threshold**: 418 individual plants tracked
+- **Total Plants Processed**: 613 plants in database
+- **Missing Capacity Added**: - **IRENA data**:
+  - **solar**: 42.0 GW
+  - **hydro**: 4.02 GW
+  - **windon**: 22.38 GW
+- **EMBER data**:
+  - **bioenergy**: 8.78 GW
+  - **coal**: 8.09 GW
 
-### Missing Capacity Added From:
-- **No missing capacity added** - All capacity covered by plant-level data
 
 ## Model Structure
 
 ### Files Included
-- **Source Data**: `source_data/VerveStacks_DEU.xlsx` - the full dataset in a model-agnostic format, ready for TIMES/VEDA execution
-    # Includes hourly demand and solar/wind resource profiles
+- **Source Data**: `source_data/VerveStacks_DEU.xlsx` - the full dataset in a model-agnostic format
 - **VEDA Model Files**: Complete model ready for Veda-TIMES execution
 - **Scenario Files**: NGFS climate scenarios and policy assumptions
 
-### Key Methodology Points
-- Plant-level data prioritized where available (capacity > N/A MW)
-- N/A plants tracked individually above threshold
-- Efficiency adjustments applied for calibration to national statistics
-- Missing capacity filled using technology-specific statistical estimates
-- Regional cost multipliers applied based on country economic indicators
+
+## AR6 Climate Scenarios - R10PAC_OECD
+
+This model incorporates climate scenario drivers from the IPCC AR6 database for the **R10PAC_OECD** region, 
+derived from 350 vetted scenario-model combinations spanning 5 climate categories 
+from ambitious 1.5°C pathways (C1) to limited mitigation trajectories (C7). The scenarios cover 
+7 years from 2020 to 2050, providing comprehensive 
+pathways for energy system transformation under different climate policy futures.
+
+
+### Climate Scenario Trajectories
+
+<div align="center">
+  <img src="VerveStacks_DEU/scenario_drivers/ar6_scenarios_DEU.png" 
+       alt="AR6 Climate Scenario Trajectories" 
+       style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+  <p><em>Climate scenario trajectories showing CO2 prices, electricity growth, and hydrogen deployment across different climate ambitions</em></p>
+</div>
+
+**Key Insights:**
+- **5 Climate Categories**: From 1.5°C pathways to baseline scenarios
+- **350 Scenario-Model Combinations**: Comprehensive coverage of transformation pathways  
+- **Regional Context**: R10PAC_OECD region-specific climate policy patterns
+- **Temporal Coverage**: 2020-2050 transformation trajectories
+
+
+### Scenario-Model Divergence Analysis
+
+**Model Agreement**: Analysis across 350 scenario-model combinations reveals:
+- **High Convergence**: CO2 pricing trajectories (CV: inf%) and electricity growth (CV: 16.0%)
+- **Moderate Uncertainty**: Transport electrification rates (CV: 62.8%) 
+- **High Divergence**: Hydrogen deployment pathways (CV: inf%)
+
+**Regional Characteristics**: The R10PAC_OECD region shows moderate convergence compared to global 
+averages, with region-specific climate policy patterns reflecting economic and policy context.
+
 
 ## Temporal Modeling & Timeslice Analysis
 
@@ -95,170 +116,14 @@ This model employs sophisticated **statistical scenario generation** to identify
 - Important for grid stability and flexible resource planning
 - Captures rapid ramping requirements for dispatchable assets
 
-### Renewable Resource Selection
-
-**Balanced Solar/Wind Portfolio Optimization:**
-- Quality-weighted selection based on resource potential and economics
-- Grid cell-level analysis using 50x50km resolution REZoning data
-- Cost-effectiveness scoring (TWh generation per $/MWh LCOE)
-- Technology mix targets derived from historical deployment patterns
-
-**Supply Curve Analysis:**
-- Complete renewable resource landscape visualization
-- Stepped-line supply curves showing cumulative potential vs. cost
-- Integration of wind onshore resource assessments
-- Economic competitiveness ranking for investment prioritization
-
-### Coverage Metrics & Energy Balance
-
-**Clean Generation Coverage:**
-- Hourly coverage calculation: (Clean Generation + Nuclear) / Demand × 100%
-- Range analysis from minimum to maximum coverage throughout the year
-- Net load calculations showing residual demand after clean generation
-- Stress period selection based on coverage distribution statistics
-
 ### Timeslice Structure Generation
-
 **Multi-Scale Temporal Resolution:**
 - **Base Aggregation**: 6 seasons × 8 daily periods = 48 base timeslices
 - **Critical Period Enhancement**: Additional segments for identified stress periods
-- **Statistical Methods**: Triple-1, Triple-5, and Weekly Stress approaches
-- **VEDA Integration**: Complete tsdesign.csv with TIMES-compatible mappings
-
-## Timeslice Analysis Visualizations
-
-The following charts provide insights into the temporal characteristics of this energy system:
-
-
-### Critical Period Analysis Results
-
-**Analysis Status:** Timeslice analysis completed for DEU
-
-
-#### 🔥 **Detailed Stress Analysis Results:**
-
-**🌨️ Weekly Sustained Stress Analysis:**
-- Week S01: 10-06 to 10-06 (1 days)
-
-#### 📊 **Generated Analysis Files:**
-- `segment_summary_DEU.csv` - Statistical summary of all identified critical periods
-- `tsdesign_DEU.csv` - Complete VEDA timeslice structure with temporal mappings
-
-**Stress Period Methodology:**
-- **Scarcity Periods**: Days with lowest renewable coverage (highest need for backup power)
-- **Surplus Periods**: Days with highest renewable coverage (maximum curtailment potential)  
-- **Volatile Periods**: Days with highest generation variability (grid stability challenges)
-- **Weekly Stress**: Sustained periods of low renewable coverage (energy security focus)
-
-**Coverage Analysis**: Clean generation (renewables + nuclear) as percentage of hourly demand
-- Enables identification of critical periods for capacity planning
-- Supports renewable integration and storage requirement analysis
-- Provides input for grid flexibility and backup power assessment
-
-### 📊 Generated Analysis Charts
-
-*Interactive visualizations from the timeslice analysis process. Click any chart to view full resolution.*
-
-#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_DEU/source_data/aggregation_justification_DEU_s1_d.svg" target="_blank">
-  <img src="VerveStacks_DEU/source_data/aggregation_justification_DEU_s1_d.svg" alt="aggregation_justification_DEU_s1_d.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_DEU/source_data/aggregation_justification_DEU_s1p1v1_d.svg" target="_blank">
-  <img src="VerveStacks_DEU/source_data/aggregation_justification_DEU_s1p1v1_d.svg" alt="aggregation_justification_DEU_s1p1v1_d.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_DEU/source_data/aggregation_justification_DEU_s2_w.svg" target="_blank">
-  <img src="VerveStacks_DEU/source_data/aggregation_justification_DEU_s2_w.svg" alt="aggregation_justification_DEU_s2_w.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_DEU/source_data/aggregation_justification_DEU_s2_w_p2_d.svg" target="_blank">
-  <img src="VerveStacks_DEU/source_data/aggregation_justification_DEU_s2_w_p2_d.svg" alt="aggregation_justification_DEU_s2_w_p2_d.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_DEU/source_data/aggregation_justification_DEU_s3p3v3_d.svg" target="_blank">
-  <img src="VerveStacks_DEU/source_data/aggregation_justification_DEU_s3p3v3_d.svg" alt="aggregation_justification_DEU_s3p3v3_d.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_DEU/source_data/aggregation_justification_DEU_s5p5v5_d.svg" target="_blank">
-  <img src="VerveStacks_DEU/source_data/aggregation_justification_DEU_s5p5v5_d.svg" alt="aggregation_justification_DEU_s5p5v5_d.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_DEU/source_data/aggregation_justification_DEU_ts12_clu.svg" target="_blank">
-  <img src="VerveStacks_DEU/source_data/aggregation_justification_DEU_ts12_clu.svg" alt="aggregation_justification_DEU_ts12_clu.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_DEU/source_data/aggregation_justification_DEU_ts24_clu.svg" target="_blank">
-  <img src="VerveStacks_DEU/source_data/aggregation_justification_DEU_ts24_clu.svg" alt="aggregation_justification_DEU_ts24_clu.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_DEU/source_data/aggregation_justification_DEU_ts48_clu.svg" target="_blank">
-  <img src="VerveStacks_DEU/source_data/aggregation_justification_DEU_ts48_clu.svg" alt="aggregation_justification_DEU_ts48_clu.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Re Analysis Summary Deu** - Timeslice analysis visualization
-<a href="VerveStacks_DEU/source_data/re_analysis_summary_DEU.svg" target="_blank">
-  <img src="VerveStacks_DEU/source_data/re_analysis_summary_DEU.svg" alt="re_analysis_summary_DEU.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Stress Periods S1 D Deu** - Timeslice analysis visualization
-<a href="VerveStacks_DEU/source_data/stress_periods_s1_d_DEU.svg" target="_blank">
-  <img src="VerveStacks_DEU/source_data/stress_periods_s1_d_DEU.svg" alt="stress_periods_s1_d_DEU.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Stress Periods S2 W Deu** - Timeslice analysis visualization
-<a href="VerveStacks_DEU/source_data/stress_periods_s2_w_DEU.svg" target="_blank">
-  <img src="VerveStacks_DEU/source_data/stress_periods_s2_w_DEU.svg" alt="stress_periods_s2_w_DEU.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Stress Periods S5P5V5 D Deu** - Timeslice analysis visualization
-<a href="VerveStacks_DEU/source_data/stress_periods_s5p5v5_d_DEU.svg" target="_blank">
-  <img src="VerveStacks_DEU/source_data/stress_periods_s5p5v5_d_DEU.svg" alt="stress_periods_s5p5v5_d_DEU.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Renewable Supply Curves** - Cost-ordered renewable resource potential showing solar and wind capacity vs. LCOE
-<a href="VerveStacks_DEU/source_data/supply_curves_DEU.svg" target="_blank">
-  <img src="VerveStacks_DEU/source_data/supply_curves_DEU.svg" alt="supply_curves_DEU.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
 
 
 ## Quality Assurance
+
 - Cross-validation between IRENA, EMBER, and UNSD statistics
 - Capacity-generation consistency checks
 - Technology classification verification
@@ -266,13 +131,15 @@ The following charts provide insights into the temporal characteristics of this 
 - Renewable resource potential validated against REZoning database
 - Temporal analysis verified through statistical scenario methods
 
+
 ## Usage Notes
+
 - This model is generated automatically using VerveStacks methodology
 - Timeslice structure is optimized for high-renewable energy system analysis
-- For questions about specific data sources or methodology, refer to METHODOLOGY_DOCUMENTATION.md
+- For questions about specific data sources or methodology, refer to online documentation
 - Model parameters can be adjusted manually in the model files
-- Charts and analysis files are located in `2_ts_design/outputs/{input_iso}/`
+- Charts and analysis files are located in `2_ts_design/outputs/DEU/`
 
 ---
-*Generated by VerveStacks Energy Model Processor with Advanced Timeslice Analysis*
-*For more information: coming soon*
+*Generated by VerveStacks Energy Model Processor*
+*For more information: [VerveStacks Documentation](https://github.com/your-org/vervestacks)*
