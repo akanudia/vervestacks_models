@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - ITA
-**Generated:** 2025-09-06 12:45:00
+**Generated:** 2025-09-06 14:04:18
 
 
 ## Processing Parameters
@@ -93,7 +93,7 @@ This model employs sophisticated **statistical scenario generation** to identify
 This model includes an **interactive network visualization** showing the complete transmission infrastructure and renewable energy integration:
 
 <div align="center">
-  <iframe src="source_data/grid_analysis/ITA_network_visualization.html" 
+  <iframe src="VerveStacks_ITA_grids/grid_analysis/ITA_network_visualization.html" 
           width="900" height="650" 
           frameborder="0" 
           style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
@@ -115,20 +115,20 @@ This model includes an **interactive network visualization** showing the complet
 
 | **Metric** | **Value** | **Description** |
 |------------|-----------|-----------------|
-| **Total Buses** | {total_buses} | Transmission substations and connection points |
-| **Transmission Lines** | {total_lines} | High-voltage transmission corridors |
-| **Voltage Levels** | {voltage_levels} | Multi-level transmission system (220kV, 380kV, etc.) |
-| **Grid Coverage** | {grid_coverage_area} km² | Geographic area covered by transmission network |
-| **Average Line Length** | {avg_line_length} km | Mean distance between connected buses |
+| **Total Buses** | 592 | Transmission substations and connection points |
+| **Transmission Lines** | 792 | High-voltage transmission corridors |
+| **Voltage Levels** | 200, 220, 225, 380, 400, 500 | Multi-level transmission system (220kV, 380kV, etc.) |
+| **Grid Coverage** | 1000879 km² | Geographic area covered by transmission network |
+| **Average Line Length** | 25843.3 km | Mean distance between connected buses |
 
 #### ⚡ **Power Plant Integration**
 
 | **Integration Type** | **Count** | **Total Capacity** | **Description** |
 |---------------------|-----------|-------------------|-----------------|
-| **Plants Mapped to Buses** | {plants_mapped} | {plants_capacity_gw} GW | GEM power plants assigned to grid locations |
-| **Renewable Plants** | {renewable_plants} | {renewable_capacity_gw} GW | Solar, wind, hydro plants on the grid |
-| **Conventional Plants** | {conventional_plants} | {conventional_capacity_gw} GW | Coal, gas, nuclear plants on the grid |
-| **Clustering Efficiency** | {clustering_ratio}% | - | Bus reduction achieved through DBSCAN clustering |
+| **Plants Mapped to Buses** | 1803 | 1803 GW | GEM power plants assigned to grid locations |
+| **Renewable Plants** | 0 | 0 GW | Solar, wind, hydro plants on the grid |
+| **Conventional Plants** | 0 | 0 GW | Coal, gas, nuclear plants on the grid |
+| **Clustering Efficiency** | 0.0% | - | Bus reduction achieved through DBSCAN clustering |
 
 
 ### Spatial Resolution & Renewable Zones
@@ -139,17 +139,17 @@ This model employs **50×50km spatial resolution** for detailed renewable energy
 
 | **Spatial Metric** | **Value** | **Technical Detail** |
 |-------------------|-----------|---------------------|
-| **Grid Cells** | {total_grid_cells} | 50×50km renewable energy zones |
-| **Solar/Wind Onshore Zones** | {solar_wind_onshore_zones} | Grid cells with solar and onshore wind potential |
-| **Wind Offshore Zones** | {wind_offshore_zones} | Grid cells with offshore wind potential |
-| **Zone-Bus Mappings** | {zone_bus_mappings} | REZoning zones assigned to transmission buses |
-| **Spatial Coverage** | {spatial_coverage_area} km² | Total area covered by renewable zones |
+| **Grid Cells** | 1208 | 50×50km renewable energy zones |
+| **Solar/Wind Onshore Zones** | 683 | Grid cells with solar and onshore wind potential |
+| **Wind Offshore Zones** | 525 | Grid cells with offshore wind potential |
+| **Zone-Bus Mappings** | 1208 | REZoning zones assigned to transmission buses |
+| **Spatial Coverage** | 1707500 km² | Total area covered by renewable zones |
 
 #### 🔌 **Spatial Commodity System**
 
 Each grid cell generates location-specific electricity commodities:
-- **Solar/Wind Onshore**: `elc_spv-{iso_code}_001` to `elc_spv-{iso_code}_{max_solar_id}` (same zones for both technologies)
-- **Wind Offshore**: `elc_wof-{iso_code}_001` to `elc_wof-{iso_code}_{max_offshore_id}`
+- **Solar/Wind Onshore**: `elc_spv-ITA_001` to `elc_spv-ITA_683` (same zones for both technologies)
+- **Wind Offshore**: `elc_wof-ITA_001` to `elc_wof-ITA_525`
 
 This enables **grid-aware optimization** where renewable generation is constrained by:
 - Transmission capacity between zones
@@ -166,13 +166,13 @@ Industrial electricity demand is spatially distributed across the transmission n
 
 | **Load Distribution Method** | **Buses with Load** | **Total Industrial Load** | **Methodology** |
 |------------------------------|---------------------|---------------------------|-----------------|
-| **Voronoi Tessellation** | {voronoi_buses} | {voronoi_load_gw} GW | Geometric proximity-based allocation |
+| **Voronoi Tessellation** | 149 | 1.0 GW | Geometric proximity-based allocation |
 
 #### 📈 **Load Concentration Analysis**
 
-- **Highest Load Bus**: {max_load_bus} ({max_load_gw} GW)
-- **Load Distribution CV**: {load_cv}% (coefficient of variation)
-- **Load Balancing**: {load_balance_description}
+- **Highest Load Bus**: way/436352445-220 (0.09 GW)
+- **Load Distribution CV**: 0% (coefficient of variation)
+- **Load Balancing**: Balanced distribution across transmission buses
 
 This spatial load distribution enables **realistic grid modeling** where:
 - Industrial demand varies by location
