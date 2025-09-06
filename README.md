@@ -1,14 +1,28 @@
 # VerveStacks Model Generation Notes - DEU
+**Generated:** 2025-09-06 13:36:11
 
-**Generated:** 2025-09-05 18:21:18
 
 ## Processing Parameters
 
-| Parameter | Value | Description |
-|-----------|-------|-------------|
-| **Capacity Threshold** | Not specified MW | Minimum plant size for individual tracking |
-| **Gas Efficiency Adjustment** | Not specified | Multiplier applied to gas plant efficiencies |
-| **Coal Efficiency Adjustment** | Not specified | Multiplier applied to coal plant efficiencies |
+### Individual Plant Tracking
+| **Fuel Type** | **Threshold** | **Plants Above Threshold** |
+|---------------|---------------|---------------------------|
+| 🌱 **Bioenergy** | 50.0 MW | 32/43 plants |
+| ⚫ **Coal** | 110.0 MW | 85/108 plants |
+| 🔥 **Gas** | 110.0 MW | 100/261 plants |
+| 🌋 **Geothermal** | 10.0 MW | 0/5 plants |
+| 💧 **Hydro** | 10.0 MW | 58/58 plants |
+| 🛢️ **Oil** | 110.0 MW | 100/261 plants |
+| ☀️ **Solar** | 200.0 MW | 173/2023 plants |
+| 🌊 **Windoff** | 200.0 MW | 29/40 plants |
+| 💨 **Windon** | 200.0 MW | 34/1487 plants |
+
+
+### 🔄 CCS Retrofit Potential
+| **Fuel Type** | **Retrofit Host Capacity** | **Retrofit Potential Capacity**
+|---------------|----------------------------|-------------------------------|
+| ⚫ **Coal** | 40.4 GW | 29.4 GW after capacity penalty |
+| 🔥 **Gas** | 37.5 GW | 31.7 GW after capacity penalty |
 
 
 ## Data, Assumptions & Coverage
@@ -16,63 +30,34 @@
 ### Primary Data Sources
 
 #### Base-Year Power Plant Specifications
-
 - **Global Energy Monitor (GEM)** [🌐](https://globalenergymonitor.org)  
   Open-access database of individual power plants worldwide, including location, capacity, fuel type, commissioning year, and technical specifications.
 - **International Renewable Energy Agency (IRENA)** [🌐](https://www.irena.org/Statistics)  
-  Global renewable energy capacity and generation statistics (2000–2022), disaggregated by country and technology. Used to calibrate solar, wind and hydro generation.
+  Global renewable energy capacity and generation statistics (2000–2022), disaggregated by country and technology.
 - **EMBER Climate** [🌐](https://ember-climate.org/data/)  
-  Global dataset tracking electricity generation, installed capacity, and emissions intensity (2000–2022), often used to benchmark policy impacts and system transitions. Used to calibrate thermal generation.
-- **United Nations Statistics Division (UNSD)** [🌐](https://unstats.un.org/unsd/energy/)  
-  Official national energy statistics, including fuel inputs, electricity generation, and sectoral breakdowns — used to validate historical power plant operations.
-
-#### Power Sector Policies and Pathways
-
-- **Network for Greening the Financial System (NGFS)** [🌐](https://www.ngfs.net)  
-  Scenario-based projections of electricity demand, CO₂ emissions trajectories, and fuel prices — used to model alternative climate policy futures.
-- **EMBER Climate** [🌐](https://ember-climate.org)  
-  Renewable energy targets.
-
-#### New Technologies
-
-- **International Energy Agency – World Energy Outlook (IEA WEO)** [🌐](https://www.iea.org/reports/world-energy-outlook-2023)  
-  Global assumptions for power generation technologies: capital costs, O&M, efficiency, and learning rates — aligned with IEA scenarios.
-- **U.S. National Renewable Energy Laboratory – Annual Technology Baseline (NREL ATB)** [🌐](https://atb.nrel.gov/)  
-  Cost and performance trajectories for renewable and low-carbon power technologies. U.S.-centric, but widely used for international modeling.
-
-#### Technology Assumptions
-
-- **U.S. Environmental Protection Agency (EPA)** [🌐](https://www.epa.gov)  
-  Technical parameters for retrofitting fossil plants with carbon capture and storage (CCS), including energy penalties and incremental costs.
-- **Integrated Planning Model (IPM)** [🌐](https://www.epa.gov/power-sector-modeling/overview-ipm-platform)  
-  U.S.-based modeling platform used to estimate life extension costs, variable O&M, and decommissioning behavior of thermal power plants.
-
-
+  Global dataset tracking electricity generation, installed capacity, and emissions intensity (2000–2022).
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: TBD of total capacity from plant-level GEM data
-- **Total Capacity Tracked**: TBD from all sources
-- **Plants Above Threshold**: TBD individual plants tracked above N/A MW threshold
-- **Total Plants Processed**: TBD plants in database
-- **Technology Mapping**: Automated mapping using VerveStacks technology classifications
+- **Individual Plant Coverage**: 70.2%% of total capacity from plant-level GEM data
+- **Total Capacity Tracked**: 281.3 GW GW from all sources
+- **Plants Above Threshold**: 736 individual plants tracked
+- **Total Plants Processed**: 4286 plants in database
+- **Missing Capacity Added**: - **IRENA data**:
+  - **solar**: 36.12 GW
+  - **windon**: 8.17 GW
+  - **hydro**: 4.02 GW
+- **EMBER data**:
+  - **coal**: 7.64 GW
+  - **bioenergy**: 8.78 GW
 
-### Missing Capacity Added From:
-- **No missing capacity added** - All capacity covered by plant-level data
 
 ## Model Structure
 
 ### Files Included
-- **Source Data**: `source_data/VerveStacks_DEU.xlsx` - the full dataset in a model-agnostic format, ready for TIMES/VEDA execution
-    # Includes hourly demand and solar/wind resource profiles
+- **Source Data**: `source_data/VerveStacks_DEU.xlsx` - the full dataset in a model-agnostic format
 - **VEDA Model Files**: Complete model ready for Veda-TIMES execution
 - **Scenario Files**: NGFS climate scenarios and policy assumptions
 
-### Key Methodology Points
-- Plant-level data prioritized where available (capacity > N/A MW)
-- N/A plants tracked individually above threshold
-- Efficiency adjustments applied for calibration to national statistics
-- Missing capacity filled using technology-specific statistical estimates
-- Regional cost multipliers applied based on country economic indicators
 
 ## Temporal Modeling & Timeslice Analysis
 
@@ -95,170 +80,146 @@ This model employs sophisticated **statistical scenario generation** to identify
 - Important for grid stability and flexible resource planning
 - Captures rapid ramping requirements for dispatchable assets
 
-### Renewable Resource Selection
-
-**Balanced Solar/Wind Portfolio Optimization:**
-- Quality-weighted selection based on resource potential and economics
-- Grid cell-level analysis using 50x50km resolution REZoning data
-- Cost-effectiveness scoring (TWh generation per $/MWh LCOE)
-- Technology mix targets derived from historical deployment patterns
-
-**Supply Curve Analysis:**
-- Complete renewable resource landscape visualization
-- Stepped-line supply curves showing cumulative potential vs. cost
-- Integration of wind onshore resource assessments
-- Economic competitiveness ranking for investment prioritization
-
-### Coverage Metrics & Energy Balance
-
-**Clean Generation Coverage:**
-- Hourly coverage calculation: (Clean Generation + Nuclear) / Demand × 100%
-- Range analysis from minimum to maximum coverage throughout the year
-- Net load calculations showing residual demand after clean generation
-- Stress period selection based on coverage distribution statistics
-
 ### Timeslice Structure Generation
-
 **Multi-Scale Temporal Resolution:**
 - **Base Aggregation**: 6 seasons × 8 daily periods = 48 base timeslices
 - **Critical Period Enhancement**: Additional segments for identified stress periods
-- **Statistical Methods**: Triple-1, Triple-5, and Weekly Stress approaches
-- **VEDA Integration**: Complete tsdesign.csv with TIMES-compatible mappings
-
-## Timeslice Analysis Visualizations
-
-The following charts provide insights into the temporal characteristics of this energy system:
 
 
-### Critical Period Analysis Results
+## Interactive Grid Network Visualization
 
-**Analysis Status:** Timeslice analysis completed for DEU
+### 🗺️ **Real-Time Grid Exploration**
+
+This model includes an **interactive network visualization** showing the complete transmission infrastructure and renewable energy integration:
+
+<div align="center">
+  <iframe src="VerveStacks_DEU_grids/source_data/grid_analysis/DEU_network_visualization.html" 
+          width="900" height="650" 
+          frameborder="0" 
+          style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  </iframe>
+  <p><em>Interactive grid network - Click to explore transmission topology, power plants, and renewable zones</em></p>
+</div>
+
+**What you can explore:**
+- **Transmission Network**: High-voltage lines and substations from real grid data
+- **Power Plant Locations**: Actual generating facilities mapped to grid buses
+- **Renewable Energy Zones**: 50×50km grid cells with solar/wind potential
+- **Load Centers**: Industrial demand distribution across the network
+- **Grid Constraints**: Bottlenecks and transmission limitations
 
 
-#### 🔥 **Detailed Stress Analysis Results:**
+### Grid Topology Statistics
 
-**🌨️ Weekly Sustained Stress Analysis:**
-- Week S01: 10-06 to 10-06 (1 days)
+#### 📊 **Transmission Infrastructure**
 
-#### 📊 **Generated Analysis Files:**
-- `segment_summary_DEU.csv` - Statistical summary of all identified critical periods
-- `tsdesign_DEU.csv` - Complete VEDA timeslice structure with temporal mappings
+| **Metric** | **Value** | **Description** |
+|------------|-----------|-----------------|
+| **Total Buses** | 795 | Transmission substations and connection points |
+| **Transmission Lines** | 1029 | High-voltage transmission corridors |
+| **Voltage Levels** | 220, 225, 320, 380, 400, 450, 525 | Multi-level transmission system (220kV, 380kV, etc.) |
+| **Grid Coverage** | 496701 km² | Geographic area covered by transmission network |
+| **Average Line Length** | 24826.4 km | Mean distance between connected buses |
 
-**Stress Period Methodology:**
-- **Scarcity Periods**: Days with lowest renewable coverage (highest need for backup power)
-- **Surplus Periods**: Days with highest renewable coverage (maximum curtailment potential)  
-- **Volatile Periods**: Days with highest generation variability (grid stability challenges)
-- **Weekly Stress**: Sustained periods of low renewable coverage (energy security focus)
+#### ⚡ **Power Plant Integration**
 
-**Coverage Analysis**: Clean generation (renewables + nuclear) as percentage of hourly demand
-- Enables identification of critical periods for capacity planning
-- Supports renewable integration and storage requirement analysis
-- Provides input for grid flexibility and backup power assessment
+| **Integration Type** | **Count** | **Total Capacity** | **Description** |
+|---------------------|-----------|-------------------|-----------------|
+| **Plants Mapped to Buses** | 9230 | 9230 GW | GEM power plants assigned to grid locations |
+| **Renewable Plants** | 0 | 0 GW | Solar, wind, hydro plants on the grid |
+| **Conventional Plants** | 0 | 0 GW | Coal, gas, nuclear plants on the grid |
+| **Clustering Efficiency** | 0.0% | - | Bus reduction achieved through DBSCAN clustering |
 
-### 📊 Generated Analysis Charts
 
-*Interactive visualizations from the timeslice analysis process. Click any chart to view full resolution.*
+### Spatial Resolution & Renewable Zones
 
-#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_DEU_grids/source_data/aggregation_justification_DEU_s1_d.svg" target="_blank">
-  <img src="VerveStacks_DEU_grids/source_data/aggregation_justification_DEU_s1_d.svg" alt="aggregation_justification_DEU_s1_d.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
+#### 🗺️ **High-Resolution Grid Modeling**
 
-*Click image to view full size*
+This model employs **50×50km spatial resolution** for detailed renewable energy analysis:
 
-#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_DEU_grids/source_data/aggregation_justification_DEU_s1p1v1_d.svg" target="_blank">
-  <img src="VerveStacks_DEU_grids/source_data/aggregation_justification_DEU_s1p1v1_d.svg" alt="aggregation_justification_DEU_s1p1v1_d.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
+| **Spatial Metric** | **Value** | **Technical Detail** |
+|-------------------|-----------|---------------------|
+| **Grid Cells** | 933 | 50×50km renewable energy zones |
+| **Solar/Wind Onshore Zones** | 841 | Grid cells with solar and onshore wind potential |
+| **Wind Offshore Zones** | 91 | Grid cells with offshore wind potential |
+| **Zone-Bus Mappings** | 933 | REZoning zones assigned to transmission buses |
+| **Spatial Coverage** | 2102500 km² | Total area covered by renewable zones |
 
-*Click image to view full size*
+#### 🔌 **Spatial Commodity System**
 
-#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_DEU_grids/source_data/aggregation_justification_DEU_s2_w.svg" target="_blank">
-  <img src="VerveStacks_DEU_grids/source_data/aggregation_justification_DEU_s2_w.svg" alt="aggregation_justification_DEU_s2_w.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
+Each grid cell generates location-specific electricity commodities:
+- **Solar/Wind Onshore**: `elc_spv-DEU_001` to `elc_spv-DEU_841` (same zones for both technologies)
+- **Wind Offshore**: `elc_wof-DEU_001` to `elc_wof-DEU_91`
 
-*Click image to view full size*
+This enables **grid-aware optimization** where renewable generation is constrained by:
+- Transmission capacity between zones
+- Grid stability requirements
+- Spatial resource quality variations
+- Inter-zone electricity trade opportunities
 
-#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_DEU_grids/source_data/aggregation_justification_DEU_s2_w_p2_d.svg" target="_blank">
-  <img src="VerveStacks_DEU_grids/source_data/aggregation_justification_DEU_s2_w_p2_d.svg" alt="aggregation_justification_DEU_s2_w_p2_d.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
 
-*Click image to view full size*
+### Load Distribution Analysis
 
-#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_DEU_grids/source_data/aggregation_justification_DEU_s3p3v3_d.svg" target="_blank">
-  <img src="VerveStacks_DEU_grids/source_data/aggregation_justification_DEU_s3p3v3_d.svg" alt="aggregation_justification_DEU_s3p3v3_d.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
+#### 🏭 **Industrial Demand Mapping**
 
-*Click image to view full size*
+Industrial electricity demand is spatially distributed across the transmission network using **Voronoi tessellation**:
 
-#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_DEU_grids/source_data/aggregation_justification_DEU_s5p5v5_d.svg" target="_blank">
-  <img src="VerveStacks_DEU_grids/source_data/aggregation_justification_DEU_s5p5v5_d.svg" alt="aggregation_justification_DEU_s5p5v5_d.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
+| **Load Distribution Method** | **Buses with Load** | **Total Industrial Load** | **Methodology** |
+|------------------------------|---------------------|---------------------------|-----------------|
+| **Voronoi Tessellation** | 188 | 1.0 GW | Geometric proximity-based allocation |
 
-*Click image to view full size*
+#### 📈 **Load Concentration Analysis**
 
-#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_DEU_grids/source_data/aggregation_justification_DEU_ts12_clu.svg" target="_blank">
-  <img src="VerveStacks_DEU_grids/source_data/aggregation_justification_DEU_ts12_clu.svg" alt="aggregation_justification_DEU_ts12_clu.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
+- **Highest Load Bus**: way/30303506-380 (0.09 GW)
+- **Load Distribution CV**: 0% (coefficient of variation)
+- **Load Balancing**: Balanced distribution across transmission buses
 
-*Click image to view full size*
+This spatial load distribution enables **realistic grid modeling** where:
+- Industrial demand varies by location
+- Transmission constraints affect supply-demand balancing
+- Grid bottlenecks impact renewable integration
+- Regional electricity trade opportunities are identified
 
-#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_DEU_grids/source_data/aggregation_justification_DEU_ts24_clu.svg" target="_blank">
-  <img src="VerveStacks_DEU_grids/source_data/aggregation_justification_DEU_ts24_clu.svg" alt="aggregation_justification_DEU_ts24_clu.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
 
-*Click image to view full size*
+### Technical Implementation
 
-#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_DEU_grids/source_data/aggregation_justification_DEU_ts48_clu.svg" target="_blank">
-  <img src="VerveStacks_DEU_grids/source_data/aggregation_justification_DEU_ts48_clu.svg" alt="aggregation_justification_DEU_ts48_clu.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
+#### 🔬 **Grid Processing Methodology**
 
-*Click image to view full size*
+**1. Network Extraction & Clustering**
+- **Source**: OpenStreetMap transmission data via PyPSA-Eur
+- **Clustering**: DBSCAN algorithm reduces bus count by 0.0%
+- **Topology Preservation**: Critical transmission lines maintained during clustering
+- **Voltage Hierarchy**: Multi-level transmission system (220kV, 380kV, 500kV)
 
-#### **Re Analysis Summary Deu** - Timeslice analysis visualization
-<a href="VerveStacks_DEU_grids/source_data/re_analysis_summary_DEU.svg" target="_blank">
-  <img src="VerveStacks_DEU_grids/source_data/re_analysis_summary_DEU.svg" alt="re_analysis_summary_DEU.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
+**2. Renewable Zone Integration**
+- **REZoning Database**: 50×50km grid cells with LCOE and capacity factor data
+- **Spatial Mapping**: Zones assigned to nearest transmission buses
+- **Resource Quality**: Capacity factors vary by location and technology
+- **Grid Constraints**: Transmission capacity limits renewable integration
 
-*Click image to view full size*
+**3. Power Plant Assignment**
+- **GEM Database**: Global Energy Monitor power plant locations
+- **Spatial Proximity**: Plants assigned to nearest transmission buses
+- **Capacity Aggregation**: Multiple plants at same bus aggregated
+- **Technology Classification**: Fuel type and generation technology preserved
 
-#### **Stress Periods S1 D Deu** - Timeslice analysis visualization
-<a href="VerveStacks_DEU_grids/source_data/stress_periods_s1_d_DEU.svg" target="_blank">
-  <img src="VerveStacks_DEU_grids/source_data/stress_periods_s1_d_DEU.svg" alt="stress_periods_s1_d_DEU.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
+**4. Load Distribution Algorithm**
+- **Industrial Database**: Hotmaps industrial electricity consumption
+- **Voronoi Tessellation**: Geometric proximity-based allocation to nearest transmission buses
+- **Grid Integration**: Load assigned to transmission buses, not individual consumers
 
-*Click image to view full size*
+#### 🎯 **Model Capabilities**
 
-#### **Stress Periods S2 W Deu** - Timeslice analysis visualization
-<a href="VerveStacks_DEU_grids/source_data/stress_periods_s2_w_DEU.svg" target="_blank">
-  <img src="VerveStacks_DEU_grids/source_data/stress_periods_s2_w_DEU.svg" alt="stress_periods_s2_w_DEU.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Stress Periods S5P5V5 D Deu** - Timeslice analysis visualization
-<a href="VerveStacks_DEU_grids/source_data/stress_periods_s5p5v5_d_DEU.svg" target="_blank">
-  <img src="VerveStacks_DEU_grids/source_data/stress_periods_s5p5v5_d_DEU.svg" alt="stress_periods_s5p5v5_d_DEU.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Renewable Supply Curves** - Cost-ordered renewable resource potential showing solar and wind capacity vs. LCOE
-<a href="VerveStacks_DEU_grids/source_data/supply_curves_DEU.svg" target="_blank">
-  <img src="VerveStacks_DEU_grids/source_data/supply_curves_DEU.svg" alt="supply_curves_DEU.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
+This grid modeling enables:
+- **Transmission Constraint Analysis**: Identify grid bottlenecks and expansion needs
+- **Renewable Integration Studies**: Optimize renewable deployment considering grid limits
+- **Inter-Regional Trade**: Model electricity exchange between grid zones
+- **Grid Stability Assessment**: Analyze system stability with high renewable penetration
+- **Investment Planning**: Identify optimal transmission and generation investments
 
 
 ## Quality Assurance
+
 - Cross-validation between IRENA, EMBER, and UNSD statistics
 - Capacity-generation consistency checks
 - Technology classification verification
@@ -266,13 +227,15 @@ The following charts provide insights into the temporal characteristics of this 
 - Renewable resource potential validated against REZoning database
 - Temporal analysis verified through statistical scenario methods
 
+
 ## Usage Notes
+
 - This model is generated automatically using VerveStacks methodology
 - Timeslice structure is optimized for high-renewable energy system analysis
-- For questions about specific data sources or methodology, refer to METHODOLOGY_DOCUMENTATION.md
+- For questions about specific data sources or methodology, refer to online documentation
 - Model parameters can be adjusted manually in the model files
-- Charts and analysis files are located in `2_ts_design/outputs/{input_iso}/`
+- Charts and analysis files are located in `2_ts_design/outputs/DEU/`
 
 ---
-*Generated by VerveStacks Energy Model Processor with Advanced Timeslice Analysis*
-*For more information: coming soon*
+*Generated by VerveStacks Energy Model Processor*
+*For more information: [VerveStacks Documentation](https://github.com/your-org/vervestacks)*
