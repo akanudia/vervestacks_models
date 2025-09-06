@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - DEU
-**Generated:** 2025-09-07 00:06:04
+**Generated:** 2025-09-07 02:24:12
 
 
 ## Processing Parameters
@@ -43,9 +43,9 @@
 - **Plants Above Threshold**: 418 individual plants tracked
 - **Total Plants Processed**: 613 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
-  - **solar**: 42.0 GW
   - **hydro**: 4.02 GW
   - **windon**: 22.38 GW
+  - **solar**: 42.0 GW
 - **EMBER data**:
   - **bioenergy**: 8.78 GW
   - **coal**: 8.09 GW
@@ -57,6 +57,87 @@
 - **Source Data**: `source_data/VerveStacks_DEU.xlsx` - the full dataset in a model-agnostic format
 - **VEDA Model Files**: Complete model ready for Veda-TIMES execution
 - **Scenario Files**: NGFS climate scenarios and policy assumptions
+
+
+## Renewable Energy Characterization
+
+VerveStacks provides comprehensive renewable energy potential analysis at unprecedented spatial resolution, 
+combining global resource assessments with realistic deployment constraints to deliver actionable insights 
+for energy system planning.
+
+### **Data Foundation: REZoning Integration**
+
+Our renewable energy characterization builds on the REZoning database, providing detailed potential 
+assessments at 50×50 km grid resolution across 190+ countries. This high-resolution spatial data 
+captures the nuanced variations in renewable energy resources that are critical for accurate energy 
+system modeling.
+
+**Data Sources:**
+- **Solar Potential**: REZoning solar resource data with capacity factors and LCOE estimates
+- **Wind Onshore**: REZoning onshore wind potential with economic viability assessments  
+- **Wind Offshore**: REZoning offshore wind resources with marine-specific constraints
+- **Hourly Profiles**: Atlite-derived capacity factor time series for each grid cell
+
+### **Land Use Conflict Resolution: Conservative Overlap Management**
+
+A critical challenge in renewable energy assessment is avoiding double-counting of land areas suitable 
+for both solar and wind development. VerveStacks implements a **conservative overlap resolution algorithm** 
+that ensures realistic deployment scenarios:
+
+**Most Pessimistic Assumption:**
+- When grid cells overlap between solar and wind potential, we apply **LCOE-based allocation**
+- The technology with **higher LCOE (less competitive)** receives a **reduced share** of the overlapping area
+- This conservative approach ensures our estimates represent **deployable potential** rather than theoretical maximums
+- **No double-counting**: Each grid cell contributes to only one technology's supply curve
+
+This methodology reflects real-world deployment patterns where developers choose the most economically 
+viable technology for each location, ensuring our supply curves represent **realistic, achievable 
+renewable energy potential**.
+
+### **Supply Curve Visualization**
+
+The resulting supply curves reveal the economic characteristics of renewable energy deployment, 
+showing how costs evolve as more capacity is developed:
+
+**Chart Features:**
+- **LCOE vs Cumulative Capacity**: Economic viability as deployment scales
+- **LCOE vs Cumulative Generation**: Resource potential in energy terms
+- **Technology Comparison**: Solar, Wind Onshore, and Wind Offshore potential
+- **Original vs Landuse-Adjusted**: Impact of conservative overlap management
+
+<div align="center">
+<img src="VerveStacks_DEU/renewable_energy/supply_curves_DEU.svg" alt="Renewable Energy Supply Curves" width="100%">
+</div>
+
+This analysis provides the foundation for understanding renewable energy economics and informs 
+capacity expansion decisions in the VEDA/TIMES energy system models.
+
+
+## Temporal Modeling & Timeslice Analysis
+
+### Advanced Stress Period Identification
+
+This model employs sophisticated **statistical scenario generation** to identify critical periods in high-renewable energy systems:
+
+#### 🔥 **Scarcity Periods** - Renewable Shortage Crisis
+- Days with lowest renewable energy coverage relative to demand
+- Critical for capacity planning and storage requirements
+- Identifies when conventional backup power is most needed
+
+#### ⚡ **Surplus Periods** - Renewable Excess Management  
+- Days with highest renewable generation exceeding demand
+- Essential for curtailment analysis and export/storage strategies
+- Shows opportunities for demand shifting and industrial electrification
+
+#### 🌪️ **Volatile Periods** - Operational Challenges
+- Days with highest generation variability and unpredictability
+- Important for grid stability and flexible resource planning
+- Captures rapid ramping requirements for dispatchable assets
+
+### Timeslice Structure Generation
+**Multi-Scale Temporal Resolution:**
+- **Base Aggregation**: 6 seasons × 8 daily periods = 48 base timeslices
+- **Critical Period Enhancement**: Additional segments for identified stress periods
 
 
 ## AR6 Climate Scenarios - R10PAC_OECD
@@ -93,33 +174,6 @@ pathways for energy system transformation under different climate policy futures
 
 **Regional Characteristics**: The R10PAC_OECD region shows moderate convergence compared to global 
 averages, with region-specific climate policy patterns reflecting economic and policy context.
-
-
-## Temporal Modeling & Timeslice Analysis
-
-### Advanced Stress Period Identification
-
-This model employs sophisticated **statistical scenario generation** to identify critical periods in high-renewable energy systems:
-
-#### 🔥 **Scarcity Periods** - Renewable Shortage Crisis
-- Days with lowest renewable energy coverage relative to demand
-- Critical for capacity planning and storage requirements
-- Identifies when conventional backup power is most needed
-
-#### ⚡ **Surplus Periods** - Renewable Excess Management  
-- Days with highest renewable generation exceeding demand
-- Essential for curtailment analysis and export/storage strategies
-- Shows opportunities for demand shifting and industrial electrification
-
-#### 🌪️ **Volatile Periods** - Operational Challenges
-- Days with highest generation variability and unpredictability
-- Important for grid stability and flexible resource planning
-- Captures rapid ramping requirements for dispatchable assets
-
-### Timeslice Structure Generation
-**Multi-Scale Temporal Resolution:**
-- **Base Aggregation**: 6 seasons × 8 daily periods = 48 base timeslices
-- **Critical Period Enhancement**: Additional segments for identified stress periods
 
 
 ## Quality Assurance
