@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - DEU
-**Generated:** 2025-09-06 13:36:11
+**Generated:** 2025-09-06 14:18:32
 
 
 ## Processing Parameters
@@ -47,8 +47,8 @@
   - **windon**: 8.17 GW
   - **hydro**: 4.02 GW
 - **EMBER data**:
-  - **coal**: 7.64 GW
   - **bioenergy**: 8.78 GW
+  - **coal**: 7.64 GW
 
 
 ## Model Structure
@@ -93,12 +93,15 @@ This model employs sophisticated **statistical scenario generation** to identify
 This model includes an **interactive network visualization** showing the complete transmission infrastructure and renewable energy integration:
 
 <div align="center">
-  <iframe src="VerveStacks_DEU_grids/source_data/grid_analysis/DEU_network_visualization.html" 
-          width="900" height="650" 
-          frameborder="0" 
-          style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  </iframe>
-  <p><em>Interactive grid network - Click to explore transmission topology, power plants, and renewable zones</em></p>
+  <a href="VerveStacks_DEU_grids/grid_analysis/DEU_network_visualization.html" 
+     target="_blank">
+    <img src="VerveStacks_DEU_grids/grid_analysis/DEU_network_visualization.svg" 
+         alt="Interactive Grid Network Visualization - Click to open" 
+         style="max-width: 100%; height: auto; border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;"
+         onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 6px 12px rgba(0,0,0,0.3)';"
+         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.2)';">
+  </a>
+  <p><em>🗺️ Click the image above to open the interactive grid visualization in a new tab</em></p>
 </div>
 
 **What you can explore:**
