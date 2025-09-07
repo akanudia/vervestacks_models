@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - JPN
-**Generated:** 2025-09-07 18:18:42
+**Generated:** 2025-09-07 18:50:52
 
 
 ## Processing Parameters
@@ -12,7 +12,7 @@
 | 🔥 **Gas** | 490.0 MW | 101/134 plants | 98.4 GW | 1.1 GW |
 | 🌋 **Geothermal** | 60.0 MW | 3/23 plants | 0.7 GW | — |
 | 💧 **Hydro** | 60.0 MW | 115/139 plants | 50.2 GW | — |
-| ⚛️ **Nuclear** | 0.0 MW | 35/35 plants | 14.4 GW | 21.5 GW |
+| ⚛️ **Nuclear** | — | 35/35 plants | 14.4 GW | 21.5 GW |
 | 🛢️ **Oil** | 490.0 MW | 101/134 plants | 98.4 GW | 1.1 GW |
 | ☀️ **Solar** | 200.0 MW | 17/19 plants | 87.8 GW | — |
 | 🌊 **Windoff** | 200.0 MW | 2/9 plants | 1.7 GW | — |
@@ -50,12 +50,12 @@
 - **Plants Above Threshold**: 530 individual plants tracked
 - **Total Plants Processed**: 703 plants in database
 - **Missing Capacity Added**: - **EMBER data**:
-  - **bioenergy**: 1.5 GW
   - **coal**: 0.64 GW
+  - **bioenergy**: 1.5 GW
 - **IRENA data**:
+  - **hydro**: 11.79 GW
   - **solar**: 54.33 GW
   - **windon**: 0.71 GW
-  - **hydro**: 11.79 GW
 
 
 ## Model Structure
