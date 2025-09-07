@@ -1,12 +1,12 @@
 # VerveStacks Model Generation Notes - NZL
-**Generated:** 2025-09-07 17:30:14
+**Generated:** 2025-09-07 23:19:37
 
 
 ## Processing Parameters
 
 ### Individual Plant Tracking
-| **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Total Capacity** |
-|---------------|---------------|----------------------------|-------------------|
+| **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** |
+|---------------|---------------|----------------------------|--------------------|
 | 🌱 **Bioenergy** | 50.0 MW | 1/2 plants | 1.2 GW |
 | ⚫ **Coal** | 10.0 MW | 3/3 plants | 0.8 GW |
 | 🔥 **Gas** | 10.0 MW | 14/14 plants | 1.9 GW |
