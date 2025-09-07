@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - DEU
-**Generated:** 2025-09-07 18:54:53
+**Generated:** 2025-09-07 19:16:32
 
 
 ## Processing Parameters
@@ -53,8 +53,8 @@
   - **hydro**: 4.02 GW
   - **windon**: 22.38 GW
 - **EMBER data**:
-  - **bioenergy**: 8.78 GW
   - **coal**: 8.09 GW
+  - **bioenergy**: 8.78 GW
 
 
 ## Model Structure
