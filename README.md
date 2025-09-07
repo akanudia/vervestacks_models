@@ -1,20 +1,20 @@
 # VerveStacks Model Generation Notes - NZL
-**Generated:** 2025-09-07 16:35:49
+**Generated:** 2025-09-07 17:30:14
 
 
 ## Processing Parameters
 
 ### Individual Plant Tracking
-| **Fuel Type** | **Threshold** | **Plants Above Threshold** |
-|---------------|---------------|---------------------------|
-| 🌱 **Bioenergy** | 50.0 MW | 1/2 plants |
-| ⚫ **Coal** | 10.0 MW | 3/3 plants |
-| 🔥 **Gas** | 10.0 MW | 14/14 plants |
-| 🌋 **Geothermal** | 10.0 MW | 29/31 plants |
-| 💧 **Hydro** | 10.0 MW | 44/44 plants |
-| 🛢️ **Oil** | 10.0 MW | 11/11 plants |
-| ☀️ **Solar** | 200.0 MW | 0/124 plants |
-| 💨 **Windon** | 200.0 MW | 0/21 plants |
+| **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Total Capacity** |
+|---------------|---------------|----------------------------|-------------------|
+| 🌱 **Bioenergy** | 50.0 MW | 1/2 plants | 1.2 GW |
+| ⚫ **Coal** | 10.0 MW | 3/3 plants | 0.8 GW |
+| 🔥 **Gas** | 10.0 MW | 14/14 plants | 1.9 GW |
+| 🌋 **Geothermal** | 10.0 MW | 29/31 plants | 1.4 GW |
+| 💧 **Hydro** | 10.0 MW | 44/44 plants | 5.7 GW |
+| 🛢️ **Oil** | 10.0 MW | 11/11 plants | 1.4 GW |
+| ☀️ **Solar** | 200.0 MW | 0/124 plants | 0.7 GW |
+| 💨 **Windon** | 200.0 MW | 0/21 plants | 1.5 GW |
 
 
 ### 🔄 CCS Retrofit Potential
@@ -50,8 +50,8 @@
 - **Missing Capacity Added**: - **IRENA data**:
   - **hydro**: 0.81 GW
 - **EMBER data**:
-  - **bioenergy**: 1.15 GW
   - **gas**: 0.5 GW
+  - **bioenergy**: 1.15 GW
 
 
 ## Model Structure
