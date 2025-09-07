@@ -1,20 +1,20 @@
 # VerveStacks Model Generation Notes - NZL
-**Generated:** 2025-09-07 02:43:03
+**Generated:** 2025-09-08 00:24:32
 
 
 ## Processing Parameters
 
 ### Individual Plant Tracking
-| **Fuel Type** | **Threshold** | **Plants Above Threshold** |
-|---------------|---------------|---------------------------|
-| 🌱 **Bioenergy** | 50.0 MW | 1/2 plants |
-| ⚫ **Coal** | 10.0 MW | 3/3 plants |
-| 🔥 **Gas** | 10.0 MW | 12/12 plants |
-| 🌋 **Geothermal** | 10.0 MW | 29/31 plants |
-| 💧 **Hydro** | 10.0 MW | 25/25 plants |
-| 🛢️ **Oil** | 10.0 MW | 11/11 plants |
-| ☀️ **Solar** | 200.0 MW | 1/8 plants |
-| 💨 **Windon** | 200.0 MW | 1/11 plants |
+| **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** |
+|---------------|---------------|----------------------------|--------------------|
+| 🌱 **Bioenergy** | 50.0 MW | 1/2 plants | 1.2 GW |
+| ⚫ **Coal** | 10.0 MW | 3/3 plants | 0.8 GW |
+| 🔥 **Gas** | 10.0 MW | 12/12 plants | 1.9 GW |
+| 🌋 **Geothermal** | 10.0 MW | 29/31 plants | 1.4 GW |
+| 💧 **Hydro** | 10.0 MW | 25/25 plants | 5.7 GW |
+| 🛢️ **Oil** | 10.0 MW | 11/11 plants | 1.4 GW |
+| ☀️ **Solar** | 200.0 MW | 1/8 plants | 0.7 GW |
+| 💨 **Windon** | 200.0 MW | 1/11 plants | 1.5 GW |
 
 
 ### 🔄 CCS Retrofit Potential
@@ -35,6 +35,12 @@
   Global renewable energy capacity and generation statistics (2000–2022), disaggregated by country and technology.
 - **EMBER Climate** [🌐](https://ember-climate.org/data/)  
   Global dataset tracking electricity generation, installed capacity, and emissions intensity (2000–2022).
+
+#### Enhanced Renewable Energy Characterization
+- **GEM-REZoning-Atlite Integration** [`re_units_cf_grid_cell_mapping.csv`]  
+  Enhanced renewable energy units with capacity factors from Atlite weather data and precise grid cell locations from REZoning database. This integration provides spatially-resolved capacity factors for existing renewable plants, enabling accurate performance modeling and grid cell assignment for spatial optimization.
+- **Capacity Factor Enhancement**: Individual renewable plants receive location-specific capacity factors derived from 2013 hourly weather patterns
+- **Spatial Grid Assignment**: Plants mapped to 50x50km REZoning grid cells for consistent spatial modeling
 
 ### Data Processing Notes
 - **Individual Plant Coverage**: 82.6%% of total capacity from plant-level GEM data
@@ -57,6 +63,60 @@
 - **Scenario Files**: NGFS climate scenarios and policy assumptions
 
 
+## Renewable Energy Characterization
+
+VerveStacks provides comprehensive renewable energy potential analysis at unprecedented spatial resolution, 
+combining global resource assessments with realistic deployment constraints to deliver actionable insights 
+for energy system planning.
+
+### **Data Foundation: REZoning Integration**
+
+Our renewable energy characterization builds on the REZoning database, providing detailed potential 
+assessments at 50×50 km grid resolution across 190+ countries. This high-resolution spatial data 
+captures the nuanced variations in renewable energy resources that are critical for accurate energy 
+system modeling.
+
+**Data Sources:**
+- **Solar Potential**: REZoning solar resource data with capacity factors and LCOE estimates
+- **Wind Onshore**: REZoning onshore wind potential with economic viability assessments  
+- **Wind Offshore**: REZoning offshore wind resources with marine-specific constraints
+- **Hourly Profiles**: Atlite-derived capacity factor time series for each grid cell
+
+### **Land Use Conflict Resolution: Conservative Overlap Management**
+
+A critical challenge in renewable energy assessment is avoiding double-counting of land areas suitable 
+for both solar and wind development. VerveStacks implements a **conservative overlap resolution algorithm** 
+that ensures realistic deployment scenarios:
+
+**Most Pessimistic Assumption:**
+- When grid cells overlap between solar and wind potential, we apply **LCOE-based allocation**
+- The technology with **higher LCOE (less competitive)** receives a **reduced share** of the overlapping area
+- This conservative approach ensures our estimates represent **deployable potential** rather than theoretical maximums
+- **No double-counting**: Each grid cell contributes to less than the REZoning resource limits in cells with overlap
+
+This methodology reflects real-world deployment patterns where developers choose the most economically 
+viable technology for each location, ensuring our supply curves represent **realistic, achievable 
+renewable energy potential**.
+
+### **Supply Curve Visualization**
+
+The resulting supply curves reveal the economic characteristics of renewable energy deployment, 
+showing how costs evolve as more capacity is developed:
+
+**Chart Features:**
+- **LCOE vs Cumulative Capacity**: Economic viability as deployment scales
+- **LCOE vs Cumulative Generation**: Resource potential in energy terms
+- **Technology Comparison**: Solar, Wind Onshore, and Wind Offshore potential
+- **Original vs Landuse-Adjusted**: Impact of conservative overlap management
+
+<div align="center">
+<img src="VerveStacks_NZL/renewable_energy/supply_curves_NZL.svg" alt="Renewable Energy Supply Curves" width="100%">
+</div>
+
+This analysis provides the foundation for understanding renewable energy economics and informs 
+capacity expansion decisions in the VEDA/TIMES energy system models.
+
+
 ## Temporal Modeling & Timeslice Analysis
 
 ### Advanced Stress Period Identification
@@ -77,6 +137,30 @@ This model employs sophisticated **statistical scenario generation** to identify
 - Days with highest generation variability and unpredictability
 - Important for grid stability and flexible resource planning
 - Captures rapid ramping requirements for dispatchable assets
+
+### Comprehensive Stress Period Analysis
+
+The following visualizations provide detailed insights into temporal patterns and critical periods:
+
+#### **Renewable Energy Analysis Overview**
+<div align="center">
+<img src="VerveStacks_NZL/timeslice_analysis/re_analysis_summary_NZL.svg" alt="Renewable Energy Analysis Summary" width="100%">
+</div>
+
+#### **Daily Stress Periods (Scarcity Focus)**
+<div align="center">
+<img src="VerveStacks_NZL/timeslice_analysis/stress_periods_s1_d_NZL.svg" alt="Daily Stress Periods" width="100%">
+</div>
+
+#### **Weekly Stress Periods (Extended Analysis)**
+<div align="center">
+<img src="VerveStacks_NZL/timeslice_analysis/stress_periods_s2_w_NZL.svg" alt="Weekly Stress Periods" width="100%">
+</div>
+
+#### **Triple-5 Critical Periods (Comprehensive Stress Analysis)**
+<div align="center">
+<img src="VerveStacks_NZL/timeslice_analysis/stress_periods_s5p5v5_d_NZL.svg" alt="Triple-5 Critical Periods" width="100%">
+</div>
 
 ### Timeslice Structure Generation
 **Multi-Scale Temporal Resolution:**
