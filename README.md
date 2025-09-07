@@ -1,21 +1,21 @@
 # VerveStacks Model Generation Notes - DEU
-**Generated:** 2025-09-07 11:47:51
+**Generated:** 2025-09-07 18:22:57
 
 
 ## Processing Parameters
 
 ### Individual Plant Tracking
-| **Fuel Type** | **Threshold** | **Plants Above Threshold** |
-|---------------|---------------|---------------------------|
-| 🌱 **Bioenergy** | 50.0 MW | 14/21 plants |
-| ⚫ **Coal** | 110.0 MW | 61/68 plants |
-| 🔥 **Gas** | 110.0 MW | 117/194 plants |
-| 🌋 **Geothermal** | 10.0 MW | 1/4 plants |
-| 💧 **Hydro** | 10.0 MW | 33/33 plants |
-| 🛢️ **Oil** | 110.0 MW | 117/194 plants |
-| ☀️ **Solar** | 200.0 MW | 21/30 plants |
-| 🌊 **Windoff** | 200.0 MW | 29/35 plants |
-| 💨 **Windon** | 200.0 MW | 29/34 plants |
+| **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** |
+|---------------|---------------|----------------------------|--------------------|--------------------------|
+| 🌱 **Bioenergy** | 50.0 MW | 14/21 plants | 9.9 GW | — |
+| ⚫ **Coal** | 110.0 MW | 61/68 plants | 37.8 GW | 2.6 GW |
+| 🔥 **Gas** | 110.0 MW | 117/194 plants | 35.4 GW | 2.1 GW |
+| 🌋 **Geothermal** | 10.0 MW | 1/4 plants | 0.0 GW | — |
+| 💧 **Hydro** | 10.0 MW | 33/33 plants | 11.1 GW | — |
+| 🛢️ **Oil** | 110.0 MW | 117/194 plants | 35.4 GW | 2.1 GW |
+| ☀️ **Solar** | 200.0 MW | 21/30 plants | 72.7 GW | 0.0 GW |
+| 🌊 **Windoff** | 200.0 MW | 29/35 plants | 10.1 GW | — |
+| 💨 **Windon** | 200.0 MW | 29/34 plants | 61.9 GW | — |
 
 
 ### 🔄 CCS Retrofit Potential
@@ -37,6 +37,12 @@
 - **EMBER Climate** [🌐](https://ember-climate.org/data/)  
   Global dataset tracking electricity generation, installed capacity, and emissions intensity (2000–2022).
 
+#### Enhanced Renewable Energy Characterization
+- **GEM-REZoning-Atlite Integration** [`re_units_cf_grid_cell_mapping.csv`]  
+  Enhanced renewable energy units with capacity factors from Atlite weather data and precise grid cell locations from REZoning database. This integration provides spatially-resolved capacity factors for existing renewable plants, enabling accurate performance modeling and grid cell assignment for spatial optimization.
+- **Capacity Factor Enhancement**: Individual renewable plants receive location-specific capacity factors derived from 2013 hourly weather patterns
+- **Spatial Grid Assignment**: Plants mapped to 50x50km REZoning grid cells for consistent spatial modeling
+
 ### Data Processing Notes
 - **Individual Plant Coverage**: 96.6%% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 281.3 GW GW from all sources
@@ -44,8 +50,8 @@
 - **Total Plants Processed**: 613 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
   - **solar**: 42.0 GW
-  - **windon**: 22.38 GW
   - **hydro**: 4.02 GW
+  - **windon**: 22.38 GW
 - **EMBER data**:
   - **coal**: 8.09 GW
   - **bioenergy**: 8.78 GW
