@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - JPN
-**Generated:** 2025-09-07 18:50:52
+**Generated:** 2025-09-07 19:12:16
 
 
 ## Processing Parameters
@@ -49,13 +49,13 @@
 - **Total Capacity Tracked**: 443.2 GW GW from all sources
 - **Plants Above Threshold**: 530 individual plants tracked
 - **Total Plants Processed**: 703 plants in database
-- **Missing Capacity Added**: - **EMBER data**:
+- **Missing Capacity Added**: - **IRENA data**:
+  - **solar**: 54.33 GW
+  - **hydro**: 11.79 GW
+  - **windon**: 0.71 GW
+- **EMBER data**:
   - **coal**: 0.64 GW
   - **bioenergy**: 1.5 GW
-- **IRENA data**:
-  - **hydro**: 11.79 GW
-  - **solar**: 54.33 GW
-  - **windon**: 0.71 GW
 
 
 ## Model Structure
