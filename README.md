@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - NZL
-**Generated:** 2025-09-07 16:06:18
+**Generated:** 2025-09-07 16:35:49
 
 
 ## Processing Parameters
@@ -35,6 +35,12 @@
   Global renewable energy capacity and generation statistics (2000–2022), disaggregated by country and technology.
 - **EMBER Climate** [🌐](https://ember-climate.org/data/)  
   Global dataset tracking electricity generation, installed capacity, and emissions intensity (2000–2022).
+
+#### Enhanced Renewable Energy Characterization
+- **GEM-REZoning-Atlite Integration** [`re_units_cf_grid_cell_mapping.csv`]  
+  Enhanced renewable energy units with capacity factors from Atlite weather data and precise grid cell locations from REZoning database. This integration provides spatially-resolved capacity factors for existing renewable plants, enabling accurate performance modeling and grid cell assignment for spatial optimization.
+- **Capacity Factor Enhancement**: Individual renewable plants receive location-specific capacity factors derived from 2013 hourly weather patterns
+- **Spatial Grid Assignment**: Plants mapped to 50x50km REZoning grid cells for consistent spatial modeling
 
 ### Data Processing Notes
 - **Individual Plant Coverage**: 73.8%% of total capacity from plant-level GEM data
