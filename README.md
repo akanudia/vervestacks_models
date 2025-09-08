@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - CHE
-**Generated:** 2025-09-07 23:28:53
+**Generated:** 2025-09-08 23:16:21
 
 
 ## Processing Parameters
@@ -50,8 +50,8 @@
   - **hydro**: 3.18 GW
   - **solar**: 0.21 GW
 - **EMBER data**:
-  - **gas**: 0.13 GW
   - **bioenergy**: 0.23 GW
+  - **gas**: 0.13 GW
 
 
 ## Model Structure
@@ -136,6 +136,30 @@ This model employs sophisticated **statistical scenario generation** to identify
 - Days with highest generation variability and unpredictability
 - Important for grid stability and flexible resource planning
 - Captures rapid ramping requirements for dispatchable assets
+
+### Comprehensive Stress Period Analysis
+
+The following visualizations provide detailed insights into temporal patterns and critical periods:
+
+#### **Renewable Energy Analysis Overview**
+<div align="center">
+<img src="VerveStacks_CHE_grids/timeslice_analysis/re_analysis_summary_CHE.svg" alt="Renewable Energy Analysis Summary" width="100%">
+</div>
+
+#### **Daily Stress Periods (Scarcity Focus)**
+<div align="center">
+<img src="VerveStacks_CHE_grids/timeslice_analysis/aggregation_justification_CHE_s5p5v5_d.svg" alt="Aggregated slices clustering" width="100%">
+</div>
+
+#### **Weekly Stress Periods (Extended Analysis)**
+<div align="center">
+<img src="VerveStacks_CHE_grids/timeslice_analysis/stress_periods_s2_w_CHE.svg" alt="Weekly Stress Periods" width="100%">
+</div>
+
+#### **Triple-5 Critical Periods (Comprehensive Stress Analysis)**
+<div align="center">
+<img src="VerveStacks_CHE_grids/timeslice_analysis/stress_periods_s5p5v5_d_CHE.svg" alt="Triple-5 Critical Periods" width="100%">
+</div>
 
 ### Timeslice Structure Generation
 **Multi-Scale Temporal Resolution:**
