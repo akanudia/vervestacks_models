@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - NZL
-**Generated:** 2025-09-09 08:39:13
+**Generated:** 2025-09-09 08:48:58
 
 
 ## Processing Parameters
@@ -50,8 +50,8 @@
 - **Missing Capacity Added**: - **IRENA data**:
   - **hydro**: 0.81 GW
 - **EMBER data**:
-  - **gas**: 0.5 GW
   - **bioenergy**: 1.15 GW
+  - **gas**: 0.5 GW
 
 
 ## Model Structure
