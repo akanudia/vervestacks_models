@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - DEU
-**Generated:** 2025-09-07 19:16:32
+**Generated:** 2025-09-09 22:43:33
 
 
 ## Processing Parameters
@@ -49,12 +49,12 @@
 - **Plants Above Threshold**: 418 individual plants tracked
 - **Total Plants Processed**: 613 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
-  - **solar**: 42.0 GW
-  - **hydro**: 4.02 GW
   - **windon**: 22.38 GW
+  - **hydro**: 4.02 GW
+  - **solar**: 42.0 GW
 - **EMBER data**:
-  - **coal**: 8.09 GW
   - **bioenergy**: 8.78 GW
+  - **coal**: 8.09 GW
 
 
 ## Model Structure
@@ -94,7 +94,7 @@ that ensures realistic deployment scenarios:
 - When grid cells overlap between solar and wind potential, we apply **LCOE-based allocation**
 - The technology with **higher LCOE (less competitive)** receives a **reduced share** of the overlapping area
 - This conservative approach ensures our estimates represent **deployable potential** rather than theoretical maximums
-- **No double-counting**: Each grid cell contributes to only one technology's supply curve
+- **No double-counting**: Each grid cell contributes to less than the REZoning resource limits in cells with overlap
 
 This methodology reflects real-world deployment patterns where developers choose the most economically 
 viable technology for each location, ensuring our supply curves represent **realistic, achievable 
@@ -139,6 +139,30 @@ This model employs sophisticated **statistical scenario generation** to identify
 - Days with highest generation variability and unpredictability
 - Important for grid stability and flexible resource planning
 - Captures rapid ramping requirements for dispatchable assets
+
+### Comprehensive Stress Period Analysis
+
+The following visualizations provide detailed insights into temporal patterns and critical periods:
+
+#### **Renewable Energy Analysis Overview**
+<div align="center">
+<img src="VerveStacks_DEU/timeslice_analysis/re_analysis_summary_DEU.svg" alt="Renewable Energy Analysis Summary" width="100%">
+</div>
+
+#### **Daily Stress Periods (Scarcity Focus)**
+<div align="center">
+<img src="VerveStacks_DEU/timeslice_analysis/aggregation_justification_DEU_s5p5v5_d.svg" alt="Aggregated slices clustering" width="100%">
+</div>
+
+#### **Weekly Stress Periods (Extended Analysis)**
+<div align="center">
+<img src="VerveStacks_DEU/timeslice_analysis/stress_periods_s2_w_DEU.svg" alt="Weekly Stress Periods" width="100%">
+</div>
+
+#### **Triple-5 Critical Periods (Comprehensive Stress Analysis)**
+<div align="center">
+<img src="VerveStacks_DEU/timeslice_analysis/stress_periods_s5p5v5_d_DEU.svg" alt="Triple-5 Critical Periods" width="100%">
+</div>
 
 ### Timeslice Structure Generation
 **Multi-Scale Temporal Resolution:**
