@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - BRA
-**Generated:** 2025-09-09 20:57:58
+**Generated:** 2025-09-09 23:22:16
 
 
 ## Processing Parameters
@@ -47,12 +47,12 @@
 - **Total Capacity Tracked**: 264.7 GW GW from all sources
 - **Plants Above Threshold**: 496 individual plants tracked
 - **Total Plants Processed**: 1916 plants in database
-- **Missing Capacity Added**: - **EMBER data**:
-  - **bioenergy**: 2.87 GW
-  - **coal**: 0.08 GW
-- **IRENA data**:
+- **Missing Capacity Added**: - **IRENA data**:
   - **solar**: 13.24 GW
   - **hydro**: 0.71 GW
+- **EMBER data**:
+  - **bioenergy**: 2.87 GW
+  - **coal**: 0.08 GW
 
 
 ## Model Structure
