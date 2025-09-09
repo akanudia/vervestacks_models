@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - NZL
-**Generated:** 2025-09-07 23:19:37
+**Generated:** 2025-09-09 08:34:18
 
 
 ## Processing Parameters
@@ -91,7 +91,7 @@ that ensures realistic deployment scenarios:
 - When grid cells overlap between solar and wind potential, we apply **LCOE-based allocation**
 - The technology with **higher LCOE (less competitive)** receives a **reduced share** of the overlapping area
 - This conservative approach ensures our estimates represent **deployable potential** rather than theoretical maximums
-- **No double-counting**: Each grid cell contributes to only one technology's supply curve
+- **No double-counting**: Each grid cell contributes to less than the REZoning resource limits in cells with overlap
 
 This methodology reflects real-world deployment patterns where developers choose the most economically 
 viable technology for each location, ensuring our supply curves represent **realistic, achievable 
@@ -136,6 +136,30 @@ This model employs sophisticated **statistical scenario generation** to identify
 - Days with highest generation variability and unpredictability
 - Important for grid stability and flexible resource planning
 - Captures rapid ramping requirements for dispatchable assets
+
+### Comprehensive Stress Period Analysis
+
+The following visualizations provide detailed insights into temporal patterns and critical periods:
+
+#### **Renewable Energy Analysis Overview**
+<div align="center">
+<img src="VerveStacks_NZL_grids/timeslice_analysis/re_analysis_summary_NZL.svg" alt="Renewable Energy Analysis Summary" width="100%">
+</div>
+
+#### **Daily Stress Periods (Scarcity Focus)**
+<div align="center">
+<img src="VerveStacks_NZL_grids/timeslice_analysis/aggregation_justification_NZL_s5p5v5_d.svg" alt="Aggregated slices clustering" width="100%">
+</div>
+
+#### **Weekly Stress Periods (Extended Analysis)**
+<div align="center">
+<img src="VerveStacks_NZL_grids/timeslice_analysis/stress_periods_s2_w_NZL.svg" alt="Weekly Stress Periods" width="100%">
+</div>
+
+#### **Triple-5 Critical Periods (Comprehensive Stress Analysis)**
+<div align="center">
+<img src="VerveStacks_NZL_grids/timeslice_analysis/stress_periods_s5p5v5_d_NZL.svg" alt="Triple-5 Critical Periods" width="100%">
+</div>
 
 ### Timeslice Structure Generation
 **Multi-Scale Temporal Resolution:**
