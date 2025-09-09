@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - ITA
-**Generated:** 2025-09-09 00:03:27
+**Generated:** 2025-09-09 21:22:41
 
 
 ## Processing Parameters
@@ -9,13 +9,13 @@
 |---------------|---------------|----------------------------|--------------------|--------------------------|
 | 🌱 **Bioenergy** | 50.0 MW | 14/18 plants | 4.2 GW | — |
 | ⚫ **Coal** | 150.0 MW | 14/14 plants | 6.8 GW | — |
-| 🔥 **Gas** | 150.0 MW | 136/265 plants | 59.3 GW | 0.9 GW |
-| 🌋 **Geothermal** | 40.0 MW | 10/27 plants | 0.8 GW | — |
-| 💧 **Hydro** | 40.0 MW | 141/161 plants | 23.0 GW | — |
+| 🔥 **Gas** | 150.0 MW | 137/257 plants | 59.3 GW | 0.9 GW |
+| 🌋 **Geothermal** | 40.0 MW | 9/27 plants | 0.8 GW | — |
+| 💧 **Hydro** | 40.0 MW | 125/134 plants | 23.0 GW | — |
 | 🛢️ **Oil** | 150.0 MW | 103/174 plants | 49.0 GW | 0.9 GW |
-| ☀️ **Solar** | 200.0 MW | 0/369 plants | 25.7 GW | — |
+| ☀️ **Solar** | 200.0 MW | 3/159 plants | 25.7 GW | — |
 | 🌊 **Windoff** | 200.0 MW | 0/1 plants | 0.0 GW | — |
-| 💨 **Windon** | 200.0 MW | 4/275 plants | 12.3 GW | — |
+| 💨 **Windon** | 200.0 MW | 5/225 plants | 12.3 GW | — |
 
 
 ### 🔄 CCS Retrofit Potential
@@ -44,17 +44,18 @@
 - **Spatial Grid Assignment**: Plants mapped to 50x50km REZoning grid cells for consistent spatial modeling
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 78.0%% of total capacity from plant-level GEM data
+- **Individual Plant Coverage**: 86.9%% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 182.9 GW GW from all sources
-- **Plants Above Threshold**: 475 individual plants tracked
-- **Total Plants Processed**: 1304 plants in database
+- **Plants Above Threshold**: 412 individual plants tracked
+- **Total Plants Processed**: 1009 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
-  - **hydro**: 6.73 GW
-  - **windon**: 0.24 GW
+  - **solar**: 19.88 GW
+  - **hydro**: 7.03 GW
+  - **windon**: 2.05 GW
 - **EMBER data**:
-  - **gas**: 6.44 GW
   - **bioenergy**: 3.58 GW
   - **coal**: 1.62 GW
+  - **gas**: 6.72 GW
 
 
 ## Model Structure
@@ -197,11 +198,11 @@ This model includes a **comprehensive grid visualization** showing the complete 
 
 | **Metric** | **Value** | **Description** |
 |------------|-----------|-----------------|
-| **Total Buses** | 592 | Transmission substations and connection points |
-| **Transmission Lines** | 792 | High-voltage transmission corridors |
-| **Voltage Levels** | 200, 220, 225, 380, 400, 500 | Multi-level transmission system (220kV, 380kV, etc.) |
-| **Grid Coverage** | 1000879 km² | Geographic area covered by transmission network |
-| **Average Line Length** | 25843.3 km | Mean distance between connected buses |
+| **Total Buses** | 265 | Transmission substations and connection points |
+| **Transmission Lines** | 365 | High-voltage transmission corridors |
+| **Voltage Levels** | 380.0, 400.0, 500.0 | Multi-level transmission system (220kV, 380kV, etc.) |
+| **Grid Coverage** | 1008031 km² | Geographic area covered by transmission network |
+| **Average Line Length** | 30737.5 km | Mean distance between connected buses |
 
 #### ⚡ **Power Plant Integration**
 
@@ -221,17 +222,17 @@ This model employs **50×50km spatial resolution** for detailed renewable energy
 
 | **Spatial Metric** | **Value** | **Technical Detail** |
 |-------------------|-----------|---------------------|
-| **Grid Cells** | 1204 | 50×50km renewable energy zones |
-| **Solar/Wind Onshore Zones** | 1204 | Grid cells with solar and onshore wind potential |
-| **Wind Offshore Zones** | 0 | Grid cells with offshore wind potential |
-| **Zone-Bus Mappings** | 1204 | REZoning zones assigned to transmission buses |
-| **Spatial Coverage** | 3010000 km² | Total area covered by renewable zones |
+| **Grid Cells** | 779 | 50×50km renewable energy zones |
+| **Solar/Wind Onshore Zones** | 384 | Grid cells with solar and onshore wind potential |
+| **Wind Offshore Zones** | 392 | Grid cells with offshore wind potential |
+| **Zone-Bus Mappings** | 779 | REZoning zones assigned to transmission buses |
+| **Spatial Coverage** | 960000 km² | Total area covered by renewable zones |
 
 #### 🔌 **Spatial Commodity System**
 
 Each grid cell generates location-specific electricity commodities:
-- **Solar/Wind Onshore**: `elc_spv-ITA_001` to `elc_spv-ITA_1204` (same zones for both technologies)
-- **Wind Offshore**: `elc_wof-ITA_001` to `elc_wof-ITA_0`
+- **Solar/Wind Onshore**: `elc_spv-ITA_001` to `elc_spv-ITA_384` (same zones for both technologies)
+- **Wind Offshore**: `elc_wof-ITA_001` to `elc_wof-ITA_392`
 
 This enables **grid-aware optimization** where renewable generation is constrained by:
 - Transmission capacity between zones
@@ -248,11 +249,11 @@ Industrial electricity demand is spatially distributed across the transmission n
 
 | **Load Distribution Method** | **Buses with Load** | **Total Industrial Load** | **Methodology** |
 |------------------------------|---------------------|---------------------------|-----------------|
-| **Voronoi Tessellation** | 149 | 1.0 GW | Geometric proximity-based allocation |
+| **Voronoi Tessellation** | 79 | 1.0 GW | Geometric proximity-based allocation |
 
 #### 📈 **Load Concentration Analysis**
 
-- **Highest Load Bus**: way/436352445-220 (0.09 GW)
+- **Highest Load Bus**: way/80517630-380 (0.09 GW)
 - **Load Distribution CV**: 0% (coefficient of variation)
 - **Load Balancing**: Balanced distribution across transmission buses
 
