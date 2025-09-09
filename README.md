@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - JPN
-**Generated:** 2025-09-07 19:12:16
+**Generated:** 2025-09-09 22:33:54
 
 
 ## Processing Parameters
@@ -49,13 +49,13 @@
 - **Total Capacity Tracked**: 443.2 GW GW from all sources
 - **Plants Above Threshold**: 530 individual plants tracked
 - **Total Plants Processed**: 703 plants in database
-- **Missing Capacity Added**: - **IRENA data**:
-  - **solar**: 54.33 GW
-  - **hydro**: 11.79 GW
-  - **windon**: 0.71 GW
-- **EMBER data**:
+- **Missing Capacity Added**: - **EMBER data**:
   - **coal**: 0.64 GW
   - **bioenergy**: 1.5 GW
+- **IRENA data**:
+  - **solar**: 54.33 GW
+  - **windon**: 0.71 GW
+  - **hydro**: 11.79 GW
 
 
 ## Model Structure
@@ -95,7 +95,7 @@ that ensures realistic deployment scenarios:
 - When grid cells overlap between solar and wind potential, we apply **LCOE-based allocation**
 - The technology with **higher LCOE (less competitive)** receives a **reduced share** of the overlapping area
 - This conservative approach ensures our estimates represent **deployable potential** rather than theoretical maximums
-- **No double-counting**: Each grid cell contributes to only one technology's supply curve
+- **No double-counting**: Each grid cell contributes to less than the REZoning resource limits in cells with overlap
 
 This methodology reflects real-world deployment patterns where developers choose the most economically 
 viable technology for each location, ensuring our supply curves represent **realistic, achievable 
@@ -140,6 +140,30 @@ This model employs sophisticated **statistical scenario generation** to identify
 - Days with highest generation variability and unpredictability
 - Important for grid stability and flexible resource planning
 - Captures rapid ramping requirements for dispatchable assets
+
+### Comprehensive Stress Period Analysis
+
+The following visualizations provide detailed insights into temporal patterns and critical periods:
+
+#### **Renewable Energy Analysis Overview**
+<div align="center">
+<img src="VerveStacks_JPN/timeslice_analysis/re_analysis_summary_JPN.svg" alt="Renewable Energy Analysis Summary" width="100%">
+</div>
+
+#### **Daily Stress Periods (Scarcity Focus)**
+<div align="center">
+<img src="VerveStacks_JPN/timeslice_analysis/aggregation_justification_JPN_s5p5v5_d.svg" alt="Aggregated slices clustering" width="100%">
+</div>
+
+#### **Weekly Stress Periods (Extended Analysis)**
+<div align="center">
+<img src="VerveStacks_JPN/timeslice_analysis/stress_periods_s2_w_JPN.svg" alt="Weekly Stress Periods" width="100%">
+</div>
+
+#### **Triple-5 Critical Periods (Comprehensive Stress Analysis)**
+<div align="center">
+<img src="VerveStacks_JPN/timeslice_analysis/stress_periods_s5p5v5_d_JPN.svg" alt="Triple-5 Critical Periods" width="100%">
+</div>
 
 ### Timeslice Structure Generation
 **Multi-Scale Temporal Resolution:**
