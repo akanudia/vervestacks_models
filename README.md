@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - NZL
-**Generated:** 2025-09-08 00:24:32
+**Generated:** 2025-09-09 22:36:50
 
 
 ## Processing Parameters
@@ -51,8 +51,8 @@
   - **bioenergy**: 1.15 GW
   - **gas**: 0.5 GW
 - **IRENA data**:
-  - **solar**: 0.25 GW
   - **hydro**: 0.81 GW
+  - **solar**: 0.25 GW
 
 
 ## Model Structure
@@ -149,7 +149,7 @@ The following visualizations provide detailed insights into temporal patterns an
 
 #### **Daily Stress Periods (Scarcity Focus)**
 <div align="center">
-<img src="VerveStacks_NZL/timeslice_analysis/stress_periods_s1_d_NZL.svg" alt="Daily Stress Periods" width="100%">
+<img src="VerveStacks_NZL/timeslice_analysis/aggregation_justification_NZL_s5p5v5_d.svg" alt="Aggregated slices clustering" width="100%">
 </div>
 
 #### **Weekly Stress Periods (Extended Analysis)**
