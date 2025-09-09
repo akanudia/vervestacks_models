@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - NZL
-**Generated:** 2025-09-09 11:24:43
+**Generated:** 2025-09-09 21:17:45
 
 
 ## Processing Parameters
@@ -13,8 +13,8 @@
 | 🌋 **Geothermal** | 10.0 MW | 29/31 plants | 1.4 GW |
 | 💧 **Hydro** | 10.0 MW | 44/44 plants | 5.7 GW |
 | 🛢️ **Oil** | 10.0 MW | 11/11 plants | 1.4 GW |
-| ☀️ **Solar** | 200.0 MW | 0/124 plants | 0.7 GW |
-| 💨 **Windon** | 200.0 MW | 0/21 plants | 1.5 GW |
+| ☀️ **Solar** | 200.0 MW | 0/15 plants | 0.7 GW |
+| 💨 **Windon** | 200.0 MW | 0/19 plants | 1.5 GW |
 
 
 ### 🔄 CCS Retrofit Potential
@@ -46,7 +46,7 @@
 - **Individual Plant Coverage**: 73.8%% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 14.6 GW GW from all sources
 - **Plants Above Threshold**: 46 individual plants tracked
-- **Total Plants Processed**: 250 plants in database
+- **Total Plants Processed**: 139 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
   - **hydro**: 0.81 GW
 - **EMBER data**:
