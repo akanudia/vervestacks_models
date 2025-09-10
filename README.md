@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - CHE
-**Generated:** 2025-09-10 16:51:37
+**Generated:** 2025-09-10 17:01:02
 
 
 ## Processing Parameters
@@ -50,8 +50,8 @@
   - **bioenergy**: 0.23 GW
   - **gas**: 0.13 GW
 - **IRENA data**:
-  - **hydro**: 3.18 GW
   - **solar**: 4.43 GW
+  - **hydro**: 3.18 GW
 
 
 ## Model Structure
