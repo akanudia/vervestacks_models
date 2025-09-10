@@ -1,19 +1,19 @@
 # VerveStacks Model Generation Notes - CHE
-**Generated:** 2025-09-07 00:27:24
+**Generated:** 2025-09-10 16:51:37
 
 
 ## Processing Parameters
 
 ### Individual Plant Tracking
-| **Fuel Type** | **Threshold** | **Plants Above Threshold** |
-|---------------|---------------|---------------------------|
-| 🌱 **Bioenergy** | 50.0 MW | 1/1 plants |
-| 🔥 **Gas** | 10.0 MW | 11/11 plants |
-| 💧 **Hydro** | 10.0 MW | 81/81 plants |
-| ⚛️ **Nuclear** | 0.0 MW | 4/4 plants |
-| 🛢️ **Oil** | 10.0 MW | 10/10 plants |
-| ☀️ **Solar** | 200.0 MW | 1/10 plants |
-| 💨 **Windon** | 200.0 MW | 0/5 plants |
+| **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** |
+|---------------|---------------|----------------------------|--------------------|--------------------------|
+| 🌱 **Bioenergy** | 50.0 MW | 1/1 plants | 0.2 GW | — |
+| 🔥 **Gas** | 10.0 MW | 11/11 plants | 0.2 GW | 0.3 GW |
+| 💧 **Hydro** | 10.0 MW | 81/81 plants | 16.7 GW | — |
+| ⚛️ **Nuclear** | — | 4/4 plants | 3.1 GW | — |
+| 🛢️ **Oil** | 10.0 MW | 10/10 plants | 0.1 GW | 0.3 GW |
+| ☀️ **Solar** | 200.0 MW | 1/10 plants | 4.5 GW | — |
+| 💨 **Windon** | 200.0 MW | 0/5 plants | 0.1 GW | — |
 
 
 ### 🔄 CCS Retrofit Potential
@@ -34,6 +34,12 @@
   Global renewable energy capacity and generation statistics (2000–2022), disaggregated by country and technology.
 - **EMBER Climate** [🌐](https://ember-climate.org/data/)  
   Global dataset tracking electricity generation, installed capacity, and emissions intensity (2000–2022).
+
+#### Enhanced Renewable Energy Characterization
+- **GEM-REZoning-Atlite Integration** [`re_units_cf_grid_cell_mapping.csv`]  
+  Enhanced renewable energy units with capacity factors from Atlite weather data and precise grid cell locations from REZoning database. This integration provides spatially-resolved capacity factors for existing renewable plants, enabling accurate performance modeling and grid cell assignment for spatial optimization.
+- **Capacity Factor Enhancement**: Individual renewable plants receive location-specific capacity factors derived from 2013 hourly weather patterns
+- **Spatial Grid Assignment**: Plants mapped to 50x50km REZoning grid cells for consistent spatial modeling
 
 ### Data Processing Notes
 - **Individual Plant Coverage**: 88.0%% of total capacity from plant-level GEM data
@@ -85,7 +91,7 @@ that ensures realistic deployment scenarios:
 - When grid cells overlap between solar and wind potential, we apply **LCOE-based allocation**
 - The technology with **higher LCOE (less competitive)** receives a **reduced share** of the overlapping area
 - This conservative approach ensures our estimates represent **deployable potential** rather than theoretical maximums
-- **No double-counting**: Each grid cell contributes to only one technology's supply curve
+- **No double-counting**: Each grid cell contributes to less than the REZoning resource limits in cells with overlap
 
 This methodology reflects real-world deployment patterns where developers choose the most economically 
 viable technology for each location, ensuring our supply curves represent **realistic, achievable 
@@ -130,6 +136,30 @@ This model employs sophisticated **statistical scenario generation** to identify
 - Days with highest generation variability and unpredictability
 - Important for grid stability and flexible resource planning
 - Captures rapid ramping requirements for dispatchable assets
+
+### Comprehensive Stress Period Analysis
+
+The following visualizations provide detailed insights into temporal patterns and critical periods:
+
+#### **Renewable Energy Analysis Overview**
+<div align="center">
+<img src="VerveStacks_CHE/timeslice_analysis/re_analysis_summary_CHE.svg" alt="Renewable Energy Analysis Summary" width="100%">
+</div>
+
+#### **Daily Stress Periods (Scarcity Focus)**
+<div align="center">
+<img src="VerveStacks_CHE/timeslice_analysis/aggregation_justification_CHE_s5p5v5_d.svg" alt="Aggregated slices clustering" width="100%">
+</div>
+
+#### **Weekly Stress Periods (Extended Analysis)**
+<div align="center">
+<img src="VerveStacks_CHE/timeslice_analysis/stress_periods_s2_w_CHE.svg" alt="Weekly Stress Periods" width="100%">
+</div>
+
+#### **Triple-5 Critical Periods (Comprehensive Stress Analysis)**
+<div align="center">
+<img src="VerveStacks_CHE/timeslice_analysis/stress_periods_s5p5v5_d_CHE.svg" alt="Triple-5 Critical Periods" width="100%">
+</div>
 
 ### Timeslice Structure Generation
 **Multi-Scale Temporal Resolution:**
