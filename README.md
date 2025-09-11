@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - BRA
-**Generated:** 2025-09-11 12:00:02
+**Generated:** 2025-09-11 13:13:48
 
 
 ## Processing Parameters
@@ -51,8 +51,8 @@
   - **solar**: 13.24 GW
   - **hydro**: 1.67 GW
 - **EMBER data**:
-  - **coal**: 0.08 GW
   - **bioenergy**: 4.01 GW
+  - **coal**: 0.08 GW
 
 
 ## Model Structure
