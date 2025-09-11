@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - ITA
-**Generated:** 2025-09-11 15:57:30
+**Generated:** 2025-09-11 18:48:55
 
 
 ## Processing Parameters
@@ -9,10 +9,10 @@
 |---------------|---------------|----------------------------|--------------------|--------------------------|
 | 🌱 **Bioenergy** | 50.0 MW | 7/10 plants | 4.2 GW | — |
 | ⚫ **Coal** | 150.0 MW | 11/11 plants | 6.8 GW | — |
-| 🔥 **Gas** | 150.0 MW | 112/159 plants | 59.3 GW | 0.9 GW |
+| 🔥 **Gas** | 150.0 MW | 105/146 plants | 59.4 GW | 0.8 GW |
 | 🌋 **Geothermal** | 40.0 MW | 11/23 plants | 0.8 GW | — |
 | 💧 **Hydro** | 40.0 MW | 94/94 plants | 23.0 GW | — |
-| 🛢️ **Oil** | 150.0 MW | 109/156 plants | 49.0 GW | 0.9 GW |
+| 🛢️ **Oil** | 150.0 MW | 7/15 plants | 2.1 GW | 0.1 GW |
 | ☀️ **Solar** | 200.0 MW | 7/21 plants | 25.7 GW | — |
 | 🌊 **Windoff** | 200.0 MW | 0/1 plants | 0.0 GW | — |
 | 💨 **Windon** | 200.0 MW | 15/31 plants | 12.3 GW | — |
@@ -44,18 +44,18 @@
 - **Spatial Grid Assignment**: Plants mapped to 50x50km REZoning grid cells for consistent spatial modeling
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 95.2%% of total capacity from plant-level GEM data
-- **Total Capacity Tracked**: 182.9 GW GW from all sources
-- **Plants Above Threshold**: 336 individual plants tracked
-- **Total Plants Processed**: 506 plants in database
-- **Missing Capacity Added**: - **IRENA data**:
-  - **hydro**: 7.28 GW
-  - **windon**: 2.05 GW
-  - **solar**: 19.88 GW
-- **EMBER data**:
-  - **coal**: 1.62 GW
-  - **gas**: 9.58 GW
+- **Individual Plant Coverage**: 94.7%% of total capacity from plant-level GEM data
+- **Total Capacity Tracked**: 135.2 GW GW from all sources
+- **Plants Above Threshold**: 212 individual plants tracked
+- **Total Plants Processed**: 352 plants in database
+- **Missing Capacity Added**: - **EMBER data**:
   - **bioenergy**: 3.58 GW
+  - **coal**: 1.62 GW
+  - **gas**: 11.79 GW
+- **IRENA data**:
+  - **hydro**: 7.28 GW
+  - **solar**: 19.88 GW
+  - **windon**: 2.05 GW
 
 
 ## Model Structure
