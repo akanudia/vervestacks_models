@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - ITA
-**Generated:** 2025-09-10 18:13:57
+**Generated:** 2025-09-11 15:57:30
 
 
 ## Processing Parameters
@@ -53,9 +53,9 @@
   - **windon**: 2.05 GW
   - **solar**: 19.88 GW
 - **EMBER data**:
-  - **bioenergy**: 3.58 GW
-  - **gas**: 9.58 GW
   - **coal**: 1.62 GW
+  - **gas**: 9.58 GW
+  - **bioenergy**: 3.58 GW
 
 
 ## Model Structure
@@ -150,9 +150,9 @@ The following visualizations provide detailed insights into temporal patterns an
 <img src="VerveStacks_ITA/timeslice_analysis/re_analysis_summary_ITA.svg" alt="Renewable Energy Analysis Summary" width="100%">
 </div>
 
-#### **Daily Stress Periods (Scarcity Focus)**
+#### **Aggregated months and hours (8 X 8 case)**
 <div align="center">
-<img src="VerveStacks_ITA/timeslice_analysis/aggregation_justification_ITA_s5p5v5_d.svg" alt="Aggregated slices clustering" width="100%">
+<img src="VerveStacks_ITA/timeslice_analysis/aggregation_justification_ITA_ts_064.svg" alt="Aggregated slices clustering" width="100%">
 </div>
 
 #### **Weekly Stress Periods (Extended Analysis)**
@@ -171,9 +171,9 @@ The following visualizations provide detailed insights into temporal patterns an
 - **Critical Period Enhancement**: Additional segments for identified stress periods
 
 
-## AR6 Climate Scenarios - R10PAC_OECD
+## AR6 Climate Scenarios - R10EUROPE
 
-This model incorporates climate scenario drivers from the IPCC AR6 database for the **R10PAC_OECD** region, 
+This model incorporates climate scenario drivers from the IPCC AR6 database for the **R10EUROPE** region, 
 derived from 350 vetted scenario-model combinations spanning 5 climate categories 
 from ambitious 1.5°C pathways (C1) to limited mitigation trajectories (C7). The scenarios cover 
 7 years from 2020 to 2050, providing comprehensive 
@@ -192,7 +192,7 @@ pathways for energy system transformation under different climate policy futures
 **Key Insights:**
 - **5 Climate Categories**: From 1.5°C pathways to baseline scenarios
 - **350 Scenario-Model Combinations**: Comprehensive coverage of transformation pathways  
-- **Regional Context**: R10PAC_OECD region-specific climate policy patterns
+- **Regional Context**: R10EUROPE region-specific climate policy patterns
 - **Temporal Coverage**: 2020-2050 transformation trajectories
 
 
@@ -203,7 +203,7 @@ pathways for energy system transformation under different climate policy futures
 - **Moderate Uncertainty**: Transport electrification rates (CV: 62.8%) 
 - **High Divergence**: Hydrogen deployment pathways (CV: inf%)
 
-**Regional Characteristics**: The R10PAC_OECD region shows moderate convergence compared to global 
+**Regional Characteristics**: The R10EUROPE region shows moderate convergence compared to global 
 averages, with region-specific climate policy patterns reflecting economic and policy context.
 
 
