@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - BRA
-**Generated:** 2025-09-11 15:35:29
+**Generated:** 2025-09-11 19:24:21
 
 
 ## Processing Parameters
@@ -9,10 +9,10 @@
 |---------------|---------------|----------------------------|--------------------|--------------------------|
 | 🌱 **Bioenergy** | 50.0 MW | 156/297 plants | 18.1 GW | 0.2 GW |
 | ⚫ **Coal** | 10.0 MW | 17/17 plants | 3.2 GW | — |
-| 🔥 **Gas** | 10.0 MW | 99/99 plants | 26.5 GW | 0.1 GW |
+| 🔥 **Gas** | 10.0 MW | 93/93 plants | 24.5 GW | — |
 | 💧 **Hydro** | 130.0 MW | 106/181 plants | 109.8 GW | — |
 | ⚛️ **Nuclear** | — | 3/3 plants | 3.4 GW | — |
-| 🛢️ **Oil** | 10.0 MW | 99/99 plants | 26.5 GW | 0.1 GW |
+| 🛢️ **Oil** | 10.0 MW | 34/34 plants | 4.7 GW | 0.1 GW |
 | ☀️ **Solar** | 200.0 MW | 42/953 plants | 39.6 GW | — |
 | 💨 **Windon** | 200.0 MW | 61/267 plants | 37.1 GW | — |
 
@@ -21,7 +21,7 @@
 | **Fuel Type** | **Retrofit Host Capacity** | **Retrofit Potential Capacity**
 |---------------|----------------------------|-------------------------------|
 | ⚫ **Coal** | 3.2 GW | 2.0 GW after capacity penalty |
-| 🔥 **Gas** | 26.7 GW | 22.5 GW after capacity penalty |
+| 🔥 **Gas** | 24.5 GW | 20.7 GW after capacity penalty |
 
 
 ## Data, Assumptions & Coverage
@@ -43,12 +43,13 @@
 - **Spatial Grid Assignment**: Plants mapped to 50x50km REZoning grid cells for consistent spatial modeling
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 87.6%% of total capacity from plant-level GEM data
-- **Total Capacity Tracked**: 264.7 GW GW from all sources
-- **Plants Above Threshold**: 496 individual plants tracked
-- **Total Plants Processed**: 1916 plants in database
+- **Individual Plant Coverage**: 86.8%% of total capacity from plant-level GEM data
+- **Total Capacity Tracked**: 240.7 GW GW from all sources
+- **Plants Above Threshold**: 431 individual plants tracked
+- **Total Plants Processed**: 1845 plants in database
 - **Missing Capacity Added**: - **EMBER data**:
   - **bioenergy**: 2.87 GW
+  - **gas**: 2.63 GW
   - **coal**: 0.08 GW
 - **IRENA data**:
   - **solar**: 13.24 GW
@@ -205,7 +206,7 @@ This model includes a **comprehensive grid visualization** showing the complete 
 
 | **Integration Type** | **Count** | **Total Capacity** | **Description** |
 |---------------------|-----------|-------------------|-----------------|
-| **Plants Mapped to Buses** | 3090 | 3090 GW | GEM power plants assigned to grid locations |
+| **Plants Mapped to Buses** | 2518 | 2518 GW | GEM power plants assigned to grid locations |
 | **Renewable Plants** | 0 | 0 GW | Solar, wind, hydro plants on the grid |
 | **Conventional Plants** | 0 | 0 GW | Coal, gas, nuclear plants on the grid |
 | **Clustering Efficiency** | 0.0% | - | Bus reduction achieved through DBSCAN clustering |
