@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - ITA
-**Generated:** 2025-09-11 16:08:54
+**Generated:** 2025-09-11 19:42:53
 
 
 ## Processing Parameters
@@ -9,10 +9,10 @@
 |---------------|---------------|----------------------------|--------------------|--------------------------|
 | 🌱 **Bioenergy** | 50.0 MW | 14/18 plants | 4.2 GW | — |
 | ⚫ **Coal** | 150.0 MW | 14/14 plants | 6.8 GW | — |
-| 🔥 **Gas** | 150.0 MW | 137/257 plants | 59.3 GW | 0.9 GW |
+| 🔥 **Gas** | 150.0 MW | 138/239 plants | 59.4 GW | 0.8 GW |
 | 🌋 **Geothermal** | 40.0 MW | 9/27 plants | 0.8 GW | — |
 | 💧 **Hydro** | 40.0 MW | 125/134 plants | 23.0 GW | — |
-| 🛢️ **Oil** | 150.0 MW | 103/174 plants | 49.0 GW | 0.9 GW |
+| 🛢️ **Oil** | 150.0 MW | 7/15 plants | 2.1 GW | 0.1 GW |
 | ☀️ **Solar** | 200.0 MW | 3/159 plants | 25.7 GW | — |
 | 🌊 **Windoff** | 200.0 MW | 0/1 plants | 0.0 GW | — |
 | 💨 **Windon** | 200.0 MW | 5/225 plants | 12.3 GW | — |
@@ -44,18 +44,18 @@
 - **Spatial Grid Assignment**: Plants mapped to 50x50km REZoning grid cells for consistent spatial modeling
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 86.9%% of total capacity from plant-level GEM data
-- **Total Capacity Tracked**: 182.9 GW GW from all sources
-- **Plants Above Threshold**: 412 individual plants tracked
-- **Total Plants Processed**: 1009 plants in database
+- **Individual Plant Coverage**: 84.3%% of total capacity from plant-level GEM data
+- **Total Capacity Tracked**: 135.2 GW GW from all sources
+- **Plants Above Threshold**: 289 individual plants tracked
+- **Total Plants Processed**: 832 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
-  - **windon**: 2.05 GW
-  - **hydro**: 7.03 GW
   - **solar**: 19.88 GW
+  - **hydro**: 7.03 GW
+  - **windon**: 2.05 GW
 - **EMBER data**:
-  - **coal**: 1.62 GW
-  - **gas**: 6.72 GW
   - **bioenergy**: 3.58 GW
+  - **gas**: 9.94 GW
+  - **coal**: 1.62 GW
 
 
 ## Model Structure
@@ -208,7 +208,7 @@ This model includes a **comprehensive grid visualization** showing the complete 
 
 | **Integration Type** | **Count** | **Total Capacity** | **Description** |
 |---------------------|-----------|-------------------|-----------------|
-| **Plants Mapped to Buses** | 1803 | 1803 GW | GEM power plants assigned to grid locations |
+| **Plants Mapped to Buses** | 1724 | 1724 GW | GEM power plants assigned to grid locations |
 | **Renewable Plants** | 0 | 0 GW | Solar, wind, hydro plants on the grid |
 | **Conventional Plants** | 0 | 0 GW | Coal, gas, nuclear plants on the grid |
 | **Clustering Efficiency** | 0.0% | - | Bus reduction achieved through DBSCAN clustering |
