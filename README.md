@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - DEU
-**Generated:** 2025-09-10 18:17:24
+**Generated:** 2025-09-11 19:11:19
 
 
 ## Processing Parameters
@@ -9,10 +9,10 @@
 |---------------|---------------|----------------------------|--------------------|--------------------------|
 | 🌱 **Bioenergy** | 50.0 MW | 14/21 plants | 9.9 GW | — |
 | ⚫ **Coal** | 110.0 MW | 61/68 plants | 37.8 GW | 2.6 GW |
-| 🔥 **Gas** | 110.0 MW | 117/194 plants | 35.4 GW | 2.1 GW |
+| 🔥 **Gas** | 110.0 MW | 110/185 plants | 33.9 GW | 2.1 GW |
 | 🌋 **Geothermal** | 10.0 MW | 1/4 plants | 0.0 GW | — |
 | 💧 **Hydro** | 10.0 MW | 33/33 plants | 11.1 GW | — |
-| 🛢️ **Oil** | 110.0 MW | 117/194 plants | 35.4 GW | 2.1 GW |
+| 🛢️ **Oil** | 110.0 MW | 6/18 plants | 1.9 GW | — |
 | ☀️ **Solar** | 200.0 MW | 21/30 plants | 72.7 GW | 0.0 GW |
 | 🌊 **Windoff** | 200.0 MW | 29/35 plants | 10.1 GW | — |
 | 💨 **Windon** | 200.0 MW | 29/34 plants | 61.9 GW | — |
@@ -22,7 +22,7 @@
 | **Fuel Type** | **Retrofit Host Capacity** | **Retrofit Potential Capacity**
 |---------------|----------------------------|-------------------------------|
 | ⚫ **Coal** | 40.4 GW | 29.4 GW after capacity penalty |
-| 🔥 **Gas** | 37.5 GW | 31.7 GW after capacity penalty |
+| 🔥 **Gas** | 36.0 GW | 30.4 GW after capacity penalty |
 
 
 ## Data, Assumptions & Coverage
@@ -44,16 +44,17 @@
 - **Spatial Grid Assignment**: Plants mapped to 50x50km REZoning grid cells for consistent spatial modeling
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 96.6%% of total capacity from plant-level GEM data
-- **Total Capacity Tracked**: 281.3 GW GW from all sources
-- **Plants Above Threshold**: 418 individual plants tracked
-- **Total Plants Processed**: 613 plants in database
+- **Individual Plant Coverage**: 97.4%% of total capacity from plant-level GEM data
+- **Total Capacity Tracked**: 244.2 GW GW from all sources
+- **Plants Above Threshold**: 296 individual plants tracked
+- **Total Plants Processed**: 428 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
-  - **windon**: 22.38 GW
   - **hydro**: 4.02 GW
   - **solar**: 42.0 GW
+  - **windon**: 22.38 GW
 - **EMBER data**:
   - **bioenergy**: 8.78 GW
+  - **gas**: 0.45 GW
   - **coal**: 8.09 GW
 
 
@@ -149,9 +150,9 @@ The following visualizations provide detailed insights into temporal patterns an
 <img src="VerveStacks_DEU/timeslice_analysis/re_analysis_summary_DEU.svg" alt="Renewable Energy Analysis Summary" width="100%">
 </div>
 
-#### **Daily Stress Periods (Scarcity Focus)**
+#### **Aggregated months and hours (8 X 8 case)**
 <div align="center">
-<img src="VerveStacks_DEU/timeslice_analysis/aggregation_justification_DEU_s5p5v5_d.svg" alt="Aggregated slices clustering" width="100%">
+<img src="VerveStacks_DEU/timeslice_analysis/aggregation_justification_DEU_ts_064.svg" alt="Aggregated slices clustering" width="100%">
 </div>
 
 #### **Weekly Stress Periods (Extended Analysis)**
@@ -170,9 +171,9 @@ The following visualizations provide detailed insights into temporal patterns an
 - **Critical Period Enhancement**: Additional segments for identified stress periods
 
 
-## AR6 Climate Scenarios - R10PAC_OECD
+## AR6 Climate Scenarios - R10EUROPE
 
-This model incorporates climate scenario drivers from the IPCC AR6 database for the **R10PAC_OECD** region, 
+This model incorporates climate scenario drivers from the IPCC AR6 database for the **R10EUROPE** region, 
 derived from 350 vetted scenario-model combinations spanning 5 climate categories 
 from ambitious 1.5°C pathways (C1) to limited mitigation trajectories (C7). The scenarios cover 
 7 years from 2020 to 2050, providing comprehensive 
@@ -191,7 +192,7 @@ pathways for energy system transformation under different climate policy futures
 **Key Insights:**
 - **5 Climate Categories**: From 1.5°C pathways to baseline scenarios
 - **350 Scenario-Model Combinations**: Comprehensive coverage of transformation pathways  
-- **Regional Context**: R10PAC_OECD region-specific climate policy patterns
+- **Regional Context**: R10EUROPE region-specific climate policy patterns
 - **Temporal Coverage**: 2020-2050 transformation trajectories
 
 
@@ -202,7 +203,7 @@ pathways for energy system transformation under different climate policy futures
 - **Moderate Uncertainty**: Transport electrification rates (CV: 62.8%) 
 - **High Divergence**: Hydrogen deployment pathways (CV: inf%)
 
-**Regional Characteristics**: The R10PAC_OECD region shows moderate convergence compared to global 
+**Regional Characteristics**: The R10EUROPE region shows moderate convergence compared to global 
 averages, with region-specific climate policy patterns reflecting economic and policy context.
 
 
