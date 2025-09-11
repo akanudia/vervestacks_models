@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - BRA
-**Generated:** 2025-09-09 23:22:16
+**Generated:** 2025-09-11 15:35:29
 
 
 ## Processing Parameters
@@ -47,12 +47,12 @@
 - **Total Capacity Tracked**: 264.7 GW GW from all sources
 - **Plants Above Threshold**: 496 individual plants tracked
 - **Total Plants Processed**: 1916 plants in database
-- **Missing Capacity Added**: - **IRENA data**:
-  - **solar**: 13.24 GW
-  - **hydro**: 0.71 GW
-- **EMBER data**:
+- **Missing Capacity Added**: - **EMBER data**:
   - **bioenergy**: 2.87 GW
   - **coal**: 0.08 GW
+- **IRENA data**:
+  - **solar**: 13.24 GW
+  - **hydro**: 0.71 GW
 
 
 ## Model Structure
@@ -147,9 +147,9 @@ The following visualizations provide detailed insights into temporal patterns an
 <img src="VerveStacks_BRA_grids/timeslice_analysis/re_analysis_summary_BRA.svg" alt="Renewable Energy Analysis Summary" width="100%">
 </div>
 
-#### **Daily Stress Periods (Scarcity Focus)**
+#### **Aggregated months and hours (8 X 8 case)**
 <div align="center">
-<img src="VerveStacks_BRA_grids/timeslice_analysis/aggregation_justification_BRA_s5p5v5_d.svg" alt="Aggregated slices clustering" width="100%">
+<img src="VerveStacks_BRA_grids/timeslice_analysis/aggregation_justification_BRA_ts_064.svg" alt="Aggregated slices clustering" width="100%">
 </div>
 
 #### **Weekly Stress Periods (Extended Analysis)**
@@ -298,9 +298,9 @@ This grid modeling enables:
 - **Investment Planning**: Identify optimal transmission and generation investments
 
 
-## AR6 Climate Scenarios - R10PAC_OECD
+## AR6 Climate Scenarios - R10LATIN_AM
 
-This model incorporates climate scenario drivers from the IPCC AR6 database for the **R10PAC_OECD** region, 
+This model incorporates climate scenario drivers from the IPCC AR6 database for the **R10LATIN_AM** region, 
 derived from 350 vetted scenario-model combinations spanning 5 climate categories 
 from ambitious 1.5°C pathways (C1) to limited mitigation trajectories (C7). The scenarios cover 
 7 years from 2020 to 2050, providing comprehensive 
@@ -319,7 +319,7 @@ pathways for energy system transformation under different climate policy futures
 **Key Insights:**
 - **5 Climate Categories**: From 1.5°C pathways to baseline scenarios
 - **350 Scenario-Model Combinations**: Comprehensive coverage of transformation pathways  
-- **Regional Context**: R10PAC_OECD region-specific climate policy patterns
+- **Regional Context**: R10LATIN_AM region-specific climate policy patterns
 - **Temporal Coverage**: 2020-2050 transformation trajectories
 
 
@@ -330,7 +330,7 @@ pathways for energy system transformation under different climate policy futures
 - **Moderate Uncertainty**: Transport electrification rates (CV: 62.8%) 
 - **High Divergence**: Hydrogen deployment pathways (CV: inf%)
 
-**Regional Characteristics**: The R10PAC_OECD region shows moderate convergence compared to global 
+**Regional Characteristics**: The R10LATIN_AM region shows moderate convergence compared to global 
 averages, with region-specific climate policy patterns reflecting economic and policy context.
 
 
