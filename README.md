@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - CAN
-**Generated:** 2025-09-11 18:25:02
+**Generated:** 2025-09-11 18:36:31
 
 
 ## Processing Parameters
@@ -9,11 +9,11 @@
 |---------------|---------------|----------------------------|--------------------|--------------------------|
 | 🌱 **Bioenergy** | 50.0 MW | 15/24 plants | 2.6 GW | — |
 | ⚫ **Coal** | 90.0 MW | 17/17 plants | 4.6 GW | 0.3 GW |
-| 🔥 **Gas** | 90.0 MW | 105/120 plants | 28.9 GW | 0.2 GW |
+| 🔥 **Gas** | 90.0 MW | 94/106 plants | 26.7 GW | 0.1 GW |
 | 🌋 **Geothermal** | 150.0 MW | 0/3 plants | 0.0 GW | — |
 | 💧 **Hydro** | 150.0 MW | 110/164 plants | 84.4 GW | — |
 | ⚛️ **Nuclear** | — | 19/19 plants | 14.6 GW | — |
-| 🛢️ **Oil** | 90.0 MW | 105/120 plants | 28.9 GW | 0.2 GW |
+| 🛢️ **Oil** | 90.0 MW | 11/15 plants | 2.2 GW | 0.1 GW |
 | ☀️ **Solar** | 200.0 MW | 9/19 plants | 6.7 GW | — |
 | 💨 **Windon** | 200.0 MW | 33/43 plants | 17.7 GW | 0.2 GW |
 
@@ -22,7 +22,7 @@
 | **Fuel Type** | **Retrofit Host Capacity** | **Retrofit Potential Capacity**
 |---------------|----------------------------|-------------------------------|
 | ⚫ **Coal** | 4.9 GW | 2.9 GW after capacity penalty |
-| 🔥 **Gas** | 29.1 GW | 24.6 GW after capacity penalty |
+| 🔥 **Gas** | 26.8 GW | 22.6 GW after capacity penalty |
 
 
 ## Data, Assumptions & Coverage
@@ -44,16 +44,16 @@
 - **Spatial Grid Assignment**: Plants mapped to 50x50km REZoning grid cells for consistent spatial modeling
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 96.2%% of total capacity from plant-level GEM data
-- **Total Capacity Tracked**: 189.3 GW GW from all sources
-- **Plants Above Threshold**: 414 individual plants tracked
-- **Total Plants Processed**: 529 plants in database
-- **Missing Capacity Added**: - **EMBER data**:
+- **Individual Plant Coverage**: 96.5%% of total capacity from plant-level GEM data
+- **Total Capacity Tracked**: 160.2 GW GW from all sources
+- **Plants Above Threshold**: 316 individual plants tracked
+- **Total Plants Processed**: 410 plants in database
+- **Missing Capacity Added**: - **IRENA data**:
+  - **hydro**: 4.22 GW
+  - **solar**: 2.18 GW
+- **EMBER data**:
   - **bioenergy**: 1.1 GW
   - **coal**: 1.5 GW
-- **IRENA data**:
-  - **solar**: 2.18 GW
-  - **hydro**: 4.22 GW
 
 
 ## Model Structure
