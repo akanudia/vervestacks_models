@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - USA
-**Generated:** 2025-09-12 23:16:25
+**Generated:** 2025-09-12 23:30:12
 
 
 ## Processing Parameters
@@ -8,19 +8,19 @@
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** |
 |---------------|---------------|----------------------------|--------------------|--------------------------|
 | 🌱 **Bioenergy** | 50.0 MW | 80/100 plants | 13.8 GW | — |
-| ⚫ **Coal** | 860.0 MW | 89/125 plants | 209.9 GW | — |
-| 🔥 **Gas** | 860.0 MW | 185/300 plants | 555.6 GW | 7.9 GW |
-| 🌋 **Geothermal** | 190.0 MW | 7/39 plants | 3.9 GW | 0.1 GW |
-| 💧 **Hydro** | 190.0 MW | 137/211 plants | 103.3 GW | — |
-| ⚛️ **Nuclear** | — | 94/94 plants | 102.5 GW | — |
-| 🛢️ **Oil** | 860.0 MW | 5/68 plants | 21.3 GW | 1.1 GW |
-| ☀️ **Solar** | 200.0 MW | 187/201 plants | 185.4 GW | 0.0 GW |
+| ⚫ **Coal** | 860.0 MW | 89/125 plants | 210 GW | — |
+| 🔥 **Gas** | 860.0 MW | 185/300 plants | 556 GW | 7.92 GW |
+| 🌋 **Geothermal** | 190.0 MW | 7/39 plants | 3.93 GW | 0.055 GW |
+| 💧 **Hydro** | 190.0 MW | 137/211 plants | 103 GW | — |
+| ⚛️ **Nuclear** | — | 94/94 plants | 102 GW | — |
+| 🛢️ **Oil** | 860.0 MW | 5/68 plants | 21.3 GW | 1.07 GW |
+| ☀️ **Solar** | 200.0 MW | 187/201 plants | 185 GW | 0.045 GW |
 | 🌊 **Windoff** | 200.0 MW | 4/7 plants | 5.2 GW | — |
-| 💨 **Windon** | 260.0 MW | 138/157 plants | 164.2 GW | 0.0 GW |
+| 💨 **Windon** | 260.0 MW | 138/157 plants | 164 GW | 0.034 GW |
 
 
 
-### 📊 Model Calibration
+### 📊 Model Calibration 2022
 | **Total Capacity** | **Total Generation** | **CO2 Emissions** | **Calibration to EMBER** |
 |--------------|---------------|------------|--------------------------|
 | 1245 GW | 4287 TWh | 1664 Mt | 101% |
@@ -29,8 +29,8 @@
 ### 🔄 CCS Retrofit Potential
 | **Fuel Type** | **Retrofit Host Capacity** | **Retrofit Potential Capacity**
 |---------------|----------------------------|-------------------------------|
-| ⚫ **Coal** | 209.9 GW | 128.0 GW after capacity penalty |
-| 🔥 **Gas** | 563.5 GW | 475.9 GW after capacity penalty |
+| ⚫ **Coal** | 210 GW | 128 GW after capacity penalty |
+| 🔥 **Gas** | 564 GW | 476 GW after capacity penalty |
 
 
 ## Data, Assumptions & Coverage
@@ -60,9 +60,9 @@
   - **solar**: 40.35 GW
   - **hydro**: 11.46 GW
 - **EMBER data**:
-  - **gas**: 6.33 GW
-  - **coal**: 15.81 GW
   - **bioenergy**: 6.49 GW
+  - **coal**: 15.81 GW
+  - **gas**: 6.33 GW
 
 
 ## Model Structure
