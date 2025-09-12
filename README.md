@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - ITA
-**Generated:** 2025-09-11 19:42:53
+**Generated:** 2025-09-12 13:31:36
 
 
 ## Processing Parameters
@@ -49,12 +49,12 @@
 - **Plants Above Threshold**: 289 individual plants tracked
 - **Total Plants Processed**: 832 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
-  - **solar**: 19.88 GW
   - **hydro**: 7.03 GW
   - **windon**: 2.05 GW
+  - **solar**: 19.88 GW
 - **EMBER data**:
-  - **bioenergy**: 3.58 GW
   - **gas**: 9.94 GW
+  - **bioenergy**: 3.58 GW
   - **coal**: 1.62 GW
 
 
@@ -118,6 +118,68 @@ showing how costs evolve as more capacity is developed:
 
 This analysis provides the foundation for understanding renewable energy economics and informs 
 capacity expansion decisions in the VEDA/TIMES energy system models.
+
+
+## 💧 Hydro Availability Scenarios
+
+### Planning for Hydro Uncertainty
+
+Hydroelectric generation is inherently variable due to seasonal patterns, year-to-year climate variations, and long-term climate change. Traditional energy models often assume constant hydro availability based on historical averages, which can lead to significant underestimation of backup capacity needs and inadequate drought preparedness.
+
+**VerveStacks addresses this critical gap** by generating probabilistic hydro availability scenarios that capture:
+- **Natural variability**: Seasonal wet/dry cycles and multi-year persistence
+- **Climate change impacts**: Declining mean availability and increasing extremes  
+- **Extreme events**: Drought sequences that stress energy systems
+- **Country-specific patterns**: Drought thresholds based on historical operational experience
+
+### **Methodology Overview**
+
+Our approach combines **24 years of historical data** (2000-2023) from EMBER Climate with advanced scenario generation to create realistic future pathways:
+
+1. **Historical Analysis**: Extract seasonal patterns, drought frequencies, and country-specific thresholds
+2. **Regime Classification**: Model persistence of wet, normal, and dry conditions  
+3. **Climate Adjustment**: Apply declining trends and increasing variability
+4. **Scenario Generation**: Create 100+ plausible futures preserving historical characteristics
+
+**Key Innovation**: Drought thresholds are derived from each country's bottom 20% of historical capacity factors, ensuring definitions reflect actual operational stress rather than arbitrary percentages.
+
+### **ITA Hydro Profile**
+
+| **Planning Parameter** | **Value** | **Application** |
+|----------------------|-----------|-----------------|
+| **Hydro Dependency** | N/A% of generation | System vulnerability assessment |
+| **P10 (Dry Scenario)** | 21.9% annual average | Security planning, reserve sizing |
+| **P50 (Base Scenario)** | 23.0% annual average | Expected case, financial planning |
+| **P90 (Wet Scenario)** | 24.7% annual average | Export opportunities, minimum backup |
+| **Historical Average** | 27.8% (2000-2023) | Validation benchmark |
+| **Drought Threshold** | 24.5% (P20 of historical) | Operational stress indicator |
+
+### **Monthly Availability Patterns**
+
+<div align="center">
+  <img src="VerveStacks_ITA_grids/source_data/ITA_hydro_monthly_profile.png" 
+       alt="Monthly Hydro Availability Profile" 
+       style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+  <p><em>Monthly hydro availability showing P10/P50/P90 future scenarios validated against historical patterns</em></p>
+</div>
+
+### **Long-term Trajectory Analysis**
+
+<div align="center">
+  <img src="VerveStacks_ITA_grids/source_data/ITA_hydro_annual_trajectory.png" 
+       alt="Annual Hydro Availability Trajectory" 
+       style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+  <p><em>Annual hydro trajectories connecting historical data (2000-2023) to future scenarios (2025-2050)</em></p>
+</div>
+
+### **Planning Applications**
+
+**Capacity Planning**: Use P50 for base case sizing, verify adequacy with P10 scenarios  
+**Investment Analysis**: P10 scenarios for downside risk, P90 for upside potential  
+**System Operations**: P10 for emergency preparedness, P50 for maintenance scheduling  
+**Policy Analysis**: Understand drought impacts on energy security and backup requirements
+
+**Key Insight**: The future will not match historical averages. Planning for hydro variability using P10/P50/P90 scenarios is essential for reliable, cost-effective energy systems.
 
 
 ## Temporal Modeling & Timeslice Analysis
@@ -329,8 +391,8 @@ pathways for energy system transformation under different climate policy futures
 ### Scenario-Model Divergence Analysis
 
 **Model Agreement**: Analysis across 350 scenario-model combinations reveals:
-- **High Convergence**: CO2 pricing trajectories (CV: inf%) and electricity growth (CV: 16.0%)
-- **Moderate Uncertainty**: Transport electrification rates (CV: 62.8%) 
+- **High Convergence**: CO2 pricing trajectories (CV: inf%) and electricity growth (CV: 17.2%)
+- **Moderate Uncertainty**: Transport electrification rates (CV: 59.8%) 
 - **High Divergence**: Hydrogen deployment pathways (CV: inf%)
 
 **Regional Characteristics**: The R10EUROPE region shows moderate convergence compared to global 
