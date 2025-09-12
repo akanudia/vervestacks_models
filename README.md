@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - USA
-**Generated:** 2025-09-12 22:32:19
+**Generated:** 2025-09-12 23:16:25
 
 
 ## Processing Parameters
@@ -20,10 +20,10 @@
 
 
 
-### 📊 Model Summary Metrics
-| **Total GW** | **Total TWh** | **Mt CO2** | **Calibration to EMBER** |
+### 📊 Model Calibration
+| **Total Capacity** | **Total Generation** | **CO2 Emissions** | **Calibration to EMBER** |
 |--------------|---------------|------------|--------------------------|
-| 1245 GW | 0 TWh | 0 Mt | 0% |
+| 1245 GW | 4287 TWh | 1664 Mt | 101% |
 
 
 ### 🔄 CCS Retrofit Potential
@@ -60,9 +60,9 @@
   - **solar**: 40.35 GW
   - **hydro**: 11.46 GW
 - **EMBER data**:
-  - **bioenergy**: 6.49 GW
   - **gas**: 6.33 GW
   - **coal**: 15.81 GW
+  - **bioenergy**: 6.49 GW
 
 
 ## Model Structure
