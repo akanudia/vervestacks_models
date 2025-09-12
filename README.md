@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - USA
-**Generated:** 2025-09-12 16:12:11
+**Generated:** 2025-09-12 22:32:19
 
 
 ## Processing Parameters
@@ -17,6 +17,13 @@
 | ☀️ **Solar** | 200.0 MW | 187/201 plants | 185.4 GW | 0.0 GW |
 | 🌊 **Windoff** | 200.0 MW | 4/7 plants | 5.2 GW | — |
 | 💨 **Windon** | 260.0 MW | 138/157 plants | 164.2 GW | 0.0 GW |
+
+
+
+### 📊 Model Summary Metrics
+| **Total GW** | **Total TWh** | **Mt CO2** | **Calibration to EMBER** |
+|--------------|---------------|------------|--------------------------|
+| 1245 GW | 0 TWh | 0 Mt | 0% |
 
 
 ### 🔄 CCS Retrofit Potential
@@ -49,13 +56,13 @@
 - **Total Capacity Tracked**: 1374.2 GW GW from all sources
 - **Plants Above Threshold**: 1080 individual plants tracked
 - **Total Plants Processed**: 1302 plants in database
-- **Missing Capacity Added**: - **EMBER data**:
-  - **bioenergy**: 6.49 GW
-  - **coal**: 15.81 GW
-  - **gas**: 6.33 GW
-- **IRENA data**:
+- **Missing Capacity Added**: - **IRENA data**:
   - **solar**: 40.35 GW
   - **hydro**: 11.46 GW
+- **EMBER data**:
+  - **bioenergy**: 6.49 GW
+  - **gas**: 6.33 GW
+  - **coal**: 15.81 GW
 
 
 ## Model Structure
