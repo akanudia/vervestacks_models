@@ -1,14 +1,29 @@
 # VerveStacks Model Generation Notes - USA
+**Generated:** 2025-09-12 16:12:11
 
-**Generated:** 2025-09-05 19:32:04
 
 ## Processing Parameters
 
-| Parameter | Value | Description |
-|-----------|-------|-------------|
-| **Capacity Threshold** | Not specified MW | Minimum plant size for individual tracking |
-| **Gas Efficiency Adjustment** | Not specified | Multiplier applied to gas plant efficiencies |
-| **Coal Efficiency Adjustment** | Not specified | Multiplier applied to coal plant efficiencies |
+### Individual Plant Tracking
+| **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** |
+|---------------|---------------|----------------------------|--------------------|--------------------------|
+| 🌱 **Bioenergy** | 50.0 MW | 80/100 plants | 13.8 GW | — |
+| ⚫ **Coal** | 860.0 MW | 89/125 plants | 209.9 GW | — |
+| 🔥 **Gas** | 860.0 MW | 185/300 plants | 555.6 GW | 7.9 GW |
+| 🌋 **Geothermal** | 190.0 MW | 7/39 plants | 3.9 GW | 0.1 GW |
+| 💧 **Hydro** | 190.0 MW | 137/211 plants | 103.3 GW | — |
+| ⚛️ **Nuclear** | — | 94/94 plants | 102.5 GW | — |
+| 🛢️ **Oil** | 860.0 MW | 5/68 plants | 21.3 GW | 1.1 GW |
+| ☀️ **Solar** | 200.0 MW | 187/201 plants | 185.4 GW | 0.0 GW |
+| 🌊 **Windoff** | 200.0 MW | 4/7 plants | 5.2 GW | — |
+| 💨 **Windon** | 260.0 MW | 138/157 plants | 164.2 GW | 0.0 GW |
+
+
+### 🔄 CCS Retrofit Potential
+| **Fuel Type** | **Retrofit Host Capacity** | **Retrofit Potential Capacity**
+|---------------|----------------------------|-------------------------------|
+| ⚫ **Coal** | 209.9 GW | 128.0 GW after capacity penalty |
+| 🔥 **Gas** | 563.5 GW | 475.9 GW after capacity penalty |
 
 
 ## Data, Assumptions & Coverage
@@ -16,63 +31,156 @@
 ### Primary Data Sources
 
 #### Base-Year Power Plant Specifications
-
 - **Global Energy Monitor (GEM)** [🌐](https://globalenergymonitor.org)  
   Open-access database of individual power plants worldwide, including location, capacity, fuel type, commissioning year, and technical specifications.
 - **International Renewable Energy Agency (IRENA)** [🌐](https://www.irena.org/Statistics)  
-  Global renewable energy capacity and generation statistics (2000–2022), disaggregated by country and technology. Used to calibrate solar, wind and hydro generation.
+  Global renewable energy capacity and generation statistics (2000–2022), disaggregated by country and technology.
 - **EMBER Climate** [🌐](https://ember-climate.org/data/)  
-  Global dataset tracking electricity generation, installed capacity, and emissions intensity (2000–2022), often used to benchmark policy impacts and system transitions. Used to calibrate thermal generation.
-- **United Nations Statistics Division (UNSD)** [🌐](https://unstats.un.org/unsd/energy/)  
-  Official national energy statistics, including fuel inputs, electricity generation, and sectoral breakdowns — used to validate historical power plant operations.
+  Global dataset tracking electricity generation, installed capacity, and emissions intensity (2000–2022).
 
-#### Power Sector Policies and Pathways
-
-- **Network for Greening the Financial System (NGFS)** [🌐](https://www.ngfs.net)  
-  Scenario-based projections of electricity demand, CO₂ emissions trajectories, and fuel prices — used to model alternative climate policy futures.
-- **EMBER Climate** [🌐](https://ember-climate.org)  
-  Renewable energy targets.
-
-#### New Technologies
-
-- **International Energy Agency – World Energy Outlook (IEA WEO)** [🌐](https://www.iea.org/reports/world-energy-outlook-2023)  
-  Global assumptions for power generation technologies: capital costs, O&M, efficiency, and learning rates — aligned with IEA scenarios.
-- **U.S. National Renewable Energy Laboratory – Annual Technology Baseline (NREL ATB)** [🌐](https://atb.nrel.gov/)  
-  Cost and performance trajectories for renewable and low-carbon power technologies. U.S.-centric, but widely used for international modeling.
-
-#### Technology Assumptions
-
-- **U.S. Environmental Protection Agency (EPA)** [🌐](https://www.epa.gov)  
-  Technical parameters for retrofitting fossil plants with carbon capture and storage (CCS), including energy penalties and incremental costs.
-- **Integrated Planning Model (IPM)** [🌐](https://www.epa.gov/power-sector-modeling/overview-ipm-platform)  
-  U.S.-based modeling platform used to estimate life extension costs, variable O&M, and decommissioning behavior of thermal power plants.
-
-
+#### Enhanced Renewable Energy Characterization
+- **GEM-REZoning-Atlite Integration** [`re_units_cf_grid_cell_mapping.csv`]  
+  Enhanced renewable energy units with capacity factors from Atlite weather data and precise grid cell locations from REZoning database. This integration provides spatially-resolved capacity factors for existing renewable plants, enabling accurate performance modeling and grid cell assignment for spatial optimization.
+- **Capacity Factor Enhancement**: Individual renewable plants receive location-specific capacity factors derived from 2013 hourly weather patterns
+- **Spatial Grid Assignment**: Plants mapped to 50x50km REZoning grid cells for consistent spatial modeling
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: TBD of total capacity from plant-level GEM data
-- **Total Capacity Tracked**: TBD from all sources
-- **Plants Above Threshold**: TBD individual plants tracked above N/A MW threshold
-- **Total Plants Processed**: TBD plants in database
-- **Technology Mapping**: Automated mapping using VerveStacks technology classifications
+- **Individual Plant Coverage**: 99.1%% of total capacity from plant-level GEM data
+- **Total Capacity Tracked**: 1374.2 GW GW from all sources
+- **Plants Above Threshold**: 1080 individual plants tracked
+- **Total Plants Processed**: 1302 plants in database
+- **Missing Capacity Added**: - **EMBER data**:
+  - **bioenergy**: 6.49 GW
+  - **coal**: 15.81 GW
+  - **gas**: 6.33 GW
+- **IRENA data**:
+  - **solar**: 40.35 GW
+  - **hydro**: 11.46 GW
 
-### Missing Capacity Added From:
-- **No missing capacity added** - All capacity covered by plant-level data
 
 ## Model Structure
 
 ### Files Included
-- **Source Data**: `source_data/VerveStacks_USA.xlsx` - the full dataset in a model-agnostic format, ready for TIMES/VEDA execution
-    # Includes hourly demand and solar/wind resource profiles
+- **Source Data**: `source_data/VerveStacks_USA.xlsx` - the full dataset in a model-agnostic format
 - **VEDA Model Files**: Complete model ready for Veda-TIMES execution
 - **Scenario Files**: NGFS climate scenarios and policy assumptions
 
-### Key Methodology Points
-- Plant-level data prioritized where available (capacity > N/A MW)
-- N/A plants tracked individually above threshold
-- Efficiency adjustments applied for calibration to national statistics
-- Missing capacity filled using technology-specific statistical estimates
-- Regional cost multipliers applied based on country economic indicators
+
+## Renewable Energy Characterization
+
+VerveStacks provides comprehensive renewable energy potential analysis at unprecedented spatial resolution, 
+combining global resource assessments with realistic deployment constraints to deliver actionable insights 
+for energy system planning.
+
+### **Data Foundation: REZoning Integration**
+
+Our renewable energy characterization builds on the REZoning database, providing detailed potential 
+assessments at 50×50 km grid resolution across 190+ countries. This high-resolution spatial data 
+captures the nuanced variations in renewable energy resources that are critical for accurate energy 
+system modeling.
+
+**Data Sources:**
+- **Solar Potential**: REZoning solar resource data with capacity factors and LCOE estimates
+- **Wind Onshore**: REZoning onshore wind potential with economic viability assessments  
+- **Wind Offshore**: REZoning offshore wind resources with marine-specific constraints
+- **Hourly Profiles**: Atlite-derived capacity factor time series for each grid cell
+
+### **Land Use Conflict Resolution: Conservative Overlap Management**
+
+A critical challenge in renewable energy assessment is avoiding double-counting of land areas suitable 
+for both solar and wind development. VerveStacks implements a **conservative overlap resolution algorithm** 
+that ensures realistic deployment scenarios:
+
+**Most Pessimistic Assumption:**
+- When grid cells overlap between solar and wind potential, we apply **LCOE-based allocation**
+- The technology with **higher LCOE (less competitive)** receives a **reduced share** of the overlapping area
+- This conservative approach ensures our estimates represent **deployable potential** rather than theoretical maximums
+- **No double-counting**: Each grid cell contributes to less than the REZoning resource limits in cells with overlap
+
+This methodology reflects real-world deployment patterns where developers choose the most economically 
+viable technology for each location, ensuring our supply curves represent **realistic, achievable 
+renewable energy potential**.
+
+### **Supply Curve Visualization**
+
+The resulting supply curves reveal the economic characteristics of renewable energy deployment, 
+showing how costs evolve as more capacity is developed:
+
+**Chart Features:**
+- **LCOE vs Cumulative Capacity**: Economic viability as deployment scales
+- **LCOE vs Cumulative Generation**: Resource potential in energy terms
+- **Technology Comparison**: Solar, Wind Onshore, and Wind Offshore potential
+- **Original vs Landuse-Adjusted**: Impact of conservative overlap management
+
+<div align="center">
+<img src="VerveStacks_USA/renewable_energy/supply_curves_USA.svg" alt="Renewable Energy Supply Curves" width="100%">
+</div>
+
+This analysis provides the foundation for understanding renewable energy economics and informs 
+capacity expansion decisions in the VEDA/TIMES energy system models.
+
+
+## 💧 Hydro Availability Scenarios
+
+### Planning for Hydro Uncertainty
+
+Hydroelectric generation is inherently variable due to seasonal patterns, year-to-year climate variations, and long-term climate change. Traditional energy models often assume constant hydro availability based on historical averages, which can lead to significant underestimation of backup capacity needs and inadequate drought preparedness.
+
+**VerveStacks addresses this critical gap** by generating probabilistic hydro availability scenarios that capture:
+- **Natural variability**: Seasonal wet/dry cycles and multi-year persistence
+- **Climate change impacts**: Declining mean availability and increasing extremes  
+- **Extreme events**: Drought sequences that stress energy systems
+- **Country-specific patterns**: Drought thresholds based on historical operational experience
+
+### **Methodology Overview**
+
+Our approach combines **24 years of historical data** (2000-2023) from EMBER Climate with advanced scenario generation to create realistic future pathways:
+
+1. **Historical Analysis**: Extract seasonal patterns, drought frequencies, and country-specific thresholds
+2. **Regime Classification**: Model persistence of wet, normal, and dry conditions  
+3. **Climate Adjustment**: Apply declining trends and increasing variability
+4. **Scenario Generation**: Create 100+ plausible futures preserving historical characteristics
+
+**Key Innovation**: Drought thresholds are derived from each country's bottom 20% of historical capacity factors, ensuring definitions reflect actual operational stress rather than arbitrary percentages.
+
+### **USA Hydro Profile**
+
+| **Planning Parameter** | **Value** | **Application** |
+|----------------------|-----------|-----------------|
+| **Hydro Dependency** | N/A% of generation | System vulnerability assessment |
+| **P10 (Dry Scenario)** | 34.5% annual average | Security planning, reserve sizing |
+| **P50 (Base Scenario)** | 36.6% annual average | Expected case, financial planning |
+| **P90 (Wet Scenario)** | 39.0% annual average | Export opportunities, minimum backup |
+| **Historical Average** | 36.8% (2000-2023) | Validation benchmark |
+| **Drought Threshold** | 34.1% (P20 of historical) | Operational stress indicator |
+
+### **Monthly Availability Patterns**
+
+<div align="center">
+  <img src="VerveStacks_USA/source_data/USA_hydro_monthly_profile.png" 
+       alt="Monthly Hydro Availability Profile" 
+       style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+  <p><em>Monthly hydro availability showing P10/P50/P90 future scenarios validated against historical patterns</em></p>
+</div>
+
+### **Long-term Trajectory Analysis**
+
+<div align="center">
+  <img src="VerveStacks_USA/source_data/USA_hydro_annual_trajectory.png" 
+       alt="Annual Hydro Availability Trajectory" 
+       style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+  <p><em>Annual hydro trajectories connecting historical data (2000-2023) to future scenarios (2025-2050)</em></p>
+</div>
+
+### **Planning Applications**
+
+**Capacity Planning**: Use P50 for base case sizing, verify adequacy with P10 scenarios  
+**Investment Analysis**: P10 scenarios for downside risk, P90 for upside potential  
+**System Operations**: P10 for emergency preparedness, P50 for maintenance scheduling  
+**Policy Analysis**: Understand drought impacts on energy security and backup requirements
+
+**Key Insight**: The future will not match historical averages. Planning for hydro variability using P10/P50/P90 scenarios is essential for reliable, cost-effective energy systems.
+
 
 ## Temporal Modeling & Timeslice Analysis
 
@@ -95,170 +203,74 @@ This model employs sophisticated **statistical scenario generation** to identify
 - Important for grid stability and flexible resource planning
 - Captures rapid ramping requirements for dispatchable assets
 
-### Renewable Resource Selection
+### Comprehensive Stress Period Analysis
 
-**Balanced Solar/Wind Portfolio Optimization:**
-- Quality-weighted selection based on resource potential and economics
-- Grid cell-level analysis using 50x50km resolution REZoning data
-- Cost-effectiveness scoring (TWh generation per $/MWh LCOE)
-- Technology mix targets derived from historical deployment patterns
+The following visualizations provide detailed insights into temporal patterns and critical periods:
 
-**Supply Curve Analysis:**
-- Complete renewable resource landscape visualization
-- Stepped-line supply curves showing cumulative potential vs. cost
-- Integration of wind onshore resource assessments
-- Economic competitiveness ranking for investment prioritization
+#### **Renewable Energy Analysis Overview**
+<div align="center">
+<img src="VerveStacks_USA/timeslice_analysis/re_analysis_summary_USA.svg" alt="Renewable Energy Analysis Summary" width="100%">
+</div>
 
-### Coverage Metrics & Energy Balance
+#### **Aggregated months and hours (8 X 8 case)**
+<div align="center">
+<img src="VerveStacks_USA/timeslice_analysis/aggregation_justification_USA_ts_064.svg" alt="Aggregated slices clustering" width="100%">
+</div>
 
-**Clean Generation Coverage:**
-- Hourly coverage calculation: (Clean Generation + Nuclear) / Demand × 100%
-- Range analysis from minimum to maximum coverage throughout the year
-- Net load calculations showing residual demand after clean generation
-- Stress period selection based on coverage distribution statistics
+#### **Weekly Stress Periods (Extended Analysis)**
+<div align="center">
+<img src="VerveStacks_USA/timeslice_analysis/stress_periods_s2_w_USA.svg" alt="Weekly Stress Periods" width="100%">
+</div>
+
+#### **Triple-5 Critical Periods (Comprehensive Stress Analysis)**
+<div align="center">
+<img src="VerveStacks_USA/timeslice_analysis/stress_periods_s5p5v5_d_USA.svg" alt="Triple-5 Critical Periods" width="100%">
+</div>
 
 ### Timeslice Structure Generation
-
 **Multi-Scale Temporal Resolution:**
 - **Base Aggregation**: 6 seasons × 8 daily periods = 48 base timeslices
 - **Critical Period Enhancement**: Additional segments for identified stress periods
-- **Statistical Methods**: Triple-1, Triple-5, and Weekly Stress approaches
-- **VEDA Integration**: Complete tsdesign.csv with TIMES-compatible mappings
-
-## Timeslice Analysis Visualizations
-
-The following charts provide insights into the temporal characteristics of this energy system:
 
 
-### Critical Period Analysis Results
+## AR6 Climate Scenarios - R10NORTH_AM
 
-**Analysis Status:** Timeslice analysis completed for USA
+This model incorporates climate scenario drivers from the IPCC AR6 database for the **R10NORTH_AM** region, 
+derived from 350 vetted scenario-model combinations spanning 5 climate categories 
+from ambitious 1.5°C pathways (C1) to limited mitigation trajectories (C7). The scenarios cover 
+7 years from 2020 to 2050, providing comprehensive 
+pathways for energy system transformation under different climate policy futures.
 
 
-#### 🔥 **Detailed Stress Analysis Results:**
+### Climate Scenario Trajectories
 
-**🌨️ Weekly Sustained Stress Analysis:**
-- Week S01: 09-11 to 09-11 (1 days)
+<div align="center">
+  <img src="VerveStacks_USA/scenario_drivers/ar6_scenarios_USA.png" 
+       alt="AR6 Climate Scenario Trajectories" 
+       style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+  <p><em>Climate scenario trajectories showing CO2 prices, electricity growth, and hydrogen deployment across different climate ambitions</em></p>
+</div>
 
-#### 📊 **Generated Analysis Files:**
-- `segment_summary_USA.csv` - Statistical summary of all identified critical periods
-- `tsdesign_USA.csv` - Complete VEDA timeslice structure with temporal mappings
+**Key Insights:**
+- **5 Climate Categories**: From 1.5°C pathways to baseline scenarios
+- **350 Scenario-Model Combinations**: Comprehensive coverage of transformation pathways  
+- **Regional Context**: R10NORTH_AM region-specific climate policy patterns
+- **Temporal Coverage**: 2020-2050 transformation trajectories
 
-**Stress Period Methodology:**
-- **Scarcity Periods**: Days with lowest renewable coverage (highest need for backup power)
-- **Surplus Periods**: Days with highest renewable coverage (maximum curtailment potential)  
-- **Volatile Periods**: Days with highest generation variability (grid stability challenges)
-- **Weekly Stress**: Sustained periods of low renewable coverage (energy security focus)
 
-**Coverage Analysis**: Clean generation (renewables + nuclear) as percentage of hourly demand
-- Enables identification of critical periods for capacity planning
-- Supports renewable integration and storage requirement analysis
-- Provides input for grid flexibility and backup power assessment
+### Scenario-Model Divergence Analysis
 
-### 📊 Generated Analysis Charts
+**Model Agreement**: Analysis across 350 scenario-model combinations reveals:
+- **High Convergence**: CO2 pricing trajectories (CV: inf%) and electricity growth (CV: 16.0%)
+- **Moderate Uncertainty**: Transport electrification rates (CV: 85.8%) 
+- **High Divergence**: Hydrogen deployment pathways (CV: inf%)
 
-*Interactive visualizations from the timeslice analysis process. Click any chart to view full resolution.*
-
-#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_USA/source_data/aggregation_justification_USA_s1_d.svg" target="_blank">
-  <img src="VerveStacks_USA/source_data/aggregation_justification_USA_s1_d.svg" alt="aggregation_justification_USA_s1_d.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_USA/source_data/aggregation_justification_USA_s1p1v1_d.svg" target="_blank">
-  <img src="VerveStacks_USA/source_data/aggregation_justification_USA_s1p1v1_d.svg" alt="aggregation_justification_USA_s1p1v1_d.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_USA/source_data/aggregation_justification_USA_s2_w.svg" target="_blank">
-  <img src="VerveStacks_USA/source_data/aggregation_justification_USA_s2_w.svg" alt="aggregation_justification_USA_s2_w.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_USA/source_data/aggregation_justification_USA_s2_w_p2_d.svg" target="_blank">
-  <img src="VerveStacks_USA/source_data/aggregation_justification_USA_s2_w_p2_d.svg" alt="aggregation_justification_USA_s2_w_p2_d.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_USA/source_data/aggregation_justification_USA_s3p3v3_d.svg" target="_blank">
-  <img src="VerveStacks_USA/source_data/aggregation_justification_USA_s3p3v3_d.svg" alt="aggregation_justification_USA_s3p3v3_d.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_USA/source_data/aggregation_justification_USA_s5p5v5_d.svg" target="_blank">
-  <img src="VerveStacks_USA/source_data/aggregation_justification_USA_s5p5v5_d.svg" alt="aggregation_justification_USA_s5p5v5_d.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_USA/source_data/aggregation_justification_USA_ts12_clu.svg" target="_blank">
-  <img src="VerveStacks_USA/source_data/aggregation_justification_USA_ts12_clu.svg" alt="aggregation_justification_USA_ts12_clu.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_USA/source_data/aggregation_justification_USA_ts24_clu.svg" target="_blank">
-  <img src="VerveStacks_USA/source_data/aggregation_justification_USA_ts24_clu.svg" alt="aggregation_justification_USA_ts24_clu.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Timeslice Aggregation Justification** - Statistical analysis supporting the selected temporal resolution structure
-<a href="VerveStacks_USA/source_data/aggregation_justification_USA_ts48_clu.svg" target="_blank">
-  <img src="VerveStacks_USA/source_data/aggregation_justification_USA_ts48_clu.svg" alt="aggregation_justification_USA_ts48_clu.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Re Analysis Summary Usa** - Timeslice analysis visualization
-<a href="VerveStacks_USA/source_data/re_analysis_summary_USA.svg" target="_blank">
-  <img src="VerveStacks_USA/source_data/re_analysis_summary_USA.svg" alt="re_analysis_summary_USA.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Stress Periods S1 D Usa** - Timeslice analysis visualization
-<a href="VerveStacks_USA/source_data/stress_periods_s1_d_USA.svg" target="_blank">
-  <img src="VerveStacks_USA/source_data/stress_periods_s1_d_USA.svg" alt="stress_periods_s1_d_USA.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Stress Periods S2 W Usa** - Timeslice analysis visualization
-<a href="VerveStacks_USA/source_data/stress_periods_s2_w_USA.svg" target="_blank">
-  <img src="VerveStacks_USA/source_data/stress_periods_s2_w_USA.svg" alt="stress_periods_s2_w_USA.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Stress Periods S5P5V5 D Usa** - Timeslice analysis visualization
-<a href="VerveStacks_USA/source_data/stress_periods_s5p5v5_d_USA.svg" target="_blank">
-  <img src="VerveStacks_USA/source_data/stress_periods_s5p5v5_d_USA.svg" alt="stress_periods_s5p5v5_d_USA.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
-
-#### **Renewable Supply Curves** - Cost-ordered renewable resource potential showing solar and wind capacity vs. LCOE
-<a href="VerveStacks_USA/source_data/supply_curves_USA.svg" target="_blank">
-  <img src="VerveStacks_USA/source_data/supply_curves_USA.svg" alt="supply_curves_USA.svg" width="600" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0; cursor: pointer;" />
-</a>
-
-*Click image to view full size*
+**Regional Characteristics**: The R10NORTH_AM region shows moderate convergence compared to global 
+averages, with region-specific climate policy patterns reflecting economic and policy context.
 
 
 ## Quality Assurance
+
 - Cross-validation between IRENA, EMBER, and UNSD statistics
 - Capacity-generation consistency checks
 - Technology classification verification
@@ -266,13 +278,15 @@ The following charts provide insights into the temporal characteristics of this 
 - Renewable resource potential validated against REZoning database
 - Temporal analysis verified through statistical scenario methods
 
+
 ## Usage Notes
+
 - This model is generated automatically using VerveStacks methodology
 - Timeslice structure is optimized for high-renewable energy system analysis
-- For questions about specific data sources or methodology, refer to METHODOLOGY_DOCUMENTATION.md
+- For questions about specific data sources or methodology, refer to online documentation
 - Model parameters can be adjusted manually in the model files
-- Charts and analysis files are located in `2_ts_design/outputs/{input_iso}/`
+- Charts and analysis files are located in `2_ts_design/outputs/USA/`
 
 ---
-*Generated by VerveStacks Energy Model Processor with Advanced Timeslice Analysis*
-*For more information: coming soon*
+*Generated by VerveStacks Energy Model Processor*
+*For more information: [VerveStacks Documentation](https://github.com/your-org/vervestacks)*
