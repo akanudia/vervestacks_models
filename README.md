@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - GRC
-**Generated:** 2025-09-12 23:55:40
+**Generated:** 2025-09-13 00:19:45
 
 
 ## Model Calibration 2022
@@ -14,15 +14,15 @@
 ## Processing Parameters
 
 ### Individual Plant Tracking
-| **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** |
-|---------------|---------------|----------------------------|--------------------|--------------------------|
-| 🌱 **Bioenergy** | 50 MW | 1/1 plants | 0.13 GW | — |
-| ⚫ **Coal** | 10 MW | 6/6 plants | 2.88 GW | — |
-| 🔥 **Gas** | 10 MW | 18/18 plants | 8.85 GW | — |
-| 💧 **Hydro** | 10 MW | 16/16 plants | 3.58 GW | — |
-| 🛢️ **Oil** | 10 MW | 28/28 plants | 1.44 GW | — |
-| ☀️ **Solar** | 200 MW | 9/15 plants | 8.11 GW | 0.05 GW |
-| 💨 **Windon** | 200 MW | 11/30 plants | 5.91 GW | — |
+| **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** | **Wtd Avg Eff** |
+|---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
+| 🌱 **Bioenergy** | 50 MW | 1/1 plants | 0.13 GW | — | 34% |
+| ⚫ **Coal** | 10 MW | 6/6 plants | 2.88 GW | — | 38% |
+| 🔥 **Gas** | 10 MW | 18/18 plants | 8.85 GW | — | 57% |
+| 💧 **Hydro** | 10 MW | 16/16 plants | 3.58 GW | — | 100% |
+| 🛢️ **Oil** | 10 MW | 28/28 plants | 1.44 GW | — | 34% |
+| ☀️ **Solar** | 200 MW | 9/15 plants | 8.11 GW | 0.05 GW | 100% |
+| 💨 **Windon** | 200 MW | 11/30 plants | 5.91 GW | — | 33% |
 
 
 ### 🔄 CCS Retrofit Potential
@@ -55,13 +55,13 @@
 - **Total Capacity Tracked**: 31 GW GW from all sources
 - **Plants Above Threshold**: 71 individual plants tracked
 - **Total Plants Processed**: 114 plants in database
-- **Missing Capacity Added**: - **IRENA data**:
+- **Missing Capacity Added**: - **EMBER data**:
+  - **coal**: 0.9 GW
+  - **gas**: 1.05 GW
+  - **bioenergy**: 0.13 GW
+- **IRENA data**:
   - **solar**: 3.86 GW
   - **hydro**: 0.3 GW
-- **EMBER data**:
-  - **coal**: 0.9 GW
-  - **bioenergy**: 0.13 GW
-  - **gas**: 1.05 GW
 
 
 ## Model Structure
