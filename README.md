@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - CHE
-**Generated:** 2025-09-12 12:54:55
+**Generated:** 2025-09-12 13:05:13
 
 
 ## Processing Parameters
@@ -45,12 +45,12 @@
 - **Total Capacity Tracked**: 25.1 GW GW from all sources
 - **Plants Above Threshold**: 55 individual plants tracked
 - **Total Plants Processed**: 112 plants in database
-- **Missing Capacity Added**: - **EMBER data**:
-  - **gas**: 0.13 GW
-  - **bioenergy**: 0.23 GW
-- **IRENA data**:
-  - **hydro**: 3.18 GW
+- **Missing Capacity Added**: - **IRENA data**:
   - **solar**: 4.43 GW
+  - **hydro**: 3.18 GW
+- **EMBER data**:
+  - **bioenergy**: 0.23 GW
+  - **gas**: 0.13 GW
 
 
 ## Model Structure
@@ -152,7 +152,7 @@ Our approach combines **24 years of historical data** (2000-2023) from EMBER Cli
 ### **Monthly Availability Patterns**
 
 <div align="center">
-  <img src="CHE_hydro_monthly_profile.png" 
+  <img src="VerveStacks_CHE/source_data/CHE_hydro_monthly_profile.png" 
        alt="Monthly Hydro Availability Profile" 
        style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
   <p><em>Monthly hydro availability showing P10/P50/P90 future scenarios validated against historical patterns</em></p>
@@ -161,7 +161,7 @@ Our approach combines **24 years of historical data** (2000-2023) from EMBER Cli
 ### **Long-term Trajectory Analysis**
 
 <div align="center">
-  <img src="CHE_hydro_annual_trajectory.png" 
+  <img src="VerveStacks_CHE/source_data/CHE_hydro_annual_trajectory.png" 
        alt="Annual Hydro Availability Trajectory" 
        style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
   <p><em>Annual hydro trajectories connecting historical data (2000-2023) to future scenarios (2025-2050)</em></p>
