@@ -1,27 +1,35 @@
 # VerveStacks Model Generation Notes - NZL
-**Generated:** 2025-09-09 23:31:10
+**Generated:** 2025-09-13 17:48:33
+
+
+## Model Calibration 2022
+
+| **Total Capacity** | **Total Generation** | **CO2 Emissions** | **Calibration to EMBER** |
+|--------------|---------------|------------|--------------------------|
+| 12.1 GW | 43.6 TWh | 3.54 Mt | 72% |
+
+**Note:** 2022 fossil and bio capacity is calibrated to EMBER and renewable capacities to IRENA. UNSD has incomplete data for fuel consumption, so the calibration is demonstrated against the total CO2 emission reported by EMBER. This shows that the efficiency assumptions are good.
 
 
 ## Processing Parameters
 
 ### Individual Plant Tracking
-| **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** |
-|---------------|---------------|----------------------------|--------------------|
-| 🌱 **Bioenergy** | 50.0 MW | 1/2 plants | 1.2 GW |
-| ⚫ **Coal** | 10.0 MW | 3/3 plants | 0.8 GW |
-| 🔥 **Gas** | 10.0 MW | 14/14 plants | 1.9 GW |
-| 🌋 **Geothermal** | 10.0 MW | 29/31 plants | 1.4 GW |
-| 💧 **Hydro** | 10.0 MW | 44/44 plants | 5.7 GW |
-| 🛢️ **Oil** | 10.0 MW | 11/11 plants | 1.4 GW |
-| ☀️ **Solar** | 200.0 MW | 0/15 plants | 0.7 GW |
-| 💨 **Windon** | 200.0 MW | 0/19 plants | 1.5 GW |
+| **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Wtd Avg Efficiency** |
+|---------------|---------------|----------------------------|--------------------|-----------------|
+| 🌱 **Bioenergy** | 50 MW | 1/2 plants | 1.19 GW | 35% |
+| ⚫ **Coal** | 10 MW | 3/3 plants | 0.75 GW | 33% |
+| 🔥 **Gas** | 10 MW | 14/14 plants | 1.92 GW | 48% |
+| 🌋 **Geothermal** | 10 MW | 29/31 plants | 1.43 GW | 100% |
+| 💧 **Hydro** | 10 MW | 44/44 plants | 5.68 GW | 100% |
+| ☀️ **Solar** | 200 MW | 0/15 plants | 0.69 GW | 100% |
+| 💨 **Windon** | 200 MW | 0/19 plants | 1.47 GW | 33% |
 
 
 ### 🔄 CCS Retrofit Potential
 | **Fuel Type** | **Retrofit Host Capacity** | **Retrofit Potential Capacity**
 |---------------|----------------------------|-------------------------------|
-| ⚫ **Coal** | 0.8 GW | 0.4 GW after capacity penalty |
-| 🔥 **Gas** | 1.9 GW | 1.6 GW after capacity penalty |
+| ⚫ **Coal** | 0.75 GW | 0.447 GW after capacity penalty |
+| 🔥 **Gas** | 1.92 GW | 1.62 GW after capacity penalty |
 
 
 ## Data, Assumptions & Coverage
@@ -43,10 +51,10 @@
 - **Spatial Grid Assignment**: Plants mapped to 50x50km REZoning grid cells for consistent spatial modeling
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 73.8%% of total capacity from plant-level GEM data
-- **Total Capacity Tracked**: 14.6 GW GW from all sources
-- **Plants Above Threshold**: 46 individual plants tracked
-- **Total Plants Processed**: 139 plants in database
+- **Individual Plant Coverage**: 73%% of total capacity from plant-level GEM data
+- **Total Capacity Tracked**: 13.1 GW GW from all sources
+- **Plants Above Threshold**: 41 individual plants tracked
+- **Total Plants Processed**: 128 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
   - **hydro**: 0.81 GW
 - **EMBER data**:
@@ -116,6 +124,68 @@ This analysis provides the foundation for understanding renewable energy economi
 capacity expansion decisions in the VEDA/TIMES energy system models.
 
 
+## 💧 Hydro Availability Scenarios
+
+### Planning for Hydro Uncertainty
+
+Hydroelectric generation is inherently variable due to seasonal patterns, year-to-year climate variations, and long-term climate change. Traditional energy models often assume constant hydro availability based on historical averages, which can lead to significant underestimation of backup capacity needs and inadequate drought preparedness.
+
+**VerveStacks addresses this critical gap** by generating probabilistic hydro availability scenarios that capture:
+- **Natural variability**: Seasonal wet/dry cycles and multi-year persistence
+- **Climate change impacts**: Declining mean availability and increasing extremes  
+- **Extreme events**: Drought sequences that stress energy systems
+- **Country-specific patterns**: Drought thresholds based on historical operational experience
+
+### **Methodology Overview**
+
+Our approach combines **24 years of historical data** (2000-2023) from EMBER Climate with advanced scenario generation to create realistic future pathways:
+
+1. **Historical Analysis**: Extract seasonal patterns, drought frequencies, and country-specific thresholds
+2. **Regime Classification**: Model persistence of wet, normal, and dry conditions  
+3. **Climate Adjustment**: Apply declining trends and increasing variability
+4. **Scenario Generation**: Create 100+ plausible futures preserving historical characteristics
+
+**Key Innovation**: Drought thresholds are derived from each country's bottom 20% of historical capacity factors, ensuring definitions reflect actual operational stress rather than arbitrary percentages.
+
+### **NZL Hydro Profile**
+
+| **Planning Parameter** | **Value** | **Application** |
+|----------------------|-----------|-----------------|
+| **Hydro Dependency** | N/A% of generation | System vulnerability assessment |
+| **P10 (Dry Scenario)** | 46.7% annual average | Security planning, reserve sizing |
+| **P50 (Base Scenario)** | 50.0% annual average | Expected case, financial planning |
+| **P90 (Wet Scenario)** | 52.6% annual average | Export opportunities, minimum backup |
+| **Historical Average** | 51.1% (2000-2023) | Validation benchmark |
+| **Drought Threshold** | 49.4% (P20 of historical) | Operational stress indicator |
+
+### **Monthly Availability Patterns**
+
+<div align="center">
+  <img src="VerveStacks_NZL_grids/source_data/NZL_hydro_monthly_profile.png" 
+       alt="Monthly Hydro Availability Profile" 
+       style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+  <p><em>Monthly hydro availability showing P10/P50/P90 future scenarios validated against historical patterns</em></p>
+</div>
+
+### **Long-term Trajectory Analysis**
+
+<div align="center">
+  <img src="VerveStacks_NZL_grids/source_data/NZL_hydro_annual_trajectory.png" 
+       alt="Annual Hydro Availability Trajectory" 
+       style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+  <p><em>Annual hydro trajectories connecting historical data (2000-2023) to future scenarios (2025-2050)</em></p>
+</div>
+
+### **Planning Applications**
+
+**Capacity Planning**: Use P50 for base case sizing, verify adequacy with P10 scenarios  
+**Investment Analysis**: P10 scenarios for downside risk, P90 for upside potential  
+**System Operations**: P10 for emergency preparedness, P50 for maintenance scheduling  
+**Policy Analysis**: Understand drought impacts on energy security and backup requirements
+
+**Key Insight**: The future will not match historical averages. Planning for hydro variability using P10/P50/P90 scenarios is essential for reliable, cost-effective energy systems.
+
+
 ## Temporal Modeling & Timeslice Analysis
 
 ### Advanced Stress Period Identification
@@ -146,9 +216,9 @@ The following visualizations provide detailed insights into temporal patterns an
 <img src="VerveStacks_NZL_grids/timeslice_analysis/re_analysis_summary_NZL.svg" alt="Renewable Energy Analysis Summary" width="100%">
 </div>
 
-#### **Daily Stress Periods (Scarcity Focus)**
+#### **Aggregated months and hours (8 X 8 case)**
 <div align="center">
-<img src="VerveStacks_NZL_grids/timeslice_analysis/aggregation_justification_NZL_s5p5v5_d.svg" alt="Aggregated slices clustering" width="100%">
+<img src="VerveStacks_NZL_grids/timeslice_analysis/aggregation_justification_NZL_ts_064.svg" alt="Aggregated slices clustering" width="100%">
 </div>
 
 #### **Weekly Stress Periods (Extended Analysis)**
@@ -204,7 +274,7 @@ This model includes a **comprehensive grid visualization** showing the complete 
 
 | **Integration Type** | **Count** | **Total Capacity** | **Description** |
 |---------------------|-----------|-------------------|-----------------|
-| **Plants Mapped to Buses** | 112 | 112 GW | GEM power plants assigned to grid locations |
+| **Plants Mapped to Buses** | 72 | 72 GW | GEM power plants assigned to grid locations |
 | **Renewable Plants** | 0 | 0 GW | Solar, wind, hydro plants on the grid |
 | **Conventional Plants** | 0 | 0 GW | Coal, gas, nuclear plants on the grid |
 | **Clustering Efficiency** | 0.0% | - | Bus reduction achieved through DBSCAN clustering |
