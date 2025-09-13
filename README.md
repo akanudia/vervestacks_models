@@ -1,28 +1,37 @@
 # VerveStacks Model Generation Notes - ITA
-**Generated:** 2025-09-11 18:48:55
+**Generated:** 2025-09-13 15:17:25
+
+
+## Model Calibration 2022
+
+| **Total Capacity** | **Total Generation** | **CO2 Emissions** | **Calibration to EMBER** |
+|--------------|---------------|------------|--------------------------|
+| 130 GW | 280 TWh | 90 Mt | 85% |
+
+**Note:** 2022 fossil and bio capacity is calibrated to EMBER and renewable capacities to IRENA. UNSD has incomplete data for fuel consumption, so the calibration is demonstrated against the total CO2 emission reported by EMBER. This shows that the efficiency assumptions are good.
 
 
 ## Processing Parameters
 
 ### Individual Plant Tracking
-| **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** |
-|---------------|---------------|----------------------------|--------------------|--------------------------|
-| 🌱 **Bioenergy** | 50.0 MW | 7/10 plants | 4.2 GW | — |
-| ⚫ **Coal** | 150.0 MW | 11/11 plants | 6.8 GW | — |
-| 🔥 **Gas** | 150.0 MW | 105/146 plants | 59.4 GW | 0.8 GW |
-| 🌋 **Geothermal** | 40.0 MW | 11/23 plants | 0.8 GW | — |
-| 💧 **Hydro** | 40.0 MW | 94/94 plants | 23.0 GW | — |
-| 🛢️ **Oil** | 150.0 MW | 7/15 plants | 2.1 GW | 0.1 GW |
-| ☀️ **Solar** | 200.0 MW | 7/21 plants | 25.7 GW | — |
-| 🌊 **Windoff** | 200.0 MW | 0/1 plants | 0.0 GW | — |
-| 💨 **Windon** | 200.0 MW | 15/31 plants | 12.3 GW | — |
+| **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
+|---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
+| 🌱 **Bioenergy** | 50 MW | 7/10 plants | 4.17 GW | — | 35% |
+| ⚫ **Coal** | 150 MW | 11/11 plants | 6.81 GW | — | 40% |
+| 🔥 **Gas** | 150 MW | 105/146 plants | 59 GW | 0.782 GW | 56% |
+| 🌋 **Geothermal** | 40 MW | 11/23 plants | 0.834 GW | — | 100% |
+| 💧 **Hydro** | 40 MW | 94/94 plants | 23 GW | — | 100% |
+| 🛢️ **Oil** | 150 MW | 7/15 plants | 2.13 GW | 0.08 GW | 31% |
+| ☀️ **Solar** | 200 MW | 7/21 plants | 25.7 GW | — | 100% |
+| 🌊 **Windoff** | 200 MW | 0/1 plants | 0.03 GW | — | 33% |
+| 💨 **Windon** | 200 MW | 15/31 plants | 12.3 GW | — | 33% |
 
 
 ### 🔄 CCS Retrofit Potential
 | **Fuel Type** | **Retrofit Host Capacity** | **Retrofit Potential Capacity**
 |---------------|----------------------------|-------------------------------|
-| ⚫ **Coal** | 6.8 GW | 4.7 GW after capacity penalty |
-| 🔥 **Gas** | 60.2 GW | 50.8 GW after capacity penalty |
+| ⚫ **Coal** | 6.81 GW | 4.72 GW after capacity penalty |
+| 🔥 **Gas** | 60 GW | 51 GW after capacity penalty |
 
 
 ## Data, Assumptions & Coverage
@@ -44,18 +53,18 @@
 - **Spatial Grid Assignment**: Plants mapped to 50x50km REZoning grid cells for consistent spatial modeling
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 94.7%% of total capacity from plant-level GEM data
-- **Total Capacity Tracked**: 135.2 GW GW from all sources
+- **Individual Plant Coverage**: 95%% of total capacity from plant-level GEM data
+- **Total Capacity Tracked**: 135 GW GW from all sources
 - **Plants Above Threshold**: 212 individual plants tracked
 - **Total Plants Processed**: 352 plants in database
-- **Missing Capacity Added**: - **EMBER data**:
-  - **bioenergy**: 3.58 GW
-  - **coal**: 1.62 GW
-  - **gas**: 11.79 GW
-- **IRENA data**:
-  - **hydro**: 7.28 GW
+- **Missing Capacity Added**: - **IRENA data**:
   - **solar**: 19.88 GW
   - **windon**: 2.05 GW
+  - **hydro**: 7.28 GW
+- **EMBER data**:
+  - **coal**: 1.62 GW
+  - **gas**: 11.79 GW
+  - **bioenergy**: 3.58 GW
 
 
 ## Model Structure
@@ -118,6 +127,68 @@ showing how costs evolve as more capacity is developed:
 
 This analysis provides the foundation for understanding renewable energy economics and informs 
 capacity expansion decisions in the VEDA/TIMES energy system models.
+
+
+## 💧 Hydro Availability Scenarios
+
+### Planning for Hydro Uncertainty
+
+Hydroelectric generation is inherently variable due to seasonal patterns, year-to-year climate variations, and long-term climate change. Traditional energy models often assume constant hydro availability based on historical averages, which can lead to significant underestimation of backup capacity needs and inadequate drought preparedness.
+
+**VerveStacks addresses this critical gap** by generating probabilistic hydro availability scenarios that capture:
+- **Natural variability**: Seasonal wet/dry cycles and multi-year persistence
+- **Climate change impacts**: Declining mean availability and increasing extremes  
+- **Extreme events**: Drought sequences that stress energy systems
+- **Country-specific patterns**: Drought thresholds based on historical operational experience
+
+### **Methodology Overview**
+
+Our approach combines **24 years of historical data** (2000-2023) from EMBER Climate with advanced scenario generation to create realistic future pathways:
+
+1. **Historical Analysis**: Extract seasonal patterns, drought frequencies, and country-specific thresholds
+2. **Regime Classification**: Model persistence of wet, normal, and dry conditions  
+3. **Climate Adjustment**: Apply declining trends and increasing variability
+4. **Scenario Generation**: Create 100+ plausible futures preserving historical characteristics
+
+**Key Innovation**: Drought thresholds are derived from each country's bottom 20% of historical capacity factors, ensuring definitions reflect actual operational stress rather than arbitrary percentages.
+
+### **ITA Hydro Profile**
+
+| **Planning Parameter** | **Value** | **Application** |
+|----------------------|-----------|-----------------|
+| **Hydro Dependency** | N/A% of generation | System vulnerability assessment |
+| **P10 (Dry Scenario)** | 21.9% annual average | Security planning, reserve sizing |
+| **P50 (Base Scenario)** | 23.0% annual average | Expected case, financial planning |
+| **P90 (Wet Scenario)** | 24.7% annual average | Export opportunities, minimum backup |
+| **Historical Average** | 27.8% (2000-2023) | Validation benchmark |
+| **Drought Threshold** | 24.5% (P20 of historical) | Operational stress indicator |
+
+### **Monthly Availability Patterns**
+
+<div align="center">
+  <img src="VerveStacks_ITA/source_data/ITA_hydro_monthly_profile.png" 
+       alt="Monthly Hydro Availability Profile" 
+       style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+  <p><em>Monthly hydro availability showing P10/P50/P90 future scenarios validated against historical patterns</em></p>
+</div>
+
+### **Long-term Trajectory Analysis**
+
+<div align="center">
+  <img src="VerveStacks_ITA/source_data/ITA_hydro_annual_trajectory.png" 
+       alt="Annual Hydro Availability Trajectory" 
+       style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+  <p><em>Annual hydro trajectories connecting historical data (2000-2023) to future scenarios (2025-2050)</em></p>
+</div>
+
+### **Planning Applications**
+
+**Capacity Planning**: Use P50 for base case sizing, verify adequacy with P10 scenarios  
+**Investment Analysis**: P10 scenarios for downside risk, P90 for upside potential  
+**System Operations**: P10 for emergency preparedness, P50 for maintenance scheduling  
+**Policy Analysis**: Understand drought impacts on energy security and backup requirements
+
+**Key Insight**: The future will not match historical averages. Planning for hydro variability using P10/P50/P90 scenarios is essential for reliable, cost-effective energy systems.
 
 
 ## Temporal Modeling & Timeslice Analysis
@@ -199,8 +270,8 @@ pathways for energy system transformation under different climate policy futures
 ### Scenario-Model Divergence Analysis
 
 **Model Agreement**: Analysis across 350 scenario-model combinations reveals:
-- **High Convergence**: CO2 pricing trajectories (CV: inf%) and electricity growth (CV: 16.0%)
-- **Moderate Uncertainty**: Transport electrification rates (CV: 62.8%) 
+- **High Convergence**: CO2 pricing trajectories (CV: inf%) and electricity growth (CV: 17.2%)
+- **Moderate Uncertainty**: Transport electrification rates (CV: 59.8%) 
 - **High Divergence**: Hydrogen deployment pathways (CV: inf%)
 
 **Regional Characteristics**: The R10EUROPE region shows moderate convergence compared to global 
