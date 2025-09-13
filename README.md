@@ -1,12 +1,12 @@
 # VerveStacks Model Generation Notes - ESP
-**Generated:** 2025-09-13 01:55:26
+**Generated:** 2025-09-13 09:17:50
 
 
 ## Model Calibration 2022
 
 | **Total Capacity** | **Total Generation** | **CO2 Emissions** | **Calibration to EMBER** |
 |--------------|---------------|------------|--------------------------|
-| 119 GW | 286 TWh | 48 Mt | 77% |
+| 119 GW | 286 TWh | 64 Mt | 103% |
 
 **Note:** 2022 fossil and bio capacity is calibrated to EMBER and renewable capacities to IRENA. UNSD has incomplete data for fuel consumption, so the calibration is demonstrated against the total CO2 emission reported by EMBER. This shows that the efficiency assumptions are good.
 
@@ -16,12 +16,12 @@
 ### Individual Plant Tracking
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 10/16 plants | 1.44 GW | — | 34% |
-| ⚫ **Coal** | 40 MW | 7/7 plants | 2.95 GW | — | 36% |
-| 🔥 **Gas** | 40 MW | 82/96 plants | 27.3 GW | 0.049 GW | 56% |
+| 🌱 **Bioenergy** | 50 MW | 10/16 plants | 1.44 GW | — | 25% |
+| ⚫ **Coal** | 40 MW | 7/7 plants | 2.95 GW | — | 27% |
+| 🔥 **Gas** | 40 MW | 82/96 plants | 27.3 GW | 0.049 GW | 42% |
 | 💧 **Hydro** | 10 MW | 89/89 plants | 20.3 GW | — | 100% |
 | ⚛️ **Nuclear** | — | 7/7 plants | 7.41 GW | — | 100% |
-| 🛢️ **Oil** | 40 MW | 36/51 plants | 3.42 GW | 0.08 GW | 36% |
+| 🛢️ **Oil** | 40 MW | 36/51 plants | 3.42 GW | 0.08 GW | 27% |
 | ☀️ **Solar** | 200 MW | 38/58 plants | 37.3 GW | 0.098 GW | 100% |
 | 🌊 **Windoff** | 200 MW | 0/1 plants | 0.02 GW | — | 33% |
 | 💨 **Windon** | 200 MW | 28/37 plants | 32 GW | — | 33% |
@@ -30,7 +30,7 @@
 ### 🔄 CCS Retrofit Potential
 | **Fuel Type** | **Retrofit Host Capacity** | **Retrofit Potential Capacity**
 |---------------|----------------------------|-------------------------------|
-| ⚫ **Coal** | 2.95 GW | 1.96 GW after capacity penalty |
+| ⚫ **Coal** | 2.95 GW | 1.84 GW after capacity penalty |
 | 🔥 **Gas** | 27.4 GW | 23.1 GW after capacity penalty |
 
 
@@ -59,11 +59,11 @@
 - **Total Plants Processed**: 362 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
   - **hydro**: 4.91 GW
-  - **windon**: 0.78 GW
   - **solar**: 0.22 GW
+  - **windon**: 0.78 GW
 - **EMBER data**:
-  - **coal**: 0.83 GW
   - **bioenergy**: 0.75 GW
+  - **coal**: 0.83 GW
 
 
 ## Model Structure
