@@ -1,12 +1,12 @@
 # VerveStacks Model Generation Notes - USA
-**Generated:** 2025-09-13 01:41:49
+**Generated:** 2025-09-13 09:03:01
 
 
 ## Model Calibration 2022
 
 | **Total Capacity** | **Total Generation** | **CO2 Emissions** | **Calibration to EMBER** |
 |--------------|---------------|------------|--------------------------|
-| 1245 GW | 4287 TWh | 1664 Mt | 101% |
+| 1245 GW | 4287 TWh | 1656 Mt | 100% |
 
 **Note:** 2022 fossil and bio capacity is calibrated to EMBER and renewable capacities to IRENA. UNSD has incomplete data for fuel consumption, so the calibration is demonstrated against the total CO2 emission reported by EMBER. This shows that the efficiency assumptions are good.
 
@@ -16,8 +16,8 @@
 ### Individual Plant Tracking
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 80/100 plants | 13.8 GW | — | 30% |
-| ⚫ **Coal** | 860 MW | 89/125 plants | 210 GW | — | 34% |
+| 🌱 **Bioenergy** | 50 MW | 80/100 plants | 13.8 GW | — | 31% |
+| ⚫ **Coal** | 860 MW | 89/125 plants | 210 GW | — | 35% |
 | 🔥 **Gas** | 860 MW | 185/300 plants | 556 GW | 7.92 GW | 45% |
 | 🌋 **Geothermal** | 190 MW | 7/39 plants | 3.93 GW | 0.055 GW | 100% |
 | 💧 **Hydro** | 190 MW | 137/211 plants | 103 GW | — | 100% |
@@ -58,13 +58,13 @@
 - **Total Capacity Tracked**: 1374 GW GW from all sources
 - **Plants Above Threshold**: 1080 individual plants tracked
 - **Total Plants Processed**: 1302 plants in database
-- **Missing Capacity Added**: - **EMBER data**:
-  - **coal**: 15.81 GW
-  - **gas**: 6.33 GW
-  - **bioenergy**: 6.49 GW
-- **IRENA data**:
-  - **hydro**: 11.46 GW
+- **Missing Capacity Added**: - **IRENA data**:
   - **solar**: 40.35 GW
+  - **hydro**: 11.46 GW
+- **EMBER data**:
+  - **gas**: 6.33 GW
+  - **coal**: 15.81 GW
+  - **bioenergy**: 6.49 GW
 
 
 ## Model Structure
