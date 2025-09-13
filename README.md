@@ -1,29 +1,38 @@
 # VerveStacks Model Generation Notes - JPN
-**Generated:** 2025-09-11 19:51:01
+**Generated:** 2025-09-13 10:42:54
+
+
+## Model Calibration 2022
+
+| **Total Capacity** | **Total Generation** | **CO2 Emissions** | **Calibration to EMBER** |
+|--------------|---------------|------------|--------------------------|
+| 325 GW | 1041 TWh | 536 Mt | 99% |
+
+**Note:** 2022 fossil and bio capacity is calibrated to EMBER and renewable capacities to IRENA. UNSD has incomplete data for fuel consumption, so the calibration is demonstrated against the total CO2 emission reported by EMBER. This shows that the efficiency assumptions are good.
 
 
 ## Processing Parameters
 
 ### Individual Plant Tracking
-| **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** |
-|---------------|---------------|----------------------------|--------------------|--------------------------|
-| 🌱 **Bioenergy** | 50.0 MW | 66/125 plants | 6.2 GW | 0.1 GW |
-| ⚫ **Coal** | 490.0 MW | 58/173 plants | 54.8 GW | 1.1 GW |
-| 🔥 **Gas** | 490.0 MW | 91/168 plants | 88.8 GW | — |
-| 🌋 **Geothermal** | 60.0 MW | 1/30 plants | 0.7 GW | — |
-| 💧 **Hydro** | 60.0 MW | 145/199 plants | 50.2 GW | — |
-| ⚛️ **Nuclear** | — | 35/35 plants | 14.4 GW | 21.5 GW |
-| 🛢️ **Oil** | 490.0 MW | 10/29 plants | 9.9 GW | 1.1 GW |
-| ☀️ **Solar** | 200.0 MW | 11/1531 plants | 87.8 GW | — |
-| 🌊 **Windoff** | 200.0 MW | 2/12 plants | 1.7 GW | — |
-| 💨 **Windon** | 200.0 MW | 3/163 plants | 5.7 GW | — |
+| **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
+|---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
+| 🌱 **Bioenergy** | 50 MW | 66/125 plants | 6.18 GW | 0.075 GW | 28% |
+| ⚫ **Coal** | 490 MW | 58/173 plants | 55 GW | 1.08 GW | 35% |
+| 🔥 **Gas** | 490 MW | 91/168 plants | 89 GW | — | 44% |
+| 🌋 **Geothermal** | 60 MW | 1/30 plants | 0.669 GW | — | 100% |
+| 💧 **Hydro** | 60 MW | 145/199 plants | 50 GW | — | 100% |
+| ⚛️ **Nuclear** | — | 35/35 plants | 14.4 GW | 21.5 GW | 100% |
+| 🛢️ **Oil** | 490 MW | 10/29 plants | 9.86 GW | 1.15 GW | 29% |
+| ☀️ **Solar** | 200 MW | 11/1531 plants | 88 GW | — | 100% |
+| 🌊 **Windoff** | 200 MW | 2/12 plants | 1.73 GW | — | 33% |
+| 💨 **Windon** | 200 MW | 3/163 plants | 5.73 GW | — | 33% |
 
 
 ### 🔄 CCS Retrofit Potential
 | **Fuel Type** | **Retrofit Host Capacity** | **Retrofit Potential Capacity**
 |---------------|----------------------------|-------------------------------|
-| ⚫ **Coal** | 55.9 GW | 41.7 GW after capacity penalty |
-| 🔥 **Gas** | 88.8 GW | 75.0 GW after capacity penalty |
+| ⚫ **Coal** | 56 GW | 41.5 GW after capacity penalty |
+| 🔥 **Gas** | 89 GW | 75 GW after capacity penalty |
 
 
 ## Data, Assumptions & Coverage
@@ -45,14 +54,14 @@
 - **Spatial Grid Assignment**: Plants mapped to 50x50km REZoning grid cells for consistent spatial modeling
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 87.3%% of total capacity from plant-level GEM data
-- **Total Capacity Tracked**: 344.0 GW GW from all sources
+- **Individual Plant Coverage**: 87%% of total capacity from plant-level GEM data
+- **Total Capacity Tracked**: 344 GW GW from all sources
 - **Plants Above Threshold**: 518 individual plants tracked
 - **Total Plants Processed**: 2465 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
+  - **hydro**: 11.2 GW
   - **solar**: 54.33 GW
   - **windon**: 0.71 GW
-  - **hydro**: 11.2 GW
 - **EMBER data**:
   - **bioenergy**: 0.72 GW
 
@@ -117,6 +126,68 @@ showing how costs evolve as more capacity is developed:
 
 This analysis provides the foundation for understanding renewable energy economics and informs 
 capacity expansion decisions in the VEDA/TIMES energy system models.
+
+
+## 💧 Hydro Availability Scenarios
+
+### Planning for Hydro Uncertainty
+
+Hydroelectric generation is inherently variable due to seasonal patterns, year-to-year climate variations, and long-term climate change. Traditional energy models often assume constant hydro availability based on historical averages, which can lead to significant underestimation of backup capacity needs and inadequate drought preparedness.
+
+**VerveStacks addresses this critical gap** by generating probabilistic hydro availability scenarios that capture:
+- **Natural variability**: Seasonal wet/dry cycles and multi-year persistence
+- **Climate change impacts**: Declining mean availability and increasing extremes  
+- **Extreme events**: Drought sequences that stress energy systems
+- **Country-specific patterns**: Drought thresholds based on historical operational experience
+
+### **Methodology Overview**
+
+Our approach combines **24 years of historical data** (2000-2023) from EMBER Climate with advanced scenario generation to create realistic future pathways:
+
+1. **Historical Analysis**: Extract seasonal patterns, drought frequencies, and country-specific thresholds
+2. **Regime Classification**: Model persistence of wet, normal, and dry conditions  
+3. **Climate Adjustment**: Apply declining trends and increasing variability
+4. **Scenario Generation**: Create 100+ plausible futures preserving historical characteristics
+
+**Key Innovation**: Drought thresholds are derived from each country's bottom 20% of historical capacity factors, ensuring definitions reflect actual operational stress rather than arbitrary percentages.
+
+### **JPN Hydro Profile**
+
+| **Planning Parameter** | **Value** | **Application** |
+|----------------------|-----------|-----------------|
+| **Hydro Dependency** | N/A% of generation | System vulnerability assessment |
+| **P10 (Dry Scenario)** | 27.7% annual average | Security planning, reserve sizing |
+| **P50 (Base Scenario)** | 29.5% annual average | Expected case, financial planning |
+| **P90 (Wet Scenario)** | 31.7% annual average | Export opportunities, minimum backup |
+| **Historical Average** | 33.4% (2000-2023) | Validation benchmark |
+| **Drought Threshold** | 31.0% (P20 of historical) | Operational stress indicator |
+
+### **Monthly Availability Patterns**
+
+<div align="center">
+  <img src="VerveStacks_JPN_grids/source_data/JPN_hydro_monthly_profile.png" 
+       alt="Monthly Hydro Availability Profile" 
+       style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+  <p><em>Monthly hydro availability showing P10/P50/P90 future scenarios validated against historical patterns</em></p>
+</div>
+
+### **Long-term Trajectory Analysis**
+
+<div align="center">
+  <img src="VerveStacks_JPN_grids/source_data/JPN_hydro_annual_trajectory.png" 
+       alt="Annual Hydro Availability Trajectory" 
+       style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+  <p><em>Annual hydro trajectories connecting historical data (2000-2023) to future scenarios (2025-2050)</em></p>
+</div>
+
+### **Planning Applications**
+
+**Capacity Planning**: Use P50 for base case sizing, verify adequacy with P10 scenarios  
+**Investment Analysis**: P10 scenarios for downside risk, P90 for upside potential  
+**System Operations**: P10 for emergency preparedness, P50 for maintenance scheduling  
+**Policy Analysis**: Understand drought impacts on energy security and backup requirements
+
+**Key Insight**: The future will not match historical averages. Planning for hydro variability using P10/P50/P90 scenarios is essential for reliable, cost-effective energy systems.
 
 
 ## Temporal Modeling & Timeslice Analysis
