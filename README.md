@@ -1,12 +1,12 @@
 # VerveStacks Model Generation Notes - FRA
-**Generated:** 2025-09-13 09:14:08
+**Generated:** 2025-09-13 09:55:46
 
 
 ## Model Calibration 2022
 
 | **Total Capacity** | **Total Generation** | **CO2 Emissions** | **Calibration to EMBER** |
 |--------------|---------------|------------|--------------------------|
-| 152 GW | 469 TWh | 38.5 Mt | 104% |
+| 152 GW | 469 TWh | 37.6 Mt | 102% |
 
 **Note:** 2022 fossil and bio capacity is calibrated to EMBER and renewable capacities to IRENA. UNSD has incomplete data for fuel consumption, so the calibration is demonstrated against the total CO2 emission reported by EMBER. This shows that the efficiency assumptions are good.
 
@@ -17,12 +17,12 @@
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|-----------------|
 | 🌱 **Bioenergy** | 50 MW | 7/8 plants | 2.41 GW | 28% |
-| ⚫ **Coal** | 10 MW | 4/4 plants | 2.51 GW | 29% |
-| 🔥 **Gas** | 10 MW | 62/62 plants | 17.8 GW | 45% |
+| ⚫ **Coal** | 10 MW | 4/4 plants | 2.51 GW | 30% |
+| 🔥 **Gas** | 10 MW | 62/62 plants | 17.8 GW | 46% |
 | 🌋 **Geothermal** | 50 MW | 0/1 plants | 0.002 GW | 100% |
 | 💧 **Hydro** | 50 MW | 103/112 plants | 26 GW | 100% |
 | ⚛️ **Nuclear** | — | 57/57 plants | 66 GW | 100% |
-| 🛢️ **Oil** | 10 MW | 33/33 plants | 2.28 GW | 28% |
+| 🛢️ **Oil** | 10 MW | 33/33 plants | 2.28 GW | 29% |
 | ☀️ **Solar** | 200 MW | 16/23 plants | 17.1 GW | 100% |
 | 🌊 **Windoff** | 200 MW | 6/10 plants | 3.04 GW | 33% |
 | 💨 **Windon** | 200 MW | 21/27 plants | 23.7 GW | 33% |
@@ -62,9 +62,9 @@
   - **hydro**: 6.34 GW
   - **solar**: 4.58 GW
 - **EMBER data**:
+  - **bioenergy**: 1.94 GW
   - **gas**: 8.38 GW
   - **coal**: 0.6 GW
-  - **bioenergy**: 1.94 GW
 
 
 ## Model Structure
