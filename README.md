@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - ITA
-**Generated:** 2025-09-14 13:04:43
+**Generated:** 2025-09-14 13:18:03
 
 
 ## Model Calibration 2022
@@ -59,12 +59,12 @@
 - **Total Plants Processed**: 352 plants in database
 - **Missing Capacity Added**: - **EMBER data**:
   - **bioenergy**: 3.58 GW
-  - **coal**: 1.62 GW
   - **gas**: 11.79 GW
+  - **coal**: 1.62 GW
 - **IRENA data**:
-  - **solar**: 19.88 GW
-  - **windon**: 2.05 GW
   - **hydro**: 7.28 GW
+  - **windon**: 2.05 GW
+  - **solar**: 19.88 GW
 
 
 ## Model Structure
