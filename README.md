@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - ITA
-**Generated:** 2025-09-14 13:18:03
+**Generated:** 2025-09-14 13:29:42
 
 
 ## Model Calibration 2022
@@ -62,8 +62,8 @@
   - **gas**: 11.79 GW
   - **coal**: 1.62 GW
 - **IRENA data**:
-  - **hydro**: 7.28 GW
   - **windon**: 2.05 GW
+  - **hydro**: 7.28 GW
   - **solar**: 19.88 GW
 
 
