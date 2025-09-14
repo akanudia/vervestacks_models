@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - CHE
-**Generated:** 2025-09-14 22:12:00
+**Generated:** 2025-09-14 22:29:55
 
 
 ## Model Calibration 2022
@@ -58,8 +58,8 @@
   - **bioenergy**: 0.23 GW
   - **gas**: 0.13 GW
 - **IRENA data**:
-  - **hydro**: 3.18 GW
   - **solar**: 4.43 GW
+  - **hydro**: 3.18 GW
 
 
 ## Model Structure
