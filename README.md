@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - CHE
-**Generated:** 2025-09-14 22:04:08
+**Generated:** 2025-09-14 22:12:00
 
 
 ## Model Calibration 2022
@@ -54,12 +54,12 @@
 - **Total Capacity Tracked**: 25.1 GW GW from all sources
 - **Plants Above Threshold**: 55 individual plants tracked
 - **Total Plants Processed**: 112 plants in database
-- **Missing Capacity Added**: - **IRENA data**:
-  - **hydro**: 3.18 GW
-  - **solar**: 4.43 GW
-- **EMBER data**:
+- **Missing Capacity Added**: - **EMBER data**:
   - **bioenergy**: 0.23 GW
   - **gas**: 0.13 GW
+- **IRENA data**:
+  - **hydro**: 3.18 GW
+  - **solar**: 4.43 GW
 
 
 ## Model Structure
