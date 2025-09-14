@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - JPN
-**Generated:** 2025-09-14 19:43:20
+**Generated:** 2025-09-15 01:04:41
 
 
 ## Model Calibration 2022
@@ -19,13 +19,13 @@
 | 🌱 **Bioenergy** | 50 MW | 66/125 plants | 6.18 GW | 0.075 GW | 28% |
 | ⚫ **Coal** | 490 MW | 58/173 plants | 55 GW | 1.08 GW | 35% |
 | 🔥 **Gas** | 490 MW | 91/168 plants | 89 GW | — | 44% |
-| 🌋 **Geothermal** | 60 MW | 1/30 plants | 0.669 GW | — | 100% |
+| 🌋 **Geothermal** | 60 MW | 1/30 plants | 0.668 GW | — | 100% |
 | 💧 **Hydro** | 60 MW | 145/199 plants | 50 GW | — | 100% |
 | ⚛️ **Nuclear** | — | 35/35 plants | 14.4 GW | 21.5 GW | 100% |
 | 🛢️ **Oil** | 490 MW | 10/29 plants | 9.86 GW | 1.15 GW | 29% |
-| ☀️ **Solar** | 200 MW | 11/1531 plants | 88 GW | — | 100% |
-| 🌊 **Windoff** | 200 MW | 2/12 plants | 1.73 GW | — | 33% |
-| 💨 **Windon** | 200 MW | 3/163 plants | 5.73 GW | — | 33% |
+| ☀️ **Solar** | 200 MW | 61/290 plants | 88 GW | — | 100% |
+| 🌊 **Windoff** | 200 MW | 2/9 plants | 1.73 GW | — | 33% |
+| 💨 **Windon** | 200 MW | 4/126 plants | 5.73 GW | — | 33% |
 
 
 ### 🔄 CCS Retrofit Potential
@@ -54,10 +54,10 @@
 - **Spatial Grid Assignment**: Plants mapped to 50x50km REZoning grid cells for consistent spatial modeling
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 87%% of total capacity from plant-level GEM data
+- **Individual Plant Coverage**: 93%% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 344 GW GW from all sources
-- **Plants Above Threshold**: 518 individual plants tracked
-- **Total Plants Processed**: 2465 plants in database
+- **Plants Above Threshold**: 566 individual plants tracked
+- **Total Plants Processed**: 1184 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
   - **hydro**: 11.2 GW
   - **solar**: 54.33 GW
