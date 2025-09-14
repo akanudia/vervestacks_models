@@ -1,25 +1,34 @@
 # VerveStacks Model Generation Notes - CHE
-**Generated:** 2025-09-12 13:05:13
+**Generated:** 2025-09-14 21:48:14
+
+
+## Model Calibration 2022
+
+| **Total Capacity** | **Total Generation** | **CO2 Emissions** | **Calibration to EMBER** |
+|--------------|---------------|------------|--------------------------|
+| 24.7 GW | 61 TWh | 0.198 Mt | 8.8% |
+
+**Note:** 2022 fossil and bio capacity is calibrated to EMBER and renewable capacities to IRENA. UNSD has incomplete data for fuel consumption, so the calibration is demonstrated against the total CO2 emission reported by EMBER. This shows that the efficiency assumptions are good.
 
 
 ## Processing Parameters
 
 ### Individual Plant Tracking
-| **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** |
-|---------------|---------------|----------------------------|--------------------|--------------------------|
-| 🌱 **Bioenergy** | 50.0 MW | 1/1 plants | 0.2 GW | — |
-| 🔥 **Gas** | 10.0 MW | 11/11 plants | 0.2 GW | 0.3 GW |
-| 💧 **Hydro** | 10.0 MW | 81/81 plants | 16.7 GW | — |
-| ⚛️ **Nuclear** | — | 4/4 plants | 3.1 GW | — |
-| ☀️ **Solar** | 200.0 MW | 1/10 plants | 4.5 GW | — |
-| 💨 **Windon** | 200.0 MW | 0/5 plants | 0.1 GW | — |
+| **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
+|---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
+| 🌱 **Bioenergy** | 50 MW | 1/1 plants | 0.23 GW | — | 31% |
+| 🔥 **Gas** | 10 MW | 11/11 plants | 0.23 GW | 0.25 GW | 51% |
+| 💧 **Hydro** | 10 MW | 81/81 plants | 16.7 GW | — | 100% |
+| ⚛️ **Nuclear** | — | 4/4 plants | 3.1 GW | — | 100% |
+| ☀️ **Solar** | 200 MW | 1/10 plants | 4.53 GW | — | 100% |
+| 💨 **Windon** | 200 MW | 0/5 plants | 0.102 GW | — | 33% |
 
 
 ### 🔄 CCS Retrofit Potential
 | **Fuel Type** | **Retrofit Host Capacity** | **Retrofit Potential Capacity**
 |---------------|----------------------------|-------------------------------|
-| ⚫ **Coal** | 0.0 GW | 0.0 GW after capacity penalty |
-| 🔥 **Gas** | 0.5 GW | 0.4 GW after capacity penalty |
+| ⚫ **Coal** | 0 GW | 0 GW after capacity penalty |
+| 🔥 **Gas** | 0.48 GW | 0.406 GW after capacity penalty |
 
 
 ## Data, Assumptions & Coverage
@@ -41,7 +50,7 @@
 - **Spatial Grid Assignment**: Plants mapped to 50x50km REZoning grid cells for consistent spatial modeling
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 89.2%% of total capacity from plant-level GEM data
+- **Individual Plant Coverage**: 89%% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 25.1 GW GW from all sources
 - **Plants Above Threshold**: 55 individual plants tracked
 - **Total Plants Processed**: 112 plants in database
@@ -49,8 +58,8 @@
   - **solar**: 4.43 GW
   - **hydro**: 3.18 GW
 - **EMBER data**:
-  - **bioenergy**: 0.23 GW
   - **gas**: 0.13 GW
+  - **bioenergy**: 0.23 GW
 
 
 ## Model Structure
