@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - NZL
-**Generated:** 2025-09-13 17:48:33
+**Generated:** 2025-09-17 02:47:17
 
 
 ## Model Calibration 2022
@@ -22,7 +22,7 @@
 | 🌋 **Geothermal** | 10 MW | 29/31 plants | 1.43 GW | 100% |
 | 💧 **Hydro** | 10 MW | 44/44 plants | 5.68 GW | 100% |
 | ☀️ **Solar** | 200 MW | 0/15 plants | 0.69 GW | 100% |
-| 💨 **Windon** | 200 MW | 0/19 plants | 1.47 GW | 33% |
+| 💨 **Windon** | 200 MW | 1/18 plants | 1.47 GW | 33% |
 
 
 ### 🔄 CCS Retrofit Potential
@@ -53,8 +53,8 @@
 ### Data Processing Notes
 - **Individual Plant Coverage**: 73%% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 13.1 GW GW from all sources
-- **Plants Above Threshold**: 41 individual plants tracked
-- **Total Plants Processed**: 128 plants in database
+- **Plants Above Threshold**: 40 individual plants tracked
+- **Total Plants Processed**: 127 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
   - **hydro**: 0.81 GW
 - **EMBER data**:
@@ -288,16 +288,16 @@ This model employs **50×50km spatial resolution** for detailed renewable energy
 
 | **Spatial Metric** | **Value** | **Technical Detail** |
 |-------------------|-----------|---------------------|
-| **Grid Cells** | 650 | 50×50km renewable energy zones |
-| **Solar/Wind Onshore Zones** | 198 | Grid cells with solar and onshore wind potential |
+| **Grid Cells** | 649 | 50×50km renewable energy zones |
+| **Solar/Wind Onshore Zones** | 197 | Grid cells with solar and onshore wind potential |
 | **Wind Offshore Zones** | 451 | Grid cells with offshore wind potential |
-| **Zone-Bus Mappings** | 650 | REZoning zones assigned to transmission buses |
-| **Spatial Coverage** | 495000 km² | Total area covered by renewable zones |
+| **Zone-Bus Mappings** | 649 | REZoning zones assigned to transmission buses |
+| **Spatial Coverage** | 492500 km² | Total area covered by renewable zones |
 
 #### 🔌 **Spatial Commodity System**
 
 Each grid cell generates location-specific electricity commodities:
-- **Solar/Wind Onshore**: `elc_spv-NZL_001` to `elc_spv-NZL_198` (same zones for both technologies)
+- **Solar/Wind Onshore**: `elc_spv-NZL_001` to `elc_spv-NZL_197` (same zones for both technologies)
 - **Wind Offshore**: `elc_wof-NZL_001` to `elc_wof-NZL_451`
 
 This enables **grid-aware optimization** where renewable generation is constrained by:
