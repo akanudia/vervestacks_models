@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - BRA
-**Generated:** 2025-09-14 13:59:06
+**Generated:** 2025-09-17 01:24:51
 
 
 ## Model Calibration 2022
@@ -22,8 +22,8 @@
 | 💧 **Hydro** | 130 MW | 106/181 plants | 110 GW | — | 100% |
 | ⚛️ **Nuclear** | — | 3/3 plants | 3.4 GW | — | 100% |
 | 🛢️ **Oil** | 10 MW | 34/34 plants | 4.72 GW | 0.12 GW | 33% |
-| ☀️ **Solar** | 200 MW | 42/953 plants | 39.6 GW | — | 100% |
-| 💨 **Windon** | 200 MW | 61/267 plants | 37.1 GW | — | 33% |
+| ☀️ **Solar** | 200 MW | 43/342 plants | 39.6 GW | — | 100% |
+| 💨 **Windon** | 200 MW | 48/107 plants | 37.1 GW | — | 33% |
 
 
 ### 🔄 CCS Retrofit Potential
@@ -52,17 +52,17 @@
 - **Spatial Grid Assignment**: Plants mapped to 50x50km REZoning grid cells for consistent spatial modeling
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 87%% of total capacity from plant-level GEM data
+- **Individual Plant Coverage**: 90%% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 241 GW GW from all sources
-- **Plants Above Threshold**: 431 individual plants tracked
-- **Total Plants Processed**: 1845 plants in database
+- **Plants Above Threshold**: 377 individual plants tracked
+- **Total Plants Processed**: 1074 plants in database
 - **Missing Capacity Added**: - **EMBER data**:
   - **bioenergy**: 2.87 GW
-  - **gas**: 2.63 GW
   - **coal**: 0.08 GW
+  - **gas**: 2.63 GW
 - **IRENA data**:
-  - **solar**: 13.24 GW
   - **hydro**: 0.71 GW
+  - **solar**: 13.24 GW
 
 
 ## Model Structure
@@ -291,16 +291,16 @@ This model employs **50×50km spatial resolution** for detailed renewable energy
 
 | **Spatial Metric** | **Value** | **Technical Detail** |
 |-------------------|-----------|---------------------|
-| **Grid Cells** | 4576 | 50×50km renewable energy zones |
-| **Solar/Wind Onshore Zones** | 3221 | Grid cells with solar and onshore wind potential |
+| **Grid Cells** | 4575 | 50×50km renewable energy zones |
+| **Solar/Wind Onshore Zones** | 3220 | Grid cells with solar and onshore wind potential |
 | **Wind Offshore Zones** | 1353 | Grid cells with offshore wind potential |
-| **Zone-Bus Mappings** | 4576 | REZoning zones assigned to transmission buses |
-| **Spatial Coverage** | 8052500 km² | Total area covered by renewable zones |
+| **Zone-Bus Mappings** | 4575 | REZoning zones assigned to transmission buses |
+| **Spatial Coverage** | 8050000 km² | Total area covered by renewable zones |
 
 #### 🔌 **Spatial Commodity System**
 
 Each grid cell generates location-specific electricity commodities:
-- **Solar/Wind Onshore**: `elc_spv-BRA_001` to `elc_spv-BRA_3221` (same zones for both technologies)
+- **Solar/Wind Onshore**: `elc_spv-BRA_001` to `elc_spv-BRA_3220` (same zones for both technologies)
 - **Wind Offshore**: `elc_wof-BRA_001` to `elc_wof-BRA_1353`
 
 This enables **grid-aware optimization** where renewable generation is constrained by:
