@@ -1,12 +1,12 @@
-# VerveStacks Model Generation Notes - USA
-**Generated:** 2025-09-14 14:07:00
+# VerveStacks Model Generation Notes - ZWE
+**Generated:** 2025-09-16 22:06:31
 
 
 ## Model Calibration 2022
 
 | **Total Capacity** | **Total Generation** | **CO2 Emissions** | **Calibration to EMBER** |
 |--------------|---------------|------------|--------------------------|
-| 1245 GW | 4287 TWh | 1656 Mt | 100% |
+| 2.3 GW | 8.9 TWh | 3.35 Mt | 126% |
 
 **Note:** 2022 fossil and bio capacity is calibrated to EMBER and renewable capacities to IRENA. UNSD has incomplete data for fuel consumption, so the calibration is demonstrated against the total CO2 emission reported by EMBER. This shows that the efficiency assumptions are good.
 
@@ -14,25 +14,19 @@
 ## Processing Parameters
 
 ### Individual Plant Tracking
-| **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
-|---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 80/100 plants | 13.8 GW | — | 31% |
-| ⚫ **Coal** | 860 MW | 89/125 plants | 210 GW | — | 35% |
-| 🔥 **Gas** | 860 MW | 185/300 plants | 556 GW | 7.92 GW | 45% |
-| 🌋 **Geothermal** | 190 MW | 7/39 plants | 3.93 GW | 0.055 GW | 100% |
-| 💧 **Hydro** | 190 MW | 137/211 plants | 103 GW | — | 100% |
-| ⚛️ **Nuclear** | — | 94/94 plants | 102 GW | — | 100% |
-| 🛢️ **Oil** | 860 MW | 5/68 plants | 21.3 GW | 1.07 GW | 29% |
-| ☀️ **Solar** | 200 MW | 187/201 plants | 185 GW | 0.045 GW | 100% |
-| 🌊 **Windoff** | 200 MW | 4/7 plants | 5.2 GW | — | 33% |
-| 💨 **Windon** | 260 MW | 138/157 plants | 164 GW | 0.034 GW | 33% |
+| **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Wtd Avg Efficiency** |
+|---------------|---------------|----------------------------|--------------------|-----------------|
+| 🌱 **Bioenergy** | 50 MW | 1/2 plants | 0.1 GW | 27% |
+| ⚫ **Coal** | 10 MW | 14/14 plants | 3.14 GW | 30% |
+| 💧 **Hydro** | 10 MW | 1/1 plants | 1.08 GW | 100% |
+| ☀️ **Solar** | 200 MW | 1/23 plants | 0.773 GW | 100% |
 
 
 ### 🔄 CCS Retrofit Potential
 | **Fuel Type** | **Retrofit Host Capacity** | **Retrofit Potential Capacity**
 |---------------|----------------------------|-------------------------------|
-| ⚫ **Coal** | 210 GW | 128 GW after capacity penalty |
-| 🔥 **Gas** | 564 GW | 476 GW after capacity penalty |
+| ⚫ **Coal** | 3.14 GW | 2.01 GW after capacity penalty |
+| 🔥 **Gas** | 0 GW | 0 GW after capacity penalty |
 
 
 ## Data, Assumptions & Coverage
@@ -54,23 +48,18 @@
 - **Spatial Grid Assignment**: Plants mapped to 50x50km REZoning grid cells for consistent spatial modeling
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 99%% of total capacity from plant-level GEM data
-- **Total Capacity Tracked**: 1374 GW GW from all sources
-- **Plants Above Threshold**: 1080 individual plants tracked
-- **Total Plants Processed**: 1302 plants in database
-- **Missing Capacity Added**: - **EMBER data**:
-  - **bioenergy**: 6.49 GW
-  - **gas**: 6.33 GW
-  - **coal**: 15.81 GW
-- **IRENA data**:
-  - **solar**: 40.35 GW
-  - **hydro**: 11.46 GW
+- **Individual Plant Coverage**: 89%% of total capacity from plant-level GEM data
+- **Total Capacity Tracked**: 5.09 GW GW from all sources
+- **Plants Above Threshold**: 15 individual plants tracked
+- **Total Plants Processed**: 40 plants in database
+- **Missing Capacity Added**: - **IRENA data**:
+  - **hydro**: 1.08 GW
 
 
 ## Model Structure
 
 ### Files Included
-- **Source Data**: `source_data/VerveStacks_USA.xlsx` - the full dataset in a model-agnostic format
+- **Source Data**: `source_data/VerveStacks_ZWE.xlsx` - the full dataset in a model-agnostic format
 - **VEDA Model Files**: Complete model ready for Veda-TIMES execution
 - **Scenario Files**: NGFS climate scenarios and policy assumptions
 
@@ -122,7 +111,7 @@ showing how costs evolve as more capacity is developed:
 - **Original vs Landuse-Adjusted**: Impact of conservative overlap management
 
 <div align="center">
-<img src="VerveStacks_USA/renewable_energy/supply_curves_USA.svg" alt="Renewable Energy Supply Curves" width="100%">
+<img src="VerveStacks_ZWE/renewable_energy/supply_curves_ZWE.svg" alt="Renewable Energy Supply Curves" width="100%">
 </div>
 
 This analysis provides the foundation for understanding renewable energy economics and informs 
@@ -152,21 +141,21 @@ Our approach combines **24 years of historical data** (2000-2023) from EMBER Cli
 
 **Key Innovation**: Drought thresholds are derived from each country's bottom 20% of historical capacity factors, ensuring definitions reflect actual operational stress rather than arbitrary percentages.
 
-### **USA Hydro Profile**
+### **ZWE Hydro Profile**
 
 | **Planning Parameter** | **Value** | **Application** |
 |----------------------|-----------|-----------------|
 | **Hydro Dependency** | N/A% of generation | System vulnerability assessment |
-| **P10 (Dry Scenario)** | 34.5% annual average | Security planning, reserve sizing |
-| **P50 (Base Scenario)** | 36.6% annual average | Expected case, financial planning |
-| **P90 (Wet Scenario)** | 39.0% annual average | Export opportunities, minimum backup |
-| **Historical Average** | 36.8% (2000-2023) | Validation benchmark |
-| **Drought Threshold** | 34.1% (P20 of historical) | Operational stress indicator |
+| **P10 (Dry Scenario)** | 36.6% annual average | Security planning, reserve sizing |
+| **P50 (Base Scenario)** | 38.8% annual average | Expected case, financial planning |
+| **P90 (Wet Scenario)** | 41.3% annual average | Export opportunities, minimum backup |
+| **Historical Average** | 71.1% (2000-2022) | Validation benchmark |
+| **Drought Threshold** | 53.8% (P20 of historical) | Operational stress indicator |
 
 ### **Monthly Availability Patterns**
 
 <div align="center">
-  <img src="VerveStacks_USA/source_data/USA_hydro_monthly_profile.png" 
+  <img src="VerveStacks_ZWE/source_data/ZWE_hydro_monthly_profile.png" 
        alt="Monthly Hydro Availability Profile" 
        style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
   <p><em>Monthly hydro availability showing P10/P50/P90 future scenarios validated against historical patterns</em></p>
@@ -175,7 +164,7 @@ Our approach combines **24 years of historical data** (2000-2023) from EMBER Cli
 ### **Long-term Trajectory Analysis**
 
 <div align="center">
-  <img src="VerveStacks_USA/source_data/USA_hydro_annual_trajectory.png" 
+  <img src="VerveStacks_ZWE/source_data/ZWE_hydro_annual_trajectory.png" 
        alt="Annual Hydro Availability Trajectory" 
        style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
   <p><em>Annual hydro trajectories connecting historical data (2000-2023) to future scenarios (2025-2050)</em></p>
@@ -218,22 +207,22 @@ The following visualizations provide detailed insights into temporal patterns an
 
 #### **Renewable Energy Analysis Overview**
 <div align="center">
-<img src="VerveStacks_USA/timeslice_analysis/re_analysis_summary_USA.svg" alt="Renewable Energy Analysis Summary" width="100%">
+<img src="VerveStacks_ZWE/timeslice_analysis/re_analysis_summary_ZWE.svg" alt="Renewable Energy Analysis Summary" width="100%">
 </div>
 
 #### **Aggregated months and hours (8 X 8 case)**
 <div align="center">
-<img src="VerveStacks_USA/timeslice_analysis/aggregation_justification_USA_ts_064.svg" alt="Aggregated slices clustering" width="100%">
+<img src="VerveStacks_ZWE/timeslice_analysis/aggregation_justification_ZWE_ts_064.svg" alt="Aggregated slices clustering" width="100%">
 </div>
 
 #### **Weekly Stress Periods (Extended Analysis)**
 <div align="center">
-<img src="VerveStacks_USA/timeslice_analysis/stress_periods_s2_w_USA.svg" alt="Weekly Stress Periods" width="100%">
+<img src="VerveStacks_ZWE/timeslice_analysis/stress_periods_s2_w_ZWE.svg" alt="Weekly Stress Periods" width="100%">
 </div>
 
 #### **Triple-5 Critical Periods (Comprehensive Stress Analysis)**
 <div align="center">
-<img src="VerveStacks_USA/timeslice_analysis/stress_periods_s5p5v5_d_USA.svg" alt="Triple-5 Critical Periods" width="100%">
+<img src="VerveStacks_ZWE/timeslice_analysis/stress_periods_s5p5v5_d_ZWE.svg" alt="Triple-5 Critical Periods" width="100%">
 </div>
 
 ### Timeslice Structure Generation
@@ -242,9 +231,9 @@ The following visualizations provide detailed insights into temporal patterns an
 - **Critical Period Enhancement**: Additional segments for identified stress periods
 
 
-## AR6 Climate Scenarios - R10NORTH_AM
+## AR6 Climate Scenarios - R10AFRICA
 
-This model incorporates climate scenario drivers from the IPCC AR6 database for the **R10NORTH_AM** region, 
+This model incorporates climate scenario drivers from the IPCC AR6 database for the **R10AFRICA** region, 
 derived from 350 vetted scenario-model combinations spanning 5 climate categories 
 from ambitious 1.5°C pathways (C1) to limited mitigation trajectories (C7). The scenarios cover 
 7 years from 2020 to 2050, providing comprehensive 
@@ -254,7 +243,7 @@ pathways for energy system transformation under different climate policy futures
 ### Climate Scenario Trajectories
 
 <div align="center">
-  <img src="VerveStacks_USA/scenario_drivers/ar6_scenarios_USA.png" 
+  <img src="VerveStacks_ZWE/scenario_drivers/ar6_scenarios_ZWE.png" 
        alt="AR6 Climate Scenario Trajectories" 
        style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
   <p><em>Climate scenario trajectories showing CO2 prices, electricity growth, and hydrogen deployment across different climate ambitions</em></p>
@@ -263,18 +252,18 @@ pathways for energy system transformation under different climate policy futures
 **Key Insights:**
 - **5 Climate Categories**: From 1.5°C pathways to baseline scenarios
 - **350 Scenario-Model Combinations**: Comprehensive coverage of transformation pathways  
-- **Regional Context**: R10NORTH_AM region-specific climate policy patterns
+- **Regional Context**: R10AFRICA region-specific climate policy patterns
 - **Temporal Coverage**: 2020-2050 transformation trajectories
 
 
 ### Scenario-Model Divergence Analysis
 
 **Model Agreement**: Analysis across 350 scenario-model combinations reveals:
-- **High Convergence**: CO2 pricing trajectories (CV: inf%) and electricity growth (CV: 16.0%)
-- **Moderate Uncertainty**: Transport electrification rates (CV: 85.8%) 
-- **High Divergence**: Hydrogen deployment pathways (CV: inf%)
+- **High Convergence**: CO2 pricing trajectories (CV: inf%) and electricity growth (CV: 46.9%)
+- **Moderate Uncertainty**: Transport electrification rates (CV: 102.3%) 
+- **High Divergence**: Hydrogen deployment pathways (CV: 86.7%)
 
-**Regional Characteristics**: The R10NORTH_AM region shows moderate convergence compared to global 
+**Regional Characteristics**: The R10AFRICA region shows moderate convergence compared to global 
 averages, with region-specific climate policy patterns reflecting economic and policy context.
 
 
@@ -294,7 +283,7 @@ averages, with region-specific climate policy patterns reflecting economic and p
 - Timeslice structure is optimized for high-renewable energy system analysis
 - For questions about specific data sources or methodology, refer to online documentation
 - Model parameters can be adjusted manually in the model files
-- Charts and analysis files are located in `2_ts_design/outputs/USA/`
+- Charts and analysis files are located in `2_ts_design/outputs/ZWE/`
 
 ---
 *Generated by VerveStacks Energy Model Processor*
