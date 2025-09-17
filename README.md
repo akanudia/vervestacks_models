@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - CAN
-**Generated:** 2025-09-17 02:36:35
+**Generated:** 2025-09-17 10:05:02
 
 
 ## Model Calibration 2022
@@ -23,8 +23,8 @@
 | 💧 **Hydro** | 150 MW | 105/237 plants | 84 GW | — | 100% |
 | ⚛️ **Nuclear** | — | 19/19 plants | 14.6 GW | — | 100% |
 | 🛢️ **Oil** | 90 MW | 11/15 plants | 2.22 GW | 0.055 GW | 30% |
-| ☀️ **Solar** | 200 MW | 10/70 plants | 6.72 GW | — | 100% |
-| 💨 **Windon** | 200 MW | 30/144 plants | 17.7 GW | 0.151 GW | 33% |
+| ☀️ **Solar** | 200 MW | 11/65 plants | 6.72 GW | — | 100% |
+| 💨 **Windon** | 200 MW | 31/146 plants | 17.7 GW | 0.151 GW | 33% |
 
 
 ### 🔄 CCS Retrofit Potential
@@ -56,13 +56,13 @@
 - **Individual Plant Coverage**: 91%% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 160 GW GW from all sources
 - **Plants Above Threshold**: 362 individual plants tracked
-- **Total Plants Processed**: 667 plants in database
-- **Missing Capacity Added**: - **EMBER data**:
-  - **bioenergy**: 0.66 GW
-  - **coal**: 1.5 GW
-- **IRENA data**:
+- **Total Plants Processed**: 664 plants in database
+- **Missing Capacity Added**: - **IRENA data**:
   - **solar**: 2.18 GW
   - **hydro**: 1.21 GW
+- **EMBER data**:
+  - **bioenergy**: 0.66 GW
+  - **coal**: 1.5 GW
 
 
 ## Model Structure
