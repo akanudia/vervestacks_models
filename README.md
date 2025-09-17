@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - NZL
-**Generated:** 2025-09-17 02:47:17
+**Generated:** 2025-09-17 10:17:56
 
 
 ## Model Calibration 2022
@@ -55,11 +55,11 @@
 - **Total Capacity Tracked**: 13.1 GW GW from all sources
 - **Plants Above Threshold**: 40 individual plants tracked
 - **Total Plants Processed**: 127 plants in database
-- **Missing Capacity Added**: - **IRENA data**:
-  - **hydro**: 0.81 GW
-- **EMBER data**:
+- **Missing Capacity Added**: - **EMBER data**:
   - **bioenergy**: 1.15 GW
   - **gas**: 0.5 GW
+- **IRENA data**:
+  - **hydro**: 0.81 GW
 
 
 ## Model Structure
