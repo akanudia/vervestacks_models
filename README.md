@@ -29,7 +29,7 @@ Traditional Approach          	→  VerveStacks ESOM OS
 Months of model building      	→  Pre-built models ready for use
 Specialized expertise required 	→  Professional models delivered free  
 Opaque methodologies         	→  Complete output transparency
-Limited geographic coverage   	→  Global 190+ country support
+Limited geographic coverage   	→  Global 100+ country support
 Manual data integration      	→  Automated pipeline (closed-source)
 Artisanal model craft        	→  Industrial-scale automation
 User builds everything       	→  User receives finished product
@@ -65,7 +65,7 @@ Just as computer operating systems democratized computing by abstracting complex
 #### **🔧 Kernel: Data Integration Engine**
 - **8+ Global Datasets**: Seamlessly integrated and continuously updated
 - **Quality Assurance**: Built-in validation, reconciliation, and gap-filling
-- **Global Coverage**: Consistent methodology across 190+ countries
+- **Global Coverage**: Consistent methodology across 100+ countries
 - **Real-Time Updates**: Pipeline ready for new data releases
 
 #### **🎛️ Applications: Modeling Modules**
@@ -288,8 +288,6 @@ For organizations needing **structural flexibility** or **custom modifications**
 - **[Deployment Guide](docs/deployment.md)** - Setting up VerveStacks
 
 ### **Community Support**
-- **[GitHub Issues](https://github.com/your-org/VerveStacks/issues)** - Bug reports and feature requests
-- **[Discussions](https://github.com/your-org/VerveStacks/discussions)** - Community Q&A and best practices
 - **[Documentation Site](https://vervestacks.readthedocs.io)** - Comprehensive guides and tutorials
 - **Email Support**: support@vervestacks.org
 
@@ -332,16 +330,13 @@ The Energy System Operating System grows through **user-focused** community cont
 VerveStacks represents **Phase 1** of a comprehensive Energy System Operating System. Future development will expand into:
 
 ### **Phase 2: Advanced Applications**
-- **Real-Time Integration**: Live data feeds and continuous model updates
 - **AI-Powered Optimization**: Machine learning for parameter tuning
 - **Uncertainty Quantification**: Monte Carlo analysis and sensitivity testing
-- **Multi-Scale Integration**: Local to global energy system modeling
 
 ### **Phase 3: Platform Ecosystem**
 - **Plugin Architecture**: Third-party model extensions and customizations
 - **Cloud Deployment**: Web-based model generation and analysis
 - **Collaborative Modeling**: Multi-user model development and validation
-- **API Marketplace**: Ecosystem of energy modeling services and tools
 
 ### **Vision: Universal Energy Modeling**
 The ultimate goal is **universal access to credible energy system models** - where any decision-maker, anywhere in the world, can generate, understand, and apply professional-grade energy models for better energy decisions.
@@ -350,7 +345,7 @@ The ultimate goal is **universal access to credible energy system models** - whe
 
 ## 📞 **Contact & Links**
 
-- **🌐 Website**: [vervestacks.org](https://vervestacks.org)
+- **🌐 Website**: [vervestacks.org](https://vervestacks.cloud)
 - **📧 Email**: info@vervestacks.org  
 - **🐦 Twitter**: [@VerveStacks](https://twitter.com/VerveStacks)
 - **💼 LinkedIn**: [VerveStacks](https://linkedin.com/company/vervestacks)
