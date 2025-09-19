@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - ITA
-**Generated:** 2025-09-19 00:54:13
+**Generated:** 2025-09-19 18:23:41
 
 
 ## Model Calibration 2022
@@ -63,8 +63,8 @@
   - **windon**: 2.05 GW
 - **EMBER data**:
   - **bioenergy**: 3.58 GW
-  - **gas**: 9.94 GW
   - **coal**: 1.62 GW
+  - **gas**: 9.94 GW
 
 
 ## Model Structure
