@@ -1,12 +1,12 @@
 # VerveStacks Model Generation Notes - DZA
-**Generated:** 2025-09-19 23:21:44
+**Generated:** 2025-09-19 23:35:18
 
 
 ## Model Calibration 2022
 
 | **Total Capacity** | **Total Generation** | **CO2 Emissions** | **Calibration to EMBER** |
 |--------------|---------------|------------|--------------------------|
-| 24.2 GW | 88 TWh | 51 Mt | 90% |
+| 24.2 GW | 88 TWh | 56 Mt | 100% |
 
 **Note:** 2022 fossil and bio capacity is calibrated to EMBER and renewable capacities to IRENA. UNSD has incomplete data for fuel consumption, so the calibration is demonstrated against the total CO2 emission reported by EMBER. This shows that the efficiency assumptions are good.
 
@@ -16,7 +16,7 @@
 ### Individual Plant Tracking
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|-----------------|
-| 🔥 **Gas** | 100 MW | 113/115 plants | 27.7 GW | 38% |
+| 🔥 **Gas** | 100 MW | 113/115 plants | 27.7 GW | 35% |
 | 💧 **Hydro** | 10 MW | 2/2 plants | 0.172 GW | 100% |
 | ☀️ **Solar** | 200 MW | 0/34 plants | 0.576 GW | 100% |
 | 💨 **Windon** | 200 MW | 0/1 plants | 0.01 GW | 33% |
