@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - ITA
-**Generated:** 2025-09-19 20:28:31
+**Generated:** 2025-09-19 23:00:00
 
 
 ## Model Calibration 2022
@@ -63,8 +63,8 @@
   - **solar**: 19.88 GW
 - **EMBER data**:
   - **bioenergy**: 3.58 GW
-  - **gas**: 9.94 GW
   - **coal**: 1.62 GW
+  - **gas**: 9.94 GW
 
 
 ## Model Structure
