@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - JPN
-**Generated:** 2025-09-19 11:38:10
+**Generated:** 2025-09-19 12:18:02
 
 
 ## Model Calibration 2022
@@ -19,7 +19,7 @@
 | 🌱 **Bioenergy** | 50 MW | 66/125 plants | 6.18 GW | 0.075 GW | 28% |
 | ⚫ **Coal** | 490 MW | 58/173 plants | 55 GW | 1.08 GW | 35% |
 | 🔥 **Gas** | 490 MW | 91/168 plants | 89 GW | — | 44% |
-| 🌋 **Geothermal** | 60 MW | 1/30 plants | 0.669 GW | — | 100% |
+| 🌋 **Geothermal** | 60 MW | 1/30 plants | 0.668 GW | — | 100% |
 | 💧 **Hydro** | 60 MW | 145/199 plants | 50 GW | — | 100% |
 | ⚛️ **Nuclear** | — | 35/35 plants | 14.4 GW | 21.5 GW | 100% |
 | 🛢️ **Oil** | 490 MW | 10/29 plants | 9.86 GW | 1.15 GW | 29% |
