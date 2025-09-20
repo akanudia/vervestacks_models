@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - BRA
-**Generated:** 2025-09-19 23:02:31
+**Generated:** 2025-09-20 09:01:45
 
 
 ## Model Calibration 2022
@@ -23,7 +23,7 @@
 | ⚛️ **Nuclear** | — | 3/3 plants | 3.4 GW | — | 100% |
 | 🛢️ **Oil** | 10 MW | 34/34 plants | 4.72 GW | 0.12 GW | 33% |
 | ☀️ **Solar** | 200 MW | 43/344 plants | 39.6 GW | — | 100% |
-| 💨 **Windon** | 200 MW | 52/112 plants | 37.1 GW | — | 33% |
+| 💨 **Windon** | 200 MW | 52/114 plants | 37.1 GW | — | 33% |
 
 
 ### 🔄 CCS Retrofit Potential
@@ -55,14 +55,14 @@
 - **Individual Plant Coverage**: 90%% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 241 GW GW from all sources
 - **Plants Above Threshold**: 383 individual plants tracked
-- **Total Plants Processed**: 1081 plants in database
-- **Missing Capacity Added**: - **IRENA data**:
+- **Total Plants Processed**: 1083 plants in database
+- **Missing Capacity Added**: - **EMBER data**:
+  - **bioenergy**: 2.87 GW
+  - **gas**: 2.63 GW
+  - **coal**: 0.08 GW
+- **IRENA data**:
   - **solar**: 13.24 GW
   - **hydro**: 0.71 GW
-- **EMBER data**:
-  - **gas**: 2.63 GW
-  - **bioenergy**: 2.87 GW
-  - **coal**: 0.08 GW
 
 
 ## Model Structure
@@ -226,7 +226,7 @@ The following visualizations provide detailed insights into temporal patterns an
 
 #### **Weekly Stress Periods (Extended Analysis)**
 <div align="center">
-<img src="VerveStacks_BRA_grids/timeslice_analysis/stress_periods_s2_w_BRA.svg" alt="Weekly Stress Periods" width="100%">
+<img src="VerveStacks_BRA_grids/timeslice_analysis/stress_periods_s2_w_p2_d_weekly_BRA.svg" alt="Weekly Stress Periods" width="100%">
 </div>
 
 #### **Triple-5 Critical Periods (Comprehensive Stress Analysis)**
