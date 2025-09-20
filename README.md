@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - JPN
-**Generated:** 2025-09-17 16:36:53
+**Generated:** 2025-09-20 12:47:52
 
 
 ## Model Calibration 2022
@@ -58,13 +58,13 @@
 - **Total Capacity Tracked**: 344 GW GW from all sources
 - **Plants Above Threshold**: 490 individual plants tracked
 - **Total Plants Processed**: 977 plants in database
-- **Missing Capacity Added**: - **IRENA data**:
-  - **hydro**: 11.79 GW
-  - **windon**: 0.71 GW
-  - **solar**: 54.33 GW
-- **EMBER data**:
+- **Missing Capacity Added**: - **EMBER data**:
   - **coal**: 0.64 GW
   - **bioenergy**: 1.5 GW
+- **IRENA data**:
+  - **solar**: 54.33 GW
+  - **hydro**: 11.79 GW
+  - **windon**: 0.71 GW
 
 
 ## Model Structure
@@ -228,7 +228,7 @@ The following visualizations provide detailed insights into temporal patterns an
 
 #### **Weekly Stress Periods (Extended Analysis)**
 <div align="center">
-<img src="VerveStacks_JPN/timeslice_analysis/stress_periods_s2_w_JPN.svg" alt="Weekly Stress Periods" width="100%">
+<img src="VerveStacks_JPN/timeslice_analysis/stress_periods_s2_w_p2_d_weekly_JPN.svg" alt="Weekly Stress Periods" width="100%">
 </div>
 
 #### **Triple-5 Critical Periods (Comprehensive Stress Analysis)**
