@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - DZA
-**Generated:** 2025-09-19 23:35:18
+**Generated:** 2025-09-20 09:06:03
 
 
 ## Model Calibration 2022
@@ -18,7 +18,7 @@
 |---------------|---------------|----------------------------|--------------------|-----------------|
 | 🔥 **Gas** | 100 MW | 113/115 plants | 27.7 GW | 35% |
 | 💧 **Hydro** | 10 MW | 2/2 plants | 0.172 GW | 100% |
-| ☀️ **Solar** | 200 MW | 0/34 plants | 0.576 GW | 100% |
+| ☀️ **Solar** | 200 MW | 0/33 plants | 0.576 GW | 100% |
 | 💨 **Windon** | 200 MW | 0/1 plants | 0.01 GW | 33% |
 
 
@@ -51,7 +51,7 @@
 - **Individual Plant Coverage**: 97%% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 28.4 GW GW from all sources
 - **Plants Above Threshold**: 114 individual plants tracked
-- **Total Plants Processed**: 152 plants in database
+- **Total Plants Processed**: 151 plants in database
 - **Missing Capacity Added**: - **No missing capacity added** - All capacity covered by plant-level data
 
 
