@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - CHN
-**Generated:** 2025-09-20 19:24:19
+**Generated:** 2025-09-20 19:30:18
 
 
 ## Model Calibration 2022
@@ -17,7 +17,7 @@
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
 | 🌱 **Bioenergy** | 50 MW | 105/107 plants | 23.5 GW | 0.03 GW | 31% |
-| ⚫ **Coal** | 1000 MW | 416/457 plants | 1378 GW | 3.18 GW | 39% |
+| ⚫ **Coal** | 1000 MW | 416/457 plants | 1378 GW | 3.19 GW | 39% |
 | 🔥 **Gas** | 1000 MW | 32/59 plants | 196 GW | 0.2 GW | 55% |
 | 💧 **Hydro** | 1000 MW | 258/350 plants | 627 GW | — | 100% |
 | ⚛️ **Nuclear** | — | 88/88 plants | 92 GW | — | 100% |
@@ -56,12 +56,12 @@
 - **Total Capacity Tracked**: 3806 GW GW from all sources
 - **Plants Above Threshold**: 3141 individual plants tracked
 - **Total Plants Processed**: 3976 plants in database
-- **Missing Capacity Added**: - **IRENA data**:
+- **Missing Capacity Added**: - **EMBER data**:
+  - **coal**: 2.21 GW
+- **IRENA data**:
+  - **solar**: 109.96 GW
   - **hydro**: 87.82 GW
   - **windon**: 12.0 GW
-  - **solar**: 109.96 GW
-- **EMBER data**:
-  - **coal**: 2.21 GW
 
 
 ## Model Structure
