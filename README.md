@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - BRA
-**Generated:** 2025-09-17 16:11:29
+**Generated:** 2025-09-21 00:32:59
 
 
 ## Model Calibration 2022
@@ -58,11 +58,11 @@
 - **Total Plants Processed**: 837 plants in database
 - **Missing Capacity Added**: - **EMBER data**:
   - **gas**: 2.63 GW
-  - **bioenergy**: 4.01 GW
   - **coal**: 0.08 GW
+  - **bioenergy**: 4.01 GW
 - **IRENA data**:
-  - **solar**: 13.24 GW
   - **hydro**: 1.67 GW
+  - **solar**: 13.24 GW
 
 
 ## Model Structure
@@ -125,6 +125,107 @@ showing how costs evolve as more capacity is developed:
 
 This analysis provides the foundation for understanding renewable energy economics and informs 
 capacity expansion decisions in the VEDA/TIMES energy system models.
+
+
+### Renewable Energy Clustering
+
+VerveStacks employs **intelligent spatial clustering** to transform high-resolution renewable energy 
+grid cells into manageable clusters while preserving essential resource characteristics and geographic diversity.
+
+#### **Clustering Overview**
+
+| **Clustering Metric** | **Value** | **Description** |
+|----------------------|-----------|-----------------|
+| **Grid Cells Processed** | 3095 | 50×50km renewable energy grid cells |
+| **Clusters Generated** | 124 | Dynamically determined using n = cells^0.6 |
+| **Average Cluster Size** | 25.0 grid cells | Mean grid cells per cluster |
+| **Cluster Size Range** | 6 to 69 grid cells | Variation in cluster composition |
+| **Grid Definition** | Cities as transmission bus proxies | Transmission infrastructure basis |
+
+#### **Multi-Feature Clustering Algorithm**
+
+The clustering process combines multiple data dimensions to create economically and spatially coherent renewable energy zones:
+
+**Feature Weighting:**
+- **Wind Profiles**: 35% - Temporal generation patterns and variability
+- **Solar Profiles**: 35% - Complementary temporal characteristics  
+- **Grid Distance**: 20% - Infrastructure connectivity and transmission costs
+- **Spatial Coordinates**: 10% - Geographic proximity and regional coherence
+
+**Technical Implementation:**
+- **Algorithm**: Hierarchical clustering with Ward linkage
+- **Preprocessing**: PCA dimensionality reduction (50 components per technology)
+- **Standardization**: All features normalized before clustering
+- **Distance Metric**: Euclidean distance in transformed feature space
+
+#### **Capacity-Weighted Profile Aggregation**
+
+Each cluster receives a **capacity-weighted hourly profile** that preserves the temporal characteristics 
+of constituent grid cells while accounting for their relative renewable energy potential:
+
+```
+cluster_profile[hour] = Σ(grid_cell_profile[hour] × capacity_weight[cell]) / Σ(capacity_weight[cell])
+```
+
+This approach ensures that grid cells with higher renewable energy potential have proportionally 
+greater influence on the cluster's temporal generation pattern, maintaining economic rationality 
+in the aggregated profiles.
+
+#### **Geographic Hedging Benefits**
+
+**Why Clustering Matters**: Even in non-grid models, renewable energy clustering preserves critical 
+**geographic hedging** effects that are essential for realistic energy system modeling:
+
+- **Wind Resource Diversity**: Captures spatial variations in wind patterns and seasonal differences
+- **Solar Complementarity**: Preserves east-west and north-south solar resource variations
+- **Grid Connection Costs**: Maintains distance-based connection costs to transmission infrastructure
+- **Temporal Smoothing**: Geographic diversity reduces overall system variability
+
+**Universal Application**: Both grid and non-grid models use identical clustering methodology, 
+differing only in their synthetic grid definition (actual transmission vs. population centers).
+
+#### **Quality Filtering**
+
+Only economically viable renewable resources are included in the clustering process:
+- **Solar PV**: Grid cells with <5% capacity factor excluded
+- **Onshore Wind**: Grid cells with <8% capacity factor excluded
+- **Resource Focus**: Ensures clustering represents deployable potential, not theoretical maximums
+
+#### **Clustering Visualizations**
+
+The following visualizations show the spatial distribution of renewable energy clusters for each technology, 
+demonstrating how the algorithm balances resource quality, geographic diversity, and grid connectivity:
+
+**Solar PV Clustering:**
+<div align="center">
+  <img src="VerveStacks_BRA/source_data/clustering_results_BRA_solar.png" 
+       alt="Solar PV Clustering Results" 
+       style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+  <p><em>Solar PV clustering showing 124 clusters from 3095 grid cells using Cities as transmission bus proxies</em></p>
+</div>
+
+**Onshore Wind Clustering:**
+<div align="center">
+  <img src="VerveStacks_BRA/source_data/clustering_results_BRA_wind_onshore.png" 
+       alt="Onshore Wind Clustering Results" 
+       style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+  <p><em>Onshore wind clustering showing 124 clusters from 3095 grid cells using Cities as transmission bus proxies</em></p>
+</div>
+
+**Offshore Wind Clustering:**
+<div align="center">
+  <img src="VerveStacks_BRA/source_data/clustering_results_BRA_wind_offshore.png" 
+       alt="Offshore Wind Clustering Results" 
+       style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+  <p><em>Offshore wind clustering showing 124 clusters from 3095 grid cells using Cities as transmission bus proxies</em></p>
+</div>
+
+**Visualization Features:**
+- **Technology-specific clustering**: Each renewable technology clustered independently
+- **Color-coded clusters**: Each cluster shown in distinct colors
+- **Grid cell boundaries**: 50×50km renewable energy zones
+- **Transmission infrastructure**: Cities as transmission bus proxies overlaid for context
+- **Resource quality**: Cluster composition reflects capacity factor variations
 
 
 ## 💧 Hydro Availability Scenarios
@@ -221,12 +322,12 @@ The following visualizations provide detailed insights into temporal patterns an
 
 #### **Aggregated months and hours (8 X 8 case)**
 <div align="center">
-<img src="VerveStacks_BRA/timeslice_analysis/aggregation_justification_BRA_ts_064.svg" alt="Aggregated slices clustering" width="100%">
+<img src="VerveStacks_BRA/timeslice_analysis/aggregation_justification_BRA_ts_048.svg" alt="Aggregated slices clustering" width="100%">
 </div>
 
 #### **Weekly Stress Periods (Extended Analysis)**
 <div align="center">
-<img src="VerveStacks_BRA/timeslice_analysis/stress_periods_s2_w_BRA.svg" alt="Weekly Stress Periods" width="100%">
+<img src="VerveStacks_BRA/timeslice_analysis/stress_periods_s2_w_p2_d_weekly_BRA.svg" alt="Weekly Stress Periods" width="100%">
 </div>
 
 #### **Triple-5 Critical Periods (Comprehensive Stress Analysis)**
