@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - DZA
-**Generated:** 2025-09-20 09:06:03
+**Generated:** 2025-09-20 18:24:46
 
 
 ## Model Calibration 2022
@@ -18,7 +18,7 @@
 |---------------|---------------|----------------------------|--------------------|-----------------|
 | 🔥 **Gas** | 100 MW | 113/115 plants | 27.7 GW | 35% |
 | 💧 **Hydro** | 10 MW | 2/2 plants | 0.172 GW | 100% |
-| ☀️ **Solar** | 200 MW | 0/33 plants | 0.576 GW | 100% |
+| ☀️ **Solar** | 200 MW | 0/32 plants | 0.576 GW | 100% |
 | 💨 **Windon** | 200 MW | 0/1 plants | 0.01 GW | 33% |
 
 
@@ -51,7 +51,7 @@
 - **Individual Plant Coverage**: 97%% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 28.4 GW GW from all sources
 - **Plants Above Threshold**: 114 individual plants tracked
-- **Total Plants Processed**: 151 plants in database
+- **Total Plants Processed**: 150 plants in database
 - **Missing Capacity Added**: - **No missing capacity added** - All capacity covered by plant-level data
 
 
@@ -195,11 +195,11 @@ This model includes a **comprehensive grid visualization** showing the complete 
 
 | **Metric** | **Value** | **Description** |
 |------------|-----------|-----------------|
-| **Total Buses** | 306 | Transmission substations and connection points |
-| **Transmission Lines** | 416 | High-voltage transmission corridors |
-| **Voltage Levels** | 220.0, 225.0, 400.0 | Multi-level transmission system (220kV, 380kV, etc.) |
-| **Grid Coverage** | 1150256 km² | Geographic area covered by transmission network |
-| **Average Line Length** | 52658.7 km | Mean distance between connected buses |
+| **Total Buses** | 48 | Transmission substations and connection points |
+| **Transmission Lines** | 64 | High-voltage transmission corridors |
+| **Voltage Levels** | 400.0 | Multi-level transmission system (220kV, 380kV, etc.) |
+| **Grid Coverage** | 574637 km² | Geographic area covered by transmission network |
+| **Average Line Length** | 99277.1 km | Mean distance between connected buses |
 
 #### ⚡ **Power Plant Integration**
 
@@ -219,17 +219,17 @@ This model employs **50×50km spatial resolution** for detailed renewable energy
 
 | **Spatial Metric** | **Value** | **Technical Detail** |
 |-------------------|-----------|---------------------|
-| **Grid Cells** | 1453 | 50×50km renewable energy zones |
-| **Solar/Wind Onshore Zones** | 1274 | Grid cells with solar and onshore wind potential |
-| **Wind Offshore Zones** | 176 | Grid cells with offshore wind potential |
-| **Zone-Bus Mappings** | 1453 | REZoning zones assigned to transmission buses |
-| **Spatial Coverage** | 3185000 km² | Total area covered by renewable zones |
+| **Grid Cells** | 1202 | 50×50km renewable energy zones |
+| **Solar/Wind Onshore Zones** | 1095 | Grid cells with solar and onshore wind potential |
+| **Wind Offshore Zones** | 105 | Grid cells with offshore wind potential |
+| **Zone-Bus Mappings** | 1202 | REZoning zones assigned to transmission buses |
+| **Spatial Coverage** | 2737500 km² | Total area covered by renewable zones |
 
 #### 🔌 **Spatial Commodity System**
 
 Each grid cell generates location-specific electricity commodities:
-- **Solar/Wind Onshore**: `elc_spv-DZA_001` to `elc_spv-DZA_1274` (same zones for both technologies)
-- **Wind Offshore**: `elc_wof-DZA_001` to `elc_wof-DZA_176`
+- **Solar/Wind Onshore**: `elc_spv-DZA_001` to `elc_spv-DZA_1095` (same zones for both technologies)
+- **Wind Offshore**: `elc_wof-DZA_001` to `elc_wof-DZA_105`
 
 This enables **grid-aware optimization** where renewable generation is constrained by:
 - Transmission capacity between zones
@@ -246,11 +246,11 @@ Industrial electricity demand is spatially distributed across the transmission n
 
 | **Load Distribution Method** | **Buses with Load** | **Total Industrial Load** | **Methodology** |
 |------------------------------|---------------------|---------------------------|-----------------|
-| **Voronoi Tessellation** | 88 | 1.0 GW | Geometric proximity-based allocation |
+| **Voronoi Tessellation** | 18 | 1.0 GW | Geometric proximity-based allocation |
 
 #### 📈 **Load Concentration Analysis**
 
-- **Highest Load Bus**: way/107655510-220 (0.13 GW)
+- **Highest Load Bus**: DZ13-400 (0.22 GW)
 - **Load Distribution CV**: 0% (coefficient of variation)
 - **Load Balancing**: Balanced distribution across transmission buses
 
