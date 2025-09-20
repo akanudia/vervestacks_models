@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - CHN
-**Generated:** 2025-09-13 16:46:55
+**Generated:** 2025-09-20 16:08:24
 
 
 ## Model Calibration 2022
@@ -21,9 +21,9 @@
 | 🔥 **Gas** | 1000 MW | 32/59 plants | 196 GW | 0.2 GW | 55% |
 | 💧 **Hydro** | 1000 MW | 258/350 plants | 627 GW | — | 100% |
 | ⚛️ **Nuclear** | — | 88/88 plants | 92 GW | — | 100% |
-| ☀️ **Solar** | 500 MW | 246/257 plants | 847 GW | 0.05 GW | 100% |
-| 🌊 **Windoff** | 200 MW | 162/171 plants | 65 GW | — | 33% |
-| 💨 **Windon** | 360 MW | 221/224 plants | 572 GW | 2.64 GW | 33% |
+| ☀️ **Solar** | 500 MW | 557/1441 plants | 847 GW | 0.05 GW | 100% |
+| 🌊 **Windoff** | 200 MW | 160/181 plants | 65 GW | — | 33% |
+| 💨 **Windon** | 360 MW | 538/1293 plants | 572 GW | 2.64 GW | 33% |
 
 
 ### 🔄 CCS Retrofit Potential
@@ -52,16 +52,16 @@
 - **Spatial Grid Assignment**: Plants mapped to 50x50km REZoning grid cells for consistent spatial modeling
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 100%% of total capacity from plant-level GEM data
+- **Individual Plant Coverage**: 99%% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 3806 GW GW from all sources
-- **Plants Above Threshold**: 1596 individual plants tracked
-- **Total Plants Processed**: 1713 plants in database
-- **Missing Capacity Added**: - **EMBER data**:
-  - **coal**: 2.21 GW
-- **IRENA data**:
-  - **solar**: 109.96 GW
+- **Plants Above Threshold**: 3141 individual plants tracked
+- **Total Plants Processed**: 3976 plants in database
+- **Missing Capacity Added**: - **IRENA data**:
   - **windon**: 12.0 GW
+  - **solar**: 109.96 GW
   - **hydro**: 87.82 GW
+- **EMBER data**:
+  - **coal**: 2.21 GW
 
 
 ## Model Structure
@@ -225,7 +225,7 @@ The following visualizations provide detailed insights into temporal patterns an
 
 #### **Weekly Stress Periods (Extended Analysis)**
 <div align="center">
-<img src="VerveStacks_CHN/timeslice_analysis/stress_periods_s2_w_CHN.svg" alt="Weekly Stress Periods" width="100%">
+<img src="VerveStacks_CHN/timeslice_analysis/stress_periods_s2_w_p2_d_weekly_CHN.svg" alt="Weekly Stress Periods" width="100%">
 </div>
 
 #### **Triple-5 Critical Periods (Comprehensive Stress Analysis)**
