@@ -1,12 +1,12 @@
 # VerveStacks Model Generation Notes - CHN
-**Generated:** 2025-09-20 19:30:18
+**Generated:** 2025-09-20 19:36:46
 
 
 ## Model Calibration 2022
 
 | **Total Capacity** | **Total Generation** | **CO2 Emissions** | **Calibration to EMBER** |
 |--------------|---------------|------------|--------------------------|
-| 2469 GW | 8777 TWh | 4853 Mt | 93% |
+| 2469 GW | 8777 TWh | 5219 Mt | 101% |
 
 **Note:** 2022 fossil and bio capacity is calibrated to EMBER and renewable capacities to IRENA. UNSD has incomplete data for fuel consumption, so the calibration is demonstrated against the total CO2 emission reported by EMBER. This shows that the efficiency assumptions are good.
 
@@ -16,9 +16,9 @@
 ### Individual Plant Tracking
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 105/107 plants | 23.5 GW | 0.03 GW | 31% |
-| ⚫ **Coal** | 1000 MW | 416/457 plants | 1378 GW | 3.19 GW | 39% |
-| 🔥 **Gas** | 1000 MW | 32/59 plants | 196 GW | 0.2 GW | 55% |
+| 🌱 **Bioenergy** | 50 MW | 105/107 plants | 23.5 GW | 0.03 GW | 29% |
+| ⚫ **Coal** | 1000 MW | 416/457 plants | 1378 GW | 3.18 GW | 36% |
+| 🔥 **Gas** | 1000 MW | 32/59 plants | 196 GW | 0.2 GW | 51% |
 | 💧 **Hydro** | 1000 MW | 258/350 plants | 627 GW | — | 100% |
 | ⚛️ **Nuclear** | — | 88/88 plants | 92 GW | — | 100% |
 | ☀️ **Solar** | 500 MW | 557/1441 plants | 847 GW | 0.05 GW | 100% |
@@ -56,12 +56,12 @@
 - **Total Capacity Tracked**: 3806 GW GW from all sources
 - **Plants Above Threshold**: 3141 individual plants tracked
 - **Total Plants Processed**: 3976 plants in database
-- **Missing Capacity Added**: - **EMBER data**:
-  - **coal**: 2.21 GW
-- **IRENA data**:
-  - **solar**: 109.96 GW
+- **Missing Capacity Added**: - **IRENA data**:
   - **hydro**: 87.82 GW
   - **windon**: 12.0 GW
+  - **solar**: 109.96 GW
+- **EMBER data**:
+  - **coal**: 2.21 GW
 
 
 ## Model Structure
@@ -135,11 +135,11 @@ grid cells into manageable clusters while preserving essential resource characte
 
 | **Clustering Metric** | **Value** | **Description** |
 |----------------------|-----------|-----------------|
-| **Grid Cells Processed** | {total_grid_cells} | 50×50km renewable energy grid cells |
-| **Clusters Generated** | {n_clusters} | Dynamically determined using n = cells^0.6 |
-| **Average Cluster Size** | {avg_cluster_size} grid cells | Mean grid cells per cluster |
-| **Cluster Size Range** | {cluster_size_range} grid cells | Variation in cluster composition |
-| **Grid Definition** | {data_source_description} | Transmission infrastructure basis |
+| **Grid Cells Processed** | 3601 | 50×50km renewable energy grid cells |
+| **Clusters Generated** | 136 | Dynamically determined using n = cells^0.6 |
+| **Average Cluster Size** | 26.5 grid cells | Mean grid cells per cluster |
+| **Cluster Size Range** | 5 to 86 grid cells | Variation in cluster composition |
+| **Grid Definition** | Cities as transmission bus proxies | Transmission infrastructure basis |
 
 #### **Multi-Feature Clustering Algorithm**
 
@@ -197,33 +197,33 @@ demonstrating how the algorithm balances resource quality, geographic diversity,
 
 **Solar PV Clustering:**
 <div align="center">
-  <img src="{model_folder_name}/source_data/clustering_results_{iso_code}_solar.png" 
+  <img src="VerveStacks_CHN/source_data/clustering_results_CHN_solar.png" 
        alt="Solar PV Clustering Results" 
        style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-  <p><em>Solar PV clustering showing {n_clusters} clusters from {total_grid_cells} grid cells using {data_source_description}</em></p>
+  <p><em>Solar PV clustering showing 136 clusters from 3601 grid cells using Cities as transmission bus proxies</em></p>
 </div>
 
 **Onshore Wind Clustering:**
 <div align="center">
-  <img src="{model_folder_name}/source_data/clustering_results_{iso_code}_wind_onshore.png" 
+  <img src="VerveStacks_CHN/source_data/clustering_results_CHN_wind_onshore.png" 
        alt="Onshore Wind Clustering Results" 
        style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-  <p><em>Onshore wind clustering showing {n_clusters} clusters from {total_grid_cells} grid cells using {data_source_description}</em></p>
+  <p><em>Onshore wind clustering showing 136 clusters from 3601 grid cells using Cities as transmission bus proxies</em></p>
 </div>
 
 **Offshore Wind Clustering:**
 <div align="center">
-  <img src="{model_folder_name}/source_data/clustering_results_{iso_code}_wind_offshore.png" 
+  <img src="VerveStacks_CHN/source_data/clustering_results_CHN_wind_offshore.png" 
        alt="Offshore Wind Clustering Results" 
        style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-  <p><em>Offshore wind clustering showing {n_clusters} clusters from {total_grid_cells} grid cells using {data_source_description}</em></p>
+  <p><em>Offshore wind clustering showing 136 clusters from 3601 grid cells using Cities as transmission bus proxies</em></p>
 </div>
 
 **Visualization Features:**
 - **Technology-specific clustering**: Each renewable technology clustered independently
 - **Color-coded clusters**: Each cluster shown in distinct colors
 - **Grid cell boundaries**: 50×50km renewable energy zones
-- **Transmission infrastructure**: {data_source_description} overlaid for context
+- **Transmission infrastructure**: Cities as transmission bus proxies overlaid for context
 - **Resource quality**: Cluster composition reflects capacity factor variations
 
 
