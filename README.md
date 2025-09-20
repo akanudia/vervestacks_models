@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - JPN
-**Generated:** 2025-09-19 23:05:23
+**Generated:** 2025-09-20 09:04:12
 
 
 ## Model Calibration 2022
@@ -17,7 +17,7 @@
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
 | 🌱 **Bioenergy** | 50 MW | 66/125 plants | 6.18 GW | 0.075 GW | 28% |
-| ⚫ **Coal** | 490 MW | 58/173 plants | 55 GW | 1.08 GW | 35% |
+| ⚫ **Coal** | 490 MW | 58/174 plants | 55 GW | 1.08 GW | 35% |
 | 🔥 **Gas** | 490 MW | 91/168 plants | 89 GW | — | 44% |
 | 🌋 **Geothermal** | 60 MW | 1/30 plants | 0.669 GW | — | 100% |
 | 💧 **Hydro** | 60 MW | 145/199 plants | 50 GW | — | 100% |
@@ -57,13 +57,13 @@
 - **Individual Plant Coverage**: 93%% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 344 GW GW from all sources
 - **Plants Above Threshold**: 577 individual plants tracked
-- **Total Plants Processed**: 1223 plants in database
-- **Missing Capacity Added**: - **EMBER data**:
-  - **bioenergy**: 0.72 GW
-- **IRENA data**:
+- **Total Plants Processed**: 1224 plants in database
+- **Missing Capacity Added**: - **IRENA data**:
   - **hydro**: 11.2 GW
-  - **solar**: 54.33 GW
   - **windon**: 0.71 GW
+  - **solar**: 54.33 GW
+- **EMBER data**:
+  - **bioenergy**: 0.72 GW
 
 
 ## Model Structure
@@ -227,7 +227,7 @@ The following visualizations provide detailed insights into temporal patterns an
 
 #### **Weekly Stress Periods (Extended Analysis)**
 <div align="center">
-<img src="VerveStacks_JPN_grids/timeslice_analysis/stress_periods_s2_w_JPN.svg" alt="Weekly Stress Periods" width="100%">
+<img src="VerveStacks_JPN_grids/timeslice_analysis/stress_periods_s2_w_p2_d_weekly_JPN.svg" alt="Weekly Stress Periods" width="100%">
 </div>
 
 #### **Triple-5 Critical Periods (Comprehensive Stress Analysis)**
