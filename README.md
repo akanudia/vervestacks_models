@@ -1,12 +1,12 @@
 # VerveStacks Model Generation Notes - BRA
-**Generated:** 2025-09-21 15:06:52
+**Generated:** 2025-09-22 02:32:56
 
 
 ## Model Calibration 2022
 
 | **Total Capacity** | **Total Generation** | **CO2 Emissions** | **Calibration to EMBER** |
 |--------------|---------------|------------|--------------------------|
-| 205 GW | 677 TWh | 36.6 Mt | 52% |
+| 205 GW | 677 TWh | 38 Mt | 54% |
 
 **Note:** 2022 fossil and bio capacity is calibrated to EMBER and renewable capacities to IRENA. UNSD has incomplete data for fuel consumption, so the calibration is demonstrated against the total CO2 emission reported by EMBER. This shows that the efficiency assumptions are good.
 
@@ -16,21 +16,22 @@
 ### Individual Plant Tracking
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 156/297 plants | 18.1 GW | 0.157 GW | 29% |
-| ⚫ **Coal** | 10 MW | 17/17 plants | 3.18 GW | — | 34% |
-| 🔥 **Gas** | 10 MW | 93/93 plants | 24.5 GW | — | 51% |
-| 💧 **Hydro** | 130 MW | 106/181 plants | 110 GW | — | 100% |
+| 🌱 **Bioenergy** | 50 MW | 162/315 plants | 19.3 GW | 0.157 GW | 29% |
+| ⚫ **Coal** | 10 MW | 20/20 plants | 3.78 GW | — | 34% |
+| 🔥 **Gas** | 10 MW | 128/128 plants | 50 GW | — | 47% |
+| 💧 **Hydro** | 130 MW | 130/218 plants | 130 GW | — | 99% |
 | ⚛️ **Nuclear** | — | 3/3 plants | 3.4 GW | — | 100% |
 | 🛢️ **Oil** | 10 MW | 34/34 plants | 4.72 GW | 0.12 GW | 33% |
-| ☀️ **Solar** | 200 MW | 43/344 plants | 39.6 GW | — | 100% |
-| 💨 **Windon** | 200 MW | 52/114 plants | 37.1 GW | — | 33% |
+| ☀️ **Solar** | 200 MW | 97/400 plants | 185 GW | — | 65% |
+| 🌊 **Windoff** | 200 MW | 98/98 plants | 234 GW | — | — |
+| 💨 **Windon** | 200 MW | 88/161 plants | 78 GW | — | 33% |
 
 
 ### 🔄 CCS Retrofit Potential
 | **Fuel Type** | **Retrofit Host Capacity** | **Retrofit Potential Capacity**
 |---------------|----------------------------|-------------------------------|
-| ⚫ **Coal** | 3.18 GW | 1.97 GW after capacity penalty |
-| 🔥 **Gas** | 24.5 GW | 20.7 GW after capacity penalty |
+| ⚫ **Coal** | 3.78 GW | 2.32 GW after capacity penalty |
+| 🔥 **Gas** | 50 GW | 42.5 GW after capacity penalty |
 
 
 ## Data, Assumptions & Coverage
@@ -52,17 +53,17 @@
 - **Spatial Grid Assignment**: Plants mapped to 50x50km REZoning grid cells for consistent spatial modeling
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 90%% of total capacity from plant-level GEM data
-- **Total Capacity Tracked**: 241 GW GW from all sources
-- **Plants Above Threshold**: 383 individual plants tracked
-- **Total Plants Processed**: 1083 plants in database
+- **Individual Plant Coverage**: 96%% of total capacity from plant-level GEM data
+- **Total Capacity Tracked**: 709 GW GW from all sources
+- **Plants Above Threshold**: 644 individual plants tracked
+- **Total Plants Processed**: 1377 plants in database
 - **Missing Capacity Added**: - **EMBER data**:
-  - **gas**: 2.63 GW
-  - **bioenergy**: 2.87 GW
+  - **bioenergy**: 2.69 GW
   - **coal**: 0.08 GW
+  - **gas**: 2.63 GW
 - **IRENA data**:
-  - **hydro**: 0.71 GW
   - **solar**: 13.24 GW
+  - **hydro**: 0.67 GW
 
 
 ## Model Structure
@@ -139,7 +140,7 @@ grid cells into manageable clusters while preserving essential resource characte
 | **Grid Cells Processed** | 4575 | 50×50km renewable energy grid cells |
 | **Clusters Generated** | 115 | Dynamically determined using n = cells^0.6 |
 | **Average Cluster Size** | 23.7 grid cells | Mean grid cells per cluster |
-| **Cluster Size Range** | 7 to 70 grid cells | Variation in cluster composition |
+| **Cluster Size Range** | 7 to 58 grid cells | Variation in cluster composition |
 | **Grid Definition** | Infrastructure-based transmission buses | Transmission infrastructure basis |
 
 #### **Multi-Feature Clustering Algorithm**
@@ -378,7 +379,7 @@ This model includes a **comprehensive grid visualization** showing the complete 
 
 | **Integration Type** | **Count** | **Total Capacity** | **Description** |
 |---------------------|-----------|-------------------|-----------------|
-| **Plants Mapped to Buses** | 2518 | 2518 GW | GEM power plants assigned to grid locations |
+| **Plants Mapped to Buses** | 3196 | 3196 GW | GEM power plants assigned to grid locations |
 | **Renewable Plants** | 0 | 0 GW | Solar, wind, hydro plants on the grid |
 | **Conventional Plants** | 0 | 0 GW | Coal, gas, nuclear plants on the grid |
 | **Clustering Efficiency** | 0.0% | - | Bus reduction achieved through DBSCAN clustering |
