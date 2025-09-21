@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - BRA
-**Generated:** 2025-09-21 00:19:20
+**Generated:** 2025-09-21 15:06:52
 
 
 ## Model Calibration 2022
@@ -61,8 +61,8 @@
   - **bioenergy**: 2.87 GW
   - **coal**: 0.08 GW
 - **IRENA data**:
-  - **solar**: 13.24 GW
   - **hydro**: 0.71 GW
+  - **solar**: 13.24 GW
 
 
 ## Model Structure
