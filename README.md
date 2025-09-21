@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - BRA
-**Generated:** 2025-09-22 02:55:50
+**Generated:** 2025-09-22 03:14:02
 
 
 ## Model Calibration 2022
@@ -22,9 +22,9 @@
 | 💧 **Hydro** | 130 MW | 130/218 plants | 130 GW | — | 99% |
 | ⚛️ **Nuclear** | — | 3/3 plants | 3.4 GW | — | 100% |
 | 🛢️ **Oil** | 10 MW | 34/34 plants | 4.72 GW | 0.12 GW | 33% |
-| ☀️ **Solar** | 200 MW | 97/400 plants | 185 GW | — | 65% |
+| ☀️ **Solar** | 200 MW | 92/401 plants | 185 GW | — | 65% |
 | 🌊 **Windoff** | 200 MW | 98/98 plants | 234 GW | — | — |
-| 💨 **Windon** | 200 MW | 88/161 plants | 78 GW | — | 33% |
+| 💨 **Windon** | 200 MW | 92/161 plants | 78 GW | — | 100% |
 
 
 ### 🔄 CCS Retrofit Potential
@@ -56,11 +56,11 @@
 - **Individual Plant Coverage**: 96%% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 709 GW GW from all sources
 - **Plants Above Threshold**: 644 individual plants tracked
-- **Total Plants Processed**: 1377 plants in database
+- **Total Plants Processed**: 1378 plants in database
 - **Missing Capacity Added**: - **EMBER data**:
   - **bioenergy**: 2.69 GW
-  - **coal**: 0.08 GW
   - **gas**: 2.63 GW
+  - **coal**: 0.08 GW
 - **IRENA data**:
   - **solar**: 13.24 GW
   - **hydro**: 0.67 GW
@@ -140,7 +140,7 @@ grid cells into manageable clusters while preserving essential resource characte
 | **Grid Cells Processed** | 4575 | 50×50km renewable energy grid cells |
 | **Clusters Generated** | 115 | Dynamically determined using n = cells^0.6 |
 | **Average Cluster Size** | 23.7 grid cells | Mean grid cells per cluster |
-| **Cluster Size Range** | 7 to 58 grid cells | Variation in cluster composition |
+| **Cluster Size Range** | 7 to 55 grid cells | Variation in cluster composition |
 | **Grid Definition** | Infrastructure-based transmission buses | Transmission infrastructure basis |
 
 #### **Multi-Feature Clustering Algorithm**
