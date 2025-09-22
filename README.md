@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - ITA
-**Generated:** 2025-09-22 11:56:08
+**Generated:** 2025-09-22 13:10:35
 
 
 ## Model Calibration 2022
@@ -26,6 +26,7 @@
 | ☀️ **Solar** | 200 MW | 12/78 plants | 25.7 GW | — | 46% |
 | 🌊 **Windoff** | 200 MW | 0/1 plants | 0.03 GW | — | 100% |
 | 💨 **Windon** | 200 MW | 14/136 plants | 12.3 GW | — | 88% |
+| 🔋 **Pumped Storage** | 40 MW | 19/19 plants | 7.56 GW | — | — |
 
 
 ### Future Projects
@@ -36,6 +37,7 @@
 | ☀️ **Solar** | 200 MW | 8/20 plants | 4.08 GW | 46% |
 | 🌊 **Windoff** | 200 MW | 49/49 plants | 45.4 GW | 100% |
 | 💨 **Windon** | 200 MW | 0/8 plants | 0.738 GW | 88% |
+| 🔋 **Pumped Storage** | 40 MW | 1/1 plants | 0.27 GW | — |
 
 
 Announced and pre-construction projects are offered as options to the model for endogenous investment. This is particularly useful for hydro and pumped storage as country-wise potential is not readily available. We also get grid locations of all these units.
@@ -75,8 +77,8 @@ Announced and pre-construction projects are offered as options to the model for 
   - **solar**: 19.88 GW
   - **windon**: 2.05 GW
 - **EMBER data**:
-  - **bioenergy**: 3.58 GW
   - **gas**: 9.64 GW
+  - **bioenergy**: 3.58 GW
   - **coal**: 1.62 GW
 
 
