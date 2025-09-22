@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - ITA
-**Generated:** 2025-09-22 13:10:35
+**Generated:** 2025-09-22 14:02:08
 
 
 ## Model Calibration 2022
@@ -17,27 +17,27 @@
 
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 14/18 plants | 4.17 GW | — | 29% |
-| ⚫ **Coal** | 150 MW | 14/14 plants | 6.81 GW | — | 33% |
-| 🔥 **Gas** | 150 MW | 138/239 plants | 59 GW | 0.782 GW | 42% |
+| 🌱 **Bioenergy** | 50 MW | 14/18 plants | 4.17 GW | — | 29.5% |
+| ⚫ **Coal** | 150 MW | 14/14 plants | 6.81 GW | — | 32.9% |
+| 🔥 **Gas** | 150 MW | 138/239 plants | 59 GW | 0.782 GW | 42.4% |
 | 🌋 **Geothermal** | 40 MW | 9/27 plants | 0.834 GW | — | 100% |
-| 💧 **Hydro Power** | 40 MW | 107/116 plants | 15.4 GW | — | 79% |
-| 🛢️ **Oil** | 150 MW | 7/15 plants | 2.13 GW | 0.08 GW | 27% |
-| ☀️ **Solar** | 200 MW | 12/78 plants | 25.7 GW | — | 46% |
+| 💧 **Hydro Power** | 40 MW | 107/116 plants | 15.4 GW | — | 68% |
+| 🛢️ **Oil** | 150 MW | 7/15 plants | 2.13 GW | 0.08 GW | 26.9% |
+| ☀️ **Solar** | 200 MW | 12/78 plants | 25.7 GW | — | 48.3% |
 | 🌊 **Windoff** | 200 MW | 0/1 plants | 0.03 GW | — | 100% |
-| 💨 **Windon** | 200 MW | 14/136 plants | 12.3 GW | — | 88% |
-| 🔋 **Pumped Storage** | 40 MW | 19/19 plants | 7.56 GW | — | — |
+| 💨 **Windon** | 200 MW | 14/136 plants | 12.3 GW | — | 89% |
+| 🔋 **Pumped Storage** | 40 MW | 19/19 plants | 7.56 GW | — | 100% |
 
 
-### Future Projects
+### Future Projects (offered for endogenous selection)
 
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Total Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|-----------------|
-| 🔥 **Gas** | 150 MW | 8/14 plants | 5.2 GW | 42% |
-| ☀️ **Solar** | 200 MW | 8/20 plants | 4.08 GW | 46% |
+| 🔥 **Gas** | 150 MW | 8/14 plants | 5.2 GW | 45.3% |
+| ☀️ **Solar** | 200 MW | 8/20 plants | 4.08 GW | 100% |
 | 🌊 **Windoff** | 200 MW | 49/49 plants | 45.4 GW | 100% |
-| 💨 **Windon** | 200 MW | 0/8 plants | 0.738 GW | 88% |
-| 🔋 **Pumped Storage** | 40 MW | 1/1 plants | 0.27 GW | — |
+| 💨 **Windon** | 200 MW | 0/8 plants | 0.738 GW | 100% |
+| 🔋 **Pumped Storage** | 40 MW | 1/1 plants | 0.27 GW | 100% |
 
 
 Announced and pre-construction projects are offered as options to the model for endogenous investment. This is particularly useful for hydro and pumped storage as country-wise potential is not readily available. We also get grid locations of all these units.
@@ -74,12 +74,12 @@ Announced and pre-construction projects are offered as options to the model for 
 - **Total Plants Processed**: 755 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
   - **hydro**: 7.04 GW
-  - **solar**: 19.88 GW
   - **windon**: 2.05 GW
+  - **solar**: 19.88 GW
 - **EMBER data**:
+  - **coal**: 1.62 GW
   - **gas**: 9.64 GW
   - **bioenergy**: 3.58 GW
-  - **coal**: 1.62 GW
 
 
 ## Model Structure
