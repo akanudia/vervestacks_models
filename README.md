@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - BRA
-**Generated:** 2025-09-22 10:50:17
+**Generated:** 2025-09-22 11:21:10
 
 
 ## Model Calibration 2022
@@ -11,7 +11,7 @@
 **Note:** 2022 fossil and bio capacity is calibrated to EMBER and renewable capacities to IRENA. UNSD has incomplete data for fuel consumption, so the calibration is demonstrated against the total CO2 emission reported by EMBER. This shows that the efficiency assumptions are good.
 
 
-## Processing Parameters
+## Power Generation Assets
 
 ### Existing Capacity
 
@@ -72,13 +72,13 @@ Announced and pre-construction projects are offered as options to the model for 
 - **Total Capacity Tracked**: 709 GW GW from all sources
 - **Plants Above Threshold**: 645 individual plants tracked
 - **Total Plants Processed**: 1380 plants in database
-- **Missing Capacity Added**: - **IRENA data**:
+- **Missing Capacity Added**: - **EMBER data**:
+  - **bioenergy**: 2.69 GW
+  - **coal**: 0.08 GW
+  - **gas**: 2.63 GW
+- **IRENA data**:
   - **solar**: 13.24 GW
   - **hydro**: 0.67 GW
-- **EMBER data**:
-  - **bioenergy**: 2.69 GW
-  - **gas**: 2.63 GW
-  - **coal**: 0.08 GW
 
 
 ## Model Structure
