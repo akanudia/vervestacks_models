@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - BRA
-**Generated:** 2025-09-22 13:08:27
+**Generated:** 2025-09-22 13:59:48
 
 
 ## Model Calibration 2022
@@ -19,24 +19,24 @@
 |---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
 | 🌱 **Bioenergy** | 50 MW | 152/300 plants | 18.1 GW | 0.157 GW | 29% |
 | ⚫ **Coal** | 10 MW | 18/18 plants | 3.18 GW | — | 34% |
-| 🔥 **Gas** | 10 MW | 98/98 plants | 24.5 GW | — | 47% |
+| 🔥 **Gas** | 10 MW | 98/98 plants | 24.5 GW | — | 47.7% |
 | 💧 **Hydro Power** | 130 MW | 106/184 plants | 110 GW | — | 99% |
 | ⚛️ **Nuclear** | — | 3/3 plants | 3.4 GW | — | 100% |
-| 🛢️ **Oil** | 10 MW | 34/34 plants | 4.72 GW | 0.12 GW | 33% |
-| ☀️ **Solar** | 200 MW | 41/340 plants | 39.6 GW | — | 65% |
+| 🛢️ **Oil** | 10 MW | 34/34 plants | 4.72 GW | 0.12 GW | 32.8% |
+| ☀️ **Solar** | 200 MW | 41/340 plants | 39.6 GW | — | 78% |
 | 💨 **Windon** | 200 MW | 54/119 plants | 37.1 GW | — | 100% |
 
 
-### Future Projects
+### Future Projects (offered for endogenous selection)
 
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Total Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 10/15 plants | 1.21 GW | 29% |
-| ⚫ **Coal** | 10 MW | 2/2 plants | 0.6 GW | 34% |
-| 🔥 **Gas** | 10 MW | 30/30 plants | 25.9 GW | 47% |
-| 💧 **Hydro Power** | 130 MW | 24/34 plants | 20.7 GW | 99% |
-| ☀️ **Solar** | 200 MW | 52/62 plants | 145 GW | 65% |
-| 🌊 **Windoff** | 200 MW | 98/98 plants | 234 GW | — |
+| 🌱 **Bioenergy** | 50 MW | 10/15 plants | 1.21 GW | 31.9% |
+| ⚫ **Coal** | 10 MW | 2/2 plants | 0.6 GW | 32.6% |
+| 🔥 **Gas** | 10 MW | 30/30 plants | 25.9 GW | 51% |
+| 💧 **Hydro Power** | 130 MW | 24/34 plants | 20.7 GW | 100% |
+| ☀️ **Solar** | 200 MW | 52/62 plants | 145 GW | 100% |
+| 🌊 **Windoff** | 200 MW | 98/98 plants | 234 GW | 100% |
 | 💨 **Windon** | 200 MW | 38/43 plants | 40.9 GW | 100% |
 
 
@@ -73,9 +73,9 @@ Announced and pre-construction projects are offered as options to the model for 
 - **Plants Above Threshold**: 645 individual plants tracked
 - **Total Plants Processed**: 1380 plants in database
 - **Missing Capacity Added**: - **EMBER data**:
+  - **gas**: 2.63 GW
   - **bioenergy**: 2.69 GW
   - **coal**: 0.08 GW
-  - **gas**: 2.63 GW
 - **IRENA data**:
   - **solar**: 13.24 GW
   - **hydro**: 0.67 GW
