@@ -1,37 +1,52 @@
 # VerveStacks Model Generation Notes - ITA
-**Generated:** 2025-09-21 00:36:25
+**Generated:** 2025-09-22 22:16:49
 
 
 ## Model Calibration 2022
 
 | **Total Capacity** | **Total Generation** | **CO2 Emissions** | **Calibration to EMBER** |
 |--------------|---------------|------------|--------------------------|
-| 130 GW | 280 TWh | 106 Mt | 100% |
+| 130 GW | 280 TWh | 116 Mt | 110% |
 
 **Note:** 2022 fossil and bio capacity is calibrated to EMBER and renewable capacities to IRENA. UNSD has incomplete data for fuel consumption, so the calibration is demonstrated against the total CO2 emission reported by EMBER. This shows that the efficiency assumptions are good.
 
 
-## Processing Parameters
+## Power Generation Assets
 
-### Individual Plant Tracking
+### Existing Capacity
+
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 7/10 plants | 4.17 GW | — | 30% |
-| ⚫ **Coal** | 150 MW | 11/11 plants | 6.81 GW | — | 34% |
-| 🔥 **Gas** | 150 MW | 105/146 plants | 59 GW | 0.782 GW | 47% |
+| 🌱 **Bioenergy** | 50 MW | 7/10 plants | 4.17 GW | — | 29.8% |
+| ⚫ **Coal** | 150 MW | 11/11 plants | 6.81 GW | — | 32.9% |
+| 🔥 **Gas** | 150 MW | 105/146 plants | 59 GW | 0.782 GW | 42.4% |
 | 🌋 **Geothermal** | 40 MW | 11/23 plants | 0.834 GW | — | 100% |
-| 💧 **Hydro** | 40 MW | 94/94 plants | 23 GW | — | 100% |
-| 🛢️ **Oil** | 150 MW | 7/15 plants | 2.13 GW | 0.08 GW | 27% |
-| ☀️ **Solar** | 200 MW | 10/77 plants | 25.7 GW | — | 100% |
-| 🌊 **Windoff** | 200 MW | 0/1 plants | 0.03 GW | — | 33% |
-| 💨 **Windon** | 200 MW | 16/129 plants | 12.3 GW | — | 33% |
+| 💧 **Hydro Power** | 40 MW | 75/75 plants | 15.4 GW | — | 68% |
+| 🛢️ **Oil** | 150 MW | 7/15 plants | 2.13 GW | 0.08 GW | 26.9% |
+| ☀️ **Solar** | 200 MW | 10/76 plants | 25.7 GW | — | 48.3% |
+| 🌊 **Windoff** | 200 MW | 0/1 plants | 0.03 GW | — | 100% |
+| 💨 **Windon** | 200 MW | 15/132 plants | 12.3 GW | — | 89% |
+| 🔋 **Pumped Storage** | 40 MW | 19/19 plants | 7.56 GW | — | 100% |
 
+
+### Future Projects (offered for endogenous selection)
+
+| **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Total Capacity** | **Wtd Avg Efficiency** |
+|---------------|---------------|----------------------------|--------------------|-----------------|
+| 🔥 **Gas** | 150 MW | 9/11 plants | 5.2 GW | 45.3% |
+| ☀️ **Solar** | 200 MW | 8/20 plants | 4.08 GW | 100% |
+| 🌊 **Windoff** | 200 MW | 49/49 plants | 45.4 GW | 100% |
+| 💨 **Windon** | 200 MW | 0/7 plants | 0.738 GW | 100% |
+| 🔋 **Pumped Storage** | 40 MW | 1/1 plants | 0.27 GW | 100% |
+
+
+Announced and pre-construction projects are offered as options to the model for endogenous investment. This is particularly useful for hydro and pumped storage as country-wise potential is not readily available. We also get grid locations of all these units.
 
 ### 🔄 CCS Retrofit Potential
 | **Fuel Type** | **Retrofit Host Capacity** | **Retrofit Potential Capacity**
 |---------------|----------------------------|-------------------------------|
 | ⚫ **Coal** | 6.81 GW | 4.67 GW after capacity penalty |
-| 🔥 **Gas** | 60 GW | 51 GW after capacity penalty |
+| 🔥 **Gas** | 65 GW | 55 GW after capacity penalty |
 
 
 ## Data, Assumptions & Coverage
@@ -53,18 +68,18 @@
 - **Spatial Grid Assignment**: Plants mapped to 50x50km REZoning grid cells for consistent spatial modeling
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 92%% of total capacity from plant-level GEM data
-- **Total Capacity Tracked**: 135 GW GW from all sources
-- **Plants Above Threshold**: 241 individual plants tracked
-- **Total Plants Processed**: 506 plants in database
-- **Missing Capacity Added**: - **EMBER data**:
-  - **gas**: 11.79 GW
-  - **coal**: 1.62 GW
-  - **bioenergy**: 3.58 GW
-- **IRENA data**:
+- **Individual Plant Coverage**: 94%% of total capacity from plant-level GEM data
+- **Total Capacity Tracked**: 191 GW GW from all sources
+- **Plants Above Threshold**: 318 individual plants tracked
+- **Total Plants Processed**: 596 plants in database
+- **Missing Capacity Added**: - **IRENA data**:
   - **hydro**: 7.28 GW
-  - **windon**: 2.05 GW
   - **solar**: 19.88 GW
+  - **windon**: 2.05 GW
+- **EMBER data**:
+  - **bioenergy**: 3.58 GW
+  - **coal**: 1.62 GW
+  - **gas**: 11.79 GW
 
 
 ## Model Structure
@@ -391,12 +406,9 @@ averages, with region-specific climate policy patterns reflecting economic and p
 
 ## Usage Notes
 
-- This model is generated automatically using VerveStacks methodology
-- Timeslice structure is optimized for high-renewable energy system analysis
 - For questions about specific data sources or methodology, refer to online documentation
 - Model parameters can be adjusted manually in the model files
-- Charts and analysis files are located in `2_ts_design/outputs/ITA/`
 
 ---
 *Generated by VerveStacks Energy Model Processor*
-*For more information: [VerveStacks Documentation](https://github.com/your-org/vervestacks)*
+*For more information: [VerveStacks Documentation](https://vervestacks.readthedocs.io/en/latest/)*
