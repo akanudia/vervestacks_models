@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - JPN
-**Generated:** 2025-09-22 14:04:50
+**Generated:** 2025-09-22 23:41:06
 
 
 ## Model Calibration 2022
@@ -20,13 +20,13 @@
 | 🌱 **Bioenergy** | 50 MW | 64/125 plants | 6.18 GW | 0.075 GW | 28.3% |
 | ⚫ **Coal** | 490 MW | 58/174 plants | 55 GW | 1.08 GW | 35.3% |
 | 🔥 **Gas** | 490 MW | 91/168 plants | 89 GW | — | 44.4% |
-| 🌋 **Geothermal** | 60 MW | 1/30 plants | 0.669 GW | — | 100% |
+| 🌋 **Geothermal** | 60 MW | 1/30 plants | 0.668 GW | — | 100% |
 | 💧 **Hydro Power** | 60 MW | 111/164 plants | 26.5 GW | — | 70% |
 | ⚛️ **Nuclear** | — | 35/35 plants | 14.4 GW | 21.5 GW | 100% |
 | 🛢️ **Oil** | 490 MW | 10/29 plants | 9.86 GW | 1.15 GW | 29.2% |
-| ☀️ **Solar** | 200 MW | 55/334 plants | 88 GW | — | 59% |
+| ☀️ **Solar** | 200 MW | 58/319 plants | 88 GW | — | 59% |
 | 🌊 **Windoff** | 200 MW | 2/11 plants | 1.73 GW | — | 97% |
-| 💨 **Windon** | 200 MW | 4/129 plants | 5.73 GW | — | 92% |
+| 💨 **Windon** | 200 MW | 4/130 plants | 5.73 GW | — | 92% |
 | 🔋 **Pumped Storage** | 60 MW | 34/35 plants | 23.7 GW | — | 100% |
 
 
@@ -72,16 +72,16 @@ Announced and pre-construction projects are offered as options to the model for 
 - **Spatial Grid Assignment**: Plants mapped to 50x50km REZoning grid cells for consistent spatial modeling
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 93%% of total capacity from plant-level GEM data
+- **Individual Plant Coverage**: 94%% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 400 GW GW from all sources
-- **Plants Above Threshold**: 660 individual plants tracked
-- **Total Plants Processed**: 1355 plants in database
-- **Missing Capacity Added**: - **EMBER data**:
-  - **bioenergy**: 0.62 GW
-- **IRENA data**:
+- **Plants Above Threshold**: 659 individual plants tracked
+- **Total Plants Processed**: 1341 plants in database
+- **Missing Capacity Added**: - **IRENA data**:
   - **solar**: 54.33 GW
   - **hydro**: 11.23 GW
   - **windon**: 0.71 GW
+- **EMBER data**:
+  - **bioenergy**: 0.62 GW
 
 
 ## Model Structure
@@ -288,7 +288,7 @@ grid cells into manageable clusters while preserving essential resource characte
 | **Grid Cells Processed** | 2579 | 50×50km renewable energy grid cells |
 | **Clusters Generated** | 31 | Dynamically determined using n = cells^0.6 |
 | **Average Cluster Size** | 9.9 grid cells | Mean grid cells per cluster |
-| **Cluster Size Range** | 3 to 18 grid cells | Variation in cluster composition |
+| **Cluster Size Range** | 3 to 19 grid cells | Variation in cluster composition |
 | **Grid Definition** | Infrastructure-based transmission buses | Transmission infrastructure basis |
 
 #### **Multi-Feature Clustering Algorithm**
