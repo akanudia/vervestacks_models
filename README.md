@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - JPN
-**Generated:** 2025-09-23 08:50:25
+**Generated:** 2025-09-23 09:03:26
 
 
 ## Model Calibration 2022
@@ -20,7 +20,7 @@
 | 🌱 **Bioenergy** | 50 MW | 64/69 plants | 6.18 GW | 0.075 GW | 28.9% |
 | ⚫ **Coal** | 490 MW | 62/115 plants | 55 GW | 1.08 GW | 35.3% |
 | 🔥 **Gas** | 490 MW | 88/115 plants | 89 GW | — | 44.4% |
-| 🌋 **Geothermal** | 60 MW | 3/23 plants | 0.668 GW | — | 100% |
+| 🌋 **Geothermal** | 60 MW | 3/23 plants | 0.669 GW | — | 100% |
 | 💧 **Hydro Power** | 60 MW | 81/104 plants | 26.5 GW | — | 70% |
 | ⚛️ **Nuclear** | — | 35/35 plants | 14.4 GW | 21.5 GW | 100% |
 | 🛢️ **Oil** | 490 MW | 11/26 plants | 9.86 GW | 1.15 GW | 29.2% |
@@ -77,12 +77,12 @@ Announced and pre-construction projects are offered as options to the model for 
 - **Plants Above Threshold**: 573 individual plants tracked
 - **Total Plants Processed**: 1106 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
-  - **hydro**: 11.79 GW
-  - **solar**: 54.33 GW
   - **windon**: 0.71 GW
+  - **solar**: 54.33 GW
+  - **hydro**: 11.79 GW
 - **EMBER data**:
-  - **coal**: 0.64 GW
   - **bioenergy**: 1.5 GW
+  - **coal**: 0.64 GW
 
 
 ## Model Structure
