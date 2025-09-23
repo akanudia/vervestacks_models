@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - BRA
-**Generated:** 2025-09-22 23:14:33
+**Generated:** 2025-09-23 16:10:11
 
 
 ## Model Calibration 2022
@@ -37,7 +37,7 @@
 | 💧 **Hydro Power** | 130 MW | 24/34 plants | 20.7 GW | 100% |
 | ☀️ **Solar** | 200 MW | 54/65 plants | 145 GW | 100% |
 | 🌊 **Windoff** | 200 MW | 98/98 plants | 234 GW | 100% |
-| 💨 **Windon** | 200 MW | 38/43 plants | 40.9 GW | 100% |
+| 💨 **Windon** | 200 MW | 38/42 plants | 40.9 GW | 100% |
 
 
 Announced and pre-construction projects are offered as options to the model for endogenous investment. This is particularly useful for hydro and pumped storage as country-wise potential is not readily available. We also get grid locations of all these units.
@@ -70,15 +70,15 @@ Announced and pre-construction projects are offered as options to the model for 
 ### Data Processing Notes
 - **Individual Plant Coverage**: 96%% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 709 GW GW from all sources
-- **Plants Above Threshold**: 639 individual plants tracked
-- **Total Plants Processed**: 1374 plants in database
+- **Plants Above Threshold**: 638 individual plants tracked
+- **Total Plants Processed**: 1373 plants in database
 - **Missing Capacity Added**: - **EMBER data**:
   - **bioenergy**: 2.69 GW
   - **gas**: 2.63 GW
   - **coal**: 0.08 GW
 - **IRENA data**:
-  - **hydro**: 0.67 GW
   - **solar**: 13.24 GW
+  - **hydro**: 0.67 GW
 
 
 ## Model Structure
