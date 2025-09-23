@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - BRA
-**Generated:** 2025-09-23 07:32:51
+**Generated:** 2025-09-23 10:01:59
 
 
 ## Model Calibration 2022
@@ -23,8 +23,8 @@
 | 💧 **Hydro Power** | 130 MW | 108/136 plants | 110 GW | — | 99% |
 | ⚛️ **Nuclear** | — | 3/3 plants | 3.4 GW | — | 100% |
 | 🛢️ **Oil** | 10 MW | 34/34 plants | 4.72 GW | 0.12 GW | 32.8% |
-| ☀️ **Solar** | 200 MW | 40/342 plants | 39.6 GW | — | 78% |
-| 💨 **Windon** | 200 MW | 49/107 plants | 37.1 GW | — | 100% |
+| ☀️ **Solar** | 200 MW | 42/340 plants | 39.6 GW | — | 78% |
+| 💨 **Windon** | 200 MW | 52/116 plants | 37.1 GW | — | 100% |
 
 
 ### Future Projects (offered for endogenous selection)
@@ -35,9 +35,9 @@
 | ⚫ **Coal** | 10 MW | 2/2 plants | 0.6 GW | 32.6% |
 | 🔥 **Gas** | 10 MW | 30/30 plants | 25.9 GW | 51% |
 | 💧 **Hydro Power** | 130 MW | 26/29 plants | 20.7 GW | 100% |
-| ☀️ **Solar** | 200 MW | 54/65 plants | 145 GW | 100% |
+| ☀️ **Solar** | 200 MW | 56/65 plants | 145 GW | 100% |
 | 🌊 **Windoff** | 200 MW | 98/98 plants | 234 GW | 100% |
-| 💨 **Windon** | 200 MW | 38/44 plants | 40.9 GW | 100% |
+| 💨 **Windon** | 200 MW | 38/45 plants | 40.9 GW | 100% |
 
 
 Announced and pre-construction projects are offered as options to the model for endogenous investment. This is particularly useful for hydro and pumped storage as country-wise potential is not readily available. We also get grid locations of all these units.
@@ -70,15 +70,15 @@ Announced and pre-construction projects are offered as options to the model for 
 ### Data Processing Notes
 - **Individual Plant Coverage**: 98%% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 709 GW GW from all sources
-- **Plants Above Threshold**: 625 individual plants tracked
-- **Total Plants Processed**: 1136 plants in database
-- **Missing Capacity Added**: - **EMBER data**:
-  - **coal**: 0.08 GW
-  - **bioenergy**: 4.01 GW
-  - **gas**: 2.63 GW
-- **IRENA data**:
+- **Plants Above Threshold**: 637 individual plants tracked
+- **Total Plants Processed**: 1144 plants in database
+- **Missing Capacity Added**: - **IRENA data**:
   - **solar**: 13.24 GW
   - **hydro**: 1.67 GW
+- **EMBER data**:
+  - **bioenergy**: 4.01 GW
+  - **coal**: 0.08 GW
+  - **gas**: 2.63 GW
 
 
 ## Model Structure
