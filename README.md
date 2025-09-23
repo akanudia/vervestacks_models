@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - CHN
-**Generated:** 2025-09-23 10:50:30
+**Generated:** 2025-09-23 15:29:59
 
 
 ## Model Calibration 2022
@@ -22,9 +22,9 @@
 | 🔥 **Gas** | 1000 MW | 32/61 plants | 196 GW | 0.2 GW | 52% |
 | 💧 **Hydro Power** | 1000 MW | 103/184 plants | 404 GW | — | 85% |
 | ⚛️ **Nuclear** | — | 88/88 plants | 92 GW | — | 100% |
-| ☀️ **Solar** | 500 MW | 545/1430 plants | 847 GW | 0.05 GW | 91% |
-| 🌊 **Windoff** | 200 MW | 160/181 plants | 65 GW | — | 100% |
-| 💨 **Windon** | 360 MW | 557/1319 plants | 572 GW | 2.64 GW | 99% |
+| ☀️ **Solar** | 500 MW | 544/1430 plants | 847 GW | 0.05 GW | 91% |
+| 🌊 **Windoff** | 200 MW | 160/183 plants | 65 GW | — | 100% |
+| 💨 **Windon** | 360 MW | 564/1327 plants | 572 GW | 2.64 GW | 99% |
 | 🔋 **Pumped Storage** | 1000 MW | 155/166 plants | 223 GW | — | 100% |
 
 
@@ -37,9 +37,9 @@
 | 🔥 **Gas** | 1000 MW | 10/13 plants | 109 GW | 53% |
 | 💧 **Hydro Power** | 1000 MW | 21/28 plants | 109 GW | 100% |
 | ⚛️ **Nuclear** | — | 74/74 plants | 85 GW | 100% |
-| ☀️ **Solar** | 500 MW | 281/366 plants | 474 GW | 100% |
+| ☀️ **Solar** | 500 MW | 281/369 plants | 474 GW | 100% |
 | 🌊 **Windoff** | 200 MW | 62/66 plants | 41.5 GW | 100% |
-| 💨 **Windon** | 360 MW | 252/296 plants | 322 GW | 100% |
+| 💨 **Windon** | 360 MW | 252/295 plants | 322 GW | 100% |
 | 🔋 **Pumped Storage** | 1000 MW | 199/201 plants | 292 GW | 100% |
 
 
@@ -73,12 +73,12 @@ Announced and pre-construction projects are offered as options to the model for 
 ### Data Processing Notes
 - **Individual Plant Coverage**: 99%% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 5456 GW GW from all sources
-- **Plants Above Threshold**: 4311 individual plants tracked
-- **Total Plants Processed**: 5181 plants in database
+- **Plants Above Threshold**: 4315 individual plants tracked
+- **Total Plants Processed**: 5193 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
+  - **solar**: 109.96 GW
   - **windon**: 12.0 GW
   - **hydro**: 87.82 GW
-  - **solar**: 109.96 GW
 
 
 ## Model Structure
