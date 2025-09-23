@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - CHN
-**Generated:** 2025-09-23 10:30:00
+**Generated:** 2025-09-23 10:50:30
 
 
 ## Model Calibration 2022
@@ -77,8 +77,8 @@ Announced and pre-construction projects are offered as options to the model for 
 - **Total Plants Processed**: 5181 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
   - **windon**: 12.0 GW
-  - **solar**: 109.96 GW
   - **hydro**: 87.82 GW
+  - **solar**: 109.96 GW
 
 
 ## Model Structure
