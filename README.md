@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - BRA
-**Generated:** 2025-09-24 08:57:00
+**Generated:** 2025-09-26 22:16:50
 
 
 ## Model Calibration 2022
@@ -23,8 +23,8 @@
 | 💧 **Hydro Power** | 130 MW | 106/184 plants | 110 GW | — | 99% |
 | ⚛️ **Nuclear** | — | 3/3 plants | 3.4 GW | — | 100% |
 | 🛢️ **Oil** | 10 MW | 34/34 plants | 4.72 GW | 0.12 GW | 32.8% |
-| ☀️ **Solar** | 200 MW | 38/336 plants | 39.6 GW | — | 78% |
-| 💨 **Windon** | 200 MW | 51/114 plants | 37.1 GW | — | 100% |
+| ☀️ **Solar** | 200 MW | 40/342 plants | 39.6 GW | — | 78% |
+| 💨 **Windon** | 200 MW | 52/115 plants | 37.1 GW | — | 100% |
 
 
 ### Future Projects (offered for endogenous selection)
@@ -35,9 +35,9 @@
 | ⚫ **Coal** | 10 MW | 2/2 plants | 0.6 GW | 32.6% |
 | 🔥 **Gas** | 10 MW | 30/30 plants | 25.9 GW | 51% |
 | 💧 **Hydro Power** | 130 MW | 24/34 plants | 20.7 GW | 100% |
-| ☀️ **Solar** | 200 MW | 54/65 plants | 145 GW | 100% |
+| ☀️ **Solar** | 200 MW | 53/63 plants | 145 GW | 100% |
 | 🌊 **Windoff** | 200 MW | 98/98 plants | 234 GW | 100% |
-| 💨 **Windon** | 200 MW | 38/42 plants | 40.9 GW | 100% |
+| 💨 **Windon** | 200 MW | 38/43 plants | 40.9 GW | 100% |
 
 
 Announced and pre-construction projects are offered as options to the model for endogenous investment. This is particularly useful for hydro and pumped storage as country-wise potential is not readily available. We also get grid locations of all these units.
@@ -70,15 +70,15 @@ Announced and pre-construction projects are offered as options to the model for 
 ### Data Processing Notes
 - **Individual Plant Coverage**: 96%% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 709 GW GW from all sources
-- **Plants Above Threshold**: 638 individual plants tracked
-- **Total Plants Processed**: 1373 plants in database
+- **Plants Above Threshold**: 639 individual plants tracked
+- **Total Plants Processed**: 1379 plants in database
 - **Missing Capacity Added**: - **EMBER data**:
   - **bioenergy**: 2.69 GW
   - **gas**: 2.63 GW
   - **coal**: 0.08 GW
 - **IRENA data**:
-  - **solar**: 13.24 GW
   - **hydro**: 0.67 GW
+  - **solar**: 13.24 GW
 
 
 ## Model Structure
@@ -140,16 +140,16 @@ This model employs **50×50km spatial resolution** for detailed renewable energy
 
 | **Spatial Metric** | **Value** | **Technical Detail** |
 |-------------------|-----------|---------------------|
-| **Grid Cells** | 4575 | 50×50km renewable energy zones |
-| **Solar/Wind Onshore Zones** | 3220 | Grid cells with solar and onshore wind potential |
+| **Grid Cells** | 4573 | 50×50km renewable energy zones |
+| **Solar/Wind Onshore Zones** | 3218 | Grid cells with solar and onshore wind potential |
 | **Wind Offshore Zones** | 1353 | Grid cells with offshore wind potential |
-| **Zone-Bus Mappings** | 4575 | REZoning zones assigned to transmission buses |
-| **Spatial Coverage** | 8050000 km² | Total area covered by renewable zones |
+| **Zone-Bus Mappings** | 4573 | REZoning zones assigned to transmission buses |
+| **Spatial Coverage** | 8045000 km² | Total area covered by renewable zones |
 
 #### 🔌 **Spatial Commodity System**
 
 Each grid cell generates location-specific electricity commodities:
-- **Solar/Wind Onshore**: `elc_spv-BRA_001` to `elc_spv-BRA_3220` (same zones for both technologies)
+- **Solar/Wind Onshore**: `elc_spv-BRA_001` to `elc_spv-BRA_3218` (same zones for both technologies)
 - **Wind Offshore**: `elc_wof-BRA_001` to `elc_wof-BRA_1353`
 
 This enables **grid-aware optimization** where renewable generation is constrained by:
@@ -282,10 +282,10 @@ grid cells into manageable clusters while preserving essential resource characte
 
 | **Clustering Metric** | **Value** | **Description** |
 |----------------------|-----------|-----------------|
-| **Grid Cells Processed** | 4575 | 50×50km renewable energy grid cells |
+| **Grid Cells Processed** | 4573 | 50×50km renewable energy grid cells |
 | **Clusters Generated** | 115 | Dynamically determined using n = cells^0.6 |
 | **Average Cluster Size** | 23.7 grid cells | Mean grid cells per cluster |
-| **Cluster Size Range** | 7 to 58 grid cells | Variation in cluster composition |
+| **Cluster Size Range** | 7 to 51 grid cells | Variation in cluster composition |
 | **Grid Definition** | Infrastructure-based transmission buses | Transmission infrastructure basis |
 
 #### **Multi-Feature Clustering Algorithm**
@@ -347,7 +347,7 @@ demonstrating how the algorithm balances resource quality, geographic diversity,
   <img src="VerveStacks_BRA_grids/source_data/clustering_results_BRA_solar.png" 
        alt="Solar PV Clustering Results" 
        style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-  <p><em>Solar PV clustering showing 115 clusters from 4575 grid cells using Infrastructure-based transmission buses</em></p>
+  <p><em>Solar PV clustering showing 115 clusters from 4573 grid cells using Infrastructure-based transmission buses</em></p>
 </div>
 
 **Onshore Wind Clustering:**
@@ -355,7 +355,7 @@ demonstrating how the algorithm balances resource quality, geographic diversity,
   <img src="VerveStacks_BRA_grids/source_data/clustering_results_BRA_wind_onshore.png" 
        alt="Onshore Wind Clustering Results" 
        style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-  <p><em>Onshore wind clustering showing 115 clusters from 4575 grid cells using Infrastructure-based transmission buses</em></p>
+  <p><em>Onshore wind clustering showing 115 clusters from 4573 grid cells using Infrastructure-based transmission buses</em></p>
 </div>
 
 **Offshore Wind Clustering:**
@@ -363,7 +363,7 @@ demonstrating how the algorithm balances resource quality, geographic diversity,
   <img src="VerveStacks_BRA_grids/source_data/clustering_results_BRA_wind_offshore.png" 
        alt="Offshore Wind Clustering Results" 
        style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-  <p><em>Offshore wind clustering showing 115 clusters from 4575 grid cells using Infrastructure-based transmission buses</em></p>
+  <p><em>Offshore wind clustering showing 115 clusters from 4573 grid cells using Infrastructure-based transmission buses</em></p>
 </div>
 
 **Visualization Features:**
