@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - JPN
-**Generated:** 2025-09-24 08:54:33
+**Generated:** 2025-09-26 22:01:10
 
 
 ## Model Calibration 2022
@@ -24,9 +24,9 @@
 | 💧 **Hydro Power** | 60 MW | 111/164 plants | 26.5 GW | — | 70% |
 | ⚛️ **Nuclear** | — | 35/35 plants | 14.4 GW | 21.5 GW | 100% |
 | 🛢️ **Oil** | 490 MW | 10/29 plants | 9.86 GW | 1.15 GW | 29.2% |
-| ☀️ **Solar** | 200 MW | 58/319 plants | 88 GW | — | 59% |
+| ☀️ **Solar** | 200 MW | 56/325 plants | 88 GW | — | 59% |
 | 🌊 **Windoff** | 200 MW | 2/11 plants | 1.73 GW | — | 97% |
-| 💨 **Windon** | 200 MW | 4/130 plants | 5.73 GW | — | 92% |
+| 💨 **Windon** | 200 MW | 4/129 plants | 5.73 GW | — | 92% |
 | 🔋 **Pumped Storage** | 60 MW | 34/35 plants | 23.7 GW | — | 100% |
 
 
@@ -74,14 +74,14 @@ Announced and pre-construction projects are offered as options to the model for 
 ### Data Processing Notes
 - **Individual Plant Coverage**: 94%% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 400 GW GW from all sources
-- **Plants Above Threshold**: 659 individual plants tracked
-- **Total Plants Processed**: 1341 plants in database
-- **Missing Capacity Added**: - **IRENA data**:
-  - **hydro**: 11.23 GW
-  - **windon**: 0.71 GW
-  - **solar**: 54.33 GW
-- **EMBER data**:
+- **Plants Above Threshold**: 655 individual plants tracked
+- **Total Plants Processed**: 1346 plants in database
+- **Missing Capacity Added**: - **EMBER data**:
   - **bioenergy**: 0.62 GW
+- **IRENA data**:
+  - **hydro**: 11.23 GW
+  - **solar**: 54.33 GW
+  - **windon**: 0.71 GW
 
 
 ## Model Structure
@@ -143,16 +143,16 @@ This model employs **50×50km spatial resolution** for detailed renewable energy
 
 | **Spatial Metric** | **Value** | **Technical Detail** |
 |-------------------|-----------|---------------------|
-| **Grid Cells** | 2579 | 50×50km renewable energy zones |
-| **Solar/Wind Onshore Zones** | 446 | Grid cells with solar and onshore wind potential |
+| **Grid Cells** | 2563 | 50×50km renewable energy zones |
+| **Solar/Wind Onshore Zones** | 430 | Grid cells with solar and onshore wind potential |
 | **Wind Offshore Zones** | 2133 | Grid cells with offshore wind potential |
-| **Zone-Bus Mappings** | 2579 | REZoning zones assigned to transmission buses |
-| **Spatial Coverage** | 1115000 km² | Total area covered by renewable zones |
+| **Zone-Bus Mappings** | 2563 | REZoning zones assigned to transmission buses |
+| **Spatial Coverage** | 1075000 km² | Total area covered by renewable zones |
 
 #### 🔌 **Spatial Commodity System**
 
 Each grid cell generates location-specific electricity commodities:
-- **Solar/Wind Onshore**: `elc_spv-JPN_001` to `elc_spv-JPN_446` (same zones for both technologies)
+- **Solar/Wind Onshore**: `elc_spv-JPN_001` to `elc_spv-JPN_430` (same zones for both technologies)
 - **Wind Offshore**: `elc_wof-JPN_001` to `elc_wof-JPN_2133`
 
 This enables **grid-aware optimization** where renewable generation is constrained by:
@@ -285,10 +285,10 @@ grid cells into manageable clusters while preserving essential resource characte
 
 | **Clustering Metric** | **Value** | **Description** |
 |----------------------|-----------|-----------------|
-| **Grid Cells Processed** | 2579 | 50×50km renewable energy grid cells |
-| **Clusters Generated** | 31 | Dynamically determined using n = cells^0.6 |
-| **Average Cluster Size** | 9.9 grid cells | Mean grid cells per cluster |
-| **Cluster Size Range** | 3 to 19 grid cells | Variation in cluster composition |
+| **Grid Cells Processed** | 2563 | 50×50km renewable energy grid cells |
+| **Clusters Generated** | 30 | Dynamically determined using n = cells^0.6 |
+| **Average Cluster Size** | 10.0 grid cells | Mean grid cells per cluster |
+| **Cluster Size Range** | 3 to 22 grid cells | Variation in cluster composition |
 | **Grid Definition** | Infrastructure-based transmission buses | Transmission infrastructure basis |
 
 #### **Multi-Feature Clustering Algorithm**
@@ -350,7 +350,7 @@ demonstrating how the algorithm balances resource quality, geographic diversity,
   <img src="VerveStacks_JPN_grids/source_data/clustering_results_JPN_solar.png" 
        alt="Solar PV Clustering Results" 
        style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-  <p><em>Solar PV clustering showing 31 clusters from 2579 grid cells using Infrastructure-based transmission buses</em></p>
+  <p><em>Solar PV clustering showing 30 clusters from 2563 grid cells using Infrastructure-based transmission buses</em></p>
 </div>
 
 **Onshore Wind Clustering:**
@@ -358,7 +358,7 @@ demonstrating how the algorithm balances resource quality, geographic diversity,
   <img src="VerveStacks_JPN_grids/source_data/clustering_results_JPN_wind_onshore.png" 
        alt="Onshore Wind Clustering Results" 
        style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-  <p><em>Onshore wind clustering showing 31 clusters from 2579 grid cells using Infrastructure-based transmission buses</em></p>
+  <p><em>Onshore wind clustering showing 30 clusters from 2563 grid cells using Infrastructure-based transmission buses</em></p>
 </div>
 
 **Offshore Wind Clustering:**
@@ -366,7 +366,7 @@ demonstrating how the algorithm balances resource quality, geographic diversity,
   <img src="VerveStacks_JPN_grids/source_data/clustering_results_JPN_wind_offshore.png" 
        alt="Offshore Wind Clustering Results" 
        style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-  <p><em>Offshore wind clustering showing 31 clusters from 2579 grid cells using Infrastructure-based transmission buses</em></p>
+  <p><em>Offshore wind clustering showing 30 clusters from 2563 grid cells using Infrastructure-based transmission buses</em></p>
 </div>
 
 **Visualization Features:**
