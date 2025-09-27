@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - BRA
-**Generated:** 2025-09-26 22:16:50
+**Generated:** 2025-09-27 20:49:24
 
 
 ## Model Calibration 2022
@@ -72,13 +72,13 @@ Announced and pre-construction projects are offered as options to the model for 
 - **Total Capacity Tracked**: 709 GW GW from all sources
 - **Plants Above Threshold**: 639 individual plants tracked
 - **Total Plants Processed**: 1379 plants in database
-- **Missing Capacity Added**: - **EMBER data**:
-  - **bioenergy**: 2.69 GW
-  - **gas**: 2.63 GW
-  - **coal**: 0.08 GW
-- **IRENA data**:
-  - **hydro**: 0.67 GW
+- **Missing Capacity Added**: - **IRENA data**:
   - **solar**: 13.24 GW
+  - **hydro**: 0.67 GW
+- **EMBER data**:
+  - **gas**: 2.63 GW
+  - **bioenergy**: 2.69 GW
+  - **coal**: 0.08 GW
 
 
 ## Model Structure
