@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - IND
-**Generated:** 2025-10-11 23:01:26
+**Generated:** 2025-10-12 14:08:29
 
 
 ## Model Calibration 2022
@@ -23,7 +23,7 @@
 | 💧 **Hydro Power** | 110 MW | 133/196 plants | 58 GW | 2.97 GW | 94% |
 | ⚛️ **Nuclear** | — | 31/31 plants | 13.4 GW | 0.64 GW | 100% |
 | 🛢️ **Oil** | 500 MW | 0/6 plants | 0.656 GW | — | 38.8% |
-| ☀️ **Solar** | 200 MW | 245/726 plants | 107 GW | — | 99% |
+| ☀️ **Solar** | 200 MW | 245/724 plants | 107 GW | — | 99% |
 | 💨 **Windon** | 200 MW | 89/226 plants | 52 GW | — | 89% |
 | 🔋 **Pumped Storage** | 110 MW | 12/13 plants | 8.13 GW | — | 100% |
 
@@ -37,7 +37,7 @@
 | 🔥 **Gas** | 500 MW | 1/2 plants | 0.9 GW | 57% |
 | 💧 **Hydro Power** | 110 MW | 111/125 plants | 75 GW | 100% |
 | ⚛️ **Nuclear** | — | 24/24 plants | 25.8 GW | 100% |
-| ☀️ **Solar** | 200 MW | 103/157 plants | 74 GW | 100% |
+| ☀️ **Solar** | 200 MW | 103/155 plants | 74 GW | 100% |
 | 🌊 **Windoff** | 200 MW | 6/6 plants | 5 GW | 100% |
 | 💨 **Windon** | 200 MW | 20/33 plants | 8.34 GW | 100% |
 | 🔋 **Pumped Storage** | 110 MW | 52/52 plants | 61 GW | 100% |
@@ -74,11 +74,11 @@ Announced and pre-construction projects are offered as options to the model for 
 - **Individual Plant Coverage**: 98%% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 891 GW GW from all sources
 - **Plants Above Threshold**: 1610 individual plants tracked
-- **Total Plants Processed**: 2251 plants in database
+- **Total Plants Processed**: 2247 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
+  - **hydro**: 5.06 GW
   - **solar**: 1.02 GW
   - **windon**: 8.92 GW
-  - **hydro**: 5.06 GW
 - **EMBER data**:
   - **gas**: 4.65 GW
   - **bioenergy**: 9.73 GW
