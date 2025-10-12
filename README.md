@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - IND
-**Generated:** 2025-10-12 14:08:29
+**Generated:** 2025-10-12 20:49:30
 
 
 ## Model Calibration 2022
@@ -76,12 +76,12 @@ Announced and pre-construction projects are offered as options to the model for 
 - **Plants Above Threshold**: 1610 individual plants tracked
 - **Total Plants Processed**: 2247 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
-  - **hydro**: 5.06 GW
-  - **solar**: 1.02 GW
   - **windon**: 8.92 GW
+  - **solar**: 1.02 GW
+  - **hydro**: 5.06 GW
 - **EMBER data**:
-  - **gas**: 4.65 GW
   - **bioenergy**: 9.73 GW
+  - **gas**: 4.65 GW
 
 
 ## Model Structure
@@ -99,7 +99,7 @@ Announced and pre-construction projects are offered as options to the model for 
 This model includes a **comprehensive grid visualization** showing the complete transmission infrastructure and renewable energy integration:
 
 <div align="center">
-  <img src="VerveStacks_IND_grids/grid_analysis/IND_network_visualization.svg" 
+  <img src="VerveStacks_IND_grids_syn_5/grid_analysis/IND_cluster_shapes_4panel.png" 
        alt="Grid Network Visualization" 
        style="max-width: 100%; height: auto; border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
   <p><em>🗺️ Grid network showing transmission infrastructure, power plants, and renewable energy zones</em></p>
