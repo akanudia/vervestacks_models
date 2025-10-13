@@ -1,0 +1,75 @@
+from_cluster_id,from_cluster_type,to_cluster_id,to_cluster_type,s_nom,num_lines,voltage,length,bus0,bus1,type,line_id,from_bus,to_bus,connection_type
+0,generation,2,demand,81508.92536354532,47.0,380.0,20.342988572340808,gen0,dem2,Generation cluster 0 to Demand cluster 2,,,,
+0,generation,4,demand,18679.128729145803,9.0,380.0,301.43500048872187,gen0,dem4,Generation cluster 0 to Demand cluster 4,,,,
+1,generation,1,demand,78112.72014006427,40.0,380.0,143.01262022322962,gen1,dem1,Generation cluster 1 to Demand cluster 1,,,,
+1,generation,4,demand,71320.30969310216,35.0,380.0,236.17203983304253,gen1,dem4,Generation cluster 1 to Demand cluster 4,,,,
+1,renewable,3,demand,8848.008345384855,5.0,396.0,74.69227242734003,sol1,dem3,Renewable cluster 1 to Demand cluster 3,,,,
+2,generation,0,demand,45848.77051699424,23.0,380.0,72.19114516434527,gen2,dem0,Generation cluster 2 to Demand cluster 0,,,,
+2,generation,2,demand,1698.1026117405274,1.0,380.0,442.5731248202389,gen2,dem2,Generation cluster 2 to Demand cluster 2,,,,
+3,generation,4,demand,3396.205223481055,2.0,380.0,364.40475363896525,gen3,dem4,Generation cluster 3 to Demand cluster 4,,,,
+3,renewable,3,demand,1698.1026117405274,1.0,380.0,146.38666256346787,sol3,dem3,Renewable cluster 3 to Demand cluster 3,,,,
+3,renewable,4,generation,1698.1026117405274,1.0,380.0,190.24453444563807,sol3,gen4,Renewable cluster 3 to Generation cluster 4,,,,
+4,generation,1,demand,48619.358988781416,27.0,388.8888888888889,175.78932397805,gen4,dem1,Generation cluster 4 to Demand cluster 1,,,,
+4,generation,3,demand,135848.2089392422,73.0,380.0,51.01665003600211,gen4,dem3,Generation cluster 4 to Demand cluster 3,,,,
+4,renewable,3,demand,3574.9528668221633,2.0,400.0,105.9000850773029,sol4,dem3,Renewable cluster 4 to Demand cluster 3,,,,
+4,renewable,4,generation,5094.3078352215825,3.0,380.0,156.68055108056743,sol4,gen4,Renewable cluster 4 to Generation cluster 4,,,,
+6,renewable,4,generation,18679.128729145803,11.0,380.0,52.01572156154224,sol6,gen4,Renewable cluster 6 to Generation cluster 4,,,,
+8,renewable,1,demand,6792.41044696211,4.0,380.0,203.35899317649958,sol8,dem1,Renewable cluster 8 to Demand cluster 1,,,,
+14,renewable,2,demand,1698.1026117405274,1.0,380.0,181.094687448731,sol14,dem2,Renewable cluster 14 to Demand cluster 2,,,,
+17,renewable,1,demand,16981.026117405276,8.0,380.0,188.06346323970314,sol17,dem1,Renewable cluster 17 to Demand cluster 1,,,,
+19,renewable,4,demand,13584.82089392422,5.0,380.0,155.48728030139202,sol19,dem4,Renewable cluster 19 to Demand cluster 4,,,,
+20,renewable,4,demand,6792.41044696211,3.0,380.0,104.60580465444112,sol20,dem4,Renewable cluster 20 to Demand cluster 4,,,,
+29,renewable,1,demand,3396.205223481055,2.0,380.0,147.12829185282376,won5,dem1,Renewable cluster 29 to Demand cluster 1,,,,
+34,renewable,0,generation,3396.205223481055,2.0,380.0,184.55733187147203,won10,gen0,Renewable cluster 34 to Generation cluster 0,,,,
+34,renewable,2,demand,1698.1026117405274,1.0,380.0,198.53622496982373,won10,dem2,Renewable cluster 34 to Demand cluster 2,,,,
+40,renewable,0,demand,3396.205223481055,2.0,380.0,90.25977628813317,won16,dem0,Renewable cluster 40 to Demand cluster 0,,,,
+10,renewable,3,generation,0.0,,0.0,29.001919535328533,sol10,gen3,Potential connection: Renewable cluster 10 to Generation cluster 3,potential_renewable10-generation3,renewable10,generation3,potential
+11,renewable,3,generation,0.0,,0.0,141.46502326421177,sol11,gen3,Potential connection: Renewable cluster 11 to Generation cluster 3,potential_renewable11-generation3,renewable11,generation3,potential
+12,renewable,2,generation,0.0,,0.0,69.76543816383432,sol12,gen2,Potential connection: Renewable cluster 12 to Generation cluster 2,potential_renewable12-generation2,renewable12,generation2,potential
+13,renewable,0,demand,0.0,,0.0,59.86040138895749,sol13,dem0,Potential connection: Renewable cluster 13 to Demand cluster 0,potential_renewable13-demand0,renewable13,demand0,potential
+15,renewable,2,demand,0.0,,0.0,96.61208987417906,sol15,dem2,Potential connection: Renewable cluster 15 to Demand cluster 2,potential_renewable15-demand2,renewable15,demand2,potential
+16,renewable,0,generation,0.0,,0.0,34.44220549496608,sol16,gen0,Potential connection: Renewable cluster 16 to Generation cluster 0,potential_renewable16-generation0,renewable16,generation0,potential
+18,renewable,1,demand,0.0,,0.0,132.90690875033877,sol18,dem1,Potential connection: Renewable cluster 18 to Demand cluster 1,potential_renewable18-demand1,renewable18,demand1,potential
+2,renewable,3,demand,0.0,,0.0,32.972176925916884,sol2,dem3,Potential connection: Renewable cluster 2 to Demand cluster 3,potential_renewable2-demand3,renewable2,demand3,potential
+21,renewable,4,demand,0.0,,0.0,62.68318325531793,sol21,dem4,Potential connection: Renewable cluster 21 to Demand cluster 4,potential_renewable21-demand4,renewable21,demand4,potential
+22,renewable,1,demand,0.0,,0.0,24.29148143608446,sol22,dem1,Potential connection: Renewable cluster 22 to Demand cluster 1,potential_renewable22-demand1,renewable22,demand1,potential
+23,renewable,1,generation,0.0,,0.0,50.596472430470996,sol23,gen1,Potential connection: Renewable cluster 23 to Generation cluster 1,potential_renewable23-generation1,renewable23,generation1,potential
+24,renewable,1,generation,0.0,,0.0,67.19310173449207,won0,gen1,Potential connection: Renewable cluster 24 to Generation cluster 1,potential_renewable24-generation1,renewable24,generation1,potential
+25,renewable,1,demand,0.0,,0.0,142.71720067383376,won1,dem1,Potential connection: Renewable cluster 25 to Demand cluster 1,potential_renewable25-demand1,renewable25,demand1,potential
+26,renewable,1,generation,0.0,,0.0,170.2035850388626,won2,gen1,Potential connection: Renewable cluster 26 to Generation cluster 1,potential_renewable26-generation1,renewable26,generation1,potential
+27,renewable,1,generation,0.0,,0.0,126.34659805910282,won3,gen1,Potential connection: Renewable cluster 27 to Generation cluster 1,potential_renewable27-generation1,renewable27,generation1,potential
+28,renewable,3,demand,0.0,,0.0,78.61934446983066,won4,dem3,Potential connection: Renewable cluster 28 to Demand cluster 3,potential_renewable28-demand3,renewable28,demand3,potential
+30,renewable,1,generation,0.0,,0.0,67.45556358205273,won6,gen1,Potential connection: Renewable cluster 30 to Generation cluster 1,potential_renewable30-generation1,renewable30,generation1,potential
+31,renewable,1,generation,0.0,,0.0,36.65393912871793,won7,gen1,Potential connection: Renewable cluster 31 to Generation cluster 1,potential_renewable31-generation1,renewable31,generation1,potential
+32,renewable,1,generation,0.0,,0.0,114.4526363579775,won8,gen1,Potential connection: Renewable cluster 32 to Generation cluster 1,potential_renewable32-generation1,renewable32,generation1,potential
+33,renewable,1,generation,0.0,,0.0,37.31275119273412,won9,gen1,Potential connection: Renewable cluster 33 to Generation cluster 1,potential_renewable33-generation1,renewable33,generation1,potential
+35,renewable,0,generation,0.0,,0.0,4.675535584727488,won11,gen0,Potential connection: Renewable cluster 35 to Generation cluster 0,potential_renewable35-generation0,renewable35,generation0,potential
+36,renewable,0,generation,0.0,,0.0,111.48471188707347,won12,gen0,Potential connection: Renewable cluster 36 to Generation cluster 0,potential_renewable36-generation0,renewable36,generation0,potential
+37,renewable,0,generation,0.0,,0.0,135.21079646359763,won13,gen0,Potential connection: Renewable cluster 37 to Generation cluster 0,potential_renewable37-generation0,renewable37,generation0,potential
+38,renewable,4,demand,0.0,,0.0,18.64653023082469,won14,dem4,Potential connection: Renewable cluster 38 to Demand cluster 4,potential_renewable38-demand4,renewable38,demand4,potential
+39,renewable,3,generation,0.0,,0.0,18.303336335511617,won15,gen3,Potential connection: Renewable cluster 39 to Generation cluster 3,potential_renewable39-generation3,renewable39,generation3,potential
+41,renewable,0,demand,0.0,,0.0,17.853262617553384,won17,dem0,Potential connection: Renewable cluster 41 to Demand cluster 0,potential_renewable41-demand0,renewable41,demand0,potential
+42,renewable,0,demand,0.0,,0.0,122.04285524321169,won18,dem0,Potential connection: Renewable cluster 42 to Demand cluster 0,potential_renewable42-demand0,renewable42,demand0,potential
+43,renewable,0,demand,0.0,,0.0,199.7649705764223,wof0,dem0,Potential connection: Renewable cluster 43 to Demand cluster 0,potential_renewable43-demand0,renewable43,demand0,potential
+44,renewable,0,generation,0.0,,0.0,225.90633990333546,wof1,gen0,Potential connection: Renewable cluster 44 to Generation cluster 0,potential_renewable44-generation0,renewable44,generation0,potential
+45,renewable,1,generation,0.0,,0.0,153.8582525572126,wof2,gen1,Potential connection: Renewable cluster 45 to Generation cluster 1,potential_renewable45-generation1,renewable45,generation1,potential
+46,renewable,2,demand,0.0,,0.0,111.31321473195483,wof3,dem2,Potential connection: Renewable cluster 46 to Demand cluster 2,potential_renewable46-demand2,renewable46,demand2,potential
+47,renewable,2,demand,0.0,,0.0,200.1884065953571,wof4,dem2,Potential connection: Renewable cluster 47 to Demand cluster 2,potential_renewable47-demand2,renewable47,demand2,potential
+48,renewable,2,demand,0.0,,0.0,148.24771483421821,wof5,dem2,Potential connection: Renewable cluster 48 to Demand cluster 2,potential_renewable48-demand2,renewable48,demand2,potential
+49,renewable,3,generation,0.0,,0.0,110.09536900465511,wof6,gen3,Potential connection: Renewable cluster 49 to Generation cluster 3,potential_renewable49-generation3,renewable49,generation3,potential
+5,renewable,4,generation,0.0,,0.0,171.87529572726737,sol5,gen4,Potential connection: Renewable cluster 5 to Generation cluster 4,potential_renewable5-generation4,renewable5,generation4,potential
+50,renewable,3,generation,0.0,,0.0,112.39056282801008,wof7,gen3,Potential connection: Renewable cluster 50 to Generation cluster 3,potential_renewable50-generation3,renewable50,generation3,potential
+51,renewable,4,demand,0.0,,0.0,137.76966742011598,wof8,dem4,Potential connection: Renewable cluster 51 to Demand cluster 4,potential_renewable51-demand4,renewable51,demand4,potential
+52,renewable,1,generation,0.0,,0.0,215.39074449323311,wof9,gen1,Potential connection: Renewable cluster 52 to Generation cluster 1,potential_renewable52-generation1,renewable52,generation1,potential
+53,renewable,3,demand,0.0,,0.0,210.24022738651155,wof10,dem3,Potential connection: Renewable cluster 53 to Demand cluster 3,potential_renewable53-demand3,renewable53,demand3,potential
+54,renewable,3,demand,0.0,,0.0,135.99132561543897,wof11,dem3,Potential connection: Renewable cluster 54 to Demand cluster 3,potential_renewable54-demand3,renewable54,demand3,potential
+55,renewable,4,demand,0.0,,0.0,104.08281982810738,wof12,dem4,Potential connection: Renewable cluster 55 to Demand cluster 4,potential_renewable55-demand4,renewable55,demand4,potential
+56,renewable,0,demand,0.0,,0.0,142.1799429130616,wof13,dem0,Potential connection: Renewable cluster 56 to Demand cluster 0,potential_renewable56-demand0,renewable56,demand0,potential
+57,renewable,2,generation,0.0,,0.0,124.12285234654287,wof14,gen2,Potential connection: Renewable cluster 57 to Generation cluster 2,potential_renewable57-generation2,renewable57,generation2,potential
+58,renewable,2,generation,0.0,,0.0,218.14481528537783,wof15,gen2,Potential connection: Renewable cluster 58 to Generation cluster 2,potential_renewable58-generation2,renewable58,generation2,potential
+59,renewable,3,generation,0.0,,0.0,123.57685323526859,wof16,gen3,Potential connection: Renewable cluster 59 to Generation cluster 3,potential_renewable59-generation3,renewable59,generation3,potential
+60,renewable,0,demand,0.0,,0.0,139.29301220845934,wof17,dem0,Potential connection: Renewable cluster 60 to Demand cluster 0,potential_renewable60-demand0,renewable60,demand0,potential
+61,renewable,2,generation,0.0,,0.0,217.9292556215219,wof18,gen2,Potential connection: Renewable cluster 61 to Generation cluster 2,potential_renewable61-generation2,renewable61,generation2,potential
+62,renewable,2,generation,0.0,,0.0,122.45383011896602,wof19,gen2,Potential connection: Renewable cluster 62 to Generation cluster 2,potential_renewable62-generation2,renewable62,generation2,potential
+7,renewable,4,generation,0.0,,0.0,58.3391657396965,sol7,gen4,Potential connection: Renewable cluster 7 to Generation cluster 4,potential_renewable7-generation4,renewable7,generation4,potential
+9,renewable,1,generation,0.0,,0.0,136.26914970381895,sol9,gen1,Potential connection: Renewable cluster 9 to Generation cluster 1,potential_renewable9-generation1,renewable9,generation1,potential
