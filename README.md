@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - DEU
-**Generated:** 2025-09-22 22:43:22
+**Generated:** 2025-10-19 19:34:50
 
 
 ## Model Calibration 2022
@@ -23,9 +23,9 @@
 | 🌋 **Geothermal** | 10 MW | 1/4 plants | 0.027 GW | — | 100% |
 | 💧 **Hydro Power** | 10 MW | 12/12 plants | 4.98 GW | — | 46% |
 | 🛢️ **Oil** | 110 MW | 6/18 plants | 1.89 GW | — | 32.7% |
-| ☀️ **Solar** | 200 MW | 41/401 plants | 73 GW | 0.002 GW | 61% |
-| 🌊 **Windoff** | 200 MW | 29/36 plants | 10.1 GW | — | 99% |
-| 💨 **Windon** | 200 MW | 58/345 plants | 62 GW | — | 76% |
+| ☀️ **Solar** | 200 MW | 43/403 plants | 73 GW | 0.002 GW | 61% |
+| 🌊 **Windoff** | 200 MW | 29/38 plants | 10.1 GW | — | 99% |
+| 💨 **Windon** | 200 MW | 60/347 plants | 62 GW | — | 76% |
 | 🔋 **Pumped Storage** | 10 MW | 21/21 plants | 6.15 GW | — | 100% |
 
 
@@ -72,16 +72,16 @@ Announced and pre-construction projects are offered as options to the model for 
 ### Data Processing Notes
 - **Individual Plant Coverage**: 90%% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 277 GW GW from all sources
-- **Plants Above Threshold**: 550 individual plants tracked
-- **Total Plants Processed**: 1261 plants in database
+- **Plants Above Threshold**: 553 individual plants tracked
+- **Total Plants Processed**: 1267 plants in database
 - **Missing Capacity Added**: - **EMBER data**:
-  - **gas**: 0.45 GW
-  - **coal**: 8.09 GW
   - **bioenergy**: 8.78 GW
+  - **coal**: 8.09 GW
+  - **gas**: 0.45 GW
 - **IRENA data**:
-  - **solar**: 42.0 GW
-  - **hydro**: 4.02 GW
   - **windon**: 22.38 GW
+  - **hydro**: 4.02 GW
+  - **solar**: 42.0 GW
 
 
 ## Model Structure
@@ -164,13 +164,7 @@ grid cells into manageable clusters while preserving essential resource characte
 #### **Multi-Feature Clustering Algorithm**
 
 The clustering process combines multiple data dimensions to create economically and spatially coherent renewable energy zones:
-
-**Feature Weighting:**
-- **Wind Profiles**: 35% - Temporal generation patterns and variability
-- **Solar Profiles**: 35% - Complementary temporal characteristics  
-- **Grid Distance**: 20% - Infrastructure connectivity and transmission costs
-- **Spatial Coordinates**: 10% - Geographic proximity and regional coherence
-
+        
 **Technical Implementation:**
 - **Algorithm**: Hierarchical clustering with Ward linkage
 - **Preprocessing**: PCA dimensionality reduction (50 components per technology)
