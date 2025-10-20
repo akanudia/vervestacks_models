@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - ITA
-**Generated:** 2025-10-20 15:28:34
+**Generated:** 2025-10-20 15:48:08
 
 
 ## Model Calibration 2022
@@ -77,8 +77,8 @@ Announced and pre-construction projects are offered as options to the model for 
   - **bioenergy**: 3.58 GW
   - **coal**: 1.62 GW
 - **IRENA data**:
-  - **windon**: 1.96 GW
   - **hydro**: 7.28 GW
+  - **windon**: 1.96 GW
   - **solar**: 19.88 GW
 
 
