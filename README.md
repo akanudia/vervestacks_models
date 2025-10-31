@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - CHN
-**Generated:** 2025-09-23 15:29:59
+**Generated:** 2025-10-31 12:48:34
 
 
 ## Model Calibration 2022
@@ -22,9 +22,9 @@
 | 🔥 **Gas** | 1000 MW | 32/61 plants | 196 GW | 0.2 GW | 52% |
 | 💧 **Hydro Power** | 1000 MW | 103/184 plants | 404 GW | — | 85% |
 | ⚛️ **Nuclear** | — | 88/88 plants | 92 GW | — | 100% |
-| ☀️ **Solar** | 500 MW | 544/1430 plants | 847 GW | 0.05 GW | 91% |
+| ☀️ **Solar** | 500 MW | 543/1408 plants | 847 GW | 0.05 GW | 91% |
 | 🌊 **Windoff** | 200 MW | 160/183 plants | 65 GW | — | 100% |
-| 💨 **Windon** | 360 MW | 564/1327 plants | 572 GW | 2.64 GW | 99% |
+| 💨 **Windon** | 360 MW | 560/1313 plants | 572 GW | 2.64 GW | 99% |
 | 🔋 **Pumped Storage** | 1000 MW | 155/166 plants | 223 GW | — | 100% |
 
 
@@ -37,9 +37,9 @@
 | 🔥 **Gas** | 1000 MW | 10/13 plants | 109 GW | 53% |
 | 💧 **Hydro Power** | 1000 MW | 21/28 plants | 109 GW | 100% |
 | ⚛️ **Nuclear** | — | 74/74 plants | 85 GW | 100% |
-| ☀️ **Solar** | 500 MW | 281/369 plants | 474 GW | 100% |
+| ☀️ **Solar** | 500 MW | 279/365 plants | 474 GW | 100% |
 | 🌊 **Windoff** | 200 MW | 62/66 plants | 41.5 GW | 100% |
-| 💨 **Windon** | 360 MW | 252/295 plants | 322 GW | 100% |
+| 💨 **Windon** | 360 MW | 253/296 plants | 322 GW | 100% |
 | 🔋 **Pumped Storage** | 1000 MW | 199/201 plants | 292 GW | 100% |
 
 
@@ -73,12 +73,12 @@ Announced and pre-construction projects are offered as options to the model for 
 ### Data Processing Notes
 - **Individual Plant Coverage**: 99%% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 5456 GW GW from all sources
-- **Plants Above Threshold**: 4315 individual plants tracked
-- **Total Plants Processed**: 5193 plants in database
+- **Plants Above Threshold**: 4308 individual plants tracked
+- **Total Plants Processed**: 5154 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
-  - **solar**: 109.96 GW
   - **windon**: 12.0 GW
   - **hydro**: 87.82 GW
+  - **solar**: 109.96 GW
 
 
 ## Model Structure
@@ -155,19 +155,13 @@ grid cells into manageable clusters while preserving essential resource characte
 | **Grid Cells Processed** | 3601 | 50×50km renewable energy grid cells |
 | **Clusters Generated** | 136 | Dynamically determined using n = cells^0.6 |
 | **Average Cluster Size** | 26.5 grid cells | Mean grid cells per cluster |
-| **Cluster Size Range** | 5 to 85 grid cells | Variation in cluster composition |
+| **Cluster Size Range** | 5 to 86 grid cells | Variation in cluster composition |
 | **Grid Definition** | Cities as transmission bus proxies | Transmission infrastructure basis |
 
 #### **Multi-Feature Clustering Algorithm**
 
 The clustering process combines multiple data dimensions to create economically and spatially coherent renewable energy zones:
-
-**Feature Weighting:**
-- **Wind Profiles**: 35% - Temporal generation patterns and variability
-- **Solar Profiles**: 35% - Complementary temporal characteristics  
-- **Grid Distance**: 20% - Infrastructure connectivity and transmission costs
-- **Spatial Coordinates**: 10% - Geographic proximity and regional coherence
-
+        
 **Technical Implementation:**
 - **Algorithm**: Hierarchical clustering with Ward linkage
 - **Preprocessing**: PCA dimensionality reduction (50 components per technology)
