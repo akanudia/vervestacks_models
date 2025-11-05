@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - ITA
-**Generated:** 2025-10-20 15:48:08
+**Generated:** 2025-11-05 18:54:43
 
 
 ## Model Calibration 2022
@@ -72,14 +72,14 @@ Announced and pre-construction projects are offered as options to the model for 
 - **Total Capacity Tracked**: 191 GW GW from all sources
 - **Plants Above Threshold**: 335 individual plants tracked
 - **Total Plants Processed**: 624 plants in database
-- **Missing Capacity Added**: - **EMBER data**:
-  - **gas**: 11.79 GW
+- **Missing Capacity Added**: - **IRENA data**:
+  - **windon**: 1.96 GW
+  - **hydro**: 7.28 GW
+  - **solar**: 19.88 GW
+- **EMBER data**:
   - **bioenergy**: 3.58 GW
   - **coal**: 1.62 GW
-- **IRENA data**:
-  - **hydro**: 7.28 GW
-  - **windon**: 1.96 GW
-  - **solar**: 19.88 GW
+  - **gas**: 11.79 GW
 
 
 ## Model Structure
@@ -118,7 +118,7 @@ This model includes a **comprehensive grid visualization** showing the complete 
 | **Metric** | **Value** | **Description** |
 |------------|-----------|-----------------|
 | **Total Buses** | 72 | Transmission substations and connection points |
-| **Transmission Lines** | 74 | High-voltage transmission corridors |
+| **Transmission Lines** | 76 | High-voltage transmission corridors |
 | **Voltage Levels** | 300 | Multi-level transmission system (220kV, 380kV, etc.) |
 
 #### ⚡ **Power Plant Integration**
