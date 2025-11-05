@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - EST
-**Generated:** 2025-09-25 16:48:34
+**Generated:** 2025-11-05 19:10:11
 
 
 ## Model Calibration 2022
@@ -68,8 +68,8 @@ Announced and pre-construction projects are offered as options to the model for 
 - **Plants Above Threshold**: 23 individual plants tracked
 - **Total Plants Processed**: 55 plants in database
 - **Missing Capacity Added**: - **EMBER data**:
-  - **bioenergy**: 0.3 GW
   - **gas**: 0.21 GW
+  - **bioenergy**: 0.3 GW
 
 
 ## Model Structure
@@ -152,13 +152,7 @@ grid cells into manageable clusters while preserving essential resource characte
 #### **Multi-Feature Clustering Algorithm**
 
 The clustering process combines multiple data dimensions to create economically and spatially coherent renewable energy zones:
-
-**Feature Weighting:**
-- **Wind Profiles**: 35% - Temporal generation patterns and variability
-- **Solar Profiles**: 35% - Complementary temporal characteristics  
-- **Grid Distance**: 20% - Infrastructure connectivity and transmission costs
-- **Spatial Coordinates**: 10% - Geographic proximity and regional coherence
-
+        
 **Technical Implementation:**
 - **Algorithm**: Hierarchical clustering with Ward linkage
 - **Preprocessing**: PCA dimensionality reduction (50 components per technology)
