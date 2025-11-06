@@ -1,12 +1,12 @@
 # VerveStacks Model Generation Notes - LVA
-**Generated:** 2025-11-06 15:41:42
+**Generated:** 2025-11-06 15:50:35
 
 
 ## Model Calibration 2022
 
 | **Total Capacity** | **Total Generation** | **CO2 Emissions** | **Calibration to EMBER** |
 |--------------|---------------|------------|--------------------------|
-| 3 GW | 5 TWh | 0.416 Mt | 61% |
+| 3 GW | 5 TWh | 0.594 Mt | 87% |
 
 **Note:** 2022 fossil and bio capacity is calibrated to EMBER and renewable capacities to IRENA. UNSD has incomplete data for fuel consumption, so the calibration is demonstrated against the total CO2 emission reported by EMBER. This shows that the efficiency assumptions are good.
 
@@ -18,7 +18,7 @@
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|-----------------|
 | 🌱 **Bioenergy** | 50 MW | 1/1 plants | 0.14 GW | 34% |
-| 🔥 **Gas** | 10 MW | 4/5 plants | 1.09 GW | 57% |
+| 🔥 **Gas** | 10 MW | 4/5 plants | 1.09 GW | 39.9% |
 | 💧 **Hydro Power** | 10 MW | 4/4 plants | 1.59 GW | 98% |
 | ☀️ **Solar** | 200 MW | 0/11 plants | 0.486 GW | 91% |
 | 💨 **Windon** | 200 MW | 0/3 plants | 0.1 GW | 100% |
