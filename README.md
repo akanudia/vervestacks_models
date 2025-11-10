@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - GBR
-**Generated:** 2025-11-10 16:48:26
+**Generated:** 2025-11-10 17:19:17
 
 
 ## Model Calibration 2022
@@ -79,8 +79,8 @@ Announced and pre-construction projects are offered as options to the model for 
 - **Missing Capacity Added**: - **EMBER data**:
   - **bioenergy**: 2.43 GW
 - **IRENA data**:
-  - **windon**: 0.99 GW
   - **windoff**: 1.02 GW
+  - **windon**: 0.99 GW
   - **solar**: 5.53 GW
   - **hydro**: 0.93 GW
 
