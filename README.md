@@ -1,12 +1,12 @@
 # VerveStacks Model Generation Notes - POL
-**Generated:** 2025-10-24 15:00:51
+**Generated:** 2025-11-12 17:46:09
 
 
 ## Model Calibration 2022
 
 | **Total Capacity** | **Total Generation** | **CO2 Emissions** | **Calibration to EMBER** |
 |--------------|---------------|------------|--------------------------|
-| 55 GW | 174 TWh | 130 Mt | 99% |
+| 56 GW | 174 TWh | 131 Mt | 100% |
 
 **Note:** 2022 fossil and bio capacity is calibrated to EMBER and renewable capacities to IRENA. UNSD has incomplete data for fuel consumption, so the calibration is demonstrated against the total CO2 emission reported by EMBER. This shows that the efficiency assumptions are good.
 
@@ -18,7 +18,7 @@
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|-----------------|
 | 🌱 **Bioenergy** | 50 MW | 11/14 plants | 1.22 GW | 29% |
-| ⚫ **Coal** | 10 MW | 142/142 plants | 29.1 GW | 34% |
+| ⚫ **Coal** | 10 MW | 144/144 plants | 29.2 GW | 33.9% |
 | 🔥 **Gas** | 10 MW | 33/33 plants | 7.67 GW | 58% |
 | 💧 **Hydro Power** | 10 MW | 6/6 plants | 0.532 GW | 62% |
 | ☀️ **Solar** | 200 MW | 6/49 plants | 12.4 GW | 47.2% |
@@ -46,8 +46,8 @@ Announced and pre-construction projects are offered as options to the model for 
 ### 🔄 CCS Retrofit Potential
 | **Fuel Type** | **Retrofit Host Capacity** | **Retrofit Potential Capacity**
 |---------------|----------------------------|-------------------------------|
-| ⚫ **Coal** | 29.1 GW | 18.8 GW after capacity penalty |
-| 🔥 **Gas** | 11.1 GW | 9.41 GW after capacity penalty |
+| ⚫ **Coal** | 29.2 GW | 18.9 GW after capacity penalty |
+| 🔥 **Gas** | 7.67 GW | 6.48 GW after capacity penalty |
 
 
 ## Data, Assumptions & Coverage
@@ -71,13 +71,12 @@ Announced and pre-construction projects are offered as options to the model for 
 ### Data Processing Notes
 - **Individual Plant Coverage**: 90%% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 108 GW GW from all sources
-- **Plants Above Threshold**: 235 individual plants tracked
-- **Total Plants Processed**: 463 plants in database
+- **Plants Above Threshold**: 237 individual plants tracked
+- **Total Plants Processed**: 465 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
   - **solar**: 9.8 GW
   - **hydro**: 0.31 GW
 - **EMBER data**:
-  - **coal**: 1.1 GW
   - **bioenergy**: 0.47 GW
   - **gas**: 0.02 GW
 
