@@ -1,0 +1,38 @@
+[
+  {
+    "SavedGroupId": 288,
+    "GroupName": "all_AR6_R10",
+    "GroupType": "Parametric",
+    "Settings": "[\"AR6_R10_0001\", \"AR6_R10_0002\", \"AR6_R10_0007\", \"AR6_R10_0009\", \"AR6_R10_0010\", \"AR6_R10_0012\", \"AR6_R10_0013\", \"AR6_R10_0018\", \"AR6_R10_0020\", \"AR6_R10_0021\", \"AR6_R10_0023\", \"AR6_R10_0024\", \"AR6_R10_0029\", \"AR6_R10_0031\", \"AR6_R10_0032\", \"AR6_R10_0034\", \"AR6_R10_0035\", \"AR6_R10_0040\", \"AR6_R10_0042\", \"AR6_R10_0043\", \"AR6_R10_0045\", \"AR6_R10_0046\", \"AR6_R10_0051\", \"AR6_R10_0053\", \"AR6_R10_0054\"]",
+    "CreatedOn": "2025-09-05 12:42",
+    "DisplayCreatedOn": "2025-09-05 12:42",
+    "UserName": "akanu"
+  },
+  {
+    "SavedGroupId": 286,
+    "GroupName": "AllRegion",
+    "GroupType": "Region",
+    "Settings": "[\"ITA\"]",
+    "CreatedOn": "2025-09-05 12:42",
+    "DisplayCreatedOn": "2025-09-05 12:42",
+    "UserName": "akanu"
+  },
+  {
+    "SavedGroupId": 285,
+    "GroupName": "AllScenario",
+    "GroupType": "Scenario",
+    "Settings": "[{\"Name\": \"BASE\", \"Checked\": true, \"RowOrder\": 1, \"ShortName\": \"B\", \"FileStatus\": \"Consistent\", \"RecordCount\": 6969}, {\"Name\": \"New_RE_and_Conventional\", \"Checked\": true, \"RowOrder\": 2, \"ShortName\": \"SR\", \"FileStatus\": \"Consistent\", \"RecordCount\": 6933}, {\"Name\": \"SysSettings\", \"Checked\": true, \"RowOrder\": 3, \"ShortName\": \"SS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 3214}, {\"Name\": \"Base_VS\", \"Checked\": true, \"RowOrder\": 4, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 2295}, {\"Name\": \"advanced_features\", \"Checked\": true, \"RowOrder\": 5, \"ShortName\": \"RS\", \"FileStatus\": \"Consistent\", \"RecordCount\": 4041}]",
+    "CreatedOn": "2025-09-05 12:42",
+    "DisplayCreatedOn": "2025-09-05 12:42",
+    "UserName": "akanu"
+  },
+  {
+    "SavedGroupId": 287,
+    "GroupName": "DefaultProperties",
+    "GroupType": "Properties",
+    "Settings": "{\"OptCa\": null, \"OptCr\": null, \"Damage\": 2, \"LimCol\": 0, \"LimRow\": 0, \"Oblong\": true, \"ResLim\": 50000, \"Retire\": false, \"IterLim\": 999999, \"SolPrint\": false, \"Uncertainty\": 0, \"RunInStepsOf\": 0, \"ClimateModule\": false, \"LinearVarCost\": true, \"LevelizedCosts\": 3, \"GamsOptionBratio\": \"\", \"DiscreteInvestment\": false, \"DoExtendedQaChecks\": false, \"GeneralEquilibrium\": 3, \"MidYearDiscounting\": true, \"ObjFunctionVariant\": 0, \"ShiftDiscountingBy\": 0, \"Co2CalibrationAtBoh\": false, \"UseSlackVariablesInUc\": false, \"DiscreteUnitCommitment\": false, \"EndoGenousTechLearning\": false, \"WriteBPriceforElastDem\": false, \"SaveSolutionInformation\": false, \"TsForFlowReportingTypes\": 0, \"UseLastRunAsStartingPoint\": false, \"ActivateSensitivityAnalysis\": false}",
+    "CreatedOn": "2025-09-05 12:42",
+    "DisplayCreatedOn": "2025-09-05 12:42",
+    "UserName": "akanu"
+  }
+]
