@@ -1,12 +1,12 @@
 # VerveStacks Model Generation Notes - COL
-**Generated:** 2025-11-25 13:26:16
+**Generated:** 2025-11-25 13:32:39
 
 
 ## Model Calibration 2022
 
 | **Total Capacity** | **Total Generation** | **CO2 Emissions** | **Calibration to EMBER** |
 |--------------|---------------|------------|--------------------------|
-| 20.1 GW | 82 TWh | 12.6 Mt | 69% |
+| 20.1 GW | 82 TWh | 18.1 Mt | 99% |
 
 **Note:** 2022 fossil and bio capacity is calibrated to EMBER and renewable capacities to IRENA. UNSD has incomplete data for fuel consumption, so the calibration is demonstrated against the total CO2 emission reported by EMBER. This shows that the efficiency assumptions are good.
 
@@ -17,9 +17,9 @@
 
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 1/3 plants | 0.35 GW | — | 31.1% |
-| ⚫ **Coal** | 10 MW | 14/15 plants | 1.65 GW | — | 31.9% |
-| 🔥 **Gas** | 10 MW | 22/22 plants | 4.31 GW | — | 46.3% |
+| 🌱 **Bioenergy** | 50 MW | 1/3 plants | 0.35 GW | — | 21.8% |
+| ⚫ **Coal** | 10 MW | 14/15 plants | 1.65 GW | — | 22.3% |
+| 🔥 **Gas** | 10 MW | 22/22 plants | 4.31 GW | — | 32.4% |
 | 💧 **Hydro Power** | 10 MW | 34/34 plants | 14.5 GW | — | 95% |
 | ☀️ **Solar** | 200 MW | 4/98 plants | 5.05 GW | 0.022 GW | 100% |
 | 💨 **Windon** | 200 MW | 0/7 plants | 0.152 GW | — | 100% |
@@ -34,7 +34,7 @@
 | 💧 **Hydro Power** | 10 MW | 16/16 plants | 4.12 GW | 100% |
 | 🛢️ **Oil** | 10 MW | 2/2 plants | 0.228 GW | 54% |
 | ☀️ **Solar** | 200 MW | 68/88 plants | 30.9 GW | 100% |
-| 🌊 **Windoff** | 200 MW | 9/9 plants | 5.39 GW | 100% |
+| 🌊 **Windoff** | 200 MW | 9/9 plants | 5.38 GW | 100% |
 | 💨 **Windon** | 200 MW | 16/24 plants | 6.08 GW | 100% |
 
 
@@ -43,7 +43,7 @@ Announced and pre-construction projects are offered as options to the model for 
 ### 🔄 CCS Retrofit Potential
 | **Fuel Type** | **Retrofit Host Capacity** | **Retrofit Potential Capacity**
 |---------------|----------------------------|-------------------------------|
-| ⚫ **Coal** | 1.65 GW | 0.975 GW after capacity penalty |
+| ⚫ **Coal** | 1.65 GW | 0.925 GW after capacity penalty |
 | 🔥 **Gas** | 4.31 GW | 3.64 GW after capacity penalty |
 
 
