@@ -1,12 +1,12 @@
 # VerveStacks Model Generation Notes - KEN
-**Generated:** 2025-11-29 11:57:19
+**Generated:** 2025-11-30 00:12:11
 
 
 ## Model Calibration 2022
 
 | **Total Capacity** | **Total Generation** | **CO2 Emissions** | **Calibration to EMBER** |
 |--------------|---------------|------------|--------------------------|
-| 4.2 GW | 12.3 TWh | 0.806 Mt | 78% |
+| 3.3 GW | 12.3 TWh | 1.01 Mt | 98% |
 
 **Note:** 2022 fossil and bio capacity is calibrated to EMBER and renewable capacities to IRENA. UNSD has incomplete data for fuel consumption, so the calibration is demonstrated against the total CO2 emission reported by EMBER. This shows that the efficiency assumptions are good.
 
@@ -17,10 +17,10 @@
 
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 2/3 plants | 1.05 GW | 31.2% |
-| 🌋 **Geothermal** | 10 MW | 24/25 plants | 1.03 GW | 100% |
+| 🌱 **Bioenergy** | 50 MW | 0/3 plants | 0.099 GW | 21.1% |
+| 🌋 **Geothermal** | 10 MW | 28/29 plants | 1.15 GW | 100% |
 | 💧 **Hydro Power** | 10 MW | 10/10 plants | 0.918 GW | 90% |
-| 🛢️ **Oil** | 10 MW | 8/8 plants | 0.639 GW | 30.6% |
+| 🛢️ **Oil** | 10 MW | 8/8 plants | 0.639 GW | 24.5% |
 | ☀️ **Solar** | 200 MW | 0/12 plants | 0.398 GW | 90% |
 | 💨 **Windon** | 200 MW | 2/7 plants | 0.832 GW | 100% |
 
@@ -65,14 +65,13 @@ Announced and pre-construction projects are offered as options to the model for 
 - **Spatial Grid Assignment**: Plants mapped to 50x50km REZoning grid cells for consistent spatial modeling
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 71%% of total capacity from plant-level GEM data
-- **Total Capacity Tracked**: 14 GW GW from all sources
-- **Plants Above Threshold**: 24 individual plants tracked
-- **Total Plants Processed**: 105 plants in database
+- **Individual Plant Coverage**: 68%% of total capacity from plant-level GEM data
+- **Total Capacity Tracked**: 13.1 GW GW from all sources
+- **Plants Above Threshold**: 22 individual plants tracked
+- **Total Plants Processed**: 109 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
   - **hydro**: 0.14 GW
-- **EMBER data**:
-  - **bioenergy**: 1.02 GW
+  - **geothermal**: 0.12 GW
 
 
 ## Model Structure
