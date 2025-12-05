@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - BRA
-**Generated:** 2025-11-29 13:41:15
+**Generated:** 2025-12-05 21:53:17
 
 
 ## Model Calibration 2022
@@ -17,7 +17,7 @@
 
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 152/300 plants | 18.1 GW | 0.157 GW | 29% |
+| 🌱 **Bioenergy** | 50 MW | 152/300 plants | 18.2 GW | 0.157 GW | 29% |
 | ⚫ **Coal** | 10 MW | 17/18 plants | 3.18 GW | — | 33.9% |
 | 🔥 **Gas** | 10 MW | 98/98 plants | 24.5 GW | — | 47.7% |
 | 💧 **Hydro Power** | 130 MW | 106/184 plants | 110 GW | — | 99% |
@@ -72,12 +72,12 @@ Announced and pre-construction projects are offered as options to the model for 
 - **Total Capacity Tracked**: 709 GW GW from all sources
 - **Plants Above Threshold**: 639 individual plants tracked
 - **Total Plants Processed**: 1379 plants in database
-- **Missing Capacity Added**: - **EMBER data**:
-  - **bioenergy**: 2.69 GW
-  - **gas**: 2.63 GW
-- **IRENA data**:
-  - **solar**: 13.24 GW
+- **Missing Capacity Added**: - **IRENA data**:
+  - **bioenergy**: 2.71 GW
   - **hydro**: 0.67 GW
+  - **solar**: 13.24 GW
+- **EMBER data**:
+  - **gas**: 2.63 GW
 
 
 ## Model Structure
@@ -161,11 +161,11 @@ Industrial electricity demand is spatially distributed across the transmission n
 
 | **Load Distribution Method** | **Buses with Load** | **Total Industrial Load** | **Methodology** |
 |------------------------------|---------------------|---------------------------|-----------------|
-| **Voronoi Tessellation** | 95 | 1.0 GW | Geometric proximity-based allocation |
+| **Voronoi Tessellation** | 75 | 1.0 GW | Geometric proximity-based allocation |
 
 #### 📈 **Load Concentration Analysis**
 
-- **Highest Load Bus**: BR744-440 (0.18 GW)
+- **Highest Load Bus**: BR744-440 (0.15 GW)
 - **Load Distribution CV**: 0% (coefficient of variation)
 - **Load Balancing**: Balanced distribution across transmission buses
 
