@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - KEN
-**Generated:** 2025-11-30 00:22:12
+**Generated:** 2025-12-05 16:23:52
 
 
 ## Model Calibration 2022
@@ -159,7 +159,7 @@ Industrial electricity demand is spatially distributed across the transmission n
 
 #### 📈 **Load Concentration Analysis**
 
-- **Highest Load Bus**: KE10-220 (0.62 GW)
+- **Highest Load Bus**: KE10-220 (0.59 GW)
 - **Load Distribution CV**: 0% (coefficient of variation)
 - **Load Balancing**: Balanced distribution across transmission buses
 
