@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - NGA
-**Generated:** 2025-12-01 22:59:20
+**Generated:** 2025-12-05 16:28:13
 
 
 ## Model Calibration 2022
