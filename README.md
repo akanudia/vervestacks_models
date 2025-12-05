@@ -1,12 +1,12 @@
 # VerveStacks Model Generation Notes - ITA
-**Generated:** 2025-09-23 10:07:26
+**Generated:** 2025-12-05 23:17:20
 
 
 ## Model Calibration 2022
 
 | **Total Capacity** | **Total Generation** | **CO2 Emissions** | **Calibration to EMBER** |
 |--------------|---------------|------------|--------------------------|
-| 130 GW | 280 TWh | 116 Mt | 110% |
+| 129 GW | 280 TWh | 91 Mt | 86% |
 
 **Note:** 2022 fossil and bio capacity is calibrated to EMBER and renewable capacities to IRENA. UNSD has incomplete data for fuel consumption, so the calibration is demonstrated against the total CO2 emission reported by EMBER. This shows that the efficiency assumptions are good.
 
@@ -17,15 +17,15 @@
 
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 7/10 plants | 4.17 GW | — | 29.8% |
-| ⚫ **Coal** | 150 MW | 11/11 plants | 6.81 GW | — | 32.9% |
-| 🔥 **Gas** | 150 MW | 105/146 plants | 59 GW | 0.782 GW | 42.4% |
+| 🌱 **Bioenergy** | 50 MW | 7/10 plants | 3.39 GW | — | 38.3% |
+| ⚫ **Coal** | 150 MW | 15/15 plants | 6.81 GW | — | 42.7% |
+| 🔥 **Gas** | 150 MW | 105/146 plants | 59 GW | 0.782 GW | 54% |
 | 🌋 **Geothermal** | 40 MW | 11/23 plants | 0.834 GW | — | 100% |
 | 💧 **Hydro Power** | 40 MW | 75/75 plants | 15.4 GW | — | 68% |
-| 🛢️ **Oil** | 150 MW | 7/15 plants | 2.13 GW | 0.08 GW | 26.9% |
+| 🛢️ **Oil** | 150 MW | 7/15 plants | 2.13 GW | 0.08 GW | 33.9% |
 | ☀️ **Solar** | 200 MW | 12/78 plants | 25.7 GW | — | 48.3% |
 | 🌊 **Windoff** | 200 MW | 0/1 plants | 0.03 GW | — | 100% |
-| 💨 **Windon** | 200 MW | 17/134 plants | 12.3 GW | — | 89% |
+| 💨 **Windon** | 200 MW | 17/135 plants | 12.3 GW | — | 89% |
 | 🔋 **Pumped Storage** | 40 MW | 19/19 plants | 7.56 GW | — | 100% |
 
 
@@ -45,8 +45,8 @@ Announced and pre-construction projects are offered as options to the model for 
 ### 🔄 CCS Retrofit Potential
 | **Fuel Type** | **Retrofit Host Capacity** | **Retrofit Potential Capacity**
 |---------------|----------------------------|-------------------------------|
-| ⚫ **Coal** | 6.81 GW | 4.67 GW after capacity penalty |
-| 🔥 **Gas** | 65 GW | 55 GW after capacity penalty |
+| ⚫ **Coal** | 6.81 GW | 4.78 GW after capacity penalty |
+| 🔥 **Gas** | 60 GW | 51 GW after capacity penalty |
 
 
 ## Data, Assumptions & Coverage
@@ -69,17 +69,17 @@ Announced and pre-construction projects are offered as options to the model for 
 
 ### Data Processing Notes
 - **Individual Plant Coverage**: 94%% of total capacity from plant-level GEM data
-- **Total Capacity Tracked**: 191 GW GW from all sources
-- **Plants Above Threshold**: 322 individual plants tracked
-- **Total Plants Processed**: 600 plants in database
-- **Missing Capacity Added**: - **IRENA data**:
-  - **windon**: 2.05 GW
-  - **solar**: 19.88 GW
-  - **hydro**: 7.28 GW
-- **EMBER data**:
-  - **bioenergy**: 3.58 GW
-  - **coal**: 1.62 GW
+- **Total Capacity Tracked**: 190 GW GW from all sources
+- **Plants Above Threshold**: 326 individual plants tracked
+- **Total Plants Processed**: 605 plants in database
+- **Missing Capacity Added**: - **EMBER data**:
   - **gas**: 11.79 GW
+  - **coal**: 0.64 GW
+- **IRENA data**:
+  - **hydro**: 7.28 GW
+  - **bioenergy**: 2.8 GW
+  - **windon**: 2.03 GW
+  - **solar**: 19.88 GW
 
 
 ## Model Structure
@@ -162,13 +162,7 @@ grid cells into manageable clusters while preserving essential resource characte
 #### **Multi-Feature Clustering Algorithm**
 
 The clustering process combines multiple data dimensions to create economically and spatially coherent renewable energy zones:
-
-**Feature Weighting:**
-- **Wind Profiles**: 35% - Temporal generation patterns and variability
-- **Solar Profiles**: 35% - Complementary temporal characteristics  
-- **Grid Distance**: 20% - Infrastructure connectivity and transmission costs
-- **Spatial Coordinates**: 10% - Geographic proximity and regional coherence
-
+        
 **Technical Implementation:**
 - **Algorithm**: Hierarchical clustering with Ward linkage
 - **Preprocessing**: PCA dimensionality reduction (50 components per technology)
