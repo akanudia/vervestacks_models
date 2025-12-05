@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - DEU
-**Generated:** 2025-12-05 17:05:27
+**Generated:** 2025-12-05 19:09:57
 
 
 ## Model Calibration 2022
@@ -76,14 +76,14 @@ Announced and pre-construction projects are offered as options to the model for 
 - **Plants Above Threshold**: 596 individual plants tracked
 - **Total Plants Processed**: 1463 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
-  - **hydro**: 4.02 GW
   - **bioenergy**: 8.73 GW
-  - **solar**: 41.99 GW
   - **windon**: 21.94 GW
+  - **hydro**: 4.02 GW
+  - **solar**: 41.99 GW
   - **geothermal**: 0.03 GW
 - **EMBER data**:
-  - **gas**: 0.16 GW
   - **coal**: 0.17 GW
+  - **gas**: 0.16 GW
 
 
 ## Model Structure
@@ -167,11 +167,11 @@ Industrial electricity demand is spatially distributed across the transmission n
 
 | **Load Distribution Method** | **Buses with Load** | **Total Industrial Load** | **Methodology** |
 |------------------------------|---------------------|---------------------------|-----------------|
-| **Voronoi Tessellation** | 160 | 1.0 GW | Geometric proximity-based allocation |
+| **Voronoi Tessellation** | 110 | 1.0 GW | Geometric proximity-based allocation |
 
 #### 📈 **Load Concentration Analysis**
 
-- **Highest Load Bus**: way/30303506-380 (0.09 GW)
+- **Highest Load Bus**: way/30303506-380 (0.1 GW)
 - **Load Distribution CV**: 0% (coefficient of variation)
 - **Load Balancing**: Balanced distribution across transmission buses
 
