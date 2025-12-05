@@ -1,12 +1,12 @@
 # VerveStacks Model Generation Notes - VNM
-**Generated:** 2025-09-27 14:50:29
+**Generated:** 2025-12-05 23:49:15
 
 
 ## Model Calibration 2022
 
 | **Total Capacity** | **Total Generation** | **CO2 Emissions** | **Calibration to EMBER** |
 |--------------|---------------|------------|--------------------------|
-| 78 GW | 264 TWh | 111 Mt | 101% |
+| 79 GW | 264 TWh | 109 Mt | 99% |
 
 **Note:** 2022 fossil and bio capacity is calibrated to EMBER and renewable capacities to IRENA. UNSD has incomplete data for fuel consumption, so the calibration is demonstrated against the total CO2 emission reported by EMBER. This shows that the efficiency assumptions are good.
 
@@ -17,11 +17,11 @@
 
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 2/5 plants | 0.544 GW | 32.8% |
-| ⚫ **Coal** | 10 MW | 83/84 plants | 31.3 GW | 36.9% |
+| 🌱 **Bioenergy** | 50 MW | 2/5 plants | 0.557 GW | 33.5% |
+| ⚫ **Coal** | 10 MW | 83/84 plants | 31.3 GW | 37.7% |
 | 🔥 **Gas** | 10 MW | 22/23 plants | 12.1 GW | 51% |
 | 💧 **Hydro Power** | 10 MW | 83/83 plants | 22.7 GW | 83% |
-| ☀️ **Solar** | 200 MW | 33/80 plants | 17 GW | 91% |
+| ☀️ **Solar** | 200 MW | 32/77 plants | 17 GW | 91% |
 | 🌊 **Windoff** | 200 MW | 3/14 plants | 2.34 GW | 100% |
 | 💨 **Windon** | 200 MW | 13/35 plants | 5.97 GW | 100% |
 | 🔋 **Pumped Storage** | 10 MW | 1/1 plants | 1.2 GW | 100% |
@@ -36,7 +36,7 @@
 | 💧 **Hydro Power** | 10 MW | 2/2 plants | 0.22 GW | 100% |
 | ☀️ **Solar** | 200 MW | 17/28 plants | 7.97 GW | 100% |
 | 🌊 **Windoff** | 200 MW | 54/58 plants | 63 GW | 100% |
-| 💨 **Windon** | 200 MW | 11/22 plants | 7.29 GW | 100% |
+| 💨 **Windon** | 200 MW | 11/23 plants | 7.29 GW | 100% |
 | 🔋 **Pumped Storage** | 10 MW | 1/1 plants | 1.5 GW | 100% |
 
 
@@ -45,8 +45,8 @@ Announced and pre-construction projects are offered as options to the model for 
 ### 🔄 CCS Retrofit Potential
 | **Fuel Type** | **Retrofit Host Capacity** | **Retrofit Potential Capacity**
 |---------------|----------------------------|-------------------------------|
-| ⚫ **Coal** | 31.9 GW | 23.1 GW after capacity penalty |
-| 🔥 **Gas** | 58 GW | 49.1 GW after capacity penalty |
+| ⚫ **Coal** | 31.3 GW | 22.7 GW after capacity penalty |
+| 🔥 **Gas** | 12.1 GW | 10.2 GW after capacity penalty |
 
 
 ## Data, Assumptions & Coverage
@@ -71,12 +71,11 @@ Announced and pre-construction projects are offered as options to the model for 
 - **Individual Plant Coverage**: 97%% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 220 GW GW from all sources
 - **Plants Above Threshold**: 335 individual plants tracked
-- **Total Plants Processed**: 476 plants in database
+- **Total Plants Processed**: 474 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
-  - **solar**: 2.33 GW
+  - **bioenergy**: 0.39 GW
   - **hydro**: 5.79 GW
-- **EMBER data**:
-  - **bioenergy**: 0.38 GW
+  - **solar**: 2.33 GW
 
 
 ## Model Structure
@@ -159,13 +158,7 @@ grid cells into manageable clusters while preserving essential resource characte
 #### **Multi-Feature Clustering Algorithm**
 
 The clustering process combines multiple data dimensions to create economically and spatially coherent renewable energy zones:
-
-**Feature Weighting:**
-- **Wind Profiles**: 35% - Temporal generation patterns and variability
-- **Solar Profiles**: 35% - Complementary temporal characteristics  
-- **Grid Distance**: 20% - Infrastructure connectivity and transmission costs
-- **Spatial Coordinates**: 10% - Geographic proximity and regional coherence
-
+        
 **Technical Implementation:**
 - **Algorithm**: Hierarchical clustering with Ward linkage
 - **Preprocessing**: PCA dimensionality reduction (50 components per technology)
