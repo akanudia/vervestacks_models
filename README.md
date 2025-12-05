@@ -1,12 +1,12 @@
 # VerveStacks Model Generation Notes - ITA
-**Generated:** 2025-11-29 13:45:39
+**Generated:** 2025-12-05 21:44:13
 
 
 ## Model Calibration 2022
 
 | **Total Capacity** | **Total Generation** | **CO2 Emissions** | **Calibration to EMBER** |
 |--------------|---------------|------------|--------------------------|
-| 130 GW | 280 TWh | 91 Mt | 86% |
+| 129 GW | 280 TWh | 91 Mt | 86% |
 
 **Note:** 2022 fossil and bio capacity is calibrated to EMBER and renewable capacities to IRENA. UNSD has incomplete data for fuel consumption, so the calibration is demonstrated against the total CO2 emission reported by EMBER. This shows that the efficiency assumptions are good.
 
@@ -17,7 +17,7 @@
 
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 14/18 plants | 4.17 GW | — | 38.2% |
+| 🌱 **Bioenergy** | 50 MW | 14/18 plants | 3.39 GW | — | 37.7% |
 | ⚫ **Coal** | 150 MW | 16/20 plants | 6.81 GW | — | 42.7% |
 | 🔥 **Gas** | 150 MW | 138/239 plants | 59 GW | 0.782 GW | 54% |
 | 🌋 **Geothermal** | 40 MW | 9/27 plants | 0.834 GW | — | 100% |
@@ -69,16 +69,16 @@ Announced and pre-construction projects are offered as options to the model for 
 
 ### Data Processing Notes
 - **Individual Plant Coverage**: 92%% of total capacity from plant-level GEM data
-- **Total Capacity Tracked**: 191 GW GW from all sources
+- **Total Capacity Tracked**: 190 GW GW from all sources
 - **Plants Above Threshold**: 393 individual plants tracked
 - **Total Plants Processed**: 759 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
   - **hydro**: 7.04 GW
-  - **windon**: 2.03 GW
+  - **bioenergy**: 2.8 GW
   - **solar**: 19.88 GW
+  - **windon**: 2.03 GW
 - **EMBER data**:
   - **gas**: 9.64 GW
-  - **bioenergy**: 3.58 GW
   - **coal**: 0.41 GW
 
 
@@ -163,11 +163,11 @@ Industrial electricity demand is spatially distributed across the transmission n
 
 | **Load Distribution Method** | **Buses with Load** | **Total Industrial Load** | **Methodology** |
 |------------------------------|---------------------|---------------------------|-----------------|
-| **Voronoi Tessellation** | 79 | 1.0 GW | Geometric proximity-based allocation |
+| **Voronoi Tessellation** | 61 | 1.0 GW | Geometric proximity-based allocation |
 
 #### 📈 **Load Concentration Analysis**
 
-- **Highest Load Bus**: way/80517630-380 (0.09 GW)
+- **Highest Load Bus**: way/80517630-380 (0.1 GW)
 - **Load Distribution CV**: 0% (coefficient of variation)
 - **Load Balancing**: Balanced distribution across transmission buses
 
