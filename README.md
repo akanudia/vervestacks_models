@@ -1,12 +1,12 @@
 # VerveStacks Model Generation Notes - VNM
-**Generated:** 2025-11-29 12:01:59
+**Generated:** 2025-12-05 23:54:34
 
 
 ## Model Calibration 2022
 
 | **Total Capacity** | **Total Generation** | **CO2 Emissions** | **Calibration to EMBER** |
 |--------------|---------------|------------|--------------------------|
-| 79 GW | 264 TWh | 110 Mt | 100% |
+| 79 GW | 264 TWh | 109 Mt | 99% |
 
 **Note:** 2022 fossil and bio capacity is calibrated to EMBER and renewable capacities to IRENA. UNSD has incomplete data for fuel consumption, so the calibration is demonstrated against the total CO2 emission reported by EMBER. This shows that the efficiency assumptions are good.
 
@@ -17,8 +17,8 @@
 
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 4/7 plants | 0.544 GW | 31.8% |
-| ⚫ **Coal** | 10 MW | 83/84 plants | 31.3 GW | 37.3% |
+| 🌱 **Bioenergy** | 50 MW | 4/7 plants | 0.557 GW | 32.1% |
+| ⚫ **Coal** | 10 MW | 83/84 plants | 31.3 GW | 37.7% |
 | 🔥 **Gas** | 10 MW | 22/23 plants | 12.1 GW | 51% |
 | 💧 **Hydro Power** | 10 MW | 148/148 plants | 22.7 GW | 83% |
 | ☀️ **Solar** | 200 MW | 32/77 plants | 17 GW | 91% |
@@ -74,9 +74,8 @@ Announced and pre-construction projects are offered as options to the model for 
 - **Total Plants Processed**: 541 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
   - **hydro**: 5.79 GW
+  - **bioenergy**: 0.39 GW
   - **solar**: 2.33 GW
-- **EMBER data**:
-  - **bioenergy**: 0.38 GW
 
 
 ## Model Structure
@@ -160,11 +159,11 @@ Industrial electricity demand is spatially distributed across the transmission n
 
 | **Load Distribution Method** | **Buses with Load** | **Total Industrial Load** | **Methodology** |
 |------------------------------|---------------------|---------------------------|-----------------|
-| **Voronoi Tessellation** | 37 | 1.0 GW | Geometric proximity-based allocation |
+| **Voronoi Tessellation** | 38 | 1.0 GW | Geometric proximity-based allocation |
 
 #### 📈 **Load Concentration Analysis**
 
-- **Highest Load Bus**: VN1127-220 (0.35 GW)
+- **Highest Load Bus**: VN1127-220 (0.31 GW)
 - **Load Distribution CV**: 0% (coefficient of variation)
 - **Load Balancing**: Balanced distribution across transmission buses
 
