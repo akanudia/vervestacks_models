@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - POL
-**Generated:** 2025-12-01 23:03:47
+**Generated:** 2025-12-05 16:32:25
 
 
 ## Model Calibration 2022
@@ -162,11 +162,11 @@ Industrial electricity demand is spatially distributed across the transmission n
 
 | **Load Distribution Method** | **Buses with Load** | **Total Industrial Load** | **Methodology** |
 |------------------------------|---------------------|---------------------------|-----------------|
-| **Voronoi Tessellation** | 57 | 1.0 GW | Geometric proximity-based allocation |
+| **Voronoi Tessellation** | 65 | 1.0 GW | Geometric proximity-based allocation |
 
 #### 📈 **Load Concentration Analysis**
 
-- **Highest Load Bus**: way/89434732-220 (0.13 GW)
+- **Highest Load Bus**: way/89434732-220 (0.1 GW)
 - **Load Distribution CV**: 0% (coefficient of variation)
 - **Load Balancing**: Balanced distribution across transmission buses
 
