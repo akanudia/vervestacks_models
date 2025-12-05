@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - DEU
-**Generated:** 2025-12-05 16:37:24
+**Generated:** 2025-12-05 17:05:27
 
 
 ## Model Calibration 2022
@@ -78,9 +78,9 @@ Announced and pre-construction projects are offered as options to the model for 
 - **Missing Capacity Added**: - **IRENA data**:
   - **hydro**: 4.02 GW
   - **bioenergy**: 8.73 GW
-  - **geothermal**: 0.03 GW
   - **solar**: 41.99 GW
   - **windon**: 21.94 GW
+  - **geothermal**: 0.03 GW
 - **EMBER data**:
   - **gas**: 0.16 GW
   - **coal**: 0.17 GW
@@ -167,7 +167,7 @@ Industrial electricity demand is spatially distributed across the transmission n
 
 | **Load Distribution Method** | **Buses with Load** | **Total Industrial Load** | **Methodology** |
 |------------------------------|---------------------|---------------------------|-----------------|
-| **Voronoi Tessellation** | 144 | 1.0 GW | Geometric proximity-based allocation |
+| **Voronoi Tessellation** | 160 | 1.0 GW | Geometric proximity-based allocation |
 
 #### 📈 **Load Concentration Analysis**
 
