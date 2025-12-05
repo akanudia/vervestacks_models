@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - DEU
-**Generated:** 2025-11-29 13:50:22
+**Generated:** 2025-12-05 16:37:24
 
 
 ## Model Calibration 2022
@@ -17,10 +17,10 @@
 
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 32/43 plants | 9.88 GW | — | 32% |
+| 🌱 **Bioenergy** | 50 MW | 32/43 plants | 9.83 GW | — | 32% |
 | ⚫ **Coal** | 110 MW | 76/122 plants | 37.8 GW | 2.64 GW | 35.2% |
 | 🔥 **Gas** | 110 MW | 96/247 plants | 33.9 GW | 2.13 GW | 42.8% |
-| 🌋 **Geothermal** | 10 MW | 0/5 plants | 0.027 GW | — | 100% |
+| 🌋 **Geothermal** | 10 MW | 1/6 plants | 0.06 GW | — | 100% |
 | 💧 **Hydro Power** | 10 MW | 37/37 plants | 4.98 GW | — | 46% |
 | ⚛️ **Nuclear** | — | 3/3 plants | 4.29 GW | — | 100% |
 | 🛢️ **Oil** | 110 MW | 6/18 plants | 1.89 GW | — | 32.7% |
@@ -40,7 +40,7 @@
 | ☀️ **Solar** | 200 MW | 17/61 plants | 9.46 GW | 100% |
 | 🌊 **Windoff** | 200 MW | 10/11 plants | 7.74 GW | 100% |
 | 💨 **Windon** | 200 MW | 8/55 plants | 5.07 GW | 100% |
-| 🔋 **Pumped Storage** | 10 MW | 5/5 plants | 1.56 GW | 100% |
+| 🔋 **Pumped Storage** | 10 MW | 5/5 plants | 1.57 GW | 100% |
 
 
 Announced and pre-construction projects are offered as options to the model for endogenous investment. This is particularly useful for hydro and pumped storage as country-wise potential is not readily available. We also get grid locations of all these units.
@@ -74,13 +74,14 @@ Announced and pre-construction projects are offered as options to the model for 
 - **Individual Plant Coverage**: 88%% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 282 GW GW from all sources
 - **Plants Above Threshold**: 596 individual plants tracked
-- **Total Plants Processed**: 1462 plants in database
+- **Total Plants Processed**: 1463 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
   - **hydro**: 4.02 GW
-  - **windon**: 21.94 GW
+  - **bioenergy**: 8.73 GW
+  - **geothermal**: 0.03 GW
   - **solar**: 41.99 GW
+  - **windon**: 21.94 GW
 - **EMBER data**:
-  - **bioenergy**: 8.78 GW
   - **gas**: 0.16 GW
   - **coal**: 0.17 GW
 
