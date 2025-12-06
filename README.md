@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - KEN
-**Generated:** 2025-12-06 12:50:18
+**Generated:** 2025-12-06 14:21:35
 
 
 ## Model Calibration 2022
@@ -22,7 +22,7 @@
 | 💧 **Hydro Power** | 10 MW | 10/10 plants | 0.918 GW | 90% |
 | 🛢️ **Oil** | 10 MW | 8/8 plants | 0.639 GW | 24.5% |
 | ☀️ **Solar** | 200 MW | 0/12 plants | 0.398 GW | 90% |
-| 💨 **Windon** | 200 MW | 2/7 plants | 0.833 GW | 100% |
+| 💨 **Windon** | 200 MW | 2/7 plants | 0.832 GW | 100% |
 
 
 ### Future Projects (offered for endogenous selection)
