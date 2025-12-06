@@ -1,12 +1,12 @@
 # VerveStacks Model Generation Notes - VNM
-**Generated:** 2025-12-05 23:54:34
+**Generated:** 2025-12-06 20:02:53
 
 
 ## Model Calibration 2022
 
 | **Total Capacity** | **Total Generation** | **CO2 Emissions** | **Calibration to EMBER** |
 |--------------|---------------|------------|--------------------------|
-| 79 GW | 264 TWh | 109 Mt | 99% |
+| 78 GW | 264 TWh | 109 Mt | 99% |
 
 **Note:** 2022 fossil and bio capacity is calibrated to EMBER and renewable capacities to IRENA. UNSD has incomplete data for fuel consumption, so the calibration is demonstrated against the total CO2 emission reported by EMBER. This shows that the efficiency assumptions are good.
 
@@ -73,9 +73,9 @@ Announced and pre-construction projects are offered as options to the model for 
 - **Plants Above Threshold**: 349 individual plants tracked
 - **Total Plants Processed**: 541 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
+  - **solar**: 2.33 GW
   - **hydro**: 5.79 GW
   - **bioenergy**: 0.39 GW
-  - **solar**: 2.33 GW
 
 
 ## Model Structure
