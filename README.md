@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - NGA
-**Generated:** 2025-12-05 21:34:16
+**Generated:** 2025-12-06 12:52:13
 
 
 ## Model Calibration 2022
@@ -41,7 +41,7 @@ Announced and pre-construction projects are offered as options to the model for 
 ### 🔄 CCS Retrofit Potential
 | **Fuel Type** | **Retrofit Host Capacity** | **Retrofit Potential Capacity**
 |---------------|----------------------------|-------------------------------|
-| ⚫ **Coal** | 0.284 GW | 0.159 GW after capacity penalty |
+| ⚫ **Coal** | 0.285 GW | 0.159 GW after capacity penalty |
 | 🔥 **Gas** | 14.2 GW | 12 GW after capacity penalty |
 
 
