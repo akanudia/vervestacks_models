@@ -1,5 +1,5 @@
-# VerveStacks
-**Professional Energy System Models - Ready to Use**
+# VerveStacks Energy System Models
+**Professional. Pre-Built. Ready to Use.**
 
 [![Countries](https://img.shields.io/badge/countries-100+-green.svg)](#global-coverage)
 [![Data Sources](https://img.shields.io/badge/datasets-8+-orange.svg)](#data-foundation)
@@ -24,7 +24,7 @@ Then try to connect it to reality you already know.
 
 You stay rooted in the real system you already understand:
 - Start with domain knowledge (you know your country's energy system)
-- Use the model to validate what you know (does it match reality?)
+- Validate the model with your knowledge (does it match reality?)
 - Explore scenarios using real-world questions (what if we phase out coal?)
 - **Cognitive load from mechanics is near zero**
 
