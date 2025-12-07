@@ -1,7 +1,7 @@
 # VerveStacks
 **Professional Energy System Models - Ready to Use**
 
-[![Countries](https://img.shields.io/badge/countries-190+-green.svg)](#global-coverage)
+[![Countries](https://img.shields.io/badge/countries-100+-green.svg)](#global-coverage)
 [![Data Sources](https://img.shields.io/badge/datasets-8+-orange.svg)](#data-foundation)
 [![License](https://img.shields.io/badge/models-freely%20available-blue.svg)](#license)
 
