@@ -1,364 +1,523 @@
 # VerveStacks
-**The Open Use Energy System Operating System**
+**Professional Energy System Models - Ready to Use**
 
-[![Open Use](https://img.shields.io/badge/license-Open%20Use-blue.svg)](LICENSE)
 [![Countries](https://img.shields.io/badge/countries-190+-green.svg)](#global-coverage)
 [![Data Sources](https://img.shields.io/badge/datasets-8+-orange.svg)](#data-foundation)
+[![License](https://img.shields.io/badge/models-freely%20available-blue.svg)](#license)
 
 ---
 
-## 🌍 **The Open Use Vision**
+## 🎯 **Start Where Others End**
 
-> *"The open USE platform · Powered by data · Shaped by vision · Guided by intuition · Fueled by passion"*
-
-**VerveStacks represents a paradigm shift from "Open Source" to "Open Use"** - the source code remains **closed and proprietary**, but the **outputs are completely transparent and freely available**. This closed-source approach enables rapid innovation and quality control while delivering **pre-built, professional-grade models** that users can immediately apply without needing structural modification capabilities.
-
-### **The Problem: Energy Modeling Apartheid**
-- **Months of Expertise Required**: Traditional TIMES modeling demands specialized skills most don't have
-- **Global Inequality**: Decision-makers in developing countries lack access to credible, usable models
-- **Bottleneck Misidentification**: The constraint isn't model application - it's model availability
-- **Blackbox Syndrome**: Even "open" models often remain opaque in practice
-- **The Builder's Habit**: Energy modelers instinctively want to "start from the input" - but **users don't need to understand the motherboard to use a computer**
-
-### **Our Solution: Democratization Through Controlled Automation**
-**VerveStacks is the beginning of an Energy System Operating System (ESOM OS)** - a **closed-source platform** that transforms energy modeling from an artisanal craft into an automated, transparent, globally accessible utility. The **structural freedom** of the closed-source approach enables rapid delivery of **free, professional-grade models** to users worldwide.
-
+**The Traditional Path:**
 ```
-Traditional Approach          	→  VerveStacks ESOM OS
-═══════════════════════════════    ═══════════════════════════════
-Months of model building      	→  Pre-built models ready for use
-Specialized expertise required 	→  Professional models delivered free  
-Opaque methodologies         	→  Complete output transparency
-Limited geographic coverage   	→  Global 100+ country support
-Manual data integration      	→  Automated pipeline (closed-source)
-Artisanal model craft        	→  Industrial-scale automation
-User builds everything       	→  User receives finished product
+Person-Years → Data Collection → Model Building → Validation → Analysis
+     ↓              ↓                  ↓              ↓           ↓
+  2 years      6 months          12 months      6 months    (if time remains)
 ```
+
+**The VerveStacks Path:**
+```
+Verification → Analysis → Policy Testing → Stakeholder Engagement
+     ↓            ↓              ↓                    ↓
+  2 days     Weeks/Months   Continuous          Continuous
+```
+
+**Most modeling projects never reach comprehensive validation.** 
+
+**VerveStacks users start there.**
 
 ---
 
-## 🚀 **ESOM OS: The Energy System Operating System**
+## ✓ **The Validation Journey**
 
-Just as computer operating systems democratized computing by abstracting complexity, **VerveStacks ESOM OS democratizes energy modeling** by providing a comprehensive platform where users focus on **applying models** rather than **building them**.
+Open any country model in VEDA. Within hours, you can verify against your domain knowledge:
 
-### **Breaking the Builder's Habit**
+- **Base Year Reality Check**: Does 2022 installed capacity match official statistics?
+- **Technology Mix Recognition**: Do you recognize the fuel composition?
+- **Geographic Credibility**: Are power plants in expected locations?
+- **Grid Infrastructure**: Does transmission topology reflect reality?
+- **Resource Potential**: Are renewable zones appearing where they should?
+- **Scenario Plausibility**: Do 2050 pathways align with country context?
+- **Technology Roles**: Is offshore wind, CCS, hydrogen deployment reasonable?
 
-**The energy modeling community has a deeply ingrained habit**: when encountering a model, the instinct is to **"start from the input"** - to understand every dataset, every assumption, every line of code. This is like trying to understand your computer by examining the top-left corner of the motherboard.
+**This is how you START with VerveStacks** - verifying a complete, structured model against what you already know about your country's energy system.
 
-**VerveStacks deliberately breaks this habit** by being **closed-source**:
-
-- **For Builders**: Plenty of excellent open-source options already exist (OSeMOSYS, PyPSA, SWITCH, etc.)
-- **For Users**: VerveStacks provides **finished, professional models** ready for immediate application
-- **The Paradigm Shift**: From "How was this built?" to "What can I do with this?"
-- **User-Centric Design**: Like using a smartphone - you don't need to understand the chipset to make a call
-
-**This is not easy** - breaking decades of academic tradition requires **deliberate design choices**. Closed-source forces users to engage with **outputs and applications** rather than **inputs and construction**.
-
-### **Core Philosophy: The Restaurant Analogy**
-- **Traditional Open Source**: Gives you the recipe and ingredients - you still need to be a master chef
-- **VerveStacks Open Use**: Delivers a **professionally prepared meal** - you focus on enjoying and applying it
-- **Closed-Source Advantage**: The chef's **structural freedom** in the kitchen enables **free delivery** of gourmet meals to everyone
-- **Result**: Users get **immediate value** without needing cooking skills or kitchen access
-
-### **Operating System Components**
-
-#### **🔧 Kernel: Data Integration Engine**
-- **8+ Global Datasets**: Seamlessly integrated and continuously updated
-- **Quality Assurance**: Built-in validation, reconciliation, and gap-filling
-- **Global Coverage**: Consistent methodology across 100+ countries
-- **Real-Time Updates**: Pipeline ready for new data releases
-
-#### **🎛️ Applications: Modeling Modules**
-- **Existing Stock Processor**: Plant-level integration with vintage-based parameters
-- **Timeslice Designer**: Stress-based temporal aggregation (1-600 timeslices)
-- **Grid Modeler**: Spatial clustering with transmission network optimization
-- **Scenario Generator**: AR6 climate trajectories with sectoral detail
-- **Validation Framework**: FACETS reality-checking and quality assurance
-
-#### **🖥️ User Interface: Professional Documentation**
-- **Complete Transparency**: Every assumption, data source, and calculation documented
-- **Contextual Help**: In-model explanations accessible with one click
-- **Visual Validation**: Charts, maps, and network diagrams for model verification
-- **Version Control**: Full change tracking and reproducible releases
+Then you focus on what matters: **policy analysis, scenario design, stakeholder engagement, and decision support.**
 
 ---
 
-## 🎯 **What VerveStacks ESOM OS Delivers**
+## 📊 **What You Get: Curated, Structured Data**
 
-### **⚡ Pre-Built Energy Models (No Coding Required)**
-**Users receive professionally generated models** - the closed-source pipeline runs behind the scenes:
+Each country model includes professionally curated data structured for immediate use in VEDA/TIMES:
 
-```bash
-# WHAT USERS GET: Download ready-made model
-git clone https://github.com/your-org/vervestacks-CHE.git
+### **Existing Power Generation Fleet**
+- **Individual Plant Detail**: Units >10-200 MW threshold with actual specifications
+- **Geographic Precision**: GPS coordinates with grid location assignment
+- **Technical Parameters**: Vintage-based efficiency, capacity factors, commissioning years
+- **Calibrated Reality**: 2022 capacity/generation matching IRENA/EMBER statistics
 
-# WHAT USERS DON'T NEED: The complex generation process
-# (This runs on our servers with full structural freedom)
-# python main.py --iso CHE --grid-modeling --ar6-scenarios
+### **Grid Infrastructure** (where available)
+- **Transmission Network**: Actual topology from OpenStreetMap data
+- **Spatial Regions**: Mathematically consistent clustering (4-400+ regions)
+- **Load Distribution**: Industrial demand mapped to transmission buses
+- **Renewable Zones**: 50×50km grid cells with location-specific capacity factors
 
-# Result: Professional-grade model ready for immediate use
-# - 156 existing power plants with technical specifications
-# - 48 intelligent timeslices capturing renewable variability  
-# - 12 spatial regions with realistic transmission constraints
-# - 5 climate scenarios with CO2 pricing trajectories
-# - Complete documentation with data lineage
-```
+### **Renewable Energy Potential**
+- **Supply Curves**: Technology-specific LCOE vs. capacity curves
+- **Hourly Profiles**: 8760-hour generation patterns by cluster
+- **Conservative Estimates**: Land-use constraints and overlap resolution
+- **Quality Filtering**: Only economically viable resources included
 
-### **🌐 Global Scale, Local Precision**
-- **Multiple Countries**: Scalable from small countries (4 regions) to large countries (400+ regions)
-- **Plant-Level Detail**: Individual units >100MW with vintage-based parameters
-- **Hourly Resolution**: 8760-hour profiles intelligently aggregated
-- **Spatial Intelligence**: Multi-resolution clustering (demand/generation/renewables)
-- **Climate Integration**: IPCC AR6 scenarios with sectoral electricity splits
+### **Temporal Modeling**
+- **Intelligent Timeslices**: 1-600 timeslices capturing critical periods
+- **Stress Period Identification**: Scarcity, surplus, and volatility analysis
+- **Flexible Resolution**: From simple seasonal to detailed hourly representation
 
-### **📊 Professional Quality Output**
-Every model includes:
-- **Excel Templates**: VEDA/TIMES-ready with rich documentation
-- **Scenario Files**: NGFS climate pathways and AR6 trajectories  
-- **Validation Charts**: Model vs. reality comparisons
-- **Network Diagrams**: Transmission system visualization
-- **Economic Atlas**: Three-panel country energy overview
-- **Complete README**: Methodology, assumptions, and data sources
+### **Climate Scenarios**
+- **IPCC AR6 Integration**: 5 climate categories with sectoral trajectories
+- **NGFS Pathways**: Carbon pricing and policy assumptions
+- **Regional Mapping**: ISO codes mapped to AR6 R10 regions
+- **Technology Evolution**: Dynamic cost reductions 2022-2050
+
+### **Validation & Documentation**
+- **Model vs. Reality Charts**: Base year calibration verification
+- **Data Lineage**: Complete traceability to source datasets
+- **Technical Methodology**: Assumptions and processing documented
+- **Visual Diagnostics**: Grid maps, supply curves, stress periods
 
 ---
 
-## 🏗️ **Technical Architecture**
+## 🔬 **Methodological Innovations**
 
-### **Data Foundation**
-| Dataset | Purpose | Coverage |
-|---------|---------|----------|
-| **[Global Energy Monitor](https://globalenergymonitor.org)** | Individual power plants | 40,000+ plants worldwide |
-| **[IRENA Statistics](https://www.irena.org/Statistics)** | Renewable capacity/generation | 200+ countries, 2000-2022 |
-| **[EMBER Climate](https://ember-climate.org/data/)** | Electricity generation/emissions | Global, hourly resolution |
-| **[NGFS Scenarios](https://www.ngfs.net)** | Climate policy projections | 5 scenarios, 2020-2100 |
-| **[REZoning](https://www.irena.org/publications/2022/Mar/Renewable-Energy-Zoning-for-Energy-Transition)** | Renewable energy potential | 50x50km global grid |
-| **[ERA5 Climate](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels)** | Hourly demand profiles | Global, weather-driven |
-| **[IEA WEO](https://www.iea.org/weo)** | Technology costs/assumptions | Global, 2020-2050 |
-| **[IPCC AR6](https://www.ipcc.ch/report/ar6/wg3/)** | Climate scenario trajectories | 5 categories, 1000+ scenarios |
+These sophisticated methodologies distinguish VerveStacks models from simple aggregated datasets:
 
-### **Processing Pipeline**
-```
-Global Datasets → Quality Assurance → Country Filtering → Technology Mapping
-       ↓                ↓                    ↓                    ↓
-Data Integration → Spatial Clustering → Temporal Aggregation → Model Generation
-       ↓                ↓                    ↓                    ↓
-Validation → Documentation → Visualization → VEDA Integration → Git Deployment
-```
+### **🔥 Stress-Based Timeslice Design**
 
-### **Methodological Innovations**
+**Revolutionary temporal modeling** that identifies when storage and flexibility face maximum operational stress:
 
-#### **🔥 Stress-Based Timeslice Design**
-Revolutionary approach to temporal modeling that identifies when storage and ramping face maximum operational stress:
+**The Core Innovation:**  
+Instead of fixed timeslice structures (12 months, 3 day types), VerveStacks identifies critical periods through coverage analysis:
 
-**Core Innovation**: Instead of fixed timeslice structures, VerveStacks identifies critical periods through coverage analysis:
 1. **Baseline Construction**: Current demand profile with existing nuclear (flat dispatch) and hydro (load-following within monthly constraints)
 2. **Renewable Portfolio**: Solar/wind mix based on relative LCOEs from REZoning data to meet annual demand
-3. **Coverage Analysis**: Calculate hourly renewable supply adequacy: `Coverage = (Solar + Wind + Hydro) / Demand × 100%`
-4. **Stress Period Identification**: Rank days/weeks by scarcity (<100%), surplus (>100%), and volatility (high variability)
+3. **Coverage Analysis**: Calculate hourly renewable supply adequacy:  
+   `Coverage = (Solar + Wind + Hydro) / Demand × 100%`
+4. **Stress Period Identification**: Rank days/weeks by:
+   - **Scarcity** (<100% coverage) - when conventional backup is needed
+   - **Surplus** (>100% coverage) - when curtailment or storage charging occurs
+   - **Volatility** (high variability) - when ramping requirements peak
 5. **Intelligent Aggregation**: Select combinations of critical periods to create 1-600 timeslices based on system complexity
 
-**Result**: Timeslices capture the periods that matter most for grid operations - when storage must work hardest, ramping is most critical, and dispatchable generation faces peak demand.
+**Why This Matters:**  
+Timeslices capture the periods that matter most for grid operations - when storage must work hardest, ramping is most critical, and dispatchable generation faces peak demand. This enables accurate capacity planning and investment decisions.
 
-#### **🏗️ Comprehensive Model Architecture**
-
-**Demand Modeling**:
-- **Electricity Demand**: Base year from EMBER data, growth from AR6 scenarios with ISO-R10 climate mapping
-- **Sectoral Profiles**: ERA5 hourly profiles split into industry/residential/commercial sectors
-- **Hydrogen Demand**: Zero base year, future projected as share of electricity demand from AR6 scenarios
-
-**Generation Portfolio**:
-- **Existing Plants**: Individual units from Global Energy Monitor (40,000+ plants) with vintage-based parameters
-- **Missing Capacity**: Gap-filled from EMBER/IRENA with appropriate utilization profiles from Atlite
-- **Technology Costs**: Efficiency and cost assumptions based on region, size, and commissioning vintage
-- **CCS Integration**: Retrofit options for existing units using EPA Table 6 methodology ($30/t CO2 transport/storage)
-- **New Technologies**: Conventional plants from IEA WEO, renewables from REZoning, storage from NREL
-
-**Renewable Resource Modeling**:
-- **Spatial Resolution**: 50×50km grid cells from REZoning with Atlite weather profiles
-- **Conservative Potentials**: Reduced by 40% (solar) and 30% (wind) for land-use constraints
-- **Cost-Performance Classes**: 15-30 LCOE-capacity factor categories per technology
-- **Realistic Portfolio Selection**: Balanced relevant resource approach prevents technology monopolization
-
-#### **🗺️ Voronoi Spatial Clustering** 
-Mathematically rigorous regional modeling that scales from small countries (4 regions) to large countries (400+ regions):
-- **Multi-Resolution Clustering**: Separate demand regions, generation clusters, and renewable zones
-- **Trade Link Optimization**: Connections from generation/renewable clusters to closest demand centers
-- **Transmission Modeling**: NTC estimation using OpenStreetMap data with distance-based efficiency/cost calculations
-- **Flexible Aggregation**: Unit-level detail for plants >100MW, intelligent aggregation below threshold
-- **Non-Overlapping Guarantee**: Voronoi construction ensures mathematically consistent regional boundaries
-
-#### **⚙️ Vintage-Based Technology Modeling**
-Realistic representation of existing infrastructure that captures the full complexity of real energy systems:
-- **Age-Dependent Parameters**: Efficiency degradation and cost variations by commissioning year
-- **Retrofit Pathways**: CCS integration options with realistic capacity and efficiency penalties
-- **Regional Cost Adjustments**: Country-specific multipliers reflecting local economic conditions
-- **Multi-Source Reconciliation**: Systematic gap-filling across GEM, EMBER, and IRENA datasets
-- **Quality Assurance**: Built-in validation ensuring capacity totals match official statistics
-
-#### **📊 Integrated Scenario Framework**
-- **Climate Trajectories**: IPCC AR6 scenarios mapped to 5 climate categories with sectoral electricity splits
-- **Time Horizon**: Flexible modeling periods (default: 2022, 2025-2050 in 5-year steps)
-- **Technology Evolution**: Dynamic cost reductions and performance improvements from IEA WEO projections
-- **Policy Integration**: Carbon pricing, renewable targets, and technology constraints from NGFS scenarios
+**Result:** Traditional fixed timeslices miss critical events. Stress-based timeslices focus computational effort where it matters most.
 
 ---
 
-## 🌍 **Global Coverage & Applications**
+### **🗺️ Multi-Resolution Spatial Clustering**
 
-### **Country Models Available**
-Models can be generated for countries with sufficient data coverage in the global datasets.
+**Mathematically rigorous regional modeling** that scales from small countries (4 regions) to large countries (400+ regions):
 
-### **Potential Applications**
+**The Challenge:**  
+Real energy systems have different spatial patterns for demand centers, existing power plants, and renewable resources. Simple geographic clustering forces artificial uniformity.
 
-#### **🏛️ Policy & Planning**
-- **NDC Reporting**: National climate commitment analysis
-- **Energy Transition Planning**: Decarbonization pathway design
-- **Investment Prioritization**: Infrastructure development optimization
-- **Grid Planning**: Transmission expansion and renewable integration
+**The VerveStacks Solution:**
 
-#### **🎓 Research & Academia**
-- **Comparative Analysis**: Cross-country energy system research
-- **Climate Impact Assessment**: Policy scenario evaluation
-- **Technology Integration**: Emerging technology feasibility studies
-- **Academic Research**: Peer-reviewed energy system studies
+1. **Separate Resolution Levels**:
+   - **Demand Regions**: Clustered by population and industrial centers (fewer, larger regions)
+   - **Generation Clusters**: Existing power plants grouped by grid connectivity
+   - **Renewable Zones**: 50×50km cells clustered by resource quality and hourly profiles
 
-#### **🌱 Capacity Building**
-- **Developing Countries**: Accessible energy modeling capabilities
-- **Training Programs**: University courses and government workshops
-- **Technical Assistance**: Model customization and methodology transfer
-- **Open Science**: Transparent, reproducible energy system research
+2. **Voronoi Tessellation**:
+   - **Non-Overlapping Boundaries**: Mathematically guaranteed regional consistency
+   - **Proximity-Based Assignment**: Each point assigned to nearest cluster center
+   - **Flexible Topology**: Adapts to country size and complexity
+
+3. **Transmission Modeling**:
+- **Trade Link Optimization**: Connections from generation/renewable clusters to closest demand centers
+   - **NTC Estimation**: Net Transfer Capacity using OpenStreetMap grid data
+   - **Distance-Based Costs**: Transmission efficiency and investment costs from actual distances
+
+4. **Intelligent Aggregation**:
+   - **Unit-Level Detail**: Plants >100 MW modeled individually with vintage parameters
+   - **Smart Aggregation**: Smaller units grouped preserving capacity-weighted characteristics
+
+**Why This Matters:**  
+Enables realistic representation of transmission constraints, renewable integration challenges, and regional electricity trade opportunities.
+
+---
+
+### **⚙️ Vintage-Based Technology Modeling**
+
+**Realistic representation of existing infrastructure** capturing the full complexity of real energy systems:
+
+**The Problem:**  
+Real power plants vary dramatically in efficiency, cost, and performance based on age, technology generation, and maintenance history. Simple average parameters miss this heterogeneity.
+
+**The VerveStacks Approach:**
+
+1. **Age-Dependent Parameters**:
+   - Efficiency degradation curves by commissioning year
+   - Operating cost variations reflecting technology generation
+   - Maintenance cost escalation for aging units
+
+2. **Individual Plant Tracking**:
+   - Each unit >threshold modeled separately
+   - Actual commissioning years preserved
+   - Real capacity and fuel type from plant-level data
+
+3. **Retrofit Pathways**:
+   - **CCS Integration**: EPA-based methodology for CO2 capture retrofits
+   - **Capacity Penalties**: Realistic auxiliary power consumption (~15-25%)
+   - **Efficiency Impacts**: Performance degradation from capture equipment
+   - **Cost Estimates**: Transport and storage at $30/t CO2
+
+4. **Regional Cost Adjustments**:
+   - Country-specific multipliers reflecting local economic conditions
+   - Regional fuel price variations
+   - Labor cost differences
+
+**Why This Matters:**  
+Enables realistic fossil phase-out planning, retrofit evaluation, and understanding of stranded asset risks. Critical for transition pathway design.
+
+---
+
+### **🌐 Multi-Source Data Reconciliation**
+
+**Systematic integration and validation** across multiple authoritative datasets:
+
+**The Challenge:**  
+IRENA, EMBER, GEM, and national statistics often disagree. Using any single source means missing data or accepting errors.
+
+**The VerveStacks Solution:**
+
+1. **Hierarchical Integration**:
+   - **Individual Plants**: Global Energy Monitor (GEM) as primary source
+   - **Total Capacity**: IRENA statistics as validation benchmark
+   - **Generation & Emissions**: EMBER data for base year calibration
+   - **Gap Filling**: Synthetic units to match official statistics
+
+2. **Conflict Resolution**:
+   - Cross-validate capacity totals across sources
+   - Technology classification with fuel-specific efficiency assumptions
+   - Geographic assignment using GPS coordinates
+   - Commissioning year reconciliation
+
+3. **Quality Assurance**:
+   - Base year generation must match EMBER within 5%
+   - Capacity factors consistent with technology and location
+   - Emissions validate efficiency assumptions
+   - Missing capacity flagged and documented
+
+4. **Transparent Lineage**:
+   - Every parameter traceable to source dataset
+   - Assumptions documented and justified
+   - Synthetic additions clearly identified
+   - Validation charts included in model documentation
+
+**Why This Matters:**  
+Builds confidence in model outputs. Users can verify against known data and trust results for future scenarios.
+
+---
+
+### **💧 Probabilistic Hydro Scenarios**
+
+**Planning for hydrological uncertainty** using historical patterns and climate projections:
+
+**The Problem:**  
+Hydro availability varies dramatically year-to-year. Using historical average capacity factors underestimates backup capacity needs and drought vulnerability.
+
+**The VerveStacks Solution:**
+
+1. **Historical Analysis**: 24 years (2000-2023) of EMBER generation data
+2. **Regime Classification**: Model persistence of wet, normal, and dry conditions
+3. **Drought Thresholds**: Country-specific P20 (bottom 20% of historical) capacity factors
+4. **Climate Adjustment**: Apply declining trends and increasing variability
+5. **Scenario Generation**: Create P10/P50/P90 future pathways with:
+   - Monthly seasonal patterns preserved
+   - Multi-year persistence captured
+   - Extreme events included
+   - Climate change impacts reflected
+
+**Why This Matters:**  
+High-hydro countries (>30% of generation) face energy security risks during drought sequences. P10 scenarios enable adequate backup capacity planning.
+
+---
+
+### **🌍 Renewable Zone Clustering**
+
+**Preserving geographic diversity** while reducing computational complexity:
+
+**The Challenge:**  
+50×50km REZoning grid produces thousands of zones per country. Direct use in optimization models is computationally prohibitive, but simple aggregation loses geographic hedging benefits.
+
+**The VerveStacks Solution:**
+
+1. **Multi-Feature Clustering**:
+   - **Hourly Profiles**: 8760-hour capacity factor time series
+   - **Economic Parameters**: LCOE and connection cost data
+   - **Spatial Coordinates**: Geographic location for transmission modeling
+   - **Resource Quality**: Mean capacity factor and potential capacity
+
+2. **Hierarchical Algorithm**:
+   - PCA dimensionality reduction (50 components per technology)
+   - Ward linkage clustering with Euclidean distance
+   - Dynamic cluster count: n = cells^0.6
+   - Standardization across all features
+
+3. **Capacity-Weighted Aggregation**:
+   - Each cluster receives weighted hourly profile
+   - Higher potential zones have greater influence
+   - Economic rationality preserved in aggregation
+
+4. **Geographic Hedging**:
+   - Wind resource diversity (spatial variation in patterns)
+   - Solar complementarity (east-west and north-south effects)
+   - Grid connection costs (distance-based)
+   - Temporal smoothing (geographic diversity reduces volatility)
+
+**Why This Matters:**  
+Enables both grid and non-grid models to capture realistic renewable resource diversity. Prevents unrealistic technology monopolization in optimization results.
+
+---
+
+## 🌐 **Radical Openness**
+
+VerveStacks models are **more open than traditional "open source"** because they impose **zero cognitive load** to start using:
+
+| **Traditional Open Source** | **VerveStacks Open Models** |
+|----------------------------|----------------------------|
+| 10,000 lines of code to understand | Open in VEDA, explore immediately |
+| Setup environments, dependencies | Pre-structured, ready to run |
+| Data scattered across scripts | All data in organized Excel files |
+| Build first, verify later | Verify first, customize as needed |
+| **Cognitive barrier to entry** | **Cognitive ramp as you go** |
+
+### **Freedom to Explore**
+
+- **Start with Results**: Models are complete and validated - begin exploring immediately
+- **Optional Deep Dive**: Understand methodology at your own pace, if desired
+- **Full Transparency**: Every assumption, data source, and calculation documented
+- **Modify Freely**: Fork any country model, adjust parameters, add technologies
+- **No Black Boxes**: Complete data lineage from global datasets to model parameters
+
+**Users have the OPTION to break the builder's habit** - you can start with a working model and explore results, or dive into methodology first. Your choice.
+
+---
+
+## 🏗️ **The Real System Before The Model**
+
+VerveStacks inverts the traditional modeling sequence:
+
+**Traditional Approach: Model → Reality**
+1. Build abstract model structure
+2. Populate with aggregated data
+3. Hope it represents reality
+4. Struggle to validate
+
+**VerveStacks Approach: Reality → Model**
+1. Start with real power plants, actual grid, observed generation
+2. Process into model structure preserving detail
+3. Validate against multiple sources during construction
+4. Deliver pre-validated, explorable model
+
+**The result:** Models grounded in observable reality that domain experts can immediately recognize and trust.
 
 ---
 
 ## 🚀 **Getting Started**
 
-### **Option 1: Download Ready-Made Models**
-Browse country-specific branches for immediate use:
-- `vervestacks-CHE/` - Switzerland model example
-- Additional country models available as generated
+### **Browse Country Models**
 
-### **Option 2: Request Custom Models**
-**The generation pipeline is closed-source** - users request models rather than generate them:
+Each country has its own branch with a complete, ready-to-use model:
 
 ```bash
-# USERS CANNOT DO THIS (Closed-Source Pipeline):
-# git clone https://github.com/your-org/VerveStacks.git
-# python main.py --iso JPN --grid-modeling
+# Clone any country model
+git clone -b vervestacks-CHE https://github.com/your-org/vervestacks-models.git
 
-# INSTEAD, USERS REQUEST:
+# Models are immediately usable in VEDA/TIMES
+# - Open .veda files in Veda-TIMES
+# - Explore existing scenarios
+# - Add your own policy assumptions
+# - Run analyses
+```
+
+### **Explore What's Included**
+
+Every model branch contains:
+- `source_data/` - Complete dataset in model-agnostic Excel format
+- `vt_*.xlsx` - VEDA transformation files
+- `Sets-vervestacks.xlsx` - Technology and commodity definitions
+- `Scen_*.xlsx` - AR6 climate scenarios and policy assumptions
+- `grid_analysis/` - Network visualization and topology data
+- `renewable_energy/` - Supply curves and cluster assignments
+- `timeslice_analysis/` - Stress period identification charts
+- `README.md` - Country-specific validation and specifications
+
+### **Typical Workflow**
+
+1. **Verify**: Open model in VEDA, check if base year matches your understanding
+2. **Explore**: Run existing scenarios, examine 2030/2050 pathways
+3. **Customize**: Add country-specific policies, adjust assumptions
+4. **Analyze**: Test policy options, generate insights
+5. **Communicate**: Use built-in visualizations for stakeholders
+
+---
+
+## 🎓 **Use Cases**
+
+### **Policy Analysis & Planning**
+- **NDC Development**: Evaluate nationally determined contribution pathways
+- **Decarbonization Strategies**: Test fossil phase-out scenarios
+- **Investment Planning**: Identify optimal infrastructure timing and sizing
+- **Energy Security**: Assess resilience under supply disruptions
+
+### **Academic Research**
+- **Cross-Country Comparison**: Consistent methodology across 190+ countries
+- **Technology Assessment**: Evaluate emerging technology roles
+- **Climate Impact Analysis**: Scenario-based transition studies
+- **Methodology Development**: Build on validated baseline models
+
+### **Capacity Building**
+- **Training Programs**: Ready-made models for university courses
+- **Institutional Development**: Enable in-house modeling capabilities
+- **Technical Workshops**: Pre-validated examples for hands-on learning
+- **Stakeholder Engagement**: Professional models for policy dialogue
+
+---
+
+## 📚 **Data Foundation**
+
+### **Global Datasets Integrated**
+
+| Dataset | Purpose | Coverage |
+|---------|---------|----------|
+| **[Global Energy Monitor](https://globalenergymonitor.org)** | Individual power plants | 40,000+ plants worldwide |
+| **[IRENA Statistics](https://www.irena.org/Statistics)** | Renewable capacity/generation | 200+ countries, 2000-2022 |
+| **[EMBER Climate](https://ember-climate.org/data/)** | Electricity generation/emissions | Global, hourly resolution |
+| **[REZoning](https://www.irena.org/publications/2022/Mar/Renewable-Energy-Zoning-for-Energy-Transition)** | Renewable energy potential | 50×50km global grid |
+| **[Atlite](https://github.com/PyPSA/atlite)** | Hourly capacity factor profiles | ERA5 weather data |
+| **[NGFS Scenarios](https://www.ngfs.net)** | Climate policy projections | 5 scenarios, 2020-2100 |
+| **[IPCC AR6](https://www.ipcc.ch/report/ar6/wg3/)** | Climate scenario trajectories | 350+ scenario-model combinations |
+| **[IEA WEO](https://www.iea.org/weo)** | Technology costs | Global, 2020-2050 |
+
+---
+
+## 🌍 **Vision: Democratizing Energy System Modeling**
+
+### **The Challenge**
+
+**Energy modeling expertise is concentrated in wealthy institutions.** Decision-makers in developing countries, cities, and smaller organizations lack access to credible, usable models for policy analysis. This creates an **energy modeling divide** where those who need models most have the least access.
+
+### **The VerveStacks Response**
+
+**Shift focus from model building to model application.** By providing professionally curated, pre-validated models, we enable domain experts and policy makers to focus on their actual goal: **understanding energy transition options and making better decisions.**
+
+### **Not Replacing Expertise - Reallocating It**
+
+- **Traditional**: Spend person-years collecting data and building models
+- **VerveStacks**: Spend person-years analyzing policies and engaging stakeholders
+- **Result**: More time for what matters - decision support, not data wrangling
+
+### **The ESOM OS Vision**
+
+VerveStacks is evolving toward an **Energy System Operating System (ESOM OS)** - a comprehensive platform where:
+- Models are **generated and maintained systematically** (like software updates)
+- Users **apply models without building them** (like using applications)
+- **Transparency and rigor** are built-in, not optional add-ons
+- **Global coverage** enables cross-country learning and comparison
+
+*Just as operating systems democratized computing by abstracting complexity, ESOM OS aims to democratize energy modeling by providing ready-to-use professional tools.*
+
+---
+
+## 🔄 **Sustainability Through Automation**
+
+VerveStacks models are maintained through automated data processing pipelines. This enables:
+
+- **Regular Updates**: New data releases integrated efficiently
+- **Global Coverage**: 190+ country models maintainable
+- **Consistent Quality**: Systematic validation and quality checks
+- **Scalable Delivery**: Professional models available at sustainable cost
+
+**The automation is not the value proposition - it's what makes the curated data sustainable.** These models could have been created by hundreds of researchers (like OSeMOSYS Global). What matters to users is: **professionally curated, validated, ready to use.**
+
+---
+
+## 📖 **Documentation**
+
+### **Country-Specific Documentation**
+Each model branch includes a detailed README with:
+- Base year calibration results
+- Power plant inventory and thresholds
+- Grid topology statistics
+- Renewable zone clustering
+- Timeslice design justification
+- Scenario trajectory charts
+
+### **General Documentation**
+- **Methodology Guide**: Complete processing methodology (coming soon)
+- **VEDA Integration**: Using VerveStacks models in VEDA-TIMES (coming soon)
+- **Customization Guide**: Adding policies and technologies (coming soon)
+- **Validation Framework**: Quality assurance procedures (coming soon)
+
+---
+
+## 🤝 **Community & Contributions**
+
+### **How to Contribute**
+
+VerveStacks grows through **application-focused** community engagement:
+
+- **Share Use Cases**: Document how you applied models in real policy contexts
+- **Validation Feedback**: Report discrepancies with local data or knowledge
+- **Country Requests**: Suggest priority countries for new models
+- **Documentation**: Improve guides for model application and interpretation
+- **Impact Stories**: Share how VerveStacks influenced decisions or analysis
+
+### **Custom Models**
+
+Need a model variant with specific assumptions or features?
+
+```bash
+# Standard models: Clone freely
+git clone -b vervestacks-<ISO> https://github.com/your-org/vervestacks-models.git
+
+# Custom variants: Request generation
 # Email: requests@vervestacks.org
-# Subject: Custom Model Request - Japan with Grid Modeling
-# We generate and deliver the model to your specifications
+# We can generate models with your specific requirements
 ```
 
-### **Option 3: Commercial Licensing**
-For organizations needing **structural flexibility** or **custom modifications**:
-
-```bash
-# Commercial License Includes:
-# - User-provided source data
-# - Custom model generation
-# - Priority support
-
-# Contact: commercial@vervestacks.org
-```
-
-**Why Closed-Source?** The **structural freedom** of closed development enables us to:
-- **Deliver Free Models**: No licensing restrictions on rapid innovation
-- **Maintain Quality**: Centralized quality control and validation
-- **Rapid Updates**: Fast integration of new datasets and methodologies
-- **Global Coverage**: Economies of scale for 190+ country support
-
 ---
 
-## 📚 **Documentation & Support**
+## 📞 **Contact**
 
-### **User Documentation**
-- **[Quick Start Guide](docs/quick_start.md)** - Get your first model in 10 minutes
-- **[Model Documentation](docs/model_structure.md)** - Understanding VerveStacks outputs
-- **[VEDA Integration](docs/veda_integration.md)** - Using models in VEDA-TIMES
-- **[Validation Framework](docs/validation.md)** - Quality assurance methodology
-- **[Data Sources](docs/data_sources.md)** - Complete data lineage and updates
-
-### **Technical Documentation**  
-- **[Architecture Overview](docs/architecture.md)** - ESOM OS technical design
-- **[API Reference](docs/api_reference.md)** - Programmatic access
-- **[Contributing Guide](CONTRIBUTING.md)** - Improving the ESOM OS
-- **[Testing Framework](docs/testing.md)** - Quality assurance procedures
-- **[Deployment Guide](docs/deployment.md)** - Setting up VerveStacks
-
-### **Community Support**
-- **[Documentation Site](https://vervestacks.readthedocs.io)** - Comprehensive guides and tutorials
-- **Email Support**: support@vervestacks.org
-
----
-
-## 🤝 **Open Use License & Community**
-
-### **Open Use Principles**
-- **Free Model Access**: All pre-built models freely available for research, education, and policy
-- **Complete Output Transparency**: Full methodology, data sources, and assumptions documented
-- **No Blackbox Results**: Every calculation in delivered models explainable and verifiable
-- **Closed-Source Pipeline**: Generation code remains proprietary to enable free model delivery
-- **Attribution Required**: Cite VerveStacks in publications and policy documents
-- **Commercial Source Licensing**: Available for organizations needing structural flexibility
-
-### **Contributing to ESOM OS**
-The Energy System Operating System grows through **user-focused** community contributions:
-
-- **🔍 Model Applications**: Share real-world use cases and policy applications
-- **🧪 Results Validation**: Compare model outputs with observed data and outcomes
-- **💡 User Needs**: Propose new countries, scenarios, or output formats
-- **📊 Impact Stories**: Document how VerveStacks models influenced decisions
-- **📖 User Documentation**: Enhance guides for model application (not construction)
-- **🌍 Regional Insights**: Provide local knowledge for model interpretation
-
-**Note**: We **deliberately don't accept** code contributions to the core pipeline - this maintains the **user focus** and prevents the community from sliding back into "builder mode."
-
-### **Governance & Roadmap**
-- **Open Development**: All development discussions public on GitHub
-- **Community Voting**: Major features decided by user community
-- **Regular Releases**: Quarterly updates with new data and capabilities
-- **Long-term Vision**: Evolution toward comprehensive ESOM OS platform
-
----
-
-
-
-## 🔮 **The Future: Complete ESOM OS**
-
-VerveStacks represents **Phase 1** of a comprehensive Energy System Operating System. Future development will expand into:
-
-### **Phase 2: Advanced Applications**
-- **AI-Powered Optimization**: Machine learning for parameter tuning
-- **Uncertainty Quantification**: Monte Carlo analysis and sensitivity testing
-
-### **Phase 3: Platform Ecosystem**
-- **Plugin Architecture**: Third-party model extensions and customizations
-- **Cloud Deployment**: Web-based model generation and analysis
-- **Collaborative Modeling**: Multi-user model development and validation
-
-### **Vision: Universal Energy Modeling**
-The ultimate goal is **universal access to credible energy system models** - where any decision-maker, anywhere in the world, can generate, understand, and apply professional-grade energy models for better energy decisions.
-
----
-
-## 📞 **Contact & Links**
-
-- **🌐 Website**: [vervestacks.org](https://vervestacks.cloud)
+- **🌐 Website**: [vervestacks.cloud](https://vervestacks.cloud)
 - **📧 Email**: info@vervestacks.org  
-- **🐦 Twitter**: [@VerveStacks](https://twitter.com/VerveStacks)
-- **💼 LinkedIn**: [VerveStacks](https://linkedin.com/company/vervestacks)
 - **📖 Documentation**: [docs.vervestacks.org](https://docs.vervestacks.org)
-- **💬 Community**: [community.vervestacks.org](https://community.vervestacks.org)
 
 ---
 
-**VerveStacks ESOM OS: Democratizing Energy Modeling Through Open Use**
+## 📄 **License**
 
-*Transforming energy modeling from months to minutes, from artisanal craft to industrial automation, from exclusive expertise to universal access.*
+VerveStacks models are freely available for:
+- Academic research and publication
+- Policy analysis and planning
+- Educational and training purposes
+- Non-commercial applications
+
+**Attribution Required**: Please cite VerveStacks in publications and policy documents that use these models.
+
+Commercial applications are welcome - contact us for formal licensing if needed for your organizational requirements.
 
 ---
 
-*Copyright © 2025 VerveStacks. Licensed under Open Use Agreement.*  
-*"The open USE platform · Powered by data · Shaped by vision · Guided by intuition · Fueled by passion"*
+**VerveStacks: Start with validated models. Focus on analysis. Make better decisions.**
+
+*"Shifting expertise from model building to model application"*
+
+---
+
+*Copyright © 2025 VerveStacks*
