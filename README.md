@@ -7,6 +7,44 @@
 
 ---
 
+## 🏗️ **Understanding the Real System Before the Model**
+
+VerveStacks inverts the traditional modeling sequence:
+
+**Traditional Approach: Model → Reality**
+1. Build abstract model structure
+2. Populate with aggregated data
+3. Hope it represents reality
+4. Struggle to validate
+
+**VerveStacks Approach: Reality → Model**
+1. Start with real power plants, actual grid, observed generation
+2. Process into model structure preserving detail
+3. Validate against multiple sources during construction
+4. Deliver pre-validated, explorable model
+
+**The result:** Models grounded in observable reality that domain experts can immediately recognize and trust.
+
+---
+
+## ✓ **The Validation Journey**
+
+Open any country model in VEDA. Within hours, you can verify against your domain knowledge:
+
+- **Base Year Reality Check**: Does 2022 installed capacity match official statistics?
+- **Technology Mix Recognition**: Do you recognize the fuel composition?
+- **Geographic Credibility**: Are power plants in expected locations?
+- **Grid Infrastructure**: Does transmission topology reflect reality?
+- **Resource Potential**: Are renewable zones appearing where they should?
+- **Scenario Plausibility**: Do 2050 pathways align with country context?
+- **Technology Roles**: Is offshore wind, CCS, hydrogen deployment reasonable?
+
+**This is how you START with VerveStacks** - verifying a complete, structured model against what you already know about your country's energy system.
+
+Then you focus on what matters: **policy analysis, scenario design, stakeholder engagement, and decision support.**
+
+---
+
 ## 🎯 **Start Where Others End**
 
 **The Traditional Path:**
@@ -26,24 +64,6 @@ Verification → Analysis → Policy Testing → Stakeholder Engagement
 **Most modeling projects never reach comprehensive validation.** 
 
 **VerveStacks users start there.**
-
----
-
-## ✓ **The Validation Journey**
-
-Open any country model in VEDA. Within hours, you can verify against your domain knowledge:
-
-- **Base Year Reality Check**: Does 2022 installed capacity match official statistics?
-- **Technology Mix Recognition**: Do you recognize the fuel composition?
-- **Geographic Credibility**: Are power plants in expected locations?
-- **Grid Infrastructure**: Does transmission topology reflect reality?
-- **Resource Potential**: Are renewable zones appearing where they should?
-- **Scenario Plausibility**: Do 2050 pathways align with country context?
-- **Technology Roles**: Is offshore wind, CCS, hydrogen deployment reasonable?
-
-**This is how you START with VerveStacks** - verifying a complete, structured model against what you already know about your country's energy system.
-
-Then you focus on what matters: **policy analysis, scenario design, stakeholder engagement, and decision support.**
 
 ---
 
@@ -304,26 +324,6 @@ VerveStacks models are **more open than traditional "open source"** because they
 - **No Black Boxes**: Complete data lineage from global datasets to model parameters
 
 **Users have the OPTION to break the builder's habit** - you can start with a working model and explore results, or dive into methodology first. Your choice.
-
----
-
-## 🏗️ **The Real System Before The Model**
-
-VerveStacks inverts the traditional modeling sequence:
-
-**Traditional Approach: Model → Reality**
-1. Build abstract model structure
-2. Populate with aggregated data
-3. Hope it represents reality
-4. Struggle to validate
-
-**VerveStacks Approach: Reality → Model**
-1. Start with real power plants, actual grid, observed generation
-2. Process into model structure preserving detail
-3. Validate against multiple sources during construction
-4. Deliver pre-validated, explorable model
-
-**The result:** Models grounded in observable reality that domain experts can immediately recognize and trust.
 
 ---
 
