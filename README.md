@@ -7,23 +7,45 @@
 
 ---
 
-## 🏗️ **Understanding the Real System Before the Model**
+## 🏗️ **Stay Rooted in the Real System**
 
-VerveStacks inverts the traditional modeling sequence:
+**The Traditional Modeling Paradigm:**
 
-**Traditional Approach: Model → Reality**
-1. Build abstract model structure
-2. Populate with aggregated data
-3. Hope it represents reality
-4. Struggle to validate
+You must become rooted in the model:
+- Learn model structure and mechanics first
+- Understand parameter definitions and relationships
+- Build mental models of abstract constructs
+- Translate real-world knowledge into model language
+- **Cognitive load from mechanics dominates**
 
-**VerveStacks Approach: Reality → Model**
-1. Start with real power plants, actual grid, observed generation
-2. Process into model structure preserving detail
-3. Validate against multiple sources during construction
-4. Deliver pre-validated, explorable model
+Then try to connect it to reality you already know.
 
-**The result:** Models grounded in observable reality that domain experts can immediately recognize and trust.
+**The VerveStacks Paradigm:**
+
+You stay rooted in the real system you already understand:
+- Start with domain knowledge (you know your country's energy system)
+- Use the model to validate what you know (does it match reality?)
+- Explore scenarios using real-world questions (what if we phase out coal?)
+- **Cognitive load from mechanics is near zero**
+
+The model serves you, not the other way around.
+
+**Why This Matters:**
+
+Domain experts, policy makers, and analysts should think about **energy systems**, not **model mechanics**. VerveStacks makes the model invisible - you engage with power plants, transmission lines, renewable zones, and policy scenarios, not with abstract parameters and equations.
+
+**The result:** Your expertise in the real energy system becomes immediately applicable, without requiring months of model training.
+
+---
+
+## 📌 **Current Scope**
+
+VerveStacks currently delivers **power sector models** with integrated:
+- **Electric vehicle charging demand** (transport electrification)
+- **Hydrogen production** (electrolysis and other pathways)
+- **Grid infrastructure** (transmission constraints and spatial optimization)
+
+**Full Energy System Operating Models (ESOM)** covering all sectors (industry, buildings, transport, agriculture) are on the development roadmap. The current power sector focus provides the foundation for comprehensive energy system modeling.
 
 ---
 
@@ -42,28 +64,6 @@ Open any country model in VEDA. Within hours, you can verify against your domain
 **This is how you START with VerveStacks** - verifying a complete, structured model against what you already know about your country's energy system.
 
 Then you focus on what matters: **policy analysis, scenario design, stakeholder engagement, and decision support.**
-
----
-
-## 🎯 **Start Where Others End**
-
-**The Traditional Path:**
-```
-Person-Years → Data Collection → Model Building → Validation → Analysis
-     ↓              ↓                  ↓              ↓           ↓
-  2 years      6 months          12 months      6 months    (if time remains)
-```
-
-**The VerveStacks Path:**
-```
-Verification → Analysis → Policy Testing → Stakeholder Engagement
-     ↓            ↓              ↓                    ↓
-  2 days     Weeks/Months   Continuous          Continuous
-```
-
-**Most modeling projects never reach comprehensive validation.** 
-
-**VerveStacks users start there.**
 
 ---
 
