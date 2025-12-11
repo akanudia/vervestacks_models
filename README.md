@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - ITA
-**Generated:** 2025-12-08 12:33:03
+**Generated:** 2025-12-11 12:20:36
 
 
 ## Model Calibration 2022
@@ -72,14 +72,14 @@ Announced and pre-construction projects are offered as options to the model for 
 - **Total Capacity Tracked**: 190 GW GW from all sources
 - **Plants Above Threshold**: 393 individual plants tracked
 - **Total Plants Processed**: 759 plants in database
-- **Missing Capacity Added**: - **EMBER data**:
-  - **gas**: 9.64 GW
-  - **coal**: 0.41 GW
-- **IRENA data**:
+- **Missing Capacity Added**: - **IRENA data**:
   - **hydro**: 7.04 GW
   - **bioenergy**: 2.8 GW
   - **windon**: 2.03 GW
   - **solar**: 19.88 GW
+- **EMBER data**:
+  - **coal**: 0.41 GW
+  - **gas**: 9.64 GW
 
 
 ## Model Structure
@@ -456,15 +456,11 @@ The following visualizations provide detailed insights into temporal patterns an
 <img src="VerveStacks_ITA_grids_kan/timeslice_analysis/re_analysis_summary_ITA.svg" alt="Renewable Energy Analysis Summary" width="100%">
 </div>
 
-#### **Aggregated months and hours (8 X 8 case)**
+#### **Aggregated days and hours (upto 12 seasons X 8 day-night periods)**
 <div align="center">
-<img src="VerveStacks_ITA_grids_kan/timeslice_analysis/aggregation_justification_ITA_ts_048.svg" alt="Aggregated slices clustering" width="100%">
+<img src="VerveStacks_ITA_grids_kan/timeslice_analysis/aggregation_justification_ITA_ts_096.svg" alt="Aggregated slices clustering" width="100%">
 </div>
 
-#### **Weekly Stress Periods (Extended Analysis)**
-<div align="center">
-<img src="VerveStacks_ITA_grids_kan/timeslice_analysis/stress_periods_s2_w_p2_d_weekly_ITA.svg" alt="Weekly Stress Periods" width="100%">
-</div>
 
 #### **Triple-5 Critical Periods (Comprehensive Stress Analysis)**
 <div align="center">
