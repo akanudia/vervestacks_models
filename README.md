@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - NGA
-**Generated:** 2025-12-06 14:25:53
+**Generated:** 2025-12-11 11:00:23
 
 
 ## Model Calibration 2022
@@ -18,7 +18,7 @@
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
 | 🌱 **Bioenergy** | 50 MW | 0/1 plants | 0.021 GW | — | 28.8% |
-| ⚫ **Coal** | 10 MW | 7/7 plants | 0.284 GW | — | 29.7% |
+| ⚫ **Coal** | 10 MW | 7/7 plants | 0.285 GW | — | 29.7% |
 | 🔥 **Gas** | 10 MW | 93/94 plants | 13.3 GW | 0.9 GW | 33.9% |
 | 💧 **Hydro Power** | 10 MW | 6/6 plants | 2.92 GW | — | 100% |
 | ☀️ **Solar** | 200 MW | 0/10 plants | 0.13 GW | — | 58% |
@@ -41,7 +41,7 @@ Announced and pre-construction projects are offered as options to the model for 
 ### 🔄 CCS Retrofit Potential
 | **Fuel Type** | **Retrofit Host Capacity** | **Retrofit Potential Capacity**
 |---------------|----------------------------|-------------------------------|
-| ⚫ **Coal** | 0.285 GW | 0.159 GW after capacity penalty |
+| ⚫ **Coal** | 0.284 GW | 0.159 GW after capacity penalty |
 | 🔥 **Gas** | 14.2 GW | 12 GW after capacity penalty |
 
 
@@ -445,15 +445,11 @@ The following visualizations provide detailed insights into temporal patterns an
 <img src="VerveStacks_NGA_grids_kan/timeslice_analysis/re_analysis_summary_NGA.svg" alt="Renewable Energy Analysis Summary" width="100%">
 </div>
 
-#### **Aggregated months and hours (8 X 8 case)**
+#### **Aggregated days and hours (upto 12 seasons X 8 day-night periods)**
 <div align="center">
-<img src="VerveStacks_NGA_grids_kan/timeslice_analysis/aggregation_justification_NGA_ts_048.svg" alt="Aggregated slices clustering" width="100%">
+<img src="VerveStacks_NGA_grids_kan/timeslice_analysis/aggregation_justification_NGA_ts_096.svg" alt="Aggregated slices clustering" width="100%">
 </div>
 
-#### **Weekly Stress Periods (Extended Analysis)**
-<div align="center">
-<img src="VerveStacks_NGA_grids_kan/timeslice_analysis/stress_periods_s2_w_p2_d_weekly_NGA.svg" alt="Weekly Stress Periods" width="100%">
-</div>
 
 #### **Triple-5 Critical Periods (Comprehensive Stress Analysis)**
 <div align="center">
