@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - KEN
-**Generated:** 2025-12-06 18:05:35
+**Generated:** 2025-12-11 11:14:55
 
 
 ## Model Calibration 2022
@@ -22,7 +22,7 @@
 | 💧 **Hydro Power** | 10 MW | 10/10 plants | 0.918 GW | 90% |
 | 🛢️ **Oil** | 10 MW | 8/8 plants | 0.639 GW | 24.5% |
 | ☀️ **Solar** | 200 MW | 0/12 plants | 0.398 GW | 90% |
-| 💨 **Windon** | 200 MW | 2/7 plants | 0.832 GW | 100% |
+| 💨 **Windon** | 200 MW | 2/7 plants | 0.833 GW | 100% |
 
 
 ### Future Projects (offered for endogenous selection)
@@ -70,8 +70,8 @@ Announced and pre-construction projects are offered as options to the model for 
 - **Plants Above Threshold**: 22 individual plants tracked
 - **Total Plants Processed**: 109 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
-  - **geothermal**: 0.12 GW
   - **hydro**: 0.14 GW
+  - **geothermal**: 0.12 GW
 
 
 ## Model Structure
@@ -448,15 +448,11 @@ The following visualizations provide detailed insights into temporal patterns an
 <img src="VerveStacks_KEN_grids_kan/timeslice_analysis/re_analysis_summary_KEN.svg" alt="Renewable Energy Analysis Summary" width="100%">
 </div>
 
-#### **Aggregated months and hours (8 X 8 case)**
+#### **Aggregated days and hours (upto 12 seasons X 8 day-night periods)**
 <div align="center">
-<img src="VerveStacks_KEN_grids_kan/timeslice_analysis/aggregation_justification_KEN_ts_048.svg" alt="Aggregated slices clustering" width="100%">
+<img src="VerveStacks_KEN_grids_kan/timeslice_analysis/aggregation_justification_KEN_ts_096.svg" alt="Aggregated slices clustering" width="100%">
 </div>
 
-#### **Weekly Stress Periods (Extended Analysis)**
-<div align="center">
-<img src="VerveStacks_KEN_grids_kan/timeslice_analysis/stress_periods_s2_w_p2_d_weekly_KEN.svg" alt="Weekly Stress Periods" width="100%">
-</div>
 
 #### **Triple-5 Critical Periods (Comprehensive Stress Analysis)**
 <div align="center">
