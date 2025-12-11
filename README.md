@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - ZAF
-**Generated:** 2025-12-08 12:48:58
+**Generated:** 2025-12-11 11:10:26
 
 
 ## Model Calibration 2022
@@ -389,15 +389,11 @@ The following visualizations provide detailed insights into temporal patterns an
 <img src="VerveStacks_ZAF_grids_kan/timeslice_analysis/re_analysis_summary_ZAF.svg" alt="Renewable Energy Analysis Summary" width="100%">
 </div>
 
-#### **Aggregated months and hours (8 X 8 case)**
+#### **Aggregated days and hours (upto 12 seasons X 8 day-night periods)**
 <div align="center">
-<img src="VerveStacks_ZAF_grids_kan/timeslice_analysis/aggregation_justification_ZAF_ts_048.svg" alt="Aggregated slices clustering" width="100%">
+<img src="VerveStacks_ZAF_grids_kan/timeslice_analysis/aggregation_justification_ZAF_ts_096.svg" alt="Aggregated slices clustering" width="100%">
 </div>
 
-#### **Weekly Stress Periods (Extended Analysis)**
-<div align="center">
-<img src="VerveStacks_ZAF_grids_kan/timeslice_analysis/stress_periods_s2_w_p2_d_weekly_ZAF.svg" alt="Weekly Stress Periods" width="100%">
-</div>
 
 #### **Triple-5 Critical Periods (Comprehensive Stress Analysis)**
 <div align="center">
