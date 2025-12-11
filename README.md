@@ -1,12 +1,12 @@
 # VerveStacks Model Generation Notes - ZAF
-**Generated:** 2025-12-11 11:10:26
+**Generated:** 2025-12-11 12:26:46
 
 
 ## Model Calibration 2022
 
 | **Total Capacity** | **Total Generation** | **CO2 Emissions** | **Calibration to EMBER** |
 |--------------|---------------|------------|--------------------------|
-| 66 GW | 239 TWh | 225 Mt | 129% |
+| 66 GW | 239 TWh | 189 Mt | 109% |
 
 **Note:** 2022 fossil and bio capacity is calibrated to EMBER and renewable capacities to IRENA. UNSD has incomplete data for fuel consumption, so the calibration is demonstrated against the total CO2 emission reported by EMBER. This shows that the efficiency assumptions are good.
 
@@ -17,12 +17,12 @@
 
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 1/1 plants | 0.265 GW | — | 29.7% |
-| ⚫ **Coal** | 10 MW | 125/125 plants | 46.2 GW | 2.47 GW | 32.1% |
-| 🔥 **Gas** | 10 MW | 6/7 plants | 1.29 GW | — | 39.1% |
+| 🌱 **Bioenergy** | 50 MW | 1/1 plants | 0.265 GW | — | 35.6% |
+| ⚫ **Coal** | 10 MW | 125/125 plants | 46.2 GW | 2.47 GW | 38.3% |
+| 🔥 **Gas** | 10 MW | 6/7 plants | 1.29 GW | — | 51% |
 | 💧 **Hydro Power** | 10 MW | 3/3 plants | 0.642 GW | — | 100% |
 | ⚛️ **Nuclear** | — | 2/2 plants | 1.94 GW | — | 100% |
-| 🛢️ **Oil** | 10 MW | 20/20 plants | 2.42 GW | — | 24.4% |
+| 🛢️ **Oil** | 10 MW | 20/20 plants | 2.42 GW | — | 31.8% |
 | ☀️ **Solar** | 200 MW | 12/106 plants | 9.33 GW | — | 79% |
 | 💨 **Windon** | 200 MW | 8/35 plants | 5.06 GW | — | 100% |
 | 🔋 **Pumped Storage** | 10 MW | 4/4 plants | 2.89 GW | — | 100% |
@@ -45,7 +45,7 @@ Announced and pre-construction projects are offered as options to the model for 
 ### 🔄 CCS Retrofit Potential
 | **Fuel Type** | **Retrofit Host Capacity** | **Retrofit Potential Capacity**
 |---------------|----------------------------|-------------------------------|
-| ⚫ **Coal** | 48.7 GW | 35.5 GW after capacity penalty |
+| ⚫ **Coal** | 48.7 GW | 36.6 GW after capacity penalty |
 | 🔥 **Gas** | 1.29 GW | 1.09 GW after capacity penalty |
 
 
