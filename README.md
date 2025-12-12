@@ -1,12 +1,12 @@
 # VerveStacks Model Generation Notes - USA
-**Generated:** 2025-11-07 14:26:51
+**Generated:** 2025-12-12 09:00:18
 
 
 ## Model Calibration 2022
 
 | **Total Capacity** | **Total Generation** | **CO2 Emissions** | **Calibration to EMBER** |
 |--------------|---------------|------------|--------------------------|
-| 1245 GW | 4287 TWh | 1667 Mt | 101% |
+| 1264 GW | 4287 TWh | 1730 Mt | 105% |
 
 **Note:** 2022 fossil and bio capacity is calibrated to EMBER and renewable capacities to IRENA. UNSD has incomplete data for fuel consumption, so the calibration is demonstrated against the total CO2 emission reported by EMBER. This shows that the efficiency assumptions are good.
 
@@ -17,16 +17,16 @@
 
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 80/100 plants | 13.8 GW | — | 30.6% |
-| ⚫ **Coal** | 860 MW | 89/125 plants | 210 GW | — | 34.5% |
-| 🔥 **Gas** | 860 MW | 185/302 plants | 556 GW | 7.92 GW | 44.7% |
+| 🌱 **Bioenergy** | 50 MW | 80/100 plants | 11.1 GW | — | 29.4% |
+| ⚫ **Coal** | 860 MW | 98/132 plants | 224 GW | — | 34.4% |
+| 🔥 **Gas** | 860 MW | 189/305 plants | 558 GW | 7.92 GW | 44.7% |
 | 🌋 **Geothermal** | 190 MW | 7/39 plants | 3.93 GW | 0.055 GW | 100% |
 | 💧 **Hydro Power** | 190 MW | 111/184 plants | 83 GW | — | 91% |
-| ⚛️ **Nuclear** | — | 94/94 plants | 102 GW | — | 100% |
-| 🛢️ **Oil** | 860 MW | 5/68 plants | 21.3 GW | 1.07 GW | 29% |
-| ☀️ **Solar** | 200 MW | 292/1217 plants | 185 GW | 0.045 GW | 85% |
+| ⚛️ **Nuclear** | — | 95/95 plants | 103 GW | — | 100% |
+| 🛢️ **Oil** | 860 MW | 6/70 plants | 22.5 GW | 1.07 GW | 29.2% |
+| ☀️ **Solar** | 200 MW | 292/1219 plants | 185 GW | 0.045 GW | 85% |
 | 🌊 **Windoff** | 200 MW | 4/7 plants | 5.2 GW | — | 100% |
-| 💨 **Windon** | 260 MW | 258/677 plants | 164 GW | 0.034 GW | 100% |
+| 💨 **Windon** | 260 MW | 263/690 plants | 166 GW | 0.034 GW | 100% |
 | 🔋 **Pumped Storage** | 190 MW | 26/27 plants | 20 GW | — | 100% |
 
 
@@ -50,8 +50,8 @@ Announced and pre-construction projects are offered as options to the model for 
 ### 🔄 CCS Retrofit Potential
 | **Fuel Type** | **Retrofit Host Capacity** | **Retrofit Potential Capacity**
 |---------------|----------------------------|-------------------------------|
-| ⚫ **Coal** | 211 GW | 129 GW after capacity penalty |
-| 🔥 **Gas** | 635 GW | 536 GW after capacity penalty |
+| ⚫ **Coal** | 224 GW | 137 GW after capacity penalty |
+| 🔥 **Gas** | 566 GW | 478 GW after capacity penalty |
 
 
 ## Data, Assumptions & Coverage
@@ -74,16 +74,13 @@ Announced and pre-construction projects are offered as options to the model for 
 
 ### Data Processing Notes
 - **Individual Plant Coverage**: 98%% of total capacity from plant-level GEM data
-- **Total Capacity Tracked**: 1720 GW GW from all sources
-- **Plants Above Threshold**: 2270 individual plants tracked
-- **Total Plants Processed**: 3577 plants in database
+- **Total Capacity Tracked**: 1739 GW GW from all sources
+- **Plants Above Threshold**: 2292 individual plants tracked
+- **Total Plants Processed**: 3605 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
-  - **solar**: 40.35 GW
-  - **hydro**: 11.46 GW
-- **EMBER data**:
-  - **bioenergy**: 6.49 GW
-  - **gas**: 6.33 GW
-  - **coal**: 15.81 GW
+  - **solar**: 40.34 GW
+  - **hydro**: 11.36 GW
+  - **bioenergy**: 3.76 GW
 
 
 ## Model Structure
@@ -335,15 +332,11 @@ The following visualizations provide detailed insights into temporal patterns an
 <img src="VerveStacks_USA/timeslice_analysis/re_analysis_summary_USA.svg" alt="Renewable Energy Analysis Summary" width="100%">
 </div>
 
-#### **Aggregated months and hours (8 X 8 case)**
+#### **Aggregated days and hours (upto 12 seasons X 8 day-night periods)**
 <div align="center">
-<img src="VerveStacks_USA/timeslice_analysis/aggregation_justification_USA_ts_048.svg" alt="Aggregated slices clustering" width="100%">
+<img src="VerveStacks_USA/timeslice_analysis/aggregation_justification_USA_ts_096.svg" alt="Aggregated slices clustering" width="100%">
 </div>
 
-#### **Weekly Stress Periods (Extended Analysis)**
-<div align="center">
-<img src="VerveStacks_USA/timeslice_analysis/stress_periods_s2_w_p2_d_weekly_USA.svg" alt="Weekly Stress Periods" width="100%">
-</div>
 
 #### **Triple-5 Critical Periods (Comprehensive Stress Analysis)**
 <div align="center">
