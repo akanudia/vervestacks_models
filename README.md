@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - ITA
-**Generated:** 2025-12-05 23:17:20
+**Generated:** 2025-12-12 15:41:43
 
 
 ## Model Calibration 2022
@@ -76,10 +76,10 @@ Announced and pre-construction projects are offered as options to the model for 
   - **gas**: 11.79 GW
   - **coal**: 0.64 GW
 - **IRENA data**:
-  - **hydro**: 7.28 GW
-  - **bioenergy**: 2.8 GW
   - **windon**: 2.03 GW
   - **solar**: 19.88 GW
+  - **hydro**: 7.28 GW
+  - **bioenergy**: 2.8 GW
 
 
 ## Model Structure
@@ -331,15 +331,11 @@ The following visualizations provide detailed insights into temporal patterns an
 <img src="VerveStacks_ITA/timeslice_analysis/re_analysis_summary_ITA.svg" alt="Renewable Energy Analysis Summary" width="100%">
 </div>
 
-#### **Aggregated months and hours (8 X 8 case)**
+#### **Aggregated days and hours (upto 12 seasons X 8 day-night periods)**
 <div align="center">
-<img src="VerveStacks_ITA/timeslice_analysis/aggregation_justification_ITA_ts_048.svg" alt="Aggregated slices clustering" width="100%">
+<img src="VerveStacks_ITA/timeslice_analysis/aggregation_justification_ITA_ts_096.svg" alt="Aggregated slices clustering" width="100%">
 </div>
 
-#### **Weekly Stress Periods (Extended Analysis)**
-<div align="center">
-<img src="VerveStacks_ITA/timeslice_analysis/stress_periods_s2_w_p2_d_weekly_ITA.svg" alt="Weekly Stress Periods" width="100%">
-</div>
 
 #### **Triple-5 Critical Periods (Comprehensive Stress Analysis)**
 <div align="center">
