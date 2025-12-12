@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - KEN
-**Generated:** 2025-12-05 23:00:34
+**Generated:** 2025-12-12 15:17:39
 
 
 ## Model Calibration 2022
@@ -70,8 +70,8 @@ Announced and pre-construction projects are offered as options to the model for 
 - **Plants Above Threshold**: 24 individual plants tracked
 - **Total Plants Processed**: 103 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
-  - **bioenergy**: 0.06 GW
   - **geothermal**: 0.12 GW
+  - **bioenergy**: 0.06 GW
   - **hydro**: 0.14 GW
 
 
@@ -324,15 +324,11 @@ The following visualizations provide detailed insights into temporal patterns an
 <img src="VerveStacks_KEN/timeslice_analysis/re_analysis_summary_KEN.svg" alt="Renewable Energy Analysis Summary" width="100%">
 </div>
 
-#### **Aggregated months and hours (8 X 8 case)**
+#### **Aggregated days and hours (upto 12 seasons X 8 day-night periods)**
 <div align="center">
-<img src="VerveStacks_KEN/timeslice_analysis/aggregation_justification_KEN_ts_048.svg" alt="Aggregated slices clustering" width="100%">
+<img src="VerveStacks_KEN/timeslice_analysis/aggregation_justification_KEN_ts_096.svg" alt="Aggregated slices clustering" width="100%">
 </div>
 
-#### **Weekly Stress Periods (Extended Analysis)**
-<div align="center">
-<img src="VerveStacks_KEN/timeslice_analysis/stress_periods_s2_w_p2_d_weekly_KEN.svg" alt="Weekly Stress Periods" width="100%">
-</div>
 
 #### **Triple-5 Critical Periods (Comprehensive Stress Analysis)**
 <div align="center">
