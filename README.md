@@ -1,12 +1,12 @@
 # VerveStacks Model Generation Notes - CHN
-**Generated:** 2025-10-31 14:42:54
+**Generated:** 2025-12-12 15:55:28
 
 
 ## Model Calibration 2022
 
 | **Total Capacity** | **Total Generation** | **CO2 Emissions** | **Calibration to EMBER** |
 |--------------|---------------|------------|--------------------------|
-| 2469 GW | 8777 TWh | 5216 Mt | 100% |
+| 2488 GW | 8777 TWh | 5261 Mt | 101% |
 
 **Note:** 2022 fossil and bio capacity is calibrated to EMBER and renewable capacities to IRENA. UNSD has incomplete data for fuel consumption, so the calibration is demonstrated against the total CO2 emission reported by EMBER. This shows that the efficiency assumptions are good.
 
@@ -17,14 +17,15 @@
 
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 106/108 plants | 23.5 GW | 0.03 GW | 28.9% |
-| ⚫ **Coal** | 1000 MW | 417/463 plants | 1376 GW | 3.18 GW | 37.2% |
+| 🌱 **Bioenergy** | 50 MW | 107/109 plants | 34.5 GW | 0.03 GW | 30.1% |
+| ⚫ **Coal** | 1000 MW | 417/464 plants | 1385 GW | 3.18 GW | 37.1% |
 | 🔥 **Gas** | 1000 MW | 32/61 plants | 196 GW | 0.2 GW | 52% |
+| 🌋 **Geothermal** | 1000 MW | 0/1 plants | 0.026 GW | — | 100% |
 | 💧 **Hydro Power** | 1000 MW | 103/184 plants | 404 GW | — | 85% |
 | ⚛️ **Nuclear** | — | 88/88 plants | 92 GW | — | 100% |
 | ☀️ **Solar** | 500 MW | 543/1408 plants | 847 GW | 0.05 GW | 91% |
 | 🌊 **Windoff** | 200 MW | 160/183 plants | 65 GW | — | 100% |
-| 💨 **Windon** | 360 MW | 560/1313 plants | 572 GW | 2.64 GW | 99% |
+| 💨 **Windon** | 360 MW | 560/1318 plants | 572 GW | 2.64 GW | 99% |
 | 🔋 **Pumped Storage** | 1000 MW | 155/166 plants | 223 GW | — | 100% |
 
 
@@ -48,8 +49,8 @@ Announced and pre-construction projects are offered as options to the model for 
 ### 🔄 CCS Retrofit Potential
 | **Fuel Type** | **Retrofit Host Capacity** | **Retrofit Potential Capacity**
 |---------------|----------------------------|-------------------------------|
-| ⚫ **Coal** | 1596 GW | 1008 GW after capacity penalty |
-| 🔥 **Gas** | 305 GW | 258 GW after capacity penalty |
+| ⚫ **Coal** | 1388 GW | 864 GW after capacity penalty |
+| 🔥 **Gas** | 196 GW | 165 GW after capacity penalty |
 
 
 ## Data, Assumptions & Coverage
@@ -72,12 +73,13 @@ Announced and pre-construction projects are offered as options to the model for 
 
 ### Data Processing Notes
 - **Individual Plant Coverage**: 99%% of total capacity from plant-level GEM data
-- **Total Capacity Tracked**: 5456 GW GW from all sources
+- **Total Capacity Tracked**: 5476 GW GW from all sources
 - **Plants Above Threshold**: 4308 individual plants tracked
-- **Total Plants Processed**: 5154 plants in database
+- **Total Plants Processed**: 5162 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
+  - **windon**: 11.71 GW
+  - **bioenergy**: 11.09 GW
   - **solar**: 109.96 GW
-  - **windon**: 12.0 GW
   - **hydro**: 87.82 GW
 
 
@@ -330,15 +332,11 @@ The following visualizations provide detailed insights into temporal patterns an
 <img src="VerveStacks_CHN/timeslice_analysis/re_analysis_summary_CHN.svg" alt="Renewable Energy Analysis Summary" width="100%">
 </div>
 
-#### **Aggregated months and hours (8 X 8 case)**
+#### **Aggregated days and hours (upto 12 seasons X 8 day-night periods)**
 <div align="center">
-<img src="VerveStacks_CHN/timeslice_analysis/aggregation_justification_CHN_ts_048.svg" alt="Aggregated slices clustering" width="100%">
+<img src="VerveStacks_CHN/timeslice_analysis/aggregation_justification_CHN_ts_096.svg" alt="Aggregated slices clustering" width="100%">
 </div>
 
-#### **Weekly Stress Periods (Extended Analysis)**
-<div align="center">
-<img src="VerveStacks_CHN/timeslice_analysis/stress_periods_s2_w_p2_d_weekly_CHN.svg" alt="Weekly Stress Periods" width="100%">
-</div>
 
 #### **Triple-5 Critical Periods (Comprehensive Stress Analysis)**
 <div align="center">
