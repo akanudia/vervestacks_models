@@ -1,12 +1,12 @@
-# VerveStacks Model Generation Notes - ZAF
-**Generated:** 2025-12-11 12:26:46
+# VerveStacks Model Generation Notes - CHN
+**Generated:** 2025-12-12 08:46:42
 
 
 ## Model Calibration 2022
 
 | **Total Capacity** | **Total Generation** | **CO2 Emissions** | **Calibration to EMBER** |
 |--------------|---------------|------------|--------------------------|
-| 66 GW | 239 TWh | 189 Mt | 109% |
+| 2488 GW | 8777 TWh | 5261 Mt | 101% |
 
 **Note:** 2022 fossil and bio capacity is calibrated to EMBER and renewable capacities to IRENA. UNSD has incomplete data for fuel consumption, so the calibration is demonstrated against the total CO2 emission reported by EMBER. This shows that the efficiency assumptions are good.
 
@@ -17,27 +17,31 @@
 
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 1/1 plants | 0.265 GW | — | 35.6% |
-| ⚫ **Coal** | 10 MW | 125/125 plants | 46.2 GW | 2.47 GW | 38.3% |
-| 🔥 **Gas** | 10 MW | 6/7 plants | 1.29 GW | — | 51% |
-| 💧 **Hydro Power** | 10 MW | 3/3 plants | 0.642 GW | — | 100% |
-| ⚛️ **Nuclear** | — | 2/2 plants | 1.94 GW | — | 100% |
-| 🛢️ **Oil** | 10 MW | 20/20 plants | 2.42 GW | — | 31.8% |
-| ☀️ **Solar** | 200 MW | 12/106 plants | 9.33 GW | — | 79% |
-| 💨 **Windon** | 200 MW | 8/35 plants | 5.06 GW | — | 100% |
-| 🔋 **Pumped Storage** | 10 MW | 4/4 plants | 2.89 GW | — | 100% |
+| 🌱 **Bioenergy** | 50 MW | 107/109 plants | 34.5 GW | 0.03 GW | 30.1% |
+| ⚫ **Coal** | 1000 MW | 417/464 plants | 1385 GW | 3.18 GW | 37.1% |
+| 🔥 **Gas** | 1000 MW | 32/61 plants | 196 GW | 0.2 GW | 52% |
+| 🌋 **Geothermal** | 1000 MW | 0/1 plants | 0.026 GW | — | 100% |
+| 💧 **Hydro Power** | 1000 MW | 103/184 plants | 404 GW | — | 85% |
+| ⚛️ **Nuclear** | — | 88/88 plants | 92 GW | — | 100% |
+| ☀️ **Solar** | 500 MW | 543/1408 plants | 847 GW | 0.05 GW | 91% |
+| 🌊 **Windoff** | 200 MW | 160/183 plants | 65 GW | — | 100% |
+| 💨 **Windon** | 360 MW | 560/1318 plants | 572 GW | 2.64 GW | 99% |
+| 🔋 **Pumped Storage** | 1000 MW | 155/166 plants | 223 GW | — | 100% |
 
 
 ### Future Projects (offered for endogenous selection)
 
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Total Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|-----------------|
-| ⚫ **Coal** | 10 MW | 2/2 plants | 1.46 GW | 32.2% |
-| 🔥 **Gas** | 10 MW | 10/10 plants | 10.2 GW | 50% |
-| 🛢️ **Oil** | 10 MW | 1/1 plants | 0.45 GW | 28.8% |
-| ☀️ **Solar** | 200 MW | 9/22 plants | 6.63 GW | 100% |
-| 💨 **Windon** | 200 MW | 1/11 plants | 1.66 GW | 100% |
-| 🔋 **Pumped Storage** | 10 MW | 1/1 plants | 1.5 GW | 100% |
+| 🌱 **Bioenergy** | 50 MW | 14/14 plants | 2.84 GW | 32.3% |
+| ⚫ **Coal** | 1000 MW | 118/123 plants | 217 GW | 43.5% |
+| 🔥 **Gas** | 1000 MW | 10/13 plants | 109 GW | 53% |
+| 💧 **Hydro Power** | 1000 MW | 21/28 plants | 109 GW | 100% |
+| ⚛️ **Nuclear** | — | 74/74 plants | 85 GW | 100% |
+| ☀️ **Solar** | 500 MW | 279/365 plants | 474 GW | 100% |
+| 🌊 **Windoff** | 200 MW | 62/66 plants | 41.5 GW | 100% |
+| 💨 **Windon** | 360 MW | 253/296 plants | 322 GW | 100% |
+| 🔋 **Pumped Storage** | 1000 MW | 199/201 plants | 292 GW | 100% |
 
 
 Announced and pre-construction projects are offered as options to the model for endogenous investment. This is particularly useful for hydro and pumped storage as country-wise potential is not readily available. We also get grid locations of all these units.
@@ -45,8 +49,8 @@ Announced and pre-construction projects are offered as options to the model for 
 ### 🔄 CCS Retrofit Potential
 | **Fuel Type** | **Retrofit Host Capacity** | **Retrofit Potential Capacity**
 |---------------|----------------------------|-------------------------------|
-| ⚫ **Coal** | 48.7 GW | 36.6 GW after capacity penalty |
-| 🔥 **Gas** | 1.29 GW | 1.09 GW after capacity penalty |
+| ⚫ **Coal** | 1388 GW | 864 GW after capacity penalty |
+| 🔥 **Gas** | 196 GW | 165 GW after capacity penalty |
 
 
 ## Data, Assumptions & Coverage
@@ -68,146 +72,23 @@ Announced and pre-construction projects are offered as options to the model for 
 - **Spatial Grid Assignment**: Plants mapped to 50x50km REZoning grid cells for consistent spatial modeling
 
 ### Data Processing Notes
-- **Individual Plant Coverage**: 95%% of total capacity from plant-level GEM data
-- **Total Capacity Tracked**: 94 GW GW from all sources
-- **Plants Above Threshold**: 215 individual plants tracked
-- **Total Plants Processed**: 350 plants in database
+- **Individual Plant Coverage**: 99%% of total capacity from plant-level GEM data
+- **Total Capacity Tracked**: 5476 GW GW from all sources
+- **Plants Above Threshold**: 4308 individual plants tracked
+- **Total Plants Processed**: 5162 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
-  - **solar**: 3.0 GW
-  - **bioenergy**: 0.26 GW
+  - **solar**: 109.96 GW
+  - **windon**: 11.71 GW
+  - **bioenergy**: 11.09 GW
+  - **hydro**: 87.82 GW
 
 
 ## Model Structure
 
 ### Files Included
-- **Source Data**: `source_data/VerveStacks_ZAF.xlsx` - the full dataset in a model-agnostic format
+- **Source Data**: `source_data/VerveStacks_CHN.xlsx` - the full dataset in a model-agnostic format
 - **VEDA Model Files**: Complete model ready for Veda-TIMES execution
 - **Scenario Files**: NGFS climate scenarios and policy assumptions
-
-
-## Grid Network Visualization
-
-### 🗺️ **Grid Network Overview**
-
-This model includes a **comprehensive grid visualization** showing the complete transmission infrastructure and renewable energy integration:
-
-<div align="center">
-  <img src="VerveStacks_ZAF_grids_kan/grid_analysis/ZAF_network_visualization.svg" 
-       alt="Grid Network Visualization" 
-       style="max-width: 100%; height: auto; border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-  <p><em>🗺️ Grid network showing transmission infrastructure, power plants, and renewable energy zones</em></p>
-</div>
-
-**What you can explore:**
-- **Transmission Network**: High-voltage lines and substations from real grid data
-- **Power Plant Locations**: Actual generating facilities mapped to grid buses
-- **Renewable Energy Zones**: 50×50km grid cells with solar/wind potential
-- **Load Centers**: Industrial demand distribution across the network
-- **Grid Constraints**: Bottlenecks and transmission limitations
-
-
-### Grid Topology Statistics
-
-#### 📊 **Transmission Infrastructure**
-
-| **Metric** | **Value** | **Description** |
-|------------|-----------|-----------------|
-| **Total Buses** | 130 | Transmission substations and connection points |
-| **Transmission Lines** | 223 | High-voltage transmission corridors |
-| **Voltage Levels** | 400.0, 765.0 | Multi-level transmission system (220kV, 380kV, etc.) |
-
-#### ⚡ **Power Plant Integration**
-
-| **Integration Type** | **Count** | **Total Capacity** | **Description** |
-|---------------------|-----------|-------------------|-----------------|
-| **Plants Mapped to Buses** | 292 | 292 GW | GEM power plants assigned to grid locations |
-
-
-### Spatial Resolution & Renewable Zones
-
-#### 🗺️ **High-Resolution Grid Modeling**
-
-This model employs **50×50km spatial resolution** for detailed renewable energy analysis:
-
-| **Spatial Metric** | **Value** | **Technical Detail** |
-|-------------------|-----------|---------------------|
-| **Grid Cells** | 1086 | 50×50km renewable energy zones |
-| **Solar/Wind Onshore Zones** | 592 | Grid cells with solar and onshore wind potential |
-| **Wind Offshore Zones** | 492 | Grid cells with offshore wind potential |
-| **Zone-Bus Mappings** | 1086 | REZoning zones assigned to transmission buses |
-
-#### 🔌 **Spatial Commodity System**
-
-Each grid cell generates location-specific electricity commodities:
-- **Solar**: `elc_spv_<cluster_id>`
-- **Wind Onshore**: `elc_won_<cluster_id>`
-- **Wind Offshore**: `elc_wof_<cluster_id>`
-
-This enables **grid-aware optimization** where renewable generation is constrained by:
-- Transmission capacity between zones
-- Grid stability requirements
-- Spatial resource quality variations
-- Inter-zone electricity trade opportunities
-
-
-### Load Distribution Analysis
-
-#### 🏭 **Industrial Demand Mapping**
-
-Industrial electricity demand is spatially distributed across the transmission network using **Voronoi tessellation**:
-
-| **Load Distribution Method** | **Buses with Load** | **Total Industrial Load** | **Methodology** |
-|------------------------------|---------------------|---------------------------|-----------------|
-| **Voronoi Tessellation** | 10 | 1.0 GW | Geometric proximity-based allocation |
-
-#### 📈 **Load Concentration Analysis**
-
-- **Highest Load Bus**: way/359805008-400 (0.4 GW)
-- **Load Distribution CV**: 0% (coefficient of variation)
-- **Load Balancing**: Balanced distribution across transmission buses
-
-This spatial load distribution enables **realistic grid modeling** where:
-- Industrial demand varies by location
-- Transmission constraints affect supply-demand balancing
-- Grid bottlenecks impact renewable integration
-- Regional electricity trade opportunities are identified
-
-
-### Technical Implementation
-
-#### 🔬 **Grid Processing Methodology**
-
-**1. Network Extraction & Clustering**
-- **Source**: OpenStreetMap transmission data via PyPSA-Eur
-- **Clustering**: DBSCAN algorithm reduces bus count by 0.0%
-- **Topology Preservation**: Critical transmission lines maintained during clustering
-- **Voltage Hierarchy**: Multi-level transmission system (220kV, 380kV, 500kV)
-
-**2. Renewable Zone Integration**
-- **REZoning Database**: 50×50km grid cells with LCOE and capacity factor data
-- **Spatial Mapping**: Zones assigned to nearest transmission buses
-- **Resource Quality**: Capacity factors vary by location and technology
-- **Grid Constraints**: Transmission capacity limits renewable integration
-
-**3. Power Plant Assignment**
-- **GEM Database**: Global Energy Monitor power plant locations
-- **Spatial Proximity**: Plants assigned to nearest transmission buses
-- **Capacity Aggregation**: Multiple plants at same bus aggregated
-- **Technology Classification**: Fuel type and generation technology preserved
-
-**4. Load Distribution Algorithm**
-- **Industrial Database**: Hotmaps industrial electricity consumption
-- **Voronoi Tessellation**: Geometric proximity-based allocation to nearest transmission buses
-- **Grid Integration**: Load assigned to transmission buses, not individual consumers
-
-#### 🎯 **Model Capabilities**
-
-This grid modeling enables:
-- **Transmission Constraint Analysis**: Identify grid bottlenecks and expansion needs
-- **Renewable Integration Studies**: Optimize renewable deployment considering grid limits
-- **Inter-Regional Trade**: Model electricity exchange between grid zones
-- **Grid Stability Assessment**: Analyze system stability with high renewable penetration
-- **Investment Planning**: Identify optimal transmission and generation investments
 
 
 ## Renewable Energy Characterization
@@ -257,7 +138,7 @@ showing how costs evolve as more capacity is developed:
 - **Original vs Landuse-Adjusted**: Impact of conservative overlap management
 
 <div align="center">
-<img src="VerveStacks_ZAF_grids_kan/renewable_energy/supply_curves_ZAF.svg" alt="Renewable Energy Supply Curves" width="100%">
+<img src="VerveStacks_CHN/renewable_energy/supply_curves_CHN.svg" alt="Renewable Energy Supply Curves" width="100%">
 </div>
 
 This analysis provides the foundation for understanding renewable energy economics and informs 
@@ -273,11 +154,11 @@ grid cells into manageable clusters while preserving essential resource characte
 
 | **Clustering Metric** | **Value** | **Description** |
 |----------------------|-----------|-----------------|
-| **Grid Cells Processed** | 1086 | 50×50km renewable energy grid cells |
-| **Clusters Generated** | 43 | Dynamically determined using n = cells^0.6 |
-| **Average Cluster Size** | 12.4 grid cells | Mean grid cells per cluster |
-| **Cluster Size Range** | 4 to 34 grid cells | Variation in cluster composition |
-| **Grid Definition** | Infrastructure-based transmission buses | Transmission infrastructure basis |
+| **Grid Cells Processed** | 3601 | 50×50km renewable energy grid cells |
+| **Clusters Generated** | 136 | Dynamically determined using n = cells^0.6 |
+| **Average Cluster Size** | 26.5 grid cells | Mean grid cells per cluster |
+| **Cluster Size Range** | 5 to 86 grid cells | Variation in cluster composition |
+| **Grid Definition** | Cities as transmission bus proxies | Transmission infrastructure basis |
 
 #### **Multi-Feature Clustering Algorithm**
 
@@ -329,34 +210,96 @@ demonstrating how the algorithm balances resource quality, geographic diversity,
 
 **Solar PV Clustering:**
 <div align="center">
-  <img src="VerveStacks_ZAF_grids_kan/source_data/clustering_results_ZAF_solar.png" 
+  <img src="VerveStacks_CHN/source_data/clustering_results_CHN_solar.png" 
        alt="Solar PV Clustering Results" 
        style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-  <p><em>Solar PV clustering showing 43 clusters from 1086 grid cells using Infrastructure-based transmission buses</em></p>
+  <p><em>Solar PV clustering showing 136 clusters from 3601 grid cells using Cities as transmission bus proxies</em></p>
 </div>
 
 **Onshore Wind Clustering:**
 <div align="center">
-  <img src="VerveStacks_ZAF_grids_kan/source_data/clustering_results_ZAF_wind_onshore.png" 
+  <img src="VerveStacks_CHN/source_data/clustering_results_CHN_wind_onshore.png" 
        alt="Onshore Wind Clustering Results" 
        style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-  <p><em>Onshore wind clustering showing 43 clusters from 1086 grid cells using Infrastructure-based transmission buses</em></p>
+  <p><em>Onshore wind clustering showing 136 clusters from 3601 grid cells using Cities as transmission bus proxies</em></p>
 </div>
 
 **Offshore Wind Clustering:**
 <div align="center">
-  <img src="VerveStacks_ZAF_grids_kan/source_data/clustering_results_ZAF_wind_offshore.png" 
+  <img src="VerveStacks_CHN/source_data/clustering_results_CHN_wind_offshore.png" 
        alt="Offshore Wind Clustering Results" 
        style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-  <p><em>Offshore wind clustering showing 43 clusters from 1086 grid cells using Infrastructure-based transmission buses</em></p>
+  <p><em>Offshore wind clustering showing 136 clusters from 3601 grid cells using Cities as transmission bus proxies</em></p>
 </div>
 
 **Visualization Features:**
 - **Technology-specific clustering**: Each renewable technology clustered independently
 - **Color-coded clusters**: Each cluster shown in distinct colors
 - **Grid cell boundaries**: 50×50km renewable energy zones
-- **Transmission infrastructure**: Infrastructure-based transmission buses overlaid for context
+- **Transmission infrastructure**: Cities as transmission bus proxies overlaid for context
 - **Resource quality**: Cluster composition reflects capacity factor variations
+
+
+## 💧 Hydro Availability Scenarios
+
+### Planning for Hydro Uncertainty
+
+Hydroelectric generation is inherently variable due to seasonal patterns, year-to-year climate variations, and long-term climate change. Traditional energy models often assume constant hydro availability based on historical averages, which can lead to significant underestimation of backup capacity needs and inadequate drought preparedness.
+
+**VerveStacks addresses this critical gap** by generating probabilistic hydro availability scenarios that capture:
+- **Natural variability**: Seasonal wet/dry cycles and multi-year persistence
+- **Climate change impacts**: Declining mean availability and increasing extremes  
+- **Extreme events**: Drought sequences that stress energy systems
+- **Country-specific patterns**: Drought thresholds based on historical operational experience
+
+### **Methodology Overview**
+
+Our approach combines **24 years of historical data** (2000-2023) from EMBER Climate with advanced scenario generation to create realistic future pathways:
+
+1. **Historical Analysis**: Extract seasonal patterns, drought frequencies, and country-specific thresholds
+2. **Regime Classification**: Model persistence of wet, normal, and dry conditions  
+3. **Climate Adjustment**: Apply declining trends and increasing variability
+4. **Scenario Generation**: Create 100+ plausible futures preserving historical characteristics
+
+**Key Innovation**: Drought thresholds are derived from each country's bottom 20% of historical capacity factors, ensuring definitions reflect actual operational stress rather than arbitrary percentages.
+
+### **CHN Hydro Profile**
+
+| **Planning Parameter** | **Value** | **Application** |
+|----------------------|-----------|-----------------|
+| **Hydro Dependency** | N/A% of generation | System vulnerability assessment |
+| **P10 (Dry Scenario)** | 36.5% annual average | Security planning, reserve sizing |
+| **P50 (Base Scenario)** | 38.5% annual average | Expected case, financial planning |
+| **P90 (Wet Scenario)** | 40.4% annual average | Export opportunities, minimum backup |
+| **Historical Average** | 40.8% (2000-2023) | Validation benchmark |
+| **Drought Threshold** | 39.3% (P20 of historical) | Operational stress indicator |
+
+### **Monthly Availability Patterns**
+
+<div align="center">
+  <img src="VerveStacks_CHN/source_data/CHN_hydro_monthly_profile.png" 
+       alt="Monthly Hydro Availability Profile" 
+       style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+  <p><em>Monthly hydro availability showing P10/P50/P90 future scenarios validated against historical patterns</em></p>
+</div>
+
+### **Long-term Trajectory Analysis**
+
+<div align="center">
+  <img src="VerveStacks_CHN/source_data/CHN_hydro_annual_trajectory.png" 
+       alt="Annual Hydro Availability Trajectory" 
+       style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+  <p><em>Annual hydro trajectories connecting historical data (2000-2023) to future scenarios (2025-2050)</em></p>
+</div>
+
+### **Planning Applications**
+
+**Capacity Planning**: Use P50 for base case sizing, verify adequacy with P10 scenarios  
+**Investment Analysis**: P10 scenarios for downside risk, P90 for upside potential  
+**System Operations**: P10 for emergency preparedness, P50 for maintenance scheduling  
+**Policy Analysis**: Understand drought impacts on energy security and backup requirements
+
+**Key Insight**: The future will not match historical averages. Planning for hydro variability using P10/P50/P90 scenarios is essential for reliable, cost-effective energy systems.
 
 
 ## Temporal Modeling & Timeslice Analysis
@@ -386,18 +329,18 @@ The following visualizations provide detailed insights into temporal patterns an
 
 #### **Renewable Energy Analysis Overview**
 <div align="center">
-<img src="VerveStacks_ZAF_grids_kan/timeslice_analysis/re_analysis_summary_ZAF.svg" alt="Renewable Energy Analysis Summary" width="100%">
+<img src="VerveStacks_CHN/timeslice_analysis/re_analysis_summary_CHN.svg" alt="Renewable Energy Analysis Summary" width="100%">
 </div>
 
 #### **Aggregated days and hours (upto 12 seasons X 8 day-night periods)**
 <div align="center">
-<img src="VerveStacks_ZAF_grids_kan/timeslice_analysis/aggregation_justification_ZAF_ts_096.svg" alt="Aggregated slices clustering" width="100%">
+<img src="VerveStacks_CHN/timeslice_analysis/aggregation_justification_CHN_ts_096.svg" alt="Aggregated slices clustering" width="100%">
 </div>
 
 
 #### **Triple-5 Critical Periods (Comprehensive Stress Analysis)**
 <div align="center">
-<img src="VerveStacks_ZAF_grids_kan/timeslice_analysis/stress_periods_s5p5v5_d_ZAF.svg" alt="Triple-5 Critical Periods" width="100%">
+<img src="VerveStacks_CHN/timeslice_analysis/stress_periods_s5p5v5_d_CHN.svg" alt="Triple-5 Critical Periods" width="100%">
 </div>
 
 ### Timeslice Structure Generation
@@ -406,9 +349,9 @@ The following visualizations provide detailed insights into temporal patterns an
 - **Critical Period Enhancement**: Additional segments for identified stress periods
 
 
-## AR6 Climate Scenarios - R10AFRICA
+## AR6 Climate Scenarios - R10CHINA+
 
-This model incorporates climate scenario drivers from the IPCC AR6 database for the **R10AFRICA** region, 
+This model incorporates climate scenario drivers from the IPCC AR6 database for the **R10CHINA+** region, 
 derived from 350 vetted scenario-model combinations spanning 5 climate categories 
 from ambitious 1.5°C pathways (C1) to limited mitigation trajectories (C7). The scenarios cover 
 7 years from 2020 to 2050, providing comprehensive 
@@ -418,7 +361,7 @@ pathways for energy system transformation under different climate policy futures
 ### Climate Scenario Trajectories
 
 <div align="center">
-  <img src="VerveStacks_ZAF_grids_kan/scenario_drivers/ar6_scenarios_ZAF.png" 
+  <img src="VerveStacks_CHN/scenario_drivers/ar6_scenarios_CHN.png" 
        alt="AR6 Climate Scenario Trajectories" 
        style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
   <p><em>Climate scenario trajectories showing CO2 prices, electricity growth, and hydrogen deployment across different climate ambitions</em></p>
@@ -427,18 +370,18 @@ pathways for energy system transformation under different climate policy futures
 **Key Insights:**
 - **5 Climate Categories**: From 1.5°C pathways to baseline scenarios
 - **350 Scenario-Model Combinations**: Comprehensive coverage of transformation pathways  
-- **Regional Context**: R10AFRICA region-specific climate policy patterns
+- **Regional Context**: R10CHINA+ region-specific climate policy patterns
 - **Temporal Coverage**: 2020-2050 transformation trajectories
 
 
 ### Scenario-Model Divergence Analysis
 
 **Model Agreement**: Analysis across 350 scenario-model combinations reveals:
-- **High Convergence**: CO2 pricing trajectories (CV: inf%) and electricity growth (CV: 46.9%)
-- **Moderate Uncertainty**: Transport electrification rates (CV: 102.3%) 
-- **High Divergence**: Hydrogen deployment pathways (CV: 86.7%)
+- **High Convergence**: CO2 pricing trajectories (CV: inf%) and electricity growth (CV: 18.6%)
+- **Moderate Uncertainty**: Transport electrification rates (CV: 71.6%) 
+- **High Divergence**: Hydrogen deployment pathways (CV: 146.3%)
 
-**Regional Characteristics**: The R10AFRICA region shows moderate convergence compared to global 
+**Regional Characteristics**: The R10CHINA+ region shows moderate convergence compared to global 
 averages, with region-specific climate policy patterns reflecting economic and policy context.
 
 
