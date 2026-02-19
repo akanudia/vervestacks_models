@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - CHN
-**Generated:** 2026-02-19 21:04:45
+**Generated:** 2026-02-19 21:44:45
 
 
 ## Model Calibration 2022
@@ -18,7 +18,7 @@
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
 | 🌱 **Bioenergy** | 50 MW | 188/222 plants | 34.5 GW | 0.03 GW | 30% |
-| ⚫ **Coal** | 1000 MW | 678/1048 plants | 1385 GW | 3.19 GW | 37.1% |
+| ⚫ **Coal** | 1000 MW | 678/1048 plants | 1385 GW | 3.18 GW | 37.1% |
 | 🔥 **Gas** | 1000 MW | 54/192 plants | 196 GW | 0.2 GW | 52% |
 | 🌋 **Geothermal** | 1000 MW | 0/1 plants | 0.026 GW | — | 100% |
 | 💧 **Hydro Power** | 1000 MW | 99/374 plants | 404 GW | — | 85% |
@@ -78,9 +78,9 @@ Announced and pre-construction projects are offered as options to the model for 
 - **Total Plants Processed**: 6292 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
   - **bioenergy**: 11.05 GW
+  - **solar**: 109.96 GW
   - **hydro**: 87.82 GW
   - **windon**: 11.71 GW
-  - **solar**: 109.96 GW
 
 
 ## Model Structure
