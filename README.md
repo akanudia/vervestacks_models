@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - CHN
-**Generated:** 2026-02-19 21:44:45
+**Generated:** 2026-02-20 00:57:54
 
 
 ## Model Calibration 2022
@@ -77,10 +77,10 @@ Announced and pre-construction projects are offered as options to the model for 
 - **Plants Above Threshold**: 5228 individual plants tracked
 - **Total Plants Processed**: 6292 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
-  - **bioenergy**: 11.05 GW
-  - **solar**: 109.96 GW
-  - **hydro**: 87.82 GW
   - **windon**: 11.71 GW
+  - **bioenergy**: 11.05 GW
+  - **hydro**: 87.82 GW
+  - **solar**: 109.96 GW
 
 
 ## Model Structure
@@ -502,9 +502,9 @@ pathways for energy system transformation under different climate policy futures
 ### Scenario-Model Divergence Analysis
 
 **Model Agreement**: Analysis across 350 scenario-model combinations reveals:
-- **High Convergence**: CO2 pricing trajectories (CV: inf%) and electricity growth (CV: 16.0%)
-- **Moderate Uncertainty**: Transport electrification rates (CV: 62.8%) 
-- **High Divergence**: Hydrogen deployment pathways (CV: inf%)
+- **High Convergence**: CO2 pricing trajectories (CV: inf%) and electricity growth (CV: 18.6%)
+- **Moderate Uncertainty**: Transport electrification rates (CV: 71.6%) 
+- **High Divergence**: Hydrogen deployment pathways (CV: 146.3%)
 
 **Regional Characteristics**: The R10CHINA+ region shows moderate convergence compared to global 
 averages, with region-specific climate policy patterns reflecting economic and policy context.
