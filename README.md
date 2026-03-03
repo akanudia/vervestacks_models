@@ -1,12 +1,12 @@
 # VerveStacks Model Generation Notes - ARE
-**Generated:** 2026-02-20 14:07:38
+**Generated:** 2026-03-03 16:37:35
 
 
 ## Model Calibration 2022
 
 | **Total Capacity** | **Total Generation** | **CO2 Emissions** | **Calibration to EMBER** |
 |--------------|---------------|------------|--------------------------|
-| 50 GW | 153 TWh | 60 Mt | 70% |
+| 50 GW | 153 TWh | 77 Mt | 90% |
 
 **Note:** 2022 fossil and bio capacity is calibrated to EMBER and renewable capacities to IRENA. UNSD has incomplete data for fuel consumption, so the calibration is demonstrated against the total CO2 emission reported by EMBER. This shows that the efficiency assumptions are good.
 
@@ -17,9 +17,9 @@
 
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 1/2 plants | 0.22 GW | 30.6% |
-| ⚫ **Coal** | 50 MW | 2/2 plants | 1.2 GW | 40.9% |
-| 🔥 **Gas** | 50 MW | 120/127 plants | 47.9 GW | 44.9% |
+| 🌱 **Bioenergy** | 50 MW | 1/2 plants | 0.22 GW | 21.4% |
+| ⚫ **Coal** | 50 MW | 2/2 plants | 1.2 GW | 28.6% |
+| 🔥 **Gas** | 50 MW | 120/127 plants | 47.9 GW | 34.8% |
 | 💧 **Hydro Power** | 10 MW | 1/1 plants | 0.25 GW | 100% |
 | ⚛️ **Nuclear** | — | 4/4 plants | 5.67 GW | 100% |
 | ☀️ **Solar** | 200 MW | 13/31 plants | 6.7 GW | 100% |
@@ -40,7 +40,7 @@ Announced and pre-construction projects are offered as options to the model for 
 ### 🔄 CCS Retrofit Potential
 | **Fuel Type** | **Retrofit Host Capacity** | **Retrofit Potential Capacity**
 |---------------|----------------------------|-------------------------------|
-| ⚫ **Coal** | 1.2 GW | 0.921 GW after capacity penalty |
+| ⚫ **Coal** | 1.2 GW | 0.873 GW after capacity penalty |
 | 🔥 **Gas** | 47.9 GW | 40.5 GW after capacity penalty |
 
 
