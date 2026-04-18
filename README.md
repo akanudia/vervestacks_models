@@ -5,6 +5,8 @@
 [![Data Sources](https://img.shields.io/badge/datasets-8+-orange.svg)](#data-foundation)
 [![License](https://img.shields.io/badge/models-freely%20available-blue.svg)](#license)
 
+[STARTING WITH THE POWER SECTOR]
+
 ---
 
 ## 🏗️ **Stay Rooted in the Real System**
