@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - MEX
-**Generated:** 2026-04-22 22:18:11
+**Generated:** 2026-04-23 00:11:06
 
 
 ## Model Calibration 2022
@@ -72,9 +72,9 @@ Announced and pre-construction projects are offered as options to the model for 
 - **Plants Above Threshold**: 340 individual plants tracked
 - **Total Plants Processed**: 463 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
-  - **geothermal**: 0.06 GW
   - **bioenergy**: 0.58 GW
   - **hydro**: 1.01 GW
+  - **geothermal**: 0.06 GW
 
 
 ## Model Structure
@@ -257,11 +257,11 @@ Our approach combines **24 years of historical data** (2000-2023) from EMBER Cli
 
 **Key Innovation**: Drought thresholds are derived from each country's bottom 20% of historical capacity factors, ensuring definitions reflect actual operational stress rather than arbitrary percentages.
 
-### **MEX Hydro Profile**
+### **Mexico Hydro Profile**
 
 | **Planning Parameter** | **Value** | **Application** |
 |----------------------|-----------|-----------------|
-| **Hydro Dependency** | N/A% of generation | System vulnerability assessment |
+| **Hydro Dependency** | 5.8% of generation | System vulnerability assessment |
 | **P10 (Dry Scenario)** | 27.9% annual average | Security planning, reserve sizing |
 | **P50 (Base Scenario)** | 29.7% annual average | Expected case, financial planning |
 | **P90 (Wet Scenario)** | 31.4% annual average | Export opportunities, minimum backup |
