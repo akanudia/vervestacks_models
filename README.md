@@ -1,12 +1,12 @@
 # VerveStacks Model Generation Notes - MEX
-**Generated:** 2026-04-22 16:55:22
+**Generated:** 2026-04-22 22:18:11
 
 
 ## Model Calibration 2022
 
 | **Total Capacity** | **Total Generation** | **CO2 Emissions** | **Calibration to EMBER** |
 |--------------|---------------|------------|--------------------------|
-| 93 GW | 340 TWh | 143 Mt | 89% |
+| 93 GW | 340 TWh | 158 Mt | 98% |
 
 **Note:** 2022 fossil and bio capacity is calibrated to EMBER and renewable capacities to IRENA. UNSD has incomplete data for fuel consumption, so the calibration is demonstrated against the total CO2 emission reported by EMBER. This shows that the efficiency assumptions are good.
 
@@ -17,13 +17,13 @@
 
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 4/5 plants | 0.882 GW | — | 24.3% |
-| ⚫ **Coal** | 240 MW | 15/16 plants | 5.38 GW | — | 26.1% |
-| 🔥 **Gas** | 240 MW | 103/122 plants | 53 GW | — | 38.3% |
+| 🌱 **Bioenergy** | 50 MW | 4/5 plants | 0.882 GW | — | 22% |
+| ⚫ **Coal** | 240 MW | 15/16 plants | 5.38 GW | — | 23.6% |
+| 🔥 **Gas** | 240 MW | 103/122 plants | 53 GW | — | 34.6% |
 | 🌋 **Geothermal** | 10 MW | 22/23 plants | 0.999 GW | — | 100% |
 | 💧 **Hydro Power** | 10 MW | 29/29 plants | 13.2 GW | — | 95% |
 | ⚛️ **Nuclear** | — | 2/2 plants | 1.61 GW | — | 100% |
-| 🛢️ **Oil** | 240 MW | 19/21 plants | 5.42 GW | 1.28 GW | 25.6% |
+| 🛢️ **Oil** | 240 MW | 19/21 plants | 5.42 GW | 1.28 GW | 23.8% |
 | ☀️ **Solar** | 200 MW | 40/117 plants | 17.4 GW | 0.117 GW | 100% |
 | 💨 **Windon** | 200 MW | 18/57 plants | 9.16 GW | — | 100% |
 
@@ -72,9 +72,9 @@ Announced and pre-construction projects are offered as options to the model for 
 - **Plants Above Threshold**: 340 individual plants tracked
 - **Total Plants Processed**: 463 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
-  - **hydro**: 1.01 GW
-  - **bioenergy**: 0.58 GW
   - **geothermal**: 0.06 GW
+  - **bioenergy**: 0.58 GW
+  - **hydro**: 1.01 GW
 
 
 ## Model Structure
@@ -262,9 +262,9 @@ Our approach combines **24 years of historical data** (2000-2023) from EMBER Cli
 | **Planning Parameter** | **Value** | **Application** |
 |----------------------|-----------|-----------------|
 | **Hydro Dependency** | N/A% of generation | System vulnerability assessment |
-| **P10 (Dry Scenario)** | 22.9% annual average | Security planning, reserve sizing |
-| **P50 (Base Scenario)** | 24.3% annual average | Expected case, financial planning |
-| **P90 (Wet Scenario)** | 26.0% annual average | Export opportunities, minimum backup |
+| **P10 (Dry Scenario)** | 27.9% annual average | Security planning, reserve sizing |
+| **P50 (Base Scenario)** | 29.7% annual average | Expected case, financial planning |
+| **P90 (Wet Scenario)** | 31.4% annual average | Export opportunities, minimum backup |
 | **Historical Average** | 29.5% (2000-2023) | Validation benchmark |
 | **Drought Threshold** | 26.8% (P20 of historical) | Operational stress indicator |
 
