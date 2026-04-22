@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - MEX
-**Generated:** 2025-11-25 01:08:07
+**Generated:** 2026-04-22 16:55:22
 
 
 ## Model Calibration 2022
@@ -17,15 +17,15 @@
 
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 4/5 plants | 0.87 GW | — | 24.3% |
+| 🌱 **Bioenergy** | 50 MW | 4/5 plants | 0.882 GW | — | 24.3% |
 | ⚫ **Coal** | 240 MW | 15/16 plants | 5.38 GW | — | 26.1% |
 | 🔥 **Gas** | 240 MW | 103/122 plants | 53 GW | — | 38.3% |
-| 🌋 **Geothermal** | 10 MW | 21/22 plants | 0.941 GW | — | 100% |
+| 🌋 **Geothermal** | 10 MW | 22/23 plants | 0.999 GW | — | 100% |
 | 💧 **Hydro Power** | 10 MW | 29/29 plants | 13.2 GW | — | 95% |
 | ⚛️ **Nuclear** | — | 2/2 plants | 1.61 GW | — | 100% |
 | 🛢️ **Oil** | 240 MW | 19/21 plants | 5.42 GW | 1.28 GW | 25.6% |
-| ☀️ **Solar** | 200 MW | 39/117 plants | 17.4 GW | 0.117 GW | 100% |
-| 💨 **Windon** | 200 MW | 17/57 plants | 9.16 GW | — | 100% |
+| ☀️ **Solar** | 200 MW | 40/117 plants | 17.4 GW | 0.117 GW | 100% |
+| 💨 **Windon** | 200 MW | 18/57 plants | 9.16 GW | — | 100% |
 
 
 ### Future Projects (offered for endogenous selection)
@@ -35,8 +35,8 @@
 | 🌱 **Bioenergy** | 50 MW | 1/1 plants | 0.074 GW | 33% |
 | 🔥 **Gas** | 240 MW | 2/3 plants | 1.41 GW | 60% |
 | 💧 **Hydro Power** | 10 MW | 5/5 plants | 2.44 GW | 100% |
-| ☀️ **Solar** | 200 MW | 38/56 plants | 17.3 GW | 100% |
-| 💨 **Windon** | 200 MW | 7/10 plants | 1.86 GW | 100% |
+| ☀️ **Solar** | 200 MW | 39/53 plants | 17.3 GW | 100% |
+| 💨 **Windon** | 200 MW | 7/9 plants | 1.86 GW | 100% |
 
 
 Announced and pre-construction projects are offered as options to the model for endogenous investment. This is particularly useful for hydro and pumped storage as country-wise potential is not readily available. We also get grid locations of all these units.
@@ -69,12 +69,12 @@ Announced and pre-construction projects are offered as options to the model for 
 ### Data Processing Notes
 - **Individual Plant Coverage**: 96%% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 131 GW GW from all sources
-- **Plants Above Threshold**: 341 individual plants tracked
-- **Total Plants Processed**: 466 plants in database
+- **Plants Above Threshold**: 340 individual plants tracked
+- **Total Plants Processed**: 463 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
   - **hydro**: 1.01 GW
-- **EMBER data**:
-  - **bioenergy**: 0.56 GW
+  - **bioenergy**: 0.58 GW
+  - **geothermal**: 0.06 GW
 
 
 ## Model Structure
@@ -326,15 +326,11 @@ The following visualizations provide detailed insights into temporal patterns an
 <img src="VerveStacks_MEX/timeslice_analysis/re_analysis_summary_MEX.svg" alt="Renewable Energy Analysis Summary" width="100%">
 </div>
 
-#### **Aggregated months and hours (8 X 8 case)**
+#### **Aggregated days and hours (upto 12 seasons X 8 day-night periods)**
 <div align="center">
-<img src="VerveStacks_MEX/timeslice_analysis/aggregation_justification_MEX_ts_048.svg" alt="Aggregated slices clustering" width="100%">
+<img src="VerveStacks_MEX/timeslice_analysis/aggregation_justification_MEX_ts_096.svg" alt="Aggregated slices clustering" width="100%">
 </div>
 
-#### **Weekly Stress Periods (Extended Analysis)**
-<div align="center">
-<img src="VerveStacks_MEX/timeslice_analysis/stress_periods_s2_w_p2_d_weekly_MEX.svg" alt="Weekly Stress Periods" width="100%">
-</div>
 
 #### **Triple-5 Critical Periods (Comprehensive Stress Analysis)**
 <div align="center">
