@@ -1,12 +1,12 @@
 # VerveStacks Model Generation Notes - ESP
-**Generated:** 2025-09-22 22:49:16
+**Generated:** 2026-04-26 17:45:10
 
 
 ## Model Calibration 2022
 
 | **Total Capacity** | **Total Generation** | **CO2 Emissions** | **Calibration to EMBER** |
 |--------------|---------------|------------|--------------------------|
-| 119 GW | 286 TWh | 64 Mt | 103% |
+| 120 GW | 286 TWh | 66 Mt | 107% |
 
 **Note:** 2022 fossil and bio capacity is calibrated to EMBER and renewable capacities to IRENA. UNSD has incomplete data for fuel consumption, so the calibration is demonstrated against the total CO2 emission reported by EMBER. This shows that the efficiency assumptions are good.
 
@@ -17,15 +17,15 @@
 
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 10/16 plants | 1.44 GW | — | 25.2% |
-| ⚫ **Coal** | 40 MW | 7/7 plants | 2.95 GW | — | 26.3% |
+| 🌱 **Bioenergy** | 50 MW | 10/16 plants | 1.42 GW | — | 25.1% |
+| ⚫ **Coal** | 40 MW | 11/11 plants | 3.63 GW | — | 26.6% |
 | 🔥 **Gas** | 40 MW | 82/96 plants | 27.3 GW | 0.049 GW | 41.7% |
 | 💧 **Hydro Power** | 10 MW | 68/68 plants | 14.1 GW | — | 77% |
 | ⚛️ **Nuclear** | — | 7/7 plants | 7.41 GW | — | 100% |
 | 🛢️ **Oil** | 40 MW | 36/51 plants | 3.42 GW | 0.08 GW | 27% |
-| ☀️ **Solar** | 200 MW | 70/258 plants | 37.3 GW | 0.098 GW | 100% |
+| ☀️ **Solar** | 200 MW | 66/247 plants | 37.3 GW | 0.098 GW | 100% |
 | 🌊 **Windoff** | 200 MW | 0/1 plants | 0.02 GW | — | 100% |
-| 💨 **Windon** | 200 MW | 55/252 plants | 32 GW | — | 98% |
+| 💨 **Windon** | 200 MW | 57/250 plants | 32 GW | — | 98% |
 | 🔋 **Pumped Storage** | 10 MW | 21/21 plants | 6.28 GW | — | 100% |
 
 
@@ -35,9 +35,9 @@
 |---------------|---------------|----------------------------|--------------------|-----------------|
 | 🔥 **Gas** | 40 MW | 1/1 plants | 0.494 GW | 62% |
 | 💧 **Hydro Power** | 10 MW | 2/2 plants | 0.236 GW | 100% |
-| ☀️ **Solar** | 200 MW | 130/149 plants | 106 GW | 100% |
-| 🌊 **Windoff** | 200 MW | 22/29 plants | 11.3 GW | 100% |
-| 💨 **Windon** | 200 MW | 20/34 plants | 28.5 GW | 100% |
+| ☀️ **Solar** | 200 MW | 128/149 plants | 106 GW | 100% |
+| 🌊 **Windoff** | 200 MW | 22/30 plants | 11.3 GW | 100% |
+| 💨 **Windon** | 200 MW | 21/34 plants | 28.5 GW | 100% |
 | 🔋 **Pumped Storage** | 10 MW | 9/9 plants | 5.62 GW | 100% |
 
 
@@ -46,8 +46,8 @@ Announced and pre-construction projects are offered as options to the model for 
 ### 🔄 CCS Retrofit Potential
 | **Fuel Type** | **Retrofit Host Capacity** | **Retrofit Potential Capacity**
 |---------------|----------------------------|-------------------------------|
-| ⚫ **Coal** | 2.95 GW | 1.84 GW after capacity penalty |
-| 🔥 **Gas** | 27.9 GW | 23.6 GW after capacity penalty |
+| ⚫ **Coal** | 3.63 GW | 2.23 GW after capacity penalty |
+| 🔥 **Gas** | 27.4 GW | 23.1 GW after capacity penalty |
 
 
 ## Data, Assumptions & Coverage
@@ -71,15 +71,12 @@ Announced and pre-construction projects are offered as options to the model for 
 ### Data Processing Notes
 - **Individual Plant Coverage**: 93%% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 285 GW GW from all sources
-- **Plants Above Threshold**: 538 individual plants tracked
-- **Total Plants Processed**: 1001 plants in database
+- **Plants Above Threshold**: 542 individual plants tracked
+- **Total Plants Processed**: 993 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
   - **windon**: 0.78 GW
   - **hydro**: 4.91 GW
-  - **solar**: 0.22 GW
-- **EMBER data**:
-  - **coal**: 0.83 GW
-  - **bioenergy**: 0.75 GW
+  - **bioenergy**: 0.74 GW
 
 
 ## Model Structure
@@ -153,22 +150,16 @@ grid cells into manageable clusters while preserving essential resource characte
 
 | **Clustering Metric** | **Value** | **Description** |
 |----------------------|-----------|-----------------|
-| **Grid Cells Processed** | 233 | 50×50km renewable energy grid cells |
+| **Grid Cells Processed** | 230 | 50×50km renewable energy grid cells |
 | **Clusters Generated** | 26 | Dynamically determined using n = cells^0.6 |
-| **Average Cluster Size** | 9.0 grid cells | Mean grid cells per cluster |
-| **Cluster Size Range** | 3 to 16 grid cells | Variation in cluster composition |
+| **Average Cluster Size** | 8.8 grid cells | Mean grid cells per cluster |
+| **Cluster Size Range** | 4 to 17 grid cells | Variation in cluster composition |
 | **Grid Definition** | Cities as transmission bus proxies | Transmission infrastructure basis |
 
 #### **Multi-Feature Clustering Algorithm**
 
 The clustering process combines multiple data dimensions to create economically and spatially coherent renewable energy zones:
-
-**Feature Weighting:**
-- **Wind Profiles**: 35% - Temporal generation patterns and variability
-- **Solar Profiles**: 35% - Complementary temporal characteristics  
-- **Grid Distance**: 20% - Infrastructure connectivity and transmission costs
-- **Spatial Coordinates**: 10% - Geographic proximity and regional coherence
-
+        
 **Technical Implementation:**
 - **Algorithm**: Hierarchical clustering with Ward linkage
 - **Preprocessing**: PCA dimensionality reduction (50 components per technology)
@@ -218,7 +209,7 @@ demonstrating how the algorithm balances resource quality, geographic diversity,
   <img src="VerveStacks_ESP/source_data/clustering_results_ESP_solar.png" 
        alt="Solar PV Clustering Results" 
        style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-  <p><em>Solar PV clustering showing 26 clusters from 233 grid cells using Cities as transmission bus proxies</em></p>
+  <p><em>Solar PV clustering showing 26 clusters from 230 grid cells using Cities as transmission bus proxies</em></p>
 </div>
 
 **Onshore Wind Clustering:**
@@ -226,7 +217,7 @@ demonstrating how the algorithm balances resource quality, geographic diversity,
   <img src="VerveStacks_ESP/source_data/clustering_results_ESP_wind_onshore.png" 
        alt="Onshore Wind Clustering Results" 
        style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-  <p><em>Onshore wind clustering showing 26 clusters from 233 grid cells using Cities as transmission bus proxies</em></p>
+  <p><em>Onshore wind clustering showing 26 clusters from 230 grid cells using Cities as transmission bus proxies</em></p>
 </div>
 
 **Offshore Wind Clustering:**
@@ -234,7 +225,7 @@ demonstrating how the algorithm balances resource quality, geographic diversity,
   <img src="VerveStacks_ESP/source_data/clustering_results_ESP_wind_offshore.png" 
        alt="Offshore Wind Clustering Results" 
        style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-  <p><em>Offshore wind clustering showing 26 clusters from 233 grid cells using Cities as transmission bus proxies</em></p>
+  <p><em>Offshore wind clustering showing 26 clusters from 230 grid cells using Cities as transmission bus proxies</em></p>
 </div>
 
 **Visualization Features:**
@@ -268,14 +259,14 @@ Our approach combines **24 years of historical data** (2000-2023) from EMBER Cli
 
 **Key Innovation**: Drought thresholds are derived from each country's bottom 20% of historical capacity factors, ensuring definitions reflect actual operational stress rather than arbitrary percentages.
 
-### **ESP Hydro Profile**
+### **Spain Hydro Profile**
 
 | **Planning Parameter** | **Value** | **Application** |
 |----------------------|-----------|-----------------|
-| **Hydro Dependency** | N/A% of generation | System vulnerability assessment |
-| **P10 (Dry Scenario)** | 18.6% annual average | Security planning, reserve sizing |
-| **P50 (Base Scenario)** | 19.9% annual average | Expected case, financial planning |
-| **P90 (Wet Scenario)** | 21.0% annual average | Export opportunities, minimum backup |
+| **Hydro Dependency** | 7.4% of generation | System vulnerability assessment |
+| **P10 (Dry Scenario)** | 19.5% annual average | Security planning, reserve sizing |
+| **P50 (Base Scenario)** | 20.5% annual average | Expected case, financial planning |
+| **P90 (Wet Scenario)** | 21.7% annual average | Export opportunities, minimum backup |
 | **Historical Average** | 20.4% (2000-2023) | Validation benchmark |
 | **Drought Threshold** | 15.1% (P20 of historical) | Operational stress indicator |
 
@@ -337,15 +328,11 @@ The following visualizations provide detailed insights into temporal patterns an
 <img src="VerveStacks_ESP/timeslice_analysis/re_analysis_summary_ESP.svg" alt="Renewable Energy Analysis Summary" width="100%">
 </div>
 
-#### **Aggregated months and hours (8 X 8 case)**
+#### **Aggregated days and hours (upto 12 seasons X 8 day-night periods)**
 <div align="center">
-<img src="VerveStacks_ESP/timeslice_analysis/aggregation_justification_ESP_ts_048.svg" alt="Aggregated slices clustering" width="100%">
+<img src="VerveStacks_ESP/timeslice_analysis/aggregation_justification_ESP_ts_096.svg" alt="Aggregated slices clustering" width="100%">
 </div>
 
-#### **Weekly Stress Periods (Extended Analysis)**
-<div align="center">
-<img src="VerveStacks_ESP/timeslice_analysis/stress_periods_s2_w_p2_d_weekly_ESP.svg" alt="Weekly Stress Periods" width="100%">
-</div>
 
 #### **Triple-5 Critical Periods (Comprehensive Stress Analysis)**
 <div align="center">
