@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - IDN
-**Generated:** 2025-12-15 16:34:05
+**Generated:** 2026-04-27 18:25:38
 
 
 ## Model Calibration 2022
@@ -33,12 +33,12 @@
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Total Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|-----------------|
 | ⚫ **Coal** | 140 MW | 4/4 plants | 4.86 GW | 34.5% |
-| 🔥 **Gas** | 140 MW | 16/20 plants | 9.17 GW | 49.2% |
+| 🔥 **Gas** | 140 MW | 16/20 plants | 9.16 GW | 49.2% |
 | 🌋 **Geothermal** | 10 MW | 39/39 plants | 2.78 GW | 100% |
 | 💧 **Hydro Power** | 10 MW | 33/33 plants | 14.6 GW | 100% |
 | ⚛️ **Nuclear** | — | 7/7 plants | 3.5 GW | 100% |
 | ☀️ **Solar** | 200 MW | 18/26 plants | 16.5 GW | 100% |
-| 💨 **Windon** | 200 MW | 3/12 plants | 1.52 GW | 100% |
+| 💨 **Windon** | 200 MW | 4/12 plants | 1.52 GW | 100% |
 | 🔋 **Pumped Storage** | 10 MW | 3/3 plants | 2.4 GW | 100% |
 
 
@@ -72,7 +72,7 @@ Announced and pre-construction projects are offered as options to the model for 
 ### Data Processing Notes
 - **Individual Plant Coverage**: 95%% of total capacity from plant-level GEM data
 - **Total Capacity Tracked**: 164 GW GW from all sources
-- **Plants Above Threshold**: 399 individual plants tracked
+- **Plants Above Threshold**: 398 individual plants tracked
 - **Total Plants Processed**: 590 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
   - **hydro**: 1.49 GW
@@ -384,14 +384,14 @@ Our approach combines **24 years of historical data** (2000-2023) from EMBER Cli
 
 **Key Innovation**: Drought thresholds are derived from each country's bottom 20% of historical capacity factors, ensuring definitions reflect actual operational stress rather than arbitrary percentages.
 
-### **IDN Hydro Profile**
+### **Indonesia Hydro Profile**
 
 | **Planning Parameter** | **Value** | **Application** |
 |----------------------|-----------|-----------------|
-| **Hydro Dependency** | N/A% of generation | System vulnerability assessment |
-| **P10 (Dry Scenario)** | 37.0% annual average | Security planning, reserve sizing |
-| **P50 (Base Scenario)** | 39.7% annual average | Expected case, financial planning |
-| **P90 (Wet Scenario)** | 42.2% annual average | Export opportunities, minimum backup |
+| **Hydro Dependency** | 7.0% of generation | System vulnerability assessment |
+| **P10 (Dry Scenario)** | 35.7% annual average | Security planning, reserve sizing |
+| **P50 (Base Scenario)** | 37.5% annual average | Expected case, financial planning |
+| **P90 (Wet Scenario)** | 39.6% annual average | Export opportunities, minimum backup |
 | **Historical Average** | 37.6% (2000-2023) | Validation benchmark |
 | **Drought Threshold** | 33.9% (P20 of historical) | Operational stress indicator |
 
