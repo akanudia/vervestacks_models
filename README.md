@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - JPN
-**Generated:** 2025-11-29 13:32:45
+**Generated:** 2026-05-01 19:04:33
 
 
 ## Model Calibration 2022
@@ -17,10 +17,10 @@
 
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 64/125 plants | 6.18 GW | 0.075 GW | 28.3% |
+| 🌱 **Bioenergy** | 50 MW | 70/129 plants | 6.64 GW | 0.075 GW | 28.4% |
 | ⚫ **Coal** | 490 MW | 58/156 plants | 55 GW | 1.08 GW | 35.3% |
 | 🔥 **Gas** | 490 MW | 92/163 plants | 90 GW | — | 44.2% |
-| 🌋 **Geothermal** | 60 MW | 1/30 plants | 0.668 GW | — | 100% |
+| 🌋 **Geothermal** | 60 MW | 1/30 plants | 0.669 GW | — | 100% |
 | 💧 **Hydro Power** | 60 MW | 111/164 plants | 26.5 GW | — | 70% |
 | ⚛️ **Nuclear** | — | 35/35 plants | 14.4 GW | 21.5 GW | 100% |
 | 🛢️ **Oil** | 490 MW | 23/44 plants | 19.9 GW | 1.15 GW | 29.1% |
@@ -73,15 +73,14 @@ Announced and pre-construction projects are offered as options to the model for 
 
 ### Data Processing Notes
 - **Individual Plant Coverage**: 94%% of total capacity from plant-level GEM data
-- **Total Capacity Tracked**: 411 GW GW from all sources
-- **Plants Above Threshold**: 678 individual plants tracked
-- **Total Plants Processed**: 1320 plants in database
+- **Total Capacity Tracked**: 412 GW GW from all sources
+- **Plants Above Threshold**: 679 individual plants tracked
+- **Total Plants Processed**: 1324 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
-  - **hydro**: 11.23 GW
   - **windon**: 0.69 GW
+  - **hydro**: 11.23 GW
+  - **bioenergy**: 1.12 GW
   - **solar**: 54.33 GW
-- **EMBER data**:
-  - **bioenergy**: 0.62 GW
 
 
 ## Model Structure
@@ -169,7 +168,7 @@ Industrial electricity demand is spatially distributed across the transmission n
 
 #### 📈 **Load Concentration Analysis**
 
-- **Highest Load Bus**: relation/2269992-500 (0.34 GW)
+- **Highest Load Bus**: relation/2269992-500 (0.36 GW)
 - **Load Distribution CV**: 0% (coefficient of variation)
 - **Load Balancing**: Balanced distribution across transmission buses
 
@@ -389,14 +388,14 @@ Our approach combines **24 years of historical data** (2000-2023) from EMBER Cli
 
 **Key Innovation**: Drought thresholds are derived from each country's bottom 20% of historical capacity factors, ensuring definitions reflect actual operational stress rather than arbitrary percentages.
 
-### **JPN Hydro Profile**
+### **Japan Hydro Profile**
 
 | **Planning Parameter** | **Value** | **Application** |
 |----------------------|-----------|-----------------|
-| **Hydro Dependency** | N/A% of generation | System vulnerability assessment |
-| **P10 (Dry Scenario)** | 27.7% annual average | Security planning, reserve sizing |
-| **P50 (Base Scenario)** | 29.5% annual average | Expected case, financial planning |
-| **P90 (Wet Scenario)** | 31.7% annual average | Export opportunities, minimum backup |
+| **Hydro Dependency** | 7.3% of generation | System vulnerability assessment |
+| **P10 (Dry Scenario)** | 31.9% annual average | Security planning, reserve sizing |
+| **P50 (Base Scenario)** | 33.2% annual average | Expected case, financial planning |
+| **P90 (Wet Scenario)** | 35.0% annual average | Export opportunities, minimum backup |
 | **Historical Average** | 33.4% (2000-2023) | Validation benchmark |
 | **Drought Threshold** | 31.0% (P20 of historical) | Operational stress indicator |
 
@@ -458,15 +457,11 @@ The following visualizations provide detailed insights into temporal patterns an
 <img src="VerveStacks_JPN_grids_kan/timeslice_analysis/re_analysis_summary_JPN.svg" alt="Renewable Energy Analysis Summary" width="100%">
 </div>
 
-#### **Aggregated months and hours (8 X 8 case)**
+#### **Aggregated days and hours (upto 12 seasons X 8 day-night periods)**
 <div align="center">
-<img src="VerveStacks_JPN_grids_kan/timeslice_analysis/aggregation_justification_JPN_ts_048.svg" alt="Aggregated slices clustering" width="100%">
+<img src="VerveStacks_JPN_grids_kan/timeslice_analysis/aggregation_justification_JPN_ts_096.svg" alt="Aggregated slices clustering" width="100%">
 </div>
 
-#### **Weekly Stress Periods (Extended Analysis)**
-<div align="center">
-<img src="VerveStacks_JPN_grids_kan/timeslice_analysis/stress_periods_s2_w_p2_d_weekly_JPN.svg" alt="Weekly Stress Periods" width="100%">
-</div>
 
 #### **Triple-5 Critical Periods (Comprehensive Stress Analysis)**
 <div align="center">
