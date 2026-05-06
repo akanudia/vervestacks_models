@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - IDN
-**Generated:** 2026-04-27 18:25:38
+**Generated:** 2026-05-06 22:29:58
 
 
 ## Model Calibration 2022
@@ -33,7 +33,7 @@
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Total Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|-----------------|
 | ⚫ **Coal** | 140 MW | 4/4 plants | 4.86 GW | 34.5% |
-| 🔥 **Gas** | 140 MW | 16/20 plants | 9.16 GW | 49.2% |
+| 🔥 **Gas** | 140 MW | 16/20 plants | 9.17 GW | 49.2% |
 | 🌋 **Geothermal** | 10 MW | 39/39 plants | 2.78 GW | 100% |
 | 💧 **Hydro Power** | 10 MW | 33/33 plants | 14.6 GW | 100% |
 | ⚛️ **Nuclear** | — | 7/7 plants | 3.5 GW | 100% |
@@ -160,11 +160,11 @@ Industrial electricity demand is spatially distributed across the transmission n
 
 | **Load Distribution Method** | **Buses with Load** | **Total Industrial Load** | **Methodology** |
 |------------------------------|---------------------|---------------------------|-----------------|
-| **Voronoi Tessellation** | 10 | 1.0 GW | Geometric proximity-based allocation |
+| **Voronoi Tessellation** | 14 | 1.0 GW | Geometric proximity-based allocation |
 
 #### 📈 **Load Concentration Analysis**
 
-- **Highest Load Bus**: ID17-500 (0.58 GW)
+- **Highest Load Bus**: way/926254403-500 (0.53 GW)
 - **Load Distribution CV**: 0% (coefficient of variation)
 - **Load Balancing**: Balanced distribution across transmission buses
 
@@ -453,21 +453,21 @@ The following visualizations provide detailed insights into temporal patterns an
 <img src="VerveStacks_IDN_grids_kan/timeslice_analysis/re_analysis_summary_IDN.svg" alt="Renewable Energy Analysis Summary" width="100%">
 </div>
 
-#### **Aggregated days and hours (upto 12 seasons X 8 day-night periods)**
+#### **Aggregated days and hours (upto 6 seasons X 8 day-night periods)**
 <div align="center">
-<img src="VerveStacks_IDN_grids_kan/timeslice_analysis/aggregation_justification_IDN_ts_096.svg" alt="Aggregated slices clustering" width="100%">
+<img src="VerveStacks_IDN_grids_kan/timeslice_analysis/aggregation_justification_IDN_ts_048.svg" alt="Aggregated slices clustering" width="100%">
 </div>
 
 
-#### **Triple-5 Critical Periods (Comprehensive Stress Analysis)**
-<div align="center">
-<img src="VerveStacks_IDN_grids_kan/timeslice_analysis/stress_periods_s5p5v5_d_IDN.svg" alt="Triple-5 Critical Periods" width="100%">
-</div>
+# #### **Triple-5 Critical Periods (Comprehensive Stress Analysis)**
+# <div align="center">
+# <img src="VerveStacks_IDN_grids_kan/timeslice_analysis/stress_periods_s5p5v5_d_IDN.svg" alt="Triple-5 Critical Periods" width="100%">
+# </div>
 
-### Timeslice Structure Generation
-**Multi-Scale Temporal Resolution:**
-- **Base Aggregation**: 6 seasons × 8 daily periods = 48 base timeslices
-- **Critical Period Enhancement**: Additional segments for identified stress periods
+# ### Timeslice Structure Generation
+# **Multi-Scale Temporal Resolution:**
+# - **Base Aggregation**: 6 seasons × 8 daily periods = 48 base timeslices
+# - **Critical Period Enhancement**: Additional segments for identified stress periods
 
 
 ## AR6 Climate Scenarios - R10REST_ASIA
