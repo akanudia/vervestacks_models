@@ -1,5 +1,5 @@
 # VerveStacks Model Generation Notes - MYS
-**Generated:** 2026-05-06 22:40:43
+**Generated:** 2026-05-06 23:14:23
 
 
 ## Model Calibration 2022
@@ -66,8 +66,8 @@ Announced and pre-construction projects are offered as options to the model for 
 - **Plants Above Threshold**: 108 individual plants tracked
 - **Total Plants Processed**: 147 plants in database
 - **Missing Capacity Added**: - **IRENA data**:
-  - **bioenergy**: 0.94 GW
   - **hydro**: 0.07 GW
+  - **bioenergy**: 0.94 GW
 
 
 ## Model Structure
