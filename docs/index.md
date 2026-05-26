@@ -1,7 +1,7 @@
 # ZAF — VerveStacks Model
 
 !!! info "Model Info"
-    **Generated:** 2026-05-26 16:16:08  |  **ISO Code:** `ZAF`
+    **Generated:** 2026-05-26 17:54:36  |  **ISO Code:** `ZAF`
 
 ---
 
