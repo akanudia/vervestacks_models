@@ -1,7 +1,7 @@
 # POL — VerveStacks Model
 
 !!! info "Model Info"
-    **Generated:** 2026-06-05 17:25:29  |  **ISO Code:** `POL`
+    **Generated:** 2026-06-08 18:02:17  |  **ISO Code:** `POL`
 
 ---
 
@@ -23,9 +23,9 @@
 
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 12/19 plants | 1.22 GW | 28.9% |
+| 🌱 **Bioenergy** | 50 MW | 12/24 plants | 1.3 GW | 29% |
 | ⚫ **Coal** | 10 MW | 144/144 plants | 29.2 GW | 33.9% |
-| 🔥 **Gas** | 10 MW | 33/33 plants | 7.67 GW | 58% |
+| 🔥 **Gas** | 10 MW | 33/33 plants | 7.97 GW | 58% |
 | 💧 **Hydro Power** | 10 MW | 9/9 plants | 0.532 GW | 62% |
 | ☀️ **Solar** | 200 MW | 6/49 plants | 12.4 GW | 47.2% |
 | 🌊 **Windoff** | 200 MW | 1/1 plants | 1.2 GW | 100% |
@@ -37,10 +37,10 @@
 
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Total Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 1/1 plants | 0.24 GW | 34% |
-| 🔥 **Gas** | 10 MW | 7/7 plants | 3.48 GW | 61% |
+| 🌱 **Bioenergy** | 50 MW | 1/1 plants | 0.05 GW | 33% |
+| 🔥 **Gas** | 10 MW | 9/9 plants | 4.88 GW | 52% |
 | 💧 **Hydro Power** | 10 MW | 1/1 plants | 0.08 GW | 100% |
-| ⚛️ **Nuclear** | — | 45/45 plants | 14.4 GW | 100% |
+| ⚛️ **Nuclear** | — | 49/49 plants | 15.6 GW | 100% |
 | ☀️ **Solar** | 200 MW | 3/12 plants | 1.55 GW | 100% |
 | 🌊 **Windoff** | 200 MW | 23/23 plants | 22 GW | 100% |
 | 💨 **Windon** | 200 MW | 2/10 plants | 1.18 GW | 100% |
@@ -56,7 +56,7 @@ available. Grid locations of all these units are preserved.
 | Fuel | Retrofit Host Capacity | Retrofit Potential |
 |------|------------------------|-------------------|
 | ⚫ **Coal** | 29.2 GW | 18.9 GW after capacity penalty |
-| 🔥 **Gas**  | 7.67 GW  | 6.48 GW after capacity penalty |
+| 🔥 **Gas**  | 7.97 GW  | 6.73 GW after capacity penalty |
 
 ---
 
@@ -84,13 +84,13 @@ available. Grid locations of all these units are preserved.
 | Metric | Value |
 |--------|-------|
 | **Individual Plant Coverage** | 90% of total capacity from plant-level GEM data |
-| **Total Capacity Tracked** | 108 GW from all sources |
-| **Plants Above Threshold** | 235 individual plants tracked |
-| **Total Plants Processed** | 473 plants in database |
+| **Total Capacity Tracked** | 111 GW from all sources |
+| **Plants Above Threshold** | 239 individual plants tracked |
+| **Total Plants Processed** | 484 plants in database |
 | **Missing Capacity Added** | - **IRENA data**:
-  - **bioenergy**: 0.35 GW
-  - **solar**: 9.8 GW
   - **hydro**: 0.31 GW
+  - **bioenergy**: 0.24 GW
+  - **solar**: 9.8 GW
 - **EMBER data**:
   - **gas**: 0.02 GW |
 
