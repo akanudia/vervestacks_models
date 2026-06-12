@@ -24,7 +24,7 @@
 
 | Integration Type | Count | Description |
 |------------------|-------|-------------|
-| **Plants Mapped to Buses** | 4514 | GEM power plants assigned to grid locations |
+| **Plants Mapped to Buses** | 4637 | GEM power plants assigned to grid locations |
 
 ---
 

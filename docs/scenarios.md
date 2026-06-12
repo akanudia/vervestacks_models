@@ -5,14 +5,14 @@
 ## AR6 Scenario Coverage — R10INDIA+
 
 This model incorporates climate scenario drivers from the IPCC AR6 database for the **R10INDIA+**
-region, derived from 350 vetted scenario-model combinations spanning 5
+region, derived from 385 vetted scenario-model combinations spanning 5
 climate categories from ambitious 1.5°C pathways (C1) to limited mitigation trajectories (C7).
 The scenarios cover 7 years from 2020 to 2050, providing
 comprehensive pathways for energy system transformation under different climate policy futures.
 
 | Metric | Value | Description |
 |--------|-------|-------------|
-| **Total Scenarios** | 350 | Vetted scenario-model combinations from AR6 database |
+| **Total Scenarios** | 385 | Vetted scenario-model combinations from AR6 database |
 | **Climate Categories** | 5 | From C1 (1.5°C) to C7 (limited action) |
 | **Temporal Coverage** | 2020–2050 | Multi-decade transformation pathways |
 | **Regional Scope** | R10INDIA+ | IPCC R10 regional classification |
@@ -53,7 +53,7 @@ to 15.0% of total electricity demand under ambitious scenarios — a
 
 ## Model Agreement
 
-Analysis across 350 scenario-model combinations reveals:
+Analysis across 385 scenario-model combinations reveals:
 
 - **High Convergence** — CO₂ pricing (CV: inf%) and electricity growth (CV: 32.0%)
 - **Moderate Uncertainty** — Transport electrification rates (CV: 63.7%)
