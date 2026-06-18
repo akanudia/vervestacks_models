@@ -1,4 +1,4 @@
-# Hydro Availability — ETH
+# Hydro Availability — GHA
 
 ---
 
@@ -23,23 +23,23 @@ reflect actual operational stress rather than arbitrary percentages.
 
 ---
 
-## Ethiopia Hydro Profile
+## Ghana Hydro Profile
 
 | Planning Parameter | Value | Application |
 |--------------------|-------|-------------|
-| **Hydro Dependency** | 95.7% of generation | System vulnerability assessment |
-| **P10 (Dry Scenario)** | 42.2% annual average | Security planning, reserve sizing |
-| **P50 (Base Scenario)** | 45.0% annual average | Expected case, financial planning |
-| **P90 (Wet Scenario)** | 47.9% annual average | Export opportunities, minimum backup |
-| **Historical Average** | 45.3% (2000-2022) | Validation benchmark |
-| **Drought Threshold** | 38.8% (P20 of historical) | Operational stress indicator |
+| **Hydro Dependency** | 33.3% of generation | System vulnerability assessment |
+| **P10 (Dry Scenario)** | 52.8% annual average | Security planning, reserve sizing |
+| **P50 (Base Scenario)** | 55.3% annual average | Expected case, financial planning |
+| **P90 (Wet Scenario)** | 58.7% annual average | Export opportunities, minimum backup |
+| **Historical Average** | 55.1% (2000-2022) | Validation benchmark |
+| **Drought Threshold** | 42.5% (P20 of historical) | Operational stress indicator |
 
 ---
 
 ## Monthly Availability Patterns
 
 <div align="center">
-  <img src="assets/ETH_hydro_monthly_profile.png"
+  <img src="assets/GHA_hydro_monthly_profile.png"
        alt="Monthly Hydro Availability"
        style="max-width:100%; border:1px solid #ddd; border-radius:8px;">
   <p><em>Monthly hydro availability — P10/P50/P90 future scenarios vs. historical patterns</em></p>
@@ -48,7 +48,7 @@ reflect actual operational stress rather than arbitrary percentages.
 ## Long-term Trajectory
 
 <div align="center">
-  <img src="assets/ETH_hydro_annual_trajectory.png"
+  <img src="assets/GHA_hydro_annual_trajectory.png"
        alt="Annual Hydro Trajectory"
        style="max-width:100%; border:1px solid #ddd; border-radius:8px;">
   <p><em>Annual hydro trajectories: historical (2000–2023) → future scenarios (2025–2050)</em></p>

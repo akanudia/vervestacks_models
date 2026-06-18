@@ -1,4 +1,4 @@
-# Climate Scenarios — ETH
+# Climate Scenarios — GHA
 
 ---
 
@@ -23,7 +23,7 @@ comprehensive pathways for energy system transformation under different climate 
 ## Scenario Trajectories
 
 <div align="center">
-  <img src="assets/ar6_scenarios_ETH.png"
+  <img src="assets/ar6_scenarios_GHA.png"
        alt="AR6 Climate Scenario Trajectories"
        style="max-width:100%; border:1px solid #ddd; border-radius:8px;">
   <p><em>CO₂ prices, electricity growth, and hydrogen deployment across climate ambitions</em></p>
