@@ -1,7 +1,7 @@
 # EGY — VerveStacks Model
 
 !!! info "Model Info"
-    **Generated:** 2026-06-17 22:19:29  |  **ISO Code:** `EGY`
+    **Generated:** 2026-06-18 23:42:10  |  **ISO Code:** `EGY`
 
 ---
 
