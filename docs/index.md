@@ -1,7 +1,7 @@
 # KEN — VerveStacks Model
 
 !!! info "Model Info"
-    **Generated:** 2026-06-17 22:09:40  |  **ISO Code:** `KEN`
+    **Generated:** 2026-06-18 23:37:37  |  **ISO Code:** `KEN`
 
 ---
 
