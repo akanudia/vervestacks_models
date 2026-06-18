@@ -1,4 +1,4 @@
-# Renewable Energy Potential — GHA
+# Renewable Energy Potential — ETH
 
 ---
 
@@ -38,7 +38,7 @@ The supply curves reveal the economic characteristics of renewable energy deploy
 - **Original vs Land-use Adjusted** — Impact of conservative overlap management
 
 <div align="center">
-  <img src="assets/supply_curves_GHA.svg"
+  <img src="assets/supply_curves_ETH.svg"
        alt="Renewable Energy Supply Curves" style="max-width:100%;">
 </div>
 
@@ -48,9 +48,9 @@ The supply curves reveal the economic characteristics of renewable energy deploy
 
 | Technology | Grid Cells | Clusters | Avg Cluster Size | Size Range |
 |------------|-----------|---------|-----------------|------------|
-| ☀️ **Solar PV** | 117 | 17 | 6.9 cells | 3 to 15 cells |
-| 💨 **Wind Onshore** | 40 | 10 | 4.0 cells | 2 to 6 cells |
-| 🌊 **Wind Offshore** | 20 | 10 | 2.0 cells | 1 to 3 cells |
+| ☀️ **Solar PV** | 508 | 42 | 12.1 cells | 4 to 31 cells |
+| 💨 **Wind Onshore** | 243 | 26 | 9.3 cells | 1 to 41 cells |
+| 🌊 **Wind Offshore** | N/A | N/A | N/A cells | N/A cells |
 
 **Grid Definition:** Grid definition: kan10
 
@@ -67,23 +67,23 @@ cells drive the representative generation shape. Only economically viable grid c
 ### Solar PV Clustering
 
 <div align="center">
-  <img src="assets/clustering_results_GHA_solar.png"
+  <img src="assets/clustering_results_ETH_solar.png"
        alt="Solar PV Clustering" style="max-width:100%; border:1px solid #ddd; border-radius:8px;">
-  <p><em>Solar PV: 17 clusters from 117 grid cells</em></p>
+  <p><em>Solar PV: 42 clusters from 508 grid cells</em></p>
 </div>
 
 ### Wind Onshore Clustering
 
 <div align="center">
-  <img src="assets/clustering_results_GHA_wind_onshore.png"
+  <img src="assets/clustering_results_ETH_wind_onshore.png"
        alt="Onshore Wind Clustering" style="max-width:100%; border:1px solid #ddd; border-radius:8px;">
-  <p><em>Wind Onshore: 10 clusters from 40 grid cells</em></p>
+  <p><em>Wind Onshore: 26 clusters from 243 grid cells</em></p>
 </div>
 
 ### Wind Offshore Clustering
 
 <div align="center">
-  <img src="assets/clustering_results_GHA_wind_offshore.png"
+  <img src="assets/clustering_results_ETH_wind_offshore.png"
        alt="Offshore Wind Clustering" style="max-width:100%; border:1px solid #ddd; border-radius:8px;">
-  <p><em>Wind Offshore: 10 clusters from 20 grid cells</em></p>
+  <p><em>Wind Offshore: N/A clusters from N/A grid cells</em></p>
 </div>

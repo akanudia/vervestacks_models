@@ -1,4 +1,4 @@
-# Temporal Modelling — GHA
+# Temporal Modelling — ETH
 
 ---
 
@@ -14,7 +14,7 @@ size backup capacity, storage, and flexible resources.
 ## Renewable Energy Analysis Overview
 
 <div align="center">
-  <img src="assets/re_analysis_summary_GHA.svg"
+  <img src="assets/re_analysis_summary_ETH.svg"
        alt="Renewable Energy Analysis Summary" style="max-width:100%;">
 </div>
 
@@ -25,6 +25,6 @@ size backup capacity, storage, and flexible resources.
 Up to 6 seasons × 8 day-night periods = 48 base timeslices:
 
 <div align="center">
-  <img src="assets/aggregation_justification_GHA_ts_048.svg"
+  <img src="assets/aggregation_justification_ETH_ts_048.svg"
        alt="Aggregated Slices Clustering" style="max-width:100%;">
 </div>
