@@ -1,7 +1,7 @@
 # NGA — VerveStacks Model
 
 !!! info "Model Info"
-    **Generated:** 2026-06-17 21:58:51  |  **ISO Code:** `NGA`
+    **Generated:** 2026-06-18 23:32:19  |  **ISO Code:** `NGA`
 
 ---
 
