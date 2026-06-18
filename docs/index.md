@@ -1,7 +1,7 @@
 # MAR — VerveStacks Model
 
 !!! info "Model Info"
-    **Generated:** 2026-06-17 22:27:01  |  **ISO Code:** `MAR`
+    **Generated:** 2026-06-18 23:47:19  |  **ISO Code:** `MAR`
 
 ---
 
