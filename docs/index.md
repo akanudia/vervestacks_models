@@ -1,7 +1,7 @@
 # NOR — VerveStacks Model
 
 !!! info "Model Info"
-    **Generated:** 2026-06-24 14:13:15  |  **ISO Code:** `NOR`
+    **Generated:** 2026-06-24 17:45:13  |  **ISO Code:** `NOR`
 
 ---
 
