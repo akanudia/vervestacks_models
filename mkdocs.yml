@@ -1,0 +1,57 @@
+site_name: "VerveStacks — KEN_grids_kan"
+site_description: "ESOM model documentation for KEN_grids_kan"
+site_url: "https://akanudia.github.io/vervestacks_models/KEN_grids_kan/"
+docs_dir: docs
+site_dir: site/KEN_grids_kan
+use_directory_urls: false
+
+extra_css:
+  - stylesheets/extra.css
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - toc.integrate
+
+nav:
+  - Overview: index.md
+  - Transmission Grid: grid.md
+  - Renewable Energy: renewables.md
+  - Hydro Availability: hydro.md
+  - Temporal Modelling: timeslices.md
+  - Climate Scenarios: scenarios.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
