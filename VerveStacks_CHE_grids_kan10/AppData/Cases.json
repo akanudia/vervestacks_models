@@ -1,0 +1,56 @@
+[
+  {
+    "CaseId": 88,
+    "CreatedOn": "2025-09-05 12:44",
+    "Description": "VerveStacks scenarios - Climate and Timeslices",
+    "EditedOn": "2025-09-05 12:44",
+    "EndingYear": "2050",
+    "FixResultFileName": "False",
+    "FixResultInfo": {
+      "WorkTimesFolderPath": null,
+      "GdxElasticDermands": {
+        "GdxSelectedFile": {
+          "FileName": "",
+          "FilePath": "",
+          "IsSelected": false
+        },
+        "IsApplied": false
+      },
+      "GdxIre": {
+        "GdxSelectedFile": {
+          "FileName": "",
+          "FilePath": "",
+          "IsSelected": false
+        },
+        "IsApplied": false,
+        "RadioSelection": 1
+      },
+      "GdxUseSolution": {
+        "FixYearsUpto": "",
+        "GdxSelectedFile": {
+          "FileName": "",
+          "FilePath": "",
+          "IsSelected": false
+        },
+        "IsApplied": false,
+        "RadioSelection": 1
+      },
+      "IsApplyFixResult": false
+    },
+    "GAMSSourceFolder": "GAMS_SrcTIMES.v4.9.1",
+    "Name": "vs",
+    "ParametricGroup": "all_AR6_R10",
+    "ParametricGroupId": 288,
+    "PeriodsDefinition": "msy7_2050",
+    "PropertiesGroup": "DefaultProperties",
+    "PropertiesGroupId": 287,
+    "RegionGroup": "AllRegion",
+    "RegionGroupId": 286,
+    "ScenarioGroup": "AllScenario",
+    "ScenarioGroupId": 285,
+    "Solver": "cplex",
+    "SolverOptionFile": "BA121-7",
+    "UserName": "akanu",
+    "ModelFramework": "Times"
+  }
+]
