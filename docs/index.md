@@ -1,7 +1,7 @@
 # BRA — VerveStacks Model
 
 !!! info "Model Info"
-    **Generated:** 2026-06-26 14:55:19  |  **ISO Code:** `BRA`
+    **Generated:** 2026-06-26 15:58:27  |  **ISO Code:** `BRA`
 
 ---
 
@@ -86,9 +86,9 @@ available. Grid locations of all these units are preserved.
 | **Plants Above Threshold** | 637 individual plants tracked |
 | **Total Plants Processed** | 1522 plants in database |
 | **Missing Capacity Added** | - **IRENA data**:
-  - **bioenergy**: 0.58 GW
-  - **solar**: 13.24 GW
   - **hydro**: 1.03 GW
+  - **solar**: 13.24 GW
+  - **bioenergy**: 0.58 GW
 - **EMBER data**:
   - **gas**: 2.81 GW |
 
