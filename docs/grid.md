@@ -17,7 +17,7 @@
 
 | Metric | Value | Description |
 |--------|-------|-------------|
-| **Total Buses** | 18 | Transmission substations and connection points |
+| **Total Buses** | 11 | Transmission substations and connection points |
 | **Transmission Lines** | 20 | High-voltage transmission corridors |
 
 ## Power Plant Integration
@@ -50,7 +50,7 @@ Electricity demand shares are distributed across the transmission network using
 
 | Load Distribution Method | Buses with Load | Total Load Share | Methodology |
 |--------------------------|-----------------|-----------------|-------------|
-| **Demand-Region Clustering** | 16 | 1.0 | Population-weighted clusters mapped to nearest buses |
+| **Demand-Region Clustering** | 11 | 1.0 | Population-weighted clusters mapped to nearest buses |
 
 <div align="center">
   <img src="assets/POL_demand_bus_verification.png"
@@ -59,9 +59,9 @@ Electricity demand shares are distributed across the transmission network using
 
 ### Load Concentration
 
-- **Highest Load Bus:** way/183945016-220 (0.167 share)
-- **Load Distribution CV:** 66.2% (coefficient of variation across buses with non-zero demand)
-- **Load Balancing:** Moderately concentrated demand across buses
+- **Highest Load Bus:** way/133537926-220 (0.167 share)
+- **Load Distribution CV:** 41.7% (coefficient of variation across buses with non-zero demand)
+- **Load Balancing:** Balanced distribution across transmission buses
 
 Transmission constraints affect supply-demand balancing, grid bottlenecks impact renewable
 integration, and regional electricity trade opportunities are identified through this spatial load
