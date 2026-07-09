@@ -17,7 +17,7 @@
 
 | Metric | Value | Description |
 |--------|-------|-------------|
-| **Total Buses** | 18 | Transmission substations and connection points |
+| **Total Buses** | 17 | Transmission substations and connection points |
 | **Transmission Lines** | 24 | High-voltage transmission corridors |
 
 ## Power Plant Integration
@@ -50,7 +50,7 @@ Electricity demand shares are distributed across the transmission network using
 
 | Load Distribution Method | Buses with Load | Total Load Share | Methodology |
 |--------------------------|-----------------|-----------------|-------------|
-| **Demand-Region Clustering** | 18 | 1.0 | Population-weighted clusters mapped to nearest buses |
+| **Demand-Region Clustering** | 17 | 1.0 | Population-weighted clusters mapped to nearest buses |
 
 <div align="center">
   <img src="assets/GBR_demand_bus_verification.png"
@@ -60,7 +60,7 @@ Electricity demand shares are distributed across the transmission network using
 ### Load Concentration
 
 - **Highest Load Bus:** way/109189896 (0.229 share)
-- **Load Distribution CV:** 88.2% (coefficient of variation across buses with non-zero demand)
+- **Load Distribution CV:** 85.9% (coefficient of variation across buses with non-zero demand)
 - **Load Balancing:** Moderately concentrated demand across buses
 
 Transmission constraints affect supply-demand balancing, grid bottlenecks impact renewable

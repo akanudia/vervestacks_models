@@ -1,7 +1,7 @@
 # GBR — VerveStacks Model
 
 !!! info "Model Info"
-    **Generated:** 2026-06-26 14:17:22  |  **ISO Code:** `GBR`
+    **Generated:** 2026-07-09 13:52:07  |  **ISO Code:** `GBR`
 
 ---
 
@@ -25,7 +25,7 @@
 |---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
 | 🌱 **Bioenergy** | 50 MW | 34/100 plants | 8.43 GW | 0.025 GW | 25.1% |
 | ⚫ **Coal** | 50 MW | 12/12 plants | 6.33 GW | — | 27% |
-| 🔥 **Gas** | 50 MW | 106/140 plants | 36.7 GW | 1.99 GW | 42.5% |
+| 🔥 **Gas** | 50 MW | 107/139 plants | 36.7 GW | 1.99 GW | 42.5% |
 | 🌋 **Geothermal** | 10 MW | 0/1 plants | 0.002 GW | — | 100% |
 | 💧 **Hydro Power** | 10 MW | 15/15 plants | 3.97 GW | — | 84% |
 | ⚛️ **Nuclear** | — | 14/14 plants | 11.9 GW | — | 100% |
@@ -47,7 +47,7 @@
 | ☀️ **Solar** | 200 MW | 26/39 plants | 25 GW | 100% |
 | 🌊 **Windoff** | 200 MW | 60/69 plants | 76 GW | 100% |
 | 💨 **Windon** | 200 MW | 26/35 plants | 18.8 GW | 100% |
-| 🔋 **Pumped Storage** | 10 MW | 12/12 plants | 10.7 GW | 100% |
+| 🔋 **Pumped Storage** | 10 MW | 12/12 plants | 10.8 GW | 100% |
 
 
 Announced and pre-construction projects are offered as options to the model for endogenous investment.
@@ -89,12 +89,12 @@ available. Grid locations of all these units are preserved.
 | **Individual Plant Coverage** | 94% of total capacity from plant-level GEM data |
 | **Total Capacity Tracked** | 284 GW from all sources |
 | **Plants Above Threshold** | 424 individual plants tracked |
-| **Total Plants Processed** | 980 plants in database |
+| **Total Plants Processed** | 979 plants in database |
 | **Missing Capacity Added** | - **IRENA data**:
   - **solar**: 5.53 GW
-  - **windon**: 0.99 GW
-  - **windoff**: 1.02 GW
   - **bioenergy**: 2.19 GW
+  - **windoff**: 1.02 GW
+  - **windon**: 0.99 GW
   - **hydro**: 0.93 GW |
 
 ---
