@@ -1,7 +1,7 @@
 # SAU — VerveStacks Model
 
 !!! info "Model Info"
-    **Generated:** 2026-07-23 10:14:20  |  **ISO Code:** `SAU`
+    **Generated:** 2026-07-24 19:14:17  |  **ISO Code:** `SAU`
 
 ---
 
@@ -23,7 +23,7 @@
 
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|-----------------|
-| 🔥 **Gas** | 350 MW | 107/173 plants | 93 GW | 45.4% |
+| 🔥 **Gas** | 350 MW | 108/172 plants | 93 GW | 45.4% |
 | 🛢️ **Oil** | 350 MW | 39/67 plants | 28.4 GW | 35% |
 | ☀️ **Solar** | 200 MW | 12/36 plants | 9.44 GW | 100% |
 | 💨 **Windon** | 200 MW | 2/5 plants | 2.07 GW | 100% |
@@ -76,8 +76,8 @@ available. Grid locations of all these units are preserved.
 |--------|-------|
 | **Individual Plant Coverage** | 98% of total capacity from plant-level GEM data |
 | **Total Capacity Tracked** | 161 GW from all sources |
-| **Plants Above Threshold** | 242 individual plants tracked |
-| **Total Plants Processed** | 302 plants in database |
+| **Plants Above Threshold** | 241 individual plants tracked |
+| **Total Plants Processed** | 301 plants in database |
 | **Missing Capacity Added** | - **No missing capacity added** - All capacity covered by plant-level data |
 
 ---
