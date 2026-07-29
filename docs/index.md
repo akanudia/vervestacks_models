@@ -1,7 +1,7 @@
 # FRA — VerveStacks Model
 
 !!! info "Model Info"
-    **Generated:** 2026-07-29 13:04:37  |  **ISO Code:** `FRA`
+    **Generated:** 2026-07-29 14:10:23  |  **ISO Code:** `FRA`
 
 ---
 
@@ -89,12 +89,12 @@ available. Grid locations of all these units are preserved.
 | **Total Capacity Tracked** | 192 GW from all sources |
 | **Plants Above Threshold** | 341 individual plants tracked |
 | **Total Plants Processed** | 1041 plants in database |
-| **Missing Capacity Added** | - **EMBER data**:
-  - **gas**: 9.15 GW
-- **IRENA data**:
-  - **solar**: 4.58 GW
+| **Missing Capacity Added** | - **IRENA data**:
   - **hydro**: 6.3 GW
-  - **bioenergy**: 1.28 GW |
+  - **bioenergy**: 1.28 GW
+  - **solar**: 4.58 GW
+- **EMBER data**:
+  - **gas**: 9.15 GW |
 
 ---
 
