@@ -1,7 +1,7 @@
 # FRA — VerveStacks Model
 
 !!! info "Model Info"
-    **Generated:** 2026-07-24 19:07:25  |  **ISO Code:** `FRA`
+    **Generated:** 2026-07-29 13:04:37  |  **ISO Code:** `FRA`
 
 ---
 
@@ -31,7 +31,7 @@
 | ⚛️ **Nuclear** | — | 57/57 plants | 66 GW | 100% |
 | 🛢️ **Oil** | 10 MW | 33/33 plants | 2.28 GW | 35.2% |
 | ☀️ **Solar** | 200 MW | 9/334 plants | 17.1 GW | 82% |
-| 🌊 **Windoff** | 200 MW | 6/12 plants | 3.04 GW | 100% |
+| 🌊 **Windoff** | 200 MW | 6/12 plants | 3.05 GW | 100% |
 | 💨 **Windon** | 200 MW | 28/233 plants | 23.7 GW | 100% |
 | 🔋 **Pumped Storage** | 50 MW | 6/6 plants | 5.04 GW | 100% |
 
@@ -89,12 +89,12 @@ available. Grid locations of all these units are preserved.
 | **Total Capacity Tracked** | 192 GW from all sources |
 | **Plants Above Threshold** | 341 individual plants tracked |
 | **Total Plants Processed** | 1041 plants in database |
-| **Missing Capacity Added** | - **IRENA data**:
+| **Missing Capacity Added** | - **EMBER data**:
+  - **gas**: 9.15 GW
+- **IRENA data**:
   - **solar**: 4.58 GW
   - **hydro**: 6.3 GW
-  - **bioenergy**: 1.28 GW
-- **EMBER data**:
-  - **gas**: 9.15 GW |
+  - **bioenergy**: 1.28 GW |
 
 ---
 
