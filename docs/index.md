@@ -1,7 +1,7 @@
 # POL — VerveStacks Model
 
 !!! info "Model Info"
-    **Generated:** 2026-08-27 00:34:22  |  **ISO Code:** `POL`
+    **Generated:** 2026-08-27 12:28:54  |  **ISO Code:** `POL`
 
 ---
 
@@ -23,7 +23,7 @@
 
 | **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|----------------------------|--------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 12/24 plants | 1.3 GW | 29% |
+| 🌱 **Bioenergy** | 50 MW | 12/23 plants | 1.3 GW | 29% |
 | ⚫ **Coal** | 10 MW | 144/144 plants | 29.2 GW | 33.9% |
 | 🔥 **Gas** | 10 MW | 38/39 plants | 8.96 GW | 58% |
 | 💧 **Hydro Power** | 10 MW | 9/9 plants | 0.532 GW | 62% |
@@ -86,10 +86,10 @@ available. Grid locations of all these units are preserved.
 | **Individual Plant Coverage** | 90% of total capacity from plant-level GEM data |
 | **Total Capacity Tracked** | 110 GW from all sources |
 | **Plants Above Threshold** | 259 individual plants tracked |
-| **Total Plants Processed** | 501 plants in database |
+| **Total Plants Processed** | 500 plants in database |
 | **Missing Capacity Added** | - **IRENA data**:
   - **hydro**: 0.31 GW
-  - **bioenergy**: 0.23 GW
+  - **bioenergy**: 0.26 GW
   - **solar**: 3.59 GW |
 
 ---

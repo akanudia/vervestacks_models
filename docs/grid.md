@@ -17,14 +17,14 @@
 
 | Metric | Value | Description |
 |--------|-------|-------------|
-| **Total Buses** | 41 | Transmission substations and connection points |
-| **Transmission Lines** | 78 | High-voltage transmission corridors |
+| **Total Buses** | 48 | Transmission substations and connection points |
+| **Transmission Lines** | 96 | High-voltage transmission corridors |
 
 ## Power Plant Integration
 
 | Integration Type | Count | Description |
 |------------------|-------|-------------|
-| **Plants Mapped to Buses** | 766 | GEM power plants assigned to grid locations |
+| **Plants Mapped to Buses** | 5122 | GEM power plants assigned to grid locations |
 
 ---
 
