@@ -50,7 +50,7 @@ The supply curves reveal the economic characteristics of renewable energy deploy
 |------------|-----------|---------|-----------------|------------|
 | ☀️ **Solar PV** | 100 | 15 | 6.7 cells | 4 to 12 cells |
 | 💨 **Wind Onshore** | 74 | 13 | 5.7 cells | 2 to 9 cells |
-| 🌊 **Wind Offshore** | N/A | N/A | N/A cells | N/A cells |
+| 🌊 **Wind Offshore** | 56 | 11 | 5.1 cells | 3 to 9 cells |
 
 **Grid Definition:** Grid definition: kan10
 
@@ -85,5 +85,5 @@ cells drive the representative generation shape. Only economically viable grid c
 <div align="center">
   <img src="assets/clustering_results_HRV_wind_offshore.png"
        alt="Offshore Wind Clustering" style="max-width:100%; border:1px solid #ddd; border-radius:8px;">
-  <p><em>Wind Offshore: N/A clusters from N/A grid cells</em></p>
+  <p><em>Wind Offshore: 11 clusters from 56 grid cells</em></p>
 </div>

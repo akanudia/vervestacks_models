@@ -32,10 +32,10 @@
 
 | Spatial Metric | Value | Detail |
 |----------------|-------|--------|
-| **Grid Cells** | 110 | 50×50 km renewable energy zones |
+| **Grid Cells** | 230 | 50×50 km renewable energy zones |
 | **Solar / Wind Onshore Zones** | 107 | Grid cells with solar and onshore wind potential |
-| **Wind Offshore Zones** | 0 | Grid cells with offshore wind potential |
-| **Zone–Bus Mappings** | 110 | REZoning zones assigned to transmission buses |
+| **Wind Offshore Zones** | 102 | Grid cells with offshore wind potential |
+| **Zone–Bus Mappings** | 209 | REZoning zones assigned to transmission buses |
 
 **Commodity naming:** `elc_spv_<ISO3>_<cluster_id>` · `elc_won_<ISO3>_<cluster_id>` · `elc_wof_<ISO3>_<cluster_id>`
 
