@@ -10,10 +10,8 @@
       
       
       
-        <link rel="canonical" href="https://akanudia.github.io/vervestacks_models/POL_grids_kan50/scenarios.html">
+        <link rel="canonical" href="https://akanudia.github.io/vervestacks_models/POL_grids_kan50/hydro.html">
       
-      
-        <link rel="prev" href="timeslices.html">
       
       
       
@@ -25,7 +23,7 @@
     
     
       
-        <title>Climate Scenarios - VerveStacks — POL_grids_kan50</title>
+        <title>Hydro Availability — BIH - VerveStacks — POL_grids_kan50</title>
       
     
     
@@ -78,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#climate-scenarios-pol" class="md-skip">
+        <a href="#hydro-availability-bih" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Climate Scenarios
+              Hydro Availability — BIH
             
           </span>
         </div>
@@ -286,10 +284,8 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
+    <li class="md-tabs__item">
       <a href="scenarios.html" class="md-tabs__link">
         
   
@@ -456,37 +452,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Climate Scenarios
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="scenarios.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="scenarios.html" class="md-nav__link">
         
   
   
@@ -502,70 +471,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#ar6-scenario-coverage-r10europe" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        AR6 Scenario Coverage — R10EUROPE
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#scenario-trajectories" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Scenario Trajectories
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-transformation-pathways" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key Transformation Pathways
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#model-agreement" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Model Agreement
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -587,83 +492,117 @@
 
 
 
-<h1 id="climate-scenarios-pol">Climate Scenarios — POL<a class="headerlink" href="#climate-scenarios-pol" title="Permanent link">&para;</a></h1>
+<h1 id="hydro-availability-bih">Hydro Availability — BIH<a class="headerlink" href="#hydro-availability-bih" title="Permanent link">&para;</a></h1>
 <hr />
-<h2 id="ar6-scenario-coverage-r10europe">AR6 Scenario Coverage — R10EUROPE<a class="headerlink" href="#ar6-scenario-coverage-r10europe" title="Permanent link">&para;</a></h2>
-<p>This model incorporates climate scenario drivers from the IPCC AR6 database for the <strong>R10EUROPE</strong>
-region, derived from 385 vetted scenario-model combinations spanning 5
-climate categories from ambitious 1.5°C pathways (C1) to limited mitigation trajectories (C7).
-The scenarios cover 7 years from 2020 to 2050, providing
-comprehensive pathways for energy system transformation under different climate policy futures.</p>
+<p>Hydroelectric generation is inherently variable due to seasonal patterns, year-to-year climate
+variations, and long-term climate change. Traditional energy models often assume constant hydro
+availability based on historical averages, which can lead to significant underestimation of backup
+capacity needs and inadequate drought preparedness.</p>
+<p><strong>VerveStacks addresses this</strong> by generating probabilistic hydro availability scenarios that capture:</p>
+<ul>
+<li><strong>Natural variability</strong> — Seasonal wet/dry cycles and multi-year persistence</li>
+<li><strong>Climate change impacts</strong> — Declining mean availability and increasing extremes</li>
+<li><strong>Extreme events</strong> — Drought sequences that stress energy systems</li>
+<li><strong>Country-specific patterns</strong> — Drought thresholds based on historical operational experience</li>
+</ul>
+<p>24 years of historical EMBER data (2000–2023) are used to extract seasonal patterns, classify drought
+regimes, and apply climate trend adjustments — generating 100+ probabilistic future pathways. Drought
+thresholds are anchored to each country's bottom 20% of historical capacity factors, ensuring they
+reflect actual operational stress rather than arbitrary percentages.</p>
+<p><em>→ <a href="https://vervestacks.readthedocs.io/en/latest/methods/hydro-availability-scenarios.html#hydro-availability-scenarios">Hydro availability scenario methodology</a></em></p>
+<hr />
+<h2 id="bosnia-herzegovina-hydro-profile">Bosnia Herzegovina Hydro Profile<a class="headerlink" href="#bosnia-herzegovina-hydro-profile" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Metric</th>
+<th>Planning Parameter</th>
 <th>Value</th>
-<th>Description</th>
+<th>Application</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Total Scenarios</strong></td>
-<td>385</td>
-<td>Vetted scenario-model combinations from AR6 database</td>
+<td><strong>Hydro Dependency</strong></td>
+<td>36.4% of generation</td>
+<td>System vulnerability assessment</td>
 </tr>
 <tr>
-<td><strong>Climate Categories</strong></td>
-<td>5</td>
-<td>From C1 (1.5°C) to C7 (limited action)</td>
+<td><strong>P10 (Dry Scenario)</strong></td>
+<td>36.4% annual average</td>
+<td>Security planning, reserve sizing</td>
 </tr>
 <tr>
-<td><strong>Temporal Coverage</strong></td>
-<td>2020–2050</td>
-<td>Multi-decade transformation pathways</td>
+<td><strong>P50 (Base Scenario)</strong></td>
+<td>38.1% annual average</td>
+<td>Expected case, financial planning</td>
 </tr>
 <tr>
-<td><strong>Regional Scope</strong></td>
-<td>R10EUROPE</td>
-<td>IPCC R10 regional classification</td>
+<td><strong>P90 (Wet Scenario)</strong></td>
+<td>40.5% annual average</td>
+<td>Export opportunities, minimum backup</td>
 </tr>
 <tr>
-<td><strong>IEA Baseline Records</strong></td>
-<td>19</td>
-<td>Historical electricity balance data</td>
+<td><strong>Historical Average</strong></td>
+<td>37.9% (2000-2023)</td>
+<td>Validation benchmark</td>
+</tr>
+<tr>
+<td><strong>Drought Threshold</strong></td>
+<td>30.3% (P20 of historical)</td>
+<td>Operational stress indicator</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="scenario-trajectories">Scenario Trajectories<a class="headerlink" href="#scenario-trajectories" title="Permanent link">&para;</a></h2>
+<h2 id="monthly-availability-patterns">Monthly Availability Patterns<a class="headerlink" href="#monthly-availability-patterns" title="Permanent link">&para;</a></h2>
 <div align="center">
-  <img src="assets/ar6_scenarios_POL.png"
-       alt="AR6 Climate Scenario Trajectories"
+  <img src="assets/BIH_hydro_monthly_profile.png"
+       alt="Monthly Hydro Availability"
        style="max-width:100%; border:1px solid #ddd; border-radius:8px;">
-  <p><em>CO₂ prices, electricity growth, and hydrogen deployment across climate ambitions</em></p>
+  <p><em>Monthly hydro availability — P10/P50/P90 future scenarios vs. historical patterns</em></p>
+</div>
+
+<h2 id="long-term-trajectory">Long-term Trajectory<a class="headerlink" href="#long-term-trajectory" title="Permanent link">&para;</a></h2>
+<div align="center">
+  <img src="assets/BIH_hydro_annual_trajectory.png"
+       alt="Annual Hydro Trajectory"
+       style="max-width:100%; border:1px solid #ddd; border-radius:8px;">
+  <p><em>Annual hydro trajectories: historical (2000–2023) → future scenarios (2025–2050)</em></p>
 </div>
 
 <hr />
-<h2 id="key-transformation-pathways">Key Transformation Pathways<a class="headerlink" href="#key-transformation-pathways" title="Permanent link">&para;</a></h2>
-<p><strong>Carbon Pricing Evolution:</strong> CO₂ prices show dramatic divergence across climate ambitions, ranging
-from $242 to $0/tCO₂ by 2030 under ambitious vs. limited
-action scenarios. By 2050, this gap widens to $635–$0/tCO₂.</p>
-<p><strong>Electrification Acceleration:</strong> Total electricity demand grows by 1.9× under
-ambitious climate scenarios (C1) compared to 1.5× under limited action (C7)
-by 2050, reflecting massive sectoral electrification across transport, heating, and industry.</p>
-<p><strong>Hydrogen Integration:</strong> Hydrogen deployment reaches 0.1% of electricity
-demand by 2050 under ambitious scenarios, compared to 0.0% under limited
-action.</p>
-<p><strong>Mobility Transformation:</strong> Transport electricity consumption grows from 2.0%
-to 15.0% of total electricity demand under ambitious scenarios — a
-7.5× increase.</p>
-<hr />
-<h2 id="model-agreement">Model Agreement<a class="headerlink" href="#model-agreement" title="Permanent link">&para;</a></h2>
-<p>Analysis across 385 scenario-model combinations reveals:</p>
-<ul>
-<li><strong>High Convergence</strong> — CO₂ pricing (CV: inf%) and electricity growth (CV: 17.2%)</li>
-<li><strong>Moderate Uncertainty</strong> — Transport electrification rates (CV: 59.8%)</li>
-<li><strong>High Divergence</strong> — Hydrogen deployment pathways (CV: inf%)</li>
-</ul>
-<p>The <strong>R10EUROPE</strong> region shows moderate convergence compared to global averages,
-with region-specific climate policy patterns reflecting economic and policy context.</p>
+<h2 id="planning-applications">Planning Applications<a class="headerlink" href="#planning-applications" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Use Case</th>
+<th>Recommended Scenario</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Capacity Planning</strong></td>
+<td>P50 for base case sizing; verify adequacy with P10</td>
+</tr>
+<tr>
+<td><strong>Investment Analysis</strong></td>
+<td>P10 for downside risk, P90 for upside potential</td>
+</tr>
+<tr>
+<td><strong>System Operations</strong></td>
+<td>P10 for emergency preparedness, P50 for maintenance</td>
+</tr>
+<tr>
+<td><strong>Policy Analysis</strong></td>
+<td>Drought impact on energy security and backup requirements</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Key Insight</p>
+<p>The future will not match historical averages. Planning for hydro variability using
+P10/P50/P90 scenarios is essential for reliable, cost-effective energy systems.</p>
+</div>
 
 
 
