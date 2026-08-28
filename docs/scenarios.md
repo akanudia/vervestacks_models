@@ -16,7 +16,7 @@ comprehensive pathways for energy system transformation under different climate 
 | **Climate Categories** | 5 | From C1 (1.5°C) to C7 (limited action) |
 | **Temporal Coverage** | 2020–2050 | Multi-decade transformation pathways |
 | **Regional Scope** | R10EUROPE | IPCC R10 regional classification |
-| **IEA Baseline Records** | 32 | Historical electricity balance data |
+| **IEA Baseline Records** | 19 | Historical electricity balance data |
 
 ---
 
