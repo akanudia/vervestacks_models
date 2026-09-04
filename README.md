@@ -1,7 +1,7 @@
 # VerveStacks Energy System Models
 **Professional. Pre-Built. Ready to Use.**
 
-[![Models](https://img.shields.io/badge/models-52%20across%2033%20countries-green.svg)](#available-models)
+[![Models](https://img.shields.io/badge/models-one%20branch%20per%20country-green.svg)](#-get-a-model)
 [![Data Sources](https://img.shields.io/badge/datasets-8+-orange.svg)](#data-foundation)
 [![License](https://img.shields.io/badge/models-freely%20available-blue.svg)](#license)
 
@@ -24,8 +24,9 @@ git clone -b DEU https://github.com/akanudia/vervestacks_models.git
 git ls-remote --heads https://github.com/akanudia/vervestacks_models.git
 ```
 
-Open the `.veda` files in Veda-TIMES and run. See **[Available Models](#available-models)**
-for the full list, and **[Getting Started](#getting-started)** for what each branch contains.
+Open the `.veda` files in Veda-TIMES and run. The `ls-remote` command above is always the
+current list. See **[Getting Started](#getting-started)** for the branch naming convention
+and what each model contains.
 
 ---
 
@@ -348,56 +349,6 @@ VerveStacks models are **more open than traditional "open source"** because they
 **Users have the OPTION to break the builder's habit** - you can start with a working model and explore results, or dive into methodology first. Your choice.
 
 ---
-
----
-
-## 📋 **Available Models**
-
-**52 models across 33 countries.** Each is a branch of this repository.
-
-| Country | ISO | Branches |
-|---|---|---|
-| Bosnia and Herzegovina | BIH | `BIH_grids_kan10` |
-| Brazil | BRA | `BRA_grids_kan10` |
-| Switzerland | CHE | `CHE_grids_kan10` |
-| China | CHN | `CHN_grids_kan10`, `CHN_grids_syn_10` |
-| Germany | DEU | `DEU`, `DEU_grids_kan`, `DEU_grids_kan10` |
-| Egypt | EGY | `EGY_grids_kan10` |
-| Spain | ESP | `ESP`, `ESP_grids_kan`, `ESP_grids_kan10` |
-| Ethiopia | ETH | `ETH_grids_kan10` |
-| France | FRA | `FRA_grids_kan10`, `FRA_grids_kan25` |
-| United Kingdom | GBR | `GBR_grids_kan`, `GBR_grids_kan10` |
-| Ghana | GHA | `GHA_grids_kan10` |
-| Croatia | HRV | `HRV_grids_kan10` |
-| Indonesia | IDN | `IDN_grids_kan` |
-| India | IND | `IND_grids_kan`, `IND_grids_kan10`, `IND_grids_kan25` |
-| Ireland | IRL | `IRL_grids_kan` |
-| Italy | ITA | `ITA`, `ITA_grids`, `ITA_grids_kan10` |
-| Japan | JPN | `JPN`, `JPN_grids_kan`, `JPN_grids_kan15` |
-| Kenya | KEN | `KEN_grids_kan`, `KEN_grids_kan10` |
-| Morocco | MAR | `MAR_grids_kan10` |
-| Mexico | MEX | `MEX`, `MEX_grids_kan`, `MEX_grids_kan15` |
-| Malaysia | MYS | `MYS_grids_kan` |
-| Nigeria | NGA | `NGA_grids_kan10` |
-| Netherlands | NLD | `NLD_grids_kan` |
-| Norway | NOR | `NOR_grids_kan`, `NOR_grids_kan10` |
-| New Zealand | NZL | `NZL_grids_kan` |
-| Philippines | PHL | `PHL_grids_kan` |
-| Poland | POL | `POL_grids_kan`, `POL_grids_kan10`, `POL_grids_kan50` |
-| Saudi Arabia | SAU | `SAU_grids_kan25` |
-| Serbia | SRB | `SRB_grids_kan` |
-| Slovakia | SVK | `SVK_grids_kan` |
-| Thailand | THA | `THA_grids_kan` |
-| South Africa | ZAF | `ZAF_grids_kan` |
-| Zimbabwe | ZWE | `ZWE_grids_kan` |
-
-New models are added regularly. For the live list at any time:
-
-```bash
-git ls-remote --heads https://github.com/akanudia/vervestacks_models.git
-```
-
-Need a country or a grid resolution that is not here? See [Custom Models](#custom-models).
 
 ## 🚀 **Getting Started**
 
