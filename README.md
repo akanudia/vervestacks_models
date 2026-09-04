@@ -63,12 +63,17 @@ Domain experts, policy makers, and analysts should think about **energy systems*
 
 ## 📌 **Current Scope**
 
-VerveStacks currently delivers **power sector models** with integrated:
+VerveStacks delivers **power and heat sector models** with integrated:
+
+- **Grid infrastructure** — real transmission topology, at a spatial resolution you choose
+- **CO₂ capture, transport and storage** — industrial emitters, pipelines and geological sinks modeled as a routed network *(where curated grid data supports it)*
+- **Heat and cogeneration** — bus-local heat demand, CHP, heat-only boilers and heat pumps
+- **Utility-scale storage** — 4-hour and 8-hour batteries with duration-correct capacity credit
 - **Electric vehicle charging demand** (transport electrification)
 - **Hydrogen production** (electrolysis and other pathways)
-- **Grid infrastructure** (transmission constraints and spatial optimization)
+- **Data centre siting** — candidate transmission buses scored and pre-selected for new load
 
-**Full Energy System Operating Models (ESOM)** covering all sectors (industry, buildings, transport, agriculture) are on the development roadmap. The current power sector focus provides the foundation for comprehensive energy system modeling.
+**Full Energy System Operating Models (ESOM)** covering all sectors (industry, buildings, transport, agriculture) are on the development roadmap. The current power and heat focus provides the foundation.
 
 ---
 
@@ -102,9 +107,21 @@ Each country model includes professionally curated data structured for immediate
 
 ### **Grid Infrastructure** (where available)
 - **Transmission Network**: Actual topology from OpenStreetMap data
+- **Readable Node Names**: Buses named for the cities they serve (`e_Warsaw_POL`), not OSM identifiers
 - **Spatial Regions**: Mathematically consistent clustering (4-400+ regions)
 - **Load Distribution**: Industrial demand mapped to transmission buses
 - **Renewable Zones**: 50×50km grid cells with location-specific capacity factors
+
+### **CO₂ Networks** *(where curated grid data supports it)*
+- **Industrial Emitters**: Cement, lime, fertiliser, chemicals, glass and non-ferrous sources located at named buses
+- **Transport Pipelines**: Bus-to-sink links with levelised $/t costs derived from real distances
+- **Geological Sinks**: Storage sites with cumulative injection ceilings, not an unbounded sink
+- **Plant Retrofits**: Per-unit CCS retrofit options with capacity penalty and capture economics
+
+### **Heat & Cogeneration**
+- **Bus-Local Heat Demand**: Heat commodities alongside electricity at each node
+- **Cogeneration**: CHP units with heat-to-power ratios from plant-level data
+- **Heat Supply Options**: Heat-only boilers, electric boilers and utility-scale heat pumps
 
 ### **Renewable Energy Potential**
 - **Supply Curves**: Technology-specific LCOE vs. capacity curves
@@ -116,6 +133,7 @@ Each country model includes professionally curated data structured for immediate
 - **Intelligent Timeslices**: 1-600 timeslices capturing critical periods
 - **Stress Period Identification**: Scarcity, surplus, and volatility analysis
 - **Flexible Resolution**: From simple seasonal to detailed hourly representation
+- **Capacity Credit**: Per-cluster firmness coefficients splitting variable output into firm, 4-hour and 8-hour storable, and irreducible surplus
 
 ### **Climate Scenarios**
 - **IPCC AR6 Integration**: 5 climate categories with sectoral trajectories
@@ -128,6 +146,7 @@ Each country model includes professionally curated data structured for immediate
 - **Data Lineage**: Complete traceability to source datasets
 - **Technical Methodology**: Assumptions and processing documented
 - **Visual Diagnostics**: Grid maps, supply curves, stress periods
+- **Per-Model Documentation Site**: Every model ships a browsable site covering calibration, grid, renewables, hydro, timeslices and scenarios
 
 ---
 
@@ -265,6 +284,28 @@ Builds confidence in model outputs. Users can verify against known data and trus
 
 ---
 
+### **🏭 CO₂ as a Routed Network**
+
+**Carbon capture with geography attached**, rather than a national abatement curve:
+
+**The Problem:**
+Most models treat CO₂ storage as a single national bucket with a flat cost adder. That hides the two things that actually bind: how far the CO₂ has to travel, and how fast a given formation will accept it.
+
+**The VerveStacks Solution:**
+
+1. **Emitters at Nodes**: Industrial sources — cement, lime, fertiliser, chemicals, glass, non-ferrous — placed at the transmission bus serving them, each with a sector-specific capture cost
+2. **Pipelines as Trade Links**: Bus-to-sink connections priced by distance and throughput, so a plant far from storage genuinely pays more
+3. **Sinks with Ceilings**: Geological storage sites carry cumulative injection bounds — capacity is finite and site-specific, not an unbounded backstop
+4. **Power Plant Capture**: CCS-equipped generation routes its captured stream into the same network, competing for the same pipelines and the same pore space
+5. **Retrofit Economics**: Existing units carry explicit retrofit options with auxiliary load penalty and capture cost
+
+**Why This Matters:**
+Net-zero pathways usually hinge on how much CCS is affordable and where. Modelling capture, transport and injection as a network makes that answer specific to a country's actual industrial geography — and makes it challengeable, because every cost traces to a distance and every ceiling to a formation.
+
+**Availability:** CO₂ networks appear in models whose curated grid includes emitter and sink data. Coverage is expanding; models without it are otherwise unaffected.
+
+---
+
 ### **💧 Probabilistic Hydro Scenarios**
 
 **Planning for hydrological uncertainty** using historical patterns and climate projections:
@@ -364,6 +405,11 @@ the pattern below:
 | `<ISO>_grids_kan` | With a grid at the default resolution |
 | `<ISO>_grids_syn_<N>` | Synthetic grid, where open topology data is unavailable |
 
+The bus count is a modelling choice, not a fixed property of the country: the same country
+can be published at several resolutions, and a coarser network solves faster while a finer
+one represents congestion better. Multi-country models with endogenous cross-border trade
+can also be built from these components — [get in touch](#contact) if you need one.
+
 ```bash
 # Clone any country model
 git clone -b CHE_grids_kan10 https://github.com/akanudia/vervestacks_models.git
@@ -381,14 +427,22 @@ git ls-remote --heads https://github.com/akanudia/vervestacks_models.git
 ### **Explore What's Included**
 
 Every model branch contains:
-- `source_data/` - Complete dataset in model-agnostic Excel format
-- `vt_*.xlsx` - VEDA transformation files
+
+**The model** — a complete VEDA-TIMES model folder:
+- `SysSettings.xlsx` - Regions, time periods, fuels, grids, heat and CO₂ network settings
+- `vt_*.xlsx` - Existing stock, new-build options and CCS retrofits
 - `Sets-vervestacks.xlsx` - Technology and commodity definitions
-- `Scen_*.xlsx` - AR6 climate scenarios and policy assumptions
-- `grid_analysis/` - Network visualization and topology data
+- `SubRES_Tmpl/` - New renewables and conventionals, storage, EV, H₂, data centres
+- `SuppXLS/` - Base scenario, AR6 climate drivers, timeslice parameter sets, trade links
+- `AppData/` - Pre-configured Veda cases, result views and solver options
+
+**The evidence** — everything needed to check it:
+- `source_data/` - Complete dataset in model-agnostic Excel format
+- `grid_analysis/` - Network topology, bus assignments and an interactive map
 - `renewable_energy/` - Supply curves and cluster assignments
 - `timeslice_analysis/` - Stress period identification charts
-- `README.md` - Country-specific validation and specifications
+- `README.md` - Country-specific calibration against published statistics
+- `docs/` + `mkdocs.yml` - A browsable documentation site for this model
 
 ### **Typical Workflow**
 
