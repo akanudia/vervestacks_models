@@ -24,9 +24,14 @@ git clone -b DEU https://github.com/akanudia/vervestacks_models.git
 git ls-remote --heads https://github.com/akanudia/vervestacks_models.git
 ```
 
-Open the `.veda` files in Veda-TIMES and run. The `ls-remote` command above is always the
-current list. See **[Getting Started](#getting-started)** for the branch naming convention
-and what each model contains.
+Open the files in Veda-TIMES and run.
+
+**Or run it in your browser, without installing anything.** Fork this repository, sign in to
+[Veda Online](https://vedaonline.cloud), point it at your fork, and solve — see
+**[Run it in the browser](#run-it-in-the-browser)**.
+
+The `ls-remote` command above is always the current list. See **[Getting Started](#getting-started)**
+for the branch naming convention and what each model contains.
 
 ---
 
@@ -423,6 +428,31 @@ git ls-remote --heads https://github.com/akanudia/vervestacks_models.git
 # - Add your own policy assumptions
 # - Run analyses
 ```
+
+### **Run it in the browser**
+
+You do not need a Windows machine, a Veda desktop install, or a solver licence. A country
+model can be taken from this repository to a solved result entirely in a browser:
+
+1. **Fork this repository** and check out the branch for the model you want
+2. **Sign in to [Veda Online](https://vedaonline.cloud)**
+3. **Give VO access to your fork** with a GitHub Personal Access Token
+4. **Create a model** in VO pointing at your fork
+5. **Browse the inputs, define cases, and solve**
+
+Results come back into VO, where you can explore them, build scenarios on top, and share a
+link to the model with colleagues.
+
+**Free access.** Veda Online provides a free route to running these models. Current
+eligibility, compute limits and queueing are documented
+[here](https://vedaonline-documentation.readthedocs.io/en/latest/pages/VO_free_academic.html) —
+that page is the authority, not this one.
+
+**Start coarse.** A `kan10` model solves quickly and is the right place to confirm that the
+model behaves the way your country should. `kan25` and `kan50` represent congestion in more
+detail and take longer. Verify first, then move up.
+
+---
 
 ### **Explore What's Included**
 
