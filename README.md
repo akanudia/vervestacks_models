@@ -2,7 +2,7 @@
 **Professional. Pre-Built. Ready to Use.**
 
 [![Models](https://img.shields.io/badge/models-one%20branch%20per%20country-green.svg)](#-get-a-model)
-[![Data Sources](https://img.shields.io/badge/datasets-8+-orange.svg)](#data-foundation)
+[![Data Sources](https://img.shields.io/badge/data-public%20sources%2C%20fully%20traced-orange.svg)](#data-foundation)
 [![License](https://img.shields.io/badge/models-freely%20available-blue.svg)](#license)
 
 [STARTING WITH THE POWER SECTOR]
@@ -478,18 +478,64 @@ Every model branch contains:
 
 ## 📚 **Data Foundation**
 
-### **Global Datasets Integrated**
+Every model is assembled from public data. Nothing in a VerveStacks model comes from a
+source a user cannot go and check.
 
-| Dataset | Purpose | Coverage |
-|---------|---------|----------|
-| **[Global Energy Monitor](https://globalenergymonitor.org)** | Individual power plants | 40,000+ plants worldwide |
-| **[IRENA Statistics](https://www.irena.org/Statistics)** | Renewable capacity/generation | 200+ countries, 2000-2022 |
-| **[EMBER Climate](https://ember-climate.org/data/)** | Electricity generation/emissions | Global, hourly resolution |
-| **[REZoning](https://www.irena.org/publications/2022/Mar/Renewable-Energy-Zoning-for-Energy-Transition)** | Renewable energy potential | 50×50km global grid |
-| **[Atlite](https://github.com/PyPSA/atlite)** | Hourly capacity factor profiles | ERA5 weather data |
-| **[NGFS Scenarios](https://www.ngfs.net)** | Climate policy projections | 5 scenarios, 2020-2100 |
-| **[IPCC AR6](https://www.ipcc.ch/report/ar6/wg3/)** | Climate scenario trajectories | 350+ scenario-model combinations |
-| **[IEA WEO](https://www.iea.org/weo)** | Technology costs | Global, 2020-2050 |
+### **The Existing System**
+
+| Dataset | Purpose |
+|---|---|
+| **[Global Energy Monitor](https://globalenergymonitor.org)** | Unit-level power plant inventory with coordinates, vintages and status |
+| **[IRENA Statistics](https://www.irena.org/Statistics)** | Renewable capacity, used as the calibration benchmark |
+| **[EMBER](https://ember-energy.org/data/)** | Generation, emissions and cross-border transfer capacity |
+| **[UN Statistics Division](https://unstats.un.org/unsd/energystats/)** | National energy balances |
+
+### **Grid**
+
+| Dataset | Purpose |
+|---|---|
+| **[OpenStreetMap](https://www.openstreetmap.org)** | Transmission topology — substations, lines and voltages |
+| **[Global Transmission Database](https://papers.ssrn.com/abstract=4726771)** | Line capacity reference for NTC estimation |
+| **[PyPSA-Eur](https://github.com/PyPSA/pypsa-eur)** | Pre-built European network as a cross-check |
+
+### **Renewable Resource**
+
+| Dataset | Purpose |
+|---|---|
+| **[REZoning](https://www.irena.org/publications/2022/Mar/Renewable-Energy-Zoning-for-Energy-Transition)** | Land-use-screened potential on a 50×50km global grid |
+| **[Atlite](https://github.com/PyPSA/atlite)** / **[ERA5](https://www.ecmwf.int/en/forecasts/dataset/ecmwf-reanalysis-v5)** | Hourly capacity factors per grid cell from reanalysis weather |
+| **[Natural Earth](https://www.naturalearthdata.com)** | Land masks and administrative boundaries |
+
+### **Technology Costs**
+
+| Dataset | Purpose |
+|---|---|
+| **[IEA World Energy Outlook](https://www.iea.org/weo)** | Regional cost levels across nine world regions |
+| **[NREL Annual Technology Baseline](https://atb.nrel.gov)** | Cost trajectory shape, storage and SMR |
+| **[Danish Energy Agency catalogues](https://ens.dk/en/analyses-and-statistics/technology-data)** | CHP, district heating, heat pumps, storage and capture modules |
+| **[Damodaran country risk premia](https://pages.stern.nyu.edu/~adamodar/)** | Country-specific cost of capital |
+
+Every cost value carries its source, publication version, currency year and a checksum of
+the originating workbook, so any number in a model can be traced back to the page it
+came from.
+
+### **CO₂ Transport & Storage**
+
+| Dataset | Purpose |
+|---|---|
+| **[OGCI CO₂ Storage Resource Catalogue](https://www.ogci.com/co2-storage-resource-catalogue)** | Geological storage sites and capacity estimates |
+| **Basin hydrogeology (published assessments)** | Pressure-limited injection rates, so storage is a flow constraint and not only a stock |
+| **Published pipeline cost correlations** | Levelised transport cost by distance and throughput |
+| **[IEA CCUS Projects Database](https://www.iea.org/data-and-statistics/data-product/ccus-projects-database)** | Announced project cross-check |
+
+### **Scenarios, Policy & Demand**
+
+| Dataset | Purpose |
+|---|---|
+| **[IPCC AR6 Scenario Database](https://data.ece.iiasa.ac.at/ar6/)** | Carbon prices and sectoral demand trajectories by climate category |
+| **[NGFS Scenarios](https://www.ngfs.net)** | Climate policy and transition-risk pathways |
+| **National targets and plans** | Renewable and capacity targets, each carrying its publisher, date and URL |
+| **[PeeringDB](https://www.peeringdb.com)** | Interconnection facilities, used as a spatial prior for data centre siting |
 
 ---
 
