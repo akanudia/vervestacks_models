@@ -1,11 +1,31 @@
 # VerveStacks Energy System Models
 **Professional. Pre-Built. Ready to Use.**
 
-[![Countries](https://img.shields.io/badge/countries-100+-green.svg)](#global-coverage)
+[![Models](https://img.shields.io/badge/models-52%20across%2033%20countries-green.svg)](#available-models)
 [![Data Sources](https://img.shields.io/badge/datasets-8+-orange.svg)](#data-foundation)
 [![License](https://img.shields.io/badge/models-freely%20available-blue.svg)](#license)
 
 [STARTING WITH THE POWER SECTOR]
+
+---
+
+## ⚡ **Get a model**
+
+Every country model is a **branch** of this repository.
+
+```bash
+# Switzerland, 10-bus grid
+git clone -b CHE_grids_kan10 https://github.com/akanudia/vervestacks_models.git
+
+# Germany, no grid representation
+git clone -b DEU https://github.com/akanudia/vervestacks_models.git
+
+# List everything available, without cloning
+git ls-remote --heads https://github.com/akanudia/vervestacks_models.git
+```
+
+Open the `.veda` files in Veda-TIMES and run. See **[Available Models](#available-models)**
+for the full list, and **[Getting Started](#getting-started)** for what each branch contains.
 
 ---
 
@@ -329,15 +349,76 @@ VerveStacks models are **more open than traditional "open source"** because they
 
 ---
 
+---
+
+## 📋 **Available Models**
+
+**52 models across 33 countries.** Each is a branch of this repository.
+
+| Country | ISO | Branches |
+|---|---|---|
+| Bosnia and Herzegovina | BIH | `BIH_grids_kan10` |
+| Brazil | BRA | `BRA_grids_kan10` |
+| Switzerland | CHE | `CHE_grids_kan10` |
+| China | CHN | `CHN_grids_kan10`, `CHN_grids_syn_10` |
+| Germany | DEU | `DEU`, `DEU_grids_kan`, `DEU_grids_kan10` |
+| Egypt | EGY | `EGY_grids_kan10` |
+| Spain | ESP | `ESP`, `ESP_grids_kan`, `ESP_grids_kan10` |
+| Ethiopia | ETH | `ETH_grids_kan10` |
+| France | FRA | `FRA_grids_kan10`, `FRA_grids_kan25` |
+| United Kingdom | GBR | `GBR_grids_kan`, `GBR_grids_kan10` |
+| Ghana | GHA | `GHA_grids_kan10` |
+| Croatia | HRV | `HRV_grids_kan10` |
+| Indonesia | IDN | `IDN_grids_kan` |
+| India | IND | `IND_grids_kan`, `IND_grids_kan10`, `IND_grids_kan25` |
+| Ireland | IRL | `IRL_grids_kan` |
+| Italy | ITA | `ITA`, `ITA_grids`, `ITA_grids_kan10` |
+| Japan | JPN | `JPN`, `JPN_grids_kan`, `JPN_grids_kan15` |
+| Kenya | KEN | `KEN_grids_kan`, `KEN_grids_kan10` |
+| Morocco | MAR | `MAR_grids_kan10` |
+| Mexico | MEX | `MEX`, `MEX_grids_kan`, `MEX_grids_kan15` |
+| Malaysia | MYS | `MYS_grids_kan` |
+| Nigeria | NGA | `NGA_grids_kan10` |
+| Netherlands | NLD | `NLD_grids_kan` |
+| Norway | NOR | `NOR_grids_kan`, `NOR_grids_kan10` |
+| New Zealand | NZL | `NZL_grids_kan` |
+| Philippines | PHL | `PHL_grids_kan` |
+| Poland | POL | `POL_grids_kan`, `POL_grids_kan10`, `POL_grids_kan50` |
+| Saudi Arabia | SAU | `SAU_grids_kan25` |
+| Serbia | SRB | `SRB_grids_kan` |
+| Slovakia | SVK | `SVK_grids_kan` |
+| Thailand | THA | `THA_grids_kan` |
+| South Africa | ZAF | `ZAF_grids_kan` |
+| Zimbabwe | ZWE | `ZWE_grids_kan` |
+
+New models are added regularly. For the live list at any time:
+
+```bash
+git ls-remote --heads https://github.com/akanudia/vervestacks_models.git
+```
+
+Need a country or a grid resolution that is not here? See [Custom Models](#custom-models).
+
 ## 🚀 **Getting Started**
 
 ### **Browse Country Models**
 
-Each country has its own branch with a complete, ready-to-use model:
+Each country has its own branch with a complete, ready-to-use model. Branch names follow
+the pattern below:
+
+| Branch pattern | Meaning |
+|---|---|
+| `<ISO>` | National model, no grid representation |
+| `<ISO>_grids_kan<N>` | With an N-bus reduced transmission network |
+| `<ISO>_grids_kan` | With a grid at the default resolution |
+| `<ISO>_grids_syn_<N>` | Synthetic grid, where open topology data is unavailable |
 
 ```bash
 # Clone any country model
-git clone -b vervestacks-CHE https://github.com/your-org/vervestacks-models.git
+git clone -b CHE_grids_kan10 https://github.com/akanudia/vervestacks_models.git
+
+# List every available model without cloning
+git ls-remote --heads https://github.com/akanudia/vervestacks_models.git
 
 # Models are immediately usable in VEDA/TIMES
 # - Open .veda files in Veda-TIMES
@@ -485,7 +566,7 @@ Need a model variant with specific assumptions or features?
 
 ```bash
 # Standard models: Clone freely
-git clone -b vervestacks-<ISO> https://github.com/your-org/vervestacks-models.git
+git clone -b <branch> https://github.com/akanudia/vervestacks_models.git
 
 # Custom variants: Request generation
 # Email: requests@vervestacks.org
