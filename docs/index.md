@@ -1,7 +1,7 @@
 # AUS — VerveStacks Model
 
 !!! info "Model Info"
-    **Generated:** 2026-09-06 23:05:16  |  **ISO Code:** `AUS`
+    **Generated:** 2026-09-07 02:48:32  |  **ISO Code:** `AUS`
 
 ---
 
@@ -26,7 +26,7 @@
 | 🌱 **Bioenergy** | 50 MW | 6/34 plants | 1.03 GW | — | 30.6% |
 | ⚫ **Coal** | 100 MW | 56/58 plants | 25.1 GW | — | 35.3% |
 | 🔥 **Gas** | 100 MW | 117/145 plants | 26.9 GW | — | 36.6% |
-| 💧 **Hydro Power** | 10 MW | 59/59 plants | 6.23 GW | 0.034 GW | 93% |
+| 💧 **Hydro Power** | 10 MW | 61/61 plants | 6.23 GW | 0.034 GW | 93% |
 | 🛢️ **Oil** | 100 MW | 4/9 plants | 0.776 GW | — | 28.4% |
 | ☀️ **Solar** | 200 MW | 36/222 plants | 40.8 GW | — | 62% |
 | 💨 **Windon** | 200 MW | 40/112 plants | 17.6 GW | 1.01 GW | 94% |
@@ -85,11 +85,11 @@ available. Grid locations of all these units are preserved.
 |--------|-------|
 | **Individual Plant Coverage** | 95% of total capacity from plant-level GEM data |
 | **Total Capacity Tracked** | 518 GW from all sources |
-| **Plants Above Threshold** | 737 individual plants tracked |
-| **Total Plants Processed** | 1086 plants in database |
+| **Plants Above Threshold** | 736 individual plants tracked |
+| **Total Plants Processed** | 1088 plants in database |
 | **Missing Capacity Added** | - **IRENA data**:
-  - **solar**: 23.29 GW
   - **hydro**: 0.64 GW
+  - **solar**: 23.29 GW
   - **windon**: 1.62 GW
   - **bioenergy**: 0.23 GW
 - **EMBER data**:
