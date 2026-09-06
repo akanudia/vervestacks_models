@@ -48,8 +48,8 @@ The supply curves reveal the economic characteristics of renewable energy deploy
 
 | Technology | Grid Cells | Clusters | Avg Cluster Size | Size Range |
 |------------|-----------|---------|-----------------|------------|
-| ☀️ **Solar PV** | 154 | 20 | 7.7 cells | 5 to 11 cells |
-| 💨 **Wind Onshore** | 154 | 20 | 7.7 cells | 3 to 16 cells |
+| ☀️ **Solar PV** | 154 | 20 | 7.7 cells | 4 to 12 cells |
+| 💨 **Wind Onshore** | 154 | 20 | 7.7 cells | 2 to 18 cells |
 | 🌊 **Wind Offshore** | 19 | 10 | 1.9 cells | 1 to 2 cells |
 
 **Grid Definition:** Grid definition: kan50

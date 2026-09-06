@@ -1,7 +1,7 @@
 # POL — VerveStacks Model
 
 !!! info "Model Info"
-    **Generated:** 2026-09-06 18:29:07  |  **ISO Code:** `POL`
+    **Generated:** 2026-09-06 23:45:55  |  **ISO Code:** `POL`
 
 ---
 
@@ -27,9 +27,9 @@
 | ⚫ **Coal** | 10 MW | 144/144 plants | 29.2 GW | 33.9% |
 | 🔥 **Gas** | 10 MW | 38/39 plants | 8.96 GW | 58% |
 | 💧 **Hydro Power** | 10 MW | 9/10 plants | 0.535 GW | 61% |
-| ☀️ **Solar** | 200 MW | 24/62 plants | 20.7 GW | 63% |
+| ☀️ **Solar** | 200 MW | 24/63 plants | 20.7 GW | 63% |
 | 🌊 **Windoff** | 200 MW | 1/1 plants | 1.2 GW | 100% |
-| 💨 **Windon** | 200 MW | 9/118 plants | 10.7 GW | 91% |
+| 💨 **Windon** | 200 MW | 10/116 plants | 10.7 GW | 91% |
 | 🔋 **Pumped Storage** | 10 MW | 6/6 plants | 1.88 GW | 100% |
 
 
@@ -43,7 +43,7 @@
 | ⚛️ **Nuclear** | — | 49/49 plants | 15.6 GW | 100% |
 | ☀️ **Solar** | 200 MW | 3/17 plants | 1.95 GW | 100% |
 | 🌊 **Windoff** | 200 MW | 19/19 plants | 18.2 GW | 100% |
-| 💨 **Windon** | 200 MW | 1/8 plants | 1.03 GW | 100% |
+| 💨 **Windon** | 200 MW | 1/7 plants | 1.03 GW | 100% |
 | 🔋 **Pumped Storage** | 10 MW | 2/2 plants | 1.45 GW | 100% |
 
 
@@ -85,13 +85,13 @@ available. Grid locations of all these units are preserved.
 |--------|-------|
 | **Individual Plant Coverage** | 90% of total capacity from plant-level GEM data |
 | **Total Capacity Tracked** | 119 GW from all sources |
-| **Plants Above Threshold** | 271 individual plants tracked |
-| **Total Plants Processed** | 513 plants in database |
+| **Plants Above Threshold** | 274 individual plants tracked |
+| **Total Plants Processed** | 511 plants in database |
 | **Missing Capacity Added** | - **IRENA data**:
-  - **solar**: 11.4 GW
-  - **bioenergy**: 0.26 GW
   - **hydro**: 0.31 GW
-  - **windon**: 0.24 GW |
+  - **solar**: 11.4 GW
+  - **windon**: 0.43 GW
+  - **bioenergy**: 0.26 GW |
 
 ---
 
