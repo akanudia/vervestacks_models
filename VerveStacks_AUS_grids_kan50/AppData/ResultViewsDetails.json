@@ -1,0 +1,22 @@
+[
+  {
+    "Name": "__Check dummy imports",
+    "ItemType": "PivotLayout",
+    "Details": "<RadPivotGrid ColumnWidth=\"120\" EmptyValueString=\"\" ColumnGrandTotalsPosition=\"None\" RowGrandTotalsPosition=\"None\" ColumnsSubTotalsPosition=\"None\" AggregatesPosition=\"Columns\" ShowFilterArea=\"True\" Cursor=\"Default\" TabIndex=\"0\">\r\n  <RowGroupDescriptions>\r\n    <PropertyGroupDescription />\r\n  </RowGroupDescriptions>\r\n  <ColumnGroupDescriptions>\r\n    <PropertyGroupDescription />\r\n  </ColumnGroupDescriptions>\r\n  <AggregateDescriptions>\r\n    <PropertyAggregateDescription />\r\n  </AggregateDescriptions>\r\n  <FilterDescriptions>\r\n    <PropertyFilterDescription />\r\n  </FilterDescriptions>\r\n</RadPivotGrid>"
+  },
+  {
+    "Name": "__Check dummy imports",
+    "ItemType": "PivotDescriptionModesByDimension",
+    "Details": "{}"
+  },
+  {
+    "Name": "__Check dummy imports",
+    "ItemType": "PivotUiSettings",
+    "Details": "{\"DescriptionMode\":{},\"UnitFrom\":\"\",\"UnitTo\":\"\",\"PivotSubTotals\":{},\"PivotGrandTotals\":{\"Row\":false,\"Column\":false},\"PivotLayout\":\"<RadPivotGrid ColumnWidth=\\\"120\\\" EmptyValueString=\\\"\\\" ColumnGrandTotalsPosition=\\\"None\\\" RowGrandTotalsPosition=\\\"None\\\" ColumnsSubTotalsPosition=\\\"None\\\" AggregatesPosition=\\\"Columns\\\" ShowFilterArea=\\\"True\\\" Cursor=\\\"Default\\\" TabIndex=\\\"0\\\">\\r\\n  <RowGroupDescriptions>\\r\\n    <PropertyGroupDescription />\\r\\n  </RowGroupDescriptions>\\r\\n  <ColumnGroupDescriptions>\\r\\n    <PropertyGroupDescription />\\r\\n  </ColumnGroupDescriptions>\\r\\n  <AggregateDescriptions>\\r\\n    <PropertyAggregateDescription />\\r\\n  </AggregateDescriptions>\\r\\n  <FilterDescriptions>\\r\\n    <PropertyFilterDescription />\\r\\n  </FilterDescriptions>\\r\\n</RadPivotGrid>\",\"DataViewWithChart\":false}"
+  },
+  {
+    "Name": "__Check dummy imports",
+    "ItemType": "IsNullIncluded",
+    "Details": "False"
+  }
+]

@@ -1,0 +1,15 @@
+/* Compact tables — Material default cell padding is generous for prose docs */
+.md-typeset table:not([class]) td,
+.md-typeset table:not([class]) th {
+  padding: 0.35rem 0.55rem;
+}
+
+.md-typeset table:not([class]) {
+  margin: 0.75em 0;
+}
+
+/* Wrapped tables (.md-typeset__table) inherit from inner table; belt-and-suspenders */
+.md-typeset__table td,
+.md-typeset__table th {
+  padding: 0.35rem 0.55rem;
+}
