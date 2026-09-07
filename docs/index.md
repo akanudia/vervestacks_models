@@ -1,7 +1,7 @@
 # AUS — VerveStacks Model
 
 !!! info "Model Info"
-    **Generated:** 2026-09-07 22:06:28  |  **ISO Code:** `AUS`
+    **Generated:** 2026-09-07 22:50:59  |  **ISO Code:** `AUS`
 
 ---
 
@@ -28,8 +28,8 @@
 | 🔥 **Gas** | 100 MW | 117/145 plants | 26.9 GW | — | 36.6% |
 | 💧 **Hydro Power** | 10 MW | 61/61 plants | 6.23 GW | 0.034 GW | — |
 | 🛢️ **Oil** | 100 MW | 4/9 plants | 0.776 GW | — | 28.4% |
-| ☀️ **Solar** | 200 MW | 36/222 plants | 40.8 GW | — | — |
-| 💨 **Windon** | 200 MW | 40/112 plants | 17.6 GW | 1.01 GW | — |
+| ☀️ **Solar** | 200 MW | 35/229 plants | 40.8 GW | — | — |
+| 💨 **Windon** | 200 MW | 36/122 plants | 17.6 GW | 1.01 GW | — |
 | 🔋 **Pumped Storage** | 10 MW | 6/6 plants | 4.86 GW | — | 80% (assumed round-trip) |
 
 
@@ -41,9 +41,9 @@
 | ⚫ **Coal** | 100 MW | 3/3 plants | 0.945 GW | 35.5% |
 | 🔥 **Gas** | 100 MW | 19/22 plants | 5.74 GW | 35.1% |
 | 💧 **Hydro Power** | 10 MW | 1/1 plants | 0.19 GW | — |
-| ☀️ **Solar** | 200 MW | 120/175 plants | 120 GW | — |
+| ☀️ **Solar** | 200 MW | 118/179 plants | 120 GW | — |
 | 🌊 **Windoff** | 200 MW | 31/31 plants | 63 GW | — |
-| 💨 **Windon** | 200 MW | 162/185 plants | 185 GW | — |
+| 💨 **Windon** | 200 MW | 159/189 plants | 185 GW | — |
 | 🔋 **Pumped Storage** | 10 MW | 19/19 plants | 18 GW | 80% (assumed round-trip) |
 
 
@@ -85,13 +85,13 @@ available. Grid locations of all these units are preserved.
 |--------|-------|
 | **Individual Plant Coverage** | 95% of total capacity from plant-level GEM data |
 | **Total Capacity Tracked** | 518 GW from all sources |
-| **Plants Above Threshold** | 736 individual plants tracked |
-| **Total Plants Processed** | 1088 plants in database |
+| **Plants Above Threshold** | 741 individual plants tracked |
+| **Total Plants Processed** | 1113 plants in database |
 | **Missing Capacity Added** | - **IRENA data**:
   - **solar**: 23.29 GW
+  - **windon**: 1.62 GW
   - **hydro**: 0.64 GW
   - **bioenergy**: 0.23 GW
-  - **windon**: 1.62 GW
 - **EMBER data**:
   - **gas**: 5.98 GW |
 
