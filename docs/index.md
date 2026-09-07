@@ -1,7 +1,7 @@
 # AUS — VerveStacks Model
 
 !!! info "Model Info"
-    **Generated:** 2026-09-07 14:54:23  |  **ISO Code:** `AUS`
+    **Generated:** 2026-09-07 22:06:28  |  **ISO Code:** `AUS`
 
 ---
 
@@ -26,11 +26,11 @@
 | 🌱 **Bioenergy** | 50 MW | 6/34 plants | 1.03 GW | — | 30.6% |
 | ⚫ **Coal** | 100 MW | 56/58 plants | 25.1 GW | — | 35.3% |
 | 🔥 **Gas** | 100 MW | 117/145 plants | 26.9 GW | — | 36.6% |
-| 💧 **Hydro Power** | 10 MW | 61/61 plants | 6.23 GW | 0.034 GW | 93% |
+| 💧 **Hydro Power** | 10 MW | 61/61 plants | 6.23 GW | 0.034 GW | — |
 | 🛢️ **Oil** | 100 MW | 4/9 plants | 0.776 GW | — | 28.4% |
-| ☀️ **Solar** | 200 MW | 36/222 plants | 40.8 GW | — | 62% |
-| 💨 **Windon** | 200 MW | 40/112 plants | 17.6 GW | 1.01 GW | 94% |
-| 🔋 **Pumped Storage** | 10 MW | 6/6 plants | 4.86 GW | — | 100% |
+| ☀️ **Solar** | 200 MW | 36/222 plants | 40.8 GW | — | — |
+| 💨 **Windon** | 200 MW | 40/112 plants | 17.6 GW | 1.01 GW | — |
+| 🔋 **Pumped Storage** | 10 MW | 6/6 plants | 4.86 GW | — | 80% (assumed round-trip) |
 
 
 ### Future Projects (offered for endogenous selection)
@@ -40,11 +40,11 @@
 | 🌱 **Bioenergy** | 50 MW | 2/5 plants | 0.28 GW | 32.8% |
 | ⚫ **Coal** | 100 MW | 3/3 plants | 0.945 GW | 35.5% |
 | 🔥 **Gas** | 100 MW | 19/22 plants | 5.74 GW | 35.1% |
-| 💧 **Hydro Power** | 10 MW | 1/1 plants | 0.19 GW | 100% |
-| ☀️ **Solar** | 200 MW | 120/175 plants | 120 GW | 100% |
-| 🌊 **Windoff** | 200 MW | 31/31 plants | 63 GW | 100% |
-| 💨 **Windon** | 200 MW | 162/185 plants | 185 GW | 100% |
-| 🔋 **Pumped Storage** | 10 MW | 19/19 plants | 18 GW | 100% |
+| 💧 **Hydro Power** | 10 MW | 1/1 plants | 0.19 GW | — |
+| ☀️ **Solar** | 200 MW | 120/175 plants | 120 GW | — |
+| 🌊 **Windoff** | 200 MW | 31/31 plants | 63 GW | — |
+| 💨 **Windon** | 200 MW | 162/185 plants | 185 GW | — |
+| 🔋 **Pumped Storage** | 10 MW | 19/19 plants | 18 GW | 80% (assumed round-trip) |
 
 
 Announced and pre-construction projects are offered as options to the model for endogenous investment.
@@ -88,9 +88,9 @@ available. Grid locations of all these units are preserved.
 | **Plants Above Threshold** | 736 individual plants tracked |
 | **Total Plants Processed** | 1088 plants in database |
 | **Missing Capacity Added** | - **IRENA data**:
+  - **solar**: 23.29 GW
   - **hydro**: 0.64 GW
   - **bioenergy**: 0.23 GW
-  - **solar**: 23.29 GW
   - **windon**: 1.62 GW
 - **EMBER data**:
   - **gas**: 5.98 GW |
