@@ -1,7 +1,7 @@
 # AUS — VerveStacks Model
 
 !!! info "Model Info"
-    **Generated:** 2026-09-07 22:50:59  |  **ISO Code:** `AUS`
+    **Generated:** 2026-09-08 00:21:07  |  **ISO Code:** `AUS`
 
 ---
 
@@ -89,8 +89,8 @@ available. Grid locations of all these units are preserved.
 | **Total Plants Processed** | 1113 plants in database |
 | **Missing Capacity Added** | - **IRENA data**:
   - **solar**: 23.29 GW
-  - **windon**: 1.62 GW
   - **hydro**: 0.64 GW
+  - **windon**: 1.62 GW
   - **bioenergy**: 0.23 GW
 - **EMBER data**:
   - **gas**: 5.98 GW |

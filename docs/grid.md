@@ -18,7 +18,7 @@
 | Metric | Value | Description |
 |--------|-------|-------------|
 | **Total Buses** | 46 | Transmission substations and connection points |
-| **Transmission Lines** | 60 | High-voltage transmission corridors |
+| **Transmission Lines** | 59 | High-voltage transmission corridors |
 
 ## Power Plant Integration
 
