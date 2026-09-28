@@ -1,7 +1,7 @@
 # CHN — VerveStacks Model
 
 !!! info "Model Info"
-    **Generated:** 2026-09-28 15:19:59  |  **ISO Code:** `CHN`
+    **Generated:** 2026-09-28 16:07:21  |  **ISO Code:** `CHN`
 
 ---
 
@@ -21,18 +21,18 @@
 
 ### Existing Capacity
 
-| **Fuel Type** | **Threshold** | **Units Above / Total** | **Capacity Above Threshold** | **Aggregated (below)** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
-|---------------|---------------|-------------------------|------------------------------|------------------------|--------------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 89/1670 units | 5.84 GW | 32.5 GW | 0.045 GW | 29.6% |
-| ⚫ **Coal** | 1000 MW | 2535/3808 units | 1351 GW | 113 GW | 4.27 GW | 37.8% |
-| 🔥 **Gas** | 1000 MW | 253/826 units | 131 GW | 80 GW | 0.25 GW | 55% |
+| **Fuel Type** | **Threshold** | **Units Above / Total** | **Capacity Above Threshold** | **Total Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
+|---------------|---------------|-------------------------|------------------------------|---------------------------|--------------------------|-----------------|
+| 🌱 **Bioenergy** | 50 MW | 89/1670 units | 5.84 GW | 38.3 GW | 0.045 GW | 29.6% |
+| ⚫ **Coal** | 1000 MW | 356/3808 units | 359 GW | 1464 GW | 4.27 GW | 40.7% |
+| 🔥 **Gas** | 1000 MW | 0/826 units | 0 GW | 211 GW | 0.25 GW | — |
 | 🌋 **Geothermal** | 1000 MW | 0/2 units | 0 GW | 0.016 GW | 0.024 GW | — |
-| 💧 **Hydro Power** | 1000 MW | 95/1032 units | 329 GW | 136 GW | 0.024 GW | — |
-| ⚛️ **Nuclear** | — | 91/91 units | 99 GW | — | — | — |
-| ☀️ **Solar** | 500 MW | 513/15068 units | 652 GW | 611 GW | 0.1 GW | — |
-| 🌊 **Windoff** | 200 MW | 179/254 units | 69 GW | 5.41 GW | — | — |
-| 💨 **Windon** | 360 MW | 325/7151 units | 226 GW | 515 GW | 0.41 GW | — |
-| 🔋 **Pumped Storage** | 1000 MW | 160/183 units | 227 GW | 9.17 GW | — | 80% (assumed round-trip) |
+| 💧 **Hydro Power** | 1000 MW | 95/1032 units | 329 GW | 464 GW | 0.024 GW | — |
+| ⚛️ **Nuclear** | — | 91/91 units | 99 GW | 99 GW | — | — |
+| ☀️ **Solar** | 500 MW | 513/15068 units | 652 GW | 1263 GW | 0.1 GW | — |
+| 🌊 **Windoff** | 200 MW | 179/254 units | 69 GW | 75 GW | — | — |
+| 💨 **Windon** | 360 MW | 325/7151 units | 226 GW | 740 GW | 0.41 GW | — |
+| 🔋 **Pumped Storage** | 1000 MW | 160/183 units | 227 GW | 237 GW | — | 80% (assumed round-trip) |
 
 
 ### Future Projects (offered for endogenous selection)
@@ -40,8 +40,8 @@
 | **Fuel Type** | **Threshold** | **Units Above / Total** | **Capacity Above Threshold** | **Aggregated (below)** | **Wtd Avg Efficiency** |
 |---------------|---------------|-------------------------|------------------------------|------------------------|-----------------|
 | 🌱 **Bioenergy** | 50 MW | 11/104 units | 0.85 GW | 2.43 GW | 32.9% |
-| ⚫ **Coal** | 1000 MW | 372/471 units | 289 GW | 5.76 GW | 43.4% |
-| 🔥 **Gas** | 1000 MW | 198/313 units | 109 GW | 13.2 GW | 56% |
+| ⚫ **Coal** | 1000 MW | 166/471 units | 167 GW | 128 GW | 43.7% |
+| 🔥 **Gas** | 1000 MW | 1/313 units | 1.6 GW | 121 GW | 33% |
 | 🌋 **Geothermal** | 1000 MW | 0/3 units | 0 GW | 0.056 GW | — |
 | 💧 **Hydro Power** | 1000 MW | 18/50 units | 43.5 GW | 9.66 GW | — |
 | ⚛️ **Nuclear** | — | 76/76 units | 86 GW | — | — |
@@ -59,8 +59,8 @@ available. Grid locations of all these units are preserved.
 
 | Fuel | Retrofit Host Capacity | Retrofit Potential |
 |------|------------------------|-------------------|
-| ⚫ **Coal** | 1352 GW | 989 GW after capacity penalty |
-| 🔥 **Gas**  | 131 GW  | 110 GW after capacity penalty |
+| ⚫ **Coal** | 4134 GW | 3152 GW after capacity penalty |
+| 🔥 **Gas**  | 105 GW  | 88 GW after capacity penalty |
 
 ---
 
@@ -87,15 +87,15 @@ available. Grid locations of all these units are preserved.
 
 | Metric | Value |
 |--------|-------|
-| **Individual Plant Coverage** | 68% of total capacity from plant-level GEM data |
+| **Individual Plant Coverage** | 80% of total capacity from plant-level GEM data |
 | **Total Capacity Tracked** | 6537 GW from all sources |
-| **Plants Above Threshold** | 9352 individual plants tracked |
-| **Total Plants Processed** | 11993 plants in database |
+| **Plants Above Threshold** | 7954 individual plants tracked |
+| **Total Plants Processed** | 10593 plants in database |
 | **Missing Capacity Added** | - **IRENA data**:
   - **solar**: 384.08 GW
   - **windon**: 27.98 GW
-  - **hydro**: 66.78 GW
-  - **windoff**: 1.49 GW |
+  - **windoff**: 1.49 GW
+  - **hydro**: 66.78 GW |
 
 ---
 
