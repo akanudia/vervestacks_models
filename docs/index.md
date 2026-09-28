@@ -1,7 +1,7 @@
 # TUR — VerveStacks Model
 
 !!! info "Model Info"
-    **Generated:** 2026-09-25 18:04:22  |  **ISO Code:** `TUR`
+    **Generated:** 2026-09-28 21:23:44  |  **ISO Code:** `TUR`
 
 ---
 
@@ -21,31 +21,31 @@
 
 ### Existing Capacity
 
-| **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
-|---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 17/50 plants | 2.01 GW | — | 32.2% |
-| ⚫ **Coal** | 60 MW | 77/83 plants | 20.5 GW | 0.545 GW | 38.3% |
-| 🔥 **Gas** | 60 MW | 75/96 plants | 26.3 GW | 1.44 GW | 55% |
-| 🌋 **Geothermal** | 60 MW | 14/37 plants | 1.92 GW | — | 100% |
-| 💧 **Hydro Power** | 60 MW | 120/195 plants | 33.1 GW | — | — |
-| ⚛️ **Nuclear** | — | 4/4 plants | 4.8 GW | — | — |
-| 🛢️ **Oil** | 60 MW | 4/5 plants | 0.566 GW | — | 37.8% |
-| ☀️ **Solar** | 200 MW | 28/336 plants | 23.8 GW | — | — |
-| 💨 **Windon** | 200 MW | 13/196 plants | 15.2 GW | — | — |
+| **Fuel Type** | **Threshold** | **Units Above / Total** | **Capacity Above Threshold** | **Total Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
+|---------------|---------------|-------------------------|------------------------------|---------------------------|--------------------------|-----------------|
+| 🌱 **Bioenergy** | 50 MW | 10/80 units | 0.721 GW | 2.01 GW | — | 33.6% |
+| ⚫ **Coal** | 60 MW | 77/83 units | 20.2 GW | 20.5 GW | 0.545 GW | 38.4% |
+| 🔥 **Gas** | 60 MW | 74/98 units | 25.6 GW | 26.3 GW | 1.44 GW | 56% |
+| 🌋 **Geothermal** | 60 MW | 4/77 units | 0.369 GW | 1.92 GW | — | 100% |
+| 💧 **Hydro Power** | 60 MW | 116/201 units | 30 GW | 33.1 GW | — | — |
+| ⚛️ **Nuclear** | — | 4/4 units | 4.8 GW | 4.8 GW | — | — |
+| 🛢️ **Oil** | 60 MW | 4/5 units | 0.536 GW | 0.566 GW | — | 37.9% |
+| ☀️ **Solar** | 200 MW | 14/2719 units | 6.69 GW | 23.8 GW | — | — |
+| 💨 **Windon** | 200 MW | 2/429 units | 0.411 GW | 15.2 GW | — | — |
 
 
 ### Future Projects (offered for endogenous selection)
 
-| **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Total Capacity** | **Wtd Avg Efficiency** |
-|---------------|---------------|----------------------------|--------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 1/2 plants | 0.077 GW | 33.7% |
-| ⚫ **Coal** | 60 MW | 2/2 plants | 0.688 GW | 37.1% |
-| 🌋 **Geothermal** | 60 MW | 2/8 plants | 0.344 GW | 100% |
-| 💧 **Hydro Power** | 60 MW | 18/28 plants | 3.67 GW | — |
-| ⚛️ **Nuclear** | — | 8/8 plants | 9.9 GW | — |
-| ☀️ **Solar** | 200 MW | 7/42 plants | 4.24 GW | — |
-| 💨 **Windon** | 200 MW | 3/17 plants | 2.07 GW | — |
-| 🔋 **Pumped Storage** | 60 MW | 2/2 plants | 2.4 GW | 80% (assumed round-trip) |
+| **Fuel Type** | **Threshold** | **Units Above / Total** | **Capacity Above Threshold** | **Aggregated (below)** | **Wtd Avg Efficiency** |
+|---------------|---------------|-------------------------|------------------------------|------------------------|-----------------|
+| 🌱 **Bioenergy** | 50 MW | 1/2 units | 0.053 GW | 0.024 GW | 34% |
+| ⚫ **Coal** | 60 MW | 2/2 units | 0.688 GW | — | 37.1% |
+| 🌋 **Geothermal** | 60 MW | 1/12 units | 0.076 GW | 0.268 GW | 100% |
+| 💧 **Hydro Power** | 60 MW | 18/28 units | 3.28 GW | 0.391 GW | — |
+| ⚛️ **Nuclear** | — | 8/8 units | 9.9 GW | — | — |
+| ☀️ **Solar** | 200 MW | 0/242 units | 0 GW | 4.24 GW | — |
+| 💨 **Windon** | 200 MW | 2/34 units | 0.67 GW | 1.4 GW | — |
+| 🔋 **Pumped Storage** | 60 MW | 2/2 units | 2.4 GW | — | 80% (assumed round-trip) |
 
 
 Announced and pre-construction projects are offered as options to the model for endogenous investment.
