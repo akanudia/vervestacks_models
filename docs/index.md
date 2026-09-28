@@ -1,7 +1,7 @@
 # CHN — VerveStacks Model
 
 !!! info "Model Info"
-    **Generated:** 2026-09-28 16:07:21  |  **ISO Code:** `CHN`
+    **Generated:** 2026-09-28 18:43:36  |  **ISO Code:** `CHN`
 
 ---
 
@@ -59,7 +59,7 @@ available. Grid locations of all these units are preserved.
 
 | Fuel | Retrofit Host Capacity | Retrofit Potential |
 |------|------------------------|-------------------|
-| ⚫ **Coal** | 4134 GW | 3152 GW after capacity penalty |
+| ⚫ **Coal** | 1254 GW | 921 GW after capacity penalty |
 | 🔥 **Gas**  | 105 GW  | 88 GW after capacity penalty |
 
 ---
@@ -87,15 +87,15 @@ available. Grid locations of all these units are preserved.
 
 | Metric | Value |
 |--------|-------|
-| **Individual Plant Coverage** | 80% of total capacity from plant-level GEM data |
+| **Individual Plant Coverage** | 81% of total capacity from plant-level GEM data |
 | **Total Capacity Tracked** | 6537 GW from all sources |
-| **Plants Above Threshold** | 7954 individual plants tracked |
-| **Total Plants Processed** | 10593 plants in database |
+| **Plants Above Threshold** | 7857 individual plants tracked |
+| **Total Plants Processed** | 10362 plants in database |
 | **Missing Capacity Added** | - **IRENA data**:
   - **solar**: 384.08 GW
   - **windon**: 27.98 GW
-  - **windoff**: 1.49 GW
-  - **hydro**: 66.78 GW |
+  - **hydro**: 66.78 GW
+  - **windoff**: 1.49 GW |
 
 ---
 
