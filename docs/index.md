@@ -1,7 +1,7 @@
 # IND — VerveStacks Model
 
 !!! info "Model Info"
-    **Generated:** 2026-09-27 10:46:14  |  **ISO Code:** `IND`
+    **Generated:** 2026-09-28 15:03:25  |  **ISO Code:** `IND`
 
 ---
 
@@ -21,32 +21,32 @@
 
 ### Existing Capacity
 
-| **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
-|---------------|---------------|----------------------------|--------------------|--------------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 37/140 plants | 11.3 GW | 0.033 GW | 32.8% |
-| ⚫ **Coal** | 500 MW | 324/710 plants | 275 GW | 0.782 GW | 37.1% |
-| 🔥 **Gas** | 500 MW | 18/100 plants | 31.4 GW | — | 49.3% |
-| 💧 **Hydro Power** | 110 MW | 137/267 plants | 61 GW | 0.764 GW | — |
-| ⚛️ **Nuclear** | — | 31/31 plants | 13.4 GW | 0.64 GW | — |
-| 🛢️ **Oil** | 500 MW | 0/6 plants | 0.656 GW | — | 38.8% |
-| ☀️ **Solar** | 200 MW | 486/1190 plants | 216 GW | — | — |
-| 💨 **Windon** | 200 MW | 158/395 plants | 76 GW | — | — |
-| 🔋 **Pumped Storage** | 110 MW | 19/20 plants | 19.4 GW | — | 80% (assumed round-trip) |
+| **Fuel Type** | **Threshold** | **Units Above / Total** | **Capacity Above Threshold** | **Aggregated (below)** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
+|---------------|---------------|-------------------------|------------------------------|------------------------|--------------------------|-----------------|
+| 🌱 **Bioenergy** | 50 MW | 24/181 units | 8.14 GW | 3.13 GW | 0.033 GW | 34.1% |
+| ⚫ **Coal** | 500 MW | 338/914 units | 194 GW | 81 GW | 0.782 GW | 38.7% |
+| 🔥 **Gas** | 500 MW | 20/113 units | 11.6 GW | 19.9 GW | — | 51% |
+| 💧 **Hydro Power** | 110 MW | 130/282 units | 52 GW | 8.78 GW | 0.764 GW | — |
+| ⚛️ **Nuclear** | — | 31/31 units | 13.4 GW | — | 0.64 GW | — |
+| 🛢️ **Oil** | 500 MW | 0/6 units | 0 GW | 0.656 GW | — | — |
+| ☀️ **Solar** | 200 MW | 378/4300 units | 139 GW | 77 GW | — | — |
+| 💨 **Windon** | 200 MW | 102/925 units | 34.6 GW | 41.2 GW | — | — |
+| 🔋 **Pumped Storage** | 110 MW | 19/20 units | 19.3 GW | 0.08 GW | — | 80% (assumed round-trip) |
 
 
 ### Future Projects (offered for endogenous selection)
 
-| **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Total Capacity** | **Wtd Avg Efficiency** |
-|---------------|---------------|----------------------------|--------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 4/9 plants | 0.361 GW | 30.9% |
-| ⚫ **Coal** | 500 MW | 135/141 plants | 107 GW | 41% |
-| 🔥 **Gas** | 500 MW | 1/3 plants | 1.02 GW | 57% |
-| 💧 **Hydro Power** | 110 MW | 122/153 plants | 78 GW | — |
-| ⚛️ **Nuclear** | — | 24/24 plants | 26.3 GW | — |
-| ☀️ **Solar** | 200 MW | 131/192 plants | 89 GW | — |
-| 🌊 **Windoff** | 200 MW | 6/6 plants | 5 GW | — |
-| 💨 **Windon** | 200 MW | 35/60 plants | 19.7 GW | — |
-| 🔋 **Pumped Storage** | 110 MW | 82/82 plants | 104 GW | 80% (assumed round-trip) |
+| **Fuel Type** | **Threshold** | **Units Above / Total** | **Capacity Above Threshold** | **Aggregated (below)** | **Wtd Avg Efficiency** |
+|---------------|---------------|-------------------------|------------------------------|------------------------|-----------------|
+| 🌱 **Bioenergy** | 50 MW | 2/11 units | 0.112 GW | 0.249 GW | 31.3% |
+| ⚫ **Coal** | 500 MW | 141/150 units | 106 GW | 1.4 GW | 41.1% |
+| 🔥 **Gas** | 500 MW | 1/3 units | 0.75 GW | 0.27 GW | 58% |
+| 💧 **Hydro Power** | 110 MW | 111/183 units | 73 GW | 4.74 GW | — |
+| ⚛️ **Nuclear** | — | 24/24 units | 26.3 GW | — | — |
+| ☀️ **Solar** | 200 MW | 114/273 units | 78 GW | 11.5 GW | — |
+| 🌊 **Windoff** | 200 MW | 6/6 units | 5 GW | — | — |
+| 💨 **Windon** | 200 MW | 27/94 units | 13.8 GW | 5.88 GW | — |
+| 🔋 **Pumped Storage** | 110 MW | 82/82 units | 104 GW | — | 80% (assumed round-trip) |
 
 
 Announced and pre-construction projects are offered as options to the model for endogenous investment.
@@ -57,8 +57,8 @@ available. Grid locations of all these units are preserved.
 
 | Fuel | Retrofit Host Capacity | Retrofit Potential |
 |------|------------------------|-------------------|
-| ⚫ **Coal** | 178 GW | 139 GW after capacity penalty |
-| 🔥 **Gas**  | 8.62 GW  | 7.28 GW after capacity penalty |
+| ⚫ **Coal** | 194 GW | 149 GW after capacity penalty |
+| 🔥 **Gas**  | 11.6 GW  | 9.78 GW after capacity penalty |
 
 ---
 
@@ -85,17 +85,17 @@ available. Grid locations of all these units are preserved.
 
 | Metric | Value |
 |--------|-------|
-| **Individual Plant Coverage** | 86% of total capacity from plant-level GEM data |
+| **Individual Plant Coverage** | 85% of total capacity from plant-level GEM data |
 | **Total Capacity Tracked** | 1138 GW from all sources |
-| **Plants Above Threshold** | 2319 individual plants tracked |
-| **Total Plants Processed** | 3529 plants in database |
+| **Plants Above Threshold** | 2347 individual plants tracked |
+| **Total Plants Processed** | 3560 plants in database |
 | **Missing Capacity Added** | - **IRENA data**:
   - **windon**: 8.18 GW
-  - **bioenergy**: 7.88 GW
   - **hydro**: 2.66 GW
+  - **bioenergy**: 7.88 GW
   - **solar**: 6.42 GW
 - **EMBER data**:
-  - **gas**: 1.06 GW |
+  - **gas**: 1.52 GW |
 
 ---
 
