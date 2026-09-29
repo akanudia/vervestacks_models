@@ -1,7 +1,7 @@
 # IND — VerveStacks Model
 
 !!! info "Model Info"
-    **Generated:** 2026-09-28 15:03:25  |  **ISO Code:** `IND`
+    **Generated:** 2026-09-29 16:35:32  |  **ISO Code:** `IND`
 
 ---
 
@@ -21,17 +21,17 @@
 
 ### Existing Capacity
 
-| **Fuel Type** | **Threshold** | **Units Above / Total** | **Capacity Above Threshold** | **Aggregated (below)** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
-|---------------|---------------|-------------------------|------------------------------|------------------------|--------------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 24/181 units | 8.14 GW | 3.13 GW | 0.033 GW | 34.1% |
-| ⚫ **Coal** | 500 MW | 338/914 units | 194 GW | 81 GW | 0.782 GW | 38.7% |
-| 🔥 **Gas** | 500 MW | 20/113 units | 11.6 GW | 19.9 GW | — | 51% |
-| 💧 **Hydro Power** | 110 MW | 130/282 units | 52 GW | 8.78 GW | 0.764 GW | — |
-| ⚛️ **Nuclear** | — | 31/31 units | 13.4 GW | — | 0.64 GW | — |
+| **Fuel Type** | **Threshold** | **Units Above / Total** | **Capacity Above Threshold** | **Total Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
+|---------------|---------------|-------------------------|------------------------------|---------------------------|--------------------------|-----------------|
+| 🌱 **Bioenergy** | 50 MW | 24/181 units | 8.14 GW | 11.3 GW | 0.033 GW | 34.1% |
+| ⚫ **Coal** | 500 MW | 287/914 units | 178 GW | 275 GW | 0.782 GW | 39.1% |
+| 🔥 **Gas** | 500 MW | 13/113 units | 8.62 GW | 31.4 GW | — | 51% |
+| 💧 **Hydro Power** | 110 MW | 130/282 units | 52 GW | 61 GW | 0.764 GW | — |
+| ⚛️ **Nuclear** | — | 31/31 units | 13.4 GW | 13.4 GW | 0.64 GW | — |
 | 🛢️ **Oil** | 500 MW | 0/6 units | 0 GW | 0.656 GW | — | — |
-| ☀️ **Solar** | 200 MW | 378/4300 units | 139 GW | 77 GW | — | — |
-| 💨 **Windon** | 200 MW | 102/925 units | 34.6 GW | 41.2 GW | — | — |
-| 🔋 **Pumped Storage** | 110 MW | 19/20 units | 19.3 GW | 0.08 GW | — | 80% (assumed round-trip) |
+| ☀️ **Solar** | 200 MW | 378/4300 units | 139 GW | 216 GW | — | — |
+| 💨 **Windon** | 200 MW | 102/925 units | 34.6 GW | 76 GW | — | — |
+| 🔋 **Pumped Storage** | 110 MW | 19/20 units | 19.3 GW | 19.4 GW | — | 80% (assumed round-trip) |
 
 
 ### Future Projects (offered for endogenous selection)
@@ -39,7 +39,7 @@
 | **Fuel Type** | **Threshold** | **Units Above / Total** | **Capacity Above Threshold** | **Aggregated (below)** | **Wtd Avg Efficiency** |
 |---------------|---------------|-------------------------|------------------------------|------------------------|-----------------|
 | 🌱 **Bioenergy** | 50 MW | 2/11 units | 0.112 GW | 0.249 GW | 31.3% |
-| ⚫ **Coal** | 500 MW | 141/150 units | 106 GW | 1.4 GW | 41.1% |
+| ⚫ **Coal** | 500 MW | 132/150 units | 103 GW | 4.33 GW | 41.2% |
 | 🔥 **Gas** | 500 MW | 1/3 units | 0.75 GW | 0.27 GW | 58% |
 | 💧 **Hydro Power** | 110 MW | 111/183 units | 73 GW | 4.74 GW | — |
 | ⚛️ **Nuclear** | — | 24/24 units | 26.3 GW | — | — |
@@ -58,7 +58,7 @@ available. Grid locations of all these units are preserved.
 | Fuel | Retrofit Host Capacity | Retrofit Potential |
 |------|------------------------|-------------------|
 | ⚫ **Coal** | 194 GW | 149 GW after capacity penalty |
-| 🔥 **Gas**  | 11.6 GW  | 9.78 GW after capacity penalty |
+| 🔥 **Gas**  | 12 GW  | 10.2 GW after capacity penalty |
 
 ---
 
@@ -85,17 +85,17 @@ available. Grid locations of all these units are preserved.
 
 | Metric | Value |
 |--------|-------|
-| **Individual Plant Coverage** | 85% of total capacity from plant-level GEM data |
+| **Individual Plant Coverage** | 86% of total capacity from plant-level GEM data |
 | **Total Capacity Tracked** | 1138 GW from all sources |
-| **Plants Above Threshold** | 2347 individual plants tracked |
-| **Total Plants Processed** | 3560 plants in database |
+| **Plants Above Threshold** | 2316 individual plants tracked |
+| **Total Plants Processed** | 3510 plants in database |
 | **Missing Capacity Added** | - **IRENA data**:
+  - **solar**: 6.42 GW
   - **windon**: 8.18 GW
   - **hydro**: 2.66 GW
   - **bioenergy**: 7.88 GW
-  - **solar**: 6.42 GW
 - **EMBER data**:
-  - **gas**: 1.52 GW |
+  - **gas**: 1.06 GW |
 
 ---
 
