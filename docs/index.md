@@ -1,7 +1,7 @@
 # CHN — VerveStacks Model
 
 !!! info "Model Info"
-    **Generated:** 2026-09-28 21:40:56  |  **ISO Code:** `CHN`
+    **Generated:** 2026-09-30 10:31:54  |  **ISO Code:** `CHN`
 
 ---
 
