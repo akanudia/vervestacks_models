@@ -17,8 +17,8 @@
 
 | Metric | Value | Description |
 |--------|-------|-------------|
-| **Total Buses** | 48 | Transmission substations and connection points |
-| **Transmission Lines** | 96 | High-voltage transmission corridors |
+| **Total Buses** | 54 | Transmission substations and connection points |
+| **Transmission Lines** | 108 | High-voltage transmission corridors |
 
 ## Power Plant Integration
 
@@ -32,7 +32,7 @@
 
 | Spatial Metric | Value | Detail |
 |----------------|-------|--------|
-| **Grid Cells** | 327 | 50×50 km renewable energy zones |
+| **Grid Cells** | 314 | 50×50 km renewable energy zones |
 | **Solar / Wind Onshore Zones** | 304 | Grid cells with solar and onshore wind potential |
 | **Wind Offshore Zones** | 20 | Grid cells with offshore wind potential |
 | **Zone–Bus Mappings** | 326 | REZoning zones assigned to transmission buses |
