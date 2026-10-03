@@ -1,7 +1,7 @@
 # POL — VerveStacks Model
 
 !!! info "Model Info"
-    **Generated:** 2026-09-08 17:38:10  |  **ISO Code:** `POL`
+    **Generated:** 2026-10-03 14:33:33  |  **ISO Code:** `POL`
 
 ---
 
@@ -21,30 +21,30 @@
 
 ### Existing Capacity
 
-| **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Active Capacity** | **Wtd Avg Efficiency** |
-|---------------|---------------|----------------------------|--------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 12/23 plants | 1.3 GW | 29% |
-| ⚫ **Coal** | 10 MW | 144/144 plants | 29.2 GW | 33.9% |
-| 🔥 **Gas** | 10 MW | 38/39 plants | 8.96 GW | 58% |
-| 💧 **Hydro Power** | 10 MW | 9/10 plants | 0.535 GW | — |
-| ☀️ **Solar** | 200 MW | 22/230 plants | 20.7 GW | — |
-| 🌊 **Windoff** | 200 MW | 1/1 plants | 1.2 GW | — |
-| 💨 **Windon** | 200 MW | 4/264 plants | 10.7 GW | — |
-| 🔋 **Pumped Storage** | 10 MW | 6/6 plants | 1.88 GW | 80% (assumed round-trip) |
+| **Fuel Type** | **Threshold** | **Units Above / Total** | **Capacity Above Threshold** | **Total Active Capacity** | **Wtd Avg Efficiency** |
+|---------------|---------------|-------------------------|------------------------------|---------------------------|-----------------|
+| 🌱 **Bioenergy** | 50 MW | 12/23 units | 0.96 GW | 1.3 GW | 28.5% |
+| ⚫ **Coal** | 10 MW | 144/144 units | 29.2 GW | 29.2 GW | 33.9% |
+| 🔥 **Gas** | 10 MW | 38/39 units | 8.95 GW | 8.96 GW | 58% |
+| 💧 **Hydro Power** | 10 MW | 9/10 units | 0.532 GW | 0.535 GW | — |
+| ☀️ **Solar** | 200 MW | 13/4894 units | 4.2 GW | 20.7 GW | — |
+| 🌊 **Windoff** | 200 MW | 1/1 units | 1.2 GW | 1.2 GW | — |
+| 💨 **Windon** | 200 MW | 0/365 units | 0 GW | 10.7 GW | — |
+| 🔋 **Pumped Storage** | 10 MW | 6/6 units | 1.88 GW | 1.88 GW | 80% (assumed round-trip) |
 
 
 ### Future Projects (offered for endogenous selection)
 
-| **Fuel Type** | **Threshold** | **Plants Above Threshold** | **Total Capacity** | **Wtd Avg Efficiency** |
-|---------------|---------------|----------------------------|--------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 1/1 plants | 0.05 GW | 33% |
-| 🔥 **Gas** | 10 MW | 13/13 plants | 5.8 GW | 46.8% |
-| 💧 **Hydro Power** | 10 MW | 1/1 plants | 0.08 GW | — |
-| ⚛️ **Nuclear** | — | 49/49 plants | 15.6 GW | — |
-| ☀️ **Solar** | 200 MW | 3/17 plants | 1.95 GW | — |
-| 🌊 **Windoff** | 200 MW | 19/19 plants | 18.2 GW | — |
-| 💨 **Windon** | 200 MW | 1/8 plants | 1.03 GW | — |
-| 🔋 **Pumped Storage** | 10 MW | 2/2 plants | 1.45 GW | 80% (assumed round-trip) |
+| **Fuel Type** | **Threshold** | **Units Above / Total** | **Capacity Above Threshold** | **Aggregated (below)** | **Wtd Avg Efficiency** |
+|---------------|---------------|-------------------------|------------------------------|------------------------|-----------------|
+| 🌱 **Bioenergy** | 50 MW | 1/1 units | 0.05 GW | — | 33% |
+| 🔥 **Gas** | 10 MW | 13/13 units | 5.8 GW | — | 46.8% |
+| 💧 **Hydro Power** | 10 MW | 1/1 units | 0.08 GW | — | — |
+| ⚛️ **Nuclear** | — | 49/49 units | 15.6 GW | — | — |
+| ☀️ **Solar** | 200 MW | 2/20 units | 0.77 GW | 1.18 GW | — |
+| 🌊 **Windoff** | 200 MW | 19/19 units | 18.2 GW | — | — |
+| 💨 **Windon** | 200 MW | 1/8 units | 0.48 GW | 0.55 GW | — |
+| 🔋 **Pumped Storage** | 10 MW | 2/2 units | 1.45 GW | — | 80% (assumed round-trip) |
 
 
 Announced and pre-construction projects are offered as options to the model for endogenous investment.
@@ -55,8 +55,8 @@ available. Grid locations of all these units are preserved.
 
 | Fuel | Retrofit Host Capacity | Retrofit Potential |
 |------|------------------------|-------------------|
-| ⚫ **Coal** | 29.2 GW | 18.9 GW after capacity penalty |
-| 🔥 **Gas**  | 8.96 GW  | 7.57 GW after capacity penalty |
+| ⚫ **Coal** | 13.2 GW | 9.54 GW after capacity penalty |
+| 🔥 **Gas**  | 6.77 GW  | 5.72 GW after capacity penalty |
 
 ---
 
@@ -86,7 +86,7 @@ available. Grid locations of all these units are preserved.
 | **Individual Plant Coverage** | 80% of total capacity from plant-level GEM data |
 | **Total Capacity Tracked** | 119 GW from all sources |
 | **Plants Above Threshold** | 284 individual plants tracked |
-| **Total Plants Processed** | 827 plants in database |
+| **Total Plants Processed** | 823 plants in database |
 | **Missing Capacity Added** | - **IRENA data**:
   - **solar**: 3.8 GW
   - **hydro**: 0.31 GW
