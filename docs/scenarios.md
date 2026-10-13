@@ -16,7 +16,7 @@ comprehensive pathways for energy system transformation under different climate 
 | **Climate Categories** | 5 | From C1 (1.5°C) to C7 (limited action) |
 | **Temporal Coverage** | 2020–2050 | Multi-decade transformation pathways |
 | **Regional Scope** | R10REF_ECON | IPCC R10 regional classification |
-| **IEA Baseline Records** | 32 | Historical electricity balance data |
+| **IEA Baseline Records** | 19 | Historical electricity balance data |
 
 ---
 
@@ -34,11 +34,11 @@ comprehensive pathways for energy system transformation under different climate 
 ## Key Transformation Pathways
 
 **Carbon Pricing Evolution:** CO₂ prices show dramatic divergence across climate ambitions, ranging
-from $242 to $0/tCO₂ by 2030 under ambitious vs. limited
-action scenarios. By 2050, this gap widens to $635–$0/tCO₂.
+from $218 to $0/tCO₂ by 2030 under ambitious vs. limited
+action scenarios. By 2050, this gap widens to $578–$0/tCO₂.
 
-**Electrification Acceleration:** Total electricity demand grows by 1.9× under
-ambitious climate scenarios (C1) compared to 1.5× under limited action (C7)
+**Electrification Acceleration:** Total electricity demand grows by 2.3× under
+ambitious climate scenarios (C1) compared to 1.6× under limited action (C7)
 by 2050, reflecting massive sectoral electrification across transport, heating, and industry.
 
 **Hydrogen Integration:** Hydrogen deployment reaches 0.1% of electricity
@@ -55,9 +55,9 @@ to 15.0% of total electricity demand under ambitious scenarios — a
 
 Analysis across 385 scenario-model combinations reveals:
 
-- **High Convergence** — CO₂ pricing (CV: inf%) and electricity growth (CV: 17.2%)
-- **Moderate Uncertainty** — Transport electrification rates (CV: 59.8%)
-- **High Divergence** — Hydrogen deployment pathways (CV: inf%)
+- **High Convergence** — CO₂ pricing (CV: inf%) and electricity growth (CV: 17.4%)
+- **Moderate Uncertainty** — Transport electrification rates (CV: 61.3%)
+- **High Divergence** — Hydrogen deployment pathways (CV: 141.9%)
 
 The **R10REF_ECON** region shows moderate convergence compared to global averages,
 with region-specific climate policy patterns reflecting economic and policy context.
