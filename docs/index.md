@@ -1,7 +1,7 @@
 # POL — VerveStacks Model
 
 !!! info "Model Info"
-    **Generated:** 2026-10-20 00:16:51  |  **ISO Code:** `POL`
+    **Generated:** 2026-10-20 00:48:47  |  **ISO Code:** `POL`
 
 ---
 
