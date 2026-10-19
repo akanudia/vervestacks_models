@@ -7,24 +7,20 @@ in high-renewable energy systems: **scarcity** (renewable shortfall days), **sur
 excess days), and **volatile** (high-variability days) — each captured as representative days to
 size backup capacity, storage, and flexible resources.
 
-*→ [Stress-based timeslice design](https://vervestacks.readthedocs.io/en/methods/stress-timeslices.html)*
+*→ [Stress-based timeslice design](https://kanors-emr.github.io/VerveStacks-docs/methods/stress-timeslices/)*
 
 ---
 
 ## Renewable Energy Analysis Overview
 
 <div align="center">
-  <img src="assets/re_analysis_summary_POL.svg"
-       alt="Renewable Energy Analysis Summary" style="max-width:100%;">
+  <img src="assets/re_analysis_summary_POL.svg" alt="Renewable Energy Analysis Overview" style="max-width:100%;">
 </div>
 
 ---
 
-## Aggregated Days and Hours
-
-Up to 6 seasons × 8 day-night periods = 48 base timeslices:
+## Aggregated days and hours (sts_1008)
 
 <div align="center">
-  <img src="assets/aggregation_justification_POL_ts_048.svg"
-       alt="Aggregated Slices Clustering" style="max-width:100%;">
+  <img src="assets/aggregation_justification_POL_sts_1008.svg" alt="Aggregated days and hours (sts_1008)" style="max-width:100%;">
 </div>

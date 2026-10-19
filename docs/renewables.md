@@ -24,7 +24,7 @@ the less competitive technology receives a reduced share of the overlapping area
 curves represent **deployable potential** rather than theoretical maximums, with no double-counting
 across technologies.
 
-*→ [Land-use conflict resolution methodology](https://vervestacks.readthedocs.io/en/latest/methods/renewable-characterization.html#stage-1-land-use-conflict-resolution)*
+*→ [Land-use conflict resolution methodology](https://kanors-emr.github.io/VerveStacks-docs/methods/renewable-characterization/#stage-1-land-use-conflict-resolution)*
 
 ---
 
@@ -48,8 +48,8 @@ The supply curves reveal the economic characteristics of renewable energy deploy
 
 | Technology | Grid Cells | Clusters | Avg Cluster Size | Size Range |
 |------------|-----------|---------|-----------------|------------|
-| ☀️ **Solar PV** | 154 | 53 | 2.9 cells | 1 to 8 cells |
-| 💨 **Wind Onshore** | 141 | 52 | 2.7 cells | 1 to 8 cells |
+| ☀️ **Solar PV** | 154 | 51 | 3.0 cells | 1 to 8 cells |
+| 💨 **Wind Onshore** | 141 | 49 | 2.9 cells | 1 to 8 cells |
 | 🌊 **Wind Offshore** | 19 | 10 | 1.9 cells | 1 to 3 cells |
 
 **Grid Definition:** Grid definition: kan50
@@ -60,7 +60,7 @@ survive the aggregation. Each cluster carries a capacity-weighted hourly profile
 cells drive the representative generation shape. Only economically viable grid cells enter the process
 (Solar PV > 5% CF, Onshore Wind > 8% CF).
 
-*→ [Clustering algorithm details](https://vervestacks.readthedocs.io/en/latest/methods/renewable-characterization.html#stage-2-renewable-resource-clustering)*
+*→ [Clustering algorithm details](https://kanors-emr.github.io/VerveStacks-docs/methods/renewable-characterization/#stage-2-renewable-resource-clustering)*
 
 ---
 
@@ -69,7 +69,7 @@ cells drive the representative generation shape. Only economically viable grid c
 <div align="center">
   <img src="assets/clustering_results_POL_solar.png"
        alt="Solar PV Clustering" style="max-width:100%; border:1px solid #ddd; border-radius:8px;">
-  <p><em>Solar PV: 53 clusters from 154 grid cells</em></p>
+  <p><em>Solar PV: 51 clusters from 154 grid cells</em></p>
 </div>
 
 ### Wind Onshore Clustering
@@ -77,7 +77,7 @@ cells drive the representative generation shape. Only economically viable grid c
 <div align="center">
   <img src="assets/clustering_results_POL_wind_onshore.png"
        alt="Onshore Wind Clustering" style="max-width:100%; border:1px solid #ddd; border-radius:8px;">
-  <p><em>Wind Onshore: 52 clusters from 141 grid cells</em></p>
+  <p><em>Wind Onshore: 49 clusters from 141 grid cells</em></p>
 </div>
 
 ### Wind Offshore Clustering

@@ -17,8 +17,8 @@
 
 | Metric | Value | Description |
 |--------|-------|-------------|
-| **Total Buses** | 54 | Transmission substations and connection points |
-| **Transmission Lines** | 108 | High-voltage transmission corridors |
+| **Total Buses** | 52 | Transmission substations and connection points |
+| **Transmission Lines** | 104 | High-voltage transmission corridors |
 
 ## Power Plant Integration
 
@@ -39,7 +39,7 @@
 
 **Commodity naming:** `elc_spv_<ISO3>_<cluster_id>` · `elc_won_<ISO3>_<cluster_id>` · `elc_wof_<ISO3>_<cluster_id>`
 
-*→ [Grid processing pipeline details](https://vervestacks.readthedocs.io/en/latest/methods/grid-representation.html#transmission-line-modeling)*
+*→ [Grid processing pipeline details](https://kanors-emr.github.io/VerveStacks-docs/methods/grid-representation/#transmission-line-modeling)*
 
 ---
 
