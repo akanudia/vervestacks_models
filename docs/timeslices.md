@@ -19,6 +19,22 @@ size backup capacity, storage, and flexible resources.
 
 ---
 
+## Aggregated days and hours (sts_360)
+
+<div align="center">
+  <img src="assets/aggregation_justification_POL_sts_360.svg" alt="Aggregated days and hours (sts_360)" style="max-width:100%;">
+</div>
+
+---
+
+## Critical periods (sts_360)
+
+<div align="center">
+  <img src="assets/stress_periods_sts_360_POL.svg" alt="Critical periods (sts_360)" style="max-width:100%;">
+</div>
+
+---
+
 ## Aggregated days and hours (sts_600)
 
 <div align="center">
@@ -31,4 +47,12 @@ size backup capacity, storage, and flexible resources.
 
 <div align="center">
   <img src="assets/stress_periods_sts_600_POL.svg" alt="Critical periods (sts_600)" style="max-width:100%;">
+</div>
+
+---
+
+## Aggregated days and hours (sts_1008)
+
+<div align="center">
+  <img src="assets/aggregation_justification_POL_sts_1008.svg" alt="Aggregated days and hours (sts_1008)" style="max-width:100%;">
 </div>
