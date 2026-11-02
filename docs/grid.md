@@ -17,8 +17,8 @@
 
 | Metric | Value | Description |
 |--------|-------|-------------|
-| **Total Buses** | 52 | Transmission substations and connection points |
-| **Transmission Lines** | 104 | High-voltage transmission corridors |
+| **Total Buses** | 55 | Transmission substations and connection points |
+| **Transmission Lines** | 109 | High-voltage transmission corridors |
 
 ## Power Plant Integration
 
@@ -59,7 +59,7 @@ Electricity demand shares are distributed across the transmission network using
 
 ### Load Concentration
 
-- **Highest Load Bus:** way/183945016-220 (0.167 share)
+- **Highest Load Bus:** way/40946784-400 (0.167 share)
 - **Load Distribution CV:** 66.2% (coefficient of variation across buses with non-zero demand)
 - **Load Balancing:** Moderately concentrated demand across buses
 
