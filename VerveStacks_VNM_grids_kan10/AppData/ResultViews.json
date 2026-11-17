@@ -1,0 +1,11 @@
+[
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2025-07-26 16:35",
+    "LastAccessed": "2025-07-26 16:35",
+    "Filter": "{\"process\":[\"IMPDEMZ\",\"IMPDUCZ\",\"IMPMATZ\",\"IMPNRGZ\"],\"attribute\":[\"VAR_FOut\"]}",
+    "Name": "__Check dummy imports",
+    "UserName": "akanu"
+  }
+]
