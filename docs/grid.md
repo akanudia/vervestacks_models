@@ -50,7 +50,7 @@ Electricity demand shares are distributed across the transmission network using
 
 | Load Distribution Method | Buses with Load | Total Load Share | Methodology |
 |--------------------------|-----------------|-----------------|-------------|
-| **Demand-Region Clustering** | 20 | 1.0 | Population-weighted clusters mapped to nearest buses |
+| **Demand-Region Clustering** | 16 | 1.0 | Population-weighted clusters mapped to nearest buses |
 
 <div align="center">
   <img src="assets/GBR_demand_bus_verification.png"
@@ -59,8 +59,8 @@ Electricity demand shares are distributed across the transmission network using
 
 ### Load Concentration
 
-- **Highest Load Bus:** relation/7650368-400 (0.229 share)
-- **Load Distribution CV:** 91.3% (coefficient of variation across buses with non-zero demand)
+- **Highest Load Bus:** way/1274396508-400 (0.202 share)
+- **Load Distribution CV:** 87.7% (coefficient of variation across buses with non-zero demand)
 - **Load Balancing:** Moderately concentrated demand across buses
 
 Transmission constraints affect supply-demand balancing, grid bottlenecks impact renewable
