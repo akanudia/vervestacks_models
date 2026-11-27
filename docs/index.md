@@ -1,7 +1,7 @@
 # GBR — VerveStacks Model
 
 !!! info "Model Info"
-    **Generated:** 2026-11-27 23:46:25  |  **ISO Code:** `GBR`
+    **Generated:** 2026-11-27 23:50:19  |  **ISO Code:** `GBR`
 
 ---
 
@@ -93,9 +93,9 @@ available. Grid locations of all these units are preserved.
 | **Total Plants Processed** | 1180 plants in database |
 | **Missing Capacity Added** | - **IRENA data**:
   - **solar**: 5.14 GW
+  - **hydro**: 0.61 GW
   - **bioenergy**: 2.27 GW
-  - **windon**: 0.33 GW
-  - **hydro**: 0.61 GW |
+  - **windon**: 0.33 GW |
 
 ---
 
