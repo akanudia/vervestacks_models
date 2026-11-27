@@ -1,7 +1,7 @@
 # GBR — VerveStacks Model
 
 !!! info "Model Info"
-    **Generated:** 2026-11-27 22:11:08  |  **ISO Code:** `GBR`
+    **Generated:** 2026-11-27 23:30:06  |  **ISO Code:** `GBR`
 
 ---
 
@@ -23,7 +23,7 @@
 
 | **Fuel Type** | **Threshold** | **Units Above / Total** | **Capacity Above Threshold** | **Total Active Capacity** | **Mothballed Capacity** | **Wtd Avg Efficiency** |
 |---------------|---------------|-------------------------|------------------------------|---------------------------|--------------------------|-----------------|
-| 🌱 **Bioenergy** | 50 MW | 30/125 units | 6.3 GW | 8.71 GW | 0.025 GW | 25.2% |
+| 🌱 **Bioenergy** | 50 MW | 30/125 units | 6.3 GW | 8.71 GW | 0.025 GW | 36.1% |
 | ⚫ **Coal** | 50 MW | 12/12 units | 6.33 GW | 6.33 GW | — | 27% |
 | 🔥 **Gas** | 50 MW | 106/158 units | 36.8 GW | 38.1 GW | 1.99 GW | 42.6% |
 | 🌋 **Geothermal** | 10 MW | 0/1 units | 0 GW | 0.002 GW | — | — |
@@ -92,9 +92,9 @@ available. Grid locations of all these units are preserved.
 | **Plants Above Threshold** | 446 individual plants tracked |
 | **Total Plants Processed** | 1180 plants in database |
 | **Missing Capacity Added** | - **IRENA data**:
-  - **bioenergy**: 2.27 GW
-  - **solar**: 5.14 GW
   - **hydro**: 0.61 GW
+  - **solar**: 5.14 GW
+  - **bioenergy**: 2.27 GW
   - **windon**: 0.33 GW |
 
 ---
