@@ -2,22 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://akanudia.github.io/vervestacks_models/POL/index.html</loc>
-         <lastmod>2026-07-27</lastmod>
-    </url>
-    <url>
-         <loc>https://akanudia.github.io/vervestacks_models/POL/grid.html</loc>
-         <lastmod>2026-07-27</lastmod>
+         <lastmod>2026-11-27</lastmod>
     </url>
     <url>
          <loc>https://akanudia.github.io/vervestacks_models/POL/renewables.html</loc>
-         <lastmod>2026-07-27</lastmod>
+         <lastmod>2026-11-27</lastmod>
     </url>
     <url>
          <loc>https://akanudia.github.io/vervestacks_models/POL/scenarios.html</loc>
-         <lastmod>2026-07-27</lastmod>
-    </url>
-    <url>
-         <loc>https://akanudia.github.io/vervestacks_models/POL/timeslices.html</loc>
-         <lastmod>2026-07-27</lastmod>
+         <lastmod>2026-11-27</lastmod>
     </url>
 </urlset>

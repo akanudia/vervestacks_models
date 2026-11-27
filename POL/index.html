@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
@@ -240,25 +240,6 @@
     
   
   Renewable Energy
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="timeslices.html" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Temporal Modelling
 
       </a>
     </li>
@@ -566,33 +547,6 @@
   
   
     <li class="md-nav__item">
-      <a href="timeslices.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Temporal Modelling
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="scenarios.html" class="md-nav__link">
         
   
@@ -633,7 +587,7 @@
 <h1 id="pol-vervestacks-model">POL — VerveStacks Model<a class="headerlink" href="#pol-vervestacks-model" title="Permanent link">&para;</a></h1>
 <div class="admonition info">
 <p class="admonition-title">Model Info</p>
-<p><strong>Generated:</strong> 2026-07-27 15:21:36  |  <strong>ISO Code:</strong> <code>POL</code></p>
+<p><strong>Generated:</strong> 2026-11-28 00:19:21  |  <strong>ISO Code:</strong> <code>POL</code></p>
 </div>
 <hr />
 <h2 id="model-calibration-2022">Model Calibration 2022<a class="headerlink" href="#model-calibration-2022" title="Permanent link">&para;</a></h2>
@@ -668,8 +622,9 @@ reported by EMBER — confirming that efficiency assumptions are sound.</p>
 <tr>
 <th><strong>Fuel Type</strong></th>
 <th><strong>Threshold</strong></th>
-<th><strong>Plants Above Threshold</strong></th>
-<th><strong>Active Capacity</strong></th>
+<th><strong>Units Above / Total</strong></th>
+<th><strong>Capacity Above Threshold</strong></th>
+<th><strong>Total Active Capacity</strong></th>
 <th><strong>Wtd Avg Efficiency</strong></th>
 </tr>
 </thead>
@@ -677,58 +632,66 @@ reported by EMBER — confirming that efficiency assumptions are sound.</p>
 <tr>
 <td>🌱 <strong>Bioenergy</strong></td>
 <td>50 MW</td>
-<td>10/14 plants</td>
+<td>10/14 units</td>
+<td>1.18 GW</td>
 <td>1.3 GW</td>
-<td>29.9%</td>
+<td>31.6%</td>
 </tr>
 <tr>
 <td>⚫ <strong>Coal</strong></td>
 <td>10 MW</td>
-<td>144/144 plants</td>
+<td>144/144 units</td>
+<td>29.2 GW</td>
 <td>29.2 GW</td>
 <td>33.9%</td>
 </tr>
 <tr>
 <td>🔥 <strong>Gas</strong></td>
 <td>10 MW</td>
-<td>32/32 plants</td>
-<td>7.94 GW</td>
+<td>38/39 units</td>
+<td>8.95 GW</td>
+<td>8.96 GW</td>
 <td>58%</td>
 </tr>
 <tr>
 <td>💧 <strong>Hydro Power</strong></td>
 <td>10 MW</td>
-<td>3/3 plants</td>
+<td>3/4 units</td>
 <td>0.532 GW</td>
-<td>62%</td>
+<td>0.535 GW</td>
+<td>—</td>
 </tr>
 <tr>
 <td>☀️ <strong>Solar</strong></td>
 <td>200 MW</td>
-<td>6/49 plants</td>
-<td>12.4 GW</td>
-<td>47.2%</td>
+<td>23/4810 units</td>
+<td>7.45 GW</td>
+<td>20.7 GW</td>
+<td>—</td>
 </tr>
 <tr>
 <td>🌊 <strong>Windoff</strong></td>
 <td>200 MW</td>
-<td>1/1 plants</td>
+<td>1/1 units</td>
 <td>1.2 GW</td>
-<td>100%</td>
+<td>1.2 GW</td>
+<td>—</td>
 </tr>
 <tr>
 <td>💨 <strong>Windon</strong></td>
 <td>200 MW</td>
-<td>8/111 plants</td>
-<td>9.41 GW</td>
-<td>97%</td>
+<td>0/318 units</td>
+<td>0 GW</td>
+<td>10.7 GW</td>
+<td>—</td>
 </tr>
 <tr>
 <td>🔋 <strong>Pumped Storage</strong></td>
 <td>10 MW</td>
-<td>6/6 plants</td>
+<td>6/6 units</td>
 <td>1.88 GW</td>
-<td>100%</td>
+<td>1.88 GW</td>
+<td>80% (assumed round-trip)</td>
 </tr>
 </tbody>
 </table>
@@ -738,8 +701,9 @@ reported by EMBER — confirming that efficiency assumptions are sound.</p>
 <tr>
 <th><strong>Fuel Type</strong></th>
 <th><strong>Threshold</strong></th>
-<th><strong>Plants Above Threshold</strong></th>
-<th><strong>Total Capacity</strong></th>
+<th><strong>Units Above / Total</strong></th>
+<th><strong>Capacity Above Threshold</strong></th>
+<th><strong>Aggregated (below)</strong></th>
 <th><strong>Wtd Avg Efficiency</strong></th>
 </tr>
 </thead>
@@ -747,58 +711,66 @@ reported by EMBER — confirming that efficiency assumptions are sound.</p>
 <tr>
 <td>🌱 <strong>Bioenergy</strong></td>
 <td>50 MW</td>
-<td>1/1 plants</td>
+<td>1/1 units</td>
 <td>0.05 GW</td>
+<td>—</td>
 <td>33%</td>
 </tr>
 <tr>
 <td>🔥 <strong>Gas</strong></td>
 <td>10 MW</td>
-<td>9/9 plants</td>
-<td>4.88 GW</td>
-<td>52%</td>
+<td>13/13 units</td>
+<td>5.8 GW</td>
+<td>—</td>
+<td>46.8%</td>
 </tr>
 <tr>
 <td>💧 <strong>Hydro Power</strong></td>
 <td>10 MW</td>
-<td>1/1 plants</td>
+<td>1/1 units</td>
 <td>0.08 GW</td>
-<td>100%</td>
+<td>—</td>
+<td>—</td>
 </tr>
 <tr>
 <td>⚛️ <strong>Nuclear</strong></td>
 <td>—</td>
-<td>49/49 plants</td>
+<td>49/49 units</td>
 <td>15.6 GW</td>
-<td>100%</td>
+<td>—</td>
+<td>—</td>
 </tr>
 <tr>
 <td>☀️ <strong>Solar</strong></td>
 <td>200 MW</td>
-<td>3/12 plants</td>
-<td>1.55 GW</td>
-<td>100%</td>
+<td>2/20 units</td>
+<td>0.77 GW</td>
+<td>1.18 GW</td>
+<td>—</td>
 </tr>
 <tr>
 <td>🌊 <strong>Windoff</strong></td>
 <td>200 MW</td>
-<td>23/23 plants</td>
-<td>22 GW</td>
-<td>100%</td>
+<td>19/19 units</td>
+<td>18.2 GW</td>
+<td>—</td>
+<td>—</td>
 </tr>
 <tr>
 <td>💨 <strong>Windon</strong></td>
 <td>200 MW</td>
-<td>2/10 plants</td>
-<td>1.18 GW</td>
-<td>100%</td>
+<td>1/8 units</td>
+<td>0.48 GW</td>
+<td>0.55 GW</td>
+<td>—</td>
 </tr>
 <tr>
 <td>🔋 <strong>Pumped Storage</strong></td>
 <td>10 MW</td>
-<td>2/2 plants</td>
+<td>2/2 units</td>
 <td>1.45 GW</td>
-<td>100%</td>
+<td>—</td>
+<td>80% (assumed round-trip)</td>
 </tr>
 </tbody>
 </table>
@@ -817,13 +789,13 @@ available. Grid locations of all these units are preserved.</p>
 <tbody>
 <tr>
 <td>⚫ <strong>Coal</strong></td>
-<td>29.2 GW</td>
-<td>18.9 GW after capacity penalty</td>
+<td>13.2 GW</td>
+<td>9.54 GW after capacity penalty</td>
 </tr>
 <tr>
 <td>🔥 <strong>Gas</strong></td>
-<td>7.94 GW</td>
-<td>6.71 GW after capacity penalty</td>
+<td>6.77 GW</td>
+<td>5.72 GW after capacity penalty</td>
 </tr>
 </tbody>
 </table>
@@ -857,34 +829,34 @@ available. Grid locations of all these units are preserved.</p>
 <tbody>
 <tr>
 <td><strong>Individual Plant Coverage</strong></td>
-<td>91% of total capacity from plant-level GEM data</td>
+<td>86% of total capacity from plant-level GEM data</td>
 </tr>
 <tr>
 <td><strong>Total Capacity Tracked</strong></td>
-<td>111 GW from all sources</td>
+<td>119 GW from all sources</td>
 </tr>
 <tr>
 <td><strong>Plants Above Threshold</strong></td>
-<td>240 individual plants tracked</td>
+<td>299 individual plants tracked</td>
 </tr>
 <tr>
 <td><strong>Total Plants Processed</strong></td>
-<td>467 plants in database</td>
+<td>597 plants in database</td>
 </tr>
 <tr>
 <td><strong>Missing Capacity Added</strong></td>
 <td>- <strong>IRENA data</strong>:</td>
 </tr>
 <tr>
-<td>- <strong>hydro</strong>: 0.31 GW</td>
-<td></td>
-</tr>
-<tr>
-<td>- <strong>solar</strong>: 9.8 GW</td>
+<td>- <strong>solar</strong>: 7.04 GW</td>
 <td></td>
 </tr>
 <tr>
 <td>- <strong>bioenergy</strong>: 0.48 GW</td>
+<td></td>
+</tr>
+<tr>
+<td>- <strong>hydro</strong>: 0.31 GW</td>
 <td></td>
 </tr>
 </tbody>
@@ -907,7 +879,7 @@ available. Grid locations of all these units are preserved.</p>
 <li>Temporal analysis verified through statistical scenario methods</li>
 </ul>
 <p><em>For questions about specific data sources or methodology, refer to the
-<a href="https://vervestacks.readthedocs.io/en/latest/">VerveStacks Methods documentation</a>.</em></p>
+<a href="https://kanors-emr.github.io/VerveStacks-docs/">VerveStacks Methods documentation</a>.</em></p>
 <hr />
 <p><em>Generated by VerveStacks Energy Model Processor</em></p>
 
@@ -968,7 +940,7 @@ available. Grid locations of all these units are preserved.</p>
       <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.highlight", "search.share", "content.code.copy", "toc.integrate"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>
