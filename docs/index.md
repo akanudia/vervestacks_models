@@ -1,7 +1,7 @@
 # GBR — VerveStacks Model
 
 !!! info "Model Info"
-    **Generated:** 2026-11-27 16:21:08  |  **ISO Code:** `GBR`
+    **Generated:** 2026-11-27 18:19:02  |  **ISO Code:** `GBR`
 
 ---
 
@@ -48,7 +48,7 @@
 | ☀️ **Solar** | 200 MW | 17/1158 units | 8.93 GW | 22.9 GW | — |
 | 🌊 **Windoff** | 200 MW | 45/59 units | 62 GW | 1.03 GW | — |
 | 💨 **Windon** | 200 MW | 10/382 units | 3.03 GW | 14 GW | — |
-| 🔋 **Pumped Storage** | 10 MW | 12/12 units | 11.6 GW | — | 80% (assumed round-trip) |
+| 🔋 **Pumped Storage** | 10 MW | 12/12 units | 11.7 GW | — | 80% (assumed round-trip) |
 
 
 Announced and pre-construction projects are offered as options to the model for endogenous investment.
@@ -92,9 +92,9 @@ available. Grid locations of all these units are preserved.
 | **Plants Above Threshold** | 446 individual plants tracked |
 | **Total Plants Processed** | 1180 plants in database |
 | **Missing Capacity Added** | - **IRENA data**:
+  - **hydro**: 0.61 GW
   - **bioenergy**: 2.27 GW
   - **solar**: 5.14 GW
-  - **hydro**: 0.61 GW
   - **windon**: 0.33 GW |
 
 ---

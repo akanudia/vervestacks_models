@@ -23,23 +23,23 @@ reflect actual operational stress rather than arbitrary percentages.
 
 ---
 
-## [hydro_country_name] Hydro Profile
+## United Kingdom Hydro Profile
 
 | Planning Parameter | Value | Application |
 |--------------------|-------|-------------|
-| **Hydro Dependency** | 2.35% of generation | System vulnerability assessment |
-| **P10 (Dry Scenario)** | [hydro_p10_avg] annual average | Security planning, reserve sizing |
-| **P50 (Base Scenario)** | [hydro_p50_avg] annual average | Expected case, financial planning |
-| **P90 (Wet Scenario)** | [hydro_p90_avg] annual average | Export opportunities, minimum backup |
-| **Historical Average** | [hydro_historical_avg] ([hydro_historical_years]) | Validation benchmark |
-| **Drought Threshold** | [hydro_drought_threshold] (P20 of historical) | Operational stress indicator |
+| **Hydro Dependency** | 1.9% of generation | System vulnerability assessment |
+| **P10 (Dry Scenario)** | 27.9% annual average | Security planning, reserve sizing |
+| **P50 (Base Scenario)** | 29.5% annual average | Expected case, financial planning |
+| **P90 (Wet Scenario)** | 31.2% annual average | Export opportunities, minimum backup |
+| **Historical Average** | 29.5% (2000-2023) | Validation benchmark |
+| **Drought Threshold** | 27.7% (P20 of historical) | Operational stress indicator |
 
 ---
 
 ## Monthly Availability Patterns
 
 <div align="center">
-  <img src="assets/[hydro_monthly_chart_filename]"
+  <img src="assets/GBR_hydro_monthly_profile.png"
        alt="Monthly Hydro Availability"
        style="max-width:100%; border:1px solid #ddd; border-radius:8px;">
   <p><em>Monthly hydro availability — P10/P50/P90 future scenarios vs. historical patterns</em></p>
@@ -48,7 +48,7 @@ reflect actual operational stress rather than arbitrary percentages.
 ## Long-term Trajectory
 
 <div align="center">
-  <img src="assets/[hydro_annual_chart_filename]"
+  <img src="assets/GBR_hydro_annual_trajectory.png"
        alt="Annual Hydro Trajectory"
        style="max-width:100%; border:1px solid #ddd; border-radius:8px;">
   <p><em>Annual hydro trajectories: historical (2000–2023) → future scenarios (2025–2050)</em></p>
